@@ -1,0 +1,14 @@
+﻿LIBRARY
+EXPORTS
+
+AtaPropPageProvider @1
+CdromDisableDigitalPlayback @2
+CdromEnableDigitalPlayback @3
+CdromIsDigitalPlaybackEnabled @4
+CdromKnownGoodDigitalPlayback @5
+DiskClassInstaller @6
+DvdClassInstaller @7
+DvdLauncher @8
+DvdPropPageProvider @9
+HdcCoInstaller @10
+VolumePropPageProvider @11

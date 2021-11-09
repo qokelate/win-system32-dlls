@@ -1,0 +1,5 @@
+﻿LIBRARY
+EXPORTS
+
+Sysprep_Clean_WMP @1
+Sysprep_Generalize_WMP @2

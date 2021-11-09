@@ -1,0 +1,300 @@
+ifndef X64
+.686p
+.XMM
+.safeseh SEH_handler
+.model flat, C
+option dotname
+option casemap : none
+endif
+
+extern ptr_ClassInstall32 : PTR;
+extern ptr_PSetupAssociateICMProfiles : PTR;
+extern ptr_PSetupBuildDriverList : PTR;
+extern ptr_PSetupBuildDriversFromPath : PTR;
+extern ptr_PSetupCalculatePnPId : PTR;
+extern ptr_PSetupCheckForDriversInDriverStore : PTR;
+extern ptr_PSetupCopyDriverPackageFiles : PTR;
+extern ptr_PSetupCreateDrvSetupPage : PTR;
+extern ptr_PSetupCreateMonitorInfo : PTR;
+extern ptr_PSetupCreatePrinterDeviceInfoList : PTR;
+extern ptr_PSetupDestroyDriverInfo3 : PTR;
+extern ptr_PSetupDestroyMonitorInfo : PTR;
+extern ptr_PSetupDestroyPrinterDeviceInfoList : PTR;
+extern ptr_PSetupDestroySelectedDriverInfo : PTR;
+extern ptr_PSetupDisassociateICMProfiles : PTR;
+extern ptr_PSetupDownloadAndInstallLegacyDriverW : PTR;
+extern ptr_PSetupDriverInfoFromDeviceID : PTR;
+extern ptr_PSetupDriverInfoFromName : PTR;
+extern ptr_PSetupDriverStoreAddDriverPackage : PTR;
+extern ptr_PSetupDriverStoreFindDriverPackageW : PTR;
+extern ptr_PSetupElevateAndCallDriverStoreAddDriverPackage : PTR;
+extern ptr_PSetupElevatedDriverStoreAddDriverPackageW : PTR;
+extern ptr_PSetupElevatedInstallDownloadedLegacyDriverW : PTR;
+extern ptr_PSetupElevatedInstallPrinterDriverFromTheWebW : PTR;
+extern ptr_PSetupElevatedLegacyPrintDriverInstallW : PTR;
+extern ptr_PSetupEnumMonitor : PTR;
+extern ptr_PSetupFindCompatibleDriverFromName : PTR;
+extern ptr_PSetupFreeDrvField : PTR;
+extern ptr_PSetupFreeMem : PTR;
+extern ptr_PSetupGetActualInstallSection : PTR;
+extern ptr_PSetupGetCatalogNameFromInfW : PTR;
+extern ptr_PSetupGetDriverInfo3 : PTR;
+extern ptr_PSetupGetInfDriverStoreLocation : PTR;
+extern ptr_PSetupGetLocalDataField : PTR;
+extern ptr_PSetupGetPathToSearch : PTR;
+extern ptr_PSetupGetSelectedDriverInfo : PTR;
+extern ptr_PSetupInstallICMProfiles : PTR;
+extern ptr_PSetupInstallInboxDriverSilently : PTR;
+extern ptr_PSetupInstallMonitor : PTR;
+extern ptr_PSetupInstallPrinterDriver : PTR;
+extern ptr_PSetupIsCompatibleDriver : PTR;
+extern ptr_PSetupIsDriverInstalled : PTR;
+extern ptr_PSetupIsTheDriverFoundInInfInstalled : PTR;
+extern ptr_PSetupParseInfAndCommitFileQueue : PTR;
+extern ptr_PSetupPreSelectDriver : PTR;
+extern ptr_PSetupProcessPrinterAdded : PTR;
+extern ptr_PSetupSelectDeviceButtons : PTR;
+extern ptr_PSetupSelectDriver : PTR;
+extern ptr_PSetupSetCoreInboxDriverPath : PTR;
+extern ptr_PSetupSetDriverPlatform : PTR;
+extern ptr_PSetupSetNonInteractiveMode : PTR;
+extern ptr_PSetupSetSelectDevTitleAndInstructions : PTR;
+extern ptr_PSetupShowBlockedDriverUI : PTR;
+extern ptr_PSetupThisPlatform : PTR;
+extern ptr_PSetupWebPnpGenerateDownLevelInfForInboxDriver : PTR;
+extern ptr_ServerInstallW : PTR;
+
+
+.code
+
+align 16
+SEH_handler   proc
+; handler
+ret
+SEH_handler   endp
+
+ClassInstall32 PROC
+jmp ptr_ClassInstall32
+ClassInstall32 ENDP
+
+PSetupAssociateICMProfiles PROC
+jmp ptr_PSetupAssociateICMProfiles
+PSetupAssociateICMProfiles ENDP
+
+PSetupBuildDriverList PROC
+jmp ptr_PSetupBuildDriverList
+PSetupBuildDriverList ENDP
+
+PSetupBuildDriversFromPath PROC
+jmp ptr_PSetupBuildDriversFromPath
+PSetupBuildDriversFromPath ENDP
+
+PSetupCalculatePnPId PROC
+jmp ptr_PSetupCalculatePnPId
+PSetupCalculatePnPId ENDP
+
+PSetupCheckForDriversInDriverStore PROC
+jmp ptr_PSetupCheckForDriversInDriverStore
+PSetupCheckForDriversInDriverStore ENDP
+
+PSetupCopyDriverPackageFiles PROC
+jmp ptr_PSetupCopyDriverPackageFiles
+PSetupCopyDriverPackageFiles ENDP
+
+PSetupCreateDrvSetupPage PROC
+jmp ptr_PSetupCreateDrvSetupPage
+PSetupCreateDrvSetupPage ENDP
+
+PSetupCreateMonitorInfo PROC
+jmp ptr_PSetupCreateMonitorInfo
+PSetupCreateMonitorInfo ENDP
+
+PSetupCreatePrinterDeviceInfoList PROC
+jmp ptr_PSetupCreatePrinterDeviceInfoList
+PSetupCreatePrinterDeviceInfoList ENDP
+
+PSetupDestroyDriverInfo3 PROC
+jmp ptr_PSetupDestroyDriverInfo3
+PSetupDestroyDriverInfo3 ENDP
+
+PSetupDestroyMonitorInfo PROC
+jmp ptr_PSetupDestroyMonitorInfo
+PSetupDestroyMonitorInfo ENDP
+
+PSetupDestroyPrinterDeviceInfoList PROC
+jmp ptr_PSetupDestroyPrinterDeviceInfoList
+PSetupDestroyPrinterDeviceInfoList ENDP
+
+PSetupDestroySelectedDriverInfo PROC
+jmp ptr_PSetupDestroySelectedDriverInfo
+PSetupDestroySelectedDriverInfo ENDP
+
+PSetupDisassociateICMProfiles PROC
+jmp ptr_PSetupDisassociateICMProfiles
+PSetupDisassociateICMProfiles ENDP
+
+PSetupDownloadAndInstallLegacyDriverW PROC
+jmp ptr_PSetupDownloadAndInstallLegacyDriverW
+PSetupDownloadAndInstallLegacyDriverW ENDP
+
+PSetupDriverInfoFromDeviceID PROC
+jmp ptr_PSetupDriverInfoFromDeviceID
+PSetupDriverInfoFromDeviceID ENDP
+
+PSetupDriverInfoFromName PROC
+jmp ptr_PSetupDriverInfoFromName
+PSetupDriverInfoFromName ENDP
+
+PSetupDriverStoreAddDriverPackage PROC
+jmp ptr_PSetupDriverStoreAddDriverPackage
+PSetupDriverStoreAddDriverPackage ENDP
+
+PSetupDriverStoreFindDriverPackageW PROC
+jmp ptr_PSetupDriverStoreFindDriverPackageW
+PSetupDriverStoreFindDriverPackageW ENDP
+
+PSetupElevateAndCallDriverStoreAddDriverPackage PROC
+jmp ptr_PSetupElevateAndCallDriverStoreAddDriverPackage
+PSetupElevateAndCallDriverStoreAddDriverPackage ENDP
+
+PSetupElevatedDriverStoreAddDriverPackageW PROC
+jmp ptr_PSetupElevatedDriverStoreAddDriverPackageW
+PSetupElevatedDriverStoreAddDriverPackageW ENDP
+
+PSetupElevatedInstallDownloadedLegacyDriverW PROC
+jmp ptr_PSetupElevatedInstallDownloadedLegacyDriverW
+PSetupElevatedInstallDownloadedLegacyDriverW ENDP
+
+PSetupElevatedInstallPrinterDriverFromTheWebW PROC
+jmp ptr_PSetupElevatedInstallPrinterDriverFromTheWebW
+PSetupElevatedInstallPrinterDriverFromTheWebW ENDP
+
+PSetupElevatedLegacyPrintDriverInstallW PROC
+jmp ptr_PSetupElevatedLegacyPrintDriverInstallW
+PSetupElevatedLegacyPrintDriverInstallW ENDP
+
+PSetupEnumMonitor PROC
+jmp ptr_PSetupEnumMonitor
+PSetupEnumMonitor ENDP
+
+PSetupFindCompatibleDriverFromName PROC
+jmp ptr_PSetupFindCompatibleDriverFromName
+PSetupFindCompatibleDriverFromName ENDP
+
+PSetupFreeDrvField PROC
+jmp ptr_PSetupFreeDrvField
+PSetupFreeDrvField ENDP
+
+PSetupFreeMem PROC
+jmp ptr_PSetupFreeMem
+PSetupFreeMem ENDP
+
+PSetupGetActualInstallSection PROC
+jmp ptr_PSetupGetActualInstallSection
+PSetupGetActualInstallSection ENDP
+
+PSetupGetCatalogNameFromInfW PROC
+jmp ptr_PSetupGetCatalogNameFromInfW
+PSetupGetCatalogNameFromInfW ENDP
+
+PSetupGetDriverInfo3 PROC
+jmp ptr_PSetupGetDriverInfo3
+PSetupGetDriverInfo3 ENDP
+
+PSetupGetInfDriverStoreLocation PROC
+jmp ptr_PSetupGetInfDriverStoreLocation
+PSetupGetInfDriverStoreLocation ENDP
+
+PSetupGetLocalDataField PROC
+jmp ptr_PSetupGetLocalDataField
+PSetupGetLocalDataField ENDP
+
+PSetupGetPathToSearch PROC
+jmp ptr_PSetupGetPathToSearch
+PSetupGetPathToSearch ENDP
+
+PSetupGetSelectedDriverInfo PROC
+jmp ptr_PSetupGetSelectedDriverInfo
+PSetupGetSelectedDriverInfo ENDP
+
+PSetupInstallICMProfiles PROC
+jmp ptr_PSetupInstallICMProfiles
+PSetupInstallICMProfiles ENDP
+
+PSetupInstallInboxDriverSilently PROC
+jmp ptr_PSetupInstallInboxDriverSilently
+PSetupInstallInboxDriverSilently ENDP
+
+PSetupInstallMonitor PROC
+jmp ptr_PSetupInstallMonitor
+PSetupInstallMonitor ENDP
+
+PSetupInstallPrinterDriver PROC
+jmp ptr_PSetupInstallPrinterDriver
+PSetupInstallPrinterDriver ENDP
+
+PSetupIsCompatibleDriver PROC
+jmp ptr_PSetupIsCompatibleDriver
+PSetupIsCompatibleDriver ENDP
+
+PSetupIsDriverInstalled PROC
+jmp ptr_PSetupIsDriverInstalled
+PSetupIsDriverInstalled ENDP
+
+PSetupIsTheDriverFoundInInfInstalled PROC
+jmp ptr_PSetupIsTheDriverFoundInInfInstalled
+PSetupIsTheDriverFoundInInfInstalled ENDP
+
+PSetupParseInfAndCommitFileQueue PROC
+jmp ptr_PSetupParseInfAndCommitFileQueue
+PSetupParseInfAndCommitFileQueue ENDP
+
+PSetupPreSelectDriver PROC
+jmp ptr_PSetupPreSelectDriver
+PSetupPreSelectDriver ENDP
+
+PSetupProcessPrinterAdded PROC
+jmp ptr_PSetupProcessPrinterAdded
+PSetupProcessPrinterAdded ENDP
+
+PSetupSelectDeviceButtons PROC
+jmp ptr_PSetupSelectDeviceButtons
+PSetupSelectDeviceButtons ENDP
+
+PSetupSelectDriver PROC
+jmp ptr_PSetupSelectDriver
+PSetupSelectDriver ENDP
+
+PSetupSetCoreInboxDriverPath PROC
+jmp ptr_PSetupSetCoreInboxDriverPath
+PSetupSetCoreInboxDriverPath ENDP
+
+PSetupSetDriverPlatform PROC
+jmp ptr_PSetupSetDriverPlatform
+PSetupSetDriverPlatform ENDP
+
+PSetupSetNonInteractiveMode PROC
+jmp ptr_PSetupSetNonInteractiveMode
+PSetupSetNonInteractiveMode ENDP
+
+PSetupSetSelectDevTitleAndInstructions PROC
+jmp ptr_PSetupSetSelectDevTitleAndInstructions
+PSetupSetSelectDevTitleAndInstructions ENDP
+
+PSetupShowBlockedDriverUI PROC
+jmp ptr_PSetupShowBlockedDriverUI
+PSetupShowBlockedDriverUI ENDP
+
+PSetupThisPlatform PROC
+jmp ptr_PSetupThisPlatform
+PSetupThisPlatform ENDP
+
+PSetupWebPnpGenerateDownLevelInfForInboxDriver PROC
+jmp ptr_PSetupWebPnpGenerateDownLevelInfForInboxDriver
+PSetupWebPnpGenerateDownLevelInfForInboxDriver ENDP
+
+ServerInstallW PROC
+jmp ptr_ServerInstallW
+ServerInstallW ENDP
+
+end

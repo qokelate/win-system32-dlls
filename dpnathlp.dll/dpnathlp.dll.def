@@ -1,0 +1,8 @@
+﻿LIBRARY
+EXPORTS
+
+DirectPlayNATHelpCreate @1
+DllCanUnloadNow @3
+DllGetClassObject @4
+DllRegisterServer @2
+DllUnregisterServer @5

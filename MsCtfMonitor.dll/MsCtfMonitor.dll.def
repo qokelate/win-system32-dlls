@@ -1,0 +1,10 @@
+﻿LIBRARY
+EXPORTS
+
+DllCanUnloadNow @1
+DllGetClassObject @2
+DllRegisterServer @3
+DllUnregisterServer @4
+DoMsCtfMonitor @5
+InitLocalMsCtfMonitor @6
+UninitLocalMsCtfMonitor @7

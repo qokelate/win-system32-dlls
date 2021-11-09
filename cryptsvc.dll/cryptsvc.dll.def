@@ -1,0 +1,5 @@
+﻿LIBRARY
+EXPORTS
+
+CryptServiceMain @1
+SvchostPushServiceGlobals @2

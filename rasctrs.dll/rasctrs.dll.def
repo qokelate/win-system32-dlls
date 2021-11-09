@@ -1,0 +1,6 @@
+﻿LIBRARY
+EXPORTS
+
+CloseRasPerformanceData @3
+CollectRasPerformanceData @2
+OpenRasPerformanceData @1

@@ -1,0 +1,7 @@
+﻿LIBRARY
+EXPORTS
+
+CMConfig @3
+CMConfigEx @4
+CmstpExtensionProc @2
+CmstpExtensionProc2 @1

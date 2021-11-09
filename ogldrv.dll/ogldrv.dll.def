@@ -1,0 +1,20 @@
+﻿LIBRARY
+EXPORTS
+
+DrvCopyContext @3
+DrvCreateContext @4
+DrvCreateLayerContext @5
+DrvDeleteContext @6
+DrvDescribeLayerPlane @7
+DrvDescribePixelFormat @1
+DrvGetLayerPaletteEntries @8
+DrvGetProcAddress @9
+DrvRealizeLayerPalette @10
+DrvReleaseContext @11
+DrvSetContext @12
+DrvSetLayerPaletteEntries @13
+DrvSetPixelFormat @2
+DrvShareLists @14
+DrvSwapBuffers @15
+DrvSwapLayerBuffers @16
+DrvValidateVersion @17

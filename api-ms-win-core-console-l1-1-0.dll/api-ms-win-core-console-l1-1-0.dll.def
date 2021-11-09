@@ -1,0 +1,17 @@
+﻿LIBRARY
+EXPORTS
+
+AllocConsole @1
+GetConsoleCP @2
+GetConsoleMode @3
+GetConsoleOutputCP @4
+GetNumberOfConsoleInputEvents @5
+PeekConsoleInputA @6
+ReadConsoleA @7
+ReadConsoleInputA @8
+ReadConsoleInputW @9
+ReadConsoleW @10
+SetConsoleCtrlHandler @11
+SetConsoleMode @12
+WriteConsoleA @13
+WriteConsoleW @14

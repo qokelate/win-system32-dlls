@@ -1,0 +1,21 @@
+﻿LIBRARY
+EXPORTS
+
+DllCanUnloadNow @1
+DllGetClassObject @2
+TdhEnumerateProviderFieldInformation @3
+TdhEnumerateProviderFilters @4
+TdhEnumerateProviders @5
+TdhEnumerateRemoteWBEMProviderFieldInformation @6
+TdhEnumerateRemoteWBEMProviders @7
+TdhFormatProperty @8
+TdhGetAllEventsInformation @9
+TdhGetEventInformation @10
+TdhGetEventMapInformation @11
+TdhGetProperty @12
+TdhGetPropertyOffsetAndSize @13
+TdhGetPropertySize @14
+TdhLoadManifest @15
+TdhQueryProviderFieldInformation @16
+TdhQueryRemoteWBEMProviderFieldInformation @17
+TdhUnloadManifest @18

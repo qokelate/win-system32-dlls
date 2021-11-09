@@ -1,0 +1,9 @@
+﻿LIBRARY
+EXPORTS
+
+AERT_Allocate @1
+AERT_Free @2
+DllCanUnloadNow @3
+DllGetClassObject @4
+DllRegisterServer @5
+DllUnregisterServer @6

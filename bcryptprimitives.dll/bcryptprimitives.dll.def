@@ -1,0 +1,9 @@
+﻿LIBRARY
+EXPORTS
+
+GetAsymmetricEncryptionInterface @1
+GetCipherInterface @2
+GetHashInterface @3
+GetRngInterface @4
+GetSecretAgreementInterface @5
+GetSignatureInterface @6

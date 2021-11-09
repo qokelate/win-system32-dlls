@@ -1,0 +1,250 @@
+ifndef X64
+.686p
+.XMM
+.safeseh SEH_handler
+.model flat, C
+option dotname
+option casemap : none
+endif
+
+extern ptr_AuthzAccessCheck : PTR;
+extern ptr_AuthzAddSidsToContext : PTR;
+extern ptr_AuthzCachedAccessCheck : PTR;
+extern ptr_AuthzEnumerateSecurityEventSources : PTR;
+extern ptr_AuthzEvaluateSacl : PTR;
+extern ptr_AuthzFreeAuditEvent : PTR;
+extern ptr_AuthzFreeContext : PTR;
+extern ptr_AuthzFreeHandle : PTR;
+extern ptr_AuthzFreeResourceManager : PTR;
+extern ptr_AuthzGetInformationFromContext : PTR;
+extern ptr_AuthzInitializeContextFromAuthzContext : PTR;
+extern ptr_AuthzInitializeContextFromSid : PTR;
+extern ptr_AuthzInitializeContextFromToken : PTR;
+extern ptr_AuthzInitializeObjectAccessAuditEvent : PTR;
+extern ptr_AuthzInitializeObjectAccessAuditEvent2 : PTR;
+extern ptr_AuthzInitializeResourceManager : PTR;
+extern ptr_AuthzInstallSecurityEventSource : PTR;
+extern ptr_AuthzModifySecurityAttributes : PTR;
+extern ptr_AuthzOpenObjectAudit : PTR;
+extern ptr_AuthzRegisterSecurityEventSource : PTR;
+extern ptr_AuthzReportSecurityEvent : PTR;
+extern ptr_AuthzReportSecurityEventFromParams : PTR;
+extern ptr_AuthzUninstallSecurityEventSource : PTR;
+extern ptr_AuthzUnregisterSecurityEventSource : PTR;
+extern ptr_AuthziAccessCheckEx : PTR;
+extern ptr_AuthziAllocateAuditParams : PTR;
+extern ptr_AuthziCheckContextMembership : PTR;
+extern ptr_AuthziFreeAuditEventType : PTR;
+extern ptr_AuthziFreeAuditParams : PTR;
+extern ptr_AuthziFreeAuditQueue : PTR;
+extern ptr_AuthziGenerateAdminAlertAuditW : PTR;
+extern ptr_AuthziInitializeAuditEvent : PTR;
+extern ptr_AuthziInitializeAuditEventType : PTR;
+extern ptr_AuthziInitializeAuditParams : PTR;
+extern ptr_AuthziInitializeAuditParamsFromArray : PTR;
+extern ptr_AuthziInitializeAuditParamsWithRM : PTR;
+extern ptr_AuthziInitializeAuditQueue : PTR;
+extern ptr_AuthziInitializeContextFromSid : PTR;
+extern ptr_AuthziLogAuditEvent : PTR;
+extern ptr_AuthziModifyAuditEvent : PTR;
+extern ptr_AuthziModifyAuditEvent2 : PTR;
+extern ptr_AuthziModifyAuditEventType : PTR;
+extern ptr_AuthziModifyAuditQueue : PTR;
+extern ptr_AuthziModifySecurityAttributes : PTR;
+extern ptr_AuthziQuerySecurityAttributes : PTR;
+extern ptr_AuthziSourceAudit : PTR;
+
+
+.code
+
+align 16
+SEH_handler   proc
+; handler
+ret
+SEH_handler   endp
+
+AuthzAccessCheck PROC
+jmp ptr_AuthzAccessCheck
+AuthzAccessCheck ENDP
+
+AuthzAddSidsToContext PROC
+jmp ptr_AuthzAddSidsToContext
+AuthzAddSidsToContext ENDP
+
+AuthzCachedAccessCheck PROC
+jmp ptr_AuthzCachedAccessCheck
+AuthzCachedAccessCheck ENDP
+
+AuthzEnumerateSecurityEventSources PROC
+jmp ptr_AuthzEnumerateSecurityEventSources
+AuthzEnumerateSecurityEventSources ENDP
+
+AuthzEvaluateSacl PROC
+jmp ptr_AuthzEvaluateSacl
+AuthzEvaluateSacl ENDP
+
+AuthzFreeAuditEvent PROC
+jmp ptr_AuthzFreeAuditEvent
+AuthzFreeAuditEvent ENDP
+
+AuthzFreeContext PROC
+jmp ptr_AuthzFreeContext
+AuthzFreeContext ENDP
+
+AuthzFreeHandle PROC
+jmp ptr_AuthzFreeHandle
+AuthzFreeHandle ENDP
+
+AuthzFreeResourceManager PROC
+jmp ptr_AuthzFreeResourceManager
+AuthzFreeResourceManager ENDP
+
+AuthzGetInformationFromContext PROC
+jmp ptr_AuthzGetInformationFromContext
+AuthzGetInformationFromContext ENDP
+
+AuthzInitializeContextFromAuthzContext PROC
+jmp ptr_AuthzInitializeContextFromAuthzContext
+AuthzInitializeContextFromAuthzContext ENDP
+
+AuthzInitializeContextFromSid PROC
+jmp ptr_AuthzInitializeContextFromSid
+AuthzInitializeContextFromSid ENDP
+
+AuthzInitializeContextFromToken PROC
+jmp ptr_AuthzInitializeContextFromToken
+AuthzInitializeContextFromToken ENDP
+
+AuthzInitializeObjectAccessAuditEvent PROC
+jmp ptr_AuthzInitializeObjectAccessAuditEvent
+AuthzInitializeObjectAccessAuditEvent ENDP
+
+AuthzInitializeObjectAccessAuditEvent2 PROC
+jmp ptr_AuthzInitializeObjectAccessAuditEvent2
+AuthzInitializeObjectAccessAuditEvent2 ENDP
+
+AuthzInitializeResourceManager PROC
+jmp ptr_AuthzInitializeResourceManager
+AuthzInitializeResourceManager ENDP
+
+AuthzInstallSecurityEventSource PROC
+jmp ptr_AuthzInstallSecurityEventSource
+AuthzInstallSecurityEventSource ENDP
+
+AuthzModifySecurityAttributes PROC
+jmp ptr_AuthzModifySecurityAttributes
+AuthzModifySecurityAttributes ENDP
+
+AuthzOpenObjectAudit PROC
+jmp ptr_AuthzOpenObjectAudit
+AuthzOpenObjectAudit ENDP
+
+AuthzRegisterSecurityEventSource PROC
+jmp ptr_AuthzRegisterSecurityEventSource
+AuthzRegisterSecurityEventSource ENDP
+
+AuthzReportSecurityEvent PROC
+jmp ptr_AuthzReportSecurityEvent
+AuthzReportSecurityEvent ENDP
+
+AuthzReportSecurityEventFromParams PROC
+jmp ptr_AuthzReportSecurityEventFromParams
+AuthzReportSecurityEventFromParams ENDP
+
+AuthzUninstallSecurityEventSource PROC
+jmp ptr_AuthzUninstallSecurityEventSource
+AuthzUninstallSecurityEventSource ENDP
+
+AuthzUnregisterSecurityEventSource PROC
+jmp ptr_AuthzUnregisterSecurityEventSource
+AuthzUnregisterSecurityEventSource ENDP
+
+AuthziAccessCheckEx PROC
+jmp ptr_AuthziAccessCheckEx
+AuthziAccessCheckEx ENDP
+
+AuthziAllocateAuditParams PROC
+jmp ptr_AuthziAllocateAuditParams
+AuthziAllocateAuditParams ENDP
+
+AuthziCheckContextMembership PROC
+jmp ptr_AuthziCheckContextMembership
+AuthziCheckContextMembership ENDP
+
+AuthziFreeAuditEventType PROC
+jmp ptr_AuthziFreeAuditEventType
+AuthziFreeAuditEventType ENDP
+
+AuthziFreeAuditParams PROC
+jmp ptr_AuthziFreeAuditParams
+AuthziFreeAuditParams ENDP
+
+AuthziFreeAuditQueue PROC
+jmp ptr_AuthziFreeAuditQueue
+AuthziFreeAuditQueue ENDP
+
+AuthziGenerateAdminAlertAuditW PROC
+jmp ptr_AuthziGenerateAdminAlertAuditW
+AuthziGenerateAdminAlertAuditW ENDP
+
+AuthziInitializeAuditEvent PROC
+jmp ptr_AuthziInitializeAuditEvent
+AuthziInitializeAuditEvent ENDP
+
+AuthziInitializeAuditEventType PROC
+jmp ptr_AuthziInitializeAuditEventType
+AuthziInitializeAuditEventType ENDP
+
+AuthziInitializeAuditParams PROC
+jmp ptr_AuthziInitializeAuditParams
+AuthziInitializeAuditParams ENDP
+
+AuthziInitializeAuditParamsFromArray PROC
+jmp ptr_AuthziInitializeAuditParamsFromArray
+AuthziInitializeAuditParamsFromArray ENDP
+
+AuthziInitializeAuditParamsWithRM PROC
+jmp ptr_AuthziInitializeAuditParamsWithRM
+AuthziInitializeAuditParamsWithRM ENDP
+
+AuthziInitializeAuditQueue PROC
+jmp ptr_AuthziInitializeAuditQueue
+AuthziInitializeAuditQueue ENDP
+
+AuthziInitializeContextFromSid PROC
+jmp ptr_AuthziInitializeContextFromSid
+AuthziInitializeContextFromSid ENDP
+
+AuthziLogAuditEvent PROC
+jmp ptr_AuthziLogAuditEvent
+AuthziLogAuditEvent ENDP
+
+AuthziModifyAuditEvent PROC
+jmp ptr_AuthziModifyAuditEvent
+AuthziModifyAuditEvent ENDP
+
+AuthziModifyAuditEvent2 PROC
+jmp ptr_AuthziModifyAuditEvent2
+AuthziModifyAuditEvent2 ENDP
+
+AuthziModifyAuditEventType PROC
+jmp ptr_AuthziModifyAuditEventType
+AuthziModifyAuditEventType ENDP
+
+AuthziModifyAuditQueue PROC
+jmp ptr_AuthziModifyAuditQueue
+AuthziModifyAuditQueue ENDP
+
+AuthziModifySecurityAttributes PROC
+jmp ptr_AuthziModifySecurityAttributes
+AuthziModifySecurityAttributes ENDP
+
+AuthziQuerySecurityAttributes PROC
+jmp ptr_AuthziQuerySecurityAttributes
+AuthziQuerySecurityAttributes ENDP
+
+AuthziSourceAudit PROC
+jmp ptr_AuthziSourceAudit
+AuthziSourceAudit ENDP
+
+end

@@ -1,0 +1,8 @@
+﻿LIBRARY
+EXPORTS
+
+ExecuteUninstall @1
+GetUninstallImageSize @2
+IsUninstallImageValid @3
+ProvideUiAlerts @4
+RemoveUninstallImage @5

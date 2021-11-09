@@ -1,0 +1,15 @@
+﻿LIBRARY
+EXPORTS
+
+AttachVirtualDisk @1
+CompactVirtualDisk @2
+CreateVirtualDisk @3
+DetachVirtualDisk @4
+ExpandVirtualDisk @5
+GetStorageDependencyInformation @6
+GetVirtualDiskInformation @7
+GetVirtualDiskOperationProgress @8
+GetVirtualDiskPhysicalPath @9
+MergeVirtualDisk @10
+OpenVirtualDisk @11
+SetVirtualDiskInformation @12

@@ -1,0 +1,9 @@
+﻿LIBRARY
+EXPORTS
+
+DllRegisterServer @5
+DllUnregisterServer @6
+ProcessConnectivityPlatformPolicy @1
+ProcessEQoSPolicy @2
+ProcessPSCHEDPolicy @3
+ProcessTCPIPPolicy @4

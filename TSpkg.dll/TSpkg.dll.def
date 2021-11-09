@@ -1,0 +1,5 @@
+﻿LIBRARY
+EXPORTS
+
+SpLsaModeInitialize @1
+SpUserModeInitialize @2

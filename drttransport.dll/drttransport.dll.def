@@ -1,0 +1,5 @@
+﻿LIBRARY
+EXPORTS
+
+DrtCreateIpv6UdpTransport @1
+DrtDeleteIpv6UdpTransport @2

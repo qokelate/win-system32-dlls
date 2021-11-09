@@ -1,0 +1,8 @@
+﻿LIBRARY
+EXPORTS
+
+EnterModalLoop @128
+GetAllocCounters @129
+InsideModalLoop @130
+LeaveModalLoop @131
+ReportFxSnapinException @132

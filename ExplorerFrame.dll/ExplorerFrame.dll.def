@@ -1,0 +1,6 @@
+﻿LIBRARY
+EXPORTS
+
+DllCanUnloadNow @112
+DllGetClassObject @113
+DllGetVersion @114

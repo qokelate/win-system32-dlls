@@ -1,0 +1,6 @@
+﻿LIBRARY
+EXPORTS
+
+CloseOSObject @1
+CollectOSObjectData @2
+OpenOSObject @3

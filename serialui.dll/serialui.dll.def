@@ -1,0 +1,9 @@
+﻿LIBRARY
+EXPORTS
+
+drvCommConfigDialogA @3
+drvCommConfigDialogW @2
+drvGetDefaultCommConfigA @7
+drvGetDefaultCommConfigW @6
+drvSetDefaultCommConfigA @5
+drvSetDefaultCommConfigW @4

@@ -1,0 +1,120 @@
+ifndef X64
+.686p
+.XMM
+.safeseh SEH_handler
+.model flat, C
+option dotname
+option casemap : none
+endif
+
+extern ptr___std_atomic_compare_exchange_128 : PTR;
+extern ptr___std_atomic_get_mutex : PTR;
+extern ptr___std_atomic_has_cmpxchg16b : PTR;
+extern ptr___std_atomic_notify_all_direct : PTR;
+extern ptr___std_atomic_notify_all_indirect : PTR;
+extern ptr___std_atomic_notify_one_direct : PTR;
+extern ptr___std_atomic_notify_one_indirect : PTR;
+extern ptr___std_atomic_set_api_level : PTR;
+extern ptr___std_atomic_wait_direct : PTR;
+extern ptr___std_atomic_wait_get_deadline : PTR;
+extern ptr___std_atomic_wait_get_remaining_timeout : PTR;
+extern ptr___std_atomic_wait_indirect : PTR;
+extern ptr___std_bulk_submit_threadpool_work : PTR;
+extern ptr___std_close_threadpool_work : PTR;
+extern ptr___std_create_threadpool_work : PTR;
+extern ptr___std_execution_wait_on_uchar : PTR;
+extern ptr___std_execution_wake_by_address_all : PTR;
+extern ptr___std_parallel_algorithms_hw_threads : PTR;
+extern ptr___std_submit_threadpool_work : PTR;
+extern ptr___std_wait_for_threadpool_work_callbacks : PTR;
+
+
+.code
+
+align 16
+SEH_handler   proc
+; handler
+ret
+SEH_handler   endp
+
+__std_atomic_compare_exchange_128 PROC
+jmp ptr___std_atomic_compare_exchange_128
+__std_atomic_compare_exchange_128 ENDP
+
+__std_atomic_get_mutex PROC
+jmp ptr___std_atomic_get_mutex
+__std_atomic_get_mutex ENDP
+
+__std_atomic_has_cmpxchg16b PROC
+jmp ptr___std_atomic_has_cmpxchg16b
+__std_atomic_has_cmpxchg16b ENDP
+
+__std_atomic_notify_all_direct PROC
+jmp ptr___std_atomic_notify_all_direct
+__std_atomic_notify_all_direct ENDP
+
+__std_atomic_notify_all_indirect PROC
+jmp ptr___std_atomic_notify_all_indirect
+__std_atomic_notify_all_indirect ENDP
+
+__std_atomic_notify_one_direct PROC
+jmp ptr___std_atomic_notify_one_direct
+__std_atomic_notify_one_direct ENDP
+
+__std_atomic_notify_one_indirect PROC
+jmp ptr___std_atomic_notify_one_indirect
+__std_atomic_notify_one_indirect ENDP
+
+__std_atomic_set_api_level PROC
+jmp ptr___std_atomic_set_api_level
+__std_atomic_set_api_level ENDP
+
+__std_atomic_wait_direct PROC
+jmp ptr___std_atomic_wait_direct
+__std_atomic_wait_direct ENDP
+
+__std_atomic_wait_get_deadline PROC
+jmp ptr___std_atomic_wait_get_deadline
+__std_atomic_wait_get_deadline ENDP
+
+__std_atomic_wait_get_remaining_timeout PROC
+jmp ptr___std_atomic_wait_get_remaining_timeout
+__std_atomic_wait_get_remaining_timeout ENDP
+
+__std_atomic_wait_indirect PROC
+jmp ptr___std_atomic_wait_indirect
+__std_atomic_wait_indirect ENDP
+
+__std_bulk_submit_threadpool_work PROC
+jmp ptr___std_bulk_submit_threadpool_work
+__std_bulk_submit_threadpool_work ENDP
+
+__std_close_threadpool_work PROC
+jmp ptr___std_close_threadpool_work
+__std_close_threadpool_work ENDP
+
+__std_create_threadpool_work PROC
+jmp ptr___std_create_threadpool_work
+__std_create_threadpool_work ENDP
+
+__std_execution_wait_on_uchar PROC
+jmp ptr___std_execution_wait_on_uchar
+__std_execution_wait_on_uchar ENDP
+
+__std_execution_wake_by_address_all PROC
+jmp ptr___std_execution_wake_by_address_all
+__std_execution_wake_by_address_all ENDP
+
+__std_parallel_algorithms_hw_threads PROC
+jmp ptr___std_parallel_algorithms_hw_threads
+__std_parallel_algorithms_hw_threads ENDP
+
+__std_submit_threadpool_work PROC
+jmp ptr___std_submit_threadpool_work
+__std_submit_threadpool_work ENDP
+
+__std_wait_for_threadpool_work_callbacks PROC
+jmp ptr___std_wait_for_threadpool_work_callbacks
+__std_wait_for_threadpool_work_callbacks ENDP
+
+end

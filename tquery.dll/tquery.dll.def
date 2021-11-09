@@ -1,0 +1,27 @@
+﻿LIBRARY
+EXPORTS
+
+AccessDebugTracer @360
+AccessRetailTracer @361
+CIState @362
+ChangeToInitialDirectory @272
+CreatePropMapperStorage @274
+CreateSecurityStoreStorage @275
+DllCanUnloadNow @363
+DllGetClassObject @364
+DllRegisterServer @365
+DllUnregisterServer @366
+ExceptInitialize @279
+ExternPropagateEventToOpenQueries @367
+ForceMasterMerge @368
+PerfmonClose @369
+PerfmonCollect @370
+PerfmonIDXClose @371
+PerfmonIDXCollect @372
+PerfmonIDXOpen @373
+PerfmonOpen @374
+RetailTracerDisable @375
+RetailTracerEnable @376
+RetailTracerReleaseAll @377
+SetInitialDirectory @340
+UseLowFragmentationHeap @378

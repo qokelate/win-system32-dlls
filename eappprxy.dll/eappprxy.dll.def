@@ -1,0 +1,19 @@
+﻿LIBRARY
+EXPORTS
+
+EapHostPeerBeginSession @1
+EapHostPeerClearConnection @2
+EapHostPeerEndSession @3
+EapHostPeerFreeEapError @4
+EapHostPeerFreeRuntimeMemory @5
+EapHostPeerGetAuthStatus @6
+EapHostPeerGetIdentity @7
+EapHostPeerGetResponseAttributes @8
+EapHostPeerGetResult @9
+EapHostPeerGetSendPacket @10
+EapHostPeerGetUIContext @11
+EapHostPeerInitialize @12
+EapHostPeerProcessReceivedPacket @13
+EapHostPeerSetResponseAttributes @14
+EapHostPeerSetUIContext @15
+EapHostPeerUninitialize @16

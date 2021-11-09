@@ -1,0 +1,19 @@
+﻿LIBRARY
+EXPORTS
+
+CPlApplet @100
+EnumEnabledLayoutOrTip @110
+EnumLayoutOrTipForSetup @108
+GetDefaultLayout @113
+GetLayoutDescription @114
+InputDll_DownlevelEnumLayoutOrTipForSetup @203
+InputDll_DownlevelInitialize @200
+InputDll_DownlevelSetUILanguage @201
+InputDll_DownlevelUninitialize @202
+InstallLayoutOrTip @104
+InstallLayoutOrTipUserReg @109
+QueryLayoutOrTipString @111
+QueryLayoutOrTipStringUserReg @112
+SaveDefaultUserInputSettings @105
+SaveSystemAcctInputSettings @106
+SetDefaultLayoutOrTip @107

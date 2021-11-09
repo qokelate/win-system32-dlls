@@ -1,0 +1,8 @@
+﻿LIBRARY
+EXPORTS
+
+AppIDDecodeAttributeString @1
+AppIDEncodeAttributeString @2
+AppIDFreeAttributeString @3
+AppIDGetFileAttributes @4
+AppIDReleaseFileAttributes @5

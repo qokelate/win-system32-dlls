@@ -1,0 +1,25 @@
+﻿LIBRARY
+EXPORTS
+
+DllCanUnloadNow @4
+DllGetClassObject @5
+DllRegisterServer @6
+DllUnregisterServer @7
+RasCpEnumProtocolIds @8
+RasCpGetInfo @9
+RasEapCreateConnectionProperties @10
+RasEapCreateConnectionProperties2 @1
+RasEapCreateConnectionPropertiesXml @2
+RasEapCreateUserProperties @11
+RasEapCreateUserProperties2 @3
+RasEapFreeMemory @12
+RasEapGetCredentials @13
+RasEapGetIdentity @14
+RasEapGetInfo @15
+RasEapGetMethodProperties @16
+RasEapInvokeConfigUI @17
+RasEapInvokeInteractiveUI @18
+RasEapQueryCredentialInputFields @19
+RasEapQueryInteractiveUIInputFields @20
+RasEapQueryUIBlobFromInteractiveUIInputFields @21
+RasEapQueryUserBlobFromCredentialInputFields @22

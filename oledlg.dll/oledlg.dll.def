@@ -1,0 +1,26 @@
+﻿LIBRARY
+EXPORTS
+
+OleUIAddVerbMenuA @1
+OleUIAddVerbMenuW @13
+OleUIBusyA @8
+OleUIBusyW @14
+OleUICanConvertOrActivateAs @2
+OleUIChangeIconA @6
+OleUIChangeIconW @15
+OleUIChangeSourceA @12
+OleUIChangeSourceW @16
+OleUIConvertA @7
+OleUIConvertW @17
+OleUIEditLinksA @5
+OleUIEditLinksW @18
+OleUIInsertObjectA @3
+OleUIInsertObjectW @19
+OleUIObjectPropertiesA @11
+OleUIObjectPropertiesW @20
+OleUIPasteSpecialA @4
+OleUIPasteSpecialW @21
+OleUIPromptUserA @10
+OleUIPromptUserW @22
+OleUIUpdateLinksA @9
+OleUIUpdateLinksW @23

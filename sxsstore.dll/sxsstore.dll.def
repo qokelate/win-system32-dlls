@@ -1,0 +1,7 @@
+﻿LIBRARY
+EXPORTS
+
+DllGetClassObject @1
+DllMain @2
+SxsStoreFinalize @3
+SxsStoreInitialize @4

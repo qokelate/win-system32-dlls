@@ -1,0 +1,27 @@
+﻿LIBRARY
+EXPORTS
+
+AccessibleChildren @3
+AccessibleObjectFromEvent @4
+AccessibleObjectFromPoint @5
+AccessibleObjectFromWindow @6
+CreateStdAccessibleObject @7
+CreateStdAccessibleProxyA @8
+CreateStdAccessibleProxyW @9
+DllCanUnloadNow @10
+DllGetClassObject @11
+DllRegisterServer @1
+DllUnregisterServer @2
+GetOleaccVersionInfo @12
+GetProcessHandleFromHwnd @13
+GetRoleTextA @14
+GetRoleTextW @15
+GetStateTextA @16
+GetStateTextW @17
+IID_IAccessible @18
+IID_IAccessibleHandler @19
+LIBID_Accessibility @20
+LresultFromObject @21
+ObjectFromLresult @22
+PropMgrClient_LookupProp @23
+WindowFromAccessibleObject @24

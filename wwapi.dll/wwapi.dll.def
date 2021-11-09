@@ -1,0 +1,26 @@
+﻿LIBRARY
+EXPORTS
+
+WwanAllocateMemory @1
+WwanCloseHandle @2
+WwanConnect @3
+WwanConnectByActivityId @4
+WwanConvertToInterfaceObject @5
+WwanDeleteProfile @6
+WwanDisconnect @7
+WwanEnumerateInterfaces @8
+WwanFreeMemory @9
+WwanGetProfile @10
+WwanGetProfileIstream @11
+WwanGetProfileList @12
+WwanOpenHandle @13
+WwanQueryInterface @14
+WwanRegister @15
+WwanRegisterNotification @16
+WwanScan @17
+WwanSetInterface @18
+WwanSetProfile @19
+WwanSetSmsConfiguration @20
+WwanSmsDelete @21
+WwanSmsRead @22
+WwanSmsSend @23

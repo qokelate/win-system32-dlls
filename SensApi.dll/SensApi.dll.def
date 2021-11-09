@@ -1,0 +1,6 @@
+﻿LIBRARY
+EXPORTS
+
+IsDestinationReachableA @1
+IsDestinationReachableW @2
+IsNetworkAlive @3

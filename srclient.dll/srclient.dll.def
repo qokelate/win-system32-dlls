@@ -1,0 +1,14 @@
+﻿LIBRARY
+EXPORTS
+
+DisableSR @1
+DisableSRInternal @2
+EnableSR @3
+EnableSREx @4
+EnableSRInternal @5
+SRNewSystemId @6
+SRRemoveRestorePoint @7
+SRSetRestorePointA @8
+SRSetRestorePointInternal @9
+SRSetRestorePointW @10
+SetSRStateAfterSetup @11

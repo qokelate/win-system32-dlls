@@ -1,0 +1,9 @@
+﻿LIBRARY
+EXPORTS
+
+DllCanUnloadNow @1
+DllGetClassObject @2
+DllRegisterServer @3
+DllUnregisterServer @4
+InitializeEapHost @5
+UninitializeEapHost @6

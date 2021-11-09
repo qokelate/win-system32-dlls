@@ -1,0 +1,6 @@
+﻿LIBRARY
+EXPORTS
+
+CloseNetSvcsObject @1
+CollectNetSvcsObjectData @2
+OpenNetSvcsObject @3

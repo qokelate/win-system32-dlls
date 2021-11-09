@@ -1,0 +1,12 @@
+﻿LIBRARY
+EXPORTS
+
+DllCanUnloadNow @8
+DllGetClassObject @9
+ImageView_Fullscreen @1
+ImageView_FullscreenA @2
+ImageView_FullscreenW @3
+ImageView_PrintTo @4
+ImageView_PrintToA @5
+ImageView_PrintToW @6
+imageview_fullscreenW @7

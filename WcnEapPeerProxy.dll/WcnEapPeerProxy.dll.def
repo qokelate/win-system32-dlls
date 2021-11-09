@@ -1,0 +1,7 @@
+﻿LIBRARY
+EXPORTS
+
+EapPeerFreeErrorMemory @1
+EapPeerFreeMemory @2
+EapPeerGetInfo @3
+EapPeerGetMethodProperties @4

@@ -1,0 +1,25 @@
+﻿LIBRARY
+EXPORTS
+
+ExpandEnvironmentStringsA @1
+ExpandEnvironmentStringsW @2
+FreeEnvironmentStringsA @3
+FreeEnvironmentStringsW @4
+GetCommandLineA @5
+GetCommandLineW @6
+GetCurrentDirectoryA @7
+GetCurrentDirectoryW @8
+GetEnvironmentStrings @9
+GetEnvironmentStringsA @10
+GetEnvironmentStringsW @11
+GetEnvironmentVariableA @12
+GetEnvironmentVariableW @13
+GetStdHandle @14
+SearchPathW @15
+SetCurrentDirectoryA @16
+SetCurrentDirectoryW @17
+SetEnvironmentStringsW @18
+SetEnvironmentVariableA @19
+SetEnvironmentVariableW @20
+SetStdHandle @21
+SetStdHandleEx @22

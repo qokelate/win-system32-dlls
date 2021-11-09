@@ -1,0 +1,21 @@
+﻿LIBRARY
+EXPORTS
+
+DllMain @14
+I_SystemFocusDialog @15
+NPAddConnection @17
+NPAddConnection3 @38
+NPCancelConnection @18
+NPCloseEnum @35
+NPEnumResource @34
+NPFormatNetworkName @36
+NPGetCaps @13
+NPGetConnection @12
+NPGetConnection3 @54
+NPGetConnectionPerformance @49
+NPGetReconnectFlags @53
+NPGetResourceInformation @52
+NPGetResourceParent @41
+NPGetUniversalName @40
+NPGetUser @16
+NPOpenEnum @33

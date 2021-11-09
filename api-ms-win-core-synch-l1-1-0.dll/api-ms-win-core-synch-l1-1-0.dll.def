@@ -1,0 +1,45 @@
+﻿LIBRARY
+EXPORTS
+
+AcquireSRWLockExclusive @1
+AcquireSRWLockShared @2
+CancelWaitableTimer @3
+CreateEventA @4
+CreateEventExA @5
+CreateEventExW @6
+CreateEventW @7
+CreateMutexA @8
+CreateMutexExA @9
+CreateMutexExW @10
+CreateMutexW @11
+CreateSemaphoreExW @12
+CreateWaitableTimerExW @13
+DeleteCriticalSection @14
+EnterCriticalSection @15
+InitializeCriticalSection @16
+InitializeCriticalSectionAndSpinCount @17
+InitializeCriticalSectionEx @18
+InitializeSRWLock @19
+LeaveCriticalSection @20
+OpenEventA @21
+OpenEventW @22
+OpenMutexW @23
+OpenProcess @24
+OpenSemaphoreW @25
+OpenWaitableTimerW @26
+ReleaseMutex @27
+ReleaseSRWLockExclusive @28
+ReleaseSRWLockShared @29
+ReleaseSemaphore @30
+ResetEvent @31
+SetCriticalSectionSpinCount @32
+SetEvent @33
+SetWaitableTimer @34
+SetWaitableTimerEx @35
+SleepEx @36
+TryAcquireSRWLockExclusive @37
+TryAcquireSRWLockShared @38
+TryEnterCriticalSection @39
+WaitForMultipleObjectsEx @40
+WaitForSingleObject @41
+WaitForSingleObjectEx @42

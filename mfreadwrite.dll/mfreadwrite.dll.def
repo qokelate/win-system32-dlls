@@ -1,0 +1,10 @@
+﻿LIBRARY
+EXPORTS
+
+DllCanUnloadNow @1
+DllGetClassObject @2
+MFCreateSinkWriterFromMediaSink @3
+MFCreateSinkWriterFromURL @4
+MFCreateSourceReaderFromByteStream @5
+MFCreateSourceReaderFromMediaSource @6
+MFCreateSourceReaderFromURL @7

@@ -1,0 +1,38 @@
+﻿LIBRARY
+EXPORTS
+
+NetGetDisplayInformationIndex @1
+NetGroupAdd @2
+NetGroupAddUser @3
+NetGroupDel @4
+NetGroupDelUser @5
+NetGroupEnum @6
+NetGroupGetInfo @7
+NetGroupGetUsers @8
+NetGroupSetInfo @9
+NetGroupSetUsers @10
+NetLocalGroupAdd @11
+NetLocalGroupAddMember @12
+NetLocalGroupAddMembers @13
+NetLocalGroupDel @14
+NetLocalGroupDelMember @15
+NetLocalGroupDelMembers @16
+NetLocalGroupEnum @17
+NetLocalGroupGetInfo @18
+NetLocalGroupGetMembers @19
+NetLocalGroupSetInfo @20
+NetLocalGroupSetMembers @21
+NetQueryDisplayInformation @22
+NetUserAdd @23
+NetUserChangePassword @24
+NetUserDel @25
+NetUserEnum @26
+NetUserGetGroups @27
+NetUserGetInfo @28
+NetUserGetLocalGroups @29
+NetUserModalsGet @30
+NetUserModalsSet @31
+NetUserSetGroups @32
+NetUserSetInfo @33
+NetValidatePasswordPolicy @34
+NetValidatePasswordPolicyFree @35

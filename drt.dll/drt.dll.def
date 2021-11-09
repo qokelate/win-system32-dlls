@@ -1,0 +1,23 @@
+﻿LIBRARY
+EXPORTS
+
+DrtClose @5
+DrtContinueSearch @6
+DrtEndSearch @7
+DrtFlushCache @1
+DrtGetCacheStatsEx @2
+DrtGetEventData @8
+DrtGetEventDataSize @9
+DrtGetInstanceName @10
+DrtGetInstanceNameSize @11
+DrtGetSearchPath @12
+DrtGetSearchPathSize @13
+DrtGetSearchResult @14
+DrtGetSearchResultSize @15
+DrtOpen @16
+DrtPingPeer @3
+DrtRegisterKey @17
+DrtStartPartitionDetection @4
+DrtStartSearch @18
+DrtUnregisterKey @19
+DrtUpdateKey @20

@@ -1,0 +1,18 @@
+﻿LIBRARY
+EXPORTS
+
+CreateVssBackupComponentsInternal @77
+CreateVssExamineWriterMetadataInternal @78
+CreateVssExpressWriterInternal @79
+CreateWriter @80
+CreateWriterEx @81
+DllCanUnloadNow @82
+DllGetClassObject @83
+GetProviderMgmtInterface @84
+GetProviderMgmtInterfaceInternal @85
+IsVolumeSnapshotted @5
+IsVolumeSnapshottedInternal @86
+ShouldBlockRevert @7
+ShouldBlockRevertInternal @87
+VssFreeSnapshotProperties @6
+VssFreeSnapshotPropertiesInternal @88

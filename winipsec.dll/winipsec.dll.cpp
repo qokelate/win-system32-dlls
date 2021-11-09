@@ -1,0 +1,260 @@
+﻿#include <windows.h>
+#include <shlwapi.h>
+
+extern "C" {
+extern void *ptr_AddMMAuthMethods;
+void *ptr_AddMMAuthMethods = NULL;
+extern void *ptr_AddMMFilter;
+void *ptr_AddMMFilter = NULL;
+extern void *ptr_AddMMFilterEx;
+void *ptr_AddMMFilterEx = NULL;
+extern void *ptr_AddMMPolicy;
+void *ptr_AddMMPolicy = NULL;
+extern void *ptr_AddQMPolicy;
+void *ptr_AddQMPolicy = NULL;
+extern void *ptr_AddSAs;
+void *ptr_AddSAs = NULL;
+extern void *ptr_AddTransportFilter;
+void *ptr_AddTransportFilter = NULL;
+extern void *ptr_AddTransportFilterEx;
+void *ptr_AddTransportFilterEx = NULL;
+extern void *ptr_AddTunnelFilter;
+void *ptr_AddTunnelFilter = NULL;
+extern void *ptr_CloseIKENegotiationHandle;
+void *ptr_CloseIKENegotiationHandle = NULL;
+extern void *ptr_CloseIKENotifyHandle;
+void *ptr_CloseIKENotifyHandle = NULL;
+extern void *ptr_CloseMMFilterHandle;
+void *ptr_CloseMMFilterHandle = NULL;
+extern void *ptr_CloseTransportFilterHandle;
+void *ptr_CloseTransportFilterHandle = NULL;
+extern void *ptr_CloseTunnelFilterHandle;
+void *ptr_CloseTunnelFilterHandle = NULL;
+extern void *ptr_DeleteMMAuthMethods;
+void *ptr_DeleteMMAuthMethods = NULL;
+extern void *ptr_DeleteMMFilter;
+void *ptr_DeleteMMFilter = NULL;
+extern void *ptr_DeleteMMPolicy;
+void *ptr_DeleteMMPolicy = NULL;
+extern void *ptr_DeleteMMSAs;
+void *ptr_DeleteMMSAs = NULL;
+extern void *ptr_DeleteQMPolicy;
+void *ptr_DeleteQMPolicy = NULL;
+extern void *ptr_DeleteQMSAs;
+void *ptr_DeleteQMSAs = NULL;
+extern void *ptr_DeleteTransportFilter;
+void *ptr_DeleteTransportFilter = NULL;
+extern void *ptr_DeleteTunnelFilter;
+void *ptr_DeleteTunnelFilter = NULL;
+extern void *ptr_DllMain;
+void *ptr_DllMain = NULL;
+extern void *ptr_EnumIPSecInterfaces;
+void *ptr_EnumIPSecInterfaces = NULL;
+extern void *ptr_EnumMMAuthMethods;
+void *ptr_EnumMMAuthMethods = NULL;
+extern void *ptr_EnumMMFilters;
+void *ptr_EnumMMFilters = NULL;
+extern void *ptr_EnumMMFiltersEx;
+void *ptr_EnumMMFiltersEx = NULL;
+extern void *ptr_EnumMMPolicies;
+void *ptr_EnumMMPolicies = NULL;
+extern void *ptr_EnumMMSAs;
+void *ptr_EnumMMSAs = NULL;
+extern void *ptr_EnumQMPolicies;
+void *ptr_EnumQMPolicies = NULL;
+extern void *ptr_EnumQMSAs;
+void *ptr_EnumQMSAs = NULL;
+extern void *ptr_EnumTransportFilters;
+void *ptr_EnumTransportFilters = NULL;
+extern void *ptr_EnumTransportFiltersEx;
+void *ptr_EnumTransportFiltersEx = NULL;
+extern void *ptr_EnumTunnelFilters;
+void *ptr_EnumTunnelFilters = NULL;
+extern void *ptr_GetConfigurationVariables;
+void *ptr_GetConfigurationVariables = NULL;
+extern void *ptr_GetMMAuthMethods;
+void *ptr_GetMMAuthMethods = NULL;
+extern void *ptr_GetMMFilter;
+void *ptr_GetMMFilter = NULL;
+extern void *ptr_GetMMFilterEx;
+void *ptr_GetMMFilterEx = NULL;
+extern void *ptr_GetMMPolicy;
+void *ptr_GetMMPolicy = NULL;
+extern void *ptr_GetMMPolicyByID;
+void *ptr_GetMMPolicyByID = NULL;
+extern void *ptr_GetQMPolicy;
+void *ptr_GetQMPolicy = NULL;
+extern void *ptr_GetQMPolicyByID;
+void *ptr_GetQMPolicyByID = NULL;
+extern void *ptr_GetTransportFilter;
+void *ptr_GetTransportFilter = NULL;
+extern void *ptr_GetTransportFilterEx;
+void *ptr_GetTransportFilterEx = NULL;
+extern void *ptr_GetTunnelFilter;
+void *ptr_GetTunnelFilter = NULL;
+extern void *ptr_InitiateIKENegotiation;
+void *ptr_InitiateIKENegotiation = NULL;
+extern void *ptr_MatchMMFilter;
+void *ptr_MatchMMFilter = NULL;
+extern void *ptr_MatchMMFilterEx;
+void *ptr_MatchMMFilterEx = NULL;
+extern void *ptr_MatchTransportFilter;
+void *ptr_MatchTransportFilter = NULL;
+extern void *ptr_MatchTransportFilterEx;
+void *ptr_MatchTransportFilterEx = NULL;
+extern void *ptr_MatchTunnelFilter;
+void *ptr_MatchTunnelFilter = NULL;
+extern void *ptr_OpenMMFilterHandle;
+void *ptr_OpenMMFilterHandle = NULL;
+extern void *ptr_OpenMMFilterHandleEx;
+void *ptr_OpenMMFilterHandleEx = NULL;
+extern void *ptr_OpenTransportFilterHandle;
+void *ptr_OpenTransportFilterHandle = NULL;
+extern void *ptr_OpenTransportFilterHandleEx;
+void *ptr_OpenTransportFilterHandleEx = NULL;
+extern void *ptr_OpenTunnelFilterHandle;
+void *ptr_OpenTunnelFilterHandle = NULL;
+extern void *ptr_QueryIKENegotiationStatus;
+void *ptr_QueryIKENegotiationStatus = NULL;
+extern void *ptr_QueryIKENotifyData;
+void *ptr_QueryIKENotifyData = NULL;
+extern void *ptr_QueryIKEStatistics;
+void *ptr_QueryIKEStatistics = NULL;
+extern void *ptr_QueryIPSecStatistics;
+void *ptr_QueryIPSecStatistics = NULL;
+extern void *ptr_QuerySpdPolicyState;
+void *ptr_QuerySpdPolicyState = NULL;
+extern void *ptr_RegisterIKENotifyClient;
+void *ptr_RegisterIKENotifyClient = NULL;
+extern void *ptr_SPDApiBufferAllocate;
+void *ptr_SPDApiBufferAllocate = NULL;
+extern void *ptr_SPDApiBufferFree;
+void *ptr_SPDApiBufferFree = NULL;
+extern void *ptr_SetConfigurationVariables;
+void *ptr_SetConfigurationVariables = NULL;
+extern void *ptr_SetMMAuthMethods;
+void *ptr_SetMMAuthMethods = NULL;
+extern void *ptr_SetMMFilter;
+void *ptr_SetMMFilter = NULL;
+extern void *ptr_SetMMFilterEx;
+void *ptr_SetMMFilterEx = NULL;
+extern void *ptr_SetMMPolicy;
+void *ptr_SetMMPolicy = NULL;
+extern void *ptr_SetQMPolicy;
+void *ptr_SetQMPolicy = NULL;
+extern void *ptr_SetTransportFilter;
+void *ptr_SetTransportFilter = NULL;
+extern void *ptr_SetTransportFilterEx;
+void *ptr_SetTransportFilterEx = NULL;
+extern void *ptr_SetTunnelFilter;
+void *ptr_SetTunnelFilter = NULL;
+}
+
+
+static HMODULE hModule = NULL;
+static void module_init()
+{    
+   if (hModule) return;
+   wchar_t sz_module_file[MAX_PATH];
+   GetSystemDirectoryW(sz_module_file, MAX_PATH);
+   wcscat_s(sz_module_file, L"\\winipsec.dll");
+   hModule = LoadLibraryW(sz_module_file);
+   if (!hModule) return;
+
+   #define __vartype(x) decltype(x)
+   ptr_AddMMAuthMethods = (__vartype(ptr_AddMMAuthMethods))GetProcAddress(hModule, "AddMMAuthMethods");
+   ptr_AddMMFilter = (__vartype(ptr_AddMMFilter))GetProcAddress(hModule, "AddMMFilter");
+   ptr_AddMMFilterEx = (__vartype(ptr_AddMMFilterEx))GetProcAddress(hModule, "AddMMFilterEx");
+   ptr_AddMMPolicy = (__vartype(ptr_AddMMPolicy))GetProcAddress(hModule, "AddMMPolicy");
+   ptr_AddQMPolicy = (__vartype(ptr_AddQMPolicy))GetProcAddress(hModule, "AddQMPolicy");
+   ptr_AddSAs = (__vartype(ptr_AddSAs))GetProcAddress(hModule, "AddSAs");
+   ptr_AddTransportFilter = (__vartype(ptr_AddTransportFilter))GetProcAddress(hModule, "AddTransportFilter");
+   ptr_AddTransportFilterEx = (__vartype(ptr_AddTransportFilterEx))GetProcAddress(hModule, "AddTransportFilterEx");
+   ptr_AddTunnelFilter = (__vartype(ptr_AddTunnelFilter))GetProcAddress(hModule, "AddTunnelFilter");
+   ptr_CloseIKENegotiationHandle = (__vartype(ptr_CloseIKENegotiationHandle))GetProcAddress(hModule, "CloseIKENegotiationHandle");
+   ptr_CloseIKENotifyHandle = (__vartype(ptr_CloseIKENotifyHandle))GetProcAddress(hModule, "CloseIKENotifyHandle");
+   ptr_CloseMMFilterHandle = (__vartype(ptr_CloseMMFilterHandle))GetProcAddress(hModule, "CloseMMFilterHandle");
+   ptr_CloseTransportFilterHandle = (__vartype(ptr_CloseTransportFilterHandle))GetProcAddress(hModule, "CloseTransportFilterHandle");
+   ptr_CloseTunnelFilterHandle = (__vartype(ptr_CloseTunnelFilterHandle))GetProcAddress(hModule, "CloseTunnelFilterHandle");
+   ptr_DeleteMMAuthMethods = (__vartype(ptr_DeleteMMAuthMethods))GetProcAddress(hModule, "DeleteMMAuthMethods");
+   ptr_DeleteMMFilter = (__vartype(ptr_DeleteMMFilter))GetProcAddress(hModule, "DeleteMMFilter");
+   ptr_DeleteMMPolicy = (__vartype(ptr_DeleteMMPolicy))GetProcAddress(hModule, "DeleteMMPolicy");
+   ptr_DeleteMMSAs = (__vartype(ptr_DeleteMMSAs))GetProcAddress(hModule, "DeleteMMSAs");
+   ptr_DeleteQMPolicy = (__vartype(ptr_DeleteQMPolicy))GetProcAddress(hModule, "DeleteQMPolicy");
+   ptr_DeleteQMSAs = (__vartype(ptr_DeleteQMSAs))GetProcAddress(hModule, "DeleteQMSAs");
+   ptr_DeleteTransportFilter = (__vartype(ptr_DeleteTransportFilter))GetProcAddress(hModule, "DeleteTransportFilter");
+   ptr_DeleteTunnelFilter = (__vartype(ptr_DeleteTunnelFilter))GetProcAddress(hModule, "DeleteTunnelFilter");
+   ptr_DllMain = (__vartype(ptr_DllMain))GetProcAddress(hModule, "DllMain");
+   ptr_EnumIPSecInterfaces = (__vartype(ptr_EnumIPSecInterfaces))GetProcAddress(hModule, "EnumIPSecInterfaces");
+   ptr_EnumMMAuthMethods = (__vartype(ptr_EnumMMAuthMethods))GetProcAddress(hModule, "EnumMMAuthMethods");
+   ptr_EnumMMFilters = (__vartype(ptr_EnumMMFilters))GetProcAddress(hModule, "EnumMMFilters");
+   ptr_EnumMMFiltersEx = (__vartype(ptr_EnumMMFiltersEx))GetProcAddress(hModule, "EnumMMFiltersEx");
+   ptr_EnumMMPolicies = (__vartype(ptr_EnumMMPolicies))GetProcAddress(hModule, "EnumMMPolicies");
+   ptr_EnumMMSAs = (__vartype(ptr_EnumMMSAs))GetProcAddress(hModule, "EnumMMSAs");
+   ptr_EnumQMPolicies = (__vartype(ptr_EnumQMPolicies))GetProcAddress(hModule, "EnumQMPolicies");
+   ptr_EnumQMSAs = (__vartype(ptr_EnumQMSAs))GetProcAddress(hModule, "EnumQMSAs");
+   ptr_EnumTransportFilters = (__vartype(ptr_EnumTransportFilters))GetProcAddress(hModule, "EnumTransportFilters");
+   ptr_EnumTransportFiltersEx = (__vartype(ptr_EnumTransportFiltersEx))GetProcAddress(hModule, "EnumTransportFiltersEx");
+   ptr_EnumTunnelFilters = (__vartype(ptr_EnumTunnelFilters))GetProcAddress(hModule, "EnumTunnelFilters");
+   ptr_GetConfigurationVariables = (__vartype(ptr_GetConfigurationVariables))GetProcAddress(hModule, "GetConfigurationVariables");
+   ptr_GetMMAuthMethods = (__vartype(ptr_GetMMAuthMethods))GetProcAddress(hModule, "GetMMAuthMethods");
+   ptr_GetMMFilter = (__vartype(ptr_GetMMFilter))GetProcAddress(hModule, "GetMMFilter");
+   ptr_GetMMFilterEx = (__vartype(ptr_GetMMFilterEx))GetProcAddress(hModule, "GetMMFilterEx");
+   ptr_GetMMPolicy = (__vartype(ptr_GetMMPolicy))GetProcAddress(hModule, "GetMMPolicy");
+   ptr_GetMMPolicyByID = (__vartype(ptr_GetMMPolicyByID))GetProcAddress(hModule, "GetMMPolicyByID");
+   ptr_GetQMPolicy = (__vartype(ptr_GetQMPolicy))GetProcAddress(hModule, "GetQMPolicy");
+   ptr_GetQMPolicyByID = (__vartype(ptr_GetQMPolicyByID))GetProcAddress(hModule, "GetQMPolicyByID");
+   ptr_GetTransportFilter = (__vartype(ptr_GetTransportFilter))GetProcAddress(hModule, "GetTransportFilter");
+   ptr_GetTransportFilterEx = (__vartype(ptr_GetTransportFilterEx))GetProcAddress(hModule, "GetTransportFilterEx");
+   ptr_GetTunnelFilter = (__vartype(ptr_GetTunnelFilter))GetProcAddress(hModule, "GetTunnelFilter");
+   ptr_InitiateIKENegotiation = (__vartype(ptr_InitiateIKENegotiation))GetProcAddress(hModule, "InitiateIKENegotiation");
+   ptr_MatchMMFilter = (__vartype(ptr_MatchMMFilter))GetProcAddress(hModule, "MatchMMFilter");
+   ptr_MatchMMFilterEx = (__vartype(ptr_MatchMMFilterEx))GetProcAddress(hModule, "MatchMMFilterEx");
+   ptr_MatchTransportFilter = (__vartype(ptr_MatchTransportFilter))GetProcAddress(hModule, "MatchTransportFilter");
+   ptr_MatchTransportFilterEx = (__vartype(ptr_MatchTransportFilterEx))GetProcAddress(hModule, "MatchTransportFilterEx");
+   ptr_MatchTunnelFilter = (__vartype(ptr_MatchTunnelFilter))GetProcAddress(hModule, "MatchTunnelFilter");
+   ptr_OpenMMFilterHandle = (__vartype(ptr_OpenMMFilterHandle))GetProcAddress(hModule, "OpenMMFilterHandle");
+   ptr_OpenMMFilterHandleEx = (__vartype(ptr_OpenMMFilterHandleEx))GetProcAddress(hModule, "OpenMMFilterHandleEx");
+   ptr_OpenTransportFilterHandle = (__vartype(ptr_OpenTransportFilterHandle))GetProcAddress(hModule, "OpenTransportFilterHandle");
+   ptr_OpenTransportFilterHandleEx = (__vartype(ptr_OpenTransportFilterHandleEx))GetProcAddress(hModule, "OpenTransportFilterHandleEx");
+   ptr_OpenTunnelFilterHandle = (__vartype(ptr_OpenTunnelFilterHandle))GetProcAddress(hModule, "OpenTunnelFilterHandle");
+   ptr_QueryIKENegotiationStatus = (__vartype(ptr_QueryIKENegotiationStatus))GetProcAddress(hModule, "QueryIKENegotiationStatus");
+   ptr_QueryIKENotifyData = (__vartype(ptr_QueryIKENotifyData))GetProcAddress(hModule, "QueryIKENotifyData");
+   ptr_QueryIKEStatistics = (__vartype(ptr_QueryIKEStatistics))GetProcAddress(hModule, "QueryIKEStatistics");
+   ptr_QueryIPSecStatistics = (__vartype(ptr_QueryIPSecStatistics))GetProcAddress(hModule, "QueryIPSecStatistics");
+   ptr_QuerySpdPolicyState = (__vartype(ptr_QuerySpdPolicyState))GetProcAddress(hModule, "QuerySpdPolicyState");
+   ptr_RegisterIKENotifyClient = (__vartype(ptr_RegisterIKENotifyClient))GetProcAddress(hModule, "RegisterIKENotifyClient");
+   ptr_SPDApiBufferAllocate = (__vartype(ptr_SPDApiBufferAllocate))GetProcAddress(hModule, "SPDApiBufferAllocate");
+   ptr_SPDApiBufferFree = (__vartype(ptr_SPDApiBufferFree))GetProcAddress(hModule, "SPDApiBufferFree");
+   ptr_SetConfigurationVariables = (__vartype(ptr_SetConfigurationVariables))GetProcAddress(hModule, "SetConfigurationVariables");
+   ptr_SetMMAuthMethods = (__vartype(ptr_SetMMAuthMethods))GetProcAddress(hModule, "SetMMAuthMethods");
+   ptr_SetMMFilter = (__vartype(ptr_SetMMFilter))GetProcAddress(hModule, "SetMMFilter");
+   ptr_SetMMFilterEx = (__vartype(ptr_SetMMFilterEx))GetProcAddress(hModule, "SetMMFilterEx");
+   ptr_SetMMPolicy = (__vartype(ptr_SetMMPolicy))GetProcAddress(hModule, "SetMMPolicy");
+   ptr_SetQMPolicy = (__vartype(ptr_SetQMPolicy))GetProcAddress(hModule, "SetQMPolicy");
+   ptr_SetTransportFilter = (__vartype(ptr_SetTransportFilter))GetProcAddress(hModule, "SetTransportFilter");
+   ptr_SetTransportFilterEx = (__vartype(ptr_SetTransportFilterEx))GetProcAddress(hModule, "SetTransportFilterEx");
+   ptr_SetTunnelFilter = (__vartype(ptr_SetTunnelFilter))GetProcAddress(hModule, "SetTunnelFilter");
+   #undef __vartype
+}
+
+extern "C" BOOL __stdcall DllMain( HMODULE hModule,	DWORD ul_reason_for_call,LPVOID lpReserved)
+{
+	switch (ul_reason_for_call)
+	{
+	case DLL_PROCESS_ATTACH:
+    {
+        module_init();
+        wchar_t tmp1[2048];
+        GetModuleFileNameW(NULL, tmp1, _countof(tmp1));
+        PathRemoveExtensionW(tmp1);
+        wcscat(tmp1, L".hook.dll");
+        LoadLibraryW(tmp1);
+        break;
+    }
+	case DLL_PROCESS_DETACH:
+		break;
+	}
+	return TRUE;
+}
+

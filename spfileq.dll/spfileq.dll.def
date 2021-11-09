@@ -1,0 +1,21 @@
+﻿LIBRARY
+EXPORTS
+
+SpFileQueueClose @1
+SpFileQueueCommit @2
+SpFileQueueCopy @3
+SpFileQueueDelete @4
+SpFileQueueFileInUse @5
+SpFileQueueGetFlags @6
+SpFileQueueGetQueueCount @7
+SpFileQueueNodeGetSecurityDescriptor @8
+SpFileQueueNodeGetSourceFilename @9
+SpFileQueueNodeGetSourcePath @10
+SpFileQueueNodeGetSourceRootPath @11
+SpFileQueueNodeGetStyleFlags @12
+SpFileQueueNodeGetTargetDirectory @13
+SpFileQueueNodeGetTargetFilename @14
+SpFileQueueNodeRemove @15
+SpFileQueueOpen @16
+SpFileQueueRename @17
+SpFileQueueSetFlags @18

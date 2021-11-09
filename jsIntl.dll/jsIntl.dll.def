@@ -1,0 +1,27 @@
+﻿LIBRARY
+EXPORTS
+
+DllCanUnloadNow @1
+DllGetActivationFactory @2
+DllGetClassObject @3
+GetDynamicTimeZoneInformationEffectiveYearsDownlevel @4
+HSTRING_UserFree @5
+HSTRING_UserFree64 @6
+HSTRING_UserMarshal @7
+HSTRING_UserMarshal64 @8
+HSTRING_UserSize @9
+HSTRING_UserSize64 @10
+HSTRING_UserUnmarshal @11
+HSTRING_UserUnmarshal64 @12
+WindowsCompareStringOrdinal @13
+WindowsConcatString @14
+WindowsCreateString @15
+WindowsCreateStringReference @16
+WindowsDeleteString @17
+WindowsDuplicateString @18
+WindowsGetStringLen @19
+WindowsGetStringRawBuffer @20
+WindowsIsStringEmpty @21
+WindowsStringHasEmbeddedNull @22
+WindowsSubstring @23
+WindowsSubstringWithSpecifiedLength @24

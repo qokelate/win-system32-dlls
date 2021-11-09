@@ -1,0 +1,15 @@
+﻿LIBRARY
+EXPORTS
+
+RmAddFilter @1
+RmCancelCurrentTask @2
+RmEndSession @3
+RmGetFilterList @4
+RmGetList @5
+RmJoinSession @6
+RmRegisterResources @7
+RmRemoveFilter @8
+RmReserveHeap @9
+RmRestart @10
+RmShutdown @11
+RmStartSession @12

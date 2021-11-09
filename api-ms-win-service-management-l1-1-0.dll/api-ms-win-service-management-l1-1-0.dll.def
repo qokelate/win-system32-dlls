@@ -1,0 +1,10 @@
+﻿LIBRARY
+EXPORTS
+
+CloseServiceHandle @1
+ControlServiceExW @2
+CreateServiceW @3
+DeleteService @4
+OpenSCManagerW @5
+OpenServiceW @6
+StartServiceW @7

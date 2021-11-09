@@ -1,0 +1,6 @@
+﻿LIBRARY
+EXPORTS
+
+DllGetClassObject @1
+DllRegisterServer @2
+DllUnregisterServer @3

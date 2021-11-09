@@ -1,0 +1,7 @@
+﻿LIBRARY
+EXPORTS
+
+DhcpGlobalIsShuttingDown @1
+DhcpGlobalServiceSyncEvent @2
+DhcpGlobalTerminateEvent @3
+ServiceMain @4

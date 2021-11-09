@@ -1,0 +1,21 @@
+﻿LIBRARY
+EXPORTS
+
+CloseDhcpPerformanceData @18
+CloseIPXPerformanceData @9
+CloseNWNBPerformanceData @15
+CloseNbfPerformanceData @3
+CloseSPXPerformanceData @12
+CloseTcpIpPerformanceData @6
+CollectDhcpPerformanceData @17
+CollectIPXPerformanceData @8
+CollectNWNBPerformanceData @14
+CollectNbfPerformanceData @2
+CollectSPXPerformanceData @11
+CollectTcpIpPerformanceData @5
+OpenDhcpPerformanceData @16
+OpenIPXPerformanceData @7
+OpenNWNBPerformanceData @13
+OpenNbfPerformanceData @1
+OpenSPXPerformanceData @10
+OpenTcpIpPerformanceData @4

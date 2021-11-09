@@ -1,0 +1,14 @@
+﻿LIBRARY
+EXPORTS
+
+WerUICreate @1
+WerUIDelete @2
+WerUIGetUserSelection @3
+WerUIPromptForSecondLevel @4
+WerUIPromptUser @5
+WerUIShowUpsell @6
+WerUIStart @7
+WerUITerminate @8
+WerUIUpdateStateProgress @9
+WerUIUpdateUIForState @10
+WerUIWaitForUserAction @11

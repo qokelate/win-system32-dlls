@@ -1,0 +1,7 @@
+﻿LIBRARY
+EXPORTS
+
+CreateSecurityPage @1
+EditSecurity @2
+EditSecurityAdvanced @3
+IID_ISecurityInformation @16

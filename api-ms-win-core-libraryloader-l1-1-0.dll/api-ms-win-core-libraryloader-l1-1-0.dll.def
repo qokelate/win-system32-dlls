@@ -1,0 +1,26 @@
+﻿LIBRARY
+EXPORTS
+
+AddDllDirectory @1
+DisableThreadLibraryCalls @2
+FindResourceExW @3
+FindStringOrdinal @4
+FreeLibrary @5
+FreeLibraryAndExitThread @6
+FreeResource @7
+GetModuleFileNameA @8
+GetModuleFileNameW @9
+GetModuleHandleA @10
+GetModuleHandleExA @11
+GetModuleHandleExW @12
+GetModuleHandleW @13
+GetProcAddress @14
+LoadLibraryExA @15
+LoadLibraryExW @16
+LoadResource @17
+LoadStringA @18
+LoadStringW @19
+LockResource @20
+RemoveDllDirectory @21
+SetDefaultDllDirectories @22
+SizeofResource @23

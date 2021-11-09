@@ -1,0 +1,29 @@
+﻿LIBRARY
+EXPORTS
+
+Dot3CancelPlap @1
+Dot3CloseHandle @2
+Dot3DeinitPlapParams @3
+Dot3DeleteProfile @4
+Dot3DoPlap @5
+Dot3EnumInterfaces @6
+Dot3FreeMemory @7
+Dot3GetCurrentProfile @8
+Dot3GetInterfaceState @9
+Dot3GetProfile @10
+Dot3GetProfileEapUserDataInfo @11
+Dot3InitPlapParams @12
+Dot3OpenHandle @13
+Dot3QueryAutoConfigParameter @14
+Dot3QueryPlapCredentials @15
+Dot3QueryUIRequest @16
+Dot3ReConnect @17
+Dot3ReasonCodeToString @18
+Dot3RegisterNotification @19
+Dot3SetAutoConfigParameter @20
+Dot3SetInterface @21
+Dot3SetProfile @22
+Dot3SetProfileEapUserData @23
+Dot3SetProfileEapXmlUserData @24
+Dot3UIResponse @25
+QueryNetconStatus @26

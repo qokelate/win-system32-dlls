@@ -1,0 +1,8 @@
+﻿LIBRARY
+EXPORTS
+
+Beep @1
+DecodePointer @2
+DecodeSystemPointer @3
+EncodePointer @4
+EncodeSystemPointer @5

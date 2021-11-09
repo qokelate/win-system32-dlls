@@ -1,0 +1,8 @@
+﻿LIBRARY
+EXPORTS
+
+DllCanUnloadNow @1
+DllGetClassObject @2
+FlashConfigCreateNetworkW @3
+FlashConfigGetWLanXmlProfileW @4
+ImportFlashProfileW @5

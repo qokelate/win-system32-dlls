@@ -1,0 +1,29 @@
+﻿LIBRARY
+EXPORTS
+
+NsiAllocateAndGetPersistentDataWithMaskTable @1
+NsiAllocateAndGetTable @2
+NsiCancelChangeNotification @3
+NsiDeregisterChangeNotification @4
+NsiDeregisterChangeNotificationEx @5
+NsiEnumerateObjectsAllParameters @6
+NsiEnumerateObjectsAllParametersEx @7
+NsiEnumerateObjectsAllPersistentParametersWithMask @8
+NsiFreePersistentDataWithMaskTable @9
+NsiFreeTable @10
+NsiGetAllParameters @11
+NsiGetAllParametersEx @12
+NsiGetAllPersistentParametersWithMask @13
+NsiGetObjectSecurity @14
+NsiGetParameter @15
+NsiGetParameterEx @16
+NsiRegisterChangeNotification @17
+NsiRegisterChangeNotificationEx @18
+NsiRequestChangeNotification @19
+NsiRequestChangeNotificationEx @20
+NsiSetAllParameters @21
+NsiSetAllParametersEx @22
+NsiSetAllPersistentParametersWithMask @23
+NsiSetObjectSecurity @24
+NsiSetParameter @25
+NsiSetParameterEx @26

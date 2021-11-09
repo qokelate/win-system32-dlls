@@ -1,0 +1,22 @@
+﻿LIBRARY
+EXPORTS
+
+CDBuildIntegrityVect @1
+CDBuildVect @2
+CDFindCommonCSystem @3
+CDFindCommonCSystemWithKey @4
+CDGenerateRandomBits @5
+CDGetIntegrityVect @6
+CDLocateCSystem @7
+CDLocateCheckSum @8
+CDLocateRng @9
+CDRegisterCSystem @10
+CDRegisterCheckSum @11
+CDRegisterRng @12
+HMACwithSHA @13
+MD5Final @14
+MD5Init @15
+MD5Update @16
+PBKDF2 @17
+aesCTSDecryptMsg @18
+aesCTSEncryptMsg @19

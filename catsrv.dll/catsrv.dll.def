@@ -1,0 +1,11 @@
+﻿LIBRARY
+EXPORTS
+
+CreateComponentLibraryTS @2
+DllCanUnloadNow @9
+DllGetClassObject @10
+DllRegisterServer @11
+DllUnregisterServer @12
+GetAppImport @13
+GetCatalogCRMClerk @3
+OpenComponentLibraryTS @6

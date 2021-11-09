@@ -1,0 +1,6 @@
+﻿LIBRARY
+EXPORTS
+
+DllMain @2
+EnhancedStoragePasswordConfig @3
+EnhancedStoragePasswordInitDisk @1

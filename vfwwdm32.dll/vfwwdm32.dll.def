@@ -1,0 +1,6 @@
+﻿LIBRARY
+EXPORTS
+
+DllMain @1
+DriverProc @2
+VfwWdm @3

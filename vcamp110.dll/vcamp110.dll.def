@@ -1,0 +1,10 @@
+﻿LIBRARY
+EXPORTS
+
+__dpc_create_call_handle @124
+__dpc_dispatch_kernel @125
+__dpc_release_call_handle @126
+__dpc_set_const_buffer_info @127
+__dpc_set_device_buffer_info @128
+__dpc_set_kernel_dispatch_info @129
+__dpc_set_kernel_shader_info @130

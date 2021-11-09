@@ -1,0 +1,22 @@
+﻿LIBRARY
+EXPORTS
+
+UmAbortCurrentModemCommand @112
+UmAnswerModem @106
+UmCloseModem @103
+UmDeinitializeModemDriver @101
+UmDialModem @107
+UmDuplicateDeviceHandle @111
+UmGenerateDigit @109
+UmGetDiagnostics @117
+UmHangupModem @108
+UmInitModem @104
+UmInitializeModemDriver @100
+UmIssueCommand @114
+UmLogDiagnostics @118
+UmLogStringA @116
+UmMonitorModem @105
+UmOpenModem @102
+UmSetPassthroughMode @113
+UmSetSpeakerPhoneState @110
+UmWaveAction @115

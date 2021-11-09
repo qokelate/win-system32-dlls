@@ -1,0 +1,480 @@
+ifndef X64
+.686p
+.XMM
+.safeseh SEH_handler
+.model flat, C
+option dotname
+option casemap : none
+endif
+
+extern ptr_CallNtPowerInformation : PTR;
+extern ptr_CanUserWritePwrScheme : PTR;
+extern ptr_DeletePwrScheme : PTR;
+extern ptr_DevicePowerClose : PTR;
+extern ptr_DevicePowerEnumDevices : PTR;
+extern ptr_DevicePowerOpen : PTR;
+extern ptr_DevicePowerSetDeviceState : PTR;
+extern ptr_EnumPwrSchemes : PTR;
+extern ptr_GUIDFormatToGlobalPowerPolicy : PTR;
+extern ptr_GUIDFormatToPowerPolicy : PTR;
+extern ptr_GetActivePwrScheme : PTR;
+extern ptr_GetCurrentPowerPolicies : PTR;
+extern ptr_GetPwrCapabilities : PTR;
+extern ptr_GetPwrDiskSpindownRange : PTR;
+extern ptr_IsAdminOverrideActive : PTR;
+extern ptr_IsPwrHibernateAllowed : PTR;
+extern ptr_IsPwrShutdownAllowed : PTR;
+extern ptr_IsPwrSuspendAllowed : PTR;
+extern ptr_LoadCurrentPwrScheme : PTR;
+extern ptr_MergeLegacyPwrScheme : PTR;
+extern ptr_PowerApplyPowerRequestOverride : PTR;
+extern ptr_PowerCanRestoreIndividualDefaultPowerScheme : PTR;
+extern ptr_PowerCreatePossibleSetting : PTR;
+extern ptr_PowerCreateSetting : PTR;
+extern ptr_PowerCustomizePlatformPowerSettings : PTR;
+extern ptr_PowerDebugDifPowerPolicies : PTR;
+extern ptr_PowerDebugDifSystemPowerPolicies : PTR;
+extern ptr_PowerDebugDumpPowerPolicy : PTR;
+extern ptr_PowerDebugDumpPowerScheme : PTR;
+extern ptr_PowerDebugDumpSystemPowerCapabilities : PTR;
+extern ptr_PowerDebugDumpSystemPowerPolicy : PTR;
+extern ptr_PowerDeleteScheme : PTR;
+extern ptr_PowerDeterminePlatformRole : PTR;
+extern ptr_PowerDuplicateScheme : PTR;
+extern ptr_PowerEnumerate : PTR;
+extern ptr_PowerGetActiveScheme : PTR;
+extern ptr_PowerImportPowerScheme : PTR;
+extern ptr_PowerOpenSystemPowerKey : PTR;
+extern ptr_PowerOpenUserPowerKey : PTR;
+extern ptr_PowerPolicyToGUIDFormat : PTR;
+extern ptr_PowerReadACDefaultIndex : PTR;
+extern ptr_PowerReadACValue : PTR;
+extern ptr_PowerReadACValueIndex : PTR;
+extern ptr_PowerReadDCDefaultIndex : PTR;
+extern ptr_PowerReadDCValue : PTR;
+extern ptr_PowerReadDCValueIndex : PTR;
+extern ptr_PowerReadDescription : PTR;
+extern ptr_PowerReadFriendlyName : PTR;
+extern ptr_PowerReadIconResourceSpecifier : PTR;
+extern ptr_PowerReadPossibleDescription : PTR;
+extern ptr_PowerReadPossibleFriendlyName : PTR;
+extern ptr_PowerReadPossibleValue : PTR;
+extern ptr_PowerReadSecurityDescriptor : PTR;
+extern ptr_PowerReadSettingAttributes : PTR;
+extern ptr_PowerReadValueIncrement : PTR;
+extern ptr_PowerReadValueMax : PTR;
+extern ptr_PowerReadValueMin : PTR;
+extern ptr_PowerReadValueUnitsSpecifier : PTR;
+extern ptr_PowerRemovePowerSetting : PTR;
+extern ptr_PowerReplaceDefaultPowerSchemes : PTR;
+extern ptr_PowerRestoreDefaultPowerSchemes : PTR;
+extern ptr_PowerRestoreIndividualDefaultPowerScheme : PTR;
+extern ptr_PowerSetActiveScheme : PTR;
+extern ptr_PowerSetAlsBrightnessOffset : PTR;
+extern ptr_PowerSettingAccessCheck : PTR;
+extern ptr_PowerSettingRegisterNotification : PTR;
+extern ptr_PowerSettingUnregisterNotification : PTR;
+extern ptr_PowerWriteACDefaultIndex : PTR;
+extern ptr_PowerWriteACValueIndex : PTR;
+extern ptr_PowerWriteDCDefaultIndex : PTR;
+extern ptr_PowerWriteDCValueIndex : PTR;
+extern ptr_PowerWriteDescription : PTR;
+extern ptr_PowerWriteFriendlyName : PTR;
+extern ptr_PowerWriteIconResourceSpecifier : PTR;
+extern ptr_PowerWritePossibleDescription : PTR;
+extern ptr_PowerWritePossibleFriendlyName : PTR;
+extern ptr_PowerWritePossibleValue : PTR;
+extern ptr_PowerWriteSecurityDescriptor : PTR;
+extern ptr_PowerWriteSettingAttributes : PTR;
+extern ptr_PowerWriteValueIncrement : PTR;
+extern ptr_PowerWriteValueMax : PTR;
+extern ptr_PowerWriteValueMin : PTR;
+extern ptr_PowerWriteValueUnitsSpecifier : PTR;
+extern ptr_ReadGlobalPwrPolicy : PTR;
+extern ptr_ReadProcessorPwrScheme : PTR;
+extern ptr_ReadPwrScheme : PTR;
+extern ptr_SetActivePwrScheme : PTR;
+extern ptr_SetSuspendState : PTR;
+extern ptr_ValidatePowerPolicies : PTR;
+extern ptr_WriteGlobalPwrPolicy : PTR;
+extern ptr_WriteProcessorPwrScheme : PTR;
+extern ptr_WritePwrScheme : PTR;
+
+
+.code
+
+align 16
+SEH_handler   proc
+; handler
+ret
+SEH_handler   endp
+
+CallNtPowerInformation PROC
+jmp ptr_CallNtPowerInformation
+CallNtPowerInformation ENDP
+
+CanUserWritePwrScheme PROC
+jmp ptr_CanUserWritePwrScheme
+CanUserWritePwrScheme ENDP
+
+DeletePwrScheme PROC
+jmp ptr_DeletePwrScheme
+DeletePwrScheme ENDP
+
+DevicePowerClose PROC
+jmp ptr_DevicePowerClose
+DevicePowerClose ENDP
+
+DevicePowerEnumDevices PROC
+jmp ptr_DevicePowerEnumDevices
+DevicePowerEnumDevices ENDP
+
+DevicePowerOpen PROC
+jmp ptr_DevicePowerOpen
+DevicePowerOpen ENDP
+
+DevicePowerSetDeviceState PROC
+jmp ptr_DevicePowerSetDeviceState
+DevicePowerSetDeviceState ENDP
+
+EnumPwrSchemes PROC
+jmp ptr_EnumPwrSchemes
+EnumPwrSchemes ENDP
+
+GUIDFormatToGlobalPowerPolicy PROC
+jmp ptr_GUIDFormatToGlobalPowerPolicy
+GUIDFormatToGlobalPowerPolicy ENDP
+
+GUIDFormatToPowerPolicy PROC
+jmp ptr_GUIDFormatToPowerPolicy
+GUIDFormatToPowerPolicy ENDP
+
+GetActivePwrScheme PROC
+jmp ptr_GetActivePwrScheme
+GetActivePwrScheme ENDP
+
+GetCurrentPowerPolicies PROC
+jmp ptr_GetCurrentPowerPolicies
+GetCurrentPowerPolicies ENDP
+
+GetPwrCapabilities PROC
+jmp ptr_GetPwrCapabilities
+GetPwrCapabilities ENDP
+
+GetPwrDiskSpindownRange PROC
+jmp ptr_GetPwrDiskSpindownRange
+GetPwrDiskSpindownRange ENDP
+
+IsAdminOverrideActive PROC
+jmp ptr_IsAdminOverrideActive
+IsAdminOverrideActive ENDP
+
+IsPwrHibernateAllowed PROC
+jmp ptr_IsPwrHibernateAllowed
+IsPwrHibernateAllowed ENDP
+
+IsPwrShutdownAllowed PROC
+jmp ptr_IsPwrShutdownAllowed
+IsPwrShutdownAllowed ENDP
+
+IsPwrSuspendAllowed PROC
+jmp ptr_IsPwrSuspendAllowed
+IsPwrSuspendAllowed ENDP
+
+LoadCurrentPwrScheme PROC
+jmp ptr_LoadCurrentPwrScheme
+LoadCurrentPwrScheme ENDP
+
+MergeLegacyPwrScheme PROC
+jmp ptr_MergeLegacyPwrScheme
+MergeLegacyPwrScheme ENDP
+
+PowerApplyPowerRequestOverride PROC
+jmp ptr_PowerApplyPowerRequestOverride
+PowerApplyPowerRequestOverride ENDP
+
+PowerCanRestoreIndividualDefaultPowerScheme PROC
+jmp ptr_PowerCanRestoreIndividualDefaultPowerScheme
+PowerCanRestoreIndividualDefaultPowerScheme ENDP
+
+PowerCreatePossibleSetting PROC
+jmp ptr_PowerCreatePossibleSetting
+PowerCreatePossibleSetting ENDP
+
+PowerCreateSetting PROC
+jmp ptr_PowerCreateSetting
+PowerCreateSetting ENDP
+
+PowerCustomizePlatformPowerSettings PROC
+jmp ptr_PowerCustomizePlatformPowerSettings
+PowerCustomizePlatformPowerSettings ENDP
+
+PowerDebugDifPowerPolicies PROC
+jmp ptr_PowerDebugDifPowerPolicies
+PowerDebugDifPowerPolicies ENDP
+
+PowerDebugDifSystemPowerPolicies PROC
+jmp ptr_PowerDebugDifSystemPowerPolicies
+PowerDebugDifSystemPowerPolicies ENDP
+
+PowerDebugDumpPowerPolicy PROC
+jmp ptr_PowerDebugDumpPowerPolicy
+PowerDebugDumpPowerPolicy ENDP
+
+PowerDebugDumpPowerScheme PROC
+jmp ptr_PowerDebugDumpPowerScheme
+PowerDebugDumpPowerScheme ENDP
+
+PowerDebugDumpSystemPowerCapabilities PROC
+jmp ptr_PowerDebugDumpSystemPowerCapabilities
+PowerDebugDumpSystemPowerCapabilities ENDP
+
+PowerDebugDumpSystemPowerPolicy PROC
+jmp ptr_PowerDebugDumpSystemPowerPolicy
+PowerDebugDumpSystemPowerPolicy ENDP
+
+PowerDeleteScheme PROC
+jmp ptr_PowerDeleteScheme
+PowerDeleteScheme ENDP
+
+PowerDeterminePlatformRole PROC
+jmp ptr_PowerDeterminePlatformRole
+PowerDeterminePlatformRole ENDP
+
+PowerDuplicateScheme PROC
+jmp ptr_PowerDuplicateScheme
+PowerDuplicateScheme ENDP
+
+PowerEnumerate PROC
+jmp ptr_PowerEnumerate
+PowerEnumerate ENDP
+
+PowerGetActiveScheme PROC
+jmp ptr_PowerGetActiveScheme
+PowerGetActiveScheme ENDP
+
+PowerImportPowerScheme PROC
+jmp ptr_PowerImportPowerScheme
+PowerImportPowerScheme ENDP
+
+PowerOpenSystemPowerKey PROC
+jmp ptr_PowerOpenSystemPowerKey
+PowerOpenSystemPowerKey ENDP
+
+PowerOpenUserPowerKey PROC
+jmp ptr_PowerOpenUserPowerKey
+PowerOpenUserPowerKey ENDP
+
+PowerPolicyToGUIDFormat PROC
+jmp ptr_PowerPolicyToGUIDFormat
+PowerPolicyToGUIDFormat ENDP
+
+PowerReadACDefaultIndex PROC
+jmp ptr_PowerReadACDefaultIndex
+PowerReadACDefaultIndex ENDP
+
+PowerReadACValue PROC
+jmp ptr_PowerReadACValue
+PowerReadACValue ENDP
+
+PowerReadACValueIndex PROC
+jmp ptr_PowerReadACValueIndex
+PowerReadACValueIndex ENDP
+
+PowerReadDCDefaultIndex PROC
+jmp ptr_PowerReadDCDefaultIndex
+PowerReadDCDefaultIndex ENDP
+
+PowerReadDCValue PROC
+jmp ptr_PowerReadDCValue
+PowerReadDCValue ENDP
+
+PowerReadDCValueIndex PROC
+jmp ptr_PowerReadDCValueIndex
+PowerReadDCValueIndex ENDP
+
+PowerReadDescription PROC
+jmp ptr_PowerReadDescription
+PowerReadDescription ENDP
+
+PowerReadFriendlyName PROC
+jmp ptr_PowerReadFriendlyName
+PowerReadFriendlyName ENDP
+
+PowerReadIconResourceSpecifier PROC
+jmp ptr_PowerReadIconResourceSpecifier
+PowerReadIconResourceSpecifier ENDP
+
+PowerReadPossibleDescription PROC
+jmp ptr_PowerReadPossibleDescription
+PowerReadPossibleDescription ENDP
+
+PowerReadPossibleFriendlyName PROC
+jmp ptr_PowerReadPossibleFriendlyName
+PowerReadPossibleFriendlyName ENDP
+
+PowerReadPossibleValue PROC
+jmp ptr_PowerReadPossibleValue
+PowerReadPossibleValue ENDP
+
+PowerReadSecurityDescriptor PROC
+jmp ptr_PowerReadSecurityDescriptor
+PowerReadSecurityDescriptor ENDP
+
+PowerReadSettingAttributes PROC
+jmp ptr_PowerReadSettingAttributes
+PowerReadSettingAttributes ENDP
+
+PowerReadValueIncrement PROC
+jmp ptr_PowerReadValueIncrement
+PowerReadValueIncrement ENDP
+
+PowerReadValueMax PROC
+jmp ptr_PowerReadValueMax
+PowerReadValueMax ENDP
+
+PowerReadValueMin PROC
+jmp ptr_PowerReadValueMin
+PowerReadValueMin ENDP
+
+PowerReadValueUnitsSpecifier PROC
+jmp ptr_PowerReadValueUnitsSpecifier
+PowerReadValueUnitsSpecifier ENDP
+
+PowerRemovePowerSetting PROC
+jmp ptr_PowerRemovePowerSetting
+PowerRemovePowerSetting ENDP
+
+PowerReplaceDefaultPowerSchemes PROC
+jmp ptr_PowerReplaceDefaultPowerSchemes
+PowerReplaceDefaultPowerSchemes ENDP
+
+PowerRestoreDefaultPowerSchemes PROC
+jmp ptr_PowerRestoreDefaultPowerSchemes
+PowerRestoreDefaultPowerSchemes ENDP
+
+PowerRestoreIndividualDefaultPowerScheme PROC
+jmp ptr_PowerRestoreIndividualDefaultPowerScheme
+PowerRestoreIndividualDefaultPowerScheme ENDP
+
+PowerSetActiveScheme PROC
+jmp ptr_PowerSetActiveScheme
+PowerSetActiveScheme ENDP
+
+PowerSetAlsBrightnessOffset PROC
+jmp ptr_PowerSetAlsBrightnessOffset
+PowerSetAlsBrightnessOffset ENDP
+
+PowerSettingAccessCheck PROC
+jmp ptr_PowerSettingAccessCheck
+PowerSettingAccessCheck ENDP
+
+PowerSettingRegisterNotification PROC
+jmp ptr_PowerSettingRegisterNotification
+PowerSettingRegisterNotification ENDP
+
+PowerSettingUnregisterNotification PROC
+jmp ptr_PowerSettingUnregisterNotification
+PowerSettingUnregisterNotification ENDP
+
+PowerWriteACDefaultIndex PROC
+jmp ptr_PowerWriteACDefaultIndex
+PowerWriteACDefaultIndex ENDP
+
+PowerWriteACValueIndex PROC
+jmp ptr_PowerWriteACValueIndex
+PowerWriteACValueIndex ENDP
+
+PowerWriteDCDefaultIndex PROC
+jmp ptr_PowerWriteDCDefaultIndex
+PowerWriteDCDefaultIndex ENDP
+
+PowerWriteDCValueIndex PROC
+jmp ptr_PowerWriteDCValueIndex
+PowerWriteDCValueIndex ENDP
+
+PowerWriteDescription PROC
+jmp ptr_PowerWriteDescription
+PowerWriteDescription ENDP
+
+PowerWriteFriendlyName PROC
+jmp ptr_PowerWriteFriendlyName
+PowerWriteFriendlyName ENDP
+
+PowerWriteIconResourceSpecifier PROC
+jmp ptr_PowerWriteIconResourceSpecifier
+PowerWriteIconResourceSpecifier ENDP
+
+PowerWritePossibleDescription PROC
+jmp ptr_PowerWritePossibleDescription
+PowerWritePossibleDescription ENDP
+
+PowerWritePossibleFriendlyName PROC
+jmp ptr_PowerWritePossibleFriendlyName
+PowerWritePossibleFriendlyName ENDP
+
+PowerWritePossibleValue PROC
+jmp ptr_PowerWritePossibleValue
+PowerWritePossibleValue ENDP
+
+PowerWriteSecurityDescriptor PROC
+jmp ptr_PowerWriteSecurityDescriptor
+PowerWriteSecurityDescriptor ENDP
+
+PowerWriteSettingAttributes PROC
+jmp ptr_PowerWriteSettingAttributes
+PowerWriteSettingAttributes ENDP
+
+PowerWriteValueIncrement PROC
+jmp ptr_PowerWriteValueIncrement
+PowerWriteValueIncrement ENDP
+
+PowerWriteValueMax PROC
+jmp ptr_PowerWriteValueMax
+PowerWriteValueMax ENDP
+
+PowerWriteValueMin PROC
+jmp ptr_PowerWriteValueMin
+PowerWriteValueMin ENDP
+
+PowerWriteValueUnitsSpecifier PROC
+jmp ptr_PowerWriteValueUnitsSpecifier
+PowerWriteValueUnitsSpecifier ENDP
+
+ReadGlobalPwrPolicy PROC
+jmp ptr_ReadGlobalPwrPolicy
+ReadGlobalPwrPolicy ENDP
+
+ReadProcessorPwrScheme PROC
+jmp ptr_ReadProcessorPwrScheme
+ReadProcessorPwrScheme ENDP
+
+ReadPwrScheme PROC
+jmp ptr_ReadPwrScheme
+ReadPwrScheme ENDP
+
+SetActivePwrScheme PROC
+jmp ptr_SetActivePwrScheme
+SetActivePwrScheme ENDP
+
+SetSuspendState PROC
+jmp ptr_SetSuspendState
+SetSuspendState ENDP
+
+ValidatePowerPolicies PROC
+jmp ptr_ValidatePowerPolicies
+ValidatePowerPolicies ENDP
+
+WriteGlobalPwrPolicy PROC
+jmp ptr_WriteGlobalPwrPolicy
+WriteGlobalPwrPolicy ENDP
+
+WriteProcessorPwrScheme PROC
+jmp ptr_WriteProcessorPwrScheme
+WriteProcessorPwrScheme ENDP
+
+WritePwrScheme PROC
+jmp ptr_WritePwrScheme
+WritePwrScheme ENDP
+
+end

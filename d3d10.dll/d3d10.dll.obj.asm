@@ -1,0 +1,170 @@
+ifndef X64
+.686p
+.XMM
+.safeseh SEH_handler
+.model flat, C
+option dotname
+option casemap : none
+endif
+
+extern ptr_D3D10CompileEffectFromMemory : PTR;
+extern ptr_D3D10CompileShader : PTR;
+extern ptr_D3D10CreateBlob : PTR;
+extern ptr_D3D10CreateDevice : PTR;
+extern ptr_D3D10CreateDeviceAndSwapChain : PTR;
+extern ptr_D3D10CreateEffectFromMemory : PTR;
+extern ptr_D3D10CreateEffectPoolFromMemory : PTR;
+extern ptr_D3D10CreateStateBlock : PTR;
+extern ptr_D3D10DisassembleEffect : PTR;
+extern ptr_D3D10DisassembleShader : PTR;
+extern ptr_D3D10GetGeometryShaderProfile : PTR;
+extern ptr_D3D10GetInputAndOutputSignatureBlob : PTR;
+extern ptr_D3D10GetInputSignatureBlob : PTR;
+extern ptr_D3D10GetOutputSignatureBlob : PTR;
+extern ptr_D3D10GetPixelShaderProfile : PTR;
+extern ptr_D3D10GetShaderDebugInfo : PTR;
+extern ptr_D3D10GetVersion : PTR;
+extern ptr_D3D10GetVertexShaderProfile : PTR;
+extern ptr_D3D10PreprocessShader : PTR;
+extern ptr_D3D10ReflectShader : PTR;
+extern ptr_D3D10RegisterLayers : PTR;
+extern ptr_D3D10StateBlockMaskDifference : PTR;
+extern ptr_D3D10StateBlockMaskDisableAll : PTR;
+extern ptr_D3D10StateBlockMaskDisableCapture : PTR;
+extern ptr_D3D10StateBlockMaskEnableAll : PTR;
+extern ptr_D3D10StateBlockMaskEnableCapture : PTR;
+extern ptr_D3D10StateBlockMaskGetSetting : PTR;
+extern ptr_D3D10StateBlockMaskIntersect : PTR;
+extern ptr_D3D10StateBlockMaskUnion : PTR;
+extern ptr_RevertToOldImplementation : PTR;
+
+
+.code
+
+align 16
+SEH_handler   proc
+; handler
+ret
+SEH_handler   endp
+
+D3D10CompileEffectFromMemory PROC
+jmp ptr_D3D10CompileEffectFromMemory
+D3D10CompileEffectFromMemory ENDP
+
+D3D10CompileShader PROC
+jmp ptr_D3D10CompileShader
+D3D10CompileShader ENDP
+
+D3D10CreateBlob PROC
+jmp ptr_D3D10CreateBlob
+D3D10CreateBlob ENDP
+
+D3D10CreateDevice PROC
+jmp ptr_D3D10CreateDevice
+D3D10CreateDevice ENDP
+
+D3D10CreateDeviceAndSwapChain PROC
+jmp ptr_D3D10CreateDeviceAndSwapChain
+D3D10CreateDeviceAndSwapChain ENDP
+
+D3D10CreateEffectFromMemory PROC
+jmp ptr_D3D10CreateEffectFromMemory
+D3D10CreateEffectFromMemory ENDP
+
+D3D10CreateEffectPoolFromMemory PROC
+jmp ptr_D3D10CreateEffectPoolFromMemory
+D3D10CreateEffectPoolFromMemory ENDP
+
+D3D10CreateStateBlock PROC
+jmp ptr_D3D10CreateStateBlock
+D3D10CreateStateBlock ENDP
+
+D3D10DisassembleEffect PROC
+jmp ptr_D3D10DisassembleEffect
+D3D10DisassembleEffect ENDP
+
+D3D10DisassembleShader PROC
+jmp ptr_D3D10DisassembleShader
+D3D10DisassembleShader ENDP
+
+D3D10GetGeometryShaderProfile PROC
+jmp ptr_D3D10GetGeometryShaderProfile
+D3D10GetGeometryShaderProfile ENDP
+
+D3D10GetInputAndOutputSignatureBlob PROC
+jmp ptr_D3D10GetInputAndOutputSignatureBlob
+D3D10GetInputAndOutputSignatureBlob ENDP
+
+D3D10GetInputSignatureBlob PROC
+jmp ptr_D3D10GetInputSignatureBlob
+D3D10GetInputSignatureBlob ENDP
+
+D3D10GetOutputSignatureBlob PROC
+jmp ptr_D3D10GetOutputSignatureBlob
+D3D10GetOutputSignatureBlob ENDP
+
+D3D10GetPixelShaderProfile PROC
+jmp ptr_D3D10GetPixelShaderProfile
+D3D10GetPixelShaderProfile ENDP
+
+D3D10GetShaderDebugInfo PROC
+jmp ptr_D3D10GetShaderDebugInfo
+D3D10GetShaderDebugInfo ENDP
+
+D3D10GetVersion PROC
+jmp ptr_D3D10GetVersion
+D3D10GetVersion ENDP
+
+D3D10GetVertexShaderProfile PROC
+jmp ptr_D3D10GetVertexShaderProfile
+D3D10GetVertexShaderProfile ENDP
+
+D3D10PreprocessShader PROC
+jmp ptr_D3D10PreprocessShader
+D3D10PreprocessShader ENDP
+
+D3D10ReflectShader PROC
+jmp ptr_D3D10ReflectShader
+D3D10ReflectShader ENDP
+
+D3D10RegisterLayers PROC
+jmp ptr_D3D10RegisterLayers
+D3D10RegisterLayers ENDP
+
+D3D10StateBlockMaskDifference PROC
+jmp ptr_D3D10StateBlockMaskDifference
+D3D10StateBlockMaskDifference ENDP
+
+D3D10StateBlockMaskDisableAll PROC
+jmp ptr_D3D10StateBlockMaskDisableAll
+D3D10StateBlockMaskDisableAll ENDP
+
+D3D10StateBlockMaskDisableCapture PROC
+jmp ptr_D3D10StateBlockMaskDisableCapture
+D3D10StateBlockMaskDisableCapture ENDP
+
+D3D10StateBlockMaskEnableAll PROC
+jmp ptr_D3D10StateBlockMaskEnableAll
+D3D10StateBlockMaskEnableAll ENDP
+
+D3D10StateBlockMaskEnableCapture PROC
+jmp ptr_D3D10StateBlockMaskEnableCapture
+D3D10StateBlockMaskEnableCapture ENDP
+
+D3D10StateBlockMaskGetSetting PROC
+jmp ptr_D3D10StateBlockMaskGetSetting
+D3D10StateBlockMaskGetSetting ENDP
+
+D3D10StateBlockMaskIntersect PROC
+jmp ptr_D3D10StateBlockMaskIntersect
+D3D10StateBlockMaskIntersect ENDP
+
+D3D10StateBlockMaskUnion PROC
+jmp ptr_D3D10StateBlockMaskUnion
+D3D10StateBlockMaskUnion ENDP
+
+RevertToOldImplementation PROC
+jmp ptr_RevertToOldImplementation
+RevertToOldImplementation ENDP
+
+end

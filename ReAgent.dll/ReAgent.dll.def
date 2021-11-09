@@ -1,0 +1,27 @@
+﻿LIBRARY
+EXPORTS
+
+WinRE_Generalize @1
+WinReAddLogFile @2
+WinReCompleteRecovery @3
+WinReCopyLogFilesToRamdisk @4
+WinReCopySetupFiles @5
+WinReCreateLogInstance @6
+WinReCreateLogInstanceEx @7
+WinReDeleteLogFiles @8
+WinReGetConfig @9
+WinReGetGroupPolicies @10
+WinReGetLogFile @11
+WinReGetWIMInfo @12
+WinReInstall @13
+WinReIsInstallMedia @14
+WinReOpenLogInstance @15
+WinRePostRecovery @16
+WinReRestoreLogFiles @17
+WinReSetConfig @18
+WinReSetRecoveryAction @19
+WinReSetRecoveryActionEx @20
+WinReUnInstall @21
+WinReUpdateLogInstance @22
+winreFindInstallMedia @23
+winreGetBinaryArch @24

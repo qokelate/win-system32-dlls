@@ -1,0 +1,6 @@
+﻿LIBRARY
+EXPORTS
+
+DebugConnect @1
+DebugConnectWide @2
+DebugCreate @3

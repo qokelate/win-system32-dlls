@@ -1,0 +1,6 @@
+﻿LIBRARY
+EXPORTS
+
+RegisterServiceCtrlHandlerExW @1
+SetServiceStatus @2
+StartServiceCtrlDispatcherW @3

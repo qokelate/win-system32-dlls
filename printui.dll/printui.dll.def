@@ -1,0 +1,33 @@
+﻿LIBRARY
+EXPORTS
+
+ConnectToPrinterDlg @7
+ConstructPrinterFriendlyName @1
+DllCanUnloadNow @8
+DllGetClassObject @9
+DllMain @10
+DllRegisterServer @11
+DllUnregisterServer @12
+DocumentPropertiesWrap @13
+LaunchPlatformHelp @14
+PnPInterface @2
+PrintNotifyTray_Exit @15
+PrintNotifyTray_Init @16
+PrintUIDownloadAndInstallLegacyDriver @17
+PrintUIEntryW @3
+PrinterPropPageProvider @4
+RegisterPrintNotify @18
+ReleaseArgv @5
+ShowErrorMessageHR @19
+ShowErrorMessageSC @20
+ShowHelpLinkDialog @21
+StringToArgv @6
+UnregisterPrintNotify @22
+bFolderEnumPrinters @23
+bFolderGetPrinter @24
+bFolderRefresh @25
+bPrinterSetup @26
+vDocumentDefaults @27
+vPrinterPropPages @28
+vQueueCreate @29
+vServerPropPages @30

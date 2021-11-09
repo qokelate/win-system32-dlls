@@ -1,0 +1,18 @@
+﻿LIBRARY
+EXPORTS
+
+NsiConnectToServer @1
+NsiDisconnectFromServer @2
+NsiRpcDeregisterChangeNotification @3
+NsiRpcDeregisterChangeNotificationEx @4
+NsiRpcEnumerateObjectsAllParameters @5
+NsiRpcGetAllParameters @6
+NsiRpcGetAllParametersEx @7
+NsiRpcGetParameter @8
+NsiRpcGetParameterEx @9
+NsiRpcRegisterChangeNotification @10
+NsiRpcRegisterChangeNotificationEx @11
+NsiRpcSetAllParameters @12
+NsiRpcSetAllParametersEx @13
+NsiRpcSetParameter @14
+NsiRpcSetParameterEx @15

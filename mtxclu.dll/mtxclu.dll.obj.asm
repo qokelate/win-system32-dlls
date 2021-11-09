@@ -1,0 +1,175 @@
+ifndef X64
+.686p
+.XMM
+.safeseh SEH_handler
+.model flat, C
+option dotname
+option casemap : none
+endif
+
+extern ptr_MtxCluBringOnlineDTCW : PTR;
+extern ptr_MtxCluCreateClusterProxyTmInstance : PTR;
+extern ptr_MtxCluCreateClusterTmInstance : PTR;
+extern ptr_MtxCluCreateTmInstanceForVirtualServer : PTR;
+extern ptr_MtxCluEnumerateDtcResources : PTR;
+extern ptr_MtxCluGetActiveClusterNode : PTR;
+extern ptr_MtxCluGetClusterResourceIdFromName : PTR;
+extern ptr_MtxCluGetComputerNameW : PTR;
+extern ptr_MtxCluGetDTCResourceForResource : PTR;
+extern ptr_MtxCluGetDTCStatusW : PTR;
+extern ptr_MtxCluGetDTCVirtualServerNameW : PTR;
+extern ptr_MtxCluGetDefaultClusterResource : PTR;
+extern ptr_MtxCluGetDefaultClusterResourceNonAdmin : PTR;
+extern ptr_MtxCluGetDtcDiskResourceDrive : PTR;
+extern ptr_MtxCluGetNameFromResourceIdString : PTR;
+extern ptr_MtxCluGetNameFromResourceIdStringNonAdmin : PTR;
+extern ptr_MtxCluGetResourceId : PTR;
+extern ptr_MtxCluGetResourceIdStringFromName : PTR;
+extern ptr_MtxCluGetSecurityRegValue : PTR;
+extern ptr_MtxCluGetTmResource : PTR;
+extern ptr_MtxCluGetVirtualServerToken : PTR;
+extern ptr_MtxCluIsClusterPresent : PTR;
+extern ptr_MtxCluIsClusterPresentExW : PTR;
+extern ptr_MtxCluIsNetworkNameInLocalClusterW : PTR;
+extern ptr_MtxCluIsSameClusterW : PTR;
+extern ptr_MtxCluIsSameNodeW : PTR;
+extern ptr_MtxCluSetDefaultClusterResource : PTR;
+extern ptr_MtxCluSetSecurityRegValue : PTR;
+extern ptr_MtxCluTakeOfflineDTCW : PTR;
+extern ptr_MtxCluVerifyLogPathInDependantDiskResource : PTR;
+extern ptr_Startup : PTR;
+
+
+.code
+
+align 16
+SEH_handler   proc
+; handler
+ret
+SEH_handler   endp
+
+MtxCluBringOnlineDTCW PROC
+jmp ptr_MtxCluBringOnlineDTCW
+MtxCluBringOnlineDTCW ENDP
+
+MtxCluCreateClusterProxyTmInstance PROC
+jmp ptr_MtxCluCreateClusterProxyTmInstance
+MtxCluCreateClusterProxyTmInstance ENDP
+
+MtxCluCreateClusterTmInstance PROC
+jmp ptr_MtxCluCreateClusterTmInstance
+MtxCluCreateClusterTmInstance ENDP
+
+MtxCluCreateTmInstanceForVirtualServer PROC
+jmp ptr_MtxCluCreateTmInstanceForVirtualServer
+MtxCluCreateTmInstanceForVirtualServer ENDP
+
+MtxCluEnumerateDtcResources PROC
+jmp ptr_MtxCluEnumerateDtcResources
+MtxCluEnumerateDtcResources ENDP
+
+MtxCluGetActiveClusterNode PROC
+jmp ptr_MtxCluGetActiveClusterNode
+MtxCluGetActiveClusterNode ENDP
+
+MtxCluGetClusterResourceIdFromName PROC
+jmp ptr_MtxCluGetClusterResourceIdFromName
+MtxCluGetClusterResourceIdFromName ENDP
+
+MtxCluGetComputerNameW PROC
+jmp ptr_MtxCluGetComputerNameW
+MtxCluGetComputerNameW ENDP
+
+MtxCluGetDTCResourceForResource PROC
+jmp ptr_MtxCluGetDTCResourceForResource
+MtxCluGetDTCResourceForResource ENDP
+
+MtxCluGetDTCStatusW PROC
+jmp ptr_MtxCluGetDTCStatusW
+MtxCluGetDTCStatusW ENDP
+
+MtxCluGetDTCVirtualServerNameW PROC
+jmp ptr_MtxCluGetDTCVirtualServerNameW
+MtxCluGetDTCVirtualServerNameW ENDP
+
+MtxCluGetDefaultClusterResource PROC
+jmp ptr_MtxCluGetDefaultClusterResource
+MtxCluGetDefaultClusterResource ENDP
+
+MtxCluGetDefaultClusterResourceNonAdmin PROC
+jmp ptr_MtxCluGetDefaultClusterResourceNonAdmin
+MtxCluGetDefaultClusterResourceNonAdmin ENDP
+
+MtxCluGetDtcDiskResourceDrive PROC
+jmp ptr_MtxCluGetDtcDiskResourceDrive
+MtxCluGetDtcDiskResourceDrive ENDP
+
+MtxCluGetNameFromResourceIdString PROC
+jmp ptr_MtxCluGetNameFromResourceIdString
+MtxCluGetNameFromResourceIdString ENDP
+
+MtxCluGetNameFromResourceIdStringNonAdmin PROC
+jmp ptr_MtxCluGetNameFromResourceIdStringNonAdmin
+MtxCluGetNameFromResourceIdStringNonAdmin ENDP
+
+MtxCluGetResourceId PROC
+jmp ptr_MtxCluGetResourceId
+MtxCluGetResourceId ENDP
+
+MtxCluGetResourceIdStringFromName PROC
+jmp ptr_MtxCluGetResourceIdStringFromName
+MtxCluGetResourceIdStringFromName ENDP
+
+MtxCluGetSecurityRegValue PROC
+jmp ptr_MtxCluGetSecurityRegValue
+MtxCluGetSecurityRegValue ENDP
+
+MtxCluGetTmResource PROC
+jmp ptr_MtxCluGetTmResource
+MtxCluGetTmResource ENDP
+
+MtxCluGetVirtualServerToken PROC
+jmp ptr_MtxCluGetVirtualServerToken
+MtxCluGetVirtualServerToken ENDP
+
+MtxCluIsClusterPresent PROC
+jmp ptr_MtxCluIsClusterPresent
+MtxCluIsClusterPresent ENDP
+
+MtxCluIsClusterPresentExW PROC
+jmp ptr_MtxCluIsClusterPresentExW
+MtxCluIsClusterPresentExW ENDP
+
+MtxCluIsNetworkNameInLocalClusterW PROC
+jmp ptr_MtxCluIsNetworkNameInLocalClusterW
+MtxCluIsNetworkNameInLocalClusterW ENDP
+
+MtxCluIsSameClusterW PROC
+jmp ptr_MtxCluIsSameClusterW
+MtxCluIsSameClusterW ENDP
+
+MtxCluIsSameNodeW PROC
+jmp ptr_MtxCluIsSameNodeW
+MtxCluIsSameNodeW ENDP
+
+MtxCluSetDefaultClusterResource PROC
+jmp ptr_MtxCluSetDefaultClusterResource
+MtxCluSetDefaultClusterResource ENDP
+
+MtxCluSetSecurityRegValue PROC
+jmp ptr_MtxCluSetSecurityRegValue
+MtxCluSetSecurityRegValue ENDP
+
+MtxCluTakeOfflineDTCW PROC
+jmp ptr_MtxCluTakeOfflineDTCW
+MtxCluTakeOfflineDTCW ENDP
+
+MtxCluVerifyLogPathInDependantDiskResource PROC
+jmp ptr_MtxCluVerifyLogPathInDependantDiskResource
+MtxCluVerifyLogPathInDependantDiskResource ENDP
+
+Startup PROC
+jmp ptr_Startup
+Startup ENDP
+
+end

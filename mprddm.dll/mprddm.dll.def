@@ -1,0 +1,47 @@
+﻿LIBRARY
+EXPORTS
+
+DDMAdminConnectionClearStats @1
+DDMAdminConnectionEnum @2
+DDMAdminConnectionEnumEx @3
+DDMAdminConnectionGetInfo @4
+DDMAdminConnectionGetInfoEx @5
+DDMAdminInterfaceConnect @6
+DDMAdminInterfaceDisconnect @7
+DDMAdminPortClearStats @8
+DDMAdminPortDisconnect @9
+DDMAdminPortEnum @10
+DDMAdminPortGetInfo @11
+DDMAdminPortReset @12
+DDMAdminRemoveQuarantine @13
+DDMAdminServerGetInfo @14
+DDMAdminServerGetInfoEx @15
+DDMAdminServerSetInfo @16
+DDMAdminServerSetInfoEx @17
+DDMAdminUpdateConnection @18
+DDMConnectInterface @19
+DDMDisconnectInterface @20
+DDMGetIdentityAttributes @21
+DDMPostCleanup @22
+DDMRegisterConnectionNotification @23
+DDMSendUserMessage @24
+DDMServiceInitialize @25
+DDMServicePostListens @26
+DDMTransportCreate @27
+IfObjectFreePhonebookContext @28
+IfObjectInitiatePersistentConnections @29
+IfObjectLoadPhonebookInfo @30
+IfObjectNotifyOfReachabilityChange @31
+IfObjectSetDialoutHoursRestriction @32
+RasAcctConfigChangeNotification @33
+RasAcctProviderFreeAttributes @34
+RasAcctProviderInitialize @35
+RasAcctProviderInterimAccounting @36
+RasAcctProviderStartAccounting @37
+RasAcctProviderStopAccounting @38
+RasAcctProviderTerminate @39
+RasAuthConfigChangeNotification @40
+RasAuthProviderAuthenticateUser @41
+RasAuthProviderFreeAttributes @42
+RasAuthProviderInitialize @43
+RasAuthProviderTerminate @44

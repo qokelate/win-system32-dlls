@@ -1,0 +1,12 @@
+﻿LIBRARY
+EXPORTS
+
+CredentialUpdateFree @4
+CredentialUpdateNotify @5
+CredentialUpdateRegister @2
+SpInitialize @1
+SpInstanceInit @32
+SpLsaModeInitialize @6
+SpUserModeInitialize @7
+SsiCredentialsUpdateFree @8
+SsiCredentialsUpdateNotify @3

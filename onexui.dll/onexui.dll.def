@@ -1,0 +1,6 @@
+﻿LIBRARY
+EXPORTS
+
+OneXGetUserFriendlyText @1
+OneXShowUI @2
+OneXShowUIFromEAPCreds @3

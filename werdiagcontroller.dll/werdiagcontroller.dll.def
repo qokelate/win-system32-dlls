@@ -1,0 +1,5 @@
+﻿LIBRARY
+EXPORTS
+
+StartAppRecorder @1
+StartFDR @2

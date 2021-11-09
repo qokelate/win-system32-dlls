@@ -1,0 +1,42 @@
+﻿LIBRARY
+EXPORTS
+
+PcwAddQueryItem @1
+PcwClearCounterSetSecurity @2
+PcwCollectData @3
+PcwCompleteNotification @4
+PcwCreateNotifier @5
+PcwCreateQuery @6
+PcwDisconnectCounterSet @7
+PcwEnumerateInstances @8
+PcwIsNotifierAlive @9
+PcwQueryCounterSetSecurity @10
+PcwReadNotificationData @11
+PcwRegisterCounterSet @12
+PcwRemoveQueryItem @13
+PcwSendNotification @14
+PcwSendStatelessNotification @15
+PcwSetCounterSetSecurity @16
+PcwSetQueryItemUserData @17
+PerfCreateInstance @18
+PerfDecrementULongCounterValue @19
+PerfDecrementULongLongCounterValue @20
+PerfDeleteInstance @21
+PerfIncrementULongCounterValue @22
+PerfIncrementULongLongCounterValue @23
+PerfQueryInstance @24
+PerfSetCounterRefValue @25
+PerfSetCounterSetInfo @26
+PerfSetULongCounterValue @27
+PerfSetULongLongCounterValue @28
+PerfStartProvider @29
+PerfStartProviderEx @30
+PerfStopProvider @31
+StmAlignSize @32
+StmAllocateFlat @33
+StmCoalesceChunks @34
+StmDeinitialize @35
+StmInitialize @36
+StmReduceSize @37
+StmReserve @38
+StmWrite @39

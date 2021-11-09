@@ -1,0 +1,240 @@
+ifndef X64
+.686p
+.XMM
+.safeseh SEH_handler
+.model flat, C
+option dotname
+option casemap : none
+endif
+
+extern ptr_AccConvertAccessMaskToActrlAccess : PTR;
+extern ptr_AccConvertAccessToSD : PTR;
+extern ptr_AccConvertAccessToSecurityDescriptor : PTR;
+extern ptr_AccConvertAclToAccess : PTR;
+extern ptr_AccConvertSDToAccess : PTR;
+extern ptr_AccFreeIndexArray : PTR;
+extern ptr_AccGetAccessForTrustee : PTR;
+extern ptr_AccGetExplicitEntries : PTR;
+extern ptr_AccGetInheritanceSource : PTR;
+extern ptr_AccLookupAccountName : PTR;
+extern ptr_AccLookupAccountSid : PTR;
+extern ptr_AccLookupAccountTrustee : PTR;
+extern ptr_AccProvCancelOperation : PTR;
+extern ptr_AccProvGetAccessInfoPerObjectType : PTR;
+extern ptr_AccProvGetAllRights : PTR;
+extern ptr_AccProvGetCapabilities : PTR;
+extern ptr_AccProvGetOperationResults : PTR;
+extern ptr_AccProvGetTrusteesAccess : PTR;
+extern ptr_AccProvGrantAccessRights : PTR;
+extern ptr_AccProvHandleGetAccessInfoPerObjectType : PTR;
+extern ptr_AccProvHandleGetAllRights : PTR;
+extern ptr_AccProvHandleGetTrusteesAccess : PTR;
+extern ptr_AccProvHandleGrantAccessRights : PTR;
+extern ptr_AccProvHandleIsAccessAudited : PTR;
+extern ptr_AccProvHandleIsObjectAccessible : PTR;
+extern ptr_AccProvHandleRevokeAccessRights : PTR;
+extern ptr_AccProvHandleRevokeAuditRights : PTR;
+extern ptr_AccProvHandleSetAccessRights : PTR;
+extern ptr_AccProvIsAccessAudited : PTR;
+extern ptr_AccProvIsObjectAccessible : PTR;
+extern ptr_AccProvRevokeAccessRights : PTR;
+extern ptr_AccProvRevokeAuditRights : PTR;
+extern ptr_AccProvSetAccessRights : PTR;
+extern ptr_AccRewriteGetExplicitEntriesFromAcl : PTR;
+extern ptr_AccRewriteGetHandleRights : PTR;
+extern ptr_AccRewriteGetNamedRights : PTR;
+extern ptr_AccRewriteSetEntriesInAcl : PTR;
+extern ptr_AccRewriteSetHandleRights : PTR;
+extern ptr_AccRewriteSetNamedRights : PTR;
+extern ptr_AccSetEntriesInAList : PTR;
+extern ptr_AccTreeResetNamedSecurityInfo : PTR;
+extern ptr_EventGuidToName : PTR;
+extern ptr_EventNameFree : PTR;
+extern ptr_GetMartaExtensionInterface : PTR;
+
+
+.code
+
+align 16
+SEH_handler   proc
+; handler
+ret
+SEH_handler   endp
+
+AccConvertAccessMaskToActrlAccess PROC
+jmp ptr_AccConvertAccessMaskToActrlAccess
+AccConvertAccessMaskToActrlAccess ENDP
+
+AccConvertAccessToSD PROC
+jmp ptr_AccConvertAccessToSD
+AccConvertAccessToSD ENDP
+
+AccConvertAccessToSecurityDescriptor PROC
+jmp ptr_AccConvertAccessToSecurityDescriptor
+AccConvertAccessToSecurityDescriptor ENDP
+
+AccConvertAclToAccess PROC
+jmp ptr_AccConvertAclToAccess
+AccConvertAclToAccess ENDP
+
+AccConvertSDToAccess PROC
+jmp ptr_AccConvertSDToAccess
+AccConvertSDToAccess ENDP
+
+AccFreeIndexArray PROC
+jmp ptr_AccFreeIndexArray
+AccFreeIndexArray ENDP
+
+AccGetAccessForTrustee PROC
+jmp ptr_AccGetAccessForTrustee
+AccGetAccessForTrustee ENDP
+
+AccGetExplicitEntries PROC
+jmp ptr_AccGetExplicitEntries
+AccGetExplicitEntries ENDP
+
+AccGetInheritanceSource PROC
+jmp ptr_AccGetInheritanceSource
+AccGetInheritanceSource ENDP
+
+AccLookupAccountName PROC
+jmp ptr_AccLookupAccountName
+AccLookupAccountName ENDP
+
+AccLookupAccountSid PROC
+jmp ptr_AccLookupAccountSid
+AccLookupAccountSid ENDP
+
+AccLookupAccountTrustee PROC
+jmp ptr_AccLookupAccountTrustee
+AccLookupAccountTrustee ENDP
+
+AccProvCancelOperation PROC
+jmp ptr_AccProvCancelOperation
+AccProvCancelOperation ENDP
+
+AccProvGetAccessInfoPerObjectType PROC
+jmp ptr_AccProvGetAccessInfoPerObjectType
+AccProvGetAccessInfoPerObjectType ENDP
+
+AccProvGetAllRights PROC
+jmp ptr_AccProvGetAllRights
+AccProvGetAllRights ENDP
+
+AccProvGetCapabilities PROC
+jmp ptr_AccProvGetCapabilities
+AccProvGetCapabilities ENDP
+
+AccProvGetOperationResults PROC
+jmp ptr_AccProvGetOperationResults
+AccProvGetOperationResults ENDP
+
+AccProvGetTrusteesAccess PROC
+jmp ptr_AccProvGetTrusteesAccess
+AccProvGetTrusteesAccess ENDP
+
+AccProvGrantAccessRights PROC
+jmp ptr_AccProvGrantAccessRights
+AccProvGrantAccessRights ENDP
+
+AccProvHandleGetAccessInfoPerObjectType PROC
+jmp ptr_AccProvHandleGetAccessInfoPerObjectType
+AccProvHandleGetAccessInfoPerObjectType ENDP
+
+AccProvHandleGetAllRights PROC
+jmp ptr_AccProvHandleGetAllRights
+AccProvHandleGetAllRights ENDP
+
+AccProvHandleGetTrusteesAccess PROC
+jmp ptr_AccProvHandleGetTrusteesAccess
+AccProvHandleGetTrusteesAccess ENDP
+
+AccProvHandleGrantAccessRights PROC
+jmp ptr_AccProvHandleGrantAccessRights
+AccProvHandleGrantAccessRights ENDP
+
+AccProvHandleIsAccessAudited PROC
+jmp ptr_AccProvHandleIsAccessAudited
+AccProvHandleIsAccessAudited ENDP
+
+AccProvHandleIsObjectAccessible PROC
+jmp ptr_AccProvHandleIsObjectAccessible
+AccProvHandleIsObjectAccessible ENDP
+
+AccProvHandleRevokeAccessRights PROC
+jmp ptr_AccProvHandleRevokeAccessRights
+AccProvHandleRevokeAccessRights ENDP
+
+AccProvHandleRevokeAuditRights PROC
+jmp ptr_AccProvHandleRevokeAuditRights
+AccProvHandleRevokeAuditRights ENDP
+
+AccProvHandleSetAccessRights PROC
+jmp ptr_AccProvHandleSetAccessRights
+AccProvHandleSetAccessRights ENDP
+
+AccProvIsAccessAudited PROC
+jmp ptr_AccProvIsAccessAudited
+AccProvIsAccessAudited ENDP
+
+AccProvIsObjectAccessible PROC
+jmp ptr_AccProvIsObjectAccessible
+AccProvIsObjectAccessible ENDP
+
+AccProvRevokeAccessRights PROC
+jmp ptr_AccProvRevokeAccessRights
+AccProvRevokeAccessRights ENDP
+
+AccProvRevokeAuditRights PROC
+jmp ptr_AccProvRevokeAuditRights
+AccProvRevokeAuditRights ENDP
+
+AccProvSetAccessRights PROC
+jmp ptr_AccProvSetAccessRights
+AccProvSetAccessRights ENDP
+
+AccRewriteGetExplicitEntriesFromAcl PROC
+jmp ptr_AccRewriteGetExplicitEntriesFromAcl
+AccRewriteGetExplicitEntriesFromAcl ENDP
+
+AccRewriteGetHandleRights PROC
+jmp ptr_AccRewriteGetHandleRights
+AccRewriteGetHandleRights ENDP
+
+AccRewriteGetNamedRights PROC
+jmp ptr_AccRewriteGetNamedRights
+AccRewriteGetNamedRights ENDP
+
+AccRewriteSetEntriesInAcl PROC
+jmp ptr_AccRewriteSetEntriesInAcl
+AccRewriteSetEntriesInAcl ENDP
+
+AccRewriteSetHandleRights PROC
+jmp ptr_AccRewriteSetHandleRights
+AccRewriteSetHandleRights ENDP
+
+AccRewriteSetNamedRights PROC
+jmp ptr_AccRewriteSetNamedRights
+AccRewriteSetNamedRights ENDP
+
+AccSetEntriesInAList PROC
+jmp ptr_AccSetEntriesInAList
+AccSetEntriesInAList ENDP
+
+AccTreeResetNamedSecurityInfo PROC
+jmp ptr_AccTreeResetNamedSecurityInfo
+AccTreeResetNamedSecurityInfo ENDP
+
+EventGuidToName PROC
+jmp ptr_EventGuidToName
+EventGuidToName ENDP
+
+EventNameFree PROC
+jmp ptr_EventNameFree
+EventNameFree ENDP
+
+GetMartaExtensionInterface PROC
+jmp ptr_GetMartaExtensionInterface
+GetMartaExtensionInterface ENDP
+
+end

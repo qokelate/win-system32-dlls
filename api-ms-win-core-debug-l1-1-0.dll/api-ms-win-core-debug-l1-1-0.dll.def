@@ -1,0 +1,7 @@
+﻿LIBRARY
+EXPORTS
+
+DebugBreak @1
+IsDebuggerPresent @2
+OutputDebugStringA @3
+OutputDebugStringW @4

@@ -1,0 +1,18 @@
+﻿LIBRARY
+EXPORTS
+
+CanShareFolder @1
+DllCanUnloadNow @2
+DllGetClassObject @3
+GetLocalPathFromNetResource @4
+GetLocalPathFromNetResourceA @5
+GetLocalPathFromNetResourceW @6
+GetNetResourceFromLocalPath @7
+GetNetResourceFromLocalPathA @8
+GetNetResourceFromLocalPathW @9
+IsFolderPrivateForUser @10
+IsPathShared @11
+IsPathSharedA @12
+IsPathSharedW @13
+SetFolderPermissionsForSharing @14
+ShowShareFolderUI @15

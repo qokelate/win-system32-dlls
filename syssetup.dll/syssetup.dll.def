@@ -1,0 +1,13 @@
+﻿LIBRARY
+EXPORTS
+
+AsrAddSifEntryA @1
+AsrAddSifEntryW @2
+AsrCreateStateFileA @3
+AsrCreateStateFileW @4
+AsrFreeContext @5
+AsrRestorePlugPlayRegistryData @6
+GetAnswerFileSetting @7
+SetupChangeFontSize @8
+SetupSetDisplay @10
+WaitForSamService @11

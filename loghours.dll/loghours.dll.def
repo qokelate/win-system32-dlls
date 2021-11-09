@@ -1,0 +1,13 @@
+﻿LIBRARY
+EXPORTS
+
+ConnectionScheduleDialog @2
+ConnectionScheduleDialogEx @9
+DialinHoursDialog @3
+DialinHoursDialogEx @6
+DirSyncScheduleDialog @4
+DirSyncScheduleDialogEx @10
+LogonScheduleDialog @1
+LogonScheduleDialogEx @5
+ReplicationScheduleDialog @7
+ReplicationScheduleDialogEx @8

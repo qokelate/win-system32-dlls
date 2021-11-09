@@ -1,0 +1,11 @@
+﻿LIBRARY
+EXPORTS
+
+DtcGetTransactionManager @5
+DtcGetTransactionManagerC @7
+DtcGetTransactionManagerEx @6
+DtcGetTransactionManagerExA @10
+DtcGetTransactionManagerExW @11
+FreezeLocalTransactionManagers @8
+GetDtcLocaleResourceHandle @4
+ThawLocalTransactionManagers @9

@@ -1,0 +1,8 @@
+﻿LIBRARY
+EXPORTS
+
+MappingDoAction @1
+MappingFreePropertyBag @2
+MappingFreeServices @3
+MappingGetServices @4
+MappingRecognizeText @5

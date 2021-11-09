@@ -1,0 +1,7 @@
+﻿LIBRARY
+EXPORTS
+
+CloseHandle @1
+DuplicateHandle @2
+GetHandleInformation @3
+SetHandleInformation @4

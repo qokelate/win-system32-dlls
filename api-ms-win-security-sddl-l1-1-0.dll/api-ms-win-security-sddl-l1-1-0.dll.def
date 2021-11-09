@@ -1,0 +1,7 @@
+﻿LIBRARY
+EXPORTS
+
+ConvertSecurityDescriptorToStringSecurityDescriptorW @1
+ConvertSidToStringSidW @2
+ConvertStringSecurityDescriptorToSecurityDescriptorW @3
+ConvertStringSidToSidW @4

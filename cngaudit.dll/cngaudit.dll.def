@@ -1,0 +1,4 @@
+﻿LIBRARY
+EXPORTS
+
+CngGetAuditFunctionTable @1

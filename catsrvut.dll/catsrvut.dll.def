@@ -1,0 +1,21 @@
+﻿LIBRARY
+EXPORTS
+
+CGMIsAdministrator @21
+COMPlusUninstallActionW @22
+CreateComRegDBWriter @23
+DestroyComRegDBWriter @24
+DllCanUnloadNow @25
+DllGetClassObject @26
+DllRegisterServer @27
+DllUnregisterServer @28
+FindAssemblyModulesW @29
+ManagedRequestW @30
+QueryUserDllW @31
+RegDBBackup @17
+RegDBRestore @18
+RunMTSToCom @32
+StartMTSTOCOM @19
+SysprepComplus @33
+SysprepComplus2 @34
+WinlogonHandlePendingInfOperations @20

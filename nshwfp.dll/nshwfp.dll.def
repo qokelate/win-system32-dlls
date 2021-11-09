@@ -1,0 +1,10 @@
+﻿LIBRARY
+EXPORTS
+
+IdpConfigAddPolicy @1
+IdpConfigAllocateAndGetPolicy @2
+IdpConfigFreePolicy @3
+IdpConfigInitDefaultPolicy @4
+IdpConfigRemovePolicy @5
+InitHelperDll @6
+WfpCaptureExportedW @7

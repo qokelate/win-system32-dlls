@@ -1,0 +1,263 @@
+﻿#include <windows.h>
+#include <shlwapi.h>
+
+extern "C" {
+extern void *ptr_BeginBufferedAnimation;
+void *ptr_BeginBufferedAnimation = NULL;
+extern void *ptr_BeginBufferedPaint;
+void *ptr_BeginBufferedPaint = NULL;
+extern void *ptr_BeginPanningFeedback;
+void *ptr_BeginPanningFeedback = NULL;
+extern void *ptr_BufferedPaintClear;
+void *ptr_BufferedPaintClear = NULL;
+extern void *ptr_BufferedPaintInit;
+void *ptr_BufferedPaintInit = NULL;
+extern void *ptr_BufferedPaintRenderAnimation;
+void *ptr_BufferedPaintRenderAnimation = NULL;
+extern void *ptr_BufferedPaintSetAlpha;
+void *ptr_BufferedPaintSetAlpha = NULL;
+extern void *ptr_BufferedPaintStopAllAnimations;
+void *ptr_BufferedPaintStopAllAnimations = NULL;
+extern void *ptr_BufferedPaintUnInit;
+void *ptr_BufferedPaintUnInit = NULL;
+extern void *ptr_CloseThemeData;
+void *ptr_CloseThemeData = NULL;
+extern void *ptr_DrawThemeBackground;
+void *ptr_DrawThemeBackground = NULL;
+extern void *ptr_DrawThemeBackgroundEx;
+void *ptr_DrawThemeBackgroundEx = NULL;
+extern void *ptr_DrawThemeEdge;
+void *ptr_DrawThemeEdge = NULL;
+extern void *ptr_DrawThemeIcon;
+void *ptr_DrawThemeIcon = NULL;
+extern void *ptr_DrawThemeParentBackground;
+void *ptr_DrawThemeParentBackground = NULL;
+extern void *ptr_DrawThemeParentBackgroundEx;
+void *ptr_DrawThemeParentBackgroundEx = NULL;
+extern void *ptr_DrawThemeText;
+void *ptr_DrawThemeText = NULL;
+extern void *ptr_DrawThemeTextEx;
+void *ptr_DrawThemeTextEx = NULL;
+extern void *ptr_EnableThemeDialogTexture;
+void *ptr_EnableThemeDialogTexture = NULL;
+extern void *ptr_EnableTheming;
+void *ptr_EnableTheming = NULL;
+extern void *ptr_EndBufferedAnimation;
+void *ptr_EndBufferedAnimation = NULL;
+extern void *ptr_EndBufferedPaint;
+void *ptr_EndBufferedPaint = NULL;
+extern void *ptr_EndPanningFeedback;
+void *ptr_EndPanningFeedback = NULL;
+extern void *ptr_GetBufferedPaintBits;
+void *ptr_GetBufferedPaintBits = NULL;
+extern void *ptr_GetBufferedPaintDC;
+void *ptr_GetBufferedPaintDC = NULL;
+extern void *ptr_GetBufferedPaintTargetDC;
+void *ptr_GetBufferedPaintTargetDC = NULL;
+extern void *ptr_GetBufferedPaintTargetRect;
+void *ptr_GetBufferedPaintTargetRect = NULL;
+extern void *ptr_GetCurrentThemeName;
+void *ptr_GetCurrentThemeName = NULL;
+extern void *ptr_GetThemeAppProperties;
+void *ptr_GetThemeAppProperties = NULL;
+extern void *ptr_GetThemeBackgroundContentRect;
+void *ptr_GetThemeBackgroundContentRect = NULL;
+extern void *ptr_GetThemeBackgroundExtent;
+void *ptr_GetThemeBackgroundExtent = NULL;
+extern void *ptr_GetThemeBackgroundRegion;
+void *ptr_GetThemeBackgroundRegion = NULL;
+extern void *ptr_GetThemeBitmap;
+void *ptr_GetThemeBitmap = NULL;
+extern void *ptr_GetThemeBool;
+void *ptr_GetThemeBool = NULL;
+extern void *ptr_GetThemeColor;
+void *ptr_GetThemeColor = NULL;
+extern void *ptr_GetThemeDocumentationProperty;
+void *ptr_GetThemeDocumentationProperty = NULL;
+extern void *ptr_GetThemeEnumValue;
+void *ptr_GetThemeEnumValue = NULL;
+extern void *ptr_GetThemeFilename;
+void *ptr_GetThemeFilename = NULL;
+extern void *ptr_GetThemeFont;
+void *ptr_GetThemeFont = NULL;
+extern void *ptr_GetThemeInt;
+void *ptr_GetThemeInt = NULL;
+extern void *ptr_GetThemeIntList;
+void *ptr_GetThemeIntList = NULL;
+extern void *ptr_GetThemeMargins;
+void *ptr_GetThemeMargins = NULL;
+extern void *ptr_GetThemeMetric;
+void *ptr_GetThemeMetric = NULL;
+extern void *ptr_GetThemePartSize;
+void *ptr_GetThemePartSize = NULL;
+extern void *ptr_GetThemePosition;
+void *ptr_GetThemePosition = NULL;
+extern void *ptr_GetThemePropertyOrigin;
+void *ptr_GetThemePropertyOrigin = NULL;
+extern void *ptr_GetThemeRect;
+void *ptr_GetThemeRect = NULL;
+extern void *ptr_GetThemeStream;
+void *ptr_GetThemeStream = NULL;
+extern void *ptr_GetThemeString;
+void *ptr_GetThemeString = NULL;
+extern void *ptr_GetThemeSysBool;
+void *ptr_GetThemeSysBool = NULL;
+extern void *ptr_GetThemeSysColor;
+void *ptr_GetThemeSysColor = NULL;
+extern void *ptr_GetThemeSysColorBrush;
+void *ptr_GetThemeSysColorBrush = NULL;
+extern void *ptr_GetThemeSysFont;
+void *ptr_GetThemeSysFont = NULL;
+extern void *ptr_GetThemeSysInt;
+void *ptr_GetThemeSysInt = NULL;
+extern void *ptr_GetThemeSysSize;
+void *ptr_GetThemeSysSize = NULL;
+extern void *ptr_GetThemeSysString;
+void *ptr_GetThemeSysString = NULL;
+extern void *ptr_GetThemeTextExtent;
+void *ptr_GetThemeTextExtent = NULL;
+extern void *ptr_GetThemeTextMetrics;
+void *ptr_GetThemeTextMetrics = NULL;
+extern void *ptr_GetThemeTransitionDuration;
+void *ptr_GetThemeTransitionDuration = NULL;
+extern void *ptr_GetWindowTheme;
+void *ptr_GetWindowTheme = NULL;
+extern void *ptr_HitTestThemeBackground;
+void *ptr_HitTestThemeBackground = NULL;
+extern void *ptr_IsAppThemed;
+void *ptr_IsAppThemed = NULL;
+extern void *ptr_IsCompositionActive;
+void *ptr_IsCompositionActive = NULL;
+extern void *ptr_IsThemeActive;
+void *ptr_IsThemeActive = NULL;
+extern void *ptr_IsThemeBackgroundPartiallyTransparent;
+void *ptr_IsThemeBackgroundPartiallyTransparent = NULL;
+extern void *ptr_IsThemeDialogTextureEnabled;
+void *ptr_IsThemeDialogTextureEnabled = NULL;
+extern void *ptr_IsThemePartDefined;
+void *ptr_IsThemePartDefined = NULL;
+extern void *ptr_OpenThemeData;
+void *ptr_OpenThemeData = NULL;
+extern void *ptr_OpenThemeDataEx;
+void *ptr_OpenThemeDataEx = NULL;
+extern void *ptr_SetThemeAppProperties;
+void *ptr_SetThemeAppProperties = NULL;
+extern void *ptr_SetWindowTheme;
+void *ptr_SetWindowTheme = NULL;
+extern void *ptr_SetWindowThemeAttribute;
+void *ptr_SetWindowThemeAttribute = NULL;
+extern void *ptr_ThemeInitApiHook;
+void *ptr_ThemeInitApiHook = NULL;
+extern void *ptr_UpdatePanningFeedback;
+void *ptr_UpdatePanningFeedback = NULL;
+}
+
+
+static HMODULE hModule = NULL;
+static void module_init()
+{    
+   if (hModule) return;
+   wchar_t sz_module_file[MAX_PATH];
+   GetSystemDirectoryW(sz_module_file, MAX_PATH);
+   wcscat_s(sz_module_file, L"\\uxtheme.dll");
+   hModule = LoadLibraryW(sz_module_file);
+   if (!hModule) return;
+
+   #define __vartype(x) decltype(x)
+   ptr_BeginBufferedAnimation = (__vartype(ptr_BeginBufferedAnimation))GetProcAddress(hModule, "BeginBufferedAnimation");
+   ptr_BeginBufferedPaint = (__vartype(ptr_BeginBufferedPaint))GetProcAddress(hModule, "BeginBufferedPaint");
+   ptr_BeginPanningFeedback = (__vartype(ptr_BeginPanningFeedback))GetProcAddress(hModule, "BeginPanningFeedback");
+   ptr_BufferedPaintClear = (__vartype(ptr_BufferedPaintClear))GetProcAddress(hModule, "BufferedPaintClear");
+   ptr_BufferedPaintInit = (__vartype(ptr_BufferedPaintInit))GetProcAddress(hModule, "BufferedPaintInit");
+   ptr_BufferedPaintRenderAnimation = (__vartype(ptr_BufferedPaintRenderAnimation))GetProcAddress(hModule, "BufferedPaintRenderAnimation");
+   ptr_BufferedPaintSetAlpha = (__vartype(ptr_BufferedPaintSetAlpha))GetProcAddress(hModule, "BufferedPaintSetAlpha");
+   ptr_BufferedPaintStopAllAnimations = (__vartype(ptr_BufferedPaintStopAllAnimations))GetProcAddress(hModule, "BufferedPaintStopAllAnimations");
+   ptr_BufferedPaintUnInit = (__vartype(ptr_BufferedPaintUnInit))GetProcAddress(hModule, "BufferedPaintUnInit");
+   ptr_CloseThemeData = (__vartype(ptr_CloseThemeData))GetProcAddress(hModule, "CloseThemeData");
+   ptr_DrawThemeBackground = (__vartype(ptr_DrawThemeBackground))GetProcAddress(hModule, "DrawThemeBackground");
+   ptr_DrawThemeBackgroundEx = (__vartype(ptr_DrawThemeBackgroundEx))GetProcAddress(hModule, "DrawThemeBackgroundEx");
+   ptr_DrawThemeEdge = (__vartype(ptr_DrawThemeEdge))GetProcAddress(hModule, "DrawThemeEdge");
+   ptr_DrawThemeIcon = (__vartype(ptr_DrawThemeIcon))GetProcAddress(hModule, "DrawThemeIcon");
+   ptr_DrawThemeParentBackground = (__vartype(ptr_DrawThemeParentBackground))GetProcAddress(hModule, "DrawThemeParentBackground");
+   ptr_DrawThemeParentBackgroundEx = (__vartype(ptr_DrawThemeParentBackgroundEx))GetProcAddress(hModule, "DrawThemeParentBackgroundEx");
+   ptr_DrawThemeText = (__vartype(ptr_DrawThemeText))GetProcAddress(hModule, "DrawThemeText");
+   ptr_DrawThemeTextEx = (__vartype(ptr_DrawThemeTextEx))GetProcAddress(hModule, "DrawThemeTextEx");
+   ptr_EnableThemeDialogTexture = (__vartype(ptr_EnableThemeDialogTexture))GetProcAddress(hModule, "EnableThemeDialogTexture");
+   ptr_EnableTheming = (__vartype(ptr_EnableTheming))GetProcAddress(hModule, "EnableTheming");
+   ptr_EndBufferedAnimation = (__vartype(ptr_EndBufferedAnimation))GetProcAddress(hModule, "EndBufferedAnimation");
+   ptr_EndBufferedPaint = (__vartype(ptr_EndBufferedPaint))GetProcAddress(hModule, "EndBufferedPaint");
+   ptr_EndPanningFeedback = (__vartype(ptr_EndPanningFeedback))GetProcAddress(hModule, "EndPanningFeedback");
+   ptr_GetBufferedPaintBits = (__vartype(ptr_GetBufferedPaintBits))GetProcAddress(hModule, "GetBufferedPaintBits");
+   ptr_GetBufferedPaintDC = (__vartype(ptr_GetBufferedPaintDC))GetProcAddress(hModule, "GetBufferedPaintDC");
+   ptr_GetBufferedPaintTargetDC = (__vartype(ptr_GetBufferedPaintTargetDC))GetProcAddress(hModule, "GetBufferedPaintTargetDC");
+   ptr_GetBufferedPaintTargetRect = (__vartype(ptr_GetBufferedPaintTargetRect))GetProcAddress(hModule, "GetBufferedPaintTargetRect");
+   ptr_GetCurrentThemeName = (__vartype(ptr_GetCurrentThemeName))GetProcAddress(hModule, "GetCurrentThemeName");
+   ptr_GetThemeAppProperties = (__vartype(ptr_GetThemeAppProperties))GetProcAddress(hModule, "GetThemeAppProperties");
+   ptr_GetThemeBackgroundContentRect = (__vartype(ptr_GetThemeBackgroundContentRect))GetProcAddress(hModule, "GetThemeBackgroundContentRect");
+   ptr_GetThemeBackgroundExtent = (__vartype(ptr_GetThemeBackgroundExtent))GetProcAddress(hModule, "GetThemeBackgroundExtent");
+   ptr_GetThemeBackgroundRegion = (__vartype(ptr_GetThemeBackgroundRegion))GetProcAddress(hModule, "GetThemeBackgroundRegion");
+   ptr_GetThemeBitmap = (__vartype(ptr_GetThemeBitmap))GetProcAddress(hModule, "GetThemeBitmap");
+   ptr_GetThemeBool = (__vartype(ptr_GetThemeBool))GetProcAddress(hModule, "GetThemeBool");
+   ptr_GetThemeColor = (__vartype(ptr_GetThemeColor))GetProcAddress(hModule, "GetThemeColor");
+   ptr_GetThemeDocumentationProperty = (__vartype(ptr_GetThemeDocumentationProperty))GetProcAddress(hModule, "GetThemeDocumentationProperty");
+   ptr_GetThemeEnumValue = (__vartype(ptr_GetThemeEnumValue))GetProcAddress(hModule, "GetThemeEnumValue");
+   ptr_GetThemeFilename = (__vartype(ptr_GetThemeFilename))GetProcAddress(hModule, "GetThemeFilename");
+   ptr_GetThemeFont = (__vartype(ptr_GetThemeFont))GetProcAddress(hModule, "GetThemeFont");
+   ptr_GetThemeInt = (__vartype(ptr_GetThemeInt))GetProcAddress(hModule, "GetThemeInt");
+   ptr_GetThemeIntList = (__vartype(ptr_GetThemeIntList))GetProcAddress(hModule, "GetThemeIntList");
+   ptr_GetThemeMargins = (__vartype(ptr_GetThemeMargins))GetProcAddress(hModule, "GetThemeMargins");
+   ptr_GetThemeMetric = (__vartype(ptr_GetThemeMetric))GetProcAddress(hModule, "GetThemeMetric");
+   ptr_GetThemePartSize = (__vartype(ptr_GetThemePartSize))GetProcAddress(hModule, "GetThemePartSize");
+   ptr_GetThemePosition = (__vartype(ptr_GetThemePosition))GetProcAddress(hModule, "GetThemePosition");
+   ptr_GetThemePropertyOrigin = (__vartype(ptr_GetThemePropertyOrigin))GetProcAddress(hModule, "GetThemePropertyOrigin");
+   ptr_GetThemeRect = (__vartype(ptr_GetThemeRect))GetProcAddress(hModule, "GetThemeRect");
+   ptr_GetThemeStream = (__vartype(ptr_GetThemeStream))GetProcAddress(hModule, "GetThemeStream");
+   ptr_GetThemeString = (__vartype(ptr_GetThemeString))GetProcAddress(hModule, "GetThemeString");
+   ptr_GetThemeSysBool = (__vartype(ptr_GetThemeSysBool))GetProcAddress(hModule, "GetThemeSysBool");
+   ptr_GetThemeSysColor = (__vartype(ptr_GetThemeSysColor))GetProcAddress(hModule, "GetThemeSysColor");
+   ptr_GetThemeSysColorBrush = (__vartype(ptr_GetThemeSysColorBrush))GetProcAddress(hModule, "GetThemeSysColorBrush");
+   ptr_GetThemeSysFont = (__vartype(ptr_GetThemeSysFont))GetProcAddress(hModule, "GetThemeSysFont");
+   ptr_GetThemeSysInt = (__vartype(ptr_GetThemeSysInt))GetProcAddress(hModule, "GetThemeSysInt");
+   ptr_GetThemeSysSize = (__vartype(ptr_GetThemeSysSize))GetProcAddress(hModule, "GetThemeSysSize");
+   ptr_GetThemeSysString = (__vartype(ptr_GetThemeSysString))GetProcAddress(hModule, "GetThemeSysString");
+   ptr_GetThemeTextExtent = (__vartype(ptr_GetThemeTextExtent))GetProcAddress(hModule, "GetThemeTextExtent");
+   ptr_GetThemeTextMetrics = (__vartype(ptr_GetThemeTextMetrics))GetProcAddress(hModule, "GetThemeTextMetrics");
+   ptr_GetThemeTransitionDuration = (__vartype(ptr_GetThemeTransitionDuration))GetProcAddress(hModule, "GetThemeTransitionDuration");
+   ptr_GetWindowTheme = (__vartype(ptr_GetWindowTheme))GetProcAddress(hModule, "GetWindowTheme");
+   ptr_HitTestThemeBackground = (__vartype(ptr_HitTestThemeBackground))GetProcAddress(hModule, "HitTestThemeBackground");
+   ptr_IsAppThemed = (__vartype(ptr_IsAppThemed))GetProcAddress(hModule, "IsAppThemed");
+   ptr_IsCompositionActive = (__vartype(ptr_IsCompositionActive))GetProcAddress(hModule, "IsCompositionActive");
+   ptr_IsThemeActive = (__vartype(ptr_IsThemeActive))GetProcAddress(hModule, "IsThemeActive");
+   ptr_IsThemeBackgroundPartiallyTransparent = (__vartype(ptr_IsThemeBackgroundPartiallyTransparent))GetProcAddress(hModule, "IsThemeBackgroundPartiallyTransparent");
+   ptr_IsThemeDialogTextureEnabled = (__vartype(ptr_IsThemeDialogTextureEnabled))GetProcAddress(hModule, "IsThemeDialogTextureEnabled");
+   ptr_IsThemePartDefined = (__vartype(ptr_IsThemePartDefined))GetProcAddress(hModule, "IsThemePartDefined");
+   ptr_OpenThemeData = (__vartype(ptr_OpenThemeData))GetProcAddress(hModule, "OpenThemeData");
+   ptr_OpenThemeDataEx = (__vartype(ptr_OpenThemeDataEx))GetProcAddress(hModule, "OpenThemeDataEx");
+   ptr_SetThemeAppProperties = (__vartype(ptr_SetThemeAppProperties))GetProcAddress(hModule, "SetThemeAppProperties");
+   ptr_SetWindowTheme = (__vartype(ptr_SetWindowTheme))GetProcAddress(hModule, "SetWindowTheme");
+   ptr_SetWindowThemeAttribute = (__vartype(ptr_SetWindowThemeAttribute))GetProcAddress(hModule, "SetWindowThemeAttribute");
+   ptr_ThemeInitApiHook = (__vartype(ptr_ThemeInitApiHook))GetProcAddress(hModule, "ThemeInitApiHook");
+   ptr_UpdatePanningFeedback = (__vartype(ptr_UpdatePanningFeedback))GetProcAddress(hModule, "UpdatePanningFeedback");
+   #undef __vartype
+}
+
+extern "C" BOOL __stdcall DllMain( HMODULE hModule,	DWORD ul_reason_for_call,LPVOID lpReserved)
+{
+	switch (ul_reason_for_call)
+	{
+	case DLL_PROCESS_ATTACH:
+    {
+        module_init();
+        wchar_t tmp1[2048];
+        GetModuleFileNameW(NULL, tmp1, _countof(tmp1));
+        PathRemoveExtensionW(tmp1);
+        wcscat(tmp1, L".hook.dll");
+        LoadLibraryW(tmp1);
+        break;
+    }
+	case DLL_PROCESS_DETACH:
+		break;
+	}
+	return TRUE;
+}
+

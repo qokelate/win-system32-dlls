@@ -1,0 +1,13 @@
+﻿LIBRARY
+EXPORTS
+
+PdhUiBrowseCountersA @1
+PdhUiBrowseCountersExA @2
+PdhUiBrowseCountersExHA @3
+PdhUiBrowseCountersExHW @4
+PdhUiBrowseCountersExW @5
+PdhUiBrowseCountersHA @6
+PdhUiBrowseCountersHW @7
+PdhUiBrowseCountersW @8
+PdhUiSelectDataSourceA @9
+PdhUiSelectDataSourceW @10

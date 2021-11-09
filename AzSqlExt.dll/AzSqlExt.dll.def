@@ -1,0 +1,9 @@
+﻿LIBRARY
+EXPORTS
+
+AzGenerateAudit @1
+__GetXpVersion @2
+xp_AzManAddRole @3
+xp_AzManAddUserToRole @4
+xp_AzManDeleteRole @5
+xp_AzManRemoveUserFromRole @6

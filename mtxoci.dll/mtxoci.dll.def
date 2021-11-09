@@ -1,0 +1,43 @@
+﻿LIBRARY
+EXPORTS
+
+DllRegisterServer @23
+DllUnregisterServer @24
+Enlist @1001
+GetXaSwitch @1002
+MTxOciGetVersion @1005
+MTxOciInit @1003
+MTxOciRegisterCursor @1006
+MTxolog @1004
+obindps @37
+obndra @1
+obndrn @2
+obndrv @3
+obreak @4
+ocan @5
+oclose @6
+ocof @7
+ocom @8
+ocon @9
+odefin @10
+odefinps @38
+odescr @11
+odessp @12
+oerhms @13
+oermsg @14
+oexec @15
+oexfet @16
+oexn @17
+ofen @18
+ofetch @19
+oflng @20
+ogetpi @39
+olog @21
+ologTransacted @1000
+ologof @22
+oopen @26
+oopt @27
+oparse @28
+opinit @41
+orol @29
+osetpi @40

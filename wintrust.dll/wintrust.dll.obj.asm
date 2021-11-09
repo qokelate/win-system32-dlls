@@ -1,0 +1,690 @@
+ifndef X64
+.686p
+.XMM
+.safeseh SEH_handler
+.model flat, C
+option dotname
+option casemap : none
+endif
+
+extern ptr_AddPersonalTrustDBPages : PTR;
+extern ptr_CatalogCompactHashDatabase : PTR;
+extern ptr_CryptCATAdminAcquireContext : PTR;
+extern ptr_CryptCATAdminAcquireContext2 : PTR;
+extern ptr_CryptCATAdminAddCatalog : PTR;
+extern ptr_CryptCATAdminCalcHashFromFileHandle : PTR;
+extern ptr_CryptCATAdminCalcHashFromFileHandle2 : PTR;
+extern ptr_CryptCATAdminEnumCatalogFromHash : PTR;
+extern ptr_CryptCATAdminPauseServiceForBackup : PTR;
+extern ptr_CryptCATAdminReleaseCatalogContext : PTR;
+extern ptr_CryptCATAdminReleaseContext : PTR;
+extern ptr_CryptCATAdminRemoveCatalog : PTR;
+extern ptr_CryptCATAdminResolveCatalogPath : PTR;
+extern ptr_CryptCATAllocSortedMemberInfo : PTR;
+extern ptr_CryptCATCDFClose : PTR;
+extern ptr_CryptCATCDFEnumAttributes : PTR;
+extern ptr_CryptCATCDFEnumAttributesWithCDFTag : PTR;
+extern ptr_CryptCATCDFEnumCatAttributes : PTR;
+extern ptr_CryptCATCDFEnumMembers : PTR;
+extern ptr_CryptCATCDFEnumMembersByCDFTag : PTR;
+extern ptr_CryptCATCDFEnumMembersByCDFTagEx : PTR;
+extern ptr_CryptCATCDFOpen : PTR;
+extern ptr_CryptCATCatalogInfoFromContext : PTR;
+extern ptr_CryptCATClose : PTR;
+extern ptr_CryptCATEnumerateAttr : PTR;
+extern ptr_CryptCATEnumerateCatAttr : PTR;
+extern ptr_CryptCATEnumerateMember : PTR;
+extern ptr_CryptCATFreeSortedMemberInfo : PTR;
+extern ptr_CryptCATGetAttrInfo : PTR;
+extern ptr_CryptCATGetCatAttrInfo : PTR;
+extern ptr_CryptCATGetMemberInfo : PTR;
+extern ptr_CryptCATHandleFromStore : PTR;
+extern ptr_CryptCATOpen : PTR;
+extern ptr_CryptCATPersistStore : PTR;
+extern ptr_CryptCATPutAttrInfo : PTR;
+extern ptr_CryptCATPutCatAttrInfo : PTR;
+extern ptr_CryptCATPutMemberInfo : PTR;
+extern ptr_CryptCATStoreFromHandle : PTR;
+extern ptr_CryptCATVerifyMember : PTR;
+extern ptr_CryptSIPCreateIndirectData : PTR;
+extern ptr_CryptSIPGetInfo : PTR;
+extern ptr_CryptSIPGetRegWorkingFlags : PTR;
+extern ptr_CryptSIPGetSignedDataMsg : PTR;
+extern ptr_CryptSIPPutSignedDataMsg : PTR;
+extern ptr_CryptSIPRemoveSignedDataMsg : PTR;
+extern ptr_CryptSIPVerifyIndirectData : PTR;
+extern ptr_DllRegisterServer : PTR;
+extern ptr_DllUnregisterServer : PTR;
+extern ptr_DriverCleanupPolicy : PTR;
+extern ptr_DriverFinalPolicy : PTR;
+extern ptr_DriverInitializePolicy : PTR;
+extern ptr_FindCertsByIssuer : PTR;
+extern ptr_GenericChainCertificateTrust : PTR;
+extern ptr_GenericChainFinalProv : PTR;
+extern ptr_HTTPSCertificateTrust : PTR;
+extern ptr_HTTPSFinalProv : PTR;
+extern ptr_IsCatalogFile : PTR;
+extern ptr_MsCatConstructHashTag : PTR;
+extern ptr_MsCatFreeHashTag : PTR;
+extern ptr_OfficeCleanupPolicy : PTR;
+extern ptr_OfficeInitializePolicy : PTR;
+extern ptr_OpenPersonalTrustDBDialog : PTR;
+extern ptr_OpenPersonalTrustDBDialogEx : PTR;
+extern ptr_SoftpubAuthenticode : PTR;
+extern ptr_SoftpubCheckCert : PTR;
+extern ptr_SoftpubCleanup : PTR;
+extern ptr_SoftpubDefCertInit : PTR;
+extern ptr_SoftpubDllRegisterServer : PTR;
+extern ptr_SoftpubDllUnregisterServer : PTR;
+extern ptr_SoftpubDumpStructure : PTR;
+extern ptr_SoftpubFreeDefUsageCallData : PTR;
+extern ptr_SoftpubInitialize : PTR;
+extern ptr_SoftpubLoadDefUsageCallData : PTR;
+extern ptr_SoftpubLoadMessage : PTR;
+extern ptr_SoftpubLoadSignature : PTR;
+extern ptr_TrustDecode : PTR;
+extern ptr_TrustFindIssuerCertificate : PTR;
+extern ptr_TrustFreeDecode : PTR;
+extern ptr_TrustIsCertificateSelfSigned : PTR;
+extern ptr_TrustOpenStores : PTR;
+extern ptr_WTHelperCertCheckValidSignature : PTR;
+extern ptr_WTHelperCertFindIssuerCertificate : PTR;
+extern ptr_WTHelperCertIsSelfSigned : PTR;
+extern ptr_WTHelperCheckCertUsage : PTR;
+extern ptr_WTHelperGetAgencyInfo : PTR;
+extern ptr_WTHelperGetFileHandle : PTR;
+extern ptr_WTHelperGetFileHash : PTR;
+extern ptr_WTHelperGetFileName : PTR;
+extern ptr_WTHelperGetKnownUsages : PTR;
+extern ptr_WTHelperGetProvCertFromChain : PTR;
+extern ptr_WTHelperGetProvPrivateDataFromChain : PTR;
+extern ptr_WTHelperGetProvSignerFromChain : PTR;
+extern ptr_WTHelperIsInRootStore : PTR;
+extern ptr_WTHelperOpenKnownStores : PTR;
+extern ptr_WTHelperProvDataFromStateData : PTR;
+extern ptr_WVTAsn1CatMemberInfo2Decode : PTR;
+extern ptr_WVTAsn1CatMemberInfo2Encode : PTR;
+extern ptr_WVTAsn1CatMemberInfoDecode : PTR;
+extern ptr_WVTAsn1CatMemberInfoEncode : PTR;
+extern ptr_WVTAsn1CatNameValueDecode : PTR;
+extern ptr_WVTAsn1CatNameValueEncode : PTR;
+extern ptr_WVTAsn1SpcFinancialCriteriaInfoDecode : PTR;
+extern ptr_WVTAsn1SpcFinancialCriteriaInfoEncode : PTR;
+extern ptr_WVTAsn1SpcIndirectDataContentDecode : PTR;
+extern ptr_WVTAsn1SpcIndirectDataContentEncode : PTR;
+extern ptr_WVTAsn1SpcLinkDecode : PTR;
+extern ptr_WVTAsn1SpcLinkEncode : PTR;
+extern ptr_WVTAsn1SpcMinimalCriteriaInfoDecode : PTR;
+extern ptr_WVTAsn1SpcMinimalCriteriaInfoEncode : PTR;
+extern ptr_WVTAsn1SpcPeImageDataDecode : PTR;
+extern ptr_WVTAsn1SpcPeImageDataEncode : PTR;
+extern ptr_WVTAsn1SpcSigInfoDecode : PTR;
+extern ptr_WVTAsn1SpcSigInfoEncode : PTR;
+extern ptr_WVTAsn1SpcSpAgencyInfoDecode : PTR;
+extern ptr_WVTAsn1SpcSpAgencyInfoEncode : PTR;
+extern ptr_WVTAsn1SpcSpOpusInfoDecode : PTR;
+extern ptr_WVTAsn1SpcSpOpusInfoEncode : PTR;
+extern ptr_WVTAsn1SpcStatementTypeDecode : PTR;
+extern ptr_WVTAsn1SpcStatementTypeEncode : PTR;
+extern ptr_WinVerifyTrust : PTR;
+extern ptr_WinVerifyTrustEx : PTR;
+extern ptr_WintrustAddActionID : PTR;
+extern ptr_WintrustAddDefaultForUsage : PTR;
+extern ptr_WintrustCertificateTrust : PTR;
+extern ptr_WintrustGetDefaultForUsage : PTR;
+extern ptr_WintrustGetRegPolicyFlags : PTR;
+extern ptr_WintrustLoadFunctionPointers : PTR;
+extern ptr_WintrustRemoveActionID : PTR;
+extern ptr_WintrustSetDefaultIncludePEPageHashes : PTR;
+extern ptr_WintrustSetRegPolicyFlags : PTR;
+extern ptr_mscat32DllRegisterServer : PTR;
+extern ptr_mscat32DllUnregisterServer : PTR;
+extern ptr_mssip32DllRegisterServer : PTR;
+extern ptr_mssip32DllUnregisterServer : PTR;
+
+
+.code
+
+align 16
+SEH_handler   proc
+; handler
+ret
+SEH_handler   endp
+
+AddPersonalTrustDBPages PROC
+jmp ptr_AddPersonalTrustDBPages
+AddPersonalTrustDBPages ENDP
+
+CatalogCompactHashDatabase PROC
+jmp ptr_CatalogCompactHashDatabase
+CatalogCompactHashDatabase ENDP
+
+CryptCATAdminAcquireContext PROC
+jmp ptr_CryptCATAdminAcquireContext
+CryptCATAdminAcquireContext ENDP
+
+CryptCATAdminAcquireContext2 PROC
+jmp ptr_CryptCATAdminAcquireContext2
+CryptCATAdminAcquireContext2 ENDP
+
+CryptCATAdminAddCatalog PROC
+jmp ptr_CryptCATAdminAddCatalog
+CryptCATAdminAddCatalog ENDP
+
+CryptCATAdminCalcHashFromFileHandle PROC
+jmp ptr_CryptCATAdminCalcHashFromFileHandle
+CryptCATAdminCalcHashFromFileHandle ENDP
+
+CryptCATAdminCalcHashFromFileHandle2 PROC
+jmp ptr_CryptCATAdminCalcHashFromFileHandle2
+CryptCATAdminCalcHashFromFileHandle2 ENDP
+
+CryptCATAdminEnumCatalogFromHash PROC
+jmp ptr_CryptCATAdminEnumCatalogFromHash
+CryptCATAdminEnumCatalogFromHash ENDP
+
+CryptCATAdminPauseServiceForBackup PROC
+jmp ptr_CryptCATAdminPauseServiceForBackup
+CryptCATAdminPauseServiceForBackup ENDP
+
+CryptCATAdminReleaseCatalogContext PROC
+jmp ptr_CryptCATAdminReleaseCatalogContext
+CryptCATAdminReleaseCatalogContext ENDP
+
+CryptCATAdminReleaseContext PROC
+jmp ptr_CryptCATAdminReleaseContext
+CryptCATAdminReleaseContext ENDP
+
+CryptCATAdminRemoveCatalog PROC
+jmp ptr_CryptCATAdminRemoveCatalog
+CryptCATAdminRemoveCatalog ENDP
+
+CryptCATAdminResolveCatalogPath PROC
+jmp ptr_CryptCATAdminResolveCatalogPath
+CryptCATAdminResolveCatalogPath ENDP
+
+CryptCATAllocSortedMemberInfo PROC
+jmp ptr_CryptCATAllocSortedMemberInfo
+CryptCATAllocSortedMemberInfo ENDP
+
+CryptCATCDFClose PROC
+jmp ptr_CryptCATCDFClose
+CryptCATCDFClose ENDP
+
+CryptCATCDFEnumAttributes PROC
+jmp ptr_CryptCATCDFEnumAttributes
+CryptCATCDFEnumAttributes ENDP
+
+CryptCATCDFEnumAttributesWithCDFTag PROC
+jmp ptr_CryptCATCDFEnumAttributesWithCDFTag
+CryptCATCDFEnumAttributesWithCDFTag ENDP
+
+CryptCATCDFEnumCatAttributes PROC
+jmp ptr_CryptCATCDFEnumCatAttributes
+CryptCATCDFEnumCatAttributes ENDP
+
+CryptCATCDFEnumMembers PROC
+jmp ptr_CryptCATCDFEnumMembers
+CryptCATCDFEnumMembers ENDP
+
+CryptCATCDFEnumMembersByCDFTag PROC
+jmp ptr_CryptCATCDFEnumMembersByCDFTag
+CryptCATCDFEnumMembersByCDFTag ENDP
+
+CryptCATCDFEnumMembersByCDFTagEx PROC
+jmp ptr_CryptCATCDFEnumMembersByCDFTagEx
+CryptCATCDFEnumMembersByCDFTagEx ENDP
+
+CryptCATCDFOpen PROC
+jmp ptr_CryptCATCDFOpen
+CryptCATCDFOpen ENDP
+
+CryptCATCatalogInfoFromContext PROC
+jmp ptr_CryptCATCatalogInfoFromContext
+CryptCATCatalogInfoFromContext ENDP
+
+CryptCATClose PROC
+jmp ptr_CryptCATClose
+CryptCATClose ENDP
+
+CryptCATEnumerateAttr PROC
+jmp ptr_CryptCATEnumerateAttr
+CryptCATEnumerateAttr ENDP
+
+CryptCATEnumerateCatAttr PROC
+jmp ptr_CryptCATEnumerateCatAttr
+CryptCATEnumerateCatAttr ENDP
+
+CryptCATEnumerateMember PROC
+jmp ptr_CryptCATEnumerateMember
+CryptCATEnumerateMember ENDP
+
+CryptCATFreeSortedMemberInfo PROC
+jmp ptr_CryptCATFreeSortedMemberInfo
+CryptCATFreeSortedMemberInfo ENDP
+
+CryptCATGetAttrInfo PROC
+jmp ptr_CryptCATGetAttrInfo
+CryptCATGetAttrInfo ENDP
+
+CryptCATGetCatAttrInfo PROC
+jmp ptr_CryptCATGetCatAttrInfo
+CryptCATGetCatAttrInfo ENDP
+
+CryptCATGetMemberInfo PROC
+jmp ptr_CryptCATGetMemberInfo
+CryptCATGetMemberInfo ENDP
+
+CryptCATHandleFromStore PROC
+jmp ptr_CryptCATHandleFromStore
+CryptCATHandleFromStore ENDP
+
+CryptCATOpen PROC
+jmp ptr_CryptCATOpen
+CryptCATOpen ENDP
+
+CryptCATPersistStore PROC
+jmp ptr_CryptCATPersistStore
+CryptCATPersistStore ENDP
+
+CryptCATPutAttrInfo PROC
+jmp ptr_CryptCATPutAttrInfo
+CryptCATPutAttrInfo ENDP
+
+CryptCATPutCatAttrInfo PROC
+jmp ptr_CryptCATPutCatAttrInfo
+CryptCATPutCatAttrInfo ENDP
+
+CryptCATPutMemberInfo PROC
+jmp ptr_CryptCATPutMemberInfo
+CryptCATPutMemberInfo ENDP
+
+CryptCATStoreFromHandle PROC
+jmp ptr_CryptCATStoreFromHandle
+CryptCATStoreFromHandle ENDP
+
+CryptCATVerifyMember PROC
+jmp ptr_CryptCATVerifyMember
+CryptCATVerifyMember ENDP
+
+CryptSIPCreateIndirectData PROC
+jmp ptr_CryptSIPCreateIndirectData
+CryptSIPCreateIndirectData ENDP
+
+CryptSIPGetInfo PROC
+jmp ptr_CryptSIPGetInfo
+CryptSIPGetInfo ENDP
+
+CryptSIPGetRegWorkingFlags PROC
+jmp ptr_CryptSIPGetRegWorkingFlags
+CryptSIPGetRegWorkingFlags ENDP
+
+CryptSIPGetSignedDataMsg PROC
+jmp ptr_CryptSIPGetSignedDataMsg
+CryptSIPGetSignedDataMsg ENDP
+
+CryptSIPPutSignedDataMsg PROC
+jmp ptr_CryptSIPPutSignedDataMsg
+CryptSIPPutSignedDataMsg ENDP
+
+CryptSIPRemoveSignedDataMsg PROC
+jmp ptr_CryptSIPRemoveSignedDataMsg
+CryptSIPRemoveSignedDataMsg ENDP
+
+CryptSIPVerifyIndirectData PROC
+jmp ptr_CryptSIPVerifyIndirectData
+CryptSIPVerifyIndirectData ENDP
+
+DllRegisterServer PROC
+jmp ptr_DllRegisterServer
+DllRegisterServer ENDP
+
+DllUnregisterServer PROC
+jmp ptr_DllUnregisterServer
+DllUnregisterServer ENDP
+
+DriverCleanupPolicy PROC
+jmp ptr_DriverCleanupPolicy
+DriverCleanupPolicy ENDP
+
+DriverFinalPolicy PROC
+jmp ptr_DriverFinalPolicy
+DriverFinalPolicy ENDP
+
+DriverInitializePolicy PROC
+jmp ptr_DriverInitializePolicy
+DriverInitializePolicy ENDP
+
+FindCertsByIssuer PROC
+jmp ptr_FindCertsByIssuer
+FindCertsByIssuer ENDP
+
+GenericChainCertificateTrust PROC
+jmp ptr_GenericChainCertificateTrust
+GenericChainCertificateTrust ENDP
+
+GenericChainFinalProv PROC
+jmp ptr_GenericChainFinalProv
+GenericChainFinalProv ENDP
+
+HTTPSCertificateTrust PROC
+jmp ptr_HTTPSCertificateTrust
+HTTPSCertificateTrust ENDP
+
+HTTPSFinalProv PROC
+jmp ptr_HTTPSFinalProv
+HTTPSFinalProv ENDP
+
+IsCatalogFile PROC
+jmp ptr_IsCatalogFile
+IsCatalogFile ENDP
+
+MsCatConstructHashTag PROC
+jmp ptr_MsCatConstructHashTag
+MsCatConstructHashTag ENDP
+
+MsCatFreeHashTag PROC
+jmp ptr_MsCatFreeHashTag
+MsCatFreeHashTag ENDP
+
+OfficeCleanupPolicy PROC
+jmp ptr_OfficeCleanupPolicy
+OfficeCleanupPolicy ENDP
+
+OfficeInitializePolicy PROC
+jmp ptr_OfficeInitializePolicy
+OfficeInitializePolicy ENDP
+
+OpenPersonalTrustDBDialog PROC
+jmp ptr_OpenPersonalTrustDBDialog
+OpenPersonalTrustDBDialog ENDP
+
+OpenPersonalTrustDBDialogEx PROC
+jmp ptr_OpenPersonalTrustDBDialogEx
+OpenPersonalTrustDBDialogEx ENDP
+
+SoftpubAuthenticode PROC
+jmp ptr_SoftpubAuthenticode
+SoftpubAuthenticode ENDP
+
+SoftpubCheckCert PROC
+jmp ptr_SoftpubCheckCert
+SoftpubCheckCert ENDP
+
+SoftpubCleanup PROC
+jmp ptr_SoftpubCleanup
+SoftpubCleanup ENDP
+
+SoftpubDefCertInit PROC
+jmp ptr_SoftpubDefCertInit
+SoftpubDefCertInit ENDP
+
+SoftpubDllRegisterServer PROC
+jmp ptr_SoftpubDllRegisterServer
+SoftpubDllRegisterServer ENDP
+
+SoftpubDllUnregisterServer PROC
+jmp ptr_SoftpubDllUnregisterServer
+SoftpubDllUnregisterServer ENDP
+
+SoftpubDumpStructure PROC
+jmp ptr_SoftpubDumpStructure
+SoftpubDumpStructure ENDP
+
+SoftpubFreeDefUsageCallData PROC
+jmp ptr_SoftpubFreeDefUsageCallData
+SoftpubFreeDefUsageCallData ENDP
+
+SoftpubInitialize PROC
+jmp ptr_SoftpubInitialize
+SoftpubInitialize ENDP
+
+SoftpubLoadDefUsageCallData PROC
+jmp ptr_SoftpubLoadDefUsageCallData
+SoftpubLoadDefUsageCallData ENDP
+
+SoftpubLoadMessage PROC
+jmp ptr_SoftpubLoadMessage
+SoftpubLoadMessage ENDP
+
+SoftpubLoadSignature PROC
+jmp ptr_SoftpubLoadSignature
+SoftpubLoadSignature ENDP
+
+TrustDecode PROC
+jmp ptr_TrustDecode
+TrustDecode ENDP
+
+TrustFindIssuerCertificate PROC
+jmp ptr_TrustFindIssuerCertificate
+TrustFindIssuerCertificate ENDP
+
+TrustFreeDecode PROC
+jmp ptr_TrustFreeDecode
+TrustFreeDecode ENDP
+
+TrustIsCertificateSelfSigned PROC
+jmp ptr_TrustIsCertificateSelfSigned
+TrustIsCertificateSelfSigned ENDP
+
+TrustOpenStores PROC
+jmp ptr_TrustOpenStores
+TrustOpenStores ENDP
+
+WTHelperCertCheckValidSignature PROC
+jmp ptr_WTHelperCertCheckValidSignature
+WTHelperCertCheckValidSignature ENDP
+
+WTHelperCertFindIssuerCertificate PROC
+jmp ptr_WTHelperCertFindIssuerCertificate
+WTHelperCertFindIssuerCertificate ENDP
+
+WTHelperCertIsSelfSigned PROC
+jmp ptr_WTHelperCertIsSelfSigned
+WTHelperCertIsSelfSigned ENDP
+
+WTHelperCheckCertUsage PROC
+jmp ptr_WTHelperCheckCertUsage
+WTHelperCheckCertUsage ENDP
+
+WTHelperGetAgencyInfo PROC
+jmp ptr_WTHelperGetAgencyInfo
+WTHelperGetAgencyInfo ENDP
+
+WTHelperGetFileHandle PROC
+jmp ptr_WTHelperGetFileHandle
+WTHelperGetFileHandle ENDP
+
+WTHelperGetFileHash PROC
+jmp ptr_WTHelperGetFileHash
+WTHelperGetFileHash ENDP
+
+WTHelperGetFileName PROC
+jmp ptr_WTHelperGetFileName
+WTHelperGetFileName ENDP
+
+WTHelperGetKnownUsages PROC
+jmp ptr_WTHelperGetKnownUsages
+WTHelperGetKnownUsages ENDP
+
+WTHelperGetProvCertFromChain PROC
+jmp ptr_WTHelperGetProvCertFromChain
+WTHelperGetProvCertFromChain ENDP
+
+WTHelperGetProvPrivateDataFromChain PROC
+jmp ptr_WTHelperGetProvPrivateDataFromChain
+WTHelperGetProvPrivateDataFromChain ENDP
+
+WTHelperGetProvSignerFromChain PROC
+jmp ptr_WTHelperGetProvSignerFromChain
+WTHelperGetProvSignerFromChain ENDP
+
+WTHelperIsInRootStore PROC
+jmp ptr_WTHelperIsInRootStore
+WTHelperIsInRootStore ENDP
+
+WTHelperOpenKnownStores PROC
+jmp ptr_WTHelperOpenKnownStores
+WTHelperOpenKnownStores ENDP
+
+WTHelperProvDataFromStateData PROC
+jmp ptr_WTHelperProvDataFromStateData
+WTHelperProvDataFromStateData ENDP
+
+WVTAsn1CatMemberInfo2Decode PROC
+jmp ptr_WVTAsn1CatMemberInfo2Decode
+WVTAsn1CatMemberInfo2Decode ENDP
+
+WVTAsn1CatMemberInfo2Encode PROC
+jmp ptr_WVTAsn1CatMemberInfo2Encode
+WVTAsn1CatMemberInfo2Encode ENDP
+
+WVTAsn1CatMemberInfoDecode PROC
+jmp ptr_WVTAsn1CatMemberInfoDecode
+WVTAsn1CatMemberInfoDecode ENDP
+
+WVTAsn1CatMemberInfoEncode PROC
+jmp ptr_WVTAsn1CatMemberInfoEncode
+WVTAsn1CatMemberInfoEncode ENDP
+
+WVTAsn1CatNameValueDecode PROC
+jmp ptr_WVTAsn1CatNameValueDecode
+WVTAsn1CatNameValueDecode ENDP
+
+WVTAsn1CatNameValueEncode PROC
+jmp ptr_WVTAsn1CatNameValueEncode
+WVTAsn1CatNameValueEncode ENDP
+
+WVTAsn1SpcFinancialCriteriaInfoDecode PROC
+jmp ptr_WVTAsn1SpcFinancialCriteriaInfoDecode
+WVTAsn1SpcFinancialCriteriaInfoDecode ENDP
+
+WVTAsn1SpcFinancialCriteriaInfoEncode PROC
+jmp ptr_WVTAsn1SpcFinancialCriteriaInfoEncode
+WVTAsn1SpcFinancialCriteriaInfoEncode ENDP
+
+WVTAsn1SpcIndirectDataContentDecode PROC
+jmp ptr_WVTAsn1SpcIndirectDataContentDecode
+WVTAsn1SpcIndirectDataContentDecode ENDP
+
+WVTAsn1SpcIndirectDataContentEncode PROC
+jmp ptr_WVTAsn1SpcIndirectDataContentEncode
+WVTAsn1SpcIndirectDataContentEncode ENDP
+
+WVTAsn1SpcLinkDecode PROC
+jmp ptr_WVTAsn1SpcLinkDecode
+WVTAsn1SpcLinkDecode ENDP
+
+WVTAsn1SpcLinkEncode PROC
+jmp ptr_WVTAsn1SpcLinkEncode
+WVTAsn1SpcLinkEncode ENDP
+
+WVTAsn1SpcMinimalCriteriaInfoDecode PROC
+jmp ptr_WVTAsn1SpcMinimalCriteriaInfoDecode
+WVTAsn1SpcMinimalCriteriaInfoDecode ENDP
+
+WVTAsn1SpcMinimalCriteriaInfoEncode PROC
+jmp ptr_WVTAsn1SpcMinimalCriteriaInfoEncode
+WVTAsn1SpcMinimalCriteriaInfoEncode ENDP
+
+WVTAsn1SpcPeImageDataDecode PROC
+jmp ptr_WVTAsn1SpcPeImageDataDecode
+WVTAsn1SpcPeImageDataDecode ENDP
+
+WVTAsn1SpcPeImageDataEncode PROC
+jmp ptr_WVTAsn1SpcPeImageDataEncode
+WVTAsn1SpcPeImageDataEncode ENDP
+
+WVTAsn1SpcSigInfoDecode PROC
+jmp ptr_WVTAsn1SpcSigInfoDecode
+WVTAsn1SpcSigInfoDecode ENDP
+
+WVTAsn1SpcSigInfoEncode PROC
+jmp ptr_WVTAsn1SpcSigInfoEncode
+WVTAsn1SpcSigInfoEncode ENDP
+
+WVTAsn1SpcSpAgencyInfoDecode PROC
+jmp ptr_WVTAsn1SpcSpAgencyInfoDecode
+WVTAsn1SpcSpAgencyInfoDecode ENDP
+
+WVTAsn1SpcSpAgencyInfoEncode PROC
+jmp ptr_WVTAsn1SpcSpAgencyInfoEncode
+WVTAsn1SpcSpAgencyInfoEncode ENDP
+
+WVTAsn1SpcSpOpusInfoDecode PROC
+jmp ptr_WVTAsn1SpcSpOpusInfoDecode
+WVTAsn1SpcSpOpusInfoDecode ENDP
+
+WVTAsn1SpcSpOpusInfoEncode PROC
+jmp ptr_WVTAsn1SpcSpOpusInfoEncode
+WVTAsn1SpcSpOpusInfoEncode ENDP
+
+WVTAsn1SpcStatementTypeDecode PROC
+jmp ptr_WVTAsn1SpcStatementTypeDecode
+WVTAsn1SpcStatementTypeDecode ENDP
+
+WVTAsn1SpcStatementTypeEncode PROC
+jmp ptr_WVTAsn1SpcStatementTypeEncode
+WVTAsn1SpcStatementTypeEncode ENDP
+
+WinVerifyTrust PROC
+jmp ptr_WinVerifyTrust
+WinVerifyTrust ENDP
+
+WinVerifyTrustEx PROC
+jmp ptr_WinVerifyTrustEx
+WinVerifyTrustEx ENDP
+
+WintrustAddActionID PROC
+jmp ptr_WintrustAddActionID
+WintrustAddActionID ENDP
+
+WintrustAddDefaultForUsage PROC
+jmp ptr_WintrustAddDefaultForUsage
+WintrustAddDefaultForUsage ENDP
+
+WintrustCertificateTrust PROC
+jmp ptr_WintrustCertificateTrust
+WintrustCertificateTrust ENDP
+
+WintrustGetDefaultForUsage PROC
+jmp ptr_WintrustGetDefaultForUsage
+WintrustGetDefaultForUsage ENDP
+
+WintrustGetRegPolicyFlags PROC
+jmp ptr_WintrustGetRegPolicyFlags
+WintrustGetRegPolicyFlags ENDP
+
+WintrustLoadFunctionPointers PROC
+jmp ptr_WintrustLoadFunctionPointers
+WintrustLoadFunctionPointers ENDP
+
+WintrustRemoveActionID PROC
+jmp ptr_WintrustRemoveActionID
+WintrustRemoveActionID ENDP
+
+WintrustSetDefaultIncludePEPageHashes PROC
+jmp ptr_WintrustSetDefaultIncludePEPageHashes
+WintrustSetDefaultIncludePEPageHashes ENDP
+
+WintrustSetRegPolicyFlags PROC
+jmp ptr_WintrustSetRegPolicyFlags
+WintrustSetRegPolicyFlags ENDP
+
+mscat32DllRegisterServer PROC
+jmp ptr_mscat32DllRegisterServer
+mscat32DllRegisterServer ENDP
+
+mscat32DllUnregisterServer PROC
+jmp ptr_mscat32DllUnregisterServer
+mscat32DllUnregisterServer ENDP
+
+mssip32DllRegisterServer PROC
+jmp ptr_mssip32DllRegisterServer
+mssip32DllRegisterServer ENDP
+
+mssip32DllUnregisterServer PROC
+jmp ptr_mssip32DllUnregisterServer
+mssip32DllUnregisterServer ENDP
+
+end

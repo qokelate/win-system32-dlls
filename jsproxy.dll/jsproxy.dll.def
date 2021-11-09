@@ -1,0 +1,9 @@
+﻿LIBRARY
+EXPORTS
+
+InternetDeInitializeAutoProxyDll @102
+InternetDeInitializeAutoProxyDllEx @105
+InternetGetProxyInfo @103
+InternetGetProxyInfoEx @106
+InternetInitializeAutoProxyDll @101
+InternetInitializeAutoProxyDllEx @104

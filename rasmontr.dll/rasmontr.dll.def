@@ -1,0 +1,17 @@
+﻿LIBRARY
+EXPORTS
+
+GetDiagnosticFunctions @1
+InitHelperDll @2
+RutlAlloc @3
+RutlAssignmentFromTokenAndDword @4
+RutlAssignmentFromTokens @5
+RutlCloseDumpFile @6
+RutlCreateDumpFile @7
+RutlDwordDup @8
+RutlFree @9
+RutlGetOsVersion @10
+RutlGetTagToken @11
+RutlIsHelpToken @12
+RutlParse @13
+RutlStrDup @14

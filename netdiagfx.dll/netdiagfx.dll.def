@@ -1,0 +1,7 @@
+﻿LIBRARY
+EXPORTS
+
+HelperTraceEvent @4
+WdiDiagnosticModuleMain @1
+WdiGetDiagnosticModuleInterfaceVersion @2
+WdiHandleInstance @3

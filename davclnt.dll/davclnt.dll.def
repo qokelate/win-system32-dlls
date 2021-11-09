@@ -1,0 +1,27 @@
+﻿LIBRARY
+EXPORTS
+
+DavCancelConnectionsToServer @1
+DavFreeUsedDiskSpace @2
+DavGetDiskSpaceUsage @3
+DavGetTheLockOwnerOfTheFile @4
+DavInvalidateCache @5
+DavRegisterAuthCallback @6
+DavSetCookieW @7
+DavUnregisterAuthCallback @8
+DllCanUnloadNow @9
+DllGetClassObject @10
+DllMain @11
+NPAddConnection @12
+NPAddConnection3 @13
+NPCancelConnection @14
+NPCloseEnum @15
+NPEnumResource @16
+NPFormatNetworkName @17
+NPGetCaps @18
+NPGetConnection @19
+NPGetResourceInformation @20
+NPGetResourceParent @21
+NPGetUniversalName @22
+NPGetUser @23
+NPOpenEnum @24

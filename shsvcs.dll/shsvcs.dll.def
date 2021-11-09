@@ -1,0 +1,5 @@
+﻿LIBRARY
+EXPORTS
+
+CreateHardwareEventMoniker @16
+HardwareDetectionServiceMain @15

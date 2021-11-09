@@ -1,0 +1,17 @@
+﻿LIBRARY
+EXPORTS
+
+AddUserToObjectW @1
+BackCurrentEfsCert @2
+EfsDetail @3
+EfsUIUtilCheckScardStatus @4
+EfsUIUtilCreateSelfSignedCertificate @5
+EfsUIUtilEncryptMyDocuments @6
+EfsUIUtilEnrollEfsCertificate @7
+EfsUIUtilEnrollEfsCertificateEx @8
+EfsUIUtilInstallDra @9
+EfsUIUtilKeyBackup @10
+EfsUIUtilPromptForPin @11
+EfsUIUtilPromptForPinDialog @12
+EfsUIUtilSelectCard @13
+EfsUIUtilShowBalloonAndWait @14

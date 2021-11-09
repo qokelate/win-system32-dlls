@@ -1,0 +1,15 @@
+﻿LIBRARY
+EXPORTS
+
+DavAddConnection @1
+DavCheckAndConvertHttpUrlToUncName @2
+DavDeleteConnection @3
+DavFlushFile @4
+DavGetExtendedError @5
+DavGetHTTPFromUNCPath @6
+DavGetServerPortAndPhysicalName @7
+DavGetUNCFromHTTPPath @8
+DavRemoveDummyShareFromFileName @9
+DavRemoveDummyShareFromFileNameEx @10
+UtfUrlStrToWideStr @11
+WideStrToUtfUrlStr @12

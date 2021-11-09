@@ -1,0 +1,18 @@
+﻿LIBRARY
+EXPORTS
+
+CuzzDisable @1
+CuzzDumpDebuggingState @2
+CuzzEnable @3
+CuzzGetCustomSchedulerInterface @4
+CuzzGetPriority @5
+CuzzGetPriorityOfTask @6
+CuzzGetRandomSeed @7
+CuzzIsEnabled @8
+CuzzSchedule @9
+CuzzSetDebugLoweringPoint @10
+CuzzSetDebugPriority @11
+CuzzSetFuzzingLevel @12
+CuzzSetNumBlockedThreads @13
+CuzzSetPriority @14
+CuzzSetRandomSeed @15

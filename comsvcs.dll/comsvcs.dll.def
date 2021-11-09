@@ -1,0 +1,23 @@
+﻿LIBRARY
+EXPORTS
+
+CoCreateActivity @8
+CoEnterServiceDomain @9
+CoLeaveServiceDomain @10
+CoLoadServices @11
+ComSvcsExceptionFilter @12
+ComSvcsLogError @13
+CosGetCallContext @5
+DispManGetContext @14
+DllCanUnloadNow @15
+DllGetClassObject @16
+DllRegisterServer @17
+DllUnregisterServer @18
+GetMTAThreadPoolMetrics @19
+GetManagedExtensions @20
+GetObjectContext @21
+GetTrkSvrObject @22
+MTSCreateActivity @23
+MiniDumpW @24
+RecycleSurrogate @25
+SafeRef @26

@@ -1,0 +1,23 @@
+﻿LIBRARY
+EXPORTS
+
+DllMain @1
+Dot3MsmConnect @2
+Dot3MsmCreateDefaultProfile @3
+Dot3MsmDeInit @4
+Dot3MsmDeInitAdapter @5
+Dot3MsmDisconnect @6
+Dot3MsmFreeMemory @7
+Dot3MsmFreeProfile @8
+Dot3MsmIndicateSessionChange @9
+Dot3MsmInit @10
+Dot3MsmInitAdapter @11
+Dot3MsmQueryMediaState @12
+Dot3MsmQueryPendingUIRequest @13
+Dot3MsmQueryState @14
+Dot3MsmReAuthenticate @15
+Dot3MsmSetRuntimeState @16
+Dot3MsmUIResponse @17
+Dot3MsmValidateProfile @18
+Dot3ReasonCodeMsmToString @19
+Dot3SetPortAuthenticationState @20

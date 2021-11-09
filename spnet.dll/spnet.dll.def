@@ -1,0 +1,5 @@
+﻿LIBRARY
+EXPORTS
+
+Sysprep_Clean_Net @1
+Sysprep_Generalize_Net @2

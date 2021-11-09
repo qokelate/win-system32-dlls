@@ -1,0 +1,24 @@
+﻿LIBRARY
+EXPORTS
+
+CertConfigureTrustA @1
+CertConfigureTrustW @2
+CertModifyCertificatesToTrust @13
+CertSelectCertificateA @14
+CertSelectCertificateW @15
+CertTrustCertPolicy @3
+CertTrustCleanup @4
+CertTrustFinalPolicy @5
+CertTrustInit @6
+CertViewPropertiesA @16
+CertViewPropertiesW @17
+DecodeAttrSequence @7
+DecodeRecipientID @8
+DllRegisterServer @18
+DllUnregisterServer @19
+EncodeAttrSequence @9
+EncodeRecipientID @10
+FormatPKIXEmailProtection @11
+FormatVerisignExtension @12
+GetFriendlyNameOfCertA @20
+GetFriendlyNameOfCertW @21

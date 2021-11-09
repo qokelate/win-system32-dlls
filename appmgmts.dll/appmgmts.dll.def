@@ -1,0 +1,22 @@
+﻿LIBRARY
+EXPORTS
+
+CsCreateClassStore @2
+CsEnumApps @3
+CsGetAppCategories @4
+CsGetClassAccess @5
+CsGetClassStore @6
+CsGetClassStorePath @7
+CsRegisterAppCategory @8
+CsServerGetClassStore @9
+CsSetOptions @1
+CsUnregisterAppCategory @10
+DllCanUnloadNow @11
+DllGetClassObject @12
+GenerateGroupPolicy @13
+IID_IClassAdmin @14
+ProcessGroupPolicyObjectsEx @15
+ReleaseAppCategoryInfoList @16
+ReleasePackageDetail @17
+ReleasePackageInfo @18
+ServiceMain @19

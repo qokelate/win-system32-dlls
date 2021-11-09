@@ -1,0 +1,13 @@
+﻿LIBRARY
+EXPORTS
+
+DllCanUnloadNow @1
+DllGetClassObject @2
+DllRegisterServer @3
+DllUnregisterServer @4
+HrDiAddComponentToINetCfg @5
+LanaCfgFromCommandArgs @6
+NetCfgDiagFromCommandArgs @7
+NetCfgDiagRepairRegistryBindings @8
+NetClassInstaller @9
+NetPropPageProvider @10

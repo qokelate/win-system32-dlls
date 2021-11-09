@@ -1,0 +1,42 @@
+﻿LIBRARY
+EXPORTS
+
+I_NetDfsGetVersion @1
+I_NetServerSetServiceBits @2
+I_NetServerSetServiceBitsEx @3
+NetConnectionEnum @4
+NetFileClose @5
+NetFileEnum @6
+NetFileGetInfo @7
+NetRemoteTOD @8
+NetServerAliasAdd @9
+NetServerAliasDel @10
+NetServerAliasEnum @11
+NetServerComputerNameAdd @12
+NetServerComputerNameDel @13
+NetServerDiskEnum @14
+NetServerGetInfo @15
+NetServerSetInfo @16
+NetServerStatisticsGet @17
+NetServerTransportAdd @18
+NetServerTransportAddEx @19
+NetServerTransportDel @20
+NetServerTransportEnum @21
+NetSessionDel @22
+NetSessionEnum @23
+NetSessionGetInfo @24
+NetShareAdd @25
+NetShareCheck @26
+NetShareDel @27
+NetShareDelEx @28
+NetShareDelSticky @29
+NetShareEnum @30
+NetShareEnumSticky @31
+NetShareGetInfo @32
+NetShareSetInfo @33
+NetpsNameCanonicalize @34
+NetpsNameCompare @35
+NetpsNameValidate @36
+NetpsPathCanonicalize @37
+NetpsPathCompare @38
+NetpsPathType @39

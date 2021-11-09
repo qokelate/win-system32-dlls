@@ -1,0 +1,7 @@
+﻿LIBRARY
+EXPORTS
+
+LoadClientAdapter @1
+OpenKeyReader @5
+OpenKeyReaderWriter @6
+g_fnStartTransport @4

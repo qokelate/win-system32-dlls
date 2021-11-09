@@ -1,0 +1,7 @@
+﻿LIBRARY
+EXPORTS
+
+DiskCopyRunDll @2
+DiskCopyRunDllW @3
+DllCanUnloadNow @4
+DllGetClassObject @5

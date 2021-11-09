@@ -1,0 +1,11 @@
+﻿LIBRARY
+EXPORTS
+
+RtlCopyExtendedContext @1
+RtlGetEnabledExtendedFeatures @2
+RtlGetExtendedContextLength @3
+RtlGetExtendedFeaturesMask @4
+RtlInitializeExtendedContext @5
+RtlLocateExtendedFeature @6
+RtlLocateLegacyContext @7
+RtlSetExtendedFeaturesMask @8

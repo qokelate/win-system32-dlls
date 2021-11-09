@@ -1,0 +1,12 @@
+﻿LIBRARY
+EXPORTS
+
+TxfGetThreadMiniVersionForCreate @1
+TxfLogCreateFileReadContext @2
+TxfLogCreateRangeReadContext @3
+TxfLogDestroyReadContext @4
+TxfLogReadRecords @5
+TxfLogRecordGetFileName @6
+TxfLogRecordGetGenericType @7
+TxfReadMetadataInfo @8
+TxfSetThreadMiniVersionForCreate @9

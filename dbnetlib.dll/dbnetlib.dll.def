@@ -1,0 +1,34 @@
+﻿LIBRARY
+EXPORTS
+
+CloseEnumServers @22
+ConnectionCheckForData @10
+ConnectionClose @9
+ConnectionError @11
+ConnectionErrorW @17
+ConnectionFlushCache @28
+ConnectionGetSvrUser @19
+ConnectionMode @6
+ConnectionObjectSize @1
+ConnectionOpen @8
+ConnectionOpenW @16
+ConnectionOption @18
+ConnectionRead @2
+ConnectionServerEnum @14
+ConnectionServerEnumW @15
+ConnectionSqlVer @13
+ConnectionStatus @7
+ConnectionTransact @4
+ConnectionVer @12
+ConnectionWrite @3
+ConnectionWriteOOB @5
+GenClientContext @27
+GenClientContextEx @31
+GetNextEnumeration @21
+InitEnumServers @20
+InitSSPIPackage @23
+InitSession @25
+InitSessionEx @29
+TermSSPIPackage @24
+TermSession @26
+TermSessionEx @30

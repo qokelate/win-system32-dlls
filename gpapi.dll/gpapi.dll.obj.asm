@@ -1,0 +1,110 @@
+ifndef X64
+.686p
+.XMM
+.safeseh SEH_handler
+.model flat, C
+option dotname
+option casemap : none
+endif
+
+extern ptr_EnterCriticalPolicySectionInternal : PTR;
+extern ptr_ForceSyncFgPolicyInternal : PTR;
+extern ptr_FreeGPOListInternalA : PTR;
+extern ptr_FreeGPOListInternalW : PTR;
+extern ptr_GetAppliedGPOListInternalA : PTR;
+extern ptr_GetAppliedGPOListInternalW : PTR;
+extern ptr_GetGPOListInternalA : PTR;
+extern ptr_GetGPOListInternalW : PTR;
+extern ptr_GetNextFgPolicyRefreshInfoInternal : PTR;
+extern ptr_GetPreviousFgPolicyRefreshInfoInternal : PTR;
+extern ptr_LeaveCriticalPolicySectionInternal : PTR;
+extern ptr_RefreshPolicyExInternal : PTR;
+extern ptr_RefreshPolicyInternal : PTR;
+extern ptr_RegisterGPNotificationInternal : PTR;
+extern ptr_RsopLoggingEnabledInternal : PTR;
+extern ptr_UnregisterGPNotificationInternal : PTR;
+extern ptr_WaitForMachinePolicyForegroundProcessingInternal : PTR;
+extern ptr_WaitForUserPolicyForegroundProcessingInternal : PTR;
+
+
+.code
+
+align 16
+SEH_handler   proc
+; handler
+ret
+SEH_handler   endp
+
+EnterCriticalPolicySectionInternal PROC
+jmp ptr_EnterCriticalPolicySectionInternal
+EnterCriticalPolicySectionInternal ENDP
+
+ForceSyncFgPolicyInternal PROC
+jmp ptr_ForceSyncFgPolicyInternal
+ForceSyncFgPolicyInternal ENDP
+
+FreeGPOListInternalA PROC
+jmp ptr_FreeGPOListInternalA
+FreeGPOListInternalA ENDP
+
+FreeGPOListInternalW PROC
+jmp ptr_FreeGPOListInternalW
+FreeGPOListInternalW ENDP
+
+GetAppliedGPOListInternalA PROC
+jmp ptr_GetAppliedGPOListInternalA
+GetAppliedGPOListInternalA ENDP
+
+GetAppliedGPOListInternalW PROC
+jmp ptr_GetAppliedGPOListInternalW
+GetAppliedGPOListInternalW ENDP
+
+GetGPOListInternalA PROC
+jmp ptr_GetGPOListInternalA
+GetGPOListInternalA ENDP
+
+GetGPOListInternalW PROC
+jmp ptr_GetGPOListInternalW
+GetGPOListInternalW ENDP
+
+GetNextFgPolicyRefreshInfoInternal PROC
+jmp ptr_GetNextFgPolicyRefreshInfoInternal
+GetNextFgPolicyRefreshInfoInternal ENDP
+
+GetPreviousFgPolicyRefreshInfoInternal PROC
+jmp ptr_GetPreviousFgPolicyRefreshInfoInternal
+GetPreviousFgPolicyRefreshInfoInternal ENDP
+
+LeaveCriticalPolicySectionInternal PROC
+jmp ptr_LeaveCriticalPolicySectionInternal
+LeaveCriticalPolicySectionInternal ENDP
+
+RefreshPolicyExInternal PROC
+jmp ptr_RefreshPolicyExInternal
+RefreshPolicyExInternal ENDP
+
+RefreshPolicyInternal PROC
+jmp ptr_RefreshPolicyInternal
+RefreshPolicyInternal ENDP
+
+RegisterGPNotificationInternal PROC
+jmp ptr_RegisterGPNotificationInternal
+RegisterGPNotificationInternal ENDP
+
+RsopLoggingEnabledInternal PROC
+jmp ptr_RsopLoggingEnabledInternal
+RsopLoggingEnabledInternal ENDP
+
+UnregisterGPNotificationInternal PROC
+jmp ptr_UnregisterGPNotificationInternal
+UnregisterGPNotificationInternal ENDP
+
+WaitForMachinePolicyForegroundProcessingInternal PROC
+jmp ptr_WaitForMachinePolicyForegroundProcessingInternal
+WaitForMachinePolicyForegroundProcessingInternal ENDP
+
+WaitForUserPolicyForegroundProcessingInternal PROC
+jmp ptr_WaitForUserPolicyForegroundProcessingInternal
+WaitForUserPolicyForegroundProcessingInternal ENDP
+
+end

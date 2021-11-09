@@ -1,0 +1,11 @@
+﻿LIBRARY
+EXPORTS
+
+SisCSFilesToBackupForLink @1
+SisCreateBackupStructure @2
+SisCreateRestoreStructure @3
+SisFreeAllocatedMemory @4
+SisFreeBackupStructure @5
+SisFreeRestoreStructure @6
+SisRestoredCommonStoreFile @7
+SisRestoredLink @8

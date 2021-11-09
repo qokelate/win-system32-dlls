@@ -1,0 +1,6 @@
+﻿LIBRARY
+EXPORTS
+
+ClosePerformanceData @1
+CollectPerformanceData @2
+OpenPerformanceData @3

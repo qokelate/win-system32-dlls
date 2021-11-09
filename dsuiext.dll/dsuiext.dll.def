@@ -1,0 +1,12 @@
+﻿LIBRARY
+EXPORTS
+
+DllCanUnloadNow @11
+DllGetClassObject @12
+DllInstall @13
+DllRegisterServer @14
+DllUnregisterServer @15
+DsBrowseForContainerA @9
+DsBrowseForContainerW @10
+DsGetFriendlyClassName @259
+DsGetIcon @257

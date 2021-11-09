@@ -1,0 +1,13 @@
+﻿LIBRARY
+EXPORTS
+
+GetCLRVersionForPSVersion @1
+WSManPluginCommand @2
+WSManPluginReceive @3
+WSManPluginReleaseCommandContext @4
+WSManPluginReleaseShellContext @5
+WSManPluginSend @6
+WSManPluginShell @7
+WSManPluginShutdown @8
+WSManPluginSignal @9
+WSManPluginStartup @10

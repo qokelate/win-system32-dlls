@@ -1,0 +1,6 @@
+﻿LIBRARY
+EXPORTS
+
+CloseUsbPerformanceData @1
+CollectUsbPerformanceData @2
+OpenUsbPerformanceData @3

@@ -1,0 +1,23 @@
+﻿LIBRARY
+EXPORTS
+
+ClearPhishingFilterData @108
+ConvertAndEscapePostData @109
+CreateCoreWebView @110
+CreateHTMLPropertyPage @111
+DllCanUnloadNow @112
+DllEnumClassObjects @113
+DllGetClassObject @114
+GetColorValueFromString @115
+GetWebPlatformObject @116
+IEIsXMLNSRegistered @117
+IERegisterXMLNS @118
+MatchExactGetIDsOfNames @119
+PrintHTML @131
+RunHTMLApplication @132
+ShowHTMLDialog @133
+ShowHTMLDialogEx @134
+ShowModalDialog @135
+ShowModelessHTMLDialog @136
+TravelLogCreateInstance @137
+TravelLogStgCreateInstance @138

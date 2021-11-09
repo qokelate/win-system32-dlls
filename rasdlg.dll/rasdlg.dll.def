@@ -1,0 +1,30 @@
+﻿LIBRARY
+EXPORTS
+
+DllCanUnloadNow @2
+DllGetClassObject @3
+DwTerminalDlg @4
+GetRasDialOutProtocols @5
+RasAutodialQueryDlgA @6
+RasAutodialQueryDlgW @7
+RasDialDlgA @8
+RasDialDlgW @9
+RasEntryDlgA @10
+RasEntryDlgW @11
+RasHandleDiagnostics @1
+RasPhonebookDlgA @12
+RasPhonebookDlgW @13
+RasSrvAddPropPages @14
+RasSrvAllowConnectionsConfig @15
+RasSrvCleanupService @16
+RasSrvEnumConnections @17
+RasSrvHangupConnection @18
+RasSrvInitializeService @19
+RasSrvIsConnectionConnected @20
+RasSrvIsICConfigured @21
+RasSrvIsServiceRunning @22
+RasUserEnableManualDial @23
+RasUserGetManualDial @24
+RasUserPrefsDlg @25
+RouterEntryDlgA @26
+RouterEntryDlgW @27

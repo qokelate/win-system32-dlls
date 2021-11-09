@@ -1,0 +1,10 @@
+﻿LIBRARY
+EXPORTS
+
+BrandingFormatString @1
+BrandingLoadBitmap @2
+BrandingLoadCursor @3
+BrandingLoadIcon @4
+BrandingLoadImage @5
+BrandingLoadString @6
+GetHinstanceByNameSpace @7

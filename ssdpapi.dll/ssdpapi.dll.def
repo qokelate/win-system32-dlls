@@ -1,0 +1,26 @@
+﻿LIBRARY
+EXPORTS
+
+CleanupCache @1
+DHSetICSInterfaces @2
+DHSetICSOff @3
+DeregisterNotification @4
+DeregisterService @5
+FindServices @6
+FindServicesCallback @7
+FindServicesCallbackEx @8
+FindServicesCancel @9
+FindServicesClose @10
+FindServicesEx @11
+FreeSsdpMessage @12
+FreeSsdpMessageEx @13
+GetFirstService @14
+GetFirstServiceEx @15
+GetNextService @16
+GetNextServiceEx @17
+RegisterNotification @18
+RegisterNotificationEx @19
+RegisterService @20
+RegisterServiceEx @21
+SsdpCleanup @22
+SsdpStartup @23

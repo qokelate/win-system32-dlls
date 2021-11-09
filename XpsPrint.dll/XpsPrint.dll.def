@@ -1,0 +1,10 @@
+﻿LIBRARY
+EXPORTS
+
+DllCanUnloadNow @8
+DllGetClassObject @9
+DllMain @10
+DllRegisterServer @4
+DllUnregisterServer @6
+StartXpsPrintJob @11
+StartXpsPrintJob1 @12

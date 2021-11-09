@@ -1,0 +1,8 @@
+﻿LIBRARY
+EXPORTS
+
+AlphaBlend @2
+DllInitialize @3
+GradientFill @4
+TransparentBlt @5
+vSetDdrawflag @1

@@ -1,0 +1,245 @@
+ifndef X64
+.686p
+.XMM
+.safeseh SEH_handler
+.model flat, C
+option dotname
+option casemap : none
+endif
+
+extern ptr_AVrfAPILookupCallback : PTR;
+extern ptr_VerifierAreStaticDllsInitialized : PTR;
+extern ptr_VerifierChainDuplicateHooks : PTR;
+extern ptr_VerifierCloseLayerProperties : PTR;
+extern ptr_VerifierConfigureStopOptions : PTR;
+extern ptr_VerifierCreateLayerProperties : PTR;
+extern ptr_VerifierDisableFaultInjectionExclusionRange : PTR;
+extern ptr_VerifierDisableFaultInjectionTargetRange : PTR;
+extern ptr_VerifierDisableLayer : PTR;
+extern ptr_VerifierDisableVerifier : PTR;
+extern ptr_VerifierEnableFaultInjectionExclusionRange : PTR;
+extern ptr_VerifierEnableFaultInjectionTargetRange : PTR;
+extern ptr_VerifierEnableLayer : PTR;
+extern ptr_VerifierGetAppCallerAddress : PTR;
+extern ptr_VerifierGetInfoForException : PTR;
+extern ptr_VerifierGetLoggingDirectory : PTR;
+extern ptr_VerifierGetRecursionTlsSlot : PTR;
+extern ptr_VerifierHandleVerifierStopException : PTR;
+extern ptr_VerifierIsDllEntryActive : PTR;
+extern ptr_VerifierIsInsideVerifierStop : PTR;
+extern ptr_VerifierIsLayerEnabled : PTR;
+extern ptr_VerifierLdrGetProcedureAddress : PTR;
+extern ptr_VerifierOpenLayerProperties : PTR;
+extern ptr_VerifierQueryGlobalProperties : PTR;
+extern ptr_VerifierQueryLayerBreak : PTR;
+extern ptr_VerifierQueryLayerBreaks : PTR;
+extern ptr_VerifierQueryLayerProperties : PTR;
+extern ptr_VerifierQueryLayerProperty : PTR;
+extern ptr_VerifierQueryRegisteredLayers : PTR;
+extern ptr_VerifierRegisterFaultInjectProvider : PTR;
+extern ptr_VerifierRegisterLayer : PTR;
+extern ptr_VerifierRegisterLayerEx : PTR;
+extern ptr_VerifierRegisterProvider : PTR;
+extern ptr_VerifierResetFaultInjectionAddressRanges : PTR;
+extern ptr_VerifierSetAPIClassName : PTR;
+extern ptr_VerifierSetFaultInjectionProbability : PTR;
+extern ptr_VerifierSetFaultInjectionSeed : PTR;
+extern ptr_VerifierSetLayerBreak : PTR;
+extern ptr_VerifierSetLayerProperty : PTR;
+extern ptr_VerifierShouldFaultInject : PTR;
+extern ptr_VerifierStopMessageEx : PTR;
+extern ptr_VerifierSuspendFaultInjection : PTR;
+extern ptr_VerifierTlsGetValue : PTR;
+extern ptr_VerifierTlsSetValue : PTR;
+extern ptr_VerifierUnregisterLayer : PTR;
+
+
+.code
+
+align 16
+SEH_handler   proc
+; handler
+ret
+SEH_handler   endp
+
+AVrfAPILookupCallback PROC
+jmp ptr_AVrfAPILookupCallback
+AVrfAPILookupCallback ENDP
+
+VerifierAreStaticDllsInitialized PROC
+jmp ptr_VerifierAreStaticDllsInitialized
+VerifierAreStaticDllsInitialized ENDP
+
+VerifierChainDuplicateHooks PROC
+jmp ptr_VerifierChainDuplicateHooks
+VerifierChainDuplicateHooks ENDP
+
+VerifierCloseLayerProperties PROC
+jmp ptr_VerifierCloseLayerProperties
+VerifierCloseLayerProperties ENDP
+
+VerifierConfigureStopOptions PROC
+jmp ptr_VerifierConfigureStopOptions
+VerifierConfigureStopOptions ENDP
+
+VerifierCreateLayerProperties PROC
+jmp ptr_VerifierCreateLayerProperties
+VerifierCreateLayerProperties ENDP
+
+VerifierDisableFaultInjectionExclusionRange PROC
+jmp ptr_VerifierDisableFaultInjectionExclusionRange
+VerifierDisableFaultInjectionExclusionRange ENDP
+
+VerifierDisableFaultInjectionTargetRange PROC
+jmp ptr_VerifierDisableFaultInjectionTargetRange
+VerifierDisableFaultInjectionTargetRange ENDP
+
+VerifierDisableLayer PROC
+jmp ptr_VerifierDisableLayer
+VerifierDisableLayer ENDP
+
+VerifierDisableVerifier PROC
+jmp ptr_VerifierDisableVerifier
+VerifierDisableVerifier ENDP
+
+VerifierEnableFaultInjectionExclusionRange PROC
+jmp ptr_VerifierEnableFaultInjectionExclusionRange
+VerifierEnableFaultInjectionExclusionRange ENDP
+
+VerifierEnableFaultInjectionTargetRange PROC
+jmp ptr_VerifierEnableFaultInjectionTargetRange
+VerifierEnableFaultInjectionTargetRange ENDP
+
+VerifierEnableLayer PROC
+jmp ptr_VerifierEnableLayer
+VerifierEnableLayer ENDP
+
+VerifierGetAppCallerAddress PROC
+jmp ptr_VerifierGetAppCallerAddress
+VerifierGetAppCallerAddress ENDP
+
+VerifierGetInfoForException PROC
+jmp ptr_VerifierGetInfoForException
+VerifierGetInfoForException ENDP
+
+VerifierGetLoggingDirectory PROC
+jmp ptr_VerifierGetLoggingDirectory
+VerifierGetLoggingDirectory ENDP
+
+VerifierGetRecursionTlsSlot PROC
+jmp ptr_VerifierGetRecursionTlsSlot
+VerifierGetRecursionTlsSlot ENDP
+
+VerifierHandleVerifierStopException PROC
+jmp ptr_VerifierHandleVerifierStopException
+VerifierHandleVerifierStopException ENDP
+
+VerifierIsDllEntryActive PROC
+jmp ptr_VerifierIsDllEntryActive
+VerifierIsDllEntryActive ENDP
+
+VerifierIsInsideVerifierStop PROC
+jmp ptr_VerifierIsInsideVerifierStop
+VerifierIsInsideVerifierStop ENDP
+
+VerifierIsLayerEnabled PROC
+jmp ptr_VerifierIsLayerEnabled
+VerifierIsLayerEnabled ENDP
+
+VerifierLdrGetProcedureAddress PROC
+jmp ptr_VerifierLdrGetProcedureAddress
+VerifierLdrGetProcedureAddress ENDP
+
+VerifierOpenLayerProperties PROC
+jmp ptr_VerifierOpenLayerProperties
+VerifierOpenLayerProperties ENDP
+
+VerifierQueryGlobalProperties PROC
+jmp ptr_VerifierQueryGlobalProperties
+VerifierQueryGlobalProperties ENDP
+
+VerifierQueryLayerBreak PROC
+jmp ptr_VerifierQueryLayerBreak
+VerifierQueryLayerBreak ENDP
+
+VerifierQueryLayerBreaks PROC
+jmp ptr_VerifierQueryLayerBreaks
+VerifierQueryLayerBreaks ENDP
+
+VerifierQueryLayerProperties PROC
+jmp ptr_VerifierQueryLayerProperties
+VerifierQueryLayerProperties ENDP
+
+VerifierQueryLayerProperty PROC
+jmp ptr_VerifierQueryLayerProperty
+VerifierQueryLayerProperty ENDP
+
+VerifierQueryRegisteredLayers PROC
+jmp ptr_VerifierQueryRegisteredLayers
+VerifierQueryRegisteredLayers ENDP
+
+VerifierRegisterFaultInjectProvider PROC
+jmp ptr_VerifierRegisterFaultInjectProvider
+VerifierRegisterFaultInjectProvider ENDP
+
+VerifierRegisterLayer PROC
+jmp ptr_VerifierRegisterLayer
+VerifierRegisterLayer ENDP
+
+VerifierRegisterLayerEx PROC
+jmp ptr_VerifierRegisterLayerEx
+VerifierRegisterLayerEx ENDP
+
+VerifierRegisterProvider PROC
+jmp ptr_VerifierRegisterProvider
+VerifierRegisterProvider ENDP
+
+VerifierResetFaultInjectionAddressRanges PROC
+jmp ptr_VerifierResetFaultInjectionAddressRanges
+VerifierResetFaultInjectionAddressRanges ENDP
+
+VerifierSetAPIClassName PROC
+jmp ptr_VerifierSetAPIClassName
+VerifierSetAPIClassName ENDP
+
+VerifierSetFaultInjectionProbability PROC
+jmp ptr_VerifierSetFaultInjectionProbability
+VerifierSetFaultInjectionProbability ENDP
+
+VerifierSetFaultInjectionSeed PROC
+jmp ptr_VerifierSetFaultInjectionSeed
+VerifierSetFaultInjectionSeed ENDP
+
+VerifierSetLayerBreak PROC
+jmp ptr_VerifierSetLayerBreak
+VerifierSetLayerBreak ENDP
+
+VerifierSetLayerProperty PROC
+jmp ptr_VerifierSetLayerProperty
+VerifierSetLayerProperty ENDP
+
+VerifierShouldFaultInject PROC
+jmp ptr_VerifierShouldFaultInject
+VerifierShouldFaultInject ENDP
+
+VerifierStopMessageEx PROC
+jmp ptr_VerifierStopMessageEx
+VerifierStopMessageEx ENDP
+
+VerifierSuspendFaultInjection PROC
+jmp ptr_VerifierSuspendFaultInjection
+VerifierSuspendFaultInjection ENDP
+
+VerifierTlsGetValue PROC
+jmp ptr_VerifierTlsGetValue
+VerifierTlsGetValue ENDP
+
+VerifierTlsSetValue PROC
+jmp ptr_VerifierTlsSetValue
+VerifierTlsSetValue ENDP
+
+VerifierUnregisterLayer PROC
+jmp ptr_VerifierUnregisterLayer
+VerifierUnregisterLayer ENDP
+
+end

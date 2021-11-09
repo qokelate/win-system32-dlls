@@ -1,0 +1,38 @@
+﻿LIBRARY
+EXPORTS
+
+EfsDllAddUsersToFileSrv @1
+EfsDllAllocateHeap @2
+EfsDllCloseFileRaw @3
+EfsDllConstructEFS @4
+EfsDllDecryptFek @5
+EfsDllDecryptFileSrv @6
+EfsDllDisabled @7
+EfsDllDuplicateEncryptionInfoFileSrv @8
+EfsDllEncryptFileSrv @9
+EfsDllErrorToNtStatus @10
+EfsDllFileKeyInfoSrv @11
+EfsDllFreeHeap @12
+EfsDllFreeUserInfo @13
+EfsDllGetLocalFileName @14
+EfsDllGetLogFile @15
+EfsDllGetUserInfo @16
+EfsDllGetVolumeRoot @17
+EfsDllIsNonEfsSKU @18
+EfsDllLoadUserProfile @19
+EfsDllMarkFileForDelete @20
+EfsDllOnSessionChange @21
+EfsDllOpenFileRaw @22
+EfsDllQueryRecoveryAgentsSrv @23
+EfsDllQueryUsersOnFileSrv @24
+EfsDllReadFileRaw @25
+EfsDllRemoveUsersFromFileSrv @26
+EfsDllSetFileEncryptionKeySrv @27
+EfsDllShareDecline @28
+EfsDllSsoFlushUserCache @29
+EfsDllUnloadUserProfile @30
+EfsDllUsePinForEncryptedFilesSrv @31
+EfsDllValidateEfsStream @32
+EfsDllWriteFileRaw @33
+EfsInitialize @34
+EfsUnInitialize @35

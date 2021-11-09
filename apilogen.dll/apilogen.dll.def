@@ -1,0 +1,9 @@
+﻿LIBRARY
+EXPORTS
+
+LeInitialize @1
+LeTraceFunctionCall @2
+LeUninitialize @3
+LeWriteExceptionData @4
+LeWriteManifestData @5
+LeWriteProcessData @6

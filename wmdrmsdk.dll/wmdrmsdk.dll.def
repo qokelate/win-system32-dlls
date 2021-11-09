@@ -1,0 +1,12 @@
+﻿LIBRARY
+EXPORTS
+
+DllCanUnloadNow @1
+DllGetClassObject @2
+DllRegisterServer @3
+DllUnregisterServer @4
+MFWMDRMOutputTrustAuthority_CreateInstance @5
+WMDRMCreateProvider @6
+WMDRMShutdown @7
+WMDRMStartup @8
+_WMDRMCreateProvider @9

@@ -1,0 +1,12 @@
+﻿LIBRARY
+EXPORTS
+
+CuzzDisable @1
+CuzzEnable @2
+CuzzGetRandomSeed @3
+CuzzIsEnabled @4
+CuzzSchedule @5
+CuzzSetDebugLoweringPoint @6
+CuzzSetDebugPriority @7
+CuzzSetPriority @8
+CuzzSetRandomSeed @9

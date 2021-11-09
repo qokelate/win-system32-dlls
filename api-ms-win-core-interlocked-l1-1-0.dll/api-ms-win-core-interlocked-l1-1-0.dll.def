@@ -1,0 +1,9 @@
+﻿LIBRARY
+EXPORTS
+
+InitializeSListHead @1
+InterlockedFlushSList @2
+InterlockedPopEntrySList @3
+InterlockedPushEntrySList @4
+InterlockedPushListSList @5
+QueryDepthSList @6

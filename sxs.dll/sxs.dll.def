@@ -1,0 +1,24 @@
+﻿LIBRARY
+EXPORTS
+
+CreateAssemblyCache @7
+CreateAssemblyNameObject @8
+SxsBeginAssemblyInstall @9
+SxsEndAssemblyInstall @10
+SxsFindClrClassInformation @1
+SxsFindClrSurrogateInformation @2
+SxsGenerateActivationContext @11
+SxsInstallW @12
+SxsLookupClrGuid @3
+SxsOleAut32MapConfiguredClsidToReferenceClsid @13
+SxsOleAut32MapIIDOrCLSIDToTypeLibrary @14
+SxsOleAut32MapIIDToProxyStubCLSID @15
+SxsOleAut32MapIIDToTLBPath @16
+SxsOleAut32MapReferenceClsidToConfiguredClsid @17
+SxsOleAut32RedirectTypeLibrary @18
+SxsProbeAssemblyInstallation @19
+SxsQueryManifestInformation @20
+SxsRunDllInstallAssembly @4
+SxsRunDllInstallAssemblyW @5
+SxsUninstallW @21
+SxspGenerateManifestPathOnAssemblyIdentity @6

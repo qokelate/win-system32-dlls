@@ -1,0 +1,31 @@
+﻿LIBRARY
+EXPORTS
+
+OneXAddEapAttributes @1
+OneXAddTLV @2
+OneXCompareAuthParams @3
+OneXCopyAuthParams @4
+OneXCreateDefaultProfile @5
+OneXCreateDiscoveryProfiles @6
+OneXCreateSupplicantPort @7
+OneXDeInitialize @8
+OneXDestroySupplicantPort @9
+OneXForceAuthenticatedState @10
+OneXFreeAuthParams @11
+OneXFreeMemory @12
+OneXIndicatePacket @13
+OneXIndicateSessionChange @14
+OneXInitialize @15
+OneXQueryAuthParams @16
+OneXQueryPendingUIRequest @17
+OneXQueryState @18
+OneXQueryStatistics @19
+OneXReasonCodeToString @20
+OneXRestartReasonCodeToString @21
+OneXSetAuthParams @22
+OneXSetRuntimeState @23
+OneXStartAuthentication @24
+OneXStopAuthentication @25
+OneXUIResponse @26
+OneXUpdatePortProfile @27
+OneXUpdateProfilePostDiscovery @28

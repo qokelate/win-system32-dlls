@@ -1,0 +1,6 @@
+﻿LIBRARY
+EXPORTS
+
+DownlevelGetLocaleScripts @1
+DownlevelGetStringScripts @2
+DownlevelVerifyScripts @3

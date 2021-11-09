@@ -1,0 +1,20 @@
+﻿LIBRARY
+EXPORTS
+
+Dhcpv6AcquireParameters @1
+Dhcpv6CancelOperation @2
+Dhcpv6EnableTracing @3
+Dhcpv6FreeLeaseInfo @4
+Dhcpv6GetTraceArray @5
+Dhcpv6GetUserClasses @6
+Dhcpv6IsEnabled @7
+Dhcpv6QueryLeaseInfo @8
+Dhcpv6ReleaseParameters @9
+Dhcpv6ReleasePrefix @10
+Dhcpv6ReleasePrefixEx @11
+Dhcpv6RenewPrefix @12
+Dhcpv6RenewPrefixEx @13
+Dhcpv6RequestParams @14
+Dhcpv6RequestPrefix @15
+Dhcpv6RequestPrefixEx @16
+Dhcpv6SetUserClass @17

@@ -1,0 +1,47 @@
+﻿LIBRARY
+EXPORTS
+
+__std_smf_assoc_laguerre @1
+__std_smf_assoc_laguerref @2
+__std_smf_assoc_legendre @3
+__std_smf_assoc_legendref @4
+__std_smf_beta @5
+__std_smf_betaf @6
+__std_smf_comp_ellint_1 @7
+__std_smf_comp_ellint_1f @8
+__std_smf_comp_ellint_2 @9
+__std_smf_comp_ellint_2f @10
+__std_smf_comp_ellint_3 @11
+__std_smf_comp_ellint_3f @12
+__std_smf_cyl_bessel_i @13
+__std_smf_cyl_bessel_if @14
+__std_smf_cyl_bessel_j @15
+__std_smf_cyl_bessel_jf @16
+__std_smf_cyl_bessel_k @17
+__std_smf_cyl_bessel_kf @18
+__std_smf_cyl_neumann @19
+__std_smf_cyl_neumannf @20
+__std_smf_ellint_1 @21
+__std_smf_ellint_1f @22
+__std_smf_ellint_2 @23
+__std_smf_ellint_2f @24
+__std_smf_ellint_3 @25
+__std_smf_ellint_3f @26
+__std_smf_expint @27
+__std_smf_expintf @28
+__std_smf_hermite @29
+__std_smf_hermitef @30
+__std_smf_hypot3 @31
+__std_smf_hypot3f @32
+__std_smf_laguerre @33
+__std_smf_laguerref @34
+__std_smf_legendre @35
+__std_smf_legendref @36
+__std_smf_riemann_zeta @37
+__std_smf_riemann_zetaf @38
+__std_smf_sph_bessel @39
+__std_smf_sph_besself @40
+__std_smf_sph_legendre @41
+__std_smf_sph_legendref @42
+__std_smf_sph_neumann @43
+__std_smf_sph_neumannf @44

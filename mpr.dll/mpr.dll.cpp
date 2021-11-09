@@ -1,0 +1,263 @@
+﻿#include <windows.h>
+#include <shlwapi.h>
+
+extern "C" {
+extern void *ptr_I_MprSaveConn;
+void *ptr_I_MprSaveConn = NULL;
+extern void *ptr_MultinetGetConnectionPerformanceA;
+void *ptr_MultinetGetConnectionPerformanceA = NULL;
+extern void *ptr_MultinetGetConnectionPerformanceW;
+void *ptr_MultinetGetConnectionPerformanceW = NULL;
+extern void *ptr_MultinetGetErrorTextA;
+void *ptr_MultinetGetErrorTextA = NULL;
+extern void *ptr_MultinetGetErrorTextW;
+void *ptr_MultinetGetErrorTextW = NULL;
+extern void *ptr_WNetAddConnection2A;
+void *ptr_WNetAddConnection2A = NULL;
+extern void *ptr_WNetAddConnection2W;
+void *ptr_WNetAddConnection2W = NULL;
+extern void *ptr_WNetAddConnection3A;
+void *ptr_WNetAddConnection3A = NULL;
+extern void *ptr_WNetAddConnection3W;
+void *ptr_WNetAddConnection3W = NULL;
+extern void *ptr_WNetAddConnectionA;
+void *ptr_WNetAddConnectionA = NULL;
+extern void *ptr_WNetAddConnectionW;
+void *ptr_WNetAddConnectionW = NULL;
+extern void *ptr_WNetCancelConnection2A;
+void *ptr_WNetCancelConnection2A = NULL;
+extern void *ptr_WNetCancelConnection2W;
+void *ptr_WNetCancelConnection2W = NULL;
+extern void *ptr_WNetCancelConnectionA;
+void *ptr_WNetCancelConnectionA = NULL;
+extern void *ptr_WNetCancelConnectionW;
+void *ptr_WNetCancelConnectionW = NULL;
+extern void *ptr_WNetClearConnections;
+void *ptr_WNetClearConnections = NULL;
+extern void *ptr_WNetCloseEnum;
+void *ptr_WNetCloseEnum = NULL;
+extern void *ptr_WNetConnectionDialog;
+void *ptr_WNetConnectionDialog = NULL;
+extern void *ptr_WNetConnectionDialog1A;
+void *ptr_WNetConnectionDialog1A = NULL;
+extern void *ptr_WNetConnectionDialog1W;
+void *ptr_WNetConnectionDialog1W = NULL;
+extern void *ptr_WNetConnectionDialog2;
+void *ptr_WNetConnectionDialog2 = NULL;
+extern void *ptr_WNetDirectoryNotifyA;
+void *ptr_WNetDirectoryNotifyA = NULL;
+extern void *ptr_WNetDirectoryNotifyW;
+void *ptr_WNetDirectoryNotifyW = NULL;
+extern void *ptr_WNetDisconnectDialog;
+void *ptr_WNetDisconnectDialog = NULL;
+extern void *ptr_WNetDisconnectDialog1A;
+void *ptr_WNetDisconnectDialog1A = NULL;
+extern void *ptr_WNetDisconnectDialog1W;
+void *ptr_WNetDisconnectDialog1W = NULL;
+extern void *ptr_WNetDisconnectDialog2;
+void *ptr_WNetDisconnectDialog2 = NULL;
+extern void *ptr_WNetEnumResourceA;
+void *ptr_WNetEnumResourceA = NULL;
+extern void *ptr_WNetEnumResourceW;
+void *ptr_WNetEnumResourceW = NULL;
+extern void *ptr_WNetFormatNetworkNameA;
+void *ptr_WNetFormatNetworkNameA = NULL;
+extern void *ptr_WNetFormatNetworkNameW;
+void *ptr_WNetFormatNetworkNameW = NULL;
+extern void *ptr_WNetGetConnection2A;
+void *ptr_WNetGetConnection2A = NULL;
+extern void *ptr_WNetGetConnection2W;
+void *ptr_WNetGetConnection2W = NULL;
+extern void *ptr_WNetGetConnection3A;
+void *ptr_WNetGetConnection3A = NULL;
+extern void *ptr_WNetGetConnection3W;
+void *ptr_WNetGetConnection3W = NULL;
+extern void *ptr_WNetGetConnectionA;
+void *ptr_WNetGetConnectionA = NULL;
+extern void *ptr_WNetGetConnectionW;
+void *ptr_WNetGetConnectionW = NULL;
+extern void *ptr_WNetGetDirectoryTypeA;
+void *ptr_WNetGetDirectoryTypeA = NULL;
+extern void *ptr_WNetGetDirectoryTypeW;
+void *ptr_WNetGetDirectoryTypeW = NULL;
+extern void *ptr_WNetGetHomeDirectoryW;
+void *ptr_WNetGetHomeDirectoryW = NULL;
+extern void *ptr_WNetGetLastErrorA;
+void *ptr_WNetGetLastErrorA = NULL;
+extern void *ptr_WNetGetLastErrorW;
+void *ptr_WNetGetLastErrorW = NULL;
+extern void *ptr_WNetGetNetworkInformationA;
+void *ptr_WNetGetNetworkInformationA = NULL;
+extern void *ptr_WNetGetNetworkInformationW;
+void *ptr_WNetGetNetworkInformationW = NULL;
+extern void *ptr_WNetGetPropertyTextA;
+void *ptr_WNetGetPropertyTextA = NULL;
+extern void *ptr_WNetGetPropertyTextW;
+void *ptr_WNetGetPropertyTextW = NULL;
+extern void *ptr_WNetGetProviderNameA;
+void *ptr_WNetGetProviderNameA = NULL;
+extern void *ptr_WNetGetProviderNameW;
+void *ptr_WNetGetProviderNameW = NULL;
+extern void *ptr_WNetGetProviderTypeA;
+void *ptr_WNetGetProviderTypeA = NULL;
+extern void *ptr_WNetGetProviderTypeW;
+void *ptr_WNetGetProviderTypeW = NULL;
+extern void *ptr_WNetGetResourceInformationA;
+void *ptr_WNetGetResourceInformationA = NULL;
+extern void *ptr_WNetGetResourceInformationW;
+void *ptr_WNetGetResourceInformationW = NULL;
+extern void *ptr_WNetGetResourceParentA;
+void *ptr_WNetGetResourceParentA = NULL;
+extern void *ptr_WNetGetResourceParentW;
+void *ptr_WNetGetResourceParentW = NULL;
+extern void *ptr_WNetGetSearchDialog;
+void *ptr_WNetGetSearchDialog = NULL;
+extern void *ptr_WNetGetUniversalNameA;
+void *ptr_WNetGetUniversalNameA = NULL;
+extern void *ptr_WNetGetUniversalNameW;
+void *ptr_WNetGetUniversalNameW = NULL;
+extern void *ptr_WNetGetUserA;
+void *ptr_WNetGetUserA = NULL;
+extern void *ptr_WNetGetUserW;
+void *ptr_WNetGetUserW = NULL;
+extern void *ptr_WNetLogonNotify;
+void *ptr_WNetLogonNotify = NULL;
+extern void *ptr_WNetOpenEnumA;
+void *ptr_WNetOpenEnumA = NULL;
+extern void *ptr_WNetOpenEnumW;
+void *ptr_WNetOpenEnumW = NULL;
+extern void *ptr_WNetPasswordChangeNotify;
+void *ptr_WNetPasswordChangeNotify = NULL;
+extern void *ptr_WNetPropertyDialogA;
+void *ptr_WNetPropertyDialogA = NULL;
+extern void *ptr_WNetPropertyDialogW;
+void *ptr_WNetPropertyDialogW = NULL;
+extern void *ptr_WNetRestoreAllConnectionsW;
+void *ptr_WNetRestoreAllConnectionsW = NULL;
+extern void *ptr_WNetRestoreSingleConnectionW;
+void *ptr_WNetRestoreSingleConnectionW = NULL;
+extern void *ptr_WNetSetConnectionA;
+void *ptr_WNetSetConnectionA = NULL;
+extern void *ptr_WNetSetConnectionW;
+void *ptr_WNetSetConnectionW = NULL;
+extern void *ptr_WNetSetLastErrorA;
+void *ptr_WNetSetLastErrorA = NULL;
+extern void *ptr_WNetSetLastErrorW;
+void *ptr_WNetSetLastErrorW = NULL;
+extern void *ptr_WNetSupportGlobalEnum;
+void *ptr_WNetSupportGlobalEnum = NULL;
+extern void *ptr_WNetUseConnectionA;
+void *ptr_WNetUseConnectionA = NULL;
+extern void *ptr_WNetUseConnectionW;
+void *ptr_WNetUseConnectionW = NULL;
+}
+
+
+static HMODULE hModule = NULL;
+static void module_init()
+{    
+   if (hModule) return;
+   wchar_t sz_module_file[MAX_PATH];
+   GetSystemDirectoryW(sz_module_file, MAX_PATH);
+   wcscat_s(sz_module_file, L"\\mpr.dll");
+   hModule = LoadLibraryW(sz_module_file);
+   if (!hModule) return;
+
+   #define __vartype(x) decltype(x)
+   ptr_I_MprSaveConn = (__vartype(ptr_I_MprSaveConn))GetProcAddress(hModule, "I_MprSaveConn");
+   ptr_MultinetGetConnectionPerformanceA = (__vartype(ptr_MultinetGetConnectionPerformanceA))GetProcAddress(hModule, "MultinetGetConnectionPerformanceA");
+   ptr_MultinetGetConnectionPerformanceW = (__vartype(ptr_MultinetGetConnectionPerformanceW))GetProcAddress(hModule, "MultinetGetConnectionPerformanceW");
+   ptr_MultinetGetErrorTextA = (__vartype(ptr_MultinetGetErrorTextA))GetProcAddress(hModule, "MultinetGetErrorTextA");
+   ptr_MultinetGetErrorTextW = (__vartype(ptr_MultinetGetErrorTextW))GetProcAddress(hModule, "MultinetGetErrorTextW");
+   ptr_WNetAddConnection2A = (__vartype(ptr_WNetAddConnection2A))GetProcAddress(hModule, "WNetAddConnection2A");
+   ptr_WNetAddConnection2W = (__vartype(ptr_WNetAddConnection2W))GetProcAddress(hModule, "WNetAddConnection2W");
+   ptr_WNetAddConnection3A = (__vartype(ptr_WNetAddConnection3A))GetProcAddress(hModule, "WNetAddConnection3A");
+   ptr_WNetAddConnection3W = (__vartype(ptr_WNetAddConnection3W))GetProcAddress(hModule, "WNetAddConnection3W");
+   ptr_WNetAddConnectionA = (__vartype(ptr_WNetAddConnectionA))GetProcAddress(hModule, "WNetAddConnectionA");
+   ptr_WNetAddConnectionW = (__vartype(ptr_WNetAddConnectionW))GetProcAddress(hModule, "WNetAddConnectionW");
+   ptr_WNetCancelConnection2A = (__vartype(ptr_WNetCancelConnection2A))GetProcAddress(hModule, "WNetCancelConnection2A");
+   ptr_WNetCancelConnection2W = (__vartype(ptr_WNetCancelConnection2W))GetProcAddress(hModule, "WNetCancelConnection2W");
+   ptr_WNetCancelConnectionA = (__vartype(ptr_WNetCancelConnectionA))GetProcAddress(hModule, "WNetCancelConnectionA");
+   ptr_WNetCancelConnectionW = (__vartype(ptr_WNetCancelConnectionW))GetProcAddress(hModule, "WNetCancelConnectionW");
+   ptr_WNetClearConnections = (__vartype(ptr_WNetClearConnections))GetProcAddress(hModule, "WNetClearConnections");
+   ptr_WNetCloseEnum = (__vartype(ptr_WNetCloseEnum))GetProcAddress(hModule, "WNetCloseEnum");
+   ptr_WNetConnectionDialog = (__vartype(ptr_WNetConnectionDialog))GetProcAddress(hModule, "WNetConnectionDialog");
+   ptr_WNetConnectionDialog1A = (__vartype(ptr_WNetConnectionDialog1A))GetProcAddress(hModule, "WNetConnectionDialog1A");
+   ptr_WNetConnectionDialog1W = (__vartype(ptr_WNetConnectionDialog1W))GetProcAddress(hModule, "WNetConnectionDialog1W");
+   ptr_WNetConnectionDialog2 = (__vartype(ptr_WNetConnectionDialog2))GetProcAddress(hModule, "WNetConnectionDialog2");
+   ptr_WNetDirectoryNotifyA = (__vartype(ptr_WNetDirectoryNotifyA))GetProcAddress(hModule, "WNetDirectoryNotifyA");
+   ptr_WNetDirectoryNotifyW = (__vartype(ptr_WNetDirectoryNotifyW))GetProcAddress(hModule, "WNetDirectoryNotifyW");
+   ptr_WNetDisconnectDialog = (__vartype(ptr_WNetDisconnectDialog))GetProcAddress(hModule, "WNetDisconnectDialog");
+   ptr_WNetDisconnectDialog1A = (__vartype(ptr_WNetDisconnectDialog1A))GetProcAddress(hModule, "WNetDisconnectDialog1A");
+   ptr_WNetDisconnectDialog1W = (__vartype(ptr_WNetDisconnectDialog1W))GetProcAddress(hModule, "WNetDisconnectDialog1W");
+   ptr_WNetDisconnectDialog2 = (__vartype(ptr_WNetDisconnectDialog2))GetProcAddress(hModule, "WNetDisconnectDialog2");
+   ptr_WNetEnumResourceA = (__vartype(ptr_WNetEnumResourceA))GetProcAddress(hModule, "WNetEnumResourceA");
+   ptr_WNetEnumResourceW = (__vartype(ptr_WNetEnumResourceW))GetProcAddress(hModule, "WNetEnumResourceW");
+   ptr_WNetFormatNetworkNameA = (__vartype(ptr_WNetFormatNetworkNameA))GetProcAddress(hModule, "WNetFormatNetworkNameA");
+   ptr_WNetFormatNetworkNameW = (__vartype(ptr_WNetFormatNetworkNameW))GetProcAddress(hModule, "WNetFormatNetworkNameW");
+   ptr_WNetGetConnection2A = (__vartype(ptr_WNetGetConnection2A))GetProcAddress(hModule, "WNetGetConnection2A");
+   ptr_WNetGetConnection2W = (__vartype(ptr_WNetGetConnection2W))GetProcAddress(hModule, "WNetGetConnection2W");
+   ptr_WNetGetConnection3A = (__vartype(ptr_WNetGetConnection3A))GetProcAddress(hModule, "WNetGetConnection3A");
+   ptr_WNetGetConnection3W = (__vartype(ptr_WNetGetConnection3W))GetProcAddress(hModule, "WNetGetConnection3W");
+   ptr_WNetGetConnectionA = (__vartype(ptr_WNetGetConnectionA))GetProcAddress(hModule, "WNetGetConnectionA");
+   ptr_WNetGetConnectionW = (__vartype(ptr_WNetGetConnectionW))GetProcAddress(hModule, "WNetGetConnectionW");
+   ptr_WNetGetDirectoryTypeA = (__vartype(ptr_WNetGetDirectoryTypeA))GetProcAddress(hModule, "WNetGetDirectoryTypeA");
+   ptr_WNetGetDirectoryTypeW = (__vartype(ptr_WNetGetDirectoryTypeW))GetProcAddress(hModule, "WNetGetDirectoryTypeW");
+   ptr_WNetGetHomeDirectoryW = (__vartype(ptr_WNetGetHomeDirectoryW))GetProcAddress(hModule, "WNetGetHomeDirectoryW");
+   ptr_WNetGetLastErrorA = (__vartype(ptr_WNetGetLastErrorA))GetProcAddress(hModule, "WNetGetLastErrorA");
+   ptr_WNetGetLastErrorW = (__vartype(ptr_WNetGetLastErrorW))GetProcAddress(hModule, "WNetGetLastErrorW");
+   ptr_WNetGetNetworkInformationA = (__vartype(ptr_WNetGetNetworkInformationA))GetProcAddress(hModule, "WNetGetNetworkInformationA");
+   ptr_WNetGetNetworkInformationW = (__vartype(ptr_WNetGetNetworkInformationW))GetProcAddress(hModule, "WNetGetNetworkInformationW");
+   ptr_WNetGetPropertyTextA = (__vartype(ptr_WNetGetPropertyTextA))GetProcAddress(hModule, "WNetGetPropertyTextA");
+   ptr_WNetGetPropertyTextW = (__vartype(ptr_WNetGetPropertyTextW))GetProcAddress(hModule, "WNetGetPropertyTextW");
+   ptr_WNetGetProviderNameA = (__vartype(ptr_WNetGetProviderNameA))GetProcAddress(hModule, "WNetGetProviderNameA");
+   ptr_WNetGetProviderNameW = (__vartype(ptr_WNetGetProviderNameW))GetProcAddress(hModule, "WNetGetProviderNameW");
+   ptr_WNetGetProviderTypeA = (__vartype(ptr_WNetGetProviderTypeA))GetProcAddress(hModule, "WNetGetProviderTypeA");
+   ptr_WNetGetProviderTypeW = (__vartype(ptr_WNetGetProviderTypeW))GetProcAddress(hModule, "WNetGetProviderTypeW");
+   ptr_WNetGetResourceInformationA = (__vartype(ptr_WNetGetResourceInformationA))GetProcAddress(hModule, "WNetGetResourceInformationA");
+   ptr_WNetGetResourceInformationW = (__vartype(ptr_WNetGetResourceInformationW))GetProcAddress(hModule, "WNetGetResourceInformationW");
+   ptr_WNetGetResourceParentA = (__vartype(ptr_WNetGetResourceParentA))GetProcAddress(hModule, "WNetGetResourceParentA");
+   ptr_WNetGetResourceParentW = (__vartype(ptr_WNetGetResourceParentW))GetProcAddress(hModule, "WNetGetResourceParentW");
+   ptr_WNetGetSearchDialog = (__vartype(ptr_WNetGetSearchDialog))GetProcAddress(hModule, "WNetGetSearchDialog");
+   ptr_WNetGetUniversalNameA = (__vartype(ptr_WNetGetUniversalNameA))GetProcAddress(hModule, "WNetGetUniversalNameA");
+   ptr_WNetGetUniversalNameW = (__vartype(ptr_WNetGetUniversalNameW))GetProcAddress(hModule, "WNetGetUniversalNameW");
+   ptr_WNetGetUserA = (__vartype(ptr_WNetGetUserA))GetProcAddress(hModule, "WNetGetUserA");
+   ptr_WNetGetUserW = (__vartype(ptr_WNetGetUserW))GetProcAddress(hModule, "WNetGetUserW");
+   ptr_WNetLogonNotify = (__vartype(ptr_WNetLogonNotify))GetProcAddress(hModule, "WNetLogonNotify");
+   ptr_WNetOpenEnumA = (__vartype(ptr_WNetOpenEnumA))GetProcAddress(hModule, "WNetOpenEnumA");
+   ptr_WNetOpenEnumW = (__vartype(ptr_WNetOpenEnumW))GetProcAddress(hModule, "WNetOpenEnumW");
+   ptr_WNetPasswordChangeNotify = (__vartype(ptr_WNetPasswordChangeNotify))GetProcAddress(hModule, "WNetPasswordChangeNotify");
+   ptr_WNetPropertyDialogA = (__vartype(ptr_WNetPropertyDialogA))GetProcAddress(hModule, "WNetPropertyDialogA");
+   ptr_WNetPropertyDialogW = (__vartype(ptr_WNetPropertyDialogW))GetProcAddress(hModule, "WNetPropertyDialogW");
+   ptr_WNetRestoreAllConnectionsW = (__vartype(ptr_WNetRestoreAllConnectionsW))GetProcAddress(hModule, "WNetRestoreAllConnectionsW");
+   ptr_WNetRestoreSingleConnectionW = (__vartype(ptr_WNetRestoreSingleConnectionW))GetProcAddress(hModule, "WNetRestoreSingleConnectionW");
+   ptr_WNetSetConnectionA = (__vartype(ptr_WNetSetConnectionA))GetProcAddress(hModule, "WNetSetConnectionA");
+   ptr_WNetSetConnectionW = (__vartype(ptr_WNetSetConnectionW))GetProcAddress(hModule, "WNetSetConnectionW");
+   ptr_WNetSetLastErrorA = (__vartype(ptr_WNetSetLastErrorA))GetProcAddress(hModule, "WNetSetLastErrorA");
+   ptr_WNetSetLastErrorW = (__vartype(ptr_WNetSetLastErrorW))GetProcAddress(hModule, "WNetSetLastErrorW");
+   ptr_WNetSupportGlobalEnum = (__vartype(ptr_WNetSupportGlobalEnum))GetProcAddress(hModule, "WNetSupportGlobalEnum");
+   ptr_WNetUseConnectionA = (__vartype(ptr_WNetUseConnectionA))GetProcAddress(hModule, "WNetUseConnectionA");
+   ptr_WNetUseConnectionW = (__vartype(ptr_WNetUseConnectionW))GetProcAddress(hModule, "WNetUseConnectionW");
+   #undef __vartype
+}
+
+extern "C" BOOL __stdcall DllMain( HMODULE hModule,	DWORD ul_reason_for_call,LPVOID lpReserved)
+{
+	switch (ul_reason_for_call)
+	{
+	case DLL_PROCESS_ATTACH:
+    {
+        module_init();
+        wchar_t tmp1[2048];
+        GetModuleFileNameW(NULL, tmp1, _countof(tmp1));
+        PathRemoveExtensionW(tmp1);
+        wcscat(tmp1, L".hook.dll");
+        LoadLibraryW(tmp1);
+        break;
+    }
+	case DLL_PROCESS_DETACH:
+		break;
+	}
+	return TRUE;
+}
+

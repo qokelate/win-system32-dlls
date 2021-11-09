@@ -1,0 +1,7 @@
+﻿LIBRARY
+EXPORTS
+
+DllCanUnloadNow @16
+DllGetClassObject @17
+DllRegisterServer @18
+DllUnregisterServer @19

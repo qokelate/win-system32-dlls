@@ -1,0 +1,21 @@
+﻿LIBRARY
+EXPORTS
+
+EnterCriticalPolicySectionInternal @106
+ForceSyncFgPolicyInternal @108
+FreeGPOListInternalA @112
+FreeGPOListInternalW @116
+GetAppliedGPOListInternalA @117
+GetAppliedGPOListInternalW @118
+GetGPOListInternalA @119
+GetGPOListInternalW @120
+GetNextFgPolicyRefreshInfoInternal @121
+GetPreviousFgPolicyRefreshInfoInternal @122
+LeaveCriticalPolicySectionInternal @123
+RefreshPolicyExInternal @124
+RefreshPolicyInternal @125
+RegisterGPNotificationInternal @126
+RsopLoggingEnabledInternal @127
+UnregisterGPNotificationInternal @128
+WaitForMachinePolicyForegroundProcessingInternal @129
+WaitForUserPolicyForegroundProcessingInternal @130

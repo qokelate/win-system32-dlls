@@ -1,0 +1,31 @@
+﻿LIBRARY
+EXPORTS
+
+MSMSecConnectionHealthCheck @1
+MSMSecCreateDiscoveryProfiles @2
+MSMSecDeinitialize @3
+MSMSecDeinitializeAdapter @4
+MSMSecFreeIntfState @5
+MSMSecFreeMemory @6
+MSMSecFreePeerState @7
+MSMSecFreeProfile @8
+MSMSecInitialize @9
+MSMSecInitializeAdapter @10
+MSMSecIsUIRequestPending @11
+MSMSecPerformCapabilityMatch @12
+MSMSecPerformPostAssociateSecurity @13
+MSMSecPerformPreAssociateSecurity @14
+MSMSecProcessSessionChange @15
+MSMSecQueryAPPeerPSKIndex @16
+MSMSecQueryIntfState @17
+MSMSecQueryPeerState @18
+MSMSecRecvIndication @19
+MSMSecRecvPacket @20
+MSMSecRedoSecurity @21
+MSMSecSendPktCompletion @22
+MSMSecSetAPSecondaryPSK @23
+MSMSecSetRuntimeState @24
+MSMSecSetWcnOneXEnable @25
+MSMSecStopPostAssociateSecurity @26
+MSMSecStopSecurity @27
+MSMSecUIResponse @28

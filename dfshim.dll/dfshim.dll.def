@@ -1,0 +1,23 @@
+﻿LIBRARY
+EXPORTS
+
+CleanOnlineAppCache @17
+CreateActContext @1
+CreateCMSFromXml @2
+DllCanUnloadNow @18
+DllGetClassObject @19
+GetCurrentActContext @3
+GetDeploymentDataFromManifest @20
+GetUserStateManager @4
+GetUserStore @5
+KillService @6
+LaunchApplication @7
+ParseManifest @8
+ShArpMaintain @9
+ShArpMaintainW @10
+ShOpenVerbApplication @11
+ShOpenVerbApplicationW @12
+ShOpenVerbExtension @13
+ShOpenVerbExtensionW @14
+ShOpenVerbShortcut @15
+ShOpenVerbShortcutW @16

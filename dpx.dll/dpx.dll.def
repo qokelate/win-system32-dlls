@@ -1,0 +1,6 @@
+﻿LIBRARY
+EXPORTS
+
+DpxFreeMemory @1
+DpxNewJob @2
+DpxRestoreJob @3

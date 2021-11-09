@@ -1,0 +1,7 @@
+﻿LIBRARY
+EXPORTS
+
+AboutDialogProc @1
+DllMain @2
+DriverDialogProc @3
+DriverProc @4

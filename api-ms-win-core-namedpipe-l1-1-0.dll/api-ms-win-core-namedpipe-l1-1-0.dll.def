@@ -1,0 +1,14 @@
+﻿LIBRARY
+EXPORTS
+
+ConnectNamedPipe @1
+CreateNamedPipeW @2
+CreatePipe @3
+DisconnectNamedPipe @4
+GetNamedPipeAttribute @5
+GetNamedPipeClientComputerNameW @6
+ImpersonateNamedPipeClient @7
+PeekNamedPipe @8
+SetNamedPipeHandleState @9
+TransactNamedPipe @10
+WaitNamedPipeW @11

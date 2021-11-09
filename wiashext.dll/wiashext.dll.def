@@ -1,0 +1,12 @@
+﻿LIBRARY
+EXPORTS
+
+AddDeviceWasChosen @1
+AddDeviceWasChosenA @2
+AddDeviceWasChosenW @3
+DllCanUnloadNow @5
+DllGetClassObject @6
+DllRegisterServer @7
+DllUnregisterServer @8
+DoDeleteAllItems @9
+MakeFullPidlForDevice @4

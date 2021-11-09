@@ -1,0 +1,25 @@
+﻿LIBRARY
+EXPORTS
+
+TcAddFilter @1
+TcAddFlow @2
+TcCloseInterface @3
+TcDeleteFilter @4
+TcDeleteFlow @5
+TcDeregisterClient @6
+TcEnumerateFlows @7
+TcEnumerateInterfaces @8
+TcGetFlowNameA @9
+TcGetFlowNameW @10
+TcGetInterfaceList @11
+TcModifyFlow @12
+TcOpenInterfaceA @13
+TcOpenInterfaceW @14
+TcQueryFlowA @15
+TcQueryFlowW @16
+TcQueryInterface @17
+TcRegisterClient @18
+TcSetFlowA @19
+TcSetFlowW @20
+TcSetInterface @21
+TcSetSocketFlow @22

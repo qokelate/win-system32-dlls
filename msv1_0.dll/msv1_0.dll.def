@@ -1,0 +1,21 @@
+﻿LIBRARY
+EXPORTS
+
+DllMain @5
+LsaApCallPackage @6
+LsaApCallPackagePassthrough @7
+LsaApCallPackageUntrusted @8
+LsaApInitializePackage @9
+LsaApLogonTerminated @10
+LsaApLogonUserEx2 @11
+Msv1_0ExportSubAuthenticationRoutine @12
+Msv1_0SubAuthenticationPresent @13
+MsvGetLogonAttemptCount @14
+MsvIsLocalhostAliases @2
+MsvSamLogoff @15
+MsvSamValidate @16
+MsvValidateTarget @17
+SpInitialize @1
+SpInstanceInit @32
+SpLsaModeInitialize @3
+SpUserModeInitialize @4

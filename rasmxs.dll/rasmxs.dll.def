@@ -1,0 +1,10 @@
+﻿LIBRARY
+EXPORTS
+
+DeviceConnect @1
+DeviceDone @2
+DeviceEnum @3
+DeviceGetInfo @4
+DeviceListen @5
+DeviceSetInfo @6
+DeviceWork @7

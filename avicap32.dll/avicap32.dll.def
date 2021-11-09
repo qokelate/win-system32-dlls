@@ -1,0 +1,9 @@
+﻿LIBRARY
+EXPORTS
+
+AppCleanup @1
+capCreateCaptureWindowA @2
+capCreateCaptureWindowW @3
+capGetDriverDescriptionA @4
+capGetDriverDescriptionW @5
+videoThunk32 @6

@@ -1,0 +1,27 @@
+﻿LIBRARY
+EXPORTS
+
+DhcpAddServerDS @1
+DhcpDeleteServerDS @2
+DhcpDsAddServer @3
+DhcpDsCleanupDS @4
+DhcpDsDelServer @5
+DhcpDsEnumServers @6
+DhcpDsGetAttribs @7
+DhcpDsGetLists @8
+DhcpDsGetRoot @9
+DhcpDsInitDS @10
+DhcpDsSetLists @11
+DhcpDsValidateService @12
+DhcpEnumServersDS @13
+StoreBeginSearch @14
+StoreCleanupHandle @15
+StoreCollectAttributes @16
+StoreCreateObjectVA @17
+StoreDeleteObject @18
+StoreEndSearch @19
+StoreGetHandle @20
+StoreInitHandle @21
+StoreSearchGetNext @22
+StoreSetSearchOneLevel @23
+StoreSetSearchSubTree @24

@@ -1,0 +1,10 @@
+﻿LIBRARY
+EXPORTS
+
+DllMain @1
+HTUI_ColorAdjustment @2
+HTUI_ColorAdjustmentA @3
+HTUI_ColorAdjustmentW @4
+HTUI_DeviceColorAdjustment @5
+HTUI_DeviceColorAdjustmentA @6
+HTUI_DeviceColorAdjustmentW @7

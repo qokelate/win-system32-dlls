@@ -1,0 +1,17 @@
+﻿LIBRARY
+EXPORTS
+
+DeleteExtractedFiles @4
+DllGetVersion @2
+Extract @3
+FCIAddFile @11
+FCICreate @10
+FCIDestroy @14
+FCIFlushCabinet @13
+FCIFlushFolder @12
+FDICopy @22
+FDICreate @20
+FDIDestroy @23
+FDIIsCabinet @21
+FDITruncateCabinet @24
+GetDllVersion @1

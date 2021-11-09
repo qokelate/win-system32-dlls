@@ -1,0 +1,90 @@
+ifndef X64
+.686p
+.XMM
+.safeseh SEH_handler
+.model flat, C
+option dotname
+option casemap : none
+endif
+
+extern ptr_AvQuerySystemResponsiveness : PTR;
+extern ptr_AvRevertMmThreadCharacteristics : PTR;
+extern ptr_AvRtCreateThreadOrderingGroup : PTR;
+extern ptr_AvRtCreateThreadOrderingGroupExA : PTR;
+extern ptr_AvRtCreateThreadOrderingGroupExW : PTR;
+extern ptr_AvRtDeleteThreadOrderingGroup : PTR;
+extern ptr_AvRtJoinThreadOrderingGroup : PTR;
+extern ptr_AvRtLeaveThreadOrderingGroup : PTR;
+extern ptr_AvRtWaitOnThreadOrderingGroup : PTR;
+extern ptr_AvSetMmMaxThreadCharacteristicsA : PTR;
+extern ptr_AvSetMmMaxThreadCharacteristicsW : PTR;
+extern ptr_AvSetMmThreadCharacteristicsA : PTR;
+extern ptr_AvSetMmThreadCharacteristicsW : PTR;
+extern ptr_AvSetMmThreadPriority : PTR;
+
+
+.code
+
+align 16
+SEH_handler   proc
+; handler
+ret
+SEH_handler   endp
+
+AvQuerySystemResponsiveness PROC
+jmp ptr_AvQuerySystemResponsiveness
+AvQuerySystemResponsiveness ENDP
+
+AvRevertMmThreadCharacteristics PROC
+jmp ptr_AvRevertMmThreadCharacteristics
+AvRevertMmThreadCharacteristics ENDP
+
+AvRtCreateThreadOrderingGroup PROC
+jmp ptr_AvRtCreateThreadOrderingGroup
+AvRtCreateThreadOrderingGroup ENDP
+
+AvRtCreateThreadOrderingGroupExA PROC
+jmp ptr_AvRtCreateThreadOrderingGroupExA
+AvRtCreateThreadOrderingGroupExA ENDP
+
+AvRtCreateThreadOrderingGroupExW PROC
+jmp ptr_AvRtCreateThreadOrderingGroupExW
+AvRtCreateThreadOrderingGroupExW ENDP
+
+AvRtDeleteThreadOrderingGroup PROC
+jmp ptr_AvRtDeleteThreadOrderingGroup
+AvRtDeleteThreadOrderingGroup ENDP
+
+AvRtJoinThreadOrderingGroup PROC
+jmp ptr_AvRtJoinThreadOrderingGroup
+AvRtJoinThreadOrderingGroup ENDP
+
+AvRtLeaveThreadOrderingGroup PROC
+jmp ptr_AvRtLeaveThreadOrderingGroup
+AvRtLeaveThreadOrderingGroup ENDP
+
+AvRtWaitOnThreadOrderingGroup PROC
+jmp ptr_AvRtWaitOnThreadOrderingGroup
+AvRtWaitOnThreadOrderingGroup ENDP
+
+AvSetMmMaxThreadCharacteristicsA PROC
+jmp ptr_AvSetMmMaxThreadCharacteristicsA
+AvSetMmMaxThreadCharacteristicsA ENDP
+
+AvSetMmMaxThreadCharacteristicsW PROC
+jmp ptr_AvSetMmMaxThreadCharacteristicsW
+AvSetMmMaxThreadCharacteristicsW ENDP
+
+AvSetMmThreadCharacteristicsA PROC
+jmp ptr_AvSetMmThreadCharacteristicsA
+AvSetMmThreadCharacteristicsA ENDP
+
+AvSetMmThreadCharacteristicsW PROC
+jmp ptr_AvSetMmThreadCharacteristicsW
+AvSetMmThreadCharacteristicsW ENDP
+
+AvSetMmThreadPriority PROC
+jmp ptr_AvSetMmThreadPriority
+AvSetMmThreadPriority ENDP
+
+end

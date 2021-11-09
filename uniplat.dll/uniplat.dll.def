@@ -1,0 +1,29 @@
+﻿LIBRARY
+EXPORTS
+
+AllocateOverStructEx @113
+CallBeginning @214
+CallEnding @215
+CancelUnimodemTimer @110
+CreateOverStructPool @111
+CreateUnimodemTimer @107
+DestroyOverStructPool @112
+FreeOverStruct @114
+FreeUnimodemTimer @108
+MonitorHandle @212
+ReinitOverStruct @115
+ResetCallCount @216
+SetUnimodemTimer @109
+StartMonitorThread @210
+StopMonitorThread @211
+StopMonitoringHandle @213
+SyncDeviceIoControl @116
+UmPlatformDeinitialize @101
+UmPlatformInitialize @100
+UnimodemDeviceIoControlEx @104
+UnimodemNotifyTSP @207
+UnimodemQueueUserAPC @106
+UnimodemReadFileEx @102
+UnimodemWaitCommEventEx @105
+UnimodemWriteFileEx @103
+WinntIsWorkstation @117

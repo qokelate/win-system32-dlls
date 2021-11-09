@@ -1,0 +1,205 @@
+ifndef X64
+.686p
+.XMM
+.safeseh SEH_handler
+.model flat, C
+option dotname
+option casemap : none
+endif
+
+extern ptr_CapabilitiesRequestAndCapabilitiesReply : PTR;
+extern ptr_DXVA2CreateDirect3DDeviceManager9 : PTR;
+extern ptr_DXVA2CreateVideoService : PTR;
+extern ptr_DXVAHD_CreateDevice : PTR;
+extern ptr_DegaussMonitor : PTR;
+extern ptr_DestroyPhysicalMonitor : PTR;
+extern ptr_DestroyPhysicalMonitors : PTR;
+extern ptr_GetCapabilitiesStringLength : PTR;
+extern ptr_GetMonitorBrightness : PTR;
+extern ptr_GetMonitorCapabilities : PTR;
+extern ptr_GetMonitorColorTemperature : PTR;
+extern ptr_GetMonitorContrast : PTR;
+extern ptr_GetMonitorDisplayAreaPosition : PTR;
+extern ptr_GetMonitorDisplayAreaSize : PTR;
+extern ptr_GetMonitorRedGreenOrBlueDrive : PTR;
+extern ptr_GetMonitorRedGreenOrBlueGain : PTR;
+extern ptr_GetMonitorTechnologyType : PTR;
+extern ptr_GetNumberOfPhysicalMonitorsFromHMONITOR : PTR;
+extern ptr_GetNumberOfPhysicalMonitorsFromIDirect3DDevice9 : PTR;
+extern ptr_GetPhysicalMonitorsFromHMONITOR : PTR;
+extern ptr_GetPhysicalMonitorsFromIDirect3DDevice9 : PTR;
+extern ptr_GetTimingReport : PTR;
+extern ptr_GetVCPFeatureAndVCPFeatureReply : PTR;
+extern ptr_OPMGetVideoOutputsFromHMONITOR : PTR;
+extern ptr_OPMGetVideoOutputsFromIDirect3DDevice9Object : PTR;
+extern ptr_RestoreMonitorFactoryColorDefaults : PTR;
+extern ptr_RestoreMonitorFactoryDefaults : PTR;
+extern ptr_SaveCurrentMonitorSettings : PTR;
+extern ptr_SaveCurrentSettings : PTR;
+extern ptr_SetMonitorBrightness : PTR;
+extern ptr_SetMonitorColorTemperature : PTR;
+extern ptr_SetMonitorContrast : PTR;
+extern ptr_SetMonitorDisplayAreaPosition : PTR;
+extern ptr_SetMonitorDisplayAreaSize : PTR;
+extern ptr_SetMonitorRedGreenOrBlueDrive : PTR;
+extern ptr_SetMonitorRedGreenOrBlueGain : PTR;
+extern ptr_SetVCPFeature : PTR;
+
+
+.code
+
+align 16
+SEH_handler   proc
+; handler
+ret
+SEH_handler   endp
+
+CapabilitiesRequestAndCapabilitiesReply PROC
+jmp ptr_CapabilitiesRequestAndCapabilitiesReply
+CapabilitiesRequestAndCapabilitiesReply ENDP
+
+DXVA2CreateDirect3DDeviceManager9 PROC
+jmp ptr_DXVA2CreateDirect3DDeviceManager9
+DXVA2CreateDirect3DDeviceManager9 ENDP
+
+DXVA2CreateVideoService PROC
+jmp ptr_DXVA2CreateVideoService
+DXVA2CreateVideoService ENDP
+
+DXVAHD_CreateDevice PROC
+jmp ptr_DXVAHD_CreateDevice
+DXVAHD_CreateDevice ENDP
+
+DegaussMonitor PROC
+jmp ptr_DegaussMonitor
+DegaussMonitor ENDP
+
+DestroyPhysicalMonitor PROC
+jmp ptr_DestroyPhysicalMonitor
+DestroyPhysicalMonitor ENDP
+
+DestroyPhysicalMonitors PROC
+jmp ptr_DestroyPhysicalMonitors
+DestroyPhysicalMonitors ENDP
+
+GetCapabilitiesStringLength PROC
+jmp ptr_GetCapabilitiesStringLength
+GetCapabilitiesStringLength ENDP
+
+GetMonitorBrightness PROC
+jmp ptr_GetMonitorBrightness
+GetMonitorBrightness ENDP
+
+GetMonitorCapabilities PROC
+jmp ptr_GetMonitorCapabilities
+GetMonitorCapabilities ENDP
+
+GetMonitorColorTemperature PROC
+jmp ptr_GetMonitorColorTemperature
+GetMonitorColorTemperature ENDP
+
+GetMonitorContrast PROC
+jmp ptr_GetMonitorContrast
+GetMonitorContrast ENDP
+
+GetMonitorDisplayAreaPosition PROC
+jmp ptr_GetMonitorDisplayAreaPosition
+GetMonitorDisplayAreaPosition ENDP
+
+GetMonitorDisplayAreaSize PROC
+jmp ptr_GetMonitorDisplayAreaSize
+GetMonitorDisplayAreaSize ENDP
+
+GetMonitorRedGreenOrBlueDrive PROC
+jmp ptr_GetMonitorRedGreenOrBlueDrive
+GetMonitorRedGreenOrBlueDrive ENDP
+
+GetMonitorRedGreenOrBlueGain PROC
+jmp ptr_GetMonitorRedGreenOrBlueGain
+GetMonitorRedGreenOrBlueGain ENDP
+
+GetMonitorTechnologyType PROC
+jmp ptr_GetMonitorTechnologyType
+GetMonitorTechnologyType ENDP
+
+GetNumberOfPhysicalMonitorsFromHMONITOR PROC
+jmp ptr_GetNumberOfPhysicalMonitorsFromHMONITOR
+GetNumberOfPhysicalMonitorsFromHMONITOR ENDP
+
+GetNumberOfPhysicalMonitorsFromIDirect3DDevice9 PROC
+jmp ptr_GetNumberOfPhysicalMonitorsFromIDirect3DDevice9
+GetNumberOfPhysicalMonitorsFromIDirect3DDevice9 ENDP
+
+GetPhysicalMonitorsFromHMONITOR PROC
+jmp ptr_GetPhysicalMonitorsFromHMONITOR
+GetPhysicalMonitorsFromHMONITOR ENDP
+
+GetPhysicalMonitorsFromIDirect3DDevice9 PROC
+jmp ptr_GetPhysicalMonitorsFromIDirect3DDevice9
+GetPhysicalMonitorsFromIDirect3DDevice9 ENDP
+
+GetTimingReport PROC
+jmp ptr_GetTimingReport
+GetTimingReport ENDP
+
+GetVCPFeatureAndVCPFeatureReply PROC
+jmp ptr_GetVCPFeatureAndVCPFeatureReply
+GetVCPFeatureAndVCPFeatureReply ENDP
+
+OPMGetVideoOutputsFromHMONITOR PROC
+jmp ptr_OPMGetVideoOutputsFromHMONITOR
+OPMGetVideoOutputsFromHMONITOR ENDP
+
+OPMGetVideoOutputsFromIDirect3DDevice9Object PROC
+jmp ptr_OPMGetVideoOutputsFromIDirect3DDevice9Object
+OPMGetVideoOutputsFromIDirect3DDevice9Object ENDP
+
+RestoreMonitorFactoryColorDefaults PROC
+jmp ptr_RestoreMonitorFactoryColorDefaults
+RestoreMonitorFactoryColorDefaults ENDP
+
+RestoreMonitorFactoryDefaults PROC
+jmp ptr_RestoreMonitorFactoryDefaults
+RestoreMonitorFactoryDefaults ENDP
+
+SaveCurrentMonitorSettings PROC
+jmp ptr_SaveCurrentMonitorSettings
+SaveCurrentMonitorSettings ENDP
+
+SaveCurrentSettings PROC
+jmp ptr_SaveCurrentSettings
+SaveCurrentSettings ENDP
+
+SetMonitorBrightness PROC
+jmp ptr_SetMonitorBrightness
+SetMonitorBrightness ENDP
+
+SetMonitorColorTemperature PROC
+jmp ptr_SetMonitorColorTemperature
+SetMonitorColorTemperature ENDP
+
+SetMonitorContrast PROC
+jmp ptr_SetMonitorContrast
+SetMonitorContrast ENDP
+
+SetMonitorDisplayAreaPosition PROC
+jmp ptr_SetMonitorDisplayAreaPosition
+SetMonitorDisplayAreaPosition ENDP
+
+SetMonitorDisplayAreaSize PROC
+jmp ptr_SetMonitorDisplayAreaSize
+SetMonitorDisplayAreaSize ENDP
+
+SetMonitorRedGreenOrBlueDrive PROC
+jmp ptr_SetMonitorRedGreenOrBlueDrive
+SetMonitorRedGreenOrBlueDrive ENDP
+
+SetMonitorRedGreenOrBlueGain PROC
+jmp ptr_SetMonitorRedGreenOrBlueGain
+SetMonitorRedGreenOrBlueGain ENDP
+
+SetVCPFeature PROC
+jmp ptr_SetVCPFeature
+SetVCPFeature ENDP
+
+end

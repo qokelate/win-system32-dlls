@@ -1,0 +1,7 @@
+﻿LIBRARY
+EXPORTS
+
+CreateCmtStoreObject @1
+CreateParserObject @2
+DllCanUnloadNow @3
+DllGetClassObject @4

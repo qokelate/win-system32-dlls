@@ -1,0 +1,17 @@
+﻿LIBRARY
+EXPORTS
+
+BackupPerfRegistryToFileW @1
+InstallPerfDllA @2
+InstallPerfDllW @3
+LoadPerfCounterTextStringsA @4
+LoadPerfCounterTextStringsW @5
+LpAcquireInstallationMutex @6
+LpReleaseInstallationMutex @7
+RestorePerfRegistryFromFileW @8
+SetServiceAsTrustedA @9
+SetServiceAsTrustedW @10
+UnloadPerfCounterTextStringsA @11
+UnloadPerfCounterTextStringsW @12
+UpdatePerfNameFilesA @13
+UpdatePerfNameFilesW @14

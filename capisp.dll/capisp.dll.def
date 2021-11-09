@@ -1,0 +1,6 @@
+﻿LIBRARY
+EXPORTS
+
+CAPISysPrep_Generalize @1
+CryptoSysPrep_Clean @2
+CryptoSysPrep_Specialize @3

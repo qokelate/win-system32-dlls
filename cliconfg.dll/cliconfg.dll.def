@@ -1,0 +1,6 @@
+﻿LIBRARY
+EXPORTS
+
+CPlApplet @1
+ClientConfigureAddEdit @2
+OnInitDialogMain @3

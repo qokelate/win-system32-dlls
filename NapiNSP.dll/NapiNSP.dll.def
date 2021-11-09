@@ -1,0 +1,5 @@
+﻿LIBRARY
+EXPORTS
+
+DllMain @1
+NSPStartup @2

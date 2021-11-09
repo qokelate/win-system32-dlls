@@ -1,0 +1,11 @@
+﻿LIBRARY
+EXPORTS
+
+DllMain @5
+EditAuditInfo @1
+EditOwnerInfo @2
+EditPermissionInfo @3
+FMExtensionProcW @4
+SedDiscretionaryAclEditor @6
+SedSystemAclEditor @7
+SedTakeOwnership @8

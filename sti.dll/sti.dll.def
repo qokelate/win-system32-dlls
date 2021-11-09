@@ -1,0 +1,12 @@
+﻿LIBRARY
+EXPORTS
+
+DllCanUnloadNow @13
+DllGetClassObject @14
+DllRegisterServer @15
+DllUnregisterServer @16
+GetProxyDllInfo @17
+MigrateRegisteredSTIAppsForWIAEvents @18
+SelectDeviceDialog2 @19
+StiCreateInstance @20
+StiCreateInstanceW @21

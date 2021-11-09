@@ -1,0 +1,7 @@
+﻿LIBRARY
+EXPORTS
+
+getsockopt @7
+recv @16
+recvfrom @17
+setsockopt @21

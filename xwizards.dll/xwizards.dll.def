@@ -1,0 +1,24 @@
+﻿LIBRARY
+EXPORTS
+
+DllCanUnloadNow @1
+DllGetClassObject @2
+ProcessXMLFileA @3
+ProcessXMLFileW @4
+ResetRegistrationA @5
+ResetRegistrationW @6
+RunPropertySheetA @7
+RunPropertySheetW @8
+RunWizardA @9
+RunWizardW @10
+XWProcessXMLFile @11
+XWRegisterHost @12
+XWRegisterPageWithPage @13
+XWRegisterPageWithTask @14
+XWRegisterTaskWithHost @15
+XWUnregisterHost @16
+XWUnregisterHostTaskLink @17
+XWUnregisterPage @18
+XWUnregisterPagesLink @19
+XWUnregisterTask @20
+XWUnregisterTaskPageLink @21

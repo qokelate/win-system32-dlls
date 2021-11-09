@@ -1,0 +1,11 @@
+﻿LIBRARY
+EXPORTS
+
+ChangeServiceConfig2W @1
+ChangeServiceConfigW @2
+NotifyServiceStatusChangeW @3
+QueryServiceConfig2W @4
+QueryServiceConfigW @5
+QueryServiceObjectSecurity @6
+QueryServiceStatusEx @7
+SetServiceObjectSecurity @8

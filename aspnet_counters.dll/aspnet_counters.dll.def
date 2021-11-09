@@ -1,0 +1,12 @@
+﻿LIBRARY
+EXPORTS
+
+CloseGenericCounters @1
+CloseStateCounters @2
+CloseVersion4Counters @3
+CollectGenericCounters @4
+CollectStateCounters @5
+CollectVersion4Counters @6
+OpenGenericCounters @7
+OpenStateCounters @8
+OpenVersion4Counters @9

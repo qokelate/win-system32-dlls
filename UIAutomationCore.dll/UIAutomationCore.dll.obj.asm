@@ -1,0 +1,485 @@
+ifndef X64
+.686p
+.XMM
+.safeseh SEH_handler
+.model flat, C
+option dotname
+option casemap : none
+endif
+
+extern ptr_DllCanUnloadNow : PTR;
+extern ptr_DllGetClassObject : PTR;
+extern ptr_DllRegisterServer : PTR;
+extern ptr_DllUnregisterServer : PTR;
+extern ptr_DockPattern_SetDockPosition : PTR;
+extern ptr_ExpandCollapsePattern_Collapse : PTR;
+extern ptr_ExpandCollapsePattern_Expand : PTR;
+extern ptr_GridPattern_GetItem : PTR;
+extern ptr_InvokePattern_Invoke : PTR;
+extern ptr_ItemContainerPattern_FindItemByProperty : PTR;
+extern ptr_LegacyIAccessiblePattern_DoDefaultAction : PTR;
+extern ptr_LegacyIAccessiblePattern_GetIAccessible : PTR;
+extern ptr_LegacyIAccessiblePattern_Select : PTR;
+extern ptr_LegacyIAccessiblePattern_SetValue : PTR;
+extern ptr_MultipleViewPattern_GetViewName : PTR;
+extern ptr_MultipleViewPattern_SetCurrentView : PTR;
+extern ptr_RangeValuePattern_SetValue : PTR;
+extern ptr_ScrollItemPattern_ScrollIntoView : PTR;
+extern ptr_ScrollPattern_Scroll : PTR;
+extern ptr_ScrollPattern_SetScrollPercent : PTR;
+extern ptr_SelectionItemPattern_AddToSelection : PTR;
+extern ptr_SelectionItemPattern_RemoveFromSelection : PTR;
+extern ptr_SelectionItemPattern_Select : PTR;
+extern ptr_SynchronizedInputPattern_Cancel : PTR;
+extern ptr_SynchronizedInputPattern_StartListening : PTR;
+extern ptr_TextPattern_GetSelection : PTR;
+extern ptr_TextPattern_GetVisibleRanges : PTR;
+extern ptr_TextPattern_RangeFromChild : PTR;
+extern ptr_TextPattern_RangeFromPoint : PTR;
+extern ptr_TextPattern_get_DocumentRange : PTR;
+extern ptr_TextPattern_get_SupportedTextSelection : PTR;
+extern ptr_TextRange_AddToSelection : PTR;
+extern ptr_TextRange_Clone : PTR;
+extern ptr_TextRange_Compare : PTR;
+extern ptr_TextRange_CompareEndpoints : PTR;
+extern ptr_TextRange_ExpandToEnclosingUnit : PTR;
+extern ptr_TextRange_FindAttribute : PTR;
+extern ptr_TextRange_FindText : PTR;
+extern ptr_TextRange_GetAttributeValue : PTR;
+extern ptr_TextRange_GetBoundingRectangles : PTR;
+extern ptr_TextRange_GetChildren : PTR;
+extern ptr_TextRange_GetEnclosingElement : PTR;
+extern ptr_TextRange_GetText : PTR;
+extern ptr_TextRange_Move : PTR;
+extern ptr_TextRange_MoveEndpointByRange : PTR;
+extern ptr_TextRange_MoveEndpointByUnit : PTR;
+extern ptr_TextRange_RemoveFromSelection : PTR;
+extern ptr_TextRange_ScrollIntoView : PTR;
+extern ptr_TextRange_Select : PTR;
+extern ptr_TogglePattern_Toggle : PTR;
+extern ptr_TransformPattern_Move : PTR;
+extern ptr_TransformPattern_Resize : PTR;
+extern ptr_TransformPattern_Rotate : PTR;
+extern ptr_UiaAddEvent : PTR;
+extern ptr_UiaClientsAreListening : PTR;
+extern ptr_UiaEventAddWindow : PTR;
+extern ptr_UiaEventRemoveWindow : PTR;
+extern ptr_UiaFind : PTR;
+extern ptr_UiaGetErrorDescription : PTR;
+extern ptr_UiaGetPatternProvider : PTR;
+extern ptr_UiaGetPropertyValue : PTR;
+extern ptr_UiaGetReservedMixedAttributeValue : PTR;
+extern ptr_UiaGetReservedNotSupportedValue : PTR;
+extern ptr_UiaGetRootNode : PTR;
+extern ptr_UiaGetRuntimeId : PTR;
+extern ptr_UiaGetUpdatedCache : PTR;
+extern ptr_UiaHPatternObjectFromVariant : PTR;
+extern ptr_UiaHTextRangeFromVariant : PTR;
+extern ptr_UiaHUiaNodeFromVariant : PTR;
+extern ptr_UiaHasServerSideProvider : PTR;
+extern ptr_UiaHostProviderFromHwnd : PTR;
+extern ptr_UiaLookupId : PTR;
+extern ptr_UiaNavigate : PTR;
+extern ptr_UiaNodeFromFocus : PTR;
+extern ptr_UiaNodeFromHandle : PTR;
+extern ptr_UiaNodeFromPoint : PTR;
+extern ptr_UiaNodeFromProvider : PTR;
+extern ptr_UiaNodeRelease : PTR;
+extern ptr_UiaPatternRelease : PTR;
+extern ptr_UiaRaiseAsyncContentLoadedEvent : PTR;
+extern ptr_UiaRaiseAutomationEvent : PTR;
+extern ptr_UiaRaiseAutomationPropertyChangedEvent : PTR;
+extern ptr_UiaRaiseStructureChangedEvent : PTR;
+extern ptr_UiaRegisterProviderCallback : PTR;
+extern ptr_UiaRemoveEvent : PTR;
+extern ptr_UiaReturnRawElementProvider : PTR;
+extern ptr_UiaSetFocus : PTR;
+extern ptr_UiaTextRangeRelease : PTR;
+extern ptr_ValuePattern_SetValue : PTR;
+extern ptr_VirtualizedItemPattern_Realize : PTR;
+extern ptr_WindowPattern_Close : PTR;
+extern ptr_WindowPattern_SetWindowVisualState : PTR;
+extern ptr_WindowPattern_WaitForInputIdle : PTR;
+
+
+.code
+
+align 16
+SEH_handler   proc
+; handler
+ret
+SEH_handler   endp
+
+DllCanUnloadNow PROC
+jmp ptr_DllCanUnloadNow
+DllCanUnloadNow ENDP
+
+DllGetClassObject PROC
+jmp ptr_DllGetClassObject
+DllGetClassObject ENDP
+
+DllRegisterServer PROC
+jmp ptr_DllRegisterServer
+DllRegisterServer ENDP
+
+DllUnregisterServer PROC
+jmp ptr_DllUnregisterServer
+DllUnregisterServer ENDP
+
+DockPattern_SetDockPosition PROC
+jmp ptr_DockPattern_SetDockPosition
+DockPattern_SetDockPosition ENDP
+
+ExpandCollapsePattern_Collapse PROC
+jmp ptr_ExpandCollapsePattern_Collapse
+ExpandCollapsePattern_Collapse ENDP
+
+ExpandCollapsePattern_Expand PROC
+jmp ptr_ExpandCollapsePattern_Expand
+ExpandCollapsePattern_Expand ENDP
+
+GridPattern_GetItem PROC
+jmp ptr_GridPattern_GetItem
+GridPattern_GetItem ENDP
+
+InvokePattern_Invoke PROC
+jmp ptr_InvokePattern_Invoke
+InvokePattern_Invoke ENDP
+
+ItemContainerPattern_FindItemByProperty PROC
+jmp ptr_ItemContainerPattern_FindItemByProperty
+ItemContainerPattern_FindItemByProperty ENDP
+
+LegacyIAccessiblePattern_DoDefaultAction PROC
+jmp ptr_LegacyIAccessiblePattern_DoDefaultAction
+LegacyIAccessiblePattern_DoDefaultAction ENDP
+
+LegacyIAccessiblePattern_GetIAccessible PROC
+jmp ptr_LegacyIAccessiblePattern_GetIAccessible
+LegacyIAccessiblePattern_GetIAccessible ENDP
+
+LegacyIAccessiblePattern_Select PROC
+jmp ptr_LegacyIAccessiblePattern_Select
+LegacyIAccessiblePattern_Select ENDP
+
+LegacyIAccessiblePattern_SetValue PROC
+jmp ptr_LegacyIAccessiblePattern_SetValue
+LegacyIAccessiblePattern_SetValue ENDP
+
+MultipleViewPattern_GetViewName PROC
+jmp ptr_MultipleViewPattern_GetViewName
+MultipleViewPattern_GetViewName ENDP
+
+MultipleViewPattern_SetCurrentView PROC
+jmp ptr_MultipleViewPattern_SetCurrentView
+MultipleViewPattern_SetCurrentView ENDP
+
+RangeValuePattern_SetValue PROC
+jmp ptr_RangeValuePattern_SetValue
+RangeValuePattern_SetValue ENDP
+
+ScrollItemPattern_ScrollIntoView PROC
+jmp ptr_ScrollItemPattern_ScrollIntoView
+ScrollItemPattern_ScrollIntoView ENDP
+
+ScrollPattern_Scroll PROC
+jmp ptr_ScrollPattern_Scroll
+ScrollPattern_Scroll ENDP
+
+ScrollPattern_SetScrollPercent PROC
+jmp ptr_ScrollPattern_SetScrollPercent
+ScrollPattern_SetScrollPercent ENDP
+
+SelectionItemPattern_AddToSelection PROC
+jmp ptr_SelectionItemPattern_AddToSelection
+SelectionItemPattern_AddToSelection ENDP
+
+SelectionItemPattern_RemoveFromSelection PROC
+jmp ptr_SelectionItemPattern_RemoveFromSelection
+SelectionItemPattern_RemoveFromSelection ENDP
+
+SelectionItemPattern_Select PROC
+jmp ptr_SelectionItemPattern_Select
+SelectionItemPattern_Select ENDP
+
+SynchronizedInputPattern_Cancel PROC
+jmp ptr_SynchronizedInputPattern_Cancel
+SynchronizedInputPattern_Cancel ENDP
+
+SynchronizedInputPattern_StartListening PROC
+jmp ptr_SynchronizedInputPattern_StartListening
+SynchronizedInputPattern_StartListening ENDP
+
+TextPattern_GetSelection PROC
+jmp ptr_TextPattern_GetSelection
+TextPattern_GetSelection ENDP
+
+TextPattern_GetVisibleRanges PROC
+jmp ptr_TextPattern_GetVisibleRanges
+TextPattern_GetVisibleRanges ENDP
+
+TextPattern_RangeFromChild PROC
+jmp ptr_TextPattern_RangeFromChild
+TextPattern_RangeFromChild ENDP
+
+TextPattern_RangeFromPoint PROC
+jmp ptr_TextPattern_RangeFromPoint
+TextPattern_RangeFromPoint ENDP
+
+TextPattern_get_DocumentRange PROC
+jmp ptr_TextPattern_get_DocumentRange
+TextPattern_get_DocumentRange ENDP
+
+TextPattern_get_SupportedTextSelection PROC
+jmp ptr_TextPattern_get_SupportedTextSelection
+TextPattern_get_SupportedTextSelection ENDP
+
+TextRange_AddToSelection PROC
+jmp ptr_TextRange_AddToSelection
+TextRange_AddToSelection ENDP
+
+TextRange_Clone PROC
+jmp ptr_TextRange_Clone
+TextRange_Clone ENDP
+
+TextRange_Compare PROC
+jmp ptr_TextRange_Compare
+TextRange_Compare ENDP
+
+TextRange_CompareEndpoints PROC
+jmp ptr_TextRange_CompareEndpoints
+TextRange_CompareEndpoints ENDP
+
+TextRange_ExpandToEnclosingUnit PROC
+jmp ptr_TextRange_ExpandToEnclosingUnit
+TextRange_ExpandToEnclosingUnit ENDP
+
+TextRange_FindAttribute PROC
+jmp ptr_TextRange_FindAttribute
+TextRange_FindAttribute ENDP
+
+TextRange_FindText PROC
+jmp ptr_TextRange_FindText
+TextRange_FindText ENDP
+
+TextRange_GetAttributeValue PROC
+jmp ptr_TextRange_GetAttributeValue
+TextRange_GetAttributeValue ENDP
+
+TextRange_GetBoundingRectangles PROC
+jmp ptr_TextRange_GetBoundingRectangles
+TextRange_GetBoundingRectangles ENDP
+
+TextRange_GetChildren PROC
+jmp ptr_TextRange_GetChildren
+TextRange_GetChildren ENDP
+
+TextRange_GetEnclosingElement PROC
+jmp ptr_TextRange_GetEnclosingElement
+TextRange_GetEnclosingElement ENDP
+
+TextRange_GetText PROC
+jmp ptr_TextRange_GetText
+TextRange_GetText ENDP
+
+TextRange_Move PROC
+jmp ptr_TextRange_Move
+TextRange_Move ENDP
+
+TextRange_MoveEndpointByRange PROC
+jmp ptr_TextRange_MoveEndpointByRange
+TextRange_MoveEndpointByRange ENDP
+
+TextRange_MoveEndpointByUnit PROC
+jmp ptr_TextRange_MoveEndpointByUnit
+TextRange_MoveEndpointByUnit ENDP
+
+TextRange_RemoveFromSelection PROC
+jmp ptr_TextRange_RemoveFromSelection
+TextRange_RemoveFromSelection ENDP
+
+TextRange_ScrollIntoView PROC
+jmp ptr_TextRange_ScrollIntoView
+TextRange_ScrollIntoView ENDP
+
+TextRange_Select PROC
+jmp ptr_TextRange_Select
+TextRange_Select ENDP
+
+TogglePattern_Toggle PROC
+jmp ptr_TogglePattern_Toggle
+TogglePattern_Toggle ENDP
+
+TransformPattern_Move PROC
+jmp ptr_TransformPattern_Move
+TransformPattern_Move ENDP
+
+TransformPattern_Resize PROC
+jmp ptr_TransformPattern_Resize
+TransformPattern_Resize ENDP
+
+TransformPattern_Rotate PROC
+jmp ptr_TransformPattern_Rotate
+TransformPattern_Rotate ENDP
+
+UiaAddEvent PROC
+jmp ptr_UiaAddEvent
+UiaAddEvent ENDP
+
+UiaClientsAreListening PROC
+jmp ptr_UiaClientsAreListening
+UiaClientsAreListening ENDP
+
+UiaEventAddWindow PROC
+jmp ptr_UiaEventAddWindow
+UiaEventAddWindow ENDP
+
+UiaEventRemoveWindow PROC
+jmp ptr_UiaEventRemoveWindow
+UiaEventRemoveWindow ENDP
+
+UiaFind PROC
+jmp ptr_UiaFind
+UiaFind ENDP
+
+UiaGetErrorDescription PROC
+jmp ptr_UiaGetErrorDescription
+UiaGetErrorDescription ENDP
+
+UiaGetPatternProvider PROC
+jmp ptr_UiaGetPatternProvider
+UiaGetPatternProvider ENDP
+
+UiaGetPropertyValue PROC
+jmp ptr_UiaGetPropertyValue
+UiaGetPropertyValue ENDP
+
+UiaGetReservedMixedAttributeValue PROC
+jmp ptr_UiaGetReservedMixedAttributeValue
+UiaGetReservedMixedAttributeValue ENDP
+
+UiaGetReservedNotSupportedValue PROC
+jmp ptr_UiaGetReservedNotSupportedValue
+UiaGetReservedNotSupportedValue ENDP
+
+UiaGetRootNode PROC
+jmp ptr_UiaGetRootNode
+UiaGetRootNode ENDP
+
+UiaGetRuntimeId PROC
+jmp ptr_UiaGetRuntimeId
+UiaGetRuntimeId ENDP
+
+UiaGetUpdatedCache PROC
+jmp ptr_UiaGetUpdatedCache
+UiaGetUpdatedCache ENDP
+
+UiaHPatternObjectFromVariant PROC
+jmp ptr_UiaHPatternObjectFromVariant
+UiaHPatternObjectFromVariant ENDP
+
+UiaHTextRangeFromVariant PROC
+jmp ptr_UiaHTextRangeFromVariant
+UiaHTextRangeFromVariant ENDP
+
+UiaHUiaNodeFromVariant PROC
+jmp ptr_UiaHUiaNodeFromVariant
+UiaHUiaNodeFromVariant ENDP
+
+UiaHasServerSideProvider PROC
+jmp ptr_UiaHasServerSideProvider
+UiaHasServerSideProvider ENDP
+
+UiaHostProviderFromHwnd PROC
+jmp ptr_UiaHostProviderFromHwnd
+UiaHostProviderFromHwnd ENDP
+
+UiaLookupId PROC
+jmp ptr_UiaLookupId
+UiaLookupId ENDP
+
+UiaNavigate PROC
+jmp ptr_UiaNavigate
+UiaNavigate ENDP
+
+UiaNodeFromFocus PROC
+jmp ptr_UiaNodeFromFocus
+UiaNodeFromFocus ENDP
+
+UiaNodeFromHandle PROC
+jmp ptr_UiaNodeFromHandle
+UiaNodeFromHandle ENDP
+
+UiaNodeFromPoint PROC
+jmp ptr_UiaNodeFromPoint
+UiaNodeFromPoint ENDP
+
+UiaNodeFromProvider PROC
+jmp ptr_UiaNodeFromProvider
+UiaNodeFromProvider ENDP
+
+UiaNodeRelease PROC
+jmp ptr_UiaNodeRelease
+UiaNodeRelease ENDP
+
+UiaPatternRelease PROC
+jmp ptr_UiaPatternRelease
+UiaPatternRelease ENDP
+
+UiaRaiseAsyncContentLoadedEvent PROC
+jmp ptr_UiaRaiseAsyncContentLoadedEvent
+UiaRaiseAsyncContentLoadedEvent ENDP
+
+UiaRaiseAutomationEvent PROC
+jmp ptr_UiaRaiseAutomationEvent
+UiaRaiseAutomationEvent ENDP
+
+UiaRaiseAutomationPropertyChangedEvent PROC
+jmp ptr_UiaRaiseAutomationPropertyChangedEvent
+UiaRaiseAutomationPropertyChangedEvent ENDP
+
+UiaRaiseStructureChangedEvent PROC
+jmp ptr_UiaRaiseStructureChangedEvent
+UiaRaiseStructureChangedEvent ENDP
+
+UiaRegisterProviderCallback PROC
+jmp ptr_UiaRegisterProviderCallback
+UiaRegisterProviderCallback ENDP
+
+UiaRemoveEvent PROC
+jmp ptr_UiaRemoveEvent
+UiaRemoveEvent ENDP
+
+UiaReturnRawElementProvider PROC
+jmp ptr_UiaReturnRawElementProvider
+UiaReturnRawElementProvider ENDP
+
+UiaSetFocus PROC
+jmp ptr_UiaSetFocus
+UiaSetFocus ENDP
+
+UiaTextRangeRelease PROC
+jmp ptr_UiaTextRangeRelease
+UiaTextRangeRelease ENDP
+
+ValuePattern_SetValue PROC
+jmp ptr_ValuePattern_SetValue
+ValuePattern_SetValue ENDP
+
+VirtualizedItemPattern_Realize PROC
+jmp ptr_VirtualizedItemPattern_Realize
+VirtualizedItemPattern_Realize ENDP
+
+WindowPattern_Close PROC
+jmp ptr_WindowPattern_Close
+WindowPattern_Close ENDP
+
+WindowPattern_SetWindowVisualState PROC
+jmp ptr_WindowPattern_SetWindowVisualState
+WindowPattern_SetWindowVisualState ENDP
+
+WindowPattern_WaitForInputIdle PROC
+jmp ptr_WindowPattern_WaitForInputIdle
+WindowPattern_WaitForInputIdle ENDP
+
+end

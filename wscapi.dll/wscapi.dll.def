@@ -1,0 +1,24 @@
+﻿LIBRARY
+EXPORTS
+
+WscGetSecurityProviderHealth @1
+WscRegisterForChanges @2
+WscUnRegisterChanges @3
+wscAntiSpywareGetStatus @4
+wscAntiVirusGetStatus @5
+wscAutoUpdatesEnableScheduledMode @6
+wscAutoUpdatesGetStatus @7
+wscFirewallGetStatus @8
+wscGeneralSecurityGetStatus @9
+wscGetAlertStatus @10
+wscIcfEnable @11
+wscIeSettingsFix @12
+wscLuaSettingsFix @13
+wscOverrideComponentStatus @14
+wscPing @15
+wscProductInfoFree @16
+wscRegisterChangeNotification @17
+wscRegisterSecurityProduct @18
+wscUnRegisterChangeNotification @19
+wscUnregisterSecurityProduct @20
+wscUpdateProductStatus @21

@@ -1,0 +1,11 @@
+﻿LIBRARY
+EXPORTS
+
+DllCanUnloadNow @259
+DllGetClassObject @260
+DllInstall @261
+DllRegisterServer @262
+DllUnregisterServer @263
+OpenQueryWindow @258
+OpenSavedDsQuery @256
+OpenSavedDsQueryW @257

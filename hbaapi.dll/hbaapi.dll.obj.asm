@@ -1,0 +1,485 @@
+ifndef X64
+.686p
+.XMM
+.safeseh SEH_handler
+.model flat, C
+option dotname
+option casemap : none
+endif
+
+extern ptr_HBA_CloseAdapter : PTR;
+extern ptr_HBA_FreeLibrary : PTR;
+extern ptr_HBA_GetAdapterAttributes : PTR;
+extern ptr_HBA_GetAdapterName : PTR;
+extern ptr_HBA_GetAdapterPortAttributes : PTR;
+extern ptr_HBA_GetBindingCapability : PTR;
+extern ptr_HBA_GetBindingSupport : PTR;
+extern ptr_HBA_GetDiscoveredPortAttributes : PTR;
+extern ptr_HBA_GetEventBuffer : PTR;
+extern ptr_HBA_GetFC4Statistics : PTR;
+extern ptr_HBA_GetFCPStatistics : PTR;
+extern ptr_HBA_GetFcpPersistentBinding : PTR;
+extern ptr_HBA_GetFcpTargetMapping : PTR;
+extern ptr_HBA_GetFcpTargetMappingV2 : PTR;
+extern ptr_HBA_GetNumberOfAdapters : PTR;
+extern ptr_HBA_GetPersistentBindingV2 : PTR;
+extern ptr_HBA_GetPortAttributesByWWN : PTR;
+extern ptr_HBA_GetPortStatistics : PTR;
+extern ptr_HBA_GetRNIDMgmtInfo : PTR;
+extern ptr_HBA_GetVendorLibraryAttributes : PTR;
+extern ptr_HBA_GetVersion : PTR;
+extern ptr_HBA_GetWrapperLibraryAttributes : PTR;
+extern ptr_HBA_LoadLibrary : PTR;
+extern ptr_HBA_OpenAdapter : PTR;
+extern ptr_HBA_OpenAdapterByWWN : PTR;
+extern ptr_HBA_RefreshAdapterConfiguration : PTR;
+extern ptr_HBA_RefreshInformation : PTR;
+extern ptr_HBA_RegisterForAdapterAddEvents : PTR;
+extern ptr_HBA_RegisterForAdapterEvents : PTR;
+extern ptr_HBA_RegisterForAdapterPortEvents : PTR;
+extern ptr_HBA_RegisterForAdapterPortStatEvents : PTR;
+extern ptr_HBA_RegisterForLinkEvents : PTR;
+extern ptr_HBA_RegisterForTargetEvents : PTR;
+extern ptr_HBA_RegisterLibrary : PTR;
+extern ptr_HBA_RegisterLibraryV2 : PTR;
+extern ptr_HBA_RemoveAllPersistentBindings : PTR;
+extern ptr_HBA_RemoveCallback : PTR;
+extern ptr_HBA_RemovePersistentBinding : PTR;
+extern ptr_HBA_ResetStatistics : PTR;
+extern ptr_HBA_ScsiInquiryV2 : PTR;
+extern ptr_HBA_ScsiReadCapacityV2 : PTR;
+extern ptr_HBA_ScsiReportLUNsV2 : PTR;
+extern ptr_HBA_SendCTPassThru : PTR;
+extern ptr_HBA_SendCTPassThruV2 : PTR;
+extern ptr_HBA_SendLIRR : PTR;
+extern ptr_HBA_SendRLS : PTR;
+extern ptr_HBA_SendRNID : PTR;
+extern ptr_HBA_SendRNIDV2 : PTR;
+extern ptr_HBA_SendRPL : PTR;
+extern ptr_HBA_SendRPS : PTR;
+extern ptr_HBA_SendReadCapacity : PTR;
+extern ptr_HBA_SendReportLUNs : PTR;
+extern ptr_HBA_SendSRL : PTR;
+extern ptr_HBA_SendScsiInquiry : PTR;
+extern ptr_HBA_SetBindingSupport : PTR;
+extern ptr_HBA_SetPersistentBindingV2 : PTR;
+extern ptr_HBA_SetRNIDMgmtInfo : PTR;
+extern ptr_HbaGetAdapterNameByDeviceInstanceId : PTR;
+extern ptr_SMHBA_GetAdapterAttributes : PTR;
+extern ptr_SMHBA_GetAdapterPortAttributes : PTR;
+extern ptr_SMHBA_GetBindingCapability : PTR;
+extern ptr_SMHBA_GetBindingSupport : PTR;
+extern ptr_SMHBA_GetDiscoveredPortAttributes : PTR;
+extern ptr_SMHBA_GetFCPhyAttributes : PTR;
+extern ptr_SMHBA_GetLUNStatistics : PTR;
+extern ptr_SMHBA_GetNumberOfPorts : PTR;
+extern ptr_SMHBA_GetPersistentBinding : PTR;
+extern ptr_SMHBA_GetPhyStatistics : PTR;
+extern ptr_SMHBA_GetPortAttributesByWWN : PTR;
+extern ptr_SMHBA_GetPortType : PTR;
+extern ptr_SMHBA_GetProtocolStatistics : PTR;
+extern ptr_SMHBA_GetSASPhyAttributes : PTR;
+extern ptr_SMHBA_GetTargetMapping : PTR;
+extern ptr_SMHBA_GetVendorLibraryAttributes : PTR;
+extern ptr_SMHBA_GetVersion : PTR;
+extern ptr_SMHBA_GetWrapperLibraryAttributes : PTR;
+extern ptr_SMHBA_RegisterForAdapterAddEvents : PTR;
+extern ptr_SMHBA_RegisterForAdapterEvents : PTR;
+extern ptr_SMHBA_RegisterForAdapterPhyStatEvents : PTR;
+extern ptr_SMHBA_RegisterForAdapterPortEvents : PTR;
+extern ptr_SMHBA_RegisterForAdapterPortStatEvents : PTR;
+extern ptr_SMHBA_RegisterForTargetEvents : PTR;
+extern ptr_SMHBA_RegisterLibrary : PTR;
+extern ptr_SMHBA_RemoveAllPersistentBindings : PTR;
+extern ptr_SMHBA_RemovePersistentBinding : PTR;
+extern ptr_SMHBA_ScsiInquiry : PTR;
+extern ptr_SMHBA_ScsiReadCapacity : PTR;
+extern ptr_SMHBA_ScsiReportLuns : PTR;
+extern ptr_SMHBA_SendECHO : PTR;
+extern ptr_SMHBA_SendSMPPassThru : PTR;
+extern ptr_SMHBA_SendTEST : PTR;
+extern ptr_SMHBA_SetBindingSupport : PTR;
+extern ptr_SMHBA_SetPersistentBinding : PTR;
+
+
+.code
+
+align 16
+SEH_handler   proc
+; handler
+ret
+SEH_handler   endp
+
+HBA_CloseAdapter PROC
+jmp ptr_HBA_CloseAdapter
+HBA_CloseAdapter ENDP
+
+HBA_FreeLibrary PROC
+jmp ptr_HBA_FreeLibrary
+HBA_FreeLibrary ENDP
+
+HBA_GetAdapterAttributes PROC
+jmp ptr_HBA_GetAdapterAttributes
+HBA_GetAdapterAttributes ENDP
+
+HBA_GetAdapterName PROC
+jmp ptr_HBA_GetAdapterName
+HBA_GetAdapterName ENDP
+
+HBA_GetAdapterPortAttributes PROC
+jmp ptr_HBA_GetAdapterPortAttributes
+HBA_GetAdapterPortAttributes ENDP
+
+HBA_GetBindingCapability PROC
+jmp ptr_HBA_GetBindingCapability
+HBA_GetBindingCapability ENDP
+
+HBA_GetBindingSupport PROC
+jmp ptr_HBA_GetBindingSupport
+HBA_GetBindingSupport ENDP
+
+HBA_GetDiscoveredPortAttributes PROC
+jmp ptr_HBA_GetDiscoveredPortAttributes
+HBA_GetDiscoveredPortAttributes ENDP
+
+HBA_GetEventBuffer PROC
+jmp ptr_HBA_GetEventBuffer
+HBA_GetEventBuffer ENDP
+
+HBA_GetFC4Statistics PROC
+jmp ptr_HBA_GetFC4Statistics
+HBA_GetFC4Statistics ENDP
+
+HBA_GetFCPStatistics PROC
+jmp ptr_HBA_GetFCPStatistics
+HBA_GetFCPStatistics ENDP
+
+HBA_GetFcpPersistentBinding PROC
+jmp ptr_HBA_GetFcpPersistentBinding
+HBA_GetFcpPersistentBinding ENDP
+
+HBA_GetFcpTargetMapping PROC
+jmp ptr_HBA_GetFcpTargetMapping
+HBA_GetFcpTargetMapping ENDP
+
+HBA_GetFcpTargetMappingV2 PROC
+jmp ptr_HBA_GetFcpTargetMappingV2
+HBA_GetFcpTargetMappingV2 ENDP
+
+HBA_GetNumberOfAdapters PROC
+jmp ptr_HBA_GetNumberOfAdapters
+HBA_GetNumberOfAdapters ENDP
+
+HBA_GetPersistentBindingV2 PROC
+jmp ptr_HBA_GetPersistentBindingV2
+HBA_GetPersistentBindingV2 ENDP
+
+HBA_GetPortAttributesByWWN PROC
+jmp ptr_HBA_GetPortAttributesByWWN
+HBA_GetPortAttributesByWWN ENDP
+
+HBA_GetPortStatistics PROC
+jmp ptr_HBA_GetPortStatistics
+HBA_GetPortStatistics ENDP
+
+HBA_GetRNIDMgmtInfo PROC
+jmp ptr_HBA_GetRNIDMgmtInfo
+HBA_GetRNIDMgmtInfo ENDP
+
+HBA_GetVendorLibraryAttributes PROC
+jmp ptr_HBA_GetVendorLibraryAttributes
+HBA_GetVendorLibraryAttributes ENDP
+
+HBA_GetVersion PROC
+jmp ptr_HBA_GetVersion
+HBA_GetVersion ENDP
+
+HBA_GetWrapperLibraryAttributes PROC
+jmp ptr_HBA_GetWrapperLibraryAttributes
+HBA_GetWrapperLibraryAttributes ENDP
+
+HBA_LoadLibrary PROC
+jmp ptr_HBA_LoadLibrary
+HBA_LoadLibrary ENDP
+
+HBA_OpenAdapter PROC
+jmp ptr_HBA_OpenAdapter
+HBA_OpenAdapter ENDP
+
+HBA_OpenAdapterByWWN PROC
+jmp ptr_HBA_OpenAdapterByWWN
+HBA_OpenAdapterByWWN ENDP
+
+HBA_RefreshAdapterConfiguration PROC
+jmp ptr_HBA_RefreshAdapterConfiguration
+HBA_RefreshAdapterConfiguration ENDP
+
+HBA_RefreshInformation PROC
+jmp ptr_HBA_RefreshInformation
+HBA_RefreshInformation ENDP
+
+HBA_RegisterForAdapterAddEvents PROC
+jmp ptr_HBA_RegisterForAdapterAddEvents
+HBA_RegisterForAdapterAddEvents ENDP
+
+HBA_RegisterForAdapterEvents PROC
+jmp ptr_HBA_RegisterForAdapterEvents
+HBA_RegisterForAdapterEvents ENDP
+
+HBA_RegisterForAdapterPortEvents PROC
+jmp ptr_HBA_RegisterForAdapterPortEvents
+HBA_RegisterForAdapterPortEvents ENDP
+
+HBA_RegisterForAdapterPortStatEvents PROC
+jmp ptr_HBA_RegisterForAdapterPortStatEvents
+HBA_RegisterForAdapterPortStatEvents ENDP
+
+HBA_RegisterForLinkEvents PROC
+jmp ptr_HBA_RegisterForLinkEvents
+HBA_RegisterForLinkEvents ENDP
+
+HBA_RegisterForTargetEvents PROC
+jmp ptr_HBA_RegisterForTargetEvents
+HBA_RegisterForTargetEvents ENDP
+
+HBA_RegisterLibrary PROC
+jmp ptr_HBA_RegisterLibrary
+HBA_RegisterLibrary ENDP
+
+HBA_RegisterLibraryV2 PROC
+jmp ptr_HBA_RegisterLibraryV2
+HBA_RegisterLibraryV2 ENDP
+
+HBA_RemoveAllPersistentBindings PROC
+jmp ptr_HBA_RemoveAllPersistentBindings
+HBA_RemoveAllPersistentBindings ENDP
+
+HBA_RemoveCallback PROC
+jmp ptr_HBA_RemoveCallback
+HBA_RemoveCallback ENDP
+
+HBA_RemovePersistentBinding PROC
+jmp ptr_HBA_RemovePersistentBinding
+HBA_RemovePersistentBinding ENDP
+
+HBA_ResetStatistics PROC
+jmp ptr_HBA_ResetStatistics
+HBA_ResetStatistics ENDP
+
+HBA_ScsiInquiryV2 PROC
+jmp ptr_HBA_ScsiInquiryV2
+HBA_ScsiInquiryV2 ENDP
+
+HBA_ScsiReadCapacityV2 PROC
+jmp ptr_HBA_ScsiReadCapacityV2
+HBA_ScsiReadCapacityV2 ENDP
+
+HBA_ScsiReportLUNsV2 PROC
+jmp ptr_HBA_ScsiReportLUNsV2
+HBA_ScsiReportLUNsV2 ENDP
+
+HBA_SendCTPassThru PROC
+jmp ptr_HBA_SendCTPassThru
+HBA_SendCTPassThru ENDP
+
+HBA_SendCTPassThruV2 PROC
+jmp ptr_HBA_SendCTPassThruV2
+HBA_SendCTPassThruV2 ENDP
+
+HBA_SendLIRR PROC
+jmp ptr_HBA_SendLIRR
+HBA_SendLIRR ENDP
+
+HBA_SendRLS PROC
+jmp ptr_HBA_SendRLS
+HBA_SendRLS ENDP
+
+HBA_SendRNID PROC
+jmp ptr_HBA_SendRNID
+HBA_SendRNID ENDP
+
+HBA_SendRNIDV2 PROC
+jmp ptr_HBA_SendRNIDV2
+HBA_SendRNIDV2 ENDP
+
+HBA_SendRPL PROC
+jmp ptr_HBA_SendRPL
+HBA_SendRPL ENDP
+
+HBA_SendRPS PROC
+jmp ptr_HBA_SendRPS
+HBA_SendRPS ENDP
+
+HBA_SendReadCapacity PROC
+jmp ptr_HBA_SendReadCapacity
+HBA_SendReadCapacity ENDP
+
+HBA_SendReportLUNs PROC
+jmp ptr_HBA_SendReportLUNs
+HBA_SendReportLUNs ENDP
+
+HBA_SendSRL PROC
+jmp ptr_HBA_SendSRL
+HBA_SendSRL ENDP
+
+HBA_SendScsiInquiry PROC
+jmp ptr_HBA_SendScsiInquiry
+HBA_SendScsiInquiry ENDP
+
+HBA_SetBindingSupport PROC
+jmp ptr_HBA_SetBindingSupport
+HBA_SetBindingSupport ENDP
+
+HBA_SetPersistentBindingV2 PROC
+jmp ptr_HBA_SetPersistentBindingV2
+HBA_SetPersistentBindingV2 ENDP
+
+HBA_SetRNIDMgmtInfo PROC
+jmp ptr_HBA_SetRNIDMgmtInfo
+HBA_SetRNIDMgmtInfo ENDP
+
+HbaGetAdapterNameByDeviceInstanceId PROC
+jmp ptr_HbaGetAdapterNameByDeviceInstanceId
+HbaGetAdapterNameByDeviceInstanceId ENDP
+
+SMHBA_GetAdapterAttributes PROC
+jmp ptr_SMHBA_GetAdapterAttributes
+SMHBA_GetAdapterAttributes ENDP
+
+SMHBA_GetAdapterPortAttributes PROC
+jmp ptr_SMHBA_GetAdapterPortAttributes
+SMHBA_GetAdapterPortAttributes ENDP
+
+SMHBA_GetBindingCapability PROC
+jmp ptr_SMHBA_GetBindingCapability
+SMHBA_GetBindingCapability ENDP
+
+SMHBA_GetBindingSupport PROC
+jmp ptr_SMHBA_GetBindingSupport
+SMHBA_GetBindingSupport ENDP
+
+SMHBA_GetDiscoveredPortAttributes PROC
+jmp ptr_SMHBA_GetDiscoveredPortAttributes
+SMHBA_GetDiscoveredPortAttributes ENDP
+
+SMHBA_GetFCPhyAttributes PROC
+jmp ptr_SMHBA_GetFCPhyAttributes
+SMHBA_GetFCPhyAttributes ENDP
+
+SMHBA_GetLUNStatistics PROC
+jmp ptr_SMHBA_GetLUNStatistics
+SMHBA_GetLUNStatistics ENDP
+
+SMHBA_GetNumberOfPorts PROC
+jmp ptr_SMHBA_GetNumberOfPorts
+SMHBA_GetNumberOfPorts ENDP
+
+SMHBA_GetPersistentBinding PROC
+jmp ptr_SMHBA_GetPersistentBinding
+SMHBA_GetPersistentBinding ENDP
+
+SMHBA_GetPhyStatistics PROC
+jmp ptr_SMHBA_GetPhyStatistics
+SMHBA_GetPhyStatistics ENDP
+
+SMHBA_GetPortAttributesByWWN PROC
+jmp ptr_SMHBA_GetPortAttributesByWWN
+SMHBA_GetPortAttributesByWWN ENDP
+
+SMHBA_GetPortType PROC
+jmp ptr_SMHBA_GetPortType
+SMHBA_GetPortType ENDP
+
+SMHBA_GetProtocolStatistics PROC
+jmp ptr_SMHBA_GetProtocolStatistics
+SMHBA_GetProtocolStatistics ENDP
+
+SMHBA_GetSASPhyAttributes PROC
+jmp ptr_SMHBA_GetSASPhyAttributes
+SMHBA_GetSASPhyAttributes ENDP
+
+SMHBA_GetTargetMapping PROC
+jmp ptr_SMHBA_GetTargetMapping
+SMHBA_GetTargetMapping ENDP
+
+SMHBA_GetVendorLibraryAttributes PROC
+jmp ptr_SMHBA_GetVendorLibraryAttributes
+SMHBA_GetVendorLibraryAttributes ENDP
+
+SMHBA_GetVersion PROC
+jmp ptr_SMHBA_GetVersion
+SMHBA_GetVersion ENDP
+
+SMHBA_GetWrapperLibraryAttributes PROC
+jmp ptr_SMHBA_GetWrapperLibraryAttributes
+SMHBA_GetWrapperLibraryAttributes ENDP
+
+SMHBA_RegisterForAdapterAddEvents PROC
+jmp ptr_SMHBA_RegisterForAdapterAddEvents
+SMHBA_RegisterForAdapterAddEvents ENDP
+
+SMHBA_RegisterForAdapterEvents PROC
+jmp ptr_SMHBA_RegisterForAdapterEvents
+SMHBA_RegisterForAdapterEvents ENDP
+
+SMHBA_RegisterForAdapterPhyStatEvents PROC
+jmp ptr_SMHBA_RegisterForAdapterPhyStatEvents
+SMHBA_RegisterForAdapterPhyStatEvents ENDP
+
+SMHBA_RegisterForAdapterPortEvents PROC
+jmp ptr_SMHBA_RegisterForAdapterPortEvents
+SMHBA_RegisterForAdapterPortEvents ENDP
+
+SMHBA_RegisterForAdapterPortStatEvents PROC
+jmp ptr_SMHBA_RegisterForAdapterPortStatEvents
+SMHBA_RegisterForAdapterPortStatEvents ENDP
+
+SMHBA_RegisterForTargetEvents PROC
+jmp ptr_SMHBA_RegisterForTargetEvents
+SMHBA_RegisterForTargetEvents ENDP
+
+SMHBA_RegisterLibrary PROC
+jmp ptr_SMHBA_RegisterLibrary
+SMHBA_RegisterLibrary ENDP
+
+SMHBA_RemoveAllPersistentBindings PROC
+jmp ptr_SMHBA_RemoveAllPersistentBindings
+SMHBA_RemoveAllPersistentBindings ENDP
+
+SMHBA_RemovePersistentBinding PROC
+jmp ptr_SMHBA_RemovePersistentBinding
+SMHBA_RemovePersistentBinding ENDP
+
+SMHBA_ScsiInquiry PROC
+jmp ptr_SMHBA_ScsiInquiry
+SMHBA_ScsiInquiry ENDP
+
+SMHBA_ScsiReadCapacity PROC
+jmp ptr_SMHBA_ScsiReadCapacity
+SMHBA_ScsiReadCapacity ENDP
+
+SMHBA_ScsiReportLuns PROC
+jmp ptr_SMHBA_ScsiReportLuns
+SMHBA_ScsiReportLuns ENDP
+
+SMHBA_SendECHO PROC
+jmp ptr_SMHBA_SendECHO
+SMHBA_SendECHO ENDP
+
+SMHBA_SendSMPPassThru PROC
+jmp ptr_SMHBA_SendSMPPassThru
+SMHBA_SendSMPPassThru ENDP
+
+SMHBA_SendTEST PROC
+jmp ptr_SMHBA_SendTEST
+SMHBA_SendTEST ENDP
+
+SMHBA_SetBindingSupport PROC
+jmp ptr_SMHBA_SetBindingSupport
+SMHBA_SetBindingSupport ENDP
+
+SMHBA_SetPersistentBinding PROC
+jmp ptr_SMHBA_SetPersistentBinding
+SMHBA_SetPersistentBinding ENDP
+
+end

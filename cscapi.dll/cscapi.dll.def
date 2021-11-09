@@ -1,0 +1,7 @@
+﻿LIBRARY
+EXPORTS
+
+CscNetApiGetInterface @1
+CscSearchApiGetInterface @2
+OfflineFilesEnable @3
+OfflineFilesQueryStatus @4

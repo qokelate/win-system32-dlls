@@ -1,0 +1,6 @@
+﻿LIBRARY
+EXPORTS
+
+DllMain @3
+SpLsaModeInitialize @1
+SpUserModeInitialize @2

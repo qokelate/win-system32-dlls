@@ -1,0 +1,23 @@
+﻿LIBRARY
+EXPORTS
+
+CertDllVerifyCTLUsage @1
+CertDllVerifyRevocation @2
+CryptCancelAsyncRetrieval @5
+CryptFlushTimeValidObject @6
+CryptGetObjectUrl @7
+CryptGetTimeValidObject @8
+CryptInstallCancelRetrieval @9
+CryptRetrieveObjectByUrlA @10
+CryptRetrieveObjectByUrlW @11
+CryptUninstallCancelRetrieval @12
+DllRegisterServer @13
+DllUnregisterServer @14
+I_CryptConvertIriToAsciiOrUnicode @3
+I_CryptNetEnumUrlCacheEntry @15
+I_CryptNetGetConnectivity @16
+I_CryptNetGetHostNameFromUrl @17
+I_CryptNetGetUserDsStoreUrl @18
+I_CryptNetSetUrlCacheFlushInfo @19
+I_CryptNetSetUrlCachePreFetchInfo @20
+LdapProvOpenStore @4

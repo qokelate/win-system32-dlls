@@ -1,0 +1,12 @@
+﻿LIBRARY
+EXPORTS
+
+CreateContainerConsumer @2
+CreateContainerProducer @3
+CreateReachPackageReceiver @4
+CreateReachPackageSender @5
+CreateSeekableBuffer @6
+CreateStreamReceiverOnFileHandle @7
+CreateStreamSenderOnFileHandle @8
+CreateStreamSenderOnIStream @9
+DDLogHelper @1

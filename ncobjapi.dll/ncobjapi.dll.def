@@ -1,0 +1,13 @@
+﻿LIBRARY
+EXPORTS
+
+WmiAddObjectProp @2
+WmiCommitObject @1
+WmiCreateObject @3
+WmiCreateObjectWithFormat @4
+WmiCreateObjectWithProps @5
+WmiDestroyObject @6
+WmiEventSourceConnect @7
+WmiEventSourceDisconnect @8
+WmiIsObjectActive @9
+WmiSetAndCommitObject @10

@@ -1,0 +1,13 @@
+﻿LIBRARY
+EXPORTS
+
+CancelCDMOperation @1
+CloseCDMContext @2
+DetFilesDownloaded @3
+DownloadIsInternetAvailable @4
+DownloadUpdatedFiles @5
+FindMatchingDriver @6
+LogDriverNotFound @7
+OpenCDMContext @8
+OpenCDMContextEx @9
+QueryDetectionFiles @10

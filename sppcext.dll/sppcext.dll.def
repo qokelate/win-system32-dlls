@@ -1,0 +1,20 @@
+﻿LIBRARY
+EXPORTS
+
+SLAcquireGenuineTicket @1
+SLActivateProduct @2
+SLDepositTokenActivationResponse @3
+SLFreeTokenActivationCertificates @4
+SLFreeTokenActivationGrants @5
+SLGenerateTokenActivationChallenge @6
+SLGetPackageProductKey @7
+SLGetPackageProperties @8
+SLGetPackageToken @9
+SLGetReferralInformation @10
+SLGetServerStatus @11
+SLGetTokenActivationCertificates @12
+SLGetTokenActivationGrants @13
+SLInitialize @14
+SLInstallPackage @15
+SLSignTokenActivationChallenge @16
+SLUninstallPackage @17

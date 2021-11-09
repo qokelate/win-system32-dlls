@@ -1,0 +1,9 @@
+﻿LIBRARY
+EXPORTS
+
+SsCoreInitialize @1
+SsCoreShareAdd @2
+SsCoreShareCleanup @3
+SsCoreShareDel @4
+SsCoreShareSetInfo @5
+SsCoreUninitialize @6

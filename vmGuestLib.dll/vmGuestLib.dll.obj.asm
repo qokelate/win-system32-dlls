@@ -1,0 +1,245 @@
+ifndef X64
+.686p
+.XMM
+.safeseh SEH_handler
+.model flat, C
+option dotname
+option casemap : none
+endif
+
+extern ptr_DllMain : PTR;
+extern ptr_VMGuestLib_AtomicUpdateCookie : PTR;
+extern ptr_VMGuestLib_CloseHandle : PTR;
+extern ptr_VMGuestLib_GetCpuLimitMHz : PTR;
+extern ptr_VMGuestLib_GetCpuReservationMHz : PTR;
+extern ptr_VMGuestLib_GetCpuShares : PTR;
+extern ptr_VMGuestLib_GetCpuStolenMs : PTR;
+extern ptr_VMGuestLib_GetCpuUsedMs : PTR;
+extern ptr_VMGuestLib_GetElapsedMs : PTR;
+extern ptr_VMGuestLib_GetErrorText : PTR;
+extern ptr_VMGuestLib_GetHostCpuUsedMs : PTR;
+extern ptr_VMGuestLib_GetHostMemKernOvhdMB : PTR;
+extern ptr_VMGuestLib_GetHostMemMappedMB : PTR;
+extern ptr_VMGuestLib_GetHostMemPhysFreeMB : PTR;
+extern ptr_VMGuestLib_GetHostMemPhysMB : PTR;
+extern ptr_VMGuestLib_GetHostMemSharedMB : PTR;
+extern ptr_VMGuestLib_GetHostMemSwappedMB : PTR;
+extern ptr_VMGuestLib_GetHostMemUnmappedMB : PTR;
+extern ptr_VMGuestLib_GetHostMemUsedMB : PTR;
+extern ptr_VMGuestLib_GetHostNumCpuCores : PTR;
+extern ptr_VMGuestLib_GetHostProcessorSpeed : PTR;
+extern ptr_VMGuestLib_GetMemActiveMB : PTR;
+extern ptr_VMGuestLib_GetMemBalloonMaxMB : PTR;
+extern ptr_VMGuestLib_GetMemBalloonTargetMB : PTR;
+extern ptr_VMGuestLib_GetMemBalloonedMB : PTR;
+extern ptr_VMGuestLib_GetMemLLSwappedMB : PTR;
+extern ptr_VMGuestLib_GetMemLimitMB : PTR;
+extern ptr_VMGuestLib_GetMemMappedMB : PTR;
+extern ptr_VMGuestLib_GetMemOverheadMB : PTR;
+extern ptr_VMGuestLib_GetMemReservationMB : PTR;
+extern ptr_VMGuestLib_GetMemSharedMB : PTR;
+extern ptr_VMGuestLib_GetMemSharedSavedMB : PTR;
+extern ptr_VMGuestLib_GetMemShares : PTR;
+extern ptr_VMGuestLib_GetMemSwapTargetMB : PTR;
+extern ptr_VMGuestLib_GetMemSwappedMB : PTR;
+extern ptr_VMGuestLib_GetMemTargetSizeMB : PTR;
+extern ptr_VMGuestLib_GetMemUsedMB : PTR;
+extern ptr_VMGuestLib_GetMemZipSavedMB : PTR;
+extern ptr_VMGuestLib_GetMemZippedMB : PTR;
+extern ptr_VMGuestLib_GetResourcePoolPath : PTR;
+extern ptr_VMGuestLib_GetSessionId : PTR;
+extern ptr_VMGuestLib_OpenHandle : PTR;
+extern ptr_VMGuestLib_StatFree : PTR;
+extern ptr_VMGuestLib_StatGet : PTR;
+extern ptr_VMGuestLib_UpdateInfo : PTR;
+
+
+.code
+
+align 16
+SEH_handler   proc
+; handler
+ret
+SEH_handler   endp
+
+DllMain PROC
+jmp ptr_DllMain
+DllMain ENDP
+
+VMGuestLib_AtomicUpdateCookie PROC
+jmp ptr_VMGuestLib_AtomicUpdateCookie
+VMGuestLib_AtomicUpdateCookie ENDP
+
+VMGuestLib_CloseHandle PROC
+jmp ptr_VMGuestLib_CloseHandle
+VMGuestLib_CloseHandle ENDP
+
+VMGuestLib_GetCpuLimitMHz PROC
+jmp ptr_VMGuestLib_GetCpuLimitMHz
+VMGuestLib_GetCpuLimitMHz ENDP
+
+VMGuestLib_GetCpuReservationMHz PROC
+jmp ptr_VMGuestLib_GetCpuReservationMHz
+VMGuestLib_GetCpuReservationMHz ENDP
+
+VMGuestLib_GetCpuShares PROC
+jmp ptr_VMGuestLib_GetCpuShares
+VMGuestLib_GetCpuShares ENDP
+
+VMGuestLib_GetCpuStolenMs PROC
+jmp ptr_VMGuestLib_GetCpuStolenMs
+VMGuestLib_GetCpuStolenMs ENDP
+
+VMGuestLib_GetCpuUsedMs PROC
+jmp ptr_VMGuestLib_GetCpuUsedMs
+VMGuestLib_GetCpuUsedMs ENDP
+
+VMGuestLib_GetElapsedMs PROC
+jmp ptr_VMGuestLib_GetElapsedMs
+VMGuestLib_GetElapsedMs ENDP
+
+VMGuestLib_GetErrorText PROC
+jmp ptr_VMGuestLib_GetErrorText
+VMGuestLib_GetErrorText ENDP
+
+VMGuestLib_GetHostCpuUsedMs PROC
+jmp ptr_VMGuestLib_GetHostCpuUsedMs
+VMGuestLib_GetHostCpuUsedMs ENDP
+
+VMGuestLib_GetHostMemKernOvhdMB PROC
+jmp ptr_VMGuestLib_GetHostMemKernOvhdMB
+VMGuestLib_GetHostMemKernOvhdMB ENDP
+
+VMGuestLib_GetHostMemMappedMB PROC
+jmp ptr_VMGuestLib_GetHostMemMappedMB
+VMGuestLib_GetHostMemMappedMB ENDP
+
+VMGuestLib_GetHostMemPhysFreeMB PROC
+jmp ptr_VMGuestLib_GetHostMemPhysFreeMB
+VMGuestLib_GetHostMemPhysFreeMB ENDP
+
+VMGuestLib_GetHostMemPhysMB PROC
+jmp ptr_VMGuestLib_GetHostMemPhysMB
+VMGuestLib_GetHostMemPhysMB ENDP
+
+VMGuestLib_GetHostMemSharedMB PROC
+jmp ptr_VMGuestLib_GetHostMemSharedMB
+VMGuestLib_GetHostMemSharedMB ENDP
+
+VMGuestLib_GetHostMemSwappedMB PROC
+jmp ptr_VMGuestLib_GetHostMemSwappedMB
+VMGuestLib_GetHostMemSwappedMB ENDP
+
+VMGuestLib_GetHostMemUnmappedMB PROC
+jmp ptr_VMGuestLib_GetHostMemUnmappedMB
+VMGuestLib_GetHostMemUnmappedMB ENDP
+
+VMGuestLib_GetHostMemUsedMB PROC
+jmp ptr_VMGuestLib_GetHostMemUsedMB
+VMGuestLib_GetHostMemUsedMB ENDP
+
+VMGuestLib_GetHostNumCpuCores PROC
+jmp ptr_VMGuestLib_GetHostNumCpuCores
+VMGuestLib_GetHostNumCpuCores ENDP
+
+VMGuestLib_GetHostProcessorSpeed PROC
+jmp ptr_VMGuestLib_GetHostProcessorSpeed
+VMGuestLib_GetHostProcessorSpeed ENDP
+
+VMGuestLib_GetMemActiveMB PROC
+jmp ptr_VMGuestLib_GetMemActiveMB
+VMGuestLib_GetMemActiveMB ENDP
+
+VMGuestLib_GetMemBalloonMaxMB PROC
+jmp ptr_VMGuestLib_GetMemBalloonMaxMB
+VMGuestLib_GetMemBalloonMaxMB ENDP
+
+VMGuestLib_GetMemBalloonTargetMB PROC
+jmp ptr_VMGuestLib_GetMemBalloonTargetMB
+VMGuestLib_GetMemBalloonTargetMB ENDP
+
+VMGuestLib_GetMemBalloonedMB PROC
+jmp ptr_VMGuestLib_GetMemBalloonedMB
+VMGuestLib_GetMemBalloonedMB ENDP
+
+VMGuestLib_GetMemLLSwappedMB PROC
+jmp ptr_VMGuestLib_GetMemLLSwappedMB
+VMGuestLib_GetMemLLSwappedMB ENDP
+
+VMGuestLib_GetMemLimitMB PROC
+jmp ptr_VMGuestLib_GetMemLimitMB
+VMGuestLib_GetMemLimitMB ENDP
+
+VMGuestLib_GetMemMappedMB PROC
+jmp ptr_VMGuestLib_GetMemMappedMB
+VMGuestLib_GetMemMappedMB ENDP
+
+VMGuestLib_GetMemOverheadMB PROC
+jmp ptr_VMGuestLib_GetMemOverheadMB
+VMGuestLib_GetMemOverheadMB ENDP
+
+VMGuestLib_GetMemReservationMB PROC
+jmp ptr_VMGuestLib_GetMemReservationMB
+VMGuestLib_GetMemReservationMB ENDP
+
+VMGuestLib_GetMemSharedMB PROC
+jmp ptr_VMGuestLib_GetMemSharedMB
+VMGuestLib_GetMemSharedMB ENDP
+
+VMGuestLib_GetMemSharedSavedMB PROC
+jmp ptr_VMGuestLib_GetMemSharedSavedMB
+VMGuestLib_GetMemSharedSavedMB ENDP
+
+VMGuestLib_GetMemShares PROC
+jmp ptr_VMGuestLib_GetMemShares
+VMGuestLib_GetMemShares ENDP
+
+VMGuestLib_GetMemSwapTargetMB PROC
+jmp ptr_VMGuestLib_GetMemSwapTargetMB
+VMGuestLib_GetMemSwapTargetMB ENDP
+
+VMGuestLib_GetMemSwappedMB PROC
+jmp ptr_VMGuestLib_GetMemSwappedMB
+VMGuestLib_GetMemSwappedMB ENDP
+
+VMGuestLib_GetMemTargetSizeMB PROC
+jmp ptr_VMGuestLib_GetMemTargetSizeMB
+VMGuestLib_GetMemTargetSizeMB ENDP
+
+VMGuestLib_GetMemUsedMB PROC
+jmp ptr_VMGuestLib_GetMemUsedMB
+VMGuestLib_GetMemUsedMB ENDP
+
+VMGuestLib_GetMemZipSavedMB PROC
+jmp ptr_VMGuestLib_GetMemZipSavedMB
+VMGuestLib_GetMemZipSavedMB ENDP
+
+VMGuestLib_GetMemZippedMB PROC
+jmp ptr_VMGuestLib_GetMemZippedMB
+VMGuestLib_GetMemZippedMB ENDP
+
+VMGuestLib_GetResourcePoolPath PROC
+jmp ptr_VMGuestLib_GetResourcePoolPath
+VMGuestLib_GetResourcePoolPath ENDP
+
+VMGuestLib_GetSessionId PROC
+jmp ptr_VMGuestLib_GetSessionId
+VMGuestLib_GetSessionId ENDP
+
+VMGuestLib_OpenHandle PROC
+jmp ptr_VMGuestLib_OpenHandle
+VMGuestLib_OpenHandle ENDP
+
+VMGuestLib_StatFree PROC
+jmp ptr_VMGuestLib_StatFree
+VMGuestLib_StatFree ENDP
+
+VMGuestLib_StatGet PROC
+jmp ptr_VMGuestLib_StatGet
+VMGuestLib_StatGet ENDP
+
+VMGuestLib_UpdateInfo PROC
+jmp ptr_VMGuestLib_UpdateInfo
+VMGuestLib_UpdateInfo ENDP
+
+end

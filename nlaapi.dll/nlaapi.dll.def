@@ -1,0 +1,29 @@
+﻿LIBRARY
+EXPORTS
+
+NSPStartup @1
+NlaAddToPluginRequests @2
+NlaAddToTypeSet @3
+NlaAnd @4
+NlaCloseQuery @5
+NlaComposeNetSignature @6
+NlaCreateFilter @7
+NlaCreatePluginRequests @8
+NlaCreateTypeSet @9
+NlaDecomposeNetSignature @10
+NlaDeleteDataSet @11
+NlaDeleteFilter @12
+NlaDeletePluginRequests @13
+NlaDeleteTypeSet @14
+NlaEqual @15
+NlaEqualNetSignatures @16
+NlaGetInternetCapability @17
+NlaGetIntranetCapability @18
+NlaNotEqual @19
+NlaOpenQuery @20
+NlaOr @21
+NlaQueryNetData @22
+NlaQueryNetDataEx @23
+NlaQueryNetSignatures @24
+NlaRefreshQuery @25
+NlaRegisterQuery @26

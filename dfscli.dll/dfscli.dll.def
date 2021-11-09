@@ -1,0 +1,32 @@
+﻿LIBRARY
+EXPORTS
+
+I_NetDfsIsThisADomainName @1
+NetDfsAdd @2
+NetDfsAddFtRoot @3
+NetDfsAddRootTarget @4
+NetDfsAddStdRoot @5
+NetDfsAddStdRootForced @6
+NetDfsEnum @7
+NetDfsGetClientInfo @8
+NetDfsGetDcAddress @9
+NetDfsGetFtContainerSecurity @10
+NetDfsGetInfo @11
+NetDfsGetSecurity @12
+NetDfsGetStdContainerSecurity @13
+NetDfsGetSupportedNamespaceVersion @14
+NetDfsManagerGetConfigInfo @15
+NetDfsManagerInitialize @16
+NetDfsManagerSendSiteInfo @17
+NetDfsMove @18
+NetDfsRemove @19
+NetDfsRemoveFtRoot @20
+NetDfsRemoveFtRootForced @21
+NetDfsRemoveRootTarget @22
+NetDfsRemoveStdRoot @23
+NetDfsRename @24
+NetDfsSetClientInfo @25
+NetDfsSetFtContainerSecurity @26
+NetDfsSetInfo @27
+NetDfsSetSecurity @28
+NetDfsSetStdContainerSecurity @29

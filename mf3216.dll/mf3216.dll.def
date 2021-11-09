@@ -1,0 +1,5 @@
+﻿LIBRARY
+EXPORTS
+
+ConvertEmfToWmf @1
+Mf3216DllInitialize @2

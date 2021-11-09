@@ -1,0 +1,11 @@
+﻿LIBRARY
+EXPORTS
+
+Chkdsk @148
+ChkdskEx @149
+Extend @150
+Format @151
+FormatEx @152
+GetFilesystemInformation @153
+Recover @154
+SetOriginalVolumeName @139

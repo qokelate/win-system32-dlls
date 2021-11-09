@@ -1,0 +1,9 @@
+﻿LIBRARY
+EXPORTS
+
+DllCanUnloadNow @241
+DllGetClassObject @242
+DllRegisterServer @243
+GetPropertyPageData @132
+IsRequestPending @201
+LoadPropertyPageData @211

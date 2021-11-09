@@ -1,0 +1,17 @@
+﻿LIBRARY
+EXPORTS
+
+MsiAdvertiseScriptW @8
+MsiConfigureProductExW @12
+MsiDecomposeDescriptorW @1
+MsiGetComponentPathW @2
+MsiGetProductInfoW @3
+MsiIsProductElevatedW @10
+MsiProvideComponentFromDescriptorW @4
+MsiQueryFeatureStateFromDescriptorW @6
+MsiQueryFeatureStateW @5
+MsiQueryProductStateW @9
+MsiReinstallProductW @11
+MsiSetInternalUI @7
+RestartMsi @14
+ShutdownMsi @13

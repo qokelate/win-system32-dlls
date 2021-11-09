@@ -1,0 +1,25 @@
+﻿LIBRARY
+EXPORTS
+
+VerifierAddFreeMemoryCallback @1
+VerifierCheckPageHeapAllocation @2
+VerifierCreateRpcPageHeap @3
+VerifierDeleteFreeMemoryCallback @4
+VerifierDestroyRpcPageHeap @5
+VerifierDisableFaultInjectionExclusionRange @6
+VerifierDisableFaultInjectionTargetRange @7
+VerifierEnableFaultInjectionExclusionRange @8
+VerifierEnableFaultInjectionTargetRange @9
+VerifierEnumerateResource @10
+VerifierForceNormalHeap @11
+VerifierGetInfoForException @12
+VerifierGetMemoryForDump @13
+VerifierGetProviderHelper @14
+VerifierIsCurrentThreadHoldingLocks @15
+VerifierIsDllEntryActive @16
+VerifierIsPerUserSettingsEnabled @17
+VerifierQueryRuntimeFlags @18
+VerifierSetFaultInjectionProbability @19
+VerifierSetFlags @20
+VerifierSetRuntimeFlags @21
+VerifierStopMessage @22

@@ -1,0 +1,7 @@
+﻿LIBRARY
+EXPORTS
+
+FlsAlloc @1
+FlsFree @2
+FlsGetValue @3
+FlsSetValue @4

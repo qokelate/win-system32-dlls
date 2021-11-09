@@ -1,0 +1,20 @@
+﻿LIBRARY
+EXPORTS
+
+DllCanUnloadNow @16
+DllGetClassObject @17
+FindControlClose @1
+FindFirstControl @2
+FindFirstControlArch @3
+FindNextControl @4
+FindNextControlArch @5
+GetControlDependentFile @6
+GetControlInfo @7
+IsModuleRemovable @8
+ReleaseControlHandle @9
+RemoveControlByHandle @11
+RemoveControlByHandle2 @10
+RemoveControlByName @13
+RemoveControlByName2 @12
+RemoveExpiredControls @14
+SweepControlsByLastAccessDate @15

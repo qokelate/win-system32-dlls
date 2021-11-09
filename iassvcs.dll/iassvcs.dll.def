@@ -1,0 +1,26 @@
+﻿LIBRARY
+EXPORTS
+
+DllCanUnloadNow @1
+DllGetClassObject @2
+DllRegisterServer @3
+DllUnregisterServer @4
+IASAdler32 @5
+IASAllocateUniqueID @6
+IASGetDictionary @7
+IASGetHostByName @8
+IASGetLocalDictionary @9
+IASGetProductLimits @10
+IASGlobalLock @11
+IASGlobalUnlock @12
+IASInitialize @13
+IASRadiusCrypt @14
+IASRegisterComponent @15
+IASReportEvent @16
+IASReportLicenseViolation @17
+IASReportSecurityEvent @18
+IASRequestThread @19
+IASSetMaxNumberOfThreads @20
+IASSetMaxThreadIdle @21
+IASUninitialize @22
+IASVariantChangeType @23

@@ -1,0 +1,39 @@
+﻿LIBRARY
+EXPORTS
+
+AsyncDeviceEnumerate @1
+CachedGetUserFromSid @2
+CalculateDiffTime @3
+CalculateElapsedTime @4
+CompareElapsedTime @5
+ConfigureModem @6
+CtxGetAnyDCName @7
+CurrentDateTimeString @8
+DateTimeString @9
+ElapsedTimeString @10
+EnumerateMultiUserServers @11
+FormDecoratedAsyncDeviceName @12
+GetAssociatedPortName @13
+GetSystemMessageA @14
+GetSystemMessageW @15
+GetUnknownString @16
+GetUserFromSid @17
+HaveAnonymousUsersChanged @18
+InitializeAnonymousUserCompareList @19
+InstallModem @20
+IsPartOfDomain @21
+NetBIOSDeviceEnumerate @22
+NetworkDeviceEnumerate @23
+ParseDecoratedAsyncDeviceName @24
+QueryCurrentWinStation @25
+RegGetNetworkDeviceName @26
+RegGetNetworkServiceName @27
+SetupAsyncCdConfig @28
+StandardErrorMessage @29
+StrAsyncConnectState @30
+StrConnectState @31
+StrProcessState @32
+StrSdClass @33
+StrSystemWaitReason @34
+TestUserForAdmin @35
+WinEnumerateDevices @36

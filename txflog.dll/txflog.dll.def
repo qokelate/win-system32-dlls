@@ -1,0 +1,4 @@
+﻿LIBRARY
+EXPORTS
+
+DllGetClassObject @1

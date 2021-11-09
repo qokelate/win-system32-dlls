@@ -1,0 +1,5 @@
+﻿LIBRARY
+EXPORTS
+
+InstallHidserv @1
+ServiceMain @2

@@ -1,0 +1,34 @@
+﻿LIBRARY
+EXPORTS
+
+MtxCluBringOnlineDTCW @10
+MtxCluCreateClusterProxyTmInstance @11
+MtxCluCreateClusterTmInstance @12
+MtxCluCreateTmInstanceForVirtualServer @13
+MtxCluEnumerateDtcResources @14
+MtxCluGetActiveClusterNode @15
+MtxCluGetClusterResourceIdFromName @16
+MtxCluGetComputerNameW @1
+MtxCluGetDTCResourceForResource @17
+MtxCluGetDTCStatusW @2
+MtxCluGetDTCVirtualServerNameW @18
+MtxCluGetDefaultClusterResource @19
+MtxCluGetDefaultClusterResourceNonAdmin @20
+MtxCluGetDtcDiskResourceDrive @21
+MtxCluGetNameFromResourceIdString @22
+MtxCluGetNameFromResourceIdStringNonAdmin @23
+MtxCluGetResourceId @24
+MtxCluGetResourceIdStringFromName @25
+MtxCluGetSecurityRegValue @3
+MtxCluGetTmResource @26
+MtxCluGetVirtualServerToken @27
+MtxCluIsClusterPresent @4
+MtxCluIsClusterPresentExW @28
+MtxCluIsNetworkNameInLocalClusterW @5
+MtxCluIsSameClusterW @6
+MtxCluIsSameNodeW @7
+MtxCluSetDefaultClusterResource @29
+MtxCluSetSecurityRegValue @8
+MtxCluTakeOfflineDTCW @30
+MtxCluVerifyLogPathInDependantDiskResource @31
+Startup @9

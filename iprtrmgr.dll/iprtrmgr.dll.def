@@ -1,0 +1,5 @@
+﻿LIBRARY
+EXPORTS
+
+MapInterfaceToAdapter @1
+StartRouter @2

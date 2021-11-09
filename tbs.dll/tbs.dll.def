@@ -1,0 +1,18 @@
+﻿LIBRARY
+EXPORTS
+
+Tbsi_Context_Create @3
+Tbsi_Create_Attestation_From_Log @1
+Tbsi_FilterLog @4
+Tbsi_GetDeviceInfo @5
+Tbsi_Get_OwnerAuth @6
+Tbsi_Get_TCG_Log @7
+Tbsi_Get_TCG_Logs @2
+Tbsi_Physical_Presence_Command @8
+Tbsi_Revoke_Attestation @9
+Tbsi_ShaHash @10
+Tbsip_Cancel_Commands @11
+Tbsip_Context_Close @12
+Tbsip_Submit_Command @13
+Tbsip_Submit_Command_NonBlocking @14
+Tbsip_TestMorBit @15

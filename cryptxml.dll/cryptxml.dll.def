@@ -1,0 +1,22 @@
+﻿LIBRARY
+EXPORTS
+
+CryptXmlAddObject @1
+CryptXmlClose @2
+CryptXmlCreateReference @3
+CryptXmlDigestReference @4
+CryptXmlEncode @5
+CryptXmlEnumAlgorithmInfo @6
+CryptXmlFindAlgorithmInfo @7
+CryptXmlGetAlgorithmInfo @8
+CryptXmlGetDocContext @9
+CryptXmlGetReference @10
+CryptXmlGetSignature @11
+CryptXmlGetStatus @12
+CryptXmlGetTransforms @13
+CryptXmlImportPublicKey @14
+CryptXmlOpenToDecode @15
+CryptXmlOpenToEncode @16
+CryptXmlSetHMACSecret @17
+CryptXmlSign @18
+CryptXmlVerifySignature @19

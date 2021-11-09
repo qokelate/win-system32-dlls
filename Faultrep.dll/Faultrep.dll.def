@@ -1,0 +1,14 @@
+﻿LIBRARY
+EXPORTS
+
+AddERExcludedApplicationA @1
+AddERExcludedApplicationW @2
+CancelHangReporting @7
+CheckPerUserCrossProcessThrottle @3
+DllCanUnloadNow @8
+DllGetClassObject @9
+ReportFault @4
+ReportHang @10
+UpdatePerUserLastCrossProcessCollectionTime @5
+WerReportHang @6
+WerpInitiateCrashReporting @11

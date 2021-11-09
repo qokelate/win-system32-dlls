@@ -1,0 +1,13 @@
+﻿LIBRARY
+EXPORTS
+
+LsCsp_DecryptEnvelopedData @7
+LsCsp_EncryptHwid @6
+LsCsp_GetServerData @5
+LsCsp_RetrieveSecret @9
+LsCsp_StoreSecret @8
+TLSCspInit @1
+TLSCspShutdown @2
+TLSCspStartInstallCertificateThread @10
+TLSFreeTSCertificate @4
+TLSGetTSCertificate @3

@@ -1,0 +1,14 @@
+﻿LIBRARY
+EXPORTS
+
+ComputeInvCMAP @1
+CreateDDrawSurfaceOnDIB @2
+CreateMIMEMap @3
+DecodeImage @4
+DecodeImageEx @5
+DitherTo8 @6
+DllCanUnloadNow @7
+DllGetClassObject @8
+GetMaxMIMEIDBytes @9
+IdentifyMIMEType @10
+SniffStream @11

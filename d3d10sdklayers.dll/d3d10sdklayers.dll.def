@@ -1,0 +1,7 @@
+﻿LIBRARY
+EXPORTS
+
+D3D10GetVersion @2
+D3D10RegisterLayers @3
+D3D10TranslateCreateDevice @4
+DXGI_SDK_MESSAGE @1

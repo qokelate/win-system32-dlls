@@ -1,0 +1,5 @@
+﻿LIBRARY
+EXPORTS
+
+IrSIRClassCoInstaller @1
+IrSIRPortPropPageProvider @2

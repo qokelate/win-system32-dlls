@@ -1,0 +1,43 @@
+﻿LIBRARY
+EXPORTS
+
+CreateIUriBuilder @102
+CreateStringHashN @10
+CreateUri @103
+CreateUriFromMultiByteString @104
+CreateUriPriv @105
+CreateUriWithFragment @106
+DllCanUnloadNow @107
+DllGetActivationFactory @108
+DllGetClassObject @109
+FastMimeGetFileExtension @113
+FastMimeGetIsMimeFilterEnabled @114
+FastMimeLookupKnownType @115
+FastMimeSetIsMimeFilterEnabled @116
+GetIDNSettingsForIE @11
+GetIUriPriv @117
+GetIUriPriv2 @118
+GetPortFromUrlScheme @119
+GetPropertyFromName @120
+GetPropertyName @121
+IEDllLoader @122
+IEGetFrameUtilExports @12
+IEGetProcessModule @13
+IEGetTabWindowExports @14
+IERT_DelayLoadFailureHook @9
+IUriBuilderInternalCreateDomain @15
+ImpersonateUser @144
+IntlPercentEncodeNormalize @145
+IsDWORDProperty @146
+IsStringProperty @147
+LCIECalculatePackedStringSize @394
+LCIEPackString @395
+LCIEUnpackString @396
+PrivateCoInternetCanonicalizeIUri @148
+PrivateCoInternetCombineIUri @149
+PrivateCoInternetParseIUri @178
+ResetIDNLanguageData @22
+ResetIEExtensibility @23
+ResetIERegistrySettings @27
+RevertImpersonate @179
+UriFromHostAndScheme @47

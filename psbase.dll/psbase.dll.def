@@ -1,0 +1,24 @@
+﻿LIBRARY
+EXPORTS
+
+FPasswordChangeNotify @1
+SPAcquireContext @4
+SPCloseItem @2
+SPCreateSubtype @5
+SPCreateType @6
+SPDeleteItem @7
+SPDeleteSubtype @8
+SPDeleteType @9
+SPEnumItems @10
+SPEnumSubtypes @11
+SPEnumTypes @12
+SPGetProvInfo @13
+SPGetProvParam @14
+SPGetSubtypeInfo @15
+SPGetTypeInfo @16
+SPOpenItem @3
+SPProviderInitialize @17
+SPReadItem @18
+SPReleaseContext @19
+SPSetProvParam @20
+SPWriteItem @21

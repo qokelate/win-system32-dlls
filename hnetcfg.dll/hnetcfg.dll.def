@@ -1,0 +1,17 @@
+﻿LIBRARY
+EXPORTS
+
+DllCanUnloadNow @4
+DllGetClassObject @5
+DllRegisterServer @6
+DllUnregisterServer @7
+HNetDeleteRasConnection @1
+HNetFreeSharingServicesPage @2
+HNetGetFirewallSettingsPage @8
+HNetGetSharingServicesPage @3
+HNetSharedAccessSettingsDlg @9
+HNetSharingAndFirewallSettingsDlg @10
+RegisterClassObjects @11
+ReleaseSingletons @12
+RevokeClassObjects @13
+WinBomConfigureWindowsFirewall @14

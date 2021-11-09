@@ -1,0 +1,260 @@
+﻿#include <windows.h>
+#include <shlwapi.h>
+
+extern "C" {
+extern void *ptr_DsAddressToSiteNamesA;
+void *ptr_DsAddressToSiteNamesA = NULL;
+extern void *ptr_DsAddressToSiteNamesExA;
+void *ptr_DsAddressToSiteNamesExA = NULL;
+extern void *ptr_DsAddressToSiteNamesExW;
+void *ptr_DsAddressToSiteNamesExW = NULL;
+extern void *ptr_DsAddressToSiteNamesW;
+void *ptr_DsAddressToSiteNamesW = NULL;
+extern void *ptr_DsDeregisterDnsHostRecordsA;
+void *ptr_DsDeregisterDnsHostRecordsA = NULL;
+extern void *ptr_DsDeregisterDnsHostRecordsW;
+void *ptr_DsDeregisterDnsHostRecordsW = NULL;
+extern void *ptr_DsEnumerateDomainTrustsA;
+void *ptr_DsEnumerateDomainTrustsA = NULL;
+extern void *ptr_DsEnumerateDomainTrustsW;
+void *ptr_DsEnumerateDomainTrustsW = NULL;
+extern void *ptr_DsGetDcCloseW;
+void *ptr_DsGetDcCloseW = NULL;
+extern void *ptr_DsGetDcNameA;
+void *ptr_DsGetDcNameA = NULL;
+extern void *ptr_DsGetDcNameW;
+void *ptr_DsGetDcNameW = NULL;
+extern void *ptr_DsGetDcNameWithAccountA;
+void *ptr_DsGetDcNameWithAccountA = NULL;
+extern void *ptr_DsGetDcNameWithAccountW;
+void *ptr_DsGetDcNameWithAccountW = NULL;
+extern void *ptr_DsGetDcNextA;
+void *ptr_DsGetDcNextA = NULL;
+extern void *ptr_DsGetDcNextW;
+void *ptr_DsGetDcNextW = NULL;
+extern void *ptr_DsGetDcOpenA;
+void *ptr_DsGetDcOpenA = NULL;
+extern void *ptr_DsGetDcOpenW;
+void *ptr_DsGetDcOpenW = NULL;
+extern void *ptr_DsGetDcSiteCoverageA;
+void *ptr_DsGetDcSiteCoverageA = NULL;
+extern void *ptr_DsGetDcSiteCoverageW;
+void *ptr_DsGetDcSiteCoverageW = NULL;
+extern void *ptr_DsGetForestTrustInformationW;
+void *ptr_DsGetForestTrustInformationW = NULL;
+extern void *ptr_DsGetSiteNameA;
+void *ptr_DsGetSiteNameA = NULL;
+extern void *ptr_DsGetSiteNameW;
+void *ptr_DsGetSiteNameW = NULL;
+extern void *ptr_DsMergeForestTrustInformationW;
+void *ptr_DsMergeForestTrustInformationW = NULL;
+extern void *ptr_DsValidateSubnetNameA;
+void *ptr_DsValidateSubnetNameA = NULL;
+extern void *ptr_DsValidateSubnetNameW;
+void *ptr_DsValidateSubnetNameW = NULL;
+extern void *ptr_I_DsUpdateReadOnlyServerDnsRecords;
+void *ptr_I_DsUpdateReadOnlyServerDnsRecords = NULL;
+extern void *ptr_I_NetAccountDeltas;
+void *ptr_I_NetAccountDeltas = NULL;
+extern void *ptr_I_NetAccountSync;
+void *ptr_I_NetAccountSync = NULL;
+extern void *ptr_I_NetChainSetClientAttributes;
+void *ptr_I_NetChainSetClientAttributes = NULL;
+extern void *ptr_I_NetChainSetClientAttributes2;
+void *ptr_I_NetChainSetClientAttributes2 = NULL;
+extern void *ptr_I_NetDatabaseDeltas;
+void *ptr_I_NetDatabaseDeltas = NULL;
+extern void *ptr_I_NetDatabaseRedo;
+void *ptr_I_NetDatabaseRedo = NULL;
+extern void *ptr_I_NetDatabaseSync;
+void *ptr_I_NetDatabaseSync = NULL;
+extern void *ptr_I_NetDatabaseSync2;
+void *ptr_I_NetDatabaseSync2 = NULL;
+extern void *ptr_I_NetGetDCList;
+void *ptr_I_NetGetDCList = NULL;
+extern void *ptr_I_NetGetForestTrustInformation;
+void *ptr_I_NetGetForestTrustInformation = NULL;
+extern void *ptr_I_NetLogonControl;
+void *ptr_I_NetLogonControl = NULL;
+extern void *ptr_I_NetLogonControl2;
+void *ptr_I_NetLogonControl2 = NULL;
+extern void *ptr_I_NetLogonGetCapabilities;
+void *ptr_I_NetLogonGetCapabilities = NULL;
+extern void *ptr_I_NetLogonGetDomainInfo;
+void *ptr_I_NetLogonGetDomainInfo = NULL;
+extern void *ptr_I_NetLogonSamLogoff;
+void *ptr_I_NetLogonSamLogoff = NULL;
+extern void *ptr_I_NetLogonSamLogon;
+void *ptr_I_NetLogonSamLogon = NULL;
+extern void *ptr_I_NetLogonSamLogonEx;
+void *ptr_I_NetLogonSamLogonEx = NULL;
+extern void *ptr_I_NetLogonSamLogonWithFlags;
+void *ptr_I_NetLogonSamLogonWithFlags = NULL;
+extern void *ptr_I_NetLogonSendToSam;
+void *ptr_I_NetLogonSendToSam = NULL;
+extern void *ptr_I_NetLogonUasLogoff;
+void *ptr_I_NetLogonUasLogoff = NULL;
+extern void *ptr_I_NetLogonUasLogon;
+void *ptr_I_NetLogonUasLogon = NULL;
+extern void *ptr_I_NetServerAuthenticate;
+void *ptr_I_NetServerAuthenticate = NULL;
+extern void *ptr_I_NetServerAuthenticate2;
+void *ptr_I_NetServerAuthenticate2 = NULL;
+extern void *ptr_I_NetServerAuthenticate3;
+void *ptr_I_NetServerAuthenticate3 = NULL;
+extern void *ptr_I_NetServerGetTrustInfo;
+void *ptr_I_NetServerGetTrustInfo = NULL;
+extern void *ptr_I_NetServerPasswordGet;
+void *ptr_I_NetServerPasswordGet = NULL;
+extern void *ptr_I_NetServerPasswordSet;
+void *ptr_I_NetServerPasswordSet = NULL;
+extern void *ptr_I_NetServerPasswordSet2;
+void *ptr_I_NetServerPasswordSet2 = NULL;
+extern void *ptr_I_NetServerReqChallenge;
+void *ptr_I_NetServerReqChallenge = NULL;
+extern void *ptr_I_NetServerTrustPasswordsGet;
+void *ptr_I_NetServerTrustPasswordsGet = NULL;
+extern void *ptr_I_NetlogonComputeClientDigest;
+void *ptr_I_NetlogonComputeClientDigest = NULL;
+extern void *ptr_I_NetlogonComputeServerDigest;
+void *ptr_I_NetlogonComputeServerDigest = NULL;
+extern void *ptr_I_NetlogonGetTrustRid;
+void *ptr_I_NetlogonGetTrustRid = NULL;
+extern void *ptr_I_RpcExtInitializeExtensionPoint;
+void *ptr_I_RpcExtInitializeExtensionPoint = NULL;
+extern void *ptr_NetAddServiceAccount;
+void *ptr_NetAddServiceAccount = NULL;
+extern void *ptr_NetEnumerateServiceAccounts;
+void *ptr_NetEnumerateServiceAccounts = NULL;
+extern void *ptr_NetEnumerateTrustedDomains;
+void *ptr_NetEnumerateTrustedDomains = NULL;
+extern void *ptr_NetGetAnyDCName;
+void *ptr_NetGetAnyDCName = NULL;
+extern void *ptr_NetGetDCName;
+void *ptr_NetGetDCName = NULL;
+extern void *ptr_NetIsServiceAccount;
+void *ptr_NetIsServiceAccount = NULL;
+extern void *ptr_NetLogonGetTimeServiceParentDomain;
+void *ptr_NetLogonGetTimeServiceParentDomain = NULL;
+extern void *ptr_NetLogonSetServiceBits;
+void *ptr_NetLogonSetServiceBits = NULL;
+extern void *ptr_NetQueryServiceAccount;
+void *ptr_NetQueryServiceAccount = NULL;
+extern void *ptr_NetRemoveServiceAccount;
+void *ptr_NetRemoveServiceAccount = NULL;
+extern void *ptr_NlBindingAddServerToCache;
+void *ptr_NlBindingAddServerToCache = NULL;
+extern void *ptr_NlBindingRemoveServerFromCache;
+void *ptr_NlBindingRemoveServerFromCache = NULL;
+extern void *ptr_NlBindingSetAuthInfo;
+void *ptr_NlBindingSetAuthInfo = NULL;
+}
+
+
+static HMODULE hModule = NULL;
+static void module_init()
+{    
+   if (hModule) return;
+   wchar_t sz_module_file[MAX_PATH];
+   GetSystemDirectoryW(sz_module_file, MAX_PATH);
+   wcscat_s(sz_module_file, L"\\logoncli.dll");
+   hModule = LoadLibraryW(sz_module_file);
+   if (!hModule) return;
+
+   #define __vartype(x) decltype(x)
+   ptr_DsAddressToSiteNamesA = (__vartype(ptr_DsAddressToSiteNamesA))GetProcAddress(hModule, "DsAddressToSiteNamesA");
+   ptr_DsAddressToSiteNamesExA = (__vartype(ptr_DsAddressToSiteNamesExA))GetProcAddress(hModule, "DsAddressToSiteNamesExA");
+   ptr_DsAddressToSiteNamesExW = (__vartype(ptr_DsAddressToSiteNamesExW))GetProcAddress(hModule, "DsAddressToSiteNamesExW");
+   ptr_DsAddressToSiteNamesW = (__vartype(ptr_DsAddressToSiteNamesW))GetProcAddress(hModule, "DsAddressToSiteNamesW");
+   ptr_DsDeregisterDnsHostRecordsA = (__vartype(ptr_DsDeregisterDnsHostRecordsA))GetProcAddress(hModule, "DsDeregisterDnsHostRecordsA");
+   ptr_DsDeregisterDnsHostRecordsW = (__vartype(ptr_DsDeregisterDnsHostRecordsW))GetProcAddress(hModule, "DsDeregisterDnsHostRecordsW");
+   ptr_DsEnumerateDomainTrustsA = (__vartype(ptr_DsEnumerateDomainTrustsA))GetProcAddress(hModule, "DsEnumerateDomainTrustsA");
+   ptr_DsEnumerateDomainTrustsW = (__vartype(ptr_DsEnumerateDomainTrustsW))GetProcAddress(hModule, "DsEnumerateDomainTrustsW");
+   ptr_DsGetDcCloseW = (__vartype(ptr_DsGetDcCloseW))GetProcAddress(hModule, "DsGetDcCloseW");
+   ptr_DsGetDcNameA = (__vartype(ptr_DsGetDcNameA))GetProcAddress(hModule, "DsGetDcNameA");
+   ptr_DsGetDcNameW = (__vartype(ptr_DsGetDcNameW))GetProcAddress(hModule, "DsGetDcNameW");
+   ptr_DsGetDcNameWithAccountA = (__vartype(ptr_DsGetDcNameWithAccountA))GetProcAddress(hModule, "DsGetDcNameWithAccountA");
+   ptr_DsGetDcNameWithAccountW = (__vartype(ptr_DsGetDcNameWithAccountW))GetProcAddress(hModule, "DsGetDcNameWithAccountW");
+   ptr_DsGetDcNextA = (__vartype(ptr_DsGetDcNextA))GetProcAddress(hModule, "DsGetDcNextA");
+   ptr_DsGetDcNextW = (__vartype(ptr_DsGetDcNextW))GetProcAddress(hModule, "DsGetDcNextW");
+   ptr_DsGetDcOpenA = (__vartype(ptr_DsGetDcOpenA))GetProcAddress(hModule, "DsGetDcOpenA");
+   ptr_DsGetDcOpenW = (__vartype(ptr_DsGetDcOpenW))GetProcAddress(hModule, "DsGetDcOpenW");
+   ptr_DsGetDcSiteCoverageA = (__vartype(ptr_DsGetDcSiteCoverageA))GetProcAddress(hModule, "DsGetDcSiteCoverageA");
+   ptr_DsGetDcSiteCoverageW = (__vartype(ptr_DsGetDcSiteCoverageW))GetProcAddress(hModule, "DsGetDcSiteCoverageW");
+   ptr_DsGetForestTrustInformationW = (__vartype(ptr_DsGetForestTrustInformationW))GetProcAddress(hModule, "DsGetForestTrustInformationW");
+   ptr_DsGetSiteNameA = (__vartype(ptr_DsGetSiteNameA))GetProcAddress(hModule, "DsGetSiteNameA");
+   ptr_DsGetSiteNameW = (__vartype(ptr_DsGetSiteNameW))GetProcAddress(hModule, "DsGetSiteNameW");
+   ptr_DsMergeForestTrustInformationW = (__vartype(ptr_DsMergeForestTrustInformationW))GetProcAddress(hModule, "DsMergeForestTrustInformationW");
+   ptr_DsValidateSubnetNameA = (__vartype(ptr_DsValidateSubnetNameA))GetProcAddress(hModule, "DsValidateSubnetNameA");
+   ptr_DsValidateSubnetNameW = (__vartype(ptr_DsValidateSubnetNameW))GetProcAddress(hModule, "DsValidateSubnetNameW");
+   ptr_I_DsUpdateReadOnlyServerDnsRecords = (__vartype(ptr_I_DsUpdateReadOnlyServerDnsRecords))GetProcAddress(hModule, "I_DsUpdateReadOnlyServerDnsRecords");
+   ptr_I_NetAccountDeltas = (__vartype(ptr_I_NetAccountDeltas))GetProcAddress(hModule, "I_NetAccountDeltas");
+   ptr_I_NetAccountSync = (__vartype(ptr_I_NetAccountSync))GetProcAddress(hModule, "I_NetAccountSync");
+   ptr_I_NetChainSetClientAttributes = (__vartype(ptr_I_NetChainSetClientAttributes))GetProcAddress(hModule, "I_NetChainSetClientAttributes");
+   ptr_I_NetChainSetClientAttributes2 = (__vartype(ptr_I_NetChainSetClientAttributes2))GetProcAddress(hModule, "I_NetChainSetClientAttributes2");
+   ptr_I_NetDatabaseDeltas = (__vartype(ptr_I_NetDatabaseDeltas))GetProcAddress(hModule, "I_NetDatabaseDeltas");
+   ptr_I_NetDatabaseRedo = (__vartype(ptr_I_NetDatabaseRedo))GetProcAddress(hModule, "I_NetDatabaseRedo");
+   ptr_I_NetDatabaseSync = (__vartype(ptr_I_NetDatabaseSync))GetProcAddress(hModule, "I_NetDatabaseSync");
+   ptr_I_NetDatabaseSync2 = (__vartype(ptr_I_NetDatabaseSync2))GetProcAddress(hModule, "I_NetDatabaseSync2");
+   ptr_I_NetGetDCList = (__vartype(ptr_I_NetGetDCList))GetProcAddress(hModule, "I_NetGetDCList");
+   ptr_I_NetGetForestTrustInformation = (__vartype(ptr_I_NetGetForestTrustInformation))GetProcAddress(hModule, "I_NetGetForestTrustInformation");
+   ptr_I_NetLogonControl = (__vartype(ptr_I_NetLogonControl))GetProcAddress(hModule, "I_NetLogonControl");
+   ptr_I_NetLogonControl2 = (__vartype(ptr_I_NetLogonControl2))GetProcAddress(hModule, "I_NetLogonControl2");
+   ptr_I_NetLogonGetCapabilities = (__vartype(ptr_I_NetLogonGetCapabilities))GetProcAddress(hModule, "I_NetLogonGetCapabilities");
+   ptr_I_NetLogonGetDomainInfo = (__vartype(ptr_I_NetLogonGetDomainInfo))GetProcAddress(hModule, "I_NetLogonGetDomainInfo");
+   ptr_I_NetLogonSamLogoff = (__vartype(ptr_I_NetLogonSamLogoff))GetProcAddress(hModule, "I_NetLogonSamLogoff");
+   ptr_I_NetLogonSamLogon = (__vartype(ptr_I_NetLogonSamLogon))GetProcAddress(hModule, "I_NetLogonSamLogon");
+   ptr_I_NetLogonSamLogonEx = (__vartype(ptr_I_NetLogonSamLogonEx))GetProcAddress(hModule, "I_NetLogonSamLogonEx");
+   ptr_I_NetLogonSamLogonWithFlags = (__vartype(ptr_I_NetLogonSamLogonWithFlags))GetProcAddress(hModule, "I_NetLogonSamLogonWithFlags");
+   ptr_I_NetLogonSendToSam = (__vartype(ptr_I_NetLogonSendToSam))GetProcAddress(hModule, "I_NetLogonSendToSam");
+   ptr_I_NetLogonUasLogoff = (__vartype(ptr_I_NetLogonUasLogoff))GetProcAddress(hModule, "I_NetLogonUasLogoff");
+   ptr_I_NetLogonUasLogon = (__vartype(ptr_I_NetLogonUasLogon))GetProcAddress(hModule, "I_NetLogonUasLogon");
+   ptr_I_NetServerAuthenticate = (__vartype(ptr_I_NetServerAuthenticate))GetProcAddress(hModule, "I_NetServerAuthenticate");
+   ptr_I_NetServerAuthenticate2 = (__vartype(ptr_I_NetServerAuthenticate2))GetProcAddress(hModule, "I_NetServerAuthenticate2");
+   ptr_I_NetServerAuthenticate3 = (__vartype(ptr_I_NetServerAuthenticate3))GetProcAddress(hModule, "I_NetServerAuthenticate3");
+   ptr_I_NetServerGetTrustInfo = (__vartype(ptr_I_NetServerGetTrustInfo))GetProcAddress(hModule, "I_NetServerGetTrustInfo");
+   ptr_I_NetServerPasswordGet = (__vartype(ptr_I_NetServerPasswordGet))GetProcAddress(hModule, "I_NetServerPasswordGet");
+   ptr_I_NetServerPasswordSet = (__vartype(ptr_I_NetServerPasswordSet))GetProcAddress(hModule, "I_NetServerPasswordSet");
+   ptr_I_NetServerPasswordSet2 = (__vartype(ptr_I_NetServerPasswordSet2))GetProcAddress(hModule, "I_NetServerPasswordSet2");
+   ptr_I_NetServerReqChallenge = (__vartype(ptr_I_NetServerReqChallenge))GetProcAddress(hModule, "I_NetServerReqChallenge");
+   ptr_I_NetServerTrustPasswordsGet = (__vartype(ptr_I_NetServerTrustPasswordsGet))GetProcAddress(hModule, "I_NetServerTrustPasswordsGet");
+   ptr_I_NetlogonComputeClientDigest = (__vartype(ptr_I_NetlogonComputeClientDigest))GetProcAddress(hModule, "I_NetlogonComputeClientDigest");
+   ptr_I_NetlogonComputeServerDigest = (__vartype(ptr_I_NetlogonComputeServerDigest))GetProcAddress(hModule, "I_NetlogonComputeServerDigest");
+   ptr_I_NetlogonGetTrustRid = (__vartype(ptr_I_NetlogonGetTrustRid))GetProcAddress(hModule, "I_NetlogonGetTrustRid");
+   ptr_I_RpcExtInitializeExtensionPoint = (__vartype(ptr_I_RpcExtInitializeExtensionPoint))GetProcAddress(hModule, "I_RpcExtInitializeExtensionPoint");
+   ptr_NetAddServiceAccount = (__vartype(ptr_NetAddServiceAccount))GetProcAddress(hModule, "NetAddServiceAccount");
+   ptr_NetEnumerateServiceAccounts = (__vartype(ptr_NetEnumerateServiceAccounts))GetProcAddress(hModule, "NetEnumerateServiceAccounts");
+   ptr_NetEnumerateTrustedDomains = (__vartype(ptr_NetEnumerateTrustedDomains))GetProcAddress(hModule, "NetEnumerateTrustedDomains");
+   ptr_NetGetAnyDCName = (__vartype(ptr_NetGetAnyDCName))GetProcAddress(hModule, "NetGetAnyDCName");
+   ptr_NetGetDCName = (__vartype(ptr_NetGetDCName))GetProcAddress(hModule, "NetGetDCName");
+   ptr_NetIsServiceAccount = (__vartype(ptr_NetIsServiceAccount))GetProcAddress(hModule, "NetIsServiceAccount");
+   ptr_NetLogonGetTimeServiceParentDomain = (__vartype(ptr_NetLogonGetTimeServiceParentDomain))GetProcAddress(hModule, "NetLogonGetTimeServiceParentDomain");
+   ptr_NetLogonSetServiceBits = (__vartype(ptr_NetLogonSetServiceBits))GetProcAddress(hModule, "NetLogonSetServiceBits");
+   ptr_NetQueryServiceAccount = (__vartype(ptr_NetQueryServiceAccount))GetProcAddress(hModule, "NetQueryServiceAccount");
+   ptr_NetRemoveServiceAccount = (__vartype(ptr_NetRemoveServiceAccount))GetProcAddress(hModule, "NetRemoveServiceAccount");
+   ptr_NlBindingAddServerToCache = (__vartype(ptr_NlBindingAddServerToCache))GetProcAddress(hModule, "NlBindingAddServerToCache");
+   ptr_NlBindingRemoveServerFromCache = (__vartype(ptr_NlBindingRemoveServerFromCache))GetProcAddress(hModule, "NlBindingRemoveServerFromCache");
+   ptr_NlBindingSetAuthInfo = (__vartype(ptr_NlBindingSetAuthInfo))GetProcAddress(hModule, "NlBindingSetAuthInfo");
+   #undef __vartype
+}
+
+extern "C" BOOL __stdcall DllMain( HMODULE hModule,	DWORD ul_reason_for_call,LPVOID lpReserved)
+{
+	switch (ul_reason_for_call)
+	{
+	case DLL_PROCESS_ATTACH:
+    {
+        module_init();
+        wchar_t tmp1[2048];
+        GetModuleFileNameW(NULL, tmp1, _countof(tmp1));
+        PathRemoveExtensionW(tmp1);
+        wcscat(tmp1, L".hook.dll");
+        LoadLibraryW(tmp1);
+        break;
+    }
+	case DLL_PROCESS_DETACH:
+		break;
+	}
+	return TRUE;
+}
+

@@ -1,0 +1,17 @@
+﻿LIBRARY
+EXPORTS
+
+CountryRunOnce @9
+InvokeControlPanel @12
+ModemCplDlgProc @13
+ModemPropPagesProvider @14
+QueryModemForCountrySettings @15
+UnimodemDevConfigDialog @8
+UnimodemGetDefaultCommConfig @10
+UnimodemGetExtendedCaps @11
+drvCommConfigDialogA @3
+drvCommConfigDialogW @2
+drvGetDefaultCommConfigA @7
+drvGetDefaultCommConfigW @6
+drvSetDefaultCommConfigA @5
+drvSetDefaultCommConfigW @4

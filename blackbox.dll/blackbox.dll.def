@@ -1,0 +1,11 @@
+﻿LIBRARY
+EXPORTS
+
+DllMain @1
+DllRegisterServer @2
+DllUnregisterServer @3
+IBlackBox_CreateInstance @4
+IBlackBox_CreateInstance2 @5
+IBlackBox_CreateInstanceEx @6
+IBlackBox_CreateInstanceEx2 @7
+IBlackBox_DestroyInstance @8

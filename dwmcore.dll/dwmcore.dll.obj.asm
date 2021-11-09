@@ -1,0 +1,290 @@
+ifndef X64
+.686p
+.XMM
+.safeseh SEH_handler
+.model flat, C
+option dotname
+option casemap : none
+endif
+
+extern ptr_MIL3DCalcBrushToIdealSampleSpace : PTR;
+extern ptr_MIL3DCalcProjected2DBounds : PTR;
+extern ptr_MILCreateFactory : PTR;
+extern ptr_MilChannel_AppendCommandData : PTR;
+extern ptr_MilChannel_BeginCommand : PTR;
+extern ptr_MilChannel_CommitChannel : PTR;
+extern ptr_MilChannel_EndCommand : PTR;
+extern ptr_MilChannel_FreeSyncCommandReplay : PTR;
+extern ptr_MilChannel_GetMarshalType : PTR;
+extern ptr_MilChannel_SendSyncCommand : PTR;
+extern ptr_MilChannel_SetNotificationWindow : PTR;
+extern ptr_MilChannel_SetReceiveBroadcastMessages : PTR;
+extern ptr_MilCommandTransport_AddRef : PTR;
+extern ptr_MilCommandTransport_Release : PTR;
+extern ptr_MilCompositionEngine_DeinitializePartitionManager : PTR;
+extern ptr_MilCompositionEngine_GetComposedEventId : PTR;
+extern ptr_MilCompositionEngine_GetFeedbackReader : PTR;
+extern ptr_MilCompositionEngine_InitializePartitionManager : PTR;
+extern ptr_MilCompositionEngine_UpdateSchedulerSettings : PTR;
+extern ptr_MilComposition_PeekNextMessage : PTR;
+extern ptr_MilComposition_SyncFlush : PTR;
+extern ptr_MilComposition_WaitForNextMessage : PTR;
+extern ptr_MilConnectionManager_NotifyHostEvent : PTR;
+extern ptr_MilConnection_ClearSfmEventOnPartition : PTR;
+extern ptr_MilConnection_CreateChannel : PTR;
+extern ptr_MilConnection_DestroyChannel : PTR;
+extern ptr_MilConnection_HandleSfmEventOnPartition : PTR;
+extern ptr_MilConnection_RecordUCE : PTR;
+extern ptr_MilCoreClientIsDwm : PTR;
+extern ptr_MilCrossThreadPacketTransport_Create : PTR;
+extern ptr_MilPlayer_Create : PTR;
+extern ptr_MilPlayer_Process : PTR;
+extern ptr_MilResource_CreateOrAddRefOnChannel : PTR;
+extern ptr_MilResource_DuplicateHandle : PTR;
+extern ptr_MilResource_ReleaseOnChannel : PTR;
+extern ptr_MilResource_SendCommand : PTR;
+extern ptr_MilResource_SendCommandBitmapSource : PTR;
+extern ptr_MilTransport_AddRef : PTR;
+extern ptr_MilTransport_Close : PTR;
+extern ptr_MilTransport_Create : PTR;
+extern ptr_MilTransport_CreateFromPacketTransport : PTR;
+extern ptr_MilTransport_CreateSurfaceManager : PTR;
+extern ptr_MilTransport_CreateTransportParameters : PTR;
+extern ptr_MilTransport_DisconnectTransport : PTR;
+extern ptr_MilTransport_InitializeConnectionManager : PTR;
+extern ptr_MilTransport_Open : PTR;
+extern ptr_MilTransport_PostPacket : PTR;
+extern ptr_MilTransport_Release : PTR;
+extern ptr_MilTransport_ShutDownConnectionManager : PTR;
+extern ptr_MilUtility_GetTileBrushMapping : PTR;
+extern ptr_MilVersionCheck : PTR;
+extern ptr_MilVisualTarget_AttachToHwnd : PTR;
+extern ptr_MilVisualTarget_DetachFromHwnd : PTR;
+extern ptr_SetMilPerfInstrumentationFlags : PTR;
+
+
+.code
+
+align 16
+SEH_handler   proc
+; handler
+ret
+SEH_handler   endp
+
+MIL3DCalcBrushToIdealSampleSpace PROC
+jmp ptr_MIL3DCalcBrushToIdealSampleSpace
+MIL3DCalcBrushToIdealSampleSpace ENDP
+
+MIL3DCalcProjected2DBounds PROC
+jmp ptr_MIL3DCalcProjected2DBounds
+MIL3DCalcProjected2DBounds ENDP
+
+MILCreateFactory PROC
+jmp ptr_MILCreateFactory
+MILCreateFactory ENDP
+
+MilChannel_AppendCommandData PROC
+jmp ptr_MilChannel_AppendCommandData
+MilChannel_AppendCommandData ENDP
+
+MilChannel_BeginCommand PROC
+jmp ptr_MilChannel_BeginCommand
+MilChannel_BeginCommand ENDP
+
+MilChannel_CommitChannel PROC
+jmp ptr_MilChannel_CommitChannel
+MilChannel_CommitChannel ENDP
+
+MilChannel_EndCommand PROC
+jmp ptr_MilChannel_EndCommand
+MilChannel_EndCommand ENDP
+
+MilChannel_FreeSyncCommandReplay PROC
+jmp ptr_MilChannel_FreeSyncCommandReplay
+MilChannel_FreeSyncCommandReplay ENDP
+
+MilChannel_GetMarshalType PROC
+jmp ptr_MilChannel_GetMarshalType
+MilChannel_GetMarshalType ENDP
+
+MilChannel_SendSyncCommand PROC
+jmp ptr_MilChannel_SendSyncCommand
+MilChannel_SendSyncCommand ENDP
+
+MilChannel_SetNotificationWindow PROC
+jmp ptr_MilChannel_SetNotificationWindow
+MilChannel_SetNotificationWindow ENDP
+
+MilChannel_SetReceiveBroadcastMessages PROC
+jmp ptr_MilChannel_SetReceiveBroadcastMessages
+MilChannel_SetReceiveBroadcastMessages ENDP
+
+MilCommandTransport_AddRef PROC
+jmp ptr_MilCommandTransport_AddRef
+MilCommandTransport_AddRef ENDP
+
+MilCommandTransport_Release PROC
+jmp ptr_MilCommandTransport_Release
+MilCommandTransport_Release ENDP
+
+MilCompositionEngine_DeinitializePartitionManager PROC
+jmp ptr_MilCompositionEngine_DeinitializePartitionManager
+MilCompositionEngine_DeinitializePartitionManager ENDP
+
+MilCompositionEngine_GetComposedEventId PROC
+jmp ptr_MilCompositionEngine_GetComposedEventId
+MilCompositionEngine_GetComposedEventId ENDP
+
+MilCompositionEngine_GetFeedbackReader PROC
+jmp ptr_MilCompositionEngine_GetFeedbackReader
+MilCompositionEngine_GetFeedbackReader ENDP
+
+MilCompositionEngine_InitializePartitionManager PROC
+jmp ptr_MilCompositionEngine_InitializePartitionManager
+MilCompositionEngine_InitializePartitionManager ENDP
+
+MilCompositionEngine_UpdateSchedulerSettings PROC
+jmp ptr_MilCompositionEngine_UpdateSchedulerSettings
+MilCompositionEngine_UpdateSchedulerSettings ENDP
+
+MilComposition_PeekNextMessage PROC
+jmp ptr_MilComposition_PeekNextMessage
+MilComposition_PeekNextMessage ENDP
+
+MilComposition_SyncFlush PROC
+jmp ptr_MilComposition_SyncFlush
+MilComposition_SyncFlush ENDP
+
+MilComposition_WaitForNextMessage PROC
+jmp ptr_MilComposition_WaitForNextMessage
+MilComposition_WaitForNextMessage ENDP
+
+MilConnectionManager_NotifyHostEvent PROC
+jmp ptr_MilConnectionManager_NotifyHostEvent
+MilConnectionManager_NotifyHostEvent ENDP
+
+MilConnection_ClearSfmEventOnPartition PROC
+jmp ptr_MilConnection_ClearSfmEventOnPartition
+MilConnection_ClearSfmEventOnPartition ENDP
+
+MilConnection_CreateChannel PROC
+jmp ptr_MilConnection_CreateChannel
+MilConnection_CreateChannel ENDP
+
+MilConnection_DestroyChannel PROC
+jmp ptr_MilConnection_DestroyChannel
+MilConnection_DestroyChannel ENDP
+
+MilConnection_HandleSfmEventOnPartition PROC
+jmp ptr_MilConnection_HandleSfmEventOnPartition
+MilConnection_HandleSfmEventOnPartition ENDP
+
+MilConnection_RecordUCE PROC
+jmp ptr_MilConnection_RecordUCE
+MilConnection_RecordUCE ENDP
+
+MilCoreClientIsDwm PROC
+jmp ptr_MilCoreClientIsDwm
+MilCoreClientIsDwm ENDP
+
+MilCrossThreadPacketTransport_Create PROC
+jmp ptr_MilCrossThreadPacketTransport_Create
+MilCrossThreadPacketTransport_Create ENDP
+
+MilPlayer_Create PROC
+jmp ptr_MilPlayer_Create
+MilPlayer_Create ENDP
+
+MilPlayer_Process PROC
+jmp ptr_MilPlayer_Process
+MilPlayer_Process ENDP
+
+MilResource_CreateOrAddRefOnChannel PROC
+jmp ptr_MilResource_CreateOrAddRefOnChannel
+MilResource_CreateOrAddRefOnChannel ENDP
+
+MilResource_DuplicateHandle PROC
+jmp ptr_MilResource_DuplicateHandle
+MilResource_DuplicateHandle ENDP
+
+MilResource_ReleaseOnChannel PROC
+jmp ptr_MilResource_ReleaseOnChannel
+MilResource_ReleaseOnChannel ENDP
+
+MilResource_SendCommand PROC
+jmp ptr_MilResource_SendCommand
+MilResource_SendCommand ENDP
+
+MilResource_SendCommandBitmapSource PROC
+jmp ptr_MilResource_SendCommandBitmapSource
+MilResource_SendCommandBitmapSource ENDP
+
+MilTransport_AddRef PROC
+jmp ptr_MilTransport_AddRef
+MilTransport_AddRef ENDP
+
+MilTransport_Close PROC
+jmp ptr_MilTransport_Close
+MilTransport_Close ENDP
+
+MilTransport_Create PROC
+jmp ptr_MilTransport_Create
+MilTransport_Create ENDP
+
+MilTransport_CreateFromPacketTransport PROC
+jmp ptr_MilTransport_CreateFromPacketTransport
+MilTransport_CreateFromPacketTransport ENDP
+
+MilTransport_CreateSurfaceManager PROC
+jmp ptr_MilTransport_CreateSurfaceManager
+MilTransport_CreateSurfaceManager ENDP
+
+MilTransport_CreateTransportParameters PROC
+jmp ptr_MilTransport_CreateTransportParameters
+MilTransport_CreateTransportParameters ENDP
+
+MilTransport_DisconnectTransport PROC
+jmp ptr_MilTransport_DisconnectTransport
+MilTransport_DisconnectTransport ENDP
+
+MilTransport_InitializeConnectionManager PROC
+jmp ptr_MilTransport_InitializeConnectionManager
+MilTransport_InitializeConnectionManager ENDP
+
+MilTransport_Open PROC
+jmp ptr_MilTransport_Open
+MilTransport_Open ENDP
+
+MilTransport_PostPacket PROC
+jmp ptr_MilTransport_PostPacket
+MilTransport_PostPacket ENDP
+
+MilTransport_Release PROC
+jmp ptr_MilTransport_Release
+MilTransport_Release ENDP
+
+MilTransport_ShutDownConnectionManager PROC
+jmp ptr_MilTransport_ShutDownConnectionManager
+MilTransport_ShutDownConnectionManager ENDP
+
+MilUtility_GetTileBrushMapping PROC
+jmp ptr_MilUtility_GetTileBrushMapping
+MilUtility_GetTileBrushMapping ENDP
+
+MilVersionCheck PROC
+jmp ptr_MilVersionCheck
+MilVersionCheck ENDP
+
+MilVisualTarget_AttachToHwnd PROC
+jmp ptr_MilVisualTarget_AttachToHwnd
+MilVisualTarget_AttachToHwnd ENDP
+
+MilVisualTarget_DetachFromHwnd PROC
+jmp ptr_MilVisualTarget_DetachFromHwnd
+MilVisualTarget_DetachFromHwnd ENDP
+
+SetMilPerfInstrumentationFlags PROC
+jmp ptr_SetMilPerfInstrumentationFlags
+SetMilPerfInstrumentationFlags ENDP
+
+end

@@ -1,0 +1,1405 @@
+ifndef X64
+.686p
+.XMM
+.safeseh SEH_handler
+.model flat, C
+option dotname
+option casemap : none
+endif
+
+extern ptr_CertAddCRLContextToStore : PTR;
+extern ptr_CertAddCRLLinkToStore : PTR;
+extern ptr_CertAddCTLContextToStore : PTR;
+extern ptr_CertAddCTLLinkToStore : PTR;
+extern ptr_CertAddCertificateContextToStore : PTR;
+extern ptr_CertAddCertificateLinkToStore : PTR;
+extern ptr_CertAddEncodedCRLToStore : PTR;
+extern ptr_CertAddEncodedCTLToStore : PTR;
+extern ptr_CertAddEncodedCertificateToStore : PTR;
+extern ptr_CertAddEncodedCertificateToSystemStoreA : PTR;
+extern ptr_CertAddEncodedCertificateToSystemStoreW : PTR;
+extern ptr_CertAddEnhancedKeyUsageIdentifier : PTR;
+extern ptr_CertAddRefServerOcspResponse : PTR;
+extern ptr_CertAddRefServerOcspResponseContext : PTR;
+extern ptr_CertAddSerializedElementToStore : PTR;
+extern ptr_CertAddStoreToCollection : PTR;
+extern ptr_CertAlgIdToOID : PTR;
+extern ptr_CertCloseServerOcspResponse : PTR;
+extern ptr_CertCloseStore : PTR;
+extern ptr_CertCompareCertificate : PTR;
+extern ptr_CertCompareCertificateName : PTR;
+extern ptr_CertCompareIntegerBlob : PTR;
+extern ptr_CertComparePublicKeyInfo : PTR;
+extern ptr_CertControlStore : PTR;
+extern ptr_CertCreateCRLContext : PTR;
+extern ptr_CertCreateCTLContext : PTR;
+extern ptr_CertCreateCTLEntryFromCertificateContextProperties : PTR;
+extern ptr_CertCreateCertificateChainEngine : PTR;
+extern ptr_CertCreateCertificateContext : PTR;
+extern ptr_CertCreateContext : PTR;
+extern ptr_CertCreateSelfSignCertificate : PTR;
+extern ptr_CertDeleteCRLFromStore : PTR;
+extern ptr_CertDeleteCTLFromStore : PTR;
+extern ptr_CertDeleteCertificateFromStore : PTR;
+extern ptr_CertDuplicateCRLContext : PTR;
+extern ptr_CertDuplicateCTLContext : PTR;
+extern ptr_CertDuplicateCertificateChain : PTR;
+extern ptr_CertDuplicateCertificateContext : PTR;
+extern ptr_CertDuplicateStore : PTR;
+extern ptr_CertEnumCRLContextProperties : PTR;
+extern ptr_CertEnumCRLsInStore : PTR;
+extern ptr_CertEnumCTLContextProperties : PTR;
+extern ptr_CertEnumCTLsInStore : PTR;
+extern ptr_CertEnumCertificateContextProperties : PTR;
+extern ptr_CertEnumCertificatesInStore : PTR;
+extern ptr_CertEnumPhysicalStore : PTR;
+extern ptr_CertEnumSubjectInSortedCTL : PTR;
+extern ptr_CertEnumSystemStore : PTR;
+extern ptr_CertEnumSystemStoreLocation : PTR;
+extern ptr_CertFindAttribute : PTR;
+extern ptr_CertFindCRLInStore : PTR;
+extern ptr_CertFindCTLInStore : PTR;
+extern ptr_CertFindCertificateInCRL : PTR;
+extern ptr_CertFindCertificateInStore : PTR;
+extern ptr_CertFindChainInStore : PTR;
+extern ptr_CertFindExtension : PTR;
+extern ptr_CertFindRDNAttr : PTR;
+extern ptr_CertFindSubjectInCTL : PTR;
+extern ptr_CertFindSubjectInSortedCTL : PTR;
+extern ptr_CertFreeCRLContext : PTR;
+extern ptr_CertFreeCTLContext : PTR;
+extern ptr_CertFreeCertificateChain : PTR;
+extern ptr_CertFreeCertificateChainEngine : PTR;
+extern ptr_CertFreeCertificateChainList : PTR;
+extern ptr_CertFreeCertificateContext : PTR;
+extern ptr_CertFreeServerOcspResponseContext : PTR;
+extern ptr_CertGetCRLContextProperty : PTR;
+extern ptr_CertGetCRLFromStore : PTR;
+extern ptr_CertGetCTLContextProperty : PTR;
+extern ptr_CertGetCertificateChain : PTR;
+extern ptr_CertGetCertificateContextProperty : PTR;
+extern ptr_CertGetEnhancedKeyUsage : PTR;
+extern ptr_CertGetIntendedKeyUsage : PTR;
+extern ptr_CertGetIssuerCertificateFromStore : PTR;
+extern ptr_CertGetNameStringA : PTR;
+extern ptr_CertGetNameStringW : PTR;
+extern ptr_CertGetPublicKeyLength : PTR;
+extern ptr_CertGetServerOcspResponseContext : PTR;
+extern ptr_CertGetStoreProperty : PTR;
+extern ptr_CertGetSubjectCertificateFromStore : PTR;
+extern ptr_CertGetValidUsages : PTR;
+extern ptr_CertIsRDNAttrsInCertificateName : PTR;
+extern ptr_CertIsStrongHashToSign : PTR;
+extern ptr_CertIsValidCRLForCertificate : PTR;
+extern ptr_CertNameToStrA : PTR;
+extern ptr_CertNameToStrW : PTR;
+extern ptr_CertOIDToAlgId : PTR;
+extern ptr_CertOpenServerOcspResponse : PTR;
+extern ptr_CertOpenStore : PTR;
+extern ptr_CertOpenSystemStoreA : PTR;
+extern ptr_CertOpenSystemStoreW : PTR;
+extern ptr_CertRDNValueToStrA : PTR;
+extern ptr_CertRDNValueToStrW : PTR;
+extern ptr_CertRegisterPhysicalStore : PTR;
+extern ptr_CertRegisterSystemStore : PTR;
+extern ptr_CertRemoveEnhancedKeyUsageIdentifier : PTR;
+extern ptr_CertRemoveStoreFromCollection : PTR;
+extern ptr_CertResyncCertificateChainEngine : PTR;
+extern ptr_CertRetrieveLogoOrBiometricInfo : PTR;
+extern ptr_CertSaveStore : PTR;
+extern ptr_CertSelectCertificateChains : PTR;
+extern ptr_CertSerializeCRLStoreElement : PTR;
+extern ptr_CertSerializeCTLStoreElement : PTR;
+extern ptr_CertSerializeCertificateStoreElement : PTR;
+extern ptr_CertSetCRLContextProperty : PTR;
+extern ptr_CertSetCTLContextProperty : PTR;
+extern ptr_CertSetCertificateContextPropertiesFromCTLEntry : PTR;
+extern ptr_CertSetCertificateContextProperty : PTR;
+extern ptr_CertSetEnhancedKeyUsage : PTR;
+extern ptr_CertSetStoreProperty : PTR;
+extern ptr_CertStrToNameA : PTR;
+extern ptr_CertStrToNameW : PTR;
+extern ptr_CertUnregisterPhysicalStore : PTR;
+extern ptr_CertUnregisterSystemStore : PTR;
+extern ptr_CertVerifyCRLRevocation : PTR;
+extern ptr_CertVerifyCRLTimeValidity : PTR;
+extern ptr_CertVerifyCTLUsage : PTR;
+extern ptr_CertVerifyCertificateChainPolicy : PTR;
+extern ptr_CertVerifyRevocation : PTR;
+extern ptr_CertVerifySubjectCertificateContext : PTR;
+extern ptr_CertVerifyTimeValidity : PTR;
+extern ptr_CertVerifyValidityNesting : PTR;
+extern ptr_CryptAcquireCertificatePrivateKey : PTR;
+extern ptr_CryptBinaryToStringA : PTR;
+extern ptr_CryptBinaryToStringW : PTR;
+extern ptr_CryptCloseAsyncHandle : PTR;
+extern ptr_CryptCreateAsyncHandle : PTR;
+extern ptr_CryptCreateKeyIdentifierFromCSP : PTR;
+extern ptr_CryptDecodeMessage : PTR;
+extern ptr_CryptDecodeObject : PTR;
+extern ptr_CryptDecodeObjectEx : PTR;
+extern ptr_CryptDecryptAndVerifyMessageSignature : PTR;
+extern ptr_CryptDecryptMessage : PTR;
+extern ptr_CryptEncodeObject : PTR;
+extern ptr_CryptEncodeObjectEx : PTR;
+extern ptr_CryptEncryptMessage : PTR;
+extern ptr_CryptEnumKeyIdentifierProperties : PTR;
+extern ptr_CryptEnumOIDFunction : PTR;
+extern ptr_CryptEnumOIDInfo : PTR;
+extern ptr_CryptExportPKCS8 : PTR;
+extern ptr_CryptExportPublicKeyInfo : PTR;
+extern ptr_CryptExportPublicKeyInfoEx : PTR;
+extern ptr_CryptExportPublicKeyInfoFromBCryptKeyHandle : PTR;
+extern ptr_CryptFindCertificateKeyProvInfo : PTR;
+extern ptr_CryptFindLocalizedName : PTR;
+extern ptr_CryptFindOIDInfo : PTR;
+extern ptr_CryptFormatObject : PTR;
+extern ptr_CryptFreeOIDFunctionAddress : PTR;
+extern ptr_CryptGetAsyncParam : PTR;
+extern ptr_CryptGetDefaultOIDDllList : PTR;
+extern ptr_CryptGetDefaultOIDFunctionAddress : PTR;
+extern ptr_CryptGetKeyIdentifierProperty : PTR;
+extern ptr_CryptGetMessageCertificates : PTR;
+extern ptr_CryptGetMessageSignerCount : PTR;
+extern ptr_CryptGetOIDFunctionAddress : PTR;
+extern ptr_CryptGetOIDFunctionValue : PTR;
+extern ptr_CryptHashCertificate : PTR;
+extern ptr_CryptHashCertificate2 : PTR;
+extern ptr_CryptHashMessage : PTR;
+extern ptr_CryptHashPublicKeyInfo : PTR;
+extern ptr_CryptHashToBeSigned : PTR;
+extern ptr_CryptImportPKCS8 : PTR;
+extern ptr_CryptImportPublicKeyInfo : PTR;
+extern ptr_CryptImportPublicKeyInfoEx : PTR;
+extern ptr_CryptImportPublicKeyInfoEx2 : PTR;
+extern ptr_CryptInitOIDFunctionSet : PTR;
+extern ptr_CryptInstallDefaultContext : PTR;
+extern ptr_CryptInstallOIDFunctionAddress : PTR;
+extern ptr_CryptLoadSip : PTR;
+extern ptr_CryptMemAlloc : PTR;
+extern ptr_CryptMemFree : PTR;
+extern ptr_CryptMemRealloc : PTR;
+extern ptr_CryptMsgCalculateEncodedLength : PTR;
+extern ptr_CryptMsgClose : PTR;
+extern ptr_CryptMsgControl : PTR;
+extern ptr_CryptMsgCountersign : PTR;
+extern ptr_CryptMsgCountersignEncoded : PTR;
+extern ptr_CryptMsgDuplicate : PTR;
+extern ptr_CryptMsgEncodeAndSignCTL : PTR;
+extern ptr_CryptMsgGetAndVerifySigner : PTR;
+extern ptr_CryptMsgGetParam : PTR;
+extern ptr_CryptMsgOpenToDecode : PTR;
+extern ptr_CryptMsgOpenToEncode : PTR;
+extern ptr_CryptMsgSignCTL : PTR;
+extern ptr_CryptMsgUpdate : PTR;
+extern ptr_CryptMsgVerifyCountersignatureEncoded : PTR;
+extern ptr_CryptMsgVerifyCountersignatureEncodedEx : PTR;
+extern ptr_CryptProtectData : PTR;
+extern ptr_CryptProtectMemory : PTR;
+extern ptr_CryptQueryObject : PTR;
+extern ptr_CryptRegisterDefaultOIDFunction : PTR;
+extern ptr_CryptRegisterOIDFunction : PTR;
+extern ptr_CryptRegisterOIDInfo : PTR;
+extern ptr_CryptRetrieveTimeStamp : PTR;
+extern ptr_CryptSIPAddProvider : PTR;
+extern ptr_CryptSIPCreateIndirectData : PTR;
+extern ptr_CryptSIPGetSignedDataMsg : PTR;
+extern ptr_CryptSIPLoad : PTR;
+extern ptr_CryptSIPPutSignedDataMsg : PTR;
+extern ptr_CryptSIPRemoveProvider : PTR;
+extern ptr_CryptSIPRemoveSignedDataMsg : PTR;
+extern ptr_CryptSIPRetrieveSubjectGuid : PTR;
+extern ptr_CryptSIPRetrieveSubjectGuidForCatalogFile : PTR;
+extern ptr_CryptSIPVerifyIndirectData : PTR;
+extern ptr_CryptSetAsyncParam : PTR;
+extern ptr_CryptSetKeyIdentifierProperty : PTR;
+extern ptr_CryptSetOIDFunctionValue : PTR;
+extern ptr_CryptSignAndEncodeCertificate : PTR;
+extern ptr_CryptSignAndEncryptMessage : PTR;
+extern ptr_CryptSignCertificate : PTR;
+extern ptr_CryptSignMessage : PTR;
+extern ptr_CryptSignMessageWithKey : PTR;
+extern ptr_CryptStringToBinaryA : PTR;
+extern ptr_CryptStringToBinaryW : PTR;
+extern ptr_CryptUninstallDefaultContext : PTR;
+extern ptr_CryptUnprotectData : PTR;
+extern ptr_CryptUnprotectMemory : PTR;
+extern ptr_CryptUnregisterDefaultOIDFunction : PTR;
+extern ptr_CryptUnregisterOIDFunction : PTR;
+extern ptr_CryptUnregisterOIDInfo : PTR;
+extern ptr_CryptUpdateProtectedState : PTR;
+extern ptr_CryptVerifyCertificateSignature : PTR;
+extern ptr_CryptVerifyCertificateSignatureEx : PTR;
+extern ptr_CryptVerifyDetachedMessageHash : PTR;
+extern ptr_CryptVerifyDetachedMessageSignature : PTR;
+extern ptr_CryptVerifyMessageHash : PTR;
+extern ptr_CryptVerifyMessageSignature : PTR;
+extern ptr_CryptVerifyMessageSignatureWithKey : PTR;
+extern ptr_CryptVerifyTimeStampSignature : PTR;
+extern ptr_I_CertDiagControl : PTR;
+extern ptr_I_CertProtectFunction : PTR;
+extern ptr_I_CertSrvProtectFunction : PTR;
+extern ptr_I_CertSyncStore : PTR;
+extern ptr_I_CertUpdateStore : PTR;
+extern ptr_I_CryptAddRefLruEntry : PTR;
+extern ptr_I_CryptAddSmartCardCertToStore : PTR;
+extern ptr_I_CryptAllocTls : PTR;
+extern ptr_I_CryptCreateLruCache : PTR;
+extern ptr_I_CryptCreateLruEntry : PTR;
+extern ptr_I_CryptDetachTls : PTR;
+extern ptr_I_CryptDisableLruOfEntries : PTR;
+extern ptr_I_CryptEnableLruOfEntries : PTR;
+extern ptr_I_CryptEnumMatchingLruEntries : PTR;
+extern ptr_I_CryptFindLruEntry : PTR;
+extern ptr_I_CryptFindLruEntryData : PTR;
+extern ptr_I_CryptFindSmartCardCertInStore : PTR;
+extern ptr_I_CryptFlushLruCache : PTR;
+extern ptr_I_CryptFreeLruCache : PTR;
+extern ptr_I_CryptFreeTls : PTR;
+extern ptr_I_CryptGetAsn1Decoder : PTR;
+extern ptr_I_CryptGetAsn1Encoder : PTR;
+extern ptr_I_CryptGetDefaultCryptProv : PTR;
+extern ptr_I_CryptGetDefaultCryptProvForEncrypt : PTR;
+extern ptr_I_CryptGetFileVersion : PTR;
+extern ptr_I_CryptGetLruEntryData : PTR;
+extern ptr_I_CryptGetLruEntryIdentifier : PTR;
+extern ptr_I_CryptGetOssGlobal : PTR;
+extern ptr_I_CryptGetTls : PTR;
+extern ptr_I_CryptInsertLruEntry : PTR;
+extern ptr_I_CryptInstallAsn1Module : PTR;
+extern ptr_I_CryptInstallOssGlobal : PTR;
+extern ptr_I_CryptReadTrustedPublisherDWORDValueFromRegistry : PTR;
+extern ptr_I_CryptRegisterSmartCardStore : PTR;
+extern ptr_I_CryptReleaseLruEntry : PTR;
+extern ptr_I_CryptRemoveLruEntry : PTR;
+extern ptr_I_CryptSetTls : PTR;
+extern ptr_I_CryptTouchLruEntry : PTR;
+extern ptr_I_CryptUninstallAsn1Module : PTR;
+extern ptr_I_CryptUninstallOssGlobal : PTR;
+extern ptr_I_CryptUnregisterSmartCardStore : PTR;
+extern ptr_I_CryptWalkAllLruCacheEntries : PTR;
+extern ptr_PFXExportCertStore : PTR;
+extern ptr_PFXExportCertStore2 : PTR;
+extern ptr_PFXExportCertStoreEx : PTR;
+extern ptr_PFXImportCertStore : PTR;
+extern ptr_PFXIsPFXBlob : PTR;
+extern ptr_PFXVerifyPassword : PTR;
+
+
+.code
+
+align 16
+SEH_handler   proc
+; handler
+ret
+SEH_handler   endp
+
+CertAddCRLContextToStore PROC
+jmp ptr_CertAddCRLContextToStore
+CertAddCRLContextToStore ENDP
+
+CertAddCRLLinkToStore PROC
+jmp ptr_CertAddCRLLinkToStore
+CertAddCRLLinkToStore ENDP
+
+CertAddCTLContextToStore PROC
+jmp ptr_CertAddCTLContextToStore
+CertAddCTLContextToStore ENDP
+
+CertAddCTLLinkToStore PROC
+jmp ptr_CertAddCTLLinkToStore
+CertAddCTLLinkToStore ENDP
+
+CertAddCertificateContextToStore PROC
+jmp ptr_CertAddCertificateContextToStore
+CertAddCertificateContextToStore ENDP
+
+CertAddCertificateLinkToStore PROC
+jmp ptr_CertAddCertificateLinkToStore
+CertAddCertificateLinkToStore ENDP
+
+CertAddEncodedCRLToStore PROC
+jmp ptr_CertAddEncodedCRLToStore
+CertAddEncodedCRLToStore ENDP
+
+CertAddEncodedCTLToStore PROC
+jmp ptr_CertAddEncodedCTLToStore
+CertAddEncodedCTLToStore ENDP
+
+CertAddEncodedCertificateToStore PROC
+jmp ptr_CertAddEncodedCertificateToStore
+CertAddEncodedCertificateToStore ENDP
+
+CertAddEncodedCertificateToSystemStoreA PROC
+jmp ptr_CertAddEncodedCertificateToSystemStoreA
+CertAddEncodedCertificateToSystemStoreA ENDP
+
+CertAddEncodedCertificateToSystemStoreW PROC
+jmp ptr_CertAddEncodedCertificateToSystemStoreW
+CertAddEncodedCertificateToSystemStoreW ENDP
+
+CertAddEnhancedKeyUsageIdentifier PROC
+jmp ptr_CertAddEnhancedKeyUsageIdentifier
+CertAddEnhancedKeyUsageIdentifier ENDP
+
+CertAddRefServerOcspResponse PROC
+jmp ptr_CertAddRefServerOcspResponse
+CertAddRefServerOcspResponse ENDP
+
+CertAddRefServerOcspResponseContext PROC
+jmp ptr_CertAddRefServerOcspResponseContext
+CertAddRefServerOcspResponseContext ENDP
+
+CertAddSerializedElementToStore PROC
+jmp ptr_CertAddSerializedElementToStore
+CertAddSerializedElementToStore ENDP
+
+CertAddStoreToCollection PROC
+jmp ptr_CertAddStoreToCollection
+CertAddStoreToCollection ENDP
+
+CertAlgIdToOID PROC
+jmp ptr_CertAlgIdToOID
+CertAlgIdToOID ENDP
+
+CertCloseServerOcspResponse PROC
+jmp ptr_CertCloseServerOcspResponse
+CertCloseServerOcspResponse ENDP
+
+CertCloseStore PROC
+jmp ptr_CertCloseStore
+CertCloseStore ENDP
+
+CertCompareCertificate PROC
+jmp ptr_CertCompareCertificate
+CertCompareCertificate ENDP
+
+CertCompareCertificateName PROC
+jmp ptr_CertCompareCertificateName
+CertCompareCertificateName ENDP
+
+CertCompareIntegerBlob PROC
+jmp ptr_CertCompareIntegerBlob
+CertCompareIntegerBlob ENDP
+
+CertComparePublicKeyInfo PROC
+jmp ptr_CertComparePublicKeyInfo
+CertComparePublicKeyInfo ENDP
+
+CertControlStore PROC
+jmp ptr_CertControlStore
+CertControlStore ENDP
+
+CertCreateCRLContext PROC
+jmp ptr_CertCreateCRLContext
+CertCreateCRLContext ENDP
+
+CertCreateCTLContext PROC
+jmp ptr_CertCreateCTLContext
+CertCreateCTLContext ENDP
+
+CertCreateCTLEntryFromCertificateContextProperties PROC
+jmp ptr_CertCreateCTLEntryFromCertificateContextProperties
+CertCreateCTLEntryFromCertificateContextProperties ENDP
+
+CertCreateCertificateChainEngine PROC
+jmp ptr_CertCreateCertificateChainEngine
+CertCreateCertificateChainEngine ENDP
+
+CertCreateCertificateContext PROC
+jmp ptr_CertCreateCertificateContext
+CertCreateCertificateContext ENDP
+
+CertCreateContext PROC
+jmp ptr_CertCreateContext
+CertCreateContext ENDP
+
+CertCreateSelfSignCertificate PROC
+jmp ptr_CertCreateSelfSignCertificate
+CertCreateSelfSignCertificate ENDP
+
+CertDeleteCRLFromStore PROC
+jmp ptr_CertDeleteCRLFromStore
+CertDeleteCRLFromStore ENDP
+
+CertDeleteCTLFromStore PROC
+jmp ptr_CertDeleteCTLFromStore
+CertDeleteCTLFromStore ENDP
+
+CertDeleteCertificateFromStore PROC
+jmp ptr_CertDeleteCertificateFromStore
+CertDeleteCertificateFromStore ENDP
+
+CertDuplicateCRLContext PROC
+jmp ptr_CertDuplicateCRLContext
+CertDuplicateCRLContext ENDP
+
+CertDuplicateCTLContext PROC
+jmp ptr_CertDuplicateCTLContext
+CertDuplicateCTLContext ENDP
+
+CertDuplicateCertificateChain PROC
+jmp ptr_CertDuplicateCertificateChain
+CertDuplicateCertificateChain ENDP
+
+CertDuplicateCertificateContext PROC
+jmp ptr_CertDuplicateCertificateContext
+CertDuplicateCertificateContext ENDP
+
+CertDuplicateStore PROC
+jmp ptr_CertDuplicateStore
+CertDuplicateStore ENDP
+
+CertEnumCRLContextProperties PROC
+jmp ptr_CertEnumCRLContextProperties
+CertEnumCRLContextProperties ENDP
+
+CertEnumCRLsInStore PROC
+jmp ptr_CertEnumCRLsInStore
+CertEnumCRLsInStore ENDP
+
+CertEnumCTLContextProperties PROC
+jmp ptr_CertEnumCTLContextProperties
+CertEnumCTLContextProperties ENDP
+
+CertEnumCTLsInStore PROC
+jmp ptr_CertEnumCTLsInStore
+CertEnumCTLsInStore ENDP
+
+CertEnumCertificateContextProperties PROC
+jmp ptr_CertEnumCertificateContextProperties
+CertEnumCertificateContextProperties ENDP
+
+CertEnumCertificatesInStore PROC
+jmp ptr_CertEnumCertificatesInStore
+CertEnumCertificatesInStore ENDP
+
+CertEnumPhysicalStore PROC
+jmp ptr_CertEnumPhysicalStore
+CertEnumPhysicalStore ENDP
+
+CertEnumSubjectInSortedCTL PROC
+jmp ptr_CertEnumSubjectInSortedCTL
+CertEnumSubjectInSortedCTL ENDP
+
+CertEnumSystemStore PROC
+jmp ptr_CertEnumSystemStore
+CertEnumSystemStore ENDP
+
+CertEnumSystemStoreLocation PROC
+jmp ptr_CertEnumSystemStoreLocation
+CertEnumSystemStoreLocation ENDP
+
+CertFindAttribute PROC
+jmp ptr_CertFindAttribute
+CertFindAttribute ENDP
+
+CertFindCRLInStore PROC
+jmp ptr_CertFindCRLInStore
+CertFindCRLInStore ENDP
+
+CertFindCTLInStore PROC
+jmp ptr_CertFindCTLInStore
+CertFindCTLInStore ENDP
+
+CertFindCertificateInCRL PROC
+jmp ptr_CertFindCertificateInCRL
+CertFindCertificateInCRL ENDP
+
+CertFindCertificateInStore PROC
+jmp ptr_CertFindCertificateInStore
+CertFindCertificateInStore ENDP
+
+CertFindChainInStore PROC
+jmp ptr_CertFindChainInStore
+CertFindChainInStore ENDP
+
+CertFindExtension PROC
+jmp ptr_CertFindExtension
+CertFindExtension ENDP
+
+CertFindRDNAttr PROC
+jmp ptr_CertFindRDNAttr
+CertFindRDNAttr ENDP
+
+CertFindSubjectInCTL PROC
+jmp ptr_CertFindSubjectInCTL
+CertFindSubjectInCTL ENDP
+
+CertFindSubjectInSortedCTL PROC
+jmp ptr_CertFindSubjectInSortedCTL
+CertFindSubjectInSortedCTL ENDP
+
+CertFreeCRLContext PROC
+jmp ptr_CertFreeCRLContext
+CertFreeCRLContext ENDP
+
+CertFreeCTLContext PROC
+jmp ptr_CertFreeCTLContext
+CertFreeCTLContext ENDP
+
+CertFreeCertificateChain PROC
+jmp ptr_CertFreeCertificateChain
+CertFreeCertificateChain ENDP
+
+CertFreeCertificateChainEngine PROC
+jmp ptr_CertFreeCertificateChainEngine
+CertFreeCertificateChainEngine ENDP
+
+CertFreeCertificateChainList PROC
+jmp ptr_CertFreeCertificateChainList
+CertFreeCertificateChainList ENDP
+
+CertFreeCertificateContext PROC
+jmp ptr_CertFreeCertificateContext
+CertFreeCertificateContext ENDP
+
+CertFreeServerOcspResponseContext PROC
+jmp ptr_CertFreeServerOcspResponseContext
+CertFreeServerOcspResponseContext ENDP
+
+CertGetCRLContextProperty PROC
+jmp ptr_CertGetCRLContextProperty
+CertGetCRLContextProperty ENDP
+
+CertGetCRLFromStore PROC
+jmp ptr_CertGetCRLFromStore
+CertGetCRLFromStore ENDP
+
+CertGetCTLContextProperty PROC
+jmp ptr_CertGetCTLContextProperty
+CertGetCTLContextProperty ENDP
+
+CertGetCertificateChain PROC
+jmp ptr_CertGetCertificateChain
+CertGetCertificateChain ENDP
+
+CertGetCertificateContextProperty PROC
+jmp ptr_CertGetCertificateContextProperty
+CertGetCertificateContextProperty ENDP
+
+CertGetEnhancedKeyUsage PROC
+jmp ptr_CertGetEnhancedKeyUsage
+CertGetEnhancedKeyUsage ENDP
+
+CertGetIntendedKeyUsage PROC
+jmp ptr_CertGetIntendedKeyUsage
+CertGetIntendedKeyUsage ENDP
+
+CertGetIssuerCertificateFromStore PROC
+jmp ptr_CertGetIssuerCertificateFromStore
+CertGetIssuerCertificateFromStore ENDP
+
+CertGetNameStringA PROC
+jmp ptr_CertGetNameStringA
+CertGetNameStringA ENDP
+
+CertGetNameStringW PROC
+jmp ptr_CertGetNameStringW
+CertGetNameStringW ENDP
+
+CertGetPublicKeyLength PROC
+jmp ptr_CertGetPublicKeyLength
+CertGetPublicKeyLength ENDP
+
+CertGetServerOcspResponseContext PROC
+jmp ptr_CertGetServerOcspResponseContext
+CertGetServerOcspResponseContext ENDP
+
+CertGetStoreProperty PROC
+jmp ptr_CertGetStoreProperty
+CertGetStoreProperty ENDP
+
+CertGetSubjectCertificateFromStore PROC
+jmp ptr_CertGetSubjectCertificateFromStore
+CertGetSubjectCertificateFromStore ENDP
+
+CertGetValidUsages PROC
+jmp ptr_CertGetValidUsages
+CertGetValidUsages ENDP
+
+CertIsRDNAttrsInCertificateName PROC
+jmp ptr_CertIsRDNAttrsInCertificateName
+CertIsRDNAttrsInCertificateName ENDP
+
+CertIsStrongHashToSign PROC
+jmp ptr_CertIsStrongHashToSign
+CertIsStrongHashToSign ENDP
+
+CertIsValidCRLForCertificate PROC
+jmp ptr_CertIsValidCRLForCertificate
+CertIsValidCRLForCertificate ENDP
+
+CertNameToStrA PROC
+jmp ptr_CertNameToStrA
+CertNameToStrA ENDP
+
+CertNameToStrW PROC
+jmp ptr_CertNameToStrW
+CertNameToStrW ENDP
+
+CertOIDToAlgId PROC
+jmp ptr_CertOIDToAlgId
+CertOIDToAlgId ENDP
+
+CertOpenServerOcspResponse PROC
+jmp ptr_CertOpenServerOcspResponse
+CertOpenServerOcspResponse ENDP
+
+CertOpenStore PROC
+jmp ptr_CertOpenStore
+CertOpenStore ENDP
+
+CertOpenSystemStoreA PROC
+jmp ptr_CertOpenSystemStoreA
+CertOpenSystemStoreA ENDP
+
+CertOpenSystemStoreW PROC
+jmp ptr_CertOpenSystemStoreW
+CertOpenSystemStoreW ENDP
+
+CertRDNValueToStrA PROC
+jmp ptr_CertRDNValueToStrA
+CertRDNValueToStrA ENDP
+
+CertRDNValueToStrW PROC
+jmp ptr_CertRDNValueToStrW
+CertRDNValueToStrW ENDP
+
+CertRegisterPhysicalStore PROC
+jmp ptr_CertRegisterPhysicalStore
+CertRegisterPhysicalStore ENDP
+
+CertRegisterSystemStore PROC
+jmp ptr_CertRegisterSystemStore
+CertRegisterSystemStore ENDP
+
+CertRemoveEnhancedKeyUsageIdentifier PROC
+jmp ptr_CertRemoveEnhancedKeyUsageIdentifier
+CertRemoveEnhancedKeyUsageIdentifier ENDP
+
+CertRemoveStoreFromCollection PROC
+jmp ptr_CertRemoveStoreFromCollection
+CertRemoveStoreFromCollection ENDP
+
+CertResyncCertificateChainEngine PROC
+jmp ptr_CertResyncCertificateChainEngine
+CertResyncCertificateChainEngine ENDP
+
+CertRetrieveLogoOrBiometricInfo PROC
+jmp ptr_CertRetrieveLogoOrBiometricInfo
+CertRetrieveLogoOrBiometricInfo ENDP
+
+CertSaveStore PROC
+jmp ptr_CertSaveStore
+CertSaveStore ENDP
+
+CertSelectCertificateChains PROC
+jmp ptr_CertSelectCertificateChains
+CertSelectCertificateChains ENDP
+
+CertSerializeCRLStoreElement PROC
+jmp ptr_CertSerializeCRLStoreElement
+CertSerializeCRLStoreElement ENDP
+
+CertSerializeCTLStoreElement PROC
+jmp ptr_CertSerializeCTLStoreElement
+CertSerializeCTLStoreElement ENDP
+
+CertSerializeCertificateStoreElement PROC
+jmp ptr_CertSerializeCertificateStoreElement
+CertSerializeCertificateStoreElement ENDP
+
+CertSetCRLContextProperty PROC
+jmp ptr_CertSetCRLContextProperty
+CertSetCRLContextProperty ENDP
+
+CertSetCTLContextProperty PROC
+jmp ptr_CertSetCTLContextProperty
+CertSetCTLContextProperty ENDP
+
+CertSetCertificateContextPropertiesFromCTLEntry PROC
+jmp ptr_CertSetCertificateContextPropertiesFromCTLEntry
+CertSetCertificateContextPropertiesFromCTLEntry ENDP
+
+CertSetCertificateContextProperty PROC
+jmp ptr_CertSetCertificateContextProperty
+CertSetCertificateContextProperty ENDP
+
+CertSetEnhancedKeyUsage PROC
+jmp ptr_CertSetEnhancedKeyUsage
+CertSetEnhancedKeyUsage ENDP
+
+CertSetStoreProperty PROC
+jmp ptr_CertSetStoreProperty
+CertSetStoreProperty ENDP
+
+CertStrToNameA PROC
+jmp ptr_CertStrToNameA
+CertStrToNameA ENDP
+
+CertStrToNameW PROC
+jmp ptr_CertStrToNameW
+CertStrToNameW ENDP
+
+CertUnregisterPhysicalStore PROC
+jmp ptr_CertUnregisterPhysicalStore
+CertUnregisterPhysicalStore ENDP
+
+CertUnregisterSystemStore PROC
+jmp ptr_CertUnregisterSystemStore
+CertUnregisterSystemStore ENDP
+
+CertVerifyCRLRevocation PROC
+jmp ptr_CertVerifyCRLRevocation
+CertVerifyCRLRevocation ENDP
+
+CertVerifyCRLTimeValidity PROC
+jmp ptr_CertVerifyCRLTimeValidity
+CertVerifyCRLTimeValidity ENDP
+
+CertVerifyCTLUsage PROC
+jmp ptr_CertVerifyCTLUsage
+CertVerifyCTLUsage ENDP
+
+CertVerifyCertificateChainPolicy PROC
+jmp ptr_CertVerifyCertificateChainPolicy
+CertVerifyCertificateChainPolicy ENDP
+
+CertVerifyRevocation PROC
+jmp ptr_CertVerifyRevocation
+CertVerifyRevocation ENDP
+
+CertVerifySubjectCertificateContext PROC
+jmp ptr_CertVerifySubjectCertificateContext
+CertVerifySubjectCertificateContext ENDP
+
+CertVerifyTimeValidity PROC
+jmp ptr_CertVerifyTimeValidity
+CertVerifyTimeValidity ENDP
+
+CertVerifyValidityNesting PROC
+jmp ptr_CertVerifyValidityNesting
+CertVerifyValidityNesting ENDP
+
+CryptAcquireCertificatePrivateKey PROC
+jmp ptr_CryptAcquireCertificatePrivateKey
+CryptAcquireCertificatePrivateKey ENDP
+
+CryptBinaryToStringA PROC
+jmp ptr_CryptBinaryToStringA
+CryptBinaryToStringA ENDP
+
+CryptBinaryToStringW PROC
+jmp ptr_CryptBinaryToStringW
+CryptBinaryToStringW ENDP
+
+CryptCloseAsyncHandle PROC
+jmp ptr_CryptCloseAsyncHandle
+CryptCloseAsyncHandle ENDP
+
+CryptCreateAsyncHandle PROC
+jmp ptr_CryptCreateAsyncHandle
+CryptCreateAsyncHandle ENDP
+
+CryptCreateKeyIdentifierFromCSP PROC
+jmp ptr_CryptCreateKeyIdentifierFromCSP
+CryptCreateKeyIdentifierFromCSP ENDP
+
+CryptDecodeMessage PROC
+jmp ptr_CryptDecodeMessage
+CryptDecodeMessage ENDP
+
+CryptDecodeObject PROC
+jmp ptr_CryptDecodeObject
+CryptDecodeObject ENDP
+
+CryptDecodeObjectEx PROC
+jmp ptr_CryptDecodeObjectEx
+CryptDecodeObjectEx ENDP
+
+CryptDecryptAndVerifyMessageSignature PROC
+jmp ptr_CryptDecryptAndVerifyMessageSignature
+CryptDecryptAndVerifyMessageSignature ENDP
+
+CryptDecryptMessage PROC
+jmp ptr_CryptDecryptMessage
+CryptDecryptMessage ENDP
+
+CryptEncodeObject PROC
+jmp ptr_CryptEncodeObject
+CryptEncodeObject ENDP
+
+CryptEncodeObjectEx PROC
+jmp ptr_CryptEncodeObjectEx
+CryptEncodeObjectEx ENDP
+
+CryptEncryptMessage PROC
+jmp ptr_CryptEncryptMessage
+CryptEncryptMessage ENDP
+
+CryptEnumKeyIdentifierProperties PROC
+jmp ptr_CryptEnumKeyIdentifierProperties
+CryptEnumKeyIdentifierProperties ENDP
+
+CryptEnumOIDFunction PROC
+jmp ptr_CryptEnumOIDFunction
+CryptEnumOIDFunction ENDP
+
+CryptEnumOIDInfo PROC
+jmp ptr_CryptEnumOIDInfo
+CryptEnumOIDInfo ENDP
+
+CryptExportPKCS8 PROC
+jmp ptr_CryptExportPKCS8
+CryptExportPKCS8 ENDP
+
+CryptExportPublicKeyInfo PROC
+jmp ptr_CryptExportPublicKeyInfo
+CryptExportPublicKeyInfo ENDP
+
+CryptExportPublicKeyInfoEx PROC
+jmp ptr_CryptExportPublicKeyInfoEx
+CryptExportPublicKeyInfoEx ENDP
+
+CryptExportPublicKeyInfoFromBCryptKeyHandle PROC
+jmp ptr_CryptExportPublicKeyInfoFromBCryptKeyHandle
+CryptExportPublicKeyInfoFromBCryptKeyHandle ENDP
+
+CryptFindCertificateKeyProvInfo PROC
+jmp ptr_CryptFindCertificateKeyProvInfo
+CryptFindCertificateKeyProvInfo ENDP
+
+CryptFindLocalizedName PROC
+jmp ptr_CryptFindLocalizedName
+CryptFindLocalizedName ENDP
+
+CryptFindOIDInfo PROC
+jmp ptr_CryptFindOIDInfo
+CryptFindOIDInfo ENDP
+
+CryptFormatObject PROC
+jmp ptr_CryptFormatObject
+CryptFormatObject ENDP
+
+CryptFreeOIDFunctionAddress PROC
+jmp ptr_CryptFreeOIDFunctionAddress
+CryptFreeOIDFunctionAddress ENDP
+
+CryptGetAsyncParam PROC
+jmp ptr_CryptGetAsyncParam
+CryptGetAsyncParam ENDP
+
+CryptGetDefaultOIDDllList PROC
+jmp ptr_CryptGetDefaultOIDDllList
+CryptGetDefaultOIDDllList ENDP
+
+CryptGetDefaultOIDFunctionAddress PROC
+jmp ptr_CryptGetDefaultOIDFunctionAddress
+CryptGetDefaultOIDFunctionAddress ENDP
+
+CryptGetKeyIdentifierProperty PROC
+jmp ptr_CryptGetKeyIdentifierProperty
+CryptGetKeyIdentifierProperty ENDP
+
+CryptGetMessageCertificates PROC
+jmp ptr_CryptGetMessageCertificates
+CryptGetMessageCertificates ENDP
+
+CryptGetMessageSignerCount PROC
+jmp ptr_CryptGetMessageSignerCount
+CryptGetMessageSignerCount ENDP
+
+CryptGetOIDFunctionAddress PROC
+jmp ptr_CryptGetOIDFunctionAddress
+CryptGetOIDFunctionAddress ENDP
+
+CryptGetOIDFunctionValue PROC
+jmp ptr_CryptGetOIDFunctionValue
+CryptGetOIDFunctionValue ENDP
+
+CryptHashCertificate PROC
+jmp ptr_CryptHashCertificate
+CryptHashCertificate ENDP
+
+CryptHashCertificate2 PROC
+jmp ptr_CryptHashCertificate2
+CryptHashCertificate2 ENDP
+
+CryptHashMessage PROC
+jmp ptr_CryptHashMessage
+CryptHashMessage ENDP
+
+CryptHashPublicKeyInfo PROC
+jmp ptr_CryptHashPublicKeyInfo
+CryptHashPublicKeyInfo ENDP
+
+CryptHashToBeSigned PROC
+jmp ptr_CryptHashToBeSigned
+CryptHashToBeSigned ENDP
+
+CryptImportPKCS8 PROC
+jmp ptr_CryptImportPKCS8
+CryptImportPKCS8 ENDP
+
+CryptImportPublicKeyInfo PROC
+jmp ptr_CryptImportPublicKeyInfo
+CryptImportPublicKeyInfo ENDP
+
+CryptImportPublicKeyInfoEx PROC
+jmp ptr_CryptImportPublicKeyInfoEx
+CryptImportPublicKeyInfoEx ENDP
+
+CryptImportPublicKeyInfoEx2 PROC
+jmp ptr_CryptImportPublicKeyInfoEx2
+CryptImportPublicKeyInfoEx2 ENDP
+
+CryptInitOIDFunctionSet PROC
+jmp ptr_CryptInitOIDFunctionSet
+CryptInitOIDFunctionSet ENDP
+
+CryptInstallDefaultContext PROC
+jmp ptr_CryptInstallDefaultContext
+CryptInstallDefaultContext ENDP
+
+CryptInstallOIDFunctionAddress PROC
+jmp ptr_CryptInstallOIDFunctionAddress
+CryptInstallOIDFunctionAddress ENDP
+
+CryptLoadSip PROC
+jmp ptr_CryptLoadSip
+CryptLoadSip ENDP
+
+CryptMemAlloc PROC
+jmp ptr_CryptMemAlloc
+CryptMemAlloc ENDP
+
+CryptMemFree PROC
+jmp ptr_CryptMemFree
+CryptMemFree ENDP
+
+CryptMemRealloc PROC
+jmp ptr_CryptMemRealloc
+CryptMemRealloc ENDP
+
+CryptMsgCalculateEncodedLength PROC
+jmp ptr_CryptMsgCalculateEncodedLength
+CryptMsgCalculateEncodedLength ENDP
+
+CryptMsgClose PROC
+jmp ptr_CryptMsgClose
+CryptMsgClose ENDP
+
+CryptMsgControl PROC
+jmp ptr_CryptMsgControl
+CryptMsgControl ENDP
+
+CryptMsgCountersign PROC
+jmp ptr_CryptMsgCountersign
+CryptMsgCountersign ENDP
+
+CryptMsgCountersignEncoded PROC
+jmp ptr_CryptMsgCountersignEncoded
+CryptMsgCountersignEncoded ENDP
+
+CryptMsgDuplicate PROC
+jmp ptr_CryptMsgDuplicate
+CryptMsgDuplicate ENDP
+
+CryptMsgEncodeAndSignCTL PROC
+jmp ptr_CryptMsgEncodeAndSignCTL
+CryptMsgEncodeAndSignCTL ENDP
+
+CryptMsgGetAndVerifySigner PROC
+jmp ptr_CryptMsgGetAndVerifySigner
+CryptMsgGetAndVerifySigner ENDP
+
+CryptMsgGetParam PROC
+jmp ptr_CryptMsgGetParam
+CryptMsgGetParam ENDP
+
+CryptMsgOpenToDecode PROC
+jmp ptr_CryptMsgOpenToDecode
+CryptMsgOpenToDecode ENDP
+
+CryptMsgOpenToEncode PROC
+jmp ptr_CryptMsgOpenToEncode
+CryptMsgOpenToEncode ENDP
+
+CryptMsgSignCTL PROC
+jmp ptr_CryptMsgSignCTL
+CryptMsgSignCTL ENDP
+
+CryptMsgUpdate PROC
+jmp ptr_CryptMsgUpdate
+CryptMsgUpdate ENDP
+
+CryptMsgVerifyCountersignatureEncoded PROC
+jmp ptr_CryptMsgVerifyCountersignatureEncoded
+CryptMsgVerifyCountersignatureEncoded ENDP
+
+CryptMsgVerifyCountersignatureEncodedEx PROC
+jmp ptr_CryptMsgVerifyCountersignatureEncodedEx
+CryptMsgVerifyCountersignatureEncodedEx ENDP
+
+CryptProtectData PROC
+jmp ptr_CryptProtectData
+CryptProtectData ENDP
+
+CryptProtectMemory PROC
+jmp ptr_CryptProtectMemory
+CryptProtectMemory ENDP
+
+CryptQueryObject PROC
+jmp ptr_CryptQueryObject
+CryptQueryObject ENDP
+
+CryptRegisterDefaultOIDFunction PROC
+jmp ptr_CryptRegisterDefaultOIDFunction
+CryptRegisterDefaultOIDFunction ENDP
+
+CryptRegisterOIDFunction PROC
+jmp ptr_CryptRegisterOIDFunction
+CryptRegisterOIDFunction ENDP
+
+CryptRegisterOIDInfo PROC
+jmp ptr_CryptRegisterOIDInfo
+CryptRegisterOIDInfo ENDP
+
+CryptRetrieveTimeStamp PROC
+jmp ptr_CryptRetrieveTimeStamp
+CryptRetrieveTimeStamp ENDP
+
+CryptSIPAddProvider PROC
+jmp ptr_CryptSIPAddProvider
+CryptSIPAddProvider ENDP
+
+CryptSIPCreateIndirectData PROC
+jmp ptr_CryptSIPCreateIndirectData
+CryptSIPCreateIndirectData ENDP
+
+CryptSIPGetSignedDataMsg PROC
+jmp ptr_CryptSIPGetSignedDataMsg
+CryptSIPGetSignedDataMsg ENDP
+
+CryptSIPLoad PROC
+jmp ptr_CryptSIPLoad
+CryptSIPLoad ENDP
+
+CryptSIPPutSignedDataMsg PROC
+jmp ptr_CryptSIPPutSignedDataMsg
+CryptSIPPutSignedDataMsg ENDP
+
+CryptSIPRemoveProvider PROC
+jmp ptr_CryptSIPRemoveProvider
+CryptSIPRemoveProvider ENDP
+
+CryptSIPRemoveSignedDataMsg PROC
+jmp ptr_CryptSIPRemoveSignedDataMsg
+CryptSIPRemoveSignedDataMsg ENDP
+
+CryptSIPRetrieveSubjectGuid PROC
+jmp ptr_CryptSIPRetrieveSubjectGuid
+CryptSIPRetrieveSubjectGuid ENDP
+
+CryptSIPRetrieveSubjectGuidForCatalogFile PROC
+jmp ptr_CryptSIPRetrieveSubjectGuidForCatalogFile
+CryptSIPRetrieveSubjectGuidForCatalogFile ENDP
+
+CryptSIPVerifyIndirectData PROC
+jmp ptr_CryptSIPVerifyIndirectData
+CryptSIPVerifyIndirectData ENDP
+
+CryptSetAsyncParam PROC
+jmp ptr_CryptSetAsyncParam
+CryptSetAsyncParam ENDP
+
+CryptSetKeyIdentifierProperty PROC
+jmp ptr_CryptSetKeyIdentifierProperty
+CryptSetKeyIdentifierProperty ENDP
+
+CryptSetOIDFunctionValue PROC
+jmp ptr_CryptSetOIDFunctionValue
+CryptSetOIDFunctionValue ENDP
+
+CryptSignAndEncodeCertificate PROC
+jmp ptr_CryptSignAndEncodeCertificate
+CryptSignAndEncodeCertificate ENDP
+
+CryptSignAndEncryptMessage PROC
+jmp ptr_CryptSignAndEncryptMessage
+CryptSignAndEncryptMessage ENDP
+
+CryptSignCertificate PROC
+jmp ptr_CryptSignCertificate
+CryptSignCertificate ENDP
+
+CryptSignMessage PROC
+jmp ptr_CryptSignMessage
+CryptSignMessage ENDP
+
+CryptSignMessageWithKey PROC
+jmp ptr_CryptSignMessageWithKey
+CryptSignMessageWithKey ENDP
+
+CryptStringToBinaryA PROC
+jmp ptr_CryptStringToBinaryA
+CryptStringToBinaryA ENDP
+
+CryptStringToBinaryW PROC
+jmp ptr_CryptStringToBinaryW
+CryptStringToBinaryW ENDP
+
+CryptUninstallDefaultContext PROC
+jmp ptr_CryptUninstallDefaultContext
+CryptUninstallDefaultContext ENDP
+
+CryptUnprotectData PROC
+jmp ptr_CryptUnprotectData
+CryptUnprotectData ENDP
+
+CryptUnprotectMemory PROC
+jmp ptr_CryptUnprotectMemory
+CryptUnprotectMemory ENDP
+
+CryptUnregisterDefaultOIDFunction PROC
+jmp ptr_CryptUnregisterDefaultOIDFunction
+CryptUnregisterDefaultOIDFunction ENDP
+
+CryptUnregisterOIDFunction PROC
+jmp ptr_CryptUnregisterOIDFunction
+CryptUnregisterOIDFunction ENDP
+
+CryptUnregisterOIDInfo PROC
+jmp ptr_CryptUnregisterOIDInfo
+CryptUnregisterOIDInfo ENDP
+
+CryptUpdateProtectedState PROC
+jmp ptr_CryptUpdateProtectedState
+CryptUpdateProtectedState ENDP
+
+CryptVerifyCertificateSignature PROC
+jmp ptr_CryptVerifyCertificateSignature
+CryptVerifyCertificateSignature ENDP
+
+CryptVerifyCertificateSignatureEx PROC
+jmp ptr_CryptVerifyCertificateSignatureEx
+CryptVerifyCertificateSignatureEx ENDP
+
+CryptVerifyDetachedMessageHash PROC
+jmp ptr_CryptVerifyDetachedMessageHash
+CryptVerifyDetachedMessageHash ENDP
+
+CryptVerifyDetachedMessageSignature PROC
+jmp ptr_CryptVerifyDetachedMessageSignature
+CryptVerifyDetachedMessageSignature ENDP
+
+CryptVerifyMessageHash PROC
+jmp ptr_CryptVerifyMessageHash
+CryptVerifyMessageHash ENDP
+
+CryptVerifyMessageSignature PROC
+jmp ptr_CryptVerifyMessageSignature
+CryptVerifyMessageSignature ENDP
+
+CryptVerifyMessageSignatureWithKey PROC
+jmp ptr_CryptVerifyMessageSignatureWithKey
+CryptVerifyMessageSignatureWithKey ENDP
+
+CryptVerifyTimeStampSignature PROC
+jmp ptr_CryptVerifyTimeStampSignature
+CryptVerifyTimeStampSignature ENDP
+
+I_CertDiagControl PROC
+jmp ptr_I_CertDiagControl
+I_CertDiagControl ENDP
+
+I_CertProtectFunction PROC
+jmp ptr_I_CertProtectFunction
+I_CertProtectFunction ENDP
+
+I_CertSrvProtectFunction PROC
+jmp ptr_I_CertSrvProtectFunction
+I_CertSrvProtectFunction ENDP
+
+I_CertSyncStore PROC
+jmp ptr_I_CertSyncStore
+I_CertSyncStore ENDP
+
+I_CertUpdateStore PROC
+jmp ptr_I_CertUpdateStore
+I_CertUpdateStore ENDP
+
+I_CryptAddRefLruEntry PROC
+jmp ptr_I_CryptAddRefLruEntry
+I_CryptAddRefLruEntry ENDP
+
+I_CryptAddSmartCardCertToStore PROC
+jmp ptr_I_CryptAddSmartCardCertToStore
+I_CryptAddSmartCardCertToStore ENDP
+
+I_CryptAllocTls PROC
+jmp ptr_I_CryptAllocTls
+I_CryptAllocTls ENDP
+
+I_CryptCreateLruCache PROC
+jmp ptr_I_CryptCreateLruCache
+I_CryptCreateLruCache ENDP
+
+I_CryptCreateLruEntry PROC
+jmp ptr_I_CryptCreateLruEntry
+I_CryptCreateLruEntry ENDP
+
+I_CryptDetachTls PROC
+jmp ptr_I_CryptDetachTls
+I_CryptDetachTls ENDP
+
+I_CryptDisableLruOfEntries PROC
+jmp ptr_I_CryptDisableLruOfEntries
+I_CryptDisableLruOfEntries ENDP
+
+I_CryptEnableLruOfEntries PROC
+jmp ptr_I_CryptEnableLruOfEntries
+I_CryptEnableLruOfEntries ENDP
+
+I_CryptEnumMatchingLruEntries PROC
+jmp ptr_I_CryptEnumMatchingLruEntries
+I_CryptEnumMatchingLruEntries ENDP
+
+I_CryptFindLruEntry PROC
+jmp ptr_I_CryptFindLruEntry
+I_CryptFindLruEntry ENDP
+
+I_CryptFindLruEntryData PROC
+jmp ptr_I_CryptFindLruEntryData
+I_CryptFindLruEntryData ENDP
+
+I_CryptFindSmartCardCertInStore PROC
+jmp ptr_I_CryptFindSmartCardCertInStore
+I_CryptFindSmartCardCertInStore ENDP
+
+I_CryptFlushLruCache PROC
+jmp ptr_I_CryptFlushLruCache
+I_CryptFlushLruCache ENDP
+
+I_CryptFreeLruCache PROC
+jmp ptr_I_CryptFreeLruCache
+I_CryptFreeLruCache ENDP
+
+I_CryptFreeTls PROC
+jmp ptr_I_CryptFreeTls
+I_CryptFreeTls ENDP
+
+I_CryptGetAsn1Decoder PROC
+jmp ptr_I_CryptGetAsn1Decoder
+I_CryptGetAsn1Decoder ENDP
+
+I_CryptGetAsn1Encoder PROC
+jmp ptr_I_CryptGetAsn1Encoder
+I_CryptGetAsn1Encoder ENDP
+
+I_CryptGetDefaultCryptProv PROC
+jmp ptr_I_CryptGetDefaultCryptProv
+I_CryptGetDefaultCryptProv ENDP
+
+I_CryptGetDefaultCryptProvForEncrypt PROC
+jmp ptr_I_CryptGetDefaultCryptProvForEncrypt
+I_CryptGetDefaultCryptProvForEncrypt ENDP
+
+I_CryptGetFileVersion PROC
+jmp ptr_I_CryptGetFileVersion
+I_CryptGetFileVersion ENDP
+
+I_CryptGetLruEntryData PROC
+jmp ptr_I_CryptGetLruEntryData
+I_CryptGetLruEntryData ENDP
+
+I_CryptGetLruEntryIdentifier PROC
+jmp ptr_I_CryptGetLruEntryIdentifier
+I_CryptGetLruEntryIdentifier ENDP
+
+I_CryptGetOssGlobal PROC
+jmp ptr_I_CryptGetOssGlobal
+I_CryptGetOssGlobal ENDP
+
+I_CryptGetTls PROC
+jmp ptr_I_CryptGetTls
+I_CryptGetTls ENDP
+
+I_CryptInsertLruEntry PROC
+jmp ptr_I_CryptInsertLruEntry
+I_CryptInsertLruEntry ENDP
+
+I_CryptInstallAsn1Module PROC
+jmp ptr_I_CryptInstallAsn1Module
+I_CryptInstallAsn1Module ENDP
+
+I_CryptInstallOssGlobal PROC
+jmp ptr_I_CryptInstallOssGlobal
+I_CryptInstallOssGlobal ENDP
+
+I_CryptReadTrustedPublisherDWORDValueFromRegistry PROC
+jmp ptr_I_CryptReadTrustedPublisherDWORDValueFromRegistry
+I_CryptReadTrustedPublisherDWORDValueFromRegistry ENDP
+
+I_CryptRegisterSmartCardStore PROC
+jmp ptr_I_CryptRegisterSmartCardStore
+I_CryptRegisterSmartCardStore ENDP
+
+I_CryptReleaseLruEntry PROC
+jmp ptr_I_CryptReleaseLruEntry
+I_CryptReleaseLruEntry ENDP
+
+I_CryptRemoveLruEntry PROC
+jmp ptr_I_CryptRemoveLruEntry
+I_CryptRemoveLruEntry ENDP
+
+I_CryptSetTls PROC
+jmp ptr_I_CryptSetTls
+I_CryptSetTls ENDP
+
+I_CryptTouchLruEntry PROC
+jmp ptr_I_CryptTouchLruEntry
+I_CryptTouchLruEntry ENDP
+
+I_CryptUninstallAsn1Module PROC
+jmp ptr_I_CryptUninstallAsn1Module
+I_CryptUninstallAsn1Module ENDP
+
+I_CryptUninstallOssGlobal PROC
+jmp ptr_I_CryptUninstallOssGlobal
+I_CryptUninstallOssGlobal ENDP
+
+I_CryptUnregisterSmartCardStore PROC
+jmp ptr_I_CryptUnregisterSmartCardStore
+I_CryptUnregisterSmartCardStore ENDP
+
+I_CryptWalkAllLruCacheEntries PROC
+jmp ptr_I_CryptWalkAllLruCacheEntries
+I_CryptWalkAllLruCacheEntries ENDP
+
+PFXExportCertStore PROC
+jmp ptr_PFXExportCertStore
+PFXExportCertStore ENDP
+
+PFXExportCertStore2 PROC
+jmp ptr_PFXExportCertStore2
+PFXExportCertStore2 ENDP
+
+PFXExportCertStoreEx PROC
+jmp ptr_PFXExportCertStoreEx
+PFXExportCertStoreEx ENDP
+
+PFXImportCertStore PROC
+jmp ptr_PFXImportCertStore
+PFXImportCertStore ENDP
+
+PFXIsPFXBlob PROC
+jmp ptr_PFXIsPFXBlob
+PFXIsPFXBlob ENDP
+
+PFXVerifyPassword PROC
+jmp ptr_PFXVerifyPassword
+PFXVerifyPassword ENDP
+
+end

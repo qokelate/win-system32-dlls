@@ -1,0 +1,4 @@
+﻿LIBRARY
+EXPORTS
+
+RDPAPI_CreateInstance @1

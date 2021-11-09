@@ -1,0 +1,41 @@
+﻿LIBRARY
+EXPORTS
+
+PeerGraphAddRecord @2
+PeerGraphClose @3
+PeerGraphCloseDirectConnection @4
+PeerGraphConnect @5
+PeerGraphCreate @6
+PeerGraphDelete @7
+PeerGraphDeleteRecord @8
+PeerGraphEndEnumeration @9
+PeerGraphEnumConnections @10
+PeerGraphEnumNodes @11
+PeerGraphEnumRecords @12
+PeerGraphExportDatabase @13
+PeerGraphFreeData @14
+PeerGraphGetEventData @15
+PeerGraphGetItemCount @16
+PeerGraphGetNextItem @17
+PeerGraphGetNodeInfo @18
+PeerGraphGetProperties @19
+PeerGraphGetRecord @20
+PeerGraphGetStatus @21
+PeerGraphImportDatabase @22
+PeerGraphListen @23
+PeerGraphOpen @24
+PeerGraphOpenDirectConnection @25
+PeerGraphPeerTimeToUniversalTime @26
+PeerGraphRegisterEvent @27
+PeerGraphSearchRecords @28
+PeerGraphSendData @29
+PeerGraphSetNodeAttributes @30
+PeerGraphSetPresence @31
+PeerGraphSetProperties @32
+PeerGraphShutdown @33
+PeerGraphStartup @34
+PeerGraphUniversalTimeToPeerTime @35
+PeerGraphUnregisterEvent @36
+PeerGraphUpdateRecord @37
+PeerGraphValidateDeferredRecords @38
+pMemoryHelper @1

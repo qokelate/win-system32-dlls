@@ -1,0 +1,150 @@
+ifndef X64
+.686p
+.XMM
+.safeseh SEH_handler
+.model flat, C
+option dotname
+option casemap : none
+endif
+
+extern ptr_NsiAllocateAndGetPersistentDataWithMaskTable : PTR;
+extern ptr_NsiAllocateAndGetTable : PTR;
+extern ptr_NsiCancelChangeNotification : PTR;
+extern ptr_NsiDeregisterChangeNotification : PTR;
+extern ptr_NsiDeregisterChangeNotificationEx : PTR;
+extern ptr_NsiEnumerateObjectsAllParameters : PTR;
+extern ptr_NsiEnumerateObjectsAllParametersEx : PTR;
+extern ptr_NsiEnumerateObjectsAllPersistentParametersWithMask : PTR;
+extern ptr_NsiFreePersistentDataWithMaskTable : PTR;
+extern ptr_NsiFreeTable : PTR;
+extern ptr_NsiGetAllParameters : PTR;
+extern ptr_NsiGetAllParametersEx : PTR;
+extern ptr_NsiGetAllPersistentParametersWithMask : PTR;
+extern ptr_NsiGetObjectSecurity : PTR;
+extern ptr_NsiGetParameter : PTR;
+extern ptr_NsiGetParameterEx : PTR;
+extern ptr_NsiRegisterChangeNotification : PTR;
+extern ptr_NsiRegisterChangeNotificationEx : PTR;
+extern ptr_NsiRequestChangeNotification : PTR;
+extern ptr_NsiRequestChangeNotificationEx : PTR;
+extern ptr_NsiSetAllParameters : PTR;
+extern ptr_NsiSetAllParametersEx : PTR;
+extern ptr_NsiSetAllPersistentParametersWithMask : PTR;
+extern ptr_NsiSetObjectSecurity : PTR;
+extern ptr_NsiSetParameter : PTR;
+extern ptr_NsiSetParameterEx : PTR;
+
+
+.code
+
+align 16
+SEH_handler   proc
+; handler
+ret
+SEH_handler   endp
+
+NsiAllocateAndGetPersistentDataWithMaskTable PROC
+jmp ptr_NsiAllocateAndGetPersistentDataWithMaskTable
+NsiAllocateAndGetPersistentDataWithMaskTable ENDP
+
+NsiAllocateAndGetTable PROC
+jmp ptr_NsiAllocateAndGetTable
+NsiAllocateAndGetTable ENDP
+
+NsiCancelChangeNotification PROC
+jmp ptr_NsiCancelChangeNotification
+NsiCancelChangeNotification ENDP
+
+NsiDeregisterChangeNotification PROC
+jmp ptr_NsiDeregisterChangeNotification
+NsiDeregisterChangeNotification ENDP
+
+NsiDeregisterChangeNotificationEx PROC
+jmp ptr_NsiDeregisterChangeNotificationEx
+NsiDeregisterChangeNotificationEx ENDP
+
+NsiEnumerateObjectsAllParameters PROC
+jmp ptr_NsiEnumerateObjectsAllParameters
+NsiEnumerateObjectsAllParameters ENDP
+
+NsiEnumerateObjectsAllParametersEx PROC
+jmp ptr_NsiEnumerateObjectsAllParametersEx
+NsiEnumerateObjectsAllParametersEx ENDP
+
+NsiEnumerateObjectsAllPersistentParametersWithMask PROC
+jmp ptr_NsiEnumerateObjectsAllPersistentParametersWithMask
+NsiEnumerateObjectsAllPersistentParametersWithMask ENDP
+
+NsiFreePersistentDataWithMaskTable PROC
+jmp ptr_NsiFreePersistentDataWithMaskTable
+NsiFreePersistentDataWithMaskTable ENDP
+
+NsiFreeTable PROC
+jmp ptr_NsiFreeTable
+NsiFreeTable ENDP
+
+NsiGetAllParameters PROC
+jmp ptr_NsiGetAllParameters
+NsiGetAllParameters ENDP
+
+NsiGetAllParametersEx PROC
+jmp ptr_NsiGetAllParametersEx
+NsiGetAllParametersEx ENDP
+
+NsiGetAllPersistentParametersWithMask PROC
+jmp ptr_NsiGetAllPersistentParametersWithMask
+NsiGetAllPersistentParametersWithMask ENDP
+
+NsiGetObjectSecurity PROC
+jmp ptr_NsiGetObjectSecurity
+NsiGetObjectSecurity ENDP
+
+NsiGetParameter PROC
+jmp ptr_NsiGetParameter
+NsiGetParameter ENDP
+
+NsiGetParameterEx PROC
+jmp ptr_NsiGetParameterEx
+NsiGetParameterEx ENDP
+
+NsiRegisterChangeNotification PROC
+jmp ptr_NsiRegisterChangeNotification
+NsiRegisterChangeNotification ENDP
+
+NsiRegisterChangeNotificationEx PROC
+jmp ptr_NsiRegisterChangeNotificationEx
+NsiRegisterChangeNotificationEx ENDP
+
+NsiRequestChangeNotification PROC
+jmp ptr_NsiRequestChangeNotification
+NsiRequestChangeNotification ENDP
+
+NsiRequestChangeNotificationEx PROC
+jmp ptr_NsiRequestChangeNotificationEx
+NsiRequestChangeNotificationEx ENDP
+
+NsiSetAllParameters PROC
+jmp ptr_NsiSetAllParameters
+NsiSetAllParameters ENDP
+
+NsiSetAllParametersEx PROC
+jmp ptr_NsiSetAllParametersEx
+NsiSetAllParametersEx ENDP
+
+NsiSetAllPersistentParametersWithMask PROC
+jmp ptr_NsiSetAllPersistentParametersWithMask
+NsiSetAllPersistentParametersWithMask ENDP
+
+NsiSetObjectSecurity PROC
+jmp ptr_NsiSetObjectSecurity
+NsiSetObjectSecurity ENDP
+
+NsiSetParameter PROC
+jmp ptr_NsiSetParameter
+NsiSetParameter ENDP
+
+NsiSetParameterEx PROC
+jmp ptr_NsiSetParameterEx
+NsiSetParameterEx ENDP
+
+end

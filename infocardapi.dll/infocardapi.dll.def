@@ -1,0 +1,25 @@
+﻿LIBRARY
+EXPORTS
+
+CloseCryptoHandle @2
+Decrypt @3
+DllCanUnloadNow @4
+DllGetClassObject @5
+DllRegisterServer @6
+DllUnregisterServer @7
+Encrypt @8
+EnsureServiceRunning @1
+FreeToken @9
+GenerateDerivedKey @10
+GetBrowserToken @11
+GetCryptoTransform @12
+GetKeyedHash @13
+GetToken @14
+HashCore @15
+HashFinal @16
+ImportInformationCard @17
+ManageCardSpace @18
+SignHash @19
+TransformBlock @20
+TransformFinalBlock @21
+VerifyHash @22

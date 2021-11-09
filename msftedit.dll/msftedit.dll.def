@@ -1,0 +1,17 @@
+﻿LIBRARY
+EXPORTS
+
+CreateTextServices @4
+DllGetVersion @12
+IID_IRichEditOle @2
+IID_IRichEditOleCallback @3
+IID_ITextHost @6
+IID_ITextHost2 @7
+IID_ITextServices @5
+REExtendedRegisterClass @8
+RichComboBoxWndProc @15
+RichEdit10ANSIWndProc @10
+RichEditANSIWndProc @9
+RichEditWndProc @13
+RichListBoxWndProc @14
+SetCustomTextOutHandlerEx @11

@@ -1,0 +1,10 @@
+﻿LIBRARY
+EXPORTS
+
+DllCanUnloadNow @1
+DllGetClassObject @2
+DllRegisterServer @3
+DllUnregisterServer @4
+EapPeerFreeErrorMemory @5
+EapPeerFreeMemory @6
+EapPeerInvokeIdentityUI @7

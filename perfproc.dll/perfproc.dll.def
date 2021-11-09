@@ -1,0 +1,6 @@
+﻿LIBRARY
+EXPORTS
+
+CloseSysProcessObject @1
+CollectSysProcessObjectData @2
+OpenSysProcessObject @3

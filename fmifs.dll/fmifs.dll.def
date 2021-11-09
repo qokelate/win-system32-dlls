@@ -1,0 +1,20 @@
+﻿LIBRARY
+EXPORTS
+
+Chkdsk @1
+ChkdskEx @2
+ComputeFmMediaType @3
+DiskCopy @4
+EnableVolumeCompression @5
+Extend @6
+Format @7
+FormatEx @8
+FormatEx2 @9
+GetDefaultFileSystem @10
+QueryAvailableFileSystemFormat @11
+QueryDeviceInformation @12
+QueryDeviceInformationByHandle @13
+QueryFileSystemName @14
+QueryLatestFileSystemVersion @15
+QuerySupportedMedia @16
+SetLabel @17

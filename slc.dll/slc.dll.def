@@ -1,0 +1,12 @@
+﻿LIBRARY
+EXPORTS
+
+SLConsumeWindowsRight @10
+SLGetWindowsInformation @28
+SLGetWindowsInformationDWORD @29
+SLIsWindowsGenuineLocal @32
+SLReArmWindows @34
+SLRegisterWindowsEvent @36
+SLUnregisterWindowsEvent @42
+SLpCheckProductKey @5
+SLpUpdateComponentTokens @7

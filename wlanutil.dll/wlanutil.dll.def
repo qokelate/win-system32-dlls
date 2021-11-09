@@ -1,0 +1,6 @@
+﻿LIBRARY
+EXPORTS
+
+WlanIsActiveConsoleUser @1
+WlanSsidToDisplayName @2
+WlanStringToSsid @3

@@ -1,0 +1,17 @@
+﻿LIBRARY
+EXPORTS
+
+CloseOsBaseline @2
+EnumOsBaselineComponentsA @3
+EnumOsBaselineComponentsW @4
+EnumOsOutOfDateComponentsA @5
+EnumOsOutOfDateComponentsW @6
+GetOsBaselineComponentInfoA @7
+GetOsBaselineComponentInfoW @8
+GetOsInstalledComponentInfoA @9
+GetOsInstalledComponentInfoW @10
+GetOsLatestBaselineServicePack @11
+OpenOsBaseline @12
+pGetOsBaselineCurrentVersion @13
+pGetOsCurrentBaselineServicePack @14
+pOpenOsBaselineByVersion @15

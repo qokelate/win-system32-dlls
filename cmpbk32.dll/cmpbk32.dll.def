@@ -1,0 +1,26 @@
+﻿LIBRARY
+EXPORTS
+
+PhoneBookCopyFilter @1
+PhoneBookEnumCountries @2
+PhoneBookEnumNumbers @3
+PhoneBookEnumNumbersWithRegionsZero @4
+PhoneBookEnumRegions @5
+PhoneBookFreeFilter @6
+PhoneBookGetCountryId @7
+PhoneBookGetCountryNameA @8
+PhoneBookGetCountryNameW @9
+PhoneBookGetCurrentCountryId @10
+PhoneBookGetPhoneCanonicalA @11
+PhoneBookGetPhoneDUNA @12
+PhoneBookGetPhoneDescA @13
+PhoneBookGetPhoneDispA @14
+PhoneBookGetPhoneNonCanonicalA @15
+PhoneBookGetPhoneType @16
+PhoneBookGetRegionNameA @17
+PhoneBookHasPhoneType @18
+PhoneBookLoad @19
+PhoneBookMatchFilter @20
+PhoneBookMergeChanges @21
+PhoneBookParseInfoA @22
+PhoneBookUnload @23

@@ -1,0 +1,6 @@
+﻿LIBRARY
+EXPORTS
+
+Sysprep_Cleanup_IE @1
+Sysprep_Generalize_IE @2
+Sysprep_Specialize_IE @3

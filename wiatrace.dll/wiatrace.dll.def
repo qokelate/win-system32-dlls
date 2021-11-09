@@ -1,0 +1,11 @@
+﻿LIBRARY
+EXPORTS
+
+WIATRACE_DecrementIndentLevel @1
+WIATRACE_GetIndentLevel @2
+WIATRACE_GetTraceSettings @3
+WIATRACE_IncrementIndentLevel @4
+WIATRACE_Init @5
+WIATRACE_OutputString @6
+WIATRACE_SetTraceSettings @7
+WIATRACE_Term @8

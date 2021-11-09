@@ -1,0 +1,21 @@
+﻿LIBRARY
+EXPORTS
+
+UbpmApiBufferFree @1
+UbpmCloseRootHandle @2
+UbpmCloseTriggerConsumerHandle @3
+UbpmCloseTriggerProviderHandle @4
+UbpmConfigureTriggerConsumer @5
+UbpmControlTriggerConsumer @6
+UbpmGenerateNotification @7
+UbpmGenerateTrigger @8
+UbpmInitialize @9
+UbpmOpenRootHandle @10
+UbpmOpenTriggerConsumerHandle @11
+UbpmOpenTriggerProviderHandle @12
+UbpmQueryTriggerConsumerStatus @13
+UbpmRegisterTriggerConsumer @14
+UbpmRegisterTriggerProvider @15
+UbpmTerminate @16
+UbpmUnregisterTriggerConsumer @17
+UbpmUnregisterTriggerProvider @18

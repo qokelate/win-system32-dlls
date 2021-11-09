@@ -1,0 +1,18 @@
+﻿LIBRARY
+EXPORTS
+
+DMOEnum @1
+DMOGetName @2
+DMOGetTypes @3
+DMOGuidToStrA @4
+DMOGuidToStrW @5
+DMORegister @6
+DMOStrToGuidA @7
+DMOStrToGuidW @8
+DMOUnregister @9
+MoCopyMediaType @10
+MoCreateMediaType @11
+MoDeleteMediaType @12
+MoDuplicateMediaType @13
+MoFreeMediaType @14
+MoInitMediaType @15

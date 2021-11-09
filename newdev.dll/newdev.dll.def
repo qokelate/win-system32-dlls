@@ -1,0 +1,21 @@
+﻿LIBRARY
+EXPORTS
+
+DeviceInternetSettingUiW @1
+DiInstallDevice @2
+DiInstallDriverA @3
+DiInstallDriverW @4
+DiRollbackDriver @5
+DiShowUpdateDevice @6
+DiUninstallDevice @7
+InstallNewDevice @8
+InstallSelectedDriver @9
+InstallWindowsUpdateDriver @10
+SetInternetPolicies @11
+UpdateDriverForPlugAndPlayDevicesA @12
+UpdateDriverForPlugAndPlayDevicesW @13
+pDiDeviceInstallActionW @14
+pDiDeviceInstallNotificationW @15
+pDiDoDeviceInstallAsAdmin @16
+pDiDoFinishInstallAsAdmin @17
+pDiDoNullDriverInstall @18

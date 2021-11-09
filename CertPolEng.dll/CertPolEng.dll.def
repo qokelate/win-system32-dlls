@@ -1,0 +1,9 @@
+﻿LIBRARY
+EXPORTS
+
+PstAcquirePrivateKey @1
+PstGetCertificates @2
+PstGetTrustAnchors @3
+PstGetUserNameForCertificate @4
+PstMapCertificate @5
+PstValidate @6

@@ -1,0 +1,11 @@
+﻿LIBRARY
+EXPORTS
+
+DllRegisterServer @11
+DllUnregisterServer @12
+MsiSIPCreateIndirectData @9
+MsiSIPGetSignedDataMsg @6
+MsiSIPIsMyTypeOfFile @5
+MsiSIPPutSignedDataMsg @7
+MsiSIPRemoveSignedDataMsg @8
+MsiSIPVerifyIndirectData @10

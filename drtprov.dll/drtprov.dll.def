@@ -1,0 +1,12 @@
+﻿LIBRARY
+EXPORTS
+
+DrtCreateDerivedKey @1
+DrtCreateDerivedKeySecurityProvider @2
+DrtCreateDnsBootstrapResolver @3
+DrtCreateNullSecurityProvider @4
+DrtCreatePnrpBootstrapResolver @5
+DrtDeleteDerivedKeySecurityProvider @6
+DrtDeleteDnsBootstrapResolver @7
+DrtDeleteNullSecurityProvider @8
+DrtDeletePnrpBootstrapResolver @9

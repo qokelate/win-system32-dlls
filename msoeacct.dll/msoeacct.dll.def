@@ -1,0 +1,11 @@
+﻿LIBRARY
+EXPORTS
+
+DllCanUnloadNow @10
+DllGetClassObject @11
+GetDllMajorVersion @6
+HrCreateAccountManager @12
+PropUtil_HrAddBinaryToSTRW @7
+PropUtil_HrAddDWORDToSTRW @8
+PropUtil_HrAddSZToSTRW @9
+ValidEmailAddress @13

@@ -1,0 +1,10 @@
+﻿LIBRARY
+EXPORTS
+
+GetErrorMode @1
+GetLastError @2
+RaiseException @3
+SetErrorMode @4
+SetLastError @5
+SetUnhandledExceptionFilter @6
+UnhandledExceptionFilter @7

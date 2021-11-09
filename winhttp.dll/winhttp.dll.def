@@ -1,0 +1,35 @@
+﻿LIBRARY
+EXPORTS
+
+DllCanUnloadNow @1
+DllGetClassObject @2
+Private1 @3
+SvchostPushServiceGlobals @4
+WinHttpAddRequestHeaders @5
+WinHttpAutoProxySvcMain @6
+WinHttpCheckPlatform @7
+WinHttpCloseHandle @8
+WinHttpConnect @9
+WinHttpCrackUrl @10
+WinHttpCreateUrl @11
+WinHttpDetectAutoProxyConfigUrl @12
+WinHttpGetDefaultProxyConfiguration @13
+WinHttpGetIEProxyConfigForCurrentUser @14
+WinHttpGetProxyForUrl @15
+WinHttpOpen @16
+WinHttpOpenRequest @17
+WinHttpQueryAuthSchemes @18
+WinHttpQueryDataAvailable @19
+WinHttpQueryHeaders @20
+WinHttpQueryOption @21
+WinHttpReadData @22
+WinHttpReceiveResponse @23
+WinHttpSendRequest @24
+WinHttpSetCredentials @25
+WinHttpSetDefaultProxyConfiguration @26
+WinHttpSetOption @27
+WinHttpSetStatusCallback @28
+WinHttpSetTimeouts @29
+WinHttpTimeFromSystemTime @30
+WinHttpTimeToSystemTime @31
+WinHttpWriteData @32

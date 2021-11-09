@@ -1,0 +1,5 @@
+﻿LIBRARY
+EXPORTS
+
+CreateFontPackage @1
+MergeFontPackage @2

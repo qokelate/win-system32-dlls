@@ -1,0 +1,32 @@
+﻿LIBRARY
+EXPORTS
+
+DevRtlCloseTextLogSection @1
+DevRtlCreateTextLogSectionA @2
+DevRtlCreateTextLogSectionW @3
+DevRtlGetThreadLogToken @4
+DevRtlSetThreadLogToken @5
+DevRtlWriteTextLog @6
+DevRtlWriteTextLogError @7
+NdxTableAddObject @8
+NdxTableAddObjectToList @9
+NdxTableClose @10
+NdxTableFirstObject @11
+NdxTableFirstObjectInList @12
+NdxTableGetObjectName @13
+NdxTableGetObjectType @14
+NdxTableGetObjectTypeCount @15
+NdxTableGetObjectTypeName @16
+NdxTableGetPropertyTypeClass @17
+NdxTableGetPropertyTypeCount @18
+NdxTableGetPropertyTypeName @19
+NdxTableGetPropertyValue @20
+NdxTableNextObject @21
+NdxTableObjectFromName @22
+NdxTableObjectFromPointer @23
+NdxTableOpen @24
+NdxTableRemoveObject @25
+NdxTableRemoveObjectFromList @26
+NdxTableSetObjectPointer @27
+NdxTableSetPropertyValue @28
+NdxTableSetTypeDefinition @29

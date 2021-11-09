@@ -1,0 +1,19 @@
+﻿LIBRARY
+EXPORTS
+
+GetProcessHeap @1
+GetProcessHeaps @2
+HeapAlloc @3
+HeapCompact @4
+HeapCreate @5
+HeapDestroy @6
+HeapFree @7
+HeapLock @8
+HeapQueryInformation @9
+HeapReAlloc @10
+HeapSetInformation @11
+HeapSize @12
+HeapSummary @13
+HeapUnlock @14
+HeapValidate @15
+HeapWalk @16

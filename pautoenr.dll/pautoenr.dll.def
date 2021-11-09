@@ -1,0 +1,6 @@
+﻿LIBRARY
+EXPORTS
+
+CertAutoEnrollment @2
+CertAutoRemove @3
+DimsProvEntry @1

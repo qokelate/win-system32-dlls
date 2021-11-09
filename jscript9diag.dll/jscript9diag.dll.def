@@ -1,0 +1,9 @@
+﻿LIBRARY
+EXPORTS
+
+DllCanUnloadNow @3
+DllGetClassObject @4
+DllRegisterServer @5
+DllUnregisterServer @6
+FreeDumpStreams @1
+GetDumpStreams @2

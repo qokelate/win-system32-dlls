@@ -1,0 +1,240 @@
+ifndef X64
+.686p
+.XMM
+.safeseh SEH_handler
+.model flat, C
+option dotname
+option casemap : none
+endif
+
+extern ptr_DDMAdminConnectionClearStats : PTR;
+extern ptr_DDMAdminConnectionEnum : PTR;
+extern ptr_DDMAdminConnectionEnumEx : PTR;
+extern ptr_DDMAdminConnectionGetInfo : PTR;
+extern ptr_DDMAdminConnectionGetInfoEx : PTR;
+extern ptr_DDMAdminInterfaceConnect : PTR;
+extern ptr_DDMAdminInterfaceDisconnect : PTR;
+extern ptr_DDMAdminPortClearStats : PTR;
+extern ptr_DDMAdminPortDisconnect : PTR;
+extern ptr_DDMAdminPortEnum : PTR;
+extern ptr_DDMAdminPortGetInfo : PTR;
+extern ptr_DDMAdminPortReset : PTR;
+extern ptr_DDMAdminRemoveQuarantine : PTR;
+extern ptr_DDMAdminServerGetInfo : PTR;
+extern ptr_DDMAdminServerGetInfoEx : PTR;
+extern ptr_DDMAdminServerSetInfo : PTR;
+extern ptr_DDMAdminServerSetInfoEx : PTR;
+extern ptr_DDMAdminUpdateConnection : PTR;
+extern ptr_DDMConnectInterface : PTR;
+extern ptr_DDMDisconnectInterface : PTR;
+extern ptr_DDMGetIdentityAttributes : PTR;
+extern ptr_DDMPostCleanup : PTR;
+extern ptr_DDMRegisterConnectionNotification : PTR;
+extern ptr_DDMSendUserMessage : PTR;
+extern ptr_DDMServiceInitialize : PTR;
+extern ptr_DDMServicePostListens : PTR;
+extern ptr_DDMTransportCreate : PTR;
+extern ptr_IfObjectFreePhonebookContext : PTR;
+extern ptr_IfObjectInitiatePersistentConnections : PTR;
+extern ptr_IfObjectLoadPhonebookInfo : PTR;
+extern ptr_IfObjectNotifyOfReachabilityChange : PTR;
+extern ptr_IfObjectSetDialoutHoursRestriction : PTR;
+extern ptr_RasAcctConfigChangeNotification : PTR;
+extern ptr_RasAcctProviderFreeAttributes : PTR;
+extern ptr_RasAcctProviderInitialize : PTR;
+extern ptr_RasAcctProviderInterimAccounting : PTR;
+extern ptr_RasAcctProviderStartAccounting : PTR;
+extern ptr_RasAcctProviderStopAccounting : PTR;
+extern ptr_RasAcctProviderTerminate : PTR;
+extern ptr_RasAuthConfigChangeNotification : PTR;
+extern ptr_RasAuthProviderAuthenticateUser : PTR;
+extern ptr_RasAuthProviderFreeAttributes : PTR;
+extern ptr_RasAuthProviderInitialize : PTR;
+extern ptr_RasAuthProviderTerminate : PTR;
+
+
+.code
+
+align 16
+SEH_handler   proc
+; handler
+ret
+SEH_handler   endp
+
+DDMAdminConnectionClearStats PROC
+jmp ptr_DDMAdminConnectionClearStats
+DDMAdminConnectionClearStats ENDP
+
+DDMAdminConnectionEnum PROC
+jmp ptr_DDMAdminConnectionEnum
+DDMAdminConnectionEnum ENDP
+
+DDMAdminConnectionEnumEx PROC
+jmp ptr_DDMAdminConnectionEnumEx
+DDMAdminConnectionEnumEx ENDP
+
+DDMAdminConnectionGetInfo PROC
+jmp ptr_DDMAdminConnectionGetInfo
+DDMAdminConnectionGetInfo ENDP
+
+DDMAdminConnectionGetInfoEx PROC
+jmp ptr_DDMAdminConnectionGetInfoEx
+DDMAdminConnectionGetInfoEx ENDP
+
+DDMAdminInterfaceConnect PROC
+jmp ptr_DDMAdminInterfaceConnect
+DDMAdminInterfaceConnect ENDP
+
+DDMAdminInterfaceDisconnect PROC
+jmp ptr_DDMAdminInterfaceDisconnect
+DDMAdminInterfaceDisconnect ENDP
+
+DDMAdminPortClearStats PROC
+jmp ptr_DDMAdminPortClearStats
+DDMAdminPortClearStats ENDP
+
+DDMAdminPortDisconnect PROC
+jmp ptr_DDMAdminPortDisconnect
+DDMAdminPortDisconnect ENDP
+
+DDMAdminPortEnum PROC
+jmp ptr_DDMAdminPortEnum
+DDMAdminPortEnum ENDP
+
+DDMAdminPortGetInfo PROC
+jmp ptr_DDMAdminPortGetInfo
+DDMAdminPortGetInfo ENDP
+
+DDMAdminPortReset PROC
+jmp ptr_DDMAdminPortReset
+DDMAdminPortReset ENDP
+
+DDMAdminRemoveQuarantine PROC
+jmp ptr_DDMAdminRemoveQuarantine
+DDMAdminRemoveQuarantine ENDP
+
+DDMAdminServerGetInfo PROC
+jmp ptr_DDMAdminServerGetInfo
+DDMAdminServerGetInfo ENDP
+
+DDMAdminServerGetInfoEx PROC
+jmp ptr_DDMAdminServerGetInfoEx
+DDMAdminServerGetInfoEx ENDP
+
+DDMAdminServerSetInfo PROC
+jmp ptr_DDMAdminServerSetInfo
+DDMAdminServerSetInfo ENDP
+
+DDMAdminServerSetInfoEx PROC
+jmp ptr_DDMAdminServerSetInfoEx
+DDMAdminServerSetInfoEx ENDP
+
+DDMAdminUpdateConnection PROC
+jmp ptr_DDMAdminUpdateConnection
+DDMAdminUpdateConnection ENDP
+
+DDMConnectInterface PROC
+jmp ptr_DDMConnectInterface
+DDMConnectInterface ENDP
+
+DDMDisconnectInterface PROC
+jmp ptr_DDMDisconnectInterface
+DDMDisconnectInterface ENDP
+
+DDMGetIdentityAttributes PROC
+jmp ptr_DDMGetIdentityAttributes
+DDMGetIdentityAttributes ENDP
+
+DDMPostCleanup PROC
+jmp ptr_DDMPostCleanup
+DDMPostCleanup ENDP
+
+DDMRegisterConnectionNotification PROC
+jmp ptr_DDMRegisterConnectionNotification
+DDMRegisterConnectionNotification ENDP
+
+DDMSendUserMessage PROC
+jmp ptr_DDMSendUserMessage
+DDMSendUserMessage ENDP
+
+DDMServiceInitialize PROC
+jmp ptr_DDMServiceInitialize
+DDMServiceInitialize ENDP
+
+DDMServicePostListens PROC
+jmp ptr_DDMServicePostListens
+DDMServicePostListens ENDP
+
+DDMTransportCreate PROC
+jmp ptr_DDMTransportCreate
+DDMTransportCreate ENDP
+
+IfObjectFreePhonebookContext PROC
+jmp ptr_IfObjectFreePhonebookContext
+IfObjectFreePhonebookContext ENDP
+
+IfObjectInitiatePersistentConnections PROC
+jmp ptr_IfObjectInitiatePersistentConnections
+IfObjectInitiatePersistentConnections ENDP
+
+IfObjectLoadPhonebookInfo PROC
+jmp ptr_IfObjectLoadPhonebookInfo
+IfObjectLoadPhonebookInfo ENDP
+
+IfObjectNotifyOfReachabilityChange PROC
+jmp ptr_IfObjectNotifyOfReachabilityChange
+IfObjectNotifyOfReachabilityChange ENDP
+
+IfObjectSetDialoutHoursRestriction PROC
+jmp ptr_IfObjectSetDialoutHoursRestriction
+IfObjectSetDialoutHoursRestriction ENDP
+
+RasAcctConfigChangeNotification PROC
+jmp ptr_RasAcctConfigChangeNotification
+RasAcctConfigChangeNotification ENDP
+
+RasAcctProviderFreeAttributes PROC
+jmp ptr_RasAcctProviderFreeAttributes
+RasAcctProviderFreeAttributes ENDP
+
+RasAcctProviderInitialize PROC
+jmp ptr_RasAcctProviderInitialize
+RasAcctProviderInitialize ENDP
+
+RasAcctProviderInterimAccounting PROC
+jmp ptr_RasAcctProviderInterimAccounting
+RasAcctProviderInterimAccounting ENDP
+
+RasAcctProviderStartAccounting PROC
+jmp ptr_RasAcctProviderStartAccounting
+RasAcctProviderStartAccounting ENDP
+
+RasAcctProviderStopAccounting PROC
+jmp ptr_RasAcctProviderStopAccounting
+RasAcctProviderStopAccounting ENDP
+
+RasAcctProviderTerminate PROC
+jmp ptr_RasAcctProviderTerminate
+RasAcctProviderTerminate ENDP
+
+RasAuthConfigChangeNotification PROC
+jmp ptr_RasAuthConfigChangeNotification
+RasAuthConfigChangeNotification ENDP
+
+RasAuthProviderAuthenticateUser PROC
+jmp ptr_RasAuthProviderAuthenticateUser
+RasAuthProviderAuthenticateUser ENDP
+
+RasAuthProviderFreeAttributes PROC
+jmp ptr_RasAuthProviderFreeAttributes
+RasAuthProviderFreeAttributes ENDP
+
+RasAuthProviderInitialize PROC
+jmp ptr_RasAuthProviderInitialize
+RasAuthProviderInitialize ENDP
+
+RasAuthProviderTerminate PROC
+jmp ptr_RasAuthProviderTerminate
+RasAuthProviderTerminate ENDP
+
+end

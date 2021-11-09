@@ -1,0 +1,7 @@
+﻿LIBRARY
+EXPORTS
+
+DownlevelGetParentLocaleLCID @1
+DownlevelGetParentLocaleName @2
+DownlevelLCIDToLocaleName @3
+DownlevelLocaleNameToLCID @4

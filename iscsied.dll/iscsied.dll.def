@@ -1,0 +1,5 @@
+﻿LIBRARY
+EXPORTS
+
+DiscpLoadGPSettings @1
+DllMain @2

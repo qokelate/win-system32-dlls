@@ -1,0 +1,22 @@
+﻿LIBRARY
+EXPORTS
+
+ADsBuildEnumerator @4
+ADsBuildVarArrayInt @8
+ADsBuildVarArrayStr @7
+ADsEnumerateNext @6
+ADsFreeEnumerator @5
+ADsGetObject @3
+ADsOpenObject @9
+AdsFreeAdsValues @23
+AdsTypeToPropVariant @22
+AdsTypeToPropVariant2 @25
+BinarySDToSecurityDescriptor @29
+ConvertSecDescriptorToVariant @27
+ConvertSecurityDescriptorToSecDes @28
+ConvertTrusteeToSid @31
+DllCanUnloadNow @10
+DllGetClassObject @11
+PropVariantToAdsType @21
+PropVariantToAdsType2 @26
+SecurityDescriptorToBinarySD @30

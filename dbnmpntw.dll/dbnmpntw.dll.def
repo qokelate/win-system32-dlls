@@ -1,0 +1,19 @@
+﻿LIBRARY
+EXPORTS
+
+ConnectionCheckForData @13
+ConnectionClose @4
+ConnectionError @5
+ConnectionErrorW @15
+ConnectionMode @9
+ConnectionObjectSize @1
+ConnectionOpen @11
+ConnectionOpenW @14
+ConnectionRead @2
+ConnectionServerEnum @12
+ConnectionServerEnumW @16
+ConnectionStatus @10
+ConnectionTransact @7
+ConnectionVer @6
+ConnectionWrite @3
+ConnectionWriteOOB @8

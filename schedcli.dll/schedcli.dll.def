@@ -1,0 +1,7 @@
+﻿LIBRARY
+EXPORTS
+
+NetScheduleJobAdd @1
+NetScheduleJobDel @2
+NetScheduleJobEnum @3
+NetScheduleJobGetInfo @4

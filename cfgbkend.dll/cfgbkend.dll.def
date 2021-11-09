@@ -1,0 +1,11 @@
+﻿LIBRARY
+EXPORTS
+
+CLSID_CfgComp @1
+DllCanUnloadNow @2
+DllGetClassObject @3
+DllRegisterServer @4
+DllUnregisterServer @5
+IID_ICfgComp @6
+IID_ISettingsComp @7
+IID_ISettingsComp2 @8

@@ -1,0 +1,6 @@
+﻿LIBRARY
+EXPORTS
+
+DllCanUnloadNow @2
+DllGetClassObject @3
+ServiceMain @1

@@ -1,0 +1,45 @@
+﻿LIBRARY
+EXPORTS
+
+CallbackMayRunLong @1
+CancelThreadpoolIo @2
+ChangeTimerQueueTimer @3
+CloseThreadpool @4
+CloseThreadpoolCleanupGroup @5
+CloseThreadpoolCleanupGroupMembers @6
+CloseThreadpoolIo @7
+CloseThreadpoolTimer @8
+CloseThreadpoolWait @9
+CloseThreadpoolWork @10
+CreateThreadpool @11
+CreateThreadpoolCleanupGroup @12
+CreateThreadpoolIo @13
+CreateThreadpoolTimer @14
+CreateThreadpoolWait @15
+CreateThreadpoolWork @16
+CreateTimerQueue @17
+CreateTimerQueueTimer @18
+DeleteTimerQueueEx @19
+DeleteTimerQueueTimer @20
+DisassociateCurrentThreadFromCallback @21
+FreeLibraryWhenCallbackReturns @22
+IsThreadpoolTimerSet @23
+LeaveCriticalSectionWhenCallbackReturns @24
+QueryThreadpoolStackInformation @25
+RegisterWaitForSingleObjectEx @26
+ReleaseMutexWhenCallbackReturns @27
+ReleaseSemaphoreWhenCallbackReturns @28
+SetEventWhenCallbackReturns @29
+SetThreadpoolStackInformation @30
+SetThreadpoolThreadMaximum @31
+SetThreadpoolThreadMinimum @32
+SetThreadpoolTimer @33
+SetThreadpoolWait @34
+StartThreadpoolIo @35
+SubmitThreadpoolWork @36
+TrySubmitThreadpoolCallback @37
+UnregisterWaitEx @38
+WaitForThreadpoolIoCallbacks @39
+WaitForThreadpoolTimerCallbacks @40
+WaitForThreadpoolWaitCallbacks @41
+WaitForThreadpoolWorkCallbacks @42

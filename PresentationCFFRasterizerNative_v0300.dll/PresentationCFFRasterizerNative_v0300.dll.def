@@ -1,0 +1,8 @@
+﻿LIBRARY
+EXPORTS
+
+AdobeFreeFontInst @1
+AdobeGetBitmap @2
+AdobeGetMetrics @3
+AdobeGetOutline @4
+AdobeNewFont @5

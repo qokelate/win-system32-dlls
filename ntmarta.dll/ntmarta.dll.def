@@ -1,0 +1,47 @@
+﻿LIBRARY
+EXPORTS
+
+AccConvertAccessMaskToActrlAccess @3
+AccConvertAccessToSD @4
+AccConvertAccessToSecurityDescriptor @5
+AccConvertAclToAccess @6
+AccConvertSDToAccess @7
+AccFreeIndexArray @8
+AccGetAccessForTrustee @9
+AccGetExplicitEntries @10
+AccGetInheritanceSource @11
+AccLookupAccountName @12
+AccLookupAccountSid @13
+AccLookupAccountTrustee @14
+AccProvCancelOperation @15
+AccProvGetAccessInfoPerObjectType @16
+AccProvGetAllRights @17
+AccProvGetCapabilities @18
+AccProvGetOperationResults @19
+AccProvGetTrusteesAccess @20
+AccProvGrantAccessRights @21
+AccProvHandleGetAccessInfoPerObjectType @22
+AccProvHandleGetAllRights @23
+AccProvHandleGetTrusteesAccess @24
+AccProvHandleGrantAccessRights @1
+AccProvHandleIsAccessAudited @25
+AccProvHandleIsObjectAccessible @26
+AccProvHandleRevokeAccessRights @27
+AccProvHandleRevokeAuditRights @28
+AccProvHandleSetAccessRights @29
+AccProvIsAccessAudited @30
+AccProvIsObjectAccessible @31
+AccProvRevokeAccessRights @32
+AccProvRevokeAuditRights @33
+AccProvSetAccessRights @34
+AccRewriteGetExplicitEntriesFromAcl @35
+AccRewriteGetHandleRights @36
+AccRewriteGetNamedRights @37
+AccRewriteSetEntriesInAcl @38
+AccRewriteSetHandleRights @39
+AccRewriteSetNamedRights @40
+AccSetEntriesInAList @41
+AccTreeResetNamedSecurityInfo @42
+EventGuidToName @43
+EventNameFree @44
+GetMartaExtensionInterface @2

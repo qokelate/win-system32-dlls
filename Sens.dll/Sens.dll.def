@@ -1,0 +1,8 @@
+﻿LIBRARY
+EXPORTS
+
+SensNotifyNetconEvent @3
+SensNotifyRasEvent @4
+SensNotifyWinlogonEvent @5
+ServiceMain @1
+SvchostPushServiceGlobals @2

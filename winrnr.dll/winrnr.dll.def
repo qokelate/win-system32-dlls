@@ -1,0 +1,6 @@
+﻿LIBRARY
+EXPORTS
+
+InstallNTDSProvider @1
+NSPStartup @2
+RemoveNTDSProvider @3

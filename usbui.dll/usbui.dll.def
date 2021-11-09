@@ -1,0 +1,11 @@
+﻿LIBRARY
+EXPORTS
+
+CPlApplet @1
+USBControllerBandwidthPage @2
+USBControllerPropPageProvider @3
+USBDevicePropPageProvider @4
+USBErrorHandler @5
+USBHubPowerPage @6
+USBHubPropPageProvider @7
+UsbControlPanelApplet @8

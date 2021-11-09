@@ -1,0 +1,7 @@
+﻿LIBRARY
+EXPORTS
+
+RdrSysprepSpecialize @1
+WdiDiagnosticModuleMain @2
+WdiGetDiagnosticModuleInterfaceVersion @3
+WdiHandleInstance @4

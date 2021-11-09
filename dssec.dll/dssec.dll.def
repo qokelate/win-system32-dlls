@@ -1,0 +1,9 @@
+﻿LIBRARY
+EXPORTS
+
+DSCreateISecurityInfoObject @1
+DSCreateISecurityInfoObjectEx @4
+DSCreateSecurityPage @2
+DSEditSecurity @3
+DllCanUnloadNow @5
+DllGetClassObject @6

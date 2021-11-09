@@ -1,0 +1,7 @@
+﻿LIBRARY
+EXPORTS
+
+GenerateWLANPolicy @1
+ProcessWLANPolicyEx @2
+WLGPADeInit @3
+WLGPAInit @4

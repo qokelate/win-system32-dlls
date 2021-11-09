@@ -1,0 +1,720 @@
+ifndef X64
+.686p
+.XMM
+.safeseh SEH_handler
+.model flat, C
+option dotname
+option casemap : none
+endif
+
+extern ptr_LogonIdFromWinStationNameA : PTR;
+extern ptr_LogonIdFromWinStationNameW : PTR;
+extern ptr_RemoteAssistancePrepareSystemRestore : PTR;
+extern ptr_ServerGetInternetConnectorStatus : PTR;
+extern ptr_ServerLicensingClose : PTR;
+extern ptr_ServerLicensingDeactivateCurrentPolicy : PTR;
+extern ptr_ServerLicensingFreePolicyInformation : PTR;
+extern ptr_ServerLicensingGetAvailablePolicyIds : PTR;
+extern ptr_ServerLicensingGetPolicy : PTR;
+extern ptr_ServerLicensingGetPolicyInformationA : PTR;
+extern ptr_ServerLicensingGetPolicyInformationW : PTR;
+extern ptr_ServerLicensingLoadPolicy : PTR;
+extern ptr_ServerLicensingOpenA : PTR;
+extern ptr_ServerLicensingOpenW : PTR;
+extern ptr_ServerLicensingSetPolicy : PTR;
+extern ptr_ServerLicensingUnloadPolicy : PTR;
+extern ptr_ServerQueryInetConnectorInformationA : PTR;
+extern ptr_ServerQueryInetConnectorInformationW : PTR;
+extern ptr_ServerSetInternetConnectorStatus : PTR;
+extern ptr_WinStationActivateLicense : PTR;
+extern ptr_WinStationAutoReconnect : PTR;
+extern ptr_WinStationBroadcastSystemMessage : PTR;
+extern ptr_WinStationCheckAccess : PTR;
+extern ptr_WinStationCheckLoopBack : PTR;
+extern ptr_WinStationCloseServer : PTR;
+extern ptr_WinStationConnectA : PTR;
+extern ptr_WinStationConnectCallback : PTR;
+extern ptr_WinStationConnectEx : PTR;
+extern ptr_WinStationConnectW : PTR;
+extern ptr_WinStationDisconnect : PTR;
+extern ptr_WinStationEnumerateA : PTR;
+extern ptr_WinStationEnumerateExW : PTR;
+extern ptr_WinStationEnumerateLicenses : PTR;
+extern ptr_WinStationEnumerateProcesses : PTR;
+extern ptr_WinStationEnumerateW : PTR;
+extern ptr_WinStationEnumerate_IndexedA : PTR;
+extern ptr_WinStationEnumerate_IndexedW : PTR;
+extern ptr_WinStationFreeConsoleNotification : PTR;
+extern ptr_WinStationFreeGAPMemory : PTR;
+extern ptr_WinStationFreeMemory : PTR;
+extern ptr_WinStationFreePropertyValue : PTR;
+extern ptr_WinStationFreeUserCertificates : PTR;
+extern ptr_WinStationFreeUserCredentials : PTR;
+extern ptr_WinStationGenerateLicense : PTR;
+extern ptr_WinStationGetAllProcesses : PTR;
+extern ptr_WinStationGetAllSessionsW : PTR;
+extern ptr_WinStationGetConnectionProperty : PTR;
+extern ptr_WinStationGetDeviceId : PTR;
+extern ptr_WinStationGetInitialApplication : PTR;
+extern ptr_WinStationGetLanAdapterNameA : PTR;
+extern ptr_WinStationGetLanAdapterNameW : PTR;
+extern ptr_WinStationGetLoggedOnCount : PTR;
+extern ptr_WinStationGetMachinePolicy : PTR;
+extern ptr_WinStationGetProcessSid : PTR;
+extern ptr_WinStationGetRestrictedLogonInfo : PTR;
+extern ptr_WinStationGetSessionIds : PTR;
+extern ptr_WinStationGetTermSrvCountersValue : PTR;
+extern ptr_WinStationGetUserCertificates : PTR;
+extern ptr_WinStationGetUserCredentials : PTR;
+extern ptr_WinStationGetUserProfile : PTR;
+extern ptr_WinStationInstallLicense : PTR;
+extern ptr_WinStationIsHelpAssistantSession : PTR;
+extern ptr_WinStationIsSessionPermitted : PTR;
+extern ptr_WinStationIsSessionRemoteable : PTR;
+extern ptr_WinStationNameFromLogonIdA : PTR;
+extern ptr_WinStationNameFromLogonIdW : PTR;
+extern ptr_WinStationNegotiateSession : PTR;
+extern ptr_WinStationNtsdDebug : PTR;
+extern ptr_WinStationOpenServerA : PTR;
+extern ptr_WinStationOpenServerExA : PTR;
+extern ptr_WinStationOpenServerExW : PTR;
+extern ptr_WinStationOpenServerW : PTR;
+extern ptr_WinStationQueryAllowConcurrentConnections : PTR;
+extern ptr_WinStationQueryEnforcementCore : PTR;
+extern ptr_WinStationQueryInformationA : PTR;
+extern ptr_WinStationQueryInformationW : PTR;
+extern ptr_WinStationQueryLicense : PTR;
+extern ptr_WinStationQueryLogonCredentialsW : PTR;
+extern ptr_WinStationQuerySessionVirtualIP : PTR;
+extern ptr_WinStationQueryUpdateRequired : PTR;
+extern ptr_WinStationRedirectErrorMessage : PTR;
+extern ptr_WinStationRedirectLogonBeginPainting : PTR;
+extern ptr_WinStationRedirectLogonError : PTR;
+extern ptr_WinStationRedirectLogonMessage : PTR;
+extern ptr_WinStationRedirectLogonStatus : PTR;
+extern ptr_WinStationRegisterConsoleNotification : PTR;
+extern ptr_WinStationRegisterConsoleNotificationEx : PTR;
+extern ptr_WinStationRegisterNotificationEvent : PTR;
+extern ptr_WinStationRemoveLicense : PTR;
+extern ptr_WinStationRenameA : PTR;
+extern ptr_WinStationRenameW : PTR;
+extern ptr_WinStationReportUIResult : PTR;
+extern ptr_WinStationReset : PTR;
+extern ptr_WinStationRevertFromServicesSession : PTR;
+extern ptr_WinStationSendMessageA : PTR;
+extern ptr_WinStationSendMessageW : PTR;
+extern ptr_WinStationSendWindowMessage : PTR;
+extern ptr_WinStationServerPing : PTR;
+extern ptr_WinStationSetAutologonPassword : PTR;
+extern ptr_WinStationSetInformationA : PTR;
+extern ptr_WinStationSetInformationW : PTR;
+extern ptr_WinStationSetPoolCount : PTR;
+extern ptr_WinStationShadow : PTR;
+extern ptr_WinStationShadowStop : PTR;
+extern ptr_WinStationShutdownSystem : PTR;
+extern ptr_WinStationSwitchToServicesSession : PTR;
+extern ptr_WinStationSystemShutdownStarted : PTR;
+extern ptr_WinStationSystemShutdownWait : PTR;
+extern ptr_WinStationTerminateProcess : PTR;
+extern ptr_WinStationUnRegisterConsoleNotification : PTR;
+extern ptr_WinStationUnRegisterNotificationEvent : PTR;
+extern ptr_WinStationUserLoginAccessCheck : PTR;
+extern ptr_WinStationVerify : PTR;
+extern ptr_WinStationVirtualOpen : PTR;
+extern ptr_WinStationVirtualOpenEx : PTR;
+extern ptr_WinStationWaitSystemEvent : PTR;
+extern ptr__NWLogonQueryAdmin : PTR;
+extern ptr__NWLogonSetAdmin : PTR;
+extern ptr__WinStationAnnoyancePopup : PTR;
+extern ptr__WinStationBeepOpen : PTR;
+extern ptr__WinStationBreakPoint : PTR;
+extern ptr__WinStationCallback : PTR;
+extern ptr__WinStationCheckForApplicationName : PTR;
+extern ptr__WinStationFUSCanRemoteUserDisconnect : PTR;
+extern ptr__WinStationGetApplicationInfo : PTR;
+extern ptr__WinStationNotifyDisconnectPipe : PTR;
+extern ptr__WinStationNotifyLogoff : PTR;
+extern ptr__WinStationNotifyLogon : PTR;
+extern ptr__WinStationNotifyNewSession : PTR;
+extern ptr__WinStationOpenSessionDirectory : PTR;
+extern ptr__WinStationReInitializeSecurity : PTR;
+extern ptr__WinStationReadRegistry : PTR;
+extern ptr__WinStationSessionInitialized : PTR;
+extern ptr__WinStationShadowTarget : PTR;
+extern ptr__WinStationShadowTarget2 : PTR;
+extern ptr__WinStationShadowTargetSetup : PTR;
+extern ptr__WinStationUpdateClientCachedCredentials : PTR;
+extern ptr__WinStationUpdateSettings : PTR;
+extern ptr__WinStationUpdateUserConfig : PTR;
+extern ptr__WinStationWaitForConnect : PTR;
+
+
+.code
+
+align 16
+SEH_handler   proc
+; handler
+ret
+SEH_handler   endp
+
+LogonIdFromWinStationNameA PROC
+jmp ptr_LogonIdFromWinStationNameA
+LogonIdFromWinStationNameA ENDP
+
+LogonIdFromWinStationNameW PROC
+jmp ptr_LogonIdFromWinStationNameW
+LogonIdFromWinStationNameW ENDP
+
+RemoteAssistancePrepareSystemRestore PROC
+jmp ptr_RemoteAssistancePrepareSystemRestore
+RemoteAssistancePrepareSystemRestore ENDP
+
+ServerGetInternetConnectorStatus PROC
+jmp ptr_ServerGetInternetConnectorStatus
+ServerGetInternetConnectorStatus ENDP
+
+ServerLicensingClose PROC
+jmp ptr_ServerLicensingClose
+ServerLicensingClose ENDP
+
+ServerLicensingDeactivateCurrentPolicy PROC
+jmp ptr_ServerLicensingDeactivateCurrentPolicy
+ServerLicensingDeactivateCurrentPolicy ENDP
+
+ServerLicensingFreePolicyInformation PROC
+jmp ptr_ServerLicensingFreePolicyInformation
+ServerLicensingFreePolicyInformation ENDP
+
+ServerLicensingGetAvailablePolicyIds PROC
+jmp ptr_ServerLicensingGetAvailablePolicyIds
+ServerLicensingGetAvailablePolicyIds ENDP
+
+ServerLicensingGetPolicy PROC
+jmp ptr_ServerLicensingGetPolicy
+ServerLicensingGetPolicy ENDP
+
+ServerLicensingGetPolicyInformationA PROC
+jmp ptr_ServerLicensingGetPolicyInformationA
+ServerLicensingGetPolicyInformationA ENDP
+
+ServerLicensingGetPolicyInformationW PROC
+jmp ptr_ServerLicensingGetPolicyInformationW
+ServerLicensingGetPolicyInformationW ENDP
+
+ServerLicensingLoadPolicy PROC
+jmp ptr_ServerLicensingLoadPolicy
+ServerLicensingLoadPolicy ENDP
+
+ServerLicensingOpenA PROC
+jmp ptr_ServerLicensingOpenA
+ServerLicensingOpenA ENDP
+
+ServerLicensingOpenW PROC
+jmp ptr_ServerLicensingOpenW
+ServerLicensingOpenW ENDP
+
+ServerLicensingSetPolicy PROC
+jmp ptr_ServerLicensingSetPolicy
+ServerLicensingSetPolicy ENDP
+
+ServerLicensingUnloadPolicy PROC
+jmp ptr_ServerLicensingUnloadPolicy
+ServerLicensingUnloadPolicy ENDP
+
+ServerQueryInetConnectorInformationA PROC
+jmp ptr_ServerQueryInetConnectorInformationA
+ServerQueryInetConnectorInformationA ENDP
+
+ServerQueryInetConnectorInformationW PROC
+jmp ptr_ServerQueryInetConnectorInformationW
+ServerQueryInetConnectorInformationW ENDP
+
+ServerSetInternetConnectorStatus PROC
+jmp ptr_ServerSetInternetConnectorStatus
+ServerSetInternetConnectorStatus ENDP
+
+WinStationActivateLicense PROC
+jmp ptr_WinStationActivateLicense
+WinStationActivateLicense ENDP
+
+WinStationAutoReconnect PROC
+jmp ptr_WinStationAutoReconnect
+WinStationAutoReconnect ENDP
+
+WinStationBroadcastSystemMessage PROC
+jmp ptr_WinStationBroadcastSystemMessage
+WinStationBroadcastSystemMessage ENDP
+
+WinStationCheckAccess PROC
+jmp ptr_WinStationCheckAccess
+WinStationCheckAccess ENDP
+
+WinStationCheckLoopBack PROC
+jmp ptr_WinStationCheckLoopBack
+WinStationCheckLoopBack ENDP
+
+WinStationCloseServer PROC
+jmp ptr_WinStationCloseServer
+WinStationCloseServer ENDP
+
+WinStationConnectA PROC
+jmp ptr_WinStationConnectA
+WinStationConnectA ENDP
+
+WinStationConnectCallback PROC
+jmp ptr_WinStationConnectCallback
+WinStationConnectCallback ENDP
+
+WinStationConnectEx PROC
+jmp ptr_WinStationConnectEx
+WinStationConnectEx ENDP
+
+WinStationConnectW PROC
+jmp ptr_WinStationConnectW
+WinStationConnectW ENDP
+
+WinStationDisconnect PROC
+jmp ptr_WinStationDisconnect
+WinStationDisconnect ENDP
+
+WinStationEnumerateA PROC
+jmp ptr_WinStationEnumerateA
+WinStationEnumerateA ENDP
+
+WinStationEnumerateExW PROC
+jmp ptr_WinStationEnumerateExW
+WinStationEnumerateExW ENDP
+
+WinStationEnumerateLicenses PROC
+jmp ptr_WinStationEnumerateLicenses
+WinStationEnumerateLicenses ENDP
+
+WinStationEnumerateProcesses PROC
+jmp ptr_WinStationEnumerateProcesses
+WinStationEnumerateProcesses ENDP
+
+WinStationEnumerateW PROC
+jmp ptr_WinStationEnumerateW
+WinStationEnumerateW ENDP
+
+WinStationEnumerate_IndexedA PROC
+jmp ptr_WinStationEnumerate_IndexedA
+WinStationEnumerate_IndexedA ENDP
+
+WinStationEnumerate_IndexedW PROC
+jmp ptr_WinStationEnumerate_IndexedW
+WinStationEnumerate_IndexedW ENDP
+
+WinStationFreeConsoleNotification PROC
+jmp ptr_WinStationFreeConsoleNotification
+WinStationFreeConsoleNotification ENDP
+
+WinStationFreeGAPMemory PROC
+jmp ptr_WinStationFreeGAPMemory
+WinStationFreeGAPMemory ENDP
+
+WinStationFreeMemory PROC
+jmp ptr_WinStationFreeMemory
+WinStationFreeMemory ENDP
+
+WinStationFreePropertyValue PROC
+jmp ptr_WinStationFreePropertyValue
+WinStationFreePropertyValue ENDP
+
+WinStationFreeUserCertificates PROC
+jmp ptr_WinStationFreeUserCertificates
+WinStationFreeUserCertificates ENDP
+
+WinStationFreeUserCredentials PROC
+jmp ptr_WinStationFreeUserCredentials
+WinStationFreeUserCredentials ENDP
+
+WinStationGenerateLicense PROC
+jmp ptr_WinStationGenerateLicense
+WinStationGenerateLicense ENDP
+
+WinStationGetAllProcesses PROC
+jmp ptr_WinStationGetAllProcesses
+WinStationGetAllProcesses ENDP
+
+WinStationGetAllSessionsW PROC
+jmp ptr_WinStationGetAllSessionsW
+WinStationGetAllSessionsW ENDP
+
+WinStationGetConnectionProperty PROC
+jmp ptr_WinStationGetConnectionProperty
+WinStationGetConnectionProperty ENDP
+
+WinStationGetDeviceId PROC
+jmp ptr_WinStationGetDeviceId
+WinStationGetDeviceId ENDP
+
+WinStationGetInitialApplication PROC
+jmp ptr_WinStationGetInitialApplication
+WinStationGetInitialApplication ENDP
+
+WinStationGetLanAdapterNameA PROC
+jmp ptr_WinStationGetLanAdapterNameA
+WinStationGetLanAdapterNameA ENDP
+
+WinStationGetLanAdapterNameW PROC
+jmp ptr_WinStationGetLanAdapterNameW
+WinStationGetLanAdapterNameW ENDP
+
+WinStationGetLoggedOnCount PROC
+jmp ptr_WinStationGetLoggedOnCount
+WinStationGetLoggedOnCount ENDP
+
+WinStationGetMachinePolicy PROC
+jmp ptr_WinStationGetMachinePolicy
+WinStationGetMachinePolicy ENDP
+
+WinStationGetProcessSid PROC
+jmp ptr_WinStationGetProcessSid
+WinStationGetProcessSid ENDP
+
+WinStationGetRestrictedLogonInfo PROC
+jmp ptr_WinStationGetRestrictedLogonInfo
+WinStationGetRestrictedLogonInfo ENDP
+
+WinStationGetSessionIds PROC
+jmp ptr_WinStationGetSessionIds
+WinStationGetSessionIds ENDP
+
+WinStationGetTermSrvCountersValue PROC
+jmp ptr_WinStationGetTermSrvCountersValue
+WinStationGetTermSrvCountersValue ENDP
+
+WinStationGetUserCertificates PROC
+jmp ptr_WinStationGetUserCertificates
+WinStationGetUserCertificates ENDP
+
+WinStationGetUserCredentials PROC
+jmp ptr_WinStationGetUserCredentials
+WinStationGetUserCredentials ENDP
+
+WinStationGetUserProfile PROC
+jmp ptr_WinStationGetUserProfile
+WinStationGetUserProfile ENDP
+
+WinStationInstallLicense PROC
+jmp ptr_WinStationInstallLicense
+WinStationInstallLicense ENDP
+
+WinStationIsHelpAssistantSession PROC
+jmp ptr_WinStationIsHelpAssistantSession
+WinStationIsHelpAssistantSession ENDP
+
+WinStationIsSessionPermitted PROC
+jmp ptr_WinStationIsSessionPermitted
+WinStationIsSessionPermitted ENDP
+
+WinStationIsSessionRemoteable PROC
+jmp ptr_WinStationIsSessionRemoteable
+WinStationIsSessionRemoteable ENDP
+
+WinStationNameFromLogonIdA PROC
+jmp ptr_WinStationNameFromLogonIdA
+WinStationNameFromLogonIdA ENDP
+
+WinStationNameFromLogonIdW PROC
+jmp ptr_WinStationNameFromLogonIdW
+WinStationNameFromLogonIdW ENDP
+
+WinStationNegotiateSession PROC
+jmp ptr_WinStationNegotiateSession
+WinStationNegotiateSession ENDP
+
+WinStationNtsdDebug PROC
+jmp ptr_WinStationNtsdDebug
+WinStationNtsdDebug ENDP
+
+WinStationOpenServerA PROC
+jmp ptr_WinStationOpenServerA
+WinStationOpenServerA ENDP
+
+WinStationOpenServerExA PROC
+jmp ptr_WinStationOpenServerExA
+WinStationOpenServerExA ENDP
+
+WinStationOpenServerExW PROC
+jmp ptr_WinStationOpenServerExW
+WinStationOpenServerExW ENDP
+
+WinStationOpenServerW PROC
+jmp ptr_WinStationOpenServerW
+WinStationOpenServerW ENDP
+
+WinStationQueryAllowConcurrentConnections PROC
+jmp ptr_WinStationQueryAllowConcurrentConnections
+WinStationQueryAllowConcurrentConnections ENDP
+
+WinStationQueryEnforcementCore PROC
+jmp ptr_WinStationQueryEnforcementCore
+WinStationQueryEnforcementCore ENDP
+
+WinStationQueryInformationA PROC
+jmp ptr_WinStationQueryInformationA
+WinStationQueryInformationA ENDP
+
+WinStationQueryInformationW PROC
+jmp ptr_WinStationQueryInformationW
+WinStationQueryInformationW ENDP
+
+WinStationQueryLicense PROC
+jmp ptr_WinStationQueryLicense
+WinStationQueryLicense ENDP
+
+WinStationQueryLogonCredentialsW PROC
+jmp ptr_WinStationQueryLogonCredentialsW
+WinStationQueryLogonCredentialsW ENDP
+
+WinStationQuerySessionVirtualIP PROC
+jmp ptr_WinStationQuerySessionVirtualIP
+WinStationQuerySessionVirtualIP ENDP
+
+WinStationQueryUpdateRequired PROC
+jmp ptr_WinStationQueryUpdateRequired
+WinStationQueryUpdateRequired ENDP
+
+WinStationRedirectErrorMessage PROC
+jmp ptr_WinStationRedirectErrorMessage
+WinStationRedirectErrorMessage ENDP
+
+WinStationRedirectLogonBeginPainting PROC
+jmp ptr_WinStationRedirectLogonBeginPainting
+WinStationRedirectLogonBeginPainting ENDP
+
+WinStationRedirectLogonError PROC
+jmp ptr_WinStationRedirectLogonError
+WinStationRedirectLogonError ENDP
+
+WinStationRedirectLogonMessage PROC
+jmp ptr_WinStationRedirectLogonMessage
+WinStationRedirectLogonMessage ENDP
+
+WinStationRedirectLogonStatus PROC
+jmp ptr_WinStationRedirectLogonStatus
+WinStationRedirectLogonStatus ENDP
+
+WinStationRegisterConsoleNotification PROC
+jmp ptr_WinStationRegisterConsoleNotification
+WinStationRegisterConsoleNotification ENDP
+
+WinStationRegisterConsoleNotificationEx PROC
+jmp ptr_WinStationRegisterConsoleNotificationEx
+WinStationRegisterConsoleNotificationEx ENDP
+
+WinStationRegisterNotificationEvent PROC
+jmp ptr_WinStationRegisterNotificationEvent
+WinStationRegisterNotificationEvent ENDP
+
+WinStationRemoveLicense PROC
+jmp ptr_WinStationRemoveLicense
+WinStationRemoveLicense ENDP
+
+WinStationRenameA PROC
+jmp ptr_WinStationRenameA
+WinStationRenameA ENDP
+
+WinStationRenameW PROC
+jmp ptr_WinStationRenameW
+WinStationRenameW ENDP
+
+WinStationReportUIResult PROC
+jmp ptr_WinStationReportUIResult
+WinStationReportUIResult ENDP
+
+WinStationReset PROC
+jmp ptr_WinStationReset
+WinStationReset ENDP
+
+WinStationRevertFromServicesSession PROC
+jmp ptr_WinStationRevertFromServicesSession
+WinStationRevertFromServicesSession ENDP
+
+WinStationSendMessageA PROC
+jmp ptr_WinStationSendMessageA
+WinStationSendMessageA ENDP
+
+WinStationSendMessageW PROC
+jmp ptr_WinStationSendMessageW
+WinStationSendMessageW ENDP
+
+WinStationSendWindowMessage PROC
+jmp ptr_WinStationSendWindowMessage
+WinStationSendWindowMessage ENDP
+
+WinStationServerPing PROC
+jmp ptr_WinStationServerPing
+WinStationServerPing ENDP
+
+WinStationSetAutologonPassword PROC
+jmp ptr_WinStationSetAutologonPassword
+WinStationSetAutologonPassword ENDP
+
+WinStationSetInformationA PROC
+jmp ptr_WinStationSetInformationA
+WinStationSetInformationA ENDP
+
+WinStationSetInformationW PROC
+jmp ptr_WinStationSetInformationW
+WinStationSetInformationW ENDP
+
+WinStationSetPoolCount PROC
+jmp ptr_WinStationSetPoolCount
+WinStationSetPoolCount ENDP
+
+WinStationShadow PROC
+jmp ptr_WinStationShadow
+WinStationShadow ENDP
+
+WinStationShadowStop PROC
+jmp ptr_WinStationShadowStop
+WinStationShadowStop ENDP
+
+WinStationShutdownSystem PROC
+jmp ptr_WinStationShutdownSystem
+WinStationShutdownSystem ENDP
+
+WinStationSwitchToServicesSession PROC
+jmp ptr_WinStationSwitchToServicesSession
+WinStationSwitchToServicesSession ENDP
+
+WinStationSystemShutdownStarted PROC
+jmp ptr_WinStationSystemShutdownStarted
+WinStationSystemShutdownStarted ENDP
+
+WinStationSystemShutdownWait PROC
+jmp ptr_WinStationSystemShutdownWait
+WinStationSystemShutdownWait ENDP
+
+WinStationTerminateProcess PROC
+jmp ptr_WinStationTerminateProcess
+WinStationTerminateProcess ENDP
+
+WinStationUnRegisterConsoleNotification PROC
+jmp ptr_WinStationUnRegisterConsoleNotification
+WinStationUnRegisterConsoleNotification ENDP
+
+WinStationUnRegisterNotificationEvent PROC
+jmp ptr_WinStationUnRegisterNotificationEvent
+WinStationUnRegisterNotificationEvent ENDP
+
+WinStationUserLoginAccessCheck PROC
+jmp ptr_WinStationUserLoginAccessCheck
+WinStationUserLoginAccessCheck ENDP
+
+WinStationVerify PROC
+jmp ptr_WinStationVerify
+WinStationVerify ENDP
+
+WinStationVirtualOpen PROC
+jmp ptr_WinStationVirtualOpen
+WinStationVirtualOpen ENDP
+
+WinStationVirtualOpenEx PROC
+jmp ptr_WinStationVirtualOpenEx
+WinStationVirtualOpenEx ENDP
+
+WinStationWaitSystemEvent PROC
+jmp ptr_WinStationWaitSystemEvent
+WinStationWaitSystemEvent ENDP
+
+_NWLogonQueryAdmin PROC
+jmp ptr__NWLogonQueryAdmin
+_NWLogonQueryAdmin ENDP
+
+_NWLogonSetAdmin PROC
+jmp ptr__NWLogonSetAdmin
+_NWLogonSetAdmin ENDP
+
+_WinStationAnnoyancePopup PROC
+jmp ptr__WinStationAnnoyancePopup
+_WinStationAnnoyancePopup ENDP
+
+_WinStationBeepOpen PROC
+jmp ptr__WinStationBeepOpen
+_WinStationBeepOpen ENDP
+
+_WinStationBreakPoint PROC
+jmp ptr__WinStationBreakPoint
+_WinStationBreakPoint ENDP
+
+_WinStationCallback PROC
+jmp ptr__WinStationCallback
+_WinStationCallback ENDP
+
+_WinStationCheckForApplicationName PROC
+jmp ptr__WinStationCheckForApplicationName
+_WinStationCheckForApplicationName ENDP
+
+_WinStationFUSCanRemoteUserDisconnect PROC
+jmp ptr__WinStationFUSCanRemoteUserDisconnect
+_WinStationFUSCanRemoteUserDisconnect ENDP
+
+_WinStationGetApplicationInfo PROC
+jmp ptr__WinStationGetApplicationInfo
+_WinStationGetApplicationInfo ENDP
+
+_WinStationNotifyDisconnectPipe PROC
+jmp ptr__WinStationNotifyDisconnectPipe
+_WinStationNotifyDisconnectPipe ENDP
+
+_WinStationNotifyLogoff PROC
+jmp ptr__WinStationNotifyLogoff
+_WinStationNotifyLogoff ENDP
+
+_WinStationNotifyLogon PROC
+jmp ptr__WinStationNotifyLogon
+_WinStationNotifyLogon ENDP
+
+_WinStationNotifyNewSession PROC
+jmp ptr__WinStationNotifyNewSession
+_WinStationNotifyNewSession ENDP
+
+_WinStationOpenSessionDirectory PROC
+jmp ptr__WinStationOpenSessionDirectory
+_WinStationOpenSessionDirectory ENDP
+
+_WinStationReInitializeSecurity PROC
+jmp ptr__WinStationReInitializeSecurity
+_WinStationReInitializeSecurity ENDP
+
+_WinStationReadRegistry PROC
+jmp ptr__WinStationReadRegistry
+_WinStationReadRegistry ENDP
+
+_WinStationSessionInitialized PROC
+jmp ptr__WinStationSessionInitialized
+_WinStationSessionInitialized ENDP
+
+_WinStationShadowTarget PROC
+jmp ptr__WinStationShadowTarget
+_WinStationShadowTarget ENDP
+
+_WinStationShadowTarget2 PROC
+jmp ptr__WinStationShadowTarget2
+_WinStationShadowTarget2 ENDP
+
+_WinStationShadowTargetSetup PROC
+jmp ptr__WinStationShadowTargetSetup
+_WinStationShadowTargetSetup ENDP
+
+_WinStationUpdateClientCachedCredentials PROC
+jmp ptr__WinStationUpdateClientCachedCredentials
+_WinStationUpdateClientCachedCredentials ENDP
+
+_WinStationUpdateSettings PROC
+jmp ptr__WinStationUpdateSettings
+_WinStationUpdateSettings ENDP
+
+_WinStationUpdateUserConfig PROC
+jmp ptr__WinStationUpdateUserConfig
+_WinStationUpdateUserConfig ENDP
+
+_WinStationWaitForConnect PROC
+jmp ptr__WinStationWaitForConnect
+_WinStationWaitForConnect ENDP
+
+end

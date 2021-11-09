@@ -1,0 +1,12 @@
+﻿LIBRARY
+EXPORTS
+
+SnmpMgrClose @1
+SnmpMgrCtl @2
+SnmpMgrGetTrap @3
+SnmpMgrGetTrapEx @4
+SnmpMgrOidToStr @5
+SnmpMgrOpen @6
+SnmpMgrRequest @7
+SnmpMgrStrToOid @8
+SnmpMgrTrapListen @9

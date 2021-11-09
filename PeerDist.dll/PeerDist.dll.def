@@ -1,0 +1,26 @@
+﻿LIBRARY
+EXPORTS
+
+PeerDistClientAddContentInformation @1
+PeerDistClientAddData @2
+PeerDistClientBlockRead @3
+PeerDistClientCancelAsyncOperation @4
+PeerDistClientCloseContent @5
+PeerDistClientCompleteContentInformation @6
+PeerDistClientFlushContent @7
+PeerDistClientOpenContent @8
+PeerDistClientStreamRead @9
+PeerDistGetStatus @10
+PeerDistRegisterForStatusChangeNotification @11
+PeerDistServerCancelAsyncOperation @12
+PeerDistServerCloseContentInformation @13
+PeerDistServerCloseStreamHandle @14
+PeerDistServerOpenContentInformation @15
+PeerDistServerPublishAddToStream @16
+PeerDistServerPublishCompleteStream @17
+PeerDistServerPublishStream @18
+PeerDistServerRetrieveContentInformation @19
+PeerDistServerUnpublish @20
+PeerDistShutdown @21
+PeerDistStartup @22
+PeerDistUnregisterForStatusChangeNotification @23

@@ -1,0 +1,14 @@
+﻿LIBRARY
+EXPORTS
+
+LpkDllInitialize @2
+LpkDrawTextEx @3
+LpkEditControl @4
+LpkExtTextOut @5
+LpkGetCharacterPlacement @6
+LpkGetTextExtentExPoint @7
+LpkInitialize @8
+LpkPSMTextOut @9
+LpkTabbedTextOut @1
+LpkUseGDIWidthCache @10
+ftsWordBreak @11

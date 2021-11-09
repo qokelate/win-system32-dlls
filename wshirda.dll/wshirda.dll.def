@@ -1,0 +1,14 @@
+﻿LIBRARY
+EXPORTS
+
+WSHEnumProtocols @1
+WSHGetProviderGuid @2
+WSHGetSockaddrType @3
+WSHGetSocketInformation @4
+WSHGetWSAProtocolInfo @5
+WSHGetWildcardSockaddr @6
+WSHGetWinsockMapping @7
+WSHIoctl @8
+WSHNotify @9
+WSHOpenSocket @10
+WSHSetSocketInformation @11

@@ -1,0 +1,7 @@
+﻿LIBRARY
+EXPORTS
+
+KsCreateAllocator @1
+KsCreateClock @2
+KsCreatePin @3
+KsCreateTopologyNode @4

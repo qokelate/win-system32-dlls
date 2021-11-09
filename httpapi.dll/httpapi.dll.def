@@ -1,0 +1,40 @@
+﻿LIBRARY
+EXPORTS
+
+HttpAddFragmentToCache @1
+HttpAddUrl @2
+HttpAddUrlToUrlGroup @3
+HttpCancelHttpRequest @4
+HttpCloseRequestQueue @5
+HttpCloseServerSession @6
+HttpCloseUrlGroup @7
+HttpControlService @8
+HttpCreateHttpHandle @9
+HttpCreateRequestQueue @10
+HttpCreateServerSession @11
+HttpCreateUrlGroup @12
+HttpDeleteServiceConfiguration @13
+HttpFlushResponseCache @14
+HttpGetCounters @15
+HttpInitialize @16
+HttpQueryRequestQueueProperty @17
+HttpQueryServerSessionProperty @18
+HttpQueryServiceConfiguration @19
+HttpQueryUrlGroupProperty @20
+HttpReadFragmentFromCache @21
+HttpReceiveClientCertificate @22
+HttpReceiveHttpRequest @23
+HttpReceiveRequestEntityBody @24
+HttpRemoveUrl @25
+HttpRemoveUrlFromUrlGroup @26
+HttpSendHttpResponse @27
+HttpSendResponseEntityBody @28
+HttpSetRequestQueueProperty @29
+HttpSetServerSessionProperty @30
+HttpSetServiceConfiguration @31
+HttpSetUrlGroupProperty @32
+HttpShutdownRequestQueue @33
+HttpTerminate @34
+HttpWaitForDemandStart @35
+HttpWaitForDisconnect @36
+HttpWaitForDisconnectEx @37

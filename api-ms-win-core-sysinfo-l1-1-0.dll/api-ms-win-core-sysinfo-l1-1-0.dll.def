@@ -1,0 +1,31 @@
+﻿LIBRARY
+EXPORTS
+
+GetComputerNameExA @1
+GetComputerNameExW @2
+GetDynamicTimeZoneInformation @3
+GetLocalTime @4
+GetLogicalProcessorInformation @5
+GetLogicalProcessorInformationEx @6
+GetSystemDirectoryA @7
+GetSystemDirectoryW @8
+GetSystemInfo @9
+GetSystemTime @10
+GetSystemTimeAdjustment @11
+GetSystemTimeAsFileTime @12
+GetSystemWindowsDirectoryA @13
+GetSystemWindowsDirectoryW @14
+GetTickCount @15
+GetTickCount64 @16
+GetTimeZoneInformation @17
+GetTimeZoneInformationForYear @18
+GetVersion @19
+GetVersionExA @20
+GetVersionExW @21
+GetWindowsDirectoryA @22
+GetWindowsDirectoryW @23
+GlobalMemoryStatusEx @24
+SetLocalTime @25
+SystemTimeToFileTime @26
+SystemTimeToTzSpecificLocalTime @27
+TzSpecificLocalTimeToSystemTime @28

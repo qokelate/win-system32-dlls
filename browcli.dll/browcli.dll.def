@@ -1,0 +1,15 @@
+﻿LIBRARY
+EXPORTS
+
+I_BrowserDebugCall @1
+I_BrowserDebugTrace @2
+I_BrowserQueryEmulatedDomains @3
+I_BrowserQueryOtherDomains @4
+I_BrowserQueryStatistics @5
+I_BrowserResetNetlogonState @6
+I_BrowserResetStatistics @7
+I_BrowserServerEnum @8
+I_BrowserSetNetlogonState @9
+NetBrowserStatisticsGet @10
+NetServerEnum @11
+NetServerEnumEx @12

@@ -1,0 +1,31 @@
+﻿LIBRARY
+EXPORTS
+
+DllCanUnloadNow @2
+DllGetClassObject @3
+DllRegisterServer @4
+DllUnregisterServer @5
+MFConvertColorInfoFromDXVA @6
+MFConvertColorInfoToDXVA @7
+MFConvertFromFP16Array @8
+MFConvertToFP16Array @9
+MFCopyImage @10
+MFCreateDXSurfaceBuffer @11
+MFCreateVideoMediaType @12
+MFCreateVideoMediaTypeFromBitMapInfoHeader @13
+MFCreateVideoMediaTypeFromSubtype @14
+MFCreateVideoMediaTypeFromVideoInfoHeader @15
+MFCreateVideoMediaTypeFromVideoInfoHeader2 @16
+MFCreateVideoMixer @17
+MFCreateVideoMixerAndPresenter @18
+MFCreateVideoOTA @19
+MFCreateVideoPresenter @20
+MFCreateVideoPresenter2 @21
+MFCreateVideoSampleAllocator @22
+MFCreateVideoSampleFromSurface @23
+MFGetPlaneSize @24
+MFGetStrideForBitmapInfoHeader @25
+MFGetUncompressedVideoFormat @1
+MFInitVideoFormat @26
+MFInitVideoFormat_RGB @27
+MFIsFormatYUV @28

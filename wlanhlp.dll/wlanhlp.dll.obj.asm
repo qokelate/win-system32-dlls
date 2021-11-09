@@ -1,0 +1,165 @@
+ifndef X64
+.686p
+.XMM
+.safeseh SEH_handler
+.model flat, C
+option dotname
+option casemap : none
+endif
+
+extern ptr_QueryNetconStatus : PTR;
+extern ptr_QueryNetconVirtualCharacteristic : PTR;
+extern ptr_WlanCancelPlap : PTR;
+extern ptr_WlanConnectWithInput : PTR;
+extern ptr_WlanDeinitPlapParams : PTR;
+extern ptr_WlanDoPlap : PTR;
+extern ptr_WlanEnumAllInterfaces : PTR;
+extern ptr_WlanGenerateProfileXmlBasicSettings : PTR;
+extern ptr_WlanGetProfileEapUserDataInfo : PTR;
+extern ptr_WlanGetProfileKeyInfo : PTR;
+extern ptr_WlanHostedNetworkFreeWCNSettings : PTR;
+extern ptr_WlanHostedNetworkHlpQueryEverUsed : PTR;
+extern ptr_WlanHostedNetworkQueryWCNSettings : PTR;
+extern ptr_WlanHostedNetworkSetWCNSettings : PTR;
+extern ptr_WlanInitPlapParams : PTR;
+extern ptr_WlanInternalScan : PTR;
+extern ptr_WlanIsNetworkSuppressed : PTR;
+extern ptr_WlanIsUIRequestPending : PTR;
+extern ptr_WlanParseProfileXmlBasicSettings : PTR;
+extern ptr_WlanPrivateGetAvailableNetworkList : PTR;
+extern ptr_WlanQueryCreateAllUserProfileRestricted : PTR;
+extern ptr_WlanQueryPlapCredentials : PTR;
+extern ptr_WlanQueryPreConnectInput : PTR;
+extern ptr_WlanQueryVirtualInterfaceType : PTR;
+extern ptr_WlanRefreshConnections : PTR;
+extern ptr_WlanRemoveUIForwardingNetworkList : PTR;
+extern ptr_WlanSendUIResponse : PTR;
+extern ptr_WlanSetAllUserProfileRestricted : PTR;
+extern ptr_WlanSetUIForwardingNetworkList : PTR;
+
+
+.code
+
+align 16
+SEH_handler   proc
+; handler
+ret
+SEH_handler   endp
+
+QueryNetconStatus PROC
+jmp ptr_QueryNetconStatus
+QueryNetconStatus ENDP
+
+QueryNetconVirtualCharacteristic PROC
+jmp ptr_QueryNetconVirtualCharacteristic
+QueryNetconVirtualCharacteristic ENDP
+
+WlanCancelPlap PROC
+jmp ptr_WlanCancelPlap
+WlanCancelPlap ENDP
+
+WlanConnectWithInput PROC
+jmp ptr_WlanConnectWithInput
+WlanConnectWithInput ENDP
+
+WlanDeinitPlapParams PROC
+jmp ptr_WlanDeinitPlapParams
+WlanDeinitPlapParams ENDP
+
+WlanDoPlap PROC
+jmp ptr_WlanDoPlap
+WlanDoPlap ENDP
+
+WlanEnumAllInterfaces PROC
+jmp ptr_WlanEnumAllInterfaces
+WlanEnumAllInterfaces ENDP
+
+WlanGenerateProfileXmlBasicSettings PROC
+jmp ptr_WlanGenerateProfileXmlBasicSettings
+WlanGenerateProfileXmlBasicSettings ENDP
+
+WlanGetProfileEapUserDataInfo PROC
+jmp ptr_WlanGetProfileEapUserDataInfo
+WlanGetProfileEapUserDataInfo ENDP
+
+WlanGetProfileKeyInfo PROC
+jmp ptr_WlanGetProfileKeyInfo
+WlanGetProfileKeyInfo ENDP
+
+WlanHostedNetworkFreeWCNSettings PROC
+jmp ptr_WlanHostedNetworkFreeWCNSettings
+WlanHostedNetworkFreeWCNSettings ENDP
+
+WlanHostedNetworkHlpQueryEverUsed PROC
+jmp ptr_WlanHostedNetworkHlpQueryEverUsed
+WlanHostedNetworkHlpQueryEverUsed ENDP
+
+WlanHostedNetworkQueryWCNSettings PROC
+jmp ptr_WlanHostedNetworkQueryWCNSettings
+WlanHostedNetworkQueryWCNSettings ENDP
+
+WlanHostedNetworkSetWCNSettings PROC
+jmp ptr_WlanHostedNetworkSetWCNSettings
+WlanHostedNetworkSetWCNSettings ENDP
+
+WlanInitPlapParams PROC
+jmp ptr_WlanInitPlapParams
+WlanInitPlapParams ENDP
+
+WlanInternalScan PROC
+jmp ptr_WlanInternalScan
+WlanInternalScan ENDP
+
+WlanIsNetworkSuppressed PROC
+jmp ptr_WlanIsNetworkSuppressed
+WlanIsNetworkSuppressed ENDP
+
+WlanIsUIRequestPending PROC
+jmp ptr_WlanIsUIRequestPending
+WlanIsUIRequestPending ENDP
+
+WlanParseProfileXmlBasicSettings PROC
+jmp ptr_WlanParseProfileXmlBasicSettings
+WlanParseProfileXmlBasicSettings ENDP
+
+WlanPrivateGetAvailableNetworkList PROC
+jmp ptr_WlanPrivateGetAvailableNetworkList
+WlanPrivateGetAvailableNetworkList ENDP
+
+WlanQueryCreateAllUserProfileRestricted PROC
+jmp ptr_WlanQueryCreateAllUserProfileRestricted
+WlanQueryCreateAllUserProfileRestricted ENDP
+
+WlanQueryPlapCredentials PROC
+jmp ptr_WlanQueryPlapCredentials
+WlanQueryPlapCredentials ENDP
+
+WlanQueryPreConnectInput PROC
+jmp ptr_WlanQueryPreConnectInput
+WlanQueryPreConnectInput ENDP
+
+WlanQueryVirtualInterfaceType PROC
+jmp ptr_WlanQueryVirtualInterfaceType
+WlanQueryVirtualInterfaceType ENDP
+
+WlanRefreshConnections PROC
+jmp ptr_WlanRefreshConnections
+WlanRefreshConnections ENDP
+
+WlanRemoveUIForwardingNetworkList PROC
+jmp ptr_WlanRemoveUIForwardingNetworkList
+WlanRemoveUIForwardingNetworkList ENDP
+
+WlanSendUIResponse PROC
+jmp ptr_WlanSendUIResponse
+WlanSendUIResponse ENDP
+
+WlanSetAllUserProfileRestricted PROC
+jmp ptr_WlanSetAllUserProfileRestricted
+WlanSetAllUserProfileRestricted ENDP
+
+WlanSetUIForwardingNetworkList PROC
+jmp ptr_WlanSetUIForwardingNetworkList
+WlanSetUIForwardingNetworkList ENDP
+
+end

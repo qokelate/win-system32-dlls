@@ -1,0 +1,35 @@
+﻿LIBRARY
+EXPORTS
+
+DriverPackageClose @1
+DriverPackageEnumDriversW @2
+DriverPackageEnumFilesW @3
+DriverPackageEnumRegKeysW @4
+DriverPackageEnumServicesW @5
+DriverPackageGetVersionInfoW @6
+DriverPackageOpenW @7
+DriverStoreClose @8
+DriverStoreDeleteW @9
+DriverStoreEnumW @10
+DriverStoreFindW @11
+DriverStoreImportW @12
+DriverStoreOfflineAddDriverPackageA @13
+DriverStoreOfflineAddDriverPackageW @14
+DriverStoreOfflineDeleteDriverPackageA @15
+DriverStoreOfflineDeleteDriverPackageW @16
+DriverStoreOfflineEnumDriverPackageA @17
+DriverStoreOfflineEnumDriverPackageW @18
+DriverStoreOfflineEnumPublishedInfA @19
+DriverStoreOfflineEnumPublishedInfW @20
+DriverStoreOfflineFindDriverPackageA @21
+DriverStoreOfflineFindDriverPackageW @22
+DriverStoreOpenW @23
+DriverStorePublishW @24
+DriverStoreReflectCriticalW @25
+DriverStoreReflectW @26
+DriverStoreSetLogContext @27
+DriverStoreUnpublishW @28
+DriverStoreUnreflectCriticalW @29
+DriverStoreUnreflectW @30
+pServerDeleteDriverPackage @31
+pServerImportDriverPackage @32

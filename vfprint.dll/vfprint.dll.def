@@ -1,0 +1,9 @@
+﻿LIBRARY
+EXPORTS
+
+CreateFilterTestHook @1
+GetAccessViolationsCount @2
+GetInvalidHandleExceptionCount @3
+GetPrinterHandleCount @6
+PrintVerifierCreatePluginInterfaceWrapper @4
+PrintVerifierIsLayerEnabled @5

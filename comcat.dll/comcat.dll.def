@@ -1,0 +1,6 @@
+﻿LIBRARY
+EXPORTS
+
+DllCanUnloadNow @1
+DllRegisterServer @3
+DllUnregisterServer @4

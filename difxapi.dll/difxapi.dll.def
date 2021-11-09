@@ -1,0 +1,15 @@
+﻿LIBRARY
+EXPORTS
+
+DIFXAPISetLogCallbackA @1
+DIFXAPISetLogCallbackW @2
+DriverPackageGetPathA @3
+DriverPackageGetPathW @4
+DriverPackageInstallA @5
+DriverPackageInstallW @6
+DriverPackagePreinstallA @7
+DriverPackagePreinstallW @8
+DriverPackageUninstallA @9
+DriverPackageUninstallW @10
+SetDifxLogCallbackA @11
+SetDifxLogCallbackW @12

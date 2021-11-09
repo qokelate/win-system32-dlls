@@ -1,0 +1,31 @@
+﻿LIBRARY
+EXPORTS
+
+DllBidEntryPoint @574
+DllMain @575
+FXMemAttach @576
+FXMemDetach @577
+GetAllocCounters @578
+GetIUMS @579
+IrtlAssert @580
+IrtlTrace @581
+MPCSInitialize @582
+MPCSUninitialize @583
+MPDeleteCriticalSection @584
+MPInitializeCriticalSection @585
+MPInitializeCriticalSectionAndSpinCount @586
+MpGetHeapHandle @587
+MpHeapAlloc @588
+MpHeapCreate @589
+MpHeapDestroy @590
+MpHeapFree @591
+MpHeapReAlloc @592
+MpHeapSize @593
+MpHeapValidate @594
+SetIUMS @595
+SetMemHook @596
+UMSEnterCSWraper @597
+mpCalloc @598
+mpFree @599
+mpMalloc @600
+mpRealloc @601

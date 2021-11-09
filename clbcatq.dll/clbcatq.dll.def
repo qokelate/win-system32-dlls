@@ -1,0 +1,35 @@
+﻿LIBRARY
+EXPORTS
+
+ActivatorUpdateForIsRouterChanges @1
+CLSIDFromStringByBitness @8
+CheckMemoryGates @9
+CoRegCleanup @2
+ComPlusEnablePartitions @10
+ComPlusEnableRemoteAccess @11
+ComPlusMigrate @12
+ComPlusPartitionsEnabled @13
+ComPlusRemoteAccessEnabled @14
+CreateComponentLibraryEx @15
+DeleteAllActivatorsForClsid @3
+DllCanUnloadNow @16
+DllGetClassObject @17
+DllRegisterServer @18
+DllUnregisterServer @19
+DowngradeAPL @4
+GetCatalogObject @20
+GetCatalogObject2 @21
+GetComputerObject @22
+GetGlobalBabyJITEnabled @5
+GetSimpleTableDispenser @23
+InprocServer32FromString @24
+OpenComponentLibraryEx @25
+OpenComponentLibraryOnMemEx @26
+OpenComponentLibraryOnStreamEx @27
+ServerGetApplicationType @28
+SetSetupOpen @29
+SetSetupSave @30
+SetupOpen @31
+SetupSave @32
+UpdateFromAppChange @6
+UpdateFromComponentChange @7

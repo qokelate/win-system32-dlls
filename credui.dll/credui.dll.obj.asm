@@ -1,0 +1,170 @@
+ifndef X64
+.686p
+.XMM
+.safeseh SEH_handler
+.model flat, C
+option dotname
+option casemap : none
+endif
+
+extern ptr_CredPackAuthenticationBufferA : PTR;
+extern ptr_CredPackAuthenticationBufferW : PTR;
+extern ptr_CredUICmdLinePromptForCredentialsA : PTR;
+extern ptr_CredUICmdLinePromptForCredentialsW : PTR;
+extern ptr_CredUIConfirmCredentialsA : PTR;
+extern ptr_CredUIConfirmCredentialsW : PTR;
+extern ptr_CredUIInitControls : PTR;
+extern ptr_CredUIParseUserNameA : PTR;
+extern ptr_CredUIParseUserNameW : PTR;
+extern ptr_CredUIPromptForCredentialsA : PTR;
+extern ptr_CredUIPromptForCredentialsW : PTR;
+extern ptr_CredUIPromptForWindowsCredentialsA : PTR;
+extern ptr_CredUIPromptForWindowsCredentialsW : PTR;
+extern ptr_CredUIPromptForWindowsCredentialsWorker : PTR;
+extern ptr_CredUIReadSSOCredA : PTR;
+extern ptr_CredUIReadSSOCredW : PTR;
+extern ptr_CredUIStoreSSOCredA : PTR;
+extern ptr_CredUIStoreSSOCredW : PTR;
+extern ptr_CredUnPackAuthenticationBufferA : PTR;
+extern ptr_CredUnPackAuthenticationBufferW : PTR;
+extern ptr_DllCanUnloadNow : PTR;
+extern ptr_DllGetClassObject : PTR;
+extern ptr_DllRegisterServer : PTR;
+extern ptr_DllUnregisterServer : PTR;
+extern ptr_SspiGetCredUIContext : PTR;
+extern ptr_SspiIsPromptingNeeded : PTR;
+extern ptr_SspiPromptForCredentialsA : PTR;
+extern ptr_SspiPromptForCredentialsW : PTR;
+extern ptr_SspiUnmarshalCredUIContext : PTR;
+extern ptr_SspiUpdateCredentials : PTR;
+
+
+.code
+
+align 16
+SEH_handler   proc
+; handler
+ret
+SEH_handler   endp
+
+CredPackAuthenticationBufferA PROC
+jmp ptr_CredPackAuthenticationBufferA
+CredPackAuthenticationBufferA ENDP
+
+CredPackAuthenticationBufferW PROC
+jmp ptr_CredPackAuthenticationBufferW
+CredPackAuthenticationBufferW ENDP
+
+CredUICmdLinePromptForCredentialsA PROC
+jmp ptr_CredUICmdLinePromptForCredentialsA
+CredUICmdLinePromptForCredentialsA ENDP
+
+CredUICmdLinePromptForCredentialsW PROC
+jmp ptr_CredUICmdLinePromptForCredentialsW
+CredUICmdLinePromptForCredentialsW ENDP
+
+CredUIConfirmCredentialsA PROC
+jmp ptr_CredUIConfirmCredentialsA
+CredUIConfirmCredentialsA ENDP
+
+CredUIConfirmCredentialsW PROC
+jmp ptr_CredUIConfirmCredentialsW
+CredUIConfirmCredentialsW ENDP
+
+CredUIInitControls PROC
+jmp ptr_CredUIInitControls
+CredUIInitControls ENDP
+
+CredUIParseUserNameA PROC
+jmp ptr_CredUIParseUserNameA
+CredUIParseUserNameA ENDP
+
+CredUIParseUserNameW PROC
+jmp ptr_CredUIParseUserNameW
+CredUIParseUserNameW ENDP
+
+CredUIPromptForCredentialsA PROC
+jmp ptr_CredUIPromptForCredentialsA
+CredUIPromptForCredentialsA ENDP
+
+CredUIPromptForCredentialsW PROC
+jmp ptr_CredUIPromptForCredentialsW
+CredUIPromptForCredentialsW ENDP
+
+CredUIPromptForWindowsCredentialsA PROC
+jmp ptr_CredUIPromptForWindowsCredentialsA
+CredUIPromptForWindowsCredentialsA ENDP
+
+CredUIPromptForWindowsCredentialsW PROC
+jmp ptr_CredUIPromptForWindowsCredentialsW
+CredUIPromptForWindowsCredentialsW ENDP
+
+CredUIPromptForWindowsCredentialsWorker PROC
+jmp ptr_CredUIPromptForWindowsCredentialsWorker
+CredUIPromptForWindowsCredentialsWorker ENDP
+
+CredUIReadSSOCredA PROC
+jmp ptr_CredUIReadSSOCredA
+CredUIReadSSOCredA ENDP
+
+CredUIReadSSOCredW PROC
+jmp ptr_CredUIReadSSOCredW
+CredUIReadSSOCredW ENDP
+
+CredUIStoreSSOCredA PROC
+jmp ptr_CredUIStoreSSOCredA
+CredUIStoreSSOCredA ENDP
+
+CredUIStoreSSOCredW PROC
+jmp ptr_CredUIStoreSSOCredW
+CredUIStoreSSOCredW ENDP
+
+CredUnPackAuthenticationBufferA PROC
+jmp ptr_CredUnPackAuthenticationBufferA
+CredUnPackAuthenticationBufferA ENDP
+
+CredUnPackAuthenticationBufferW PROC
+jmp ptr_CredUnPackAuthenticationBufferW
+CredUnPackAuthenticationBufferW ENDP
+
+DllCanUnloadNow PROC
+jmp ptr_DllCanUnloadNow
+DllCanUnloadNow ENDP
+
+DllGetClassObject PROC
+jmp ptr_DllGetClassObject
+DllGetClassObject ENDP
+
+DllRegisterServer PROC
+jmp ptr_DllRegisterServer
+DllRegisterServer ENDP
+
+DllUnregisterServer PROC
+jmp ptr_DllUnregisterServer
+DllUnregisterServer ENDP
+
+SspiGetCredUIContext PROC
+jmp ptr_SspiGetCredUIContext
+SspiGetCredUIContext ENDP
+
+SspiIsPromptingNeeded PROC
+jmp ptr_SspiIsPromptingNeeded
+SspiIsPromptingNeeded ENDP
+
+SspiPromptForCredentialsA PROC
+jmp ptr_SspiPromptForCredentialsA
+SspiPromptForCredentialsA ENDP
+
+SspiPromptForCredentialsW PROC
+jmp ptr_SspiPromptForCredentialsW
+SspiPromptForCredentialsW ENDP
+
+SspiUnmarshalCredUIContext PROC
+jmp ptr_SspiUnmarshalCredUIContext
+SspiUnmarshalCredUIContext ENDP
+
+SspiUpdateCredentials PROC
+jmp ptr_SspiUpdateCredentials
+SspiUpdateCredentials ENDP
+
+end

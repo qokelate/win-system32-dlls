@@ -1,0 +1,9 @@
+﻿LIBRARY
+EXPORTS
+
+CreateXmlReader @1
+CreateXmlReaderInputWithEncodingCodePage @2
+CreateXmlReaderInputWithEncodingName @3
+CreateXmlWriter @4
+CreateXmlWriterOutputWithEncodingCodePage @5
+CreateXmlWriterOutputWithEncodingName @6

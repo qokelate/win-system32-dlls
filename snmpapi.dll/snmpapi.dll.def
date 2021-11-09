@@ -1,0 +1,41 @@
+﻿LIBRARY
+EXPORTS
+
+SnmpSvcAddrIsIpx @1
+SnmpSvcAddrToSocket @2
+SnmpSvcGetEnterpriseOID @3
+SnmpSvcGetUptime @4
+SnmpSvcGetUptimeFromTime @5
+SnmpSvcInitUptime @6
+SnmpSvcSetLogLevel @7
+SnmpSvcSetLogType @8
+SnmpTfxClose @9
+SnmpTfxOpen @10
+SnmpTfxQuery @11
+SnmpUtilAnsiToUnicode @12
+SnmpUtilAsnAnyCpy @13
+SnmpUtilAsnAnyFree @14
+SnmpUtilDbgPrint @15
+SnmpUtilIdsToA @16
+SnmpUtilMemAlloc @17
+SnmpUtilMemFree @18
+SnmpUtilMemReAlloc @19
+SnmpUtilOctetsCmp @20
+SnmpUtilOctetsCpy @21
+SnmpUtilOctetsFree @22
+SnmpUtilOctetsNCmp @23
+SnmpUtilOidAppend @24
+SnmpUtilOidCmp @25
+SnmpUtilOidCpy @26
+SnmpUtilOidFree @27
+SnmpUtilOidNCmp @28
+SnmpUtilOidToA @29
+SnmpUtilPrintAsnAny @30
+SnmpUtilPrintOid @31
+SnmpUtilUTF8ToUnicode @32
+SnmpUtilUnicodeToAnsi @33
+SnmpUtilUnicodeToUTF8 @34
+SnmpUtilVarBindCpy @35
+SnmpUtilVarBindFree @36
+SnmpUtilVarBindListCpy @37
+SnmpUtilVarBindListFree @38

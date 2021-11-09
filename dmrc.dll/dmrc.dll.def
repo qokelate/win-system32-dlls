@@ -1,0 +1,9 @@
+﻿LIBRARY
+EXPORTS
+
+DMrcExit @1
+DMrcGetProperties @2
+DMrcInit @3
+DMrcQueryClose @4
+DMrcQueryHardwareId @5
+DMrcQueryModelId @6

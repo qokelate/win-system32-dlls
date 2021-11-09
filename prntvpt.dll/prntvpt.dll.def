@@ -1,0 +1,30 @@
+﻿LIBRARY
+EXPORTS
+
+BindPTProviderThunk @5
+ConvertDevModeToPrintTicketThunk @11
+ConvertDevModeToPrintTicketThunk2 @12
+ConvertPrintTicketToDevModeThunk @13
+ConvertPrintTicketToDevModeThunk2 @14
+DllCanUnloadNow @15
+DllGetClassObject @16
+DllMain @17
+DllRegisterServer @18
+DllUnregisterServer @19
+GetDeviceDefaultPrintTicketThunk @20
+GetDeviceNamespacesThunk @21
+GetPrintCapabilitiesThunk @22
+GetPrintCapabilitiesThunk2 @23
+GetSchemaVersionThunk @24
+MergeAndValidatePrintTicketThunk @25
+MergeAndValidatePrintTicketThunk2 @26
+PTCloseProvider @4
+PTConvertDevModeToPrintTicket @9
+PTConvertPrintTicketToDevMode @8
+PTGetPrintCapabilities @6
+PTMergeAndValidatePrintTicket @7
+PTOpenProvider @2
+PTOpenProviderEx @3
+PTQuerySchemaVersionSupport @1
+PTReleaseMemory @10
+UnbindPTProviderThunk @27

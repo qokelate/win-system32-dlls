@@ -1,0 +1,26 @@
+﻿LIBRARY
+EXPORTS
+
+FmsActivateFonts @1
+FmsAddFilter @2
+FmsDeactivateFonts @3
+FmsFreeEnumerator @4
+FmsGetBestMatchInFamily @5
+FmsGetCurrentFilter @6
+FmsGetDirectWriteLogFont @7
+FmsGetFilteredFontList @8
+FmsGetFilteredPropertyList @9
+FmsGetFontAutoActivationMode @10
+FmsGetFontProperty @11
+FmsGetGDILogFont @12
+FmsGetGdiLogicalFont @13
+FmsInitializeEnumerator @14
+FmsMapGdiLogicalFont @15
+FmsMapLogicalFont @16
+FmsResetEnumerator @17
+FmsResetFontsActivationState @18
+FmsSetDefaultFilter @19
+FmsSetFilter @20
+FmsSetFontAutoActivationMode @21
+FmsSetTextFilter @22
+FmsToggleOnDesignAxis @23

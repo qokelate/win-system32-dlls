@@ -1,0 +1,8 @@
+﻿LIBRARY
+EXPORTS
+
+Close @1
+Collect @2
+DllRegisterServer @3
+DllUnregisterServer @4
+Open @5

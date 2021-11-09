@@ -1,0 +1,11 @@
+﻿LIBRARY
+EXPORTS
+
+InitializeProtocolEngine @1
+InitializeServerProtocolEngine @2
+PppStop @3
+RasCpEnumProtocolIds @4
+RasCpGetInfo @5
+SendMessageToProtocolEngine @6
+UninitializeProtocolEngine @7
+UninitializeServerProtocolEngine @8

@@ -1,0 +1,1125 @@
+ifndef X64
+.686p
+.XMM
+.safeseh SEH_handler
+.model flat, C
+option dotname
+option casemap : none
+endif
+
+extern ptr_ClearPropVariantArray : PTR;
+extern ptr_ClearVariantArray : PTR;
+extern ptr_DllCanUnloadNow : PTR;
+extern ptr_DllGetClassObject : PTR;
+extern ptr_DllRegisterServer : PTR;
+extern ptr_DllUnregisterServer : PTR;
+extern ptr_GetProxyDllInfo : PTR;
+extern ptr_InitPropVariantFromBooleanVector : PTR;
+extern ptr_InitPropVariantFromBuffer : PTR;
+extern ptr_InitPropVariantFromCLSID : PTR;
+extern ptr_InitPropVariantFromDoubleVector : PTR;
+extern ptr_InitPropVariantFromFileTime : PTR;
+extern ptr_InitPropVariantFromFileTimeVector : PTR;
+extern ptr_InitPropVariantFromGUIDAsString : PTR;
+extern ptr_InitPropVariantFromInt16Vector : PTR;
+extern ptr_InitPropVariantFromInt32Vector : PTR;
+extern ptr_InitPropVariantFromInt64Vector : PTR;
+extern ptr_InitPropVariantFromPropVariantVectorElem : PTR;
+extern ptr_InitPropVariantFromResource : PTR;
+extern ptr_InitPropVariantFromStrRet : PTR;
+extern ptr_InitPropVariantFromStringAsVector : PTR;
+extern ptr_InitPropVariantFromStringVector : PTR;
+extern ptr_InitPropVariantFromUInt16Vector : PTR;
+extern ptr_InitPropVariantFromUInt32Vector : PTR;
+extern ptr_InitPropVariantFromUInt64Vector : PTR;
+extern ptr_InitPropVariantVectorFromPropVariant : PTR;
+extern ptr_InitVariantFromBooleanArray : PTR;
+extern ptr_InitVariantFromBuffer : PTR;
+extern ptr_InitVariantFromDoubleArray : PTR;
+extern ptr_InitVariantFromFileTime : PTR;
+extern ptr_InitVariantFromFileTimeArray : PTR;
+extern ptr_InitVariantFromGUIDAsString : PTR;
+extern ptr_InitVariantFromInt16Array : PTR;
+extern ptr_InitVariantFromInt32Array : PTR;
+extern ptr_InitVariantFromInt64Array : PTR;
+extern ptr_InitVariantFromResource : PTR;
+extern ptr_InitVariantFromStrRet : PTR;
+extern ptr_InitVariantFromStringArray : PTR;
+extern ptr_InitVariantFromUInt16Array : PTR;
+extern ptr_InitVariantFromUInt32Array : PTR;
+extern ptr_InitVariantFromUInt64Array : PTR;
+extern ptr_InitVariantFromVariantArrayElem : PTR;
+extern ptr_PSCoerceToCanonicalValue : PTR;
+extern ptr_PSCreateAdapterFromPropertyStore : PTR;
+extern ptr_PSCreateDelayedMultiplexPropertyStore : PTR;
+extern ptr_PSCreateMemoryPropertyStore : PTR;
+extern ptr_PSCreateMultiplexPropertyStore : PTR;
+extern ptr_PSCreatePropertyChangeArray : PTR;
+extern ptr_PSCreatePropertyStoreFromObject : PTR;
+extern ptr_PSCreatePropertyStoreFromPropertySetStorage : PTR;
+extern ptr_PSCreateSimplePropertyChange : PTR;
+extern ptr_PSEnumeratePropertyDescriptions : PTR;
+extern ptr_PSFormatForDisplay : PTR;
+extern ptr_PSFormatForDisplayAlloc : PTR;
+extern ptr_PSFormatPropertyValue : PTR;
+extern ptr_PSGetImageReferenceForValue : PTR;
+extern ptr_PSGetItemPropertyHandler : PTR;
+extern ptr_PSGetItemPropertyHandlerWithCreateObject : PTR;
+extern ptr_PSGetNameFromPropertyKey : PTR;
+extern ptr_PSGetNamedPropertyFromPropertyStorage : PTR;
+extern ptr_PSGetPropertyDescription : PTR;
+extern ptr_PSGetPropertyDescriptionByName : PTR;
+extern ptr_PSGetPropertyDescriptionListFromString : PTR;
+extern ptr_PSGetPropertyFromPropertyStorage : PTR;
+extern ptr_PSGetPropertyKeyFromName : PTR;
+extern ptr_PSGetPropertySystem : PTR;
+extern ptr_PSGetPropertyValue : PTR;
+extern ptr_PSLookupPropertyHandlerCLSID : PTR;
+extern ptr_PSPropertyBag_Delete : PTR;
+extern ptr_PSPropertyBag_ReadBOOL : PTR;
+extern ptr_PSPropertyBag_ReadBSTR : PTR;
+extern ptr_PSPropertyBag_ReadDWORD : PTR;
+extern ptr_PSPropertyBag_ReadGUID : PTR;
+extern ptr_PSPropertyBag_ReadInt : PTR;
+extern ptr_PSPropertyBag_ReadLONG : PTR;
+extern ptr_PSPropertyBag_ReadPOINTL : PTR;
+extern ptr_PSPropertyBag_ReadPOINTS : PTR;
+extern ptr_PSPropertyBag_ReadPropertyKey : PTR;
+extern ptr_PSPropertyBag_ReadRECTL : PTR;
+extern ptr_PSPropertyBag_ReadSHORT : PTR;
+extern ptr_PSPropertyBag_ReadStr : PTR;
+extern ptr_PSPropertyBag_ReadStrAlloc : PTR;
+extern ptr_PSPropertyBag_ReadStream : PTR;
+extern ptr_PSPropertyBag_ReadType : PTR;
+extern ptr_PSPropertyBag_ReadULONGLONG : PTR;
+extern ptr_PSPropertyBag_ReadUnknown : PTR;
+extern ptr_PSPropertyBag_WriteBOOL : PTR;
+extern ptr_PSPropertyBag_WriteBSTR : PTR;
+extern ptr_PSPropertyBag_WriteDWORD : PTR;
+extern ptr_PSPropertyBag_WriteGUID : PTR;
+extern ptr_PSPropertyBag_WriteInt : PTR;
+extern ptr_PSPropertyBag_WriteLONG : PTR;
+extern ptr_PSPropertyBag_WritePOINTL : PTR;
+extern ptr_PSPropertyBag_WritePOINTS : PTR;
+extern ptr_PSPropertyBag_WritePropertyKey : PTR;
+extern ptr_PSPropertyBag_WriteRECTL : PTR;
+extern ptr_PSPropertyBag_WriteSHORT : PTR;
+extern ptr_PSPropertyBag_WriteStr : PTR;
+extern ptr_PSPropertyBag_WriteStream : PTR;
+extern ptr_PSPropertyBag_WriteULONGLONG : PTR;
+extern ptr_PSPropertyBag_WriteUnknown : PTR;
+extern ptr_PSPropertyKeyFromString : PTR;
+extern ptr_PSRefreshPropertySchema : PTR;
+extern ptr_PSRegisterPropertySchema : PTR;
+extern ptr_PSSetPropertyValue : PTR;
+extern ptr_PSStringFromPropertyKey : PTR;
+extern ptr_PSUnregisterPropertySchema : PTR;
+extern ptr_PropVariantChangeType : PTR;
+extern ptr_PropVariantCompareEx : PTR;
+extern ptr_PropVariantGetBooleanElem : PTR;
+extern ptr_PropVariantGetDoubleElem : PTR;
+extern ptr_PropVariantGetElementCount : PTR;
+extern ptr_PropVariantGetFileTimeElem : PTR;
+extern ptr_PropVariantGetInt16Elem : PTR;
+extern ptr_PropVariantGetInt32Elem : PTR;
+extern ptr_PropVariantGetInt64Elem : PTR;
+extern ptr_PropVariantGetStringElem : PTR;
+extern ptr_PropVariantGetUInt16Elem : PTR;
+extern ptr_PropVariantGetUInt32Elem : PTR;
+extern ptr_PropVariantGetUInt64Elem : PTR;
+extern ptr_PropVariantToBSTR : PTR;
+extern ptr_PropVariantToBoolean : PTR;
+extern ptr_PropVariantToBooleanVector : PTR;
+extern ptr_PropVariantToBooleanVectorAlloc : PTR;
+extern ptr_PropVariantToBooleanWithDefault : PTR;
+extern ptr_PropVariantToBuffer : PTR;
+extern ptr_PropVariantToDouble : PTR;
+extern ptr_PropVariantToDoubleVector : PTR;
+extern ptr_PropVariantToDoubleVectorAlloc : PTR;
+extern ptr_PropVariantToDoubleWithDefault : PTR;
+extern ptr_PropVariantToFileTime : PTR;
+extern ptr_PropVariantToFileTimeVector : PTR;
+extern ptr_PropVariantToFileTimeVectorAlloc : PTR;
+extern ptr_PropVariantToGUID : PTR;
+extern ptr_PropVariantToInt16 : PTR;
+extern ptr_PropVariantToInt16Vector : PTR;
+extern ptr_PropVariantToInt16VectorAlloc : PTR;
+extern ptr_PropVariantToInt16WithDefault : PTR;
+extern ptr_PropVariantToInt32 : PTR;
+extern ptr_PropVariantToInt32Vector : PTR;
+extern ptr_PropVariantToInt32VectorAlloc : PTR;
+extern ptr_PropVariantToInt32WithDefault : PTR;
+extern ptr_PropVariantToInt64 : PTR;
+extern ptr_PropVariantToInt64Vector : PTR;
+extern ptr_PropVariantToInt64VectorAlloc : PTR;
+extern ptr_PropVariantToInt64WithDefault : PTR;
+extern ptr_PropVariantToStrRet : PTR;
+extern ptr_PropVariantToString : PTR;
+extern ptr_PropVariantToStringAlloc : PTR;
+extern ptr_PropVariantToStringVector : PTR;
+extern ptr_PropVariantToStringVectorAlloc : PTR;
+extern ptr_PropVariantToStringWithDefault : PTR;
+extern ptr_PropVariantToUInt16 : PTR;
+extern ptr_PropVariantToUInt16Vector : PTR;
+extern ptr_PropVariantToUInt16VectorAlloc : PTR;
+extern ptr_PropVariantToUInt16WithDefault : PTR;
+extern ptr_PropVariantToUInt32 : PTR;
+extern ptr_PropVariantToUInt32Vector : PTR;
+extern ptr_PropVariantToUInt32VectorAlloc : PTR;
+extern ptr_PropVariantToUInt32WithDefault : PTR;
+extern ptr_PropVariantToUInt64 : PTR;
+extern ptr_PropVariantToUInt64Vector : PTR;
+extern ptr_PropVariantToUInt64VectorAlloc : PTR;
+extern ptr_PropVariantToUInt64WithDefault : PTR;
+extern ptr_PropVariantToVariant : PTR;
+extern ptr_StgDeserializePropVariant : PTR;
+extern ptr_StgSerializePropVariant : PTR;
+extern ptr_VariantCompare : PTR;
+extern ptr_VariantGetBooleanElem : PTR;
+extern ptr_VariantGetDoubleElem : PTR;
+extern ptr_VariantGetElementCount : PTR;
+extern ptr_VariantGetInt16Elem : PTR;
+extern ptr_VariantGetInt32Elem : PTR;
+extern ptr_VariantGetInt64Elem : PTR;
+extern ptr_VariantGetStringElem : PTR;
+extern ptr_VariantGetUInt16Elem : PTR;
+extern ptr_VariantGetUInt32Elem : PTR;
+extern ptr_VariantGetUInt64Elem : PTR;
+extern ptr_VariantToBoolean : PTR;
+extern ptr_VariantToBooleanArray : PTR;
+extern ptr_VariantToBooleanArrayAlloc : PTR;
+extern ptr_VariantToBooleanWithDefault : PTR;
+extern ptr_VariantToBuffer : PTR;
+extern ptr_VariantToDosDateTime : PTR;
+extern ptr_VariantToDouble : PTR;
+extern ptr_VariantToDoubleArray : PTR;
+extern ptr_VariantToDoubleArrayAlloc : PTR;
+extern ptr_VariantToDoubleWithDefault : PTR;
+extern ptr_VariantToFileTime : PTR;
+extern ptr_VariantToGUID : PTR;
+extern ptr_VariantToInt16 : PTR;
+extern ptr_VariantToInt16Array : PTR;
+extern ptr_VariantToInt16ArrayAlloc : PTR;
+extern ptr_VariantToInt16WithDefault : PTR;
+extern ptr_VariantToInt32 : PTR;
+extern ptr_VariantToInt32Array : PTR;
+extern ptr_VariantToInt32ArrayAlloc : PTR;
+extern ptr_VariantToInt32WithDefault : PTR;
+extern ptr_VariantToInt64 : PTR;
+extern ptr_VariantToInt64Array : PTR;
+extern ptr_VariantToInt64ArrayAlloc : PTR;
+extern ptr_VariantToInt64WithDefault : PTR;
+extern ptr_VariantToPropVariant : PTR;
+extern ptr_VariantToStrRet : PTR;
+extern ptr_VariantToString : PTR;
+extern ptr_VariantToStringAlloc : PTR;
+extern ptr_VariantToStringArray : PTR;
+extern ptr_VariantToStringArrayAlloc : PTR;
+extern ptr_VariantToStringWithDefault : PTR;
+extern ptr_VariantToUInt16 : PTR;
+extern ptr_VariantToUInt16Array : PTR;
+extern ptr_VariantToUInt16ArrayAlloc : PTR;
+extern ptr_VariantToUInt16WithDefault : PTR;
+extern ptr_VariantToUInt32 : PTR;
+extern ptr_VariantToUInt32Array : PTR;
+extern ptr_VariantToUInt32ArrayAlloc : PTR;
+extern ptr_VariantToUInt32WithDefault : PTR;
+extern ptr_VariantToUInt64 : PTR;
+extern ptr_VariantToUInt64Array : PTR;
+extern ptr_VariantToUInt64ArrayAlloc : PTR;
+extern ptr_VariantToUInt64WithDefault : PTR;
+
+
+.code
+
+align 16
+SEH_handler   proc
+; handler
+ret
+SEH_handler   endp
+
+ClearPropVariantArray PROC
+jmp ptr_ClearPropVariantArray
+ClearPropVariantArray ENDP
+
+ClearVariantArray PROC
+jmp ptr_ClearVariantArray
+ClearVariantArray ENDP
+
+DllCanUnloadNow PROC
+jmp ptr_DllCanUnloadNow
+DllCanUnloadNow ENDP
+
+DllGetClassObject PROC
+jmp ptr_DllGetClassObject
+DllGetClassObject ENDP
+
+DllRegisterServer PROC
+jmp ptr_DllRegisterServer
+DllRegisterServer ENDP
+
+DllUnregisterServer PROC
+jmp ptr_DllUnregisterServer
+DllUnregisterServer ENDP
+
+GetProxyDllInfo PROC
+jmp ptr_GetProxyDllInfo
+GetProxyDllInfo ENDP
+
+InitPropVariantFromBooleanVector PROC
+jmp ptr_InitPropVariantFromBooleanVector
+InitPropVariantFromBooleanVector ENDP
+
+InitPropVariantFromBuffer PROC
+jmp ptr_InitPropVariantFromBuffer
+InitPropVariantFromBuffer ENDP
+
+InitPropVariantFromCLSID PROC
+jmp ptr_InitPropVariantFromCLSID
+InitPropVariantFromCLSID ENDP
+
+InitPropVariantFromDoubleVector PROC
+jmp ptr_InitPropVariantFromDoubleVector
+InitPropVariantFromDoubleVector ENDP
+
+InitPropVariantFromFileTime PROC
+jmp ptr_InitPropVariantFromFileTime
+InitPropVariantFromFileTime ENDP
+
+InitPropVariantFromFileTimeVector PROC
+jmp ptr_InitPropVariantFromFileTimeVector
+InitPropVariantFromFileTimeVector ENDP
+
+InitPropVariantFromGUIDAsString PROC
+jmp ptr_InitPropVariantFromGUIDAsString
+InitPropVariantFromGUIDAsString ENDP
+
+InitPropVariantFromInt16Vector PROC
+jmp ptr_InitPropVariantFromInt16Vector
+InitPropVariantFromInt16Vector ENDP
+
+InitPropVariantFromInt32Vector PROC
+jmp ptr_InitPropVariantFromInt32Vector
+InitPropVariantFromInt32Vector ENDP
+
+InitPropVariantFromInt64Vector PROC
+jmp ptr_InitPropVariantFromInt64Vector
+InitPropVariantFromInt64Vector ENDP
+
+InitPropVariantFromPropVariantVectorElem PROC
+jmp ptr_InitPropVariantFromPropVariantVectorElem
+InitPropVariantFromPropVariantVectorElem ENDP
+
+InitPropVariantFromResource PROC
+jmp ptr_InitPropVariantFromResource
+InitPropVariantFromResource ENDP
+
+InitPropVariantFromStrRet PROC
+jmp ptr_InitPropVariantFromStrRet
+InitPropVariantFromStrRet ENDP
+
+InitPropVariantFromStringAsVector PROC
+jmp ptr_InitPropVariantFromStringAsVector
+InitPropVariantFromStringAsVector ENDP
+
+InitPropVariantFromStringVector PROC
+jmp ptr_InitPropVariantFromStringVector
+InitPropVariantFromStringVector ENDP
+
+InitPropVariantFromUInt16Vector PROC
+jmp ptr_InitPropVariantFromUInt16Vector
+InitPropVariantFromUInt16Vector ENDP
+
+InitPropVariantFromUInt32Vector PROC
+jmp ptr_InitPropVariantFromUInt32Vector
+InitPropVariantFromUInt32Vector ENDP
+
+InitPropVariantFromUInt64Vector PROC
+jmp ptr_InitPropVariantFromUInt64Vector
+InitPropVariantFromUInt64Vector ENDP
+
+InitPropVariantVectorFromPropVariant PROC
+jmp ptr_InitPropVariantVectorFromPropVariant
+InitPropVariantVectorFromPropVariant ENDP
+
+InitVariantFromBooleanArray PROC
+jmp ptr_InitVariantFromBooleanArray
+InitVariantFromBooleanArray ENDP
+
+InitVariantFromBuffer PROC
+jmp ptr_InitVariantFromBuffer
+InitVariantFromBuffer ENDP
+
+InitVariantFromDoubleArray PROC
+jmp ptr_InitVariantFromDoubleArray
+InitVariantFromDoubleArray ENDP
+
+InitVariantFromFileTime PROC
+jmp ptr_InitVariantFromFileTime
+InitVariantFromFileTime ENDP
+
+InitVariantFromFileTimeArray PROC
+jmp ptr_InitVariantFromFileTimeArray
+InitVariantFromFileTimeArray ENDP
+
+InitVariantFromGUIDAsString PROC
+jmp ptr_InitVariantFromGUIDAsString
+InitVariantFromGUIDAsString ENDP
+
+InitVariantFromInt16Array PROC
+jmp ptr_InitVariantFromInt16Array
+InitVariantFromInt16Array ENDP
+
+InitVariantFromInt32Array PROC
+jmp ptr_InitVariantFromInt32Array
+InitVariantFromInt32Array ENDP
+
+InitVariantFromInt64Array PROC
+jmp ptr_InitVariantFromInt64Array
+InitVariantFromInt64Array ENDP
+
+InitVariantFromResource PROC
+jmp ptr_InitVariantFromResource
+InitVariantFromResource ENDP
+
+InitVariantFromStrRet PROC
+jmp ptr_InitVariantFromStrRet
+InitVariantFromStrRet ENDP
+
+InitVariantFromStringArray PROC
+jmp ptr_InitVariantFromStringArray
+InitVariantFromStringArray ENDP
+
+InitVariantFromUInt16Array PROC
+jmp ptr_InitVariantFromUInt16Array
+InitVariantFromUInt16Array ENDP
+
+InitVariantFromUInt32Array PROC
+jmp ptr_InitVariantFromUInt32Array
+InitVariantFromUInt32Array ENDP
+
+InitVariantFromUInt64Array PROC
+jmp ptr_InitVariantFromUInt64Array
+InitVariantFromUInt64Array ENDP
+
+InitVariantFromVariantArrayElem PROC
+jmp ptr_InitVariantFromVariantArrayElem
+InitVariantFromVariantArrayElem ENDP
+
+PSCoerceToCanonicalValue PROC
+jmp ptr_PSCoerceToCanonicalValue
+PSCoerceToCanonicalValue ENDP
+
+PSCreateAdapterFromPropertyStore PROC
+jmp ptr_PSCreateAdapterFromPropertyStore
+PSCreateAdapterFromPropertyStore ENDP
+
+PSCreateDelayedMultiplexPropertyStore PROC
+jmp ptr_PSCreateDelayedMultiplexPropertyStore
+PSCreateDelayedMultiplexPropertyStore ENDP
+
+PSCreateMemoryPropertyStore PROC
+jmp ptr_PSCreateMemoryPropertyStore
+PSCreateMemoryPropertyStore ENDP
+
+PSCreateMultiplexPropertyStore PROC
+jmp ptr_PSCreateMultiplexPropertyStore
+PSCreateMultiplexPropertyStore ENDP
+
+PSCreatePropertyChangeArray PROC
+jmp ptr_PSCreatePropertyChangeArray
+PSCreatePropertyChangeArray ENDP
+
+PSCreatePropertyStoreFromObject PROC
+jmp ptr_PSCreatePropertyStoreFromObject
+PSCreatePropertyStoreFromObject ENDP
+
+PSCreatePropertyStoreFromPropertySetStorage PROC
+jmp ptr_PSCreatePropertyStoreFromPropertySetStorage
+PSCreatePropertyStoreFromPropertySetStorage ENDP
+
+PSCreateSimplePropertyChange PROC
+jmp ptr_PSCreateSimplePropertyChange
+PSCreateSimplePropertyChange ENDP
+
+PSEnumeratePropertyDescriptions PROC
+jmp ptr_PSEnumeratePropertyDescriptions
+PSEnumeratePropertyDescriptions ENDP
+
+PSFormatForDisplay PROC
+jmp ptr_PSFormatForDisplay
+PSFormatForDisplay ENDP
+
+PSFormatForDisplayAlloc PROC
+jmp ptr_PSFormatForDisplayAlloc
+PSFormatForDisplayAlloc ENDP
+
+PSFormatPropertyValue PROC
+jmp ptr_PSFormatPropertyValue
+PSFormatPropertyValue ENDP
+
+PSGetImageReferenceForValue PROC
+jmp ptr_PSGetImageReferenceForValue
+PSGetImageReferenceForValue ENDP
+
+PSGetItemPropertyHandler PROC
+jmp ptr_PSGetItemPropertyHandler
+PSGetItemPropertyHandler ENDP
+
+PSGetItemPropertyHandlerWithCreateObject PROC
+jmp ptr_PSGetItemPropertyHandlerWithCreateObject
+PSGetItemPropertyHandlerWithCreateObject ENDP
+
+PSGetNameFromPropertyKey PROC
+jmp ptr_PSGetNameFromPropertyKey
+PSGetNameFromPropertyKey ENDP
+
+PSGetNamedPropertyFromPropertyStorage PROC
+jmp ptr_PSGetNamedPropertyFromPropertyStorage
+PSGetNamedPropertyFromPropertyStorage ENDP
+
+PSGetPropertyDescription PROC
+jmp ptr_PSGetPropertyDescription
+PSGetPropertyDescription ENDP
+
+PSGetPropertyDescriptionByName PROC
+jmp ptr_PSGetPropertyDescriptionByName
+PSGetPropertyDescriptionByName ENDP
+
+PSGetPropertyDescriptionListFromString PROC
+jmp ptr_PSGetPropertyDescriptionListFromString
+PSGetPropertyDescriptionListFromString ENDP
+
+PSGetPropertyFromPropertyStorage PROC
+jmp ptr_PSGetPropertyFromPropertyStorage
+PSGetPropertyFromPropertyStorage ENDP
+
+PSGetPropertyKeyFromName PROC
+jmp ptr_PSGetPropertyKeyFromName
+PSGetPropertyKeyFromName ENDP
+
+PSGetPropertySystem PROC
+jmp ptr_PSGetPropertySystem
+PSGetPropertySystem ENDP
+
+PSGetPropertyValue PROC
+jmp ptr_PSGetPropertyValue
+PSGetPropertyValue ENDP
+
+PSLookupPropertyHandlerCLSID PROC
+jmp ptr_PSLookupPropertyHandlerCLSID
+PSLookupPropertyHandlerCLSID ENDP
+
+PSPropertyBag_Delete PROC
+jmp ptr_PSPropertyBag_Delete
+PSPropertyBag_Delete ENDP
+
+PSPropertyBag_ReadBOOL PROC
+jmp ptr_PSPropertyBag_ReadBOOL
+PSPropertyBag_ReadBOOL ENDP
+
+PSPropertyBag_ReadBSTR PROC
+jmp ptr_PSPropertyBag_ReadBSTR
+PSPropertyBag_ReadBSTR ENDP
+
+PSPropertyBag_ReadDWORD PROC
+jmp ptr_PSPropertyBag_ReadDWORD
+PSPropertyBag_ReadDWORD ENDP
+
+PSPropertyBag_ReadGUID PROC
+jmp ptr_PSPropertyBag_ReadGUID
+PSPropertyBag_ReadGUID ENDP
+
+PSPropertyBag_ReadInt PROC
+jmp ptr_PSPropertyBag_ReadInt
+PSPropertyBag_ReadInt ENDP
+
+PSPropertyBag_ReadLONG PROC
+jmp ptr_PSPropertyBag_ReadLONG
+PSPropertyBag_ReadLONG ENDP
+
+PSPropertyBag_ReadPOINTL PROC
+jmp ptr_PSPropertyBag_ReadPOINTL
+PSPropertyBag_ReadPOINTL ENDP
+
+PSPropertyBag_ReadPOINTS PROC
+jmp ptr_PSPropertyBag_ReadPOINTS
+PSPropertyBag_ReadPOINTS ENDP
+
+PSPropertyBag_ReadPropertyKey PROC
+jmp ptr_PSPropertyBag_ReadPropertyKey
+PSPropertyBag_ReadPropertyKey ENDP
+
+PSPropertyBag_ReadRECTL PROC
+jmp ptr_PSPropertyBag_ReadRECTL
+PSPropertyBag_ReadRECTL ENDP
+
+PSPropertyBag_ReadSHORT PROC
+jmp ptr_PSPropertyBag_ReadSHORT
+PSPropertyBag_ReadSHORT ENDP
+
+PSPropertyBag_ReadStr PROC
+jmp ptr_PSPropertyBag_ReadStr
+PSPropertyBag_ReadStr ENDP
+
+PSPropertyBag_ReadStrAlloc PROC
+jmp ptr_PSPropertyBag_ReadStrAlloc
+PSPropertyBag_ReadStrAlloc ENDP
+
+PSPropertyBag_ReadStream PROC
+jmp ptr_PSPropertyBag_ReadStream
+PSPropertyBag_ReadStream ENDP
+
+PSPropertyBag_ReadType PROC
+jmp ptr_PSPropertyBag_ReadType
+PSPropertyBag_ReadType ENDP
+
+PSPropertyBag_ReadULONGLONG PROC
+jmp ptr_PSPropertyBag_ReadULONGLONG
+PSPropertyBag_ReadULONGLONG ENDP
+
+PSPropertyBag_ReadUnknown PROC
+jmp ptr_PSPropertyBag_ReadUnknown
+PSPropertyBag_ReadUnknown ENDP
+
+PSPropertyBag_WriteBOOL PROC
+jmp ptr_PSPropertyBag_WriteBOOL
+PSPropertyBag_WriteBOOL ENDP
+
+PSPropertyBag_WriteBSTR PROC
+jmp ptr_PSPropertyBag_WriteBSTR
+PSPropertyBag_WriteBSTR ENDP
+
+PSPropertyBag_WriteDWORD PROC
+jmp ptr_PSPropertyBag_WriteDWORD
+PSPropertyBag_WriteDWORD ENDP
+
+PSPropertyBag_WriteGUID PROC
+jmp ptr_PSPropertyBag_WriteGUID
+PSPropertyBag_WriteGUID ENDP
+
+PSPropertyBag_WriteInt PROC
+jmp ptr_PSPropertyBag_WriteInt
+PSPropertyBag_WriteInt ENDP
+
+PSPropertyBag_WriteLONG PROC
+jmp ptr_PSPropertyBag_WriteLONG
+PSPropertyBag_WriteLONG ENDP
+
+PSPropertyBag_WritePOINTL PROC
+jmp ptr_PSPropertyBag_WritePOINTL
+PSPropertyBag_WritePOINTL ENDP
+
+PSPropertyBag_WritePOINTS PROC
+jmp ptr_PSPropertyBag_WritePOINTS
+PSPropertyBag_WritePOINTS ENDP
+
+PSPropertyBag_WritePropertyKey PROC
+jmp ptr_PSPropertyBag_WritePropertyKey
+PSPropertyBag_WritePropertyKey ENDP
+
+PSPropertyBag_WriteRECTL PROC
+jmp ptr_PSPropertyBag_WriteRECTL
+PSPropertyBag_WriteRECTL ENDP
+
+PSPropertyBag_WriteSHORT PROC
+jmp ptr_PSPropertyBag_WriteSHORT
+PSPropertyBag_WriteSHORT ENDP
+
+PSPropertyBag_WriteStr PROC
+jmp ptr_PSPropertyBag_WriteStr
+PSPropertyBag_WriteStr ENDP
+
+PSPropertyBag_WriteStream PROC
+jmp ptr_PSPropertyBag_WriteStream
+PSPropertyBag_WriteStream ENDP
+
+PSPropertyBag_WriteULONGLONG PROC
+jmp ptr_PSPropertyBag_WriteULONGLONG
+PSPropertyBag_WriteULONGLONG ENDP
+
+PSPropertyBag_WriteUnknown PROC
+jmp ptr_PSPropertyBag_WriteUnknown
+PSPropertyBag_WriteUnknown ENDP
+
+PSPropertyKeyFromString PROC
+jmp ptr_PSPropertyKeyFromString
+PSPropertyKeyFromString ENDP
+
+PSRefreshPropertySchema PROC
+jmp ptr_PSRefreshPropertySchema
+PSRefreshPropertySchema ENDP
+
+PSRegisterPropertySchema PROC
+jmp ptr_PSRegisterPropertySchema
+PSRegisterPropertySchema ENDP
+
+PSSetPropertyValue PROC
+jmp ptr_PSSetPropertyValue
+PSSetPropertyValue ENDP
+
+PSStringFromPropertyKey PROC
+jmp ptr_PSStringFromPropertyKey
+PSStringFromPropertyKey ENDP
+
+PSUnregisterPropertySchema PROC
+jmp ptr_PSUnregisterPropertySchema
+PSUnregisterPropertySchema ENDP
+
+PropVariantChangeType PROC
+jmp ptr_PropVariantChangeType
+PropVariantChangeType ENDP
+
+PropVariantCompareEx PROC
+jmp ptr_PropVariantCompareEx
+PropVariantCompareEx ENDP
+
+PropVariantGetBooleanElem PROC
+jmp ptr_PropVariantGetBooleanElem
+PropVariantGetBooleanElem ENDP
+
+PropVariantGetDoubleElem PROC
+jmp ptr_PropVariantGetDoubleElem
+PropVariantGetDoubleElem ENDP
+
+PropVariantGetElementCount PROC
+jmp ptr_PropVariantGetElementCount
+PropVariantGetElementCount ENDP
+
+PropVariantGetFileTimeElem PROC
+jmp ptr_PropVariantGetFileTimeElem
+PropVariantGetFileTimeElem ENDP
+
+PropVariantGetInt16Elem PROC
+jmp ptr_PropVariantGetInt16Elem
+PropVariantGetInt16Elem ENDP
+
+PropVariantGetInt32Elem PROC
+jmp ptr_PropVariantGetInt32Elem
+PropVariantGetInt32Elem ENDP
+
+PropVariantGetInt64Elem PROC
+jmp ptr_PropVariantGetInt64Elem
+PropVariantGetInt64Elem ENDP
+
+PropVariantGetStringElem PROC
+jmp ptr_PropVariantGetStringElem
+PropVariantGetStringElem ENDP
+
+PropVariantGetUInt16Elem PROC
+jmp ptr_PropVariantGetUInt16Elem
+PropVariantGetUInt16Elem ENDP
+
+PropVariantGetUInt32Elem PROC
+jmp ptr_PropVariantGetUInt32Elem
+PropVariantGetUInt32Elem ENDP
+
+PropVariantGetUInt64Elem PROC
+jmp ptr_PropVariantGetUInt64Elem
+PropVariantGetUInt64Elem ENDP
+
+PropVariantToBSTR PROC
+jmp ptr_PropVariantToBSTR
+PropVariantToBSTR ENDP
+
+PropVariantToBoolean PROC
+jmp ptr_PropVariantToBoolean
+PropVariantToBoolean ENDP
+
+PropVariantToBooleanVector PROC
+jmp ptr_PropVariantToBooleanVector
+PropVariantToBooleanVector ENDP
+
+PropVariantToBooleanVectorAlloc PROC
+jmp ptr_PropVariantToBooleanVectorAlloc
+PropVariantToBooleanVectorAlloc ENDP
+
+PropVariantToBooleanWithDefault PROC
+jmp ptr_PropVariantToBooleanWithDefault
+PropVariantToBooleanWithDefault ENDP
+
+PropVariantToBuffer PROC
+jmp ptr_PropVariantToBuffer
+PropVariantToBuffer ENDP
+
+PropVariantToDouble PROC
+jmp ptr_PropVariantToDouble
+PropVariantToDouble ENDP
+
+PropVariantToDoubleVector PROC
+jmp ptr_PropVariantToDoubleVector
+PropVariantToDoubleVector ENDP
+
+PropVariantToDoubleVectorAlloc PROC
+jmp ptr_PropVariantToDoubleVectorAlloc
+PropVariantToDoubleVectorAlloc ENDP
+
+PropVariantToDoubleWithDefault PROC
+jmp ptr_PropVariantToDoubleWithDefault
+PropVariantToDoubleWithDefault ENDP
+
+PropVariantToFileTime PROC
+jmp ptr_PropVariantToFileTime
+PropVariantToFileTime ENDP
+
+PropVariantToFileTimeVector PROC
+jmp ptr_PropVariantToFileTimeVector
+PropVariantToFileTimeVector ENDP
+
+PropVariantToFileTimeVectorAlloc PROC
+jmp ptr_PropVariantToFileTimeVectorAlloc
+PropVariantToFileTimeVectorAlloc ENDP
+
+PropVariantToGUID PROC
+jmp ptr_PropVariantToGUID
+PropVariantToGUID ENDP
+
+PropVariantToInt16 PROC
+jmp ptr_PropVariantToInt16
+PropVariantToInt16 ENDP
+
+PropVariantToInt16Vector PROC
+jmp ptr_PropVariantToInt16Vector
+PropVariantToInt16Vector ENDP
+
+PropVariantToInt16VectorAlloc PROC
+jmp ptr_PropVariantToInt16VectorAlloc
+PropVariantToInt16VectorAlloc ENDP
+
+PropVariantToInt16WithDefault PROC
+jmp ptr_PropVariantToInt16WithDefault
+PropVariantToInt16WithDefault ENDP
+
+PropVariantToInt32 PROC
+jmp ptr_PropVariantToInt32
+PropVariantToInt32 ENDP
+
+PropVariantToInt32Vector PROC
+jmp ptr_PropVariantToInt32Vector
+PropVariantToInt32Vector ENDP
+
+PropVariantToInt32VectorAlloc PROC
+jmp ptr_PropVariantToInt32VectorAlloc
+PropVariantToInt32VectorAlloc ENDP
+
+PropVariantToInt32WithDefault PROC
+jmp ptr_PropVariantToInt32WithDefault
+PropVariantToInt32WithDefault ENDP
+
+PropVariantToInt64 PROC
+jmp ptr_PropVariantToInt64
+PropVariantToInt64 ENDP
+
+PropVariantToInt64Vector PROC
+jmp ptr_PropVariantToInt64Vector
+PropVariantToInt64Vector ENDP
+
+PropVariantToInt64VectorAlloc PROC
+jmp ptr_PropVariantToInt64VectorAlloc
+PropVariantToInt64VectorAlloc ENDP
+
+PropVariantToInt64WithDefault PROC
+jmp ptr_PropVariantToInt64WithDefault
+PropVariantToInt64WithDefault ENDP
+
+PropVariantToStrRet PROC
+jmp ptr_PropVariantToStrRet
+PropVariantToStrRet ENDP
+
+PropVariantToString PROC
+jmp ptr_PropVariantToString
+PropVariantToString ENDP
+
+PropVariantToStringAlloc PROC
+jmp ptr_PropVariantToStringAlloc
+PropVariantToStringAlloc ENDP
+
+PropVariantToStringVector PROC
+jmp ptr_PropVariantToStringVector
+PropVariantToStringVector ENDP
+
+PropVariantToStringVectorAlloc PROC
+jmp ptr_PropVariantToStringVectorAlloc
+PropVariantToStringVectorAlloc ENDP
+
+PropVariantToStringWithDefault PROC
+jmp ptr_PropVariantToStringWithDefault
+PropVariantToStringWithDefault ENDP
+
+PropVariantToUInt16 PROC
+jmp ptr_PropVariantToUInt16
+PropVariantToUInt16 ENDP
+
+PropVariantToUInt16Vector PROC
+jmp ptr_PropVariantToUInt16Vector
+PropVariantToUInt16Vector ENDP
+
+PropVariantToUInt16VectorAlloc PROC
+jmp ptr_PropVariantToUInt16VectorAlloc
+PropVariantToUInt16VectorAlloc ENDP
+
+PropVariantToUInt16WithDefault PROC
+jmp ptr_PropVariantToUInt16WithDefault
+PropVariantToUInt16WithDefault ENDP
+
+PropVariantToUInt32 PROC
+jmp ptr_PropVariantToUInt32
+PropVariantToUInt32 ENDP
+
+PropVariantToUInt32Vector PROC
+jmp ptr_PropVariantToUInt32Vector
+PropVariantToUInt32Vector ENDP
+
+PropVariantToUInt32VectorAlloc PROC
+jmp ptr_PropVariantToUInt32VectorAlloc
+PropVariantToUInt32VectorAlloc ENDP
+
+PropVariantToUInt32WithDefault PROC
+jmp ptr_PropVariantToUInt32WithDefault
+PropVariantToUInt32WithDefault ENDP
+
+PropVariantToUInt64 PROC
+jmp ptr_PropVariantToUInt64
+PropVariantToUInt64 ENDP
+
+PropVariantToUInt64Vector PROC
+jmp ptr_PropVariantToUInt64Vector
+PropVariantToUInt64Vector ENDP
+
+PropVariantToUInt64VectorAlloc PROC
+jmp ptr_PropVariantToUInt64VectorAlloc
+PropVariantToUInt64VectorAlloc ENDP
+
+PropVariantToUInt64WithDefault PROC
+jmp ptr_PropVariantToUInt64WithDefault
+PropVariantToUInt64WithDefault ENDP
+
+PropVariantToVariant PROC
+jmp ptr_PropVariantToVariant
+PropVariantToVariant ENDP
+
+StgDeserializePropVariant PROC
+jmp ptr_StgDeserializePropVariant
+StgDeserializePropVariant ENDP
+
+StgSerializePropVariant PROC
+jmp ptr_StgSerializePropVariant
+StgSerializePropVariant ENDP
+
+VariantCompare PROC
+jmp ptr_VariantCompare
+VariantCompare ENDP
+
+VariantGetBooleanElem PROC
+jmp ptr_VariantGetBooleanElem
+VariantGetBooleanElem ENDP
+
+VariantGetDoubleElem PROC
+jmp ptr_VariantGetDoubleElem
+VariantGetDoubleElem ENDP
+
+VariantGetElementCount PROC
+jmp ptr_VariantGetElementCount
+VariantGetElementCount ENDP
+
+VariantGetInt16Elem PROC
+jmp ptr_VariantGetInt16Elem
+VariantGetInt16Elem ENDP
+
+VariantGetInt32Elem PROC
+jmp ptr_VariantGetInt32Elem
+VariantGetInt32Elem ENDP
+
+VariantGetInt64Elem PROC
+jmp ptr_VariantGetInt64Elem
+VariantGetInt64Elem ENDP
+
+VariantGetStringElem PROC
+jmp ptr_VariantGetStringElem
+VariantGetStringElem ENDP
+
+VariantGetUInt16Elem PROC
+jmp ptr_VariantGetUInt16Elem
+VariantGetUInt16Elem ENDP
+
+VariantGetUInt32Elem PROC
+jmp ptr_VariantGetUInt32Elem
+VariantGetUInt32Elem ENDP
+
+VariantGetUInt64Elem PROC
+jmp ptr_VariantGetUInt64Elem
+VariantGetUInt64Elem ENDP
+
+VariantToBoolean PROC
+jmp ptr_VariantToBoolean
+VariantToBoolean ENDP
+
+VariantToBooleanArray PROC
+jmp ptr_VariantToBooleanArray
+VariantToBooleanArray ENDP
+
+VariantToBooleanArrayAlloc PROC
+jmp ptr_VariantToBooleanArrayAlloc
+VariantToBooleanArrayAlloc ENDP
+
+VariantToBooleanWithDefault PROC
+jmp ptr_VariantToBooleanWithDefault
+VariantToBooleanWithDefault ENDP
+
+VariantToBuffer PROC
+jmp ptr_VariantToBuffer
+VariantToBuffer ENDP
+
+VariantToDosDateTime PROC
+jmp ptr_VariantToDosDateTime
+VariantToDosDateTime ENDP
+
+VariantToDouble PROC
+jmp ptr_VariantToDouble
+VariantToDouble ENDP
+
+VariantToDoubleArray PROC
+jmp ptr_VariantToDoubleArray
+VariantToDoubleArray ENDP
+
+VariantToDoubleArrayAlloc PROC
+jmp ptr_VariantToDoubleArrayAlloc
+VariantToDoubleArrayAlloc ENDP
+
+VariantToDoubleWithDefault PROC
+jmp ptr_VariantToDoubleWithDefault
+VariantToDoubleWithDefault ENDP
+
+VariantToFileTime PROC
+jmp ptr_VariantToFileTime
+VariantToFileTime ENDP
+
+VariantToGUID PROC
+jmp ptr_VariantToGUID
+VariantToGUID ENDP
+
+VariantToInt16 PROC
+jmp ptr_VariantToInt16
+VariantToInt16 ENDP
+
+VariantToInt16Array PROC
+jmp ptr_VariantToInt16Array
+VariantToInt16Array ENDP
+
+VariantToInt16ArrayAlloc PROC
+jmp ptr_VariantToInt16ArrayAlloc
+VariantToInt16ArrayAlloc ENDP
+
+VariantToInt16WithDefault PROC
+jmp ptr_VariantToInt16WithDefault
+VariantToInt16WithDefault ENDP
+
+VariantToInt32 PROC
+jmp ptr_VariantToInt32
+VariantToInt32 ENDP
+
+VariantToInt32Array PROC
+jmp ptr_VariantToInt32Array
+VariantToInt32Array ENDP
+
+VariantToInt32ArrayAlloc PROC
+jmp ptr_VariantToInt32ArrayAlloc
+VariantToInt32ArrayAlloc ENDP
+
+VariantToInt32WithDefault PROC
+jmp ptr_VariantToInt32WithDefault
+VariantToInt32WithDefault ENDP
+
+VariantToInt64 PROC
+jmp ptr_VariantToInt64
+VariantToInt64 ENDP
+
+VariantToInt64Array PROC
+jmp ptr_VariantToInt64Array
+VariantToInt64Array ENDP
+
+VariantToInt64ArrayAlloc PROC
+jmp ptr_VariantToInt64ArrayAlloc
+VariantToInt64ArrayAlloc ENDP
+
+VariantToInt64WithDefault PROC
+jmp ptr_VariantToInt64WithDefault
+VariantToInt64WithDefault ENDP
+
+VariantToPropVariant PROC
+jmp ptr_VariantToPropVariant
+VariantToPropVariant ENDP
+
+VariantToStrRet PROC
+jmp ptr_VariantToStrRet
+VariantToStrRet ENDP
+
+VariantToString PROC
+jmp ptr_VariantToString
+VariantToString ENDP
+
+VariantToStringAlloc PROC
+jmp ptr_VariantToStringAlloc
+VariantToStringAlloc ENDP
+
+VariantToStringArray PROC
+jmp ptr_VariantToStringArray
+VariantToStringArray ENDP
+
+VariantToStringArrayAlloc PROC
+jmp ptr_VariantToStringArrayAlloc
+VariantToStringArrayAlloc ENDP
+
+VariantToStringWithDefault PROC
+jmp ptr_VariantToStringWithDefault
+VariantToStringWithDefault ENDP
+
+VariantToUInt16 PROC
+jmp ptr_VariantToUInt16
+VariantToUInt16 ENDP
+
+VariantToUInt16Array PROC
+jmp ptr_VariantToUInt16Array
+VariantToUInt16Array ENDP
+
+VariantToUInt16ArrayAlloc PROC
+jmp ptr_VariantToUInt16ArrayAlloc
+VariantToUInt16ArrayAlloc ENDP
+
+VariantToUInt16WithDefault PROC
+jmp ptr_VariantToUInt16WithDefault
+VariantToUInt16WithDefault ENDP
+
+VariantToUInt32 PROC
+jmp ptr_VariantToUInt32
+VariantToUInt32 ENDP
+
+VariantToUInt32Array PROC
+jmp ptr_VariantToUInt32Array
+VariantToUInt32Array ENDP
+
+VariantToUInt32ArrayAlloc PROC
+jmp ptr_VariantToUInt32ArrayAlloc
+VariantToUInt32ArrayAlloc ENDP
+
+VariantToUInt32WithDefault PROC
+jmp ptr_VariantToUInt32WithDefault
+VariantToUInt32WithDefault ENDP
+
+VariantToUInt64 PROC
+jmp ptr_VariantToUInt64
+VariantToUInt64 ENDP
+
+VariantToUInt64Array PROC
+jmp ptr_VariantToUInt64Array
+VariantToUInt64Array ENDP
+
+VariantToUInt64ArrayAlloc PROC
+jmp ptr_VariantToUInt64ArrayAlloc
+VariantToUInt64ArrayAlloc ENDP
+
+VariantToUInt64WithDefault PROC
+jmp ptr_VariantToUInt64WithDefault
+VariantToUInt64WithDefault ENDP
+
+end

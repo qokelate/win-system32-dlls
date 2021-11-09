@@ -1,0 +1,23 @@
+﻿LIBRARY
+EXPORTS
+
+AppRegEnum @13
+CloseAppRegEnum @14
+DllCanUnloadNow @22
+DllGetClassObject @23
+DllRegisterServer @24
+DllUnregisterServer @25
+ExecuteAction @10
+OpenAppRegEnum @15
+QueryApplication @16
+RefreshAppRegEnum @17
+RegisterApplication @18
+RunDLL32_RegisterApplication @19
+RunDLL32_UnregisterApplication @20
+SetActionEnum @11
+SetActionLogFile @7
+SetActionLogMode @9
+SetActionLogModeSz @8
+SetActionName @12
+SetSilent @6
+UnregisterApplication @21

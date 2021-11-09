@@ -1,0 +1,45 @@
+﻿LIBRARY
+EXPORTS
+
+AddPorts @1
+DeviceConnect @2
+DeviceDone @3
+DeviceEnum @4
+DeviceGetDevConfig @5
+DeviceGetDevConfigEx @6
+DeviceGetInfo @7
+DeviceListen @8
+DeviceSetDevConfig @9
+DeviceSetInfo @10
+DeviceWork @11
+EnableDeviceForDialIn @12
+GetConnectInfo @13
+GetZeroDeviceInfo @14
+PortChangeCallback @15
+PortClearStatistics @16
+PortClose @17
+PortCompressionSetInfo @18
+PortConnect @19
+PortDisconnect @20
+PortEnum @21
+PortGetIOHandle @22
+PortGetInfo @23
+PortGetPortState @24
+PortGetStatistics @25
+PortInit @26
+PortOpen @27
+PortOpenExternal @28
+PortReceive @29
+PortReceiveComplete @30
+PortSend @31
+PortSetFraming @32
+PortSetInfo @33
+PortSetIoCompletionPort @34
+PortTestSignalState @35
+RasTapiIsPulseDial @36
+RastapiGetCalledID @37
+RastapiSetCalledID @38
+RefreshDevices @39
+RemovePort @40
+SetCommSettings @41
+UnloadRastapiDll @42

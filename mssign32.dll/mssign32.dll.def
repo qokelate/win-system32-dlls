@@ -1,0 +1,36 @@
+﻿LIBRARY
+EXPORTS
+
+DllRegisterServer @1
+DllUnregisterServer @2
+FreeCryptProvFromCert @3
+FreeCryptProvFromCertEx @4
+GetCryptProvFromCert @5
+GetCryptProvFromCertEx @6
+PvkFreeCryptProv @7
+PvkGetCryptProv @8
+PvkPrivateKeyAcquireContext @9
+PvkPrivateKeyAcquireContextA @10
+PvkPrivateKeyAcquireContextFromMemory @11
+PvkPrivateKeyAcquireContextFromMemoryA @12
+PvkPrivateKeyLoad @13
+PvkPrivateKeyLoadA @14
+PvkPrivateKeyLoadFromMemory @15
+PvkPrivateKeyLoadFromMemoryA @16
+PvkPrivateKeyReleaseContext @17
+PvkPrivateKeyReleaseContextA @18
+PvkPrivateKeySave @19
+PvkPrivateKeySaveA @20
+PvkPrivateKeySaveToMemory @21
+PvkPrivateKeySaveToMemoryA @22
+SignError @23
+SignerAddTimeStampResponse @24
+SignerAddTimeStampResponseEx @25
+SignerCreateTimeStampRequest @26
+SignerFreeSignerContext @27
+SignerSign @28
+SignerSignEx @29
+SignerTimeStamp @30
+SignerTimeStampEx @31
+SignerTimeStampEx2 @32
+SpcGetCertFromKey @33

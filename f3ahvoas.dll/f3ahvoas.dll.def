@@ -1,0 +1,6 @@
+﻿LIBRARY
+EXPORTS
+
+FujitsuOyayubiControl @16
+KbdLayerDescriptor @1
+KbdNlsLayerDescriptor @2

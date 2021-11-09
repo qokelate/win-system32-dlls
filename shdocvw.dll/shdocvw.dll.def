@@ -1,0 +1,9 @@
+﻿LIBRARY
+EXPORTS
+
+DllCanUnloadNow @107
+DllGetClassObject @108
+DllGetVersion @109
+DllRegisterWindowClasses @112
+SHGetIDispatchForFolder @155
+SetQueryNetSessionCount @156

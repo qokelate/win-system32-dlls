@@ -1,0 +1,13 @@
+﻿LIBRARY
+EXPORTS
+
+CPlApplet @1
+DllCanUnloadNow @2
+DllGetClassObject @3
+DllMain @4
+KRShowKeyMgr @5
+PRShowRestoreFromMsginaW @6
+PRShowRestoreWizardExW @7
+PRShowRestoreWizardW @8
+PRShowSaveFromMsginaW @9
+PRShowSaveWizardExW @10

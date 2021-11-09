@@ -1,0 +1,8 @@
+﻿LIBRARY
+EXPORTS
+
+DisplayApphelpDialog @1
+PcaDisplayUserInterfaceForScenario @2
+PcaLaunchApplicationWithConsent @3
+PcaLogUnsignedDriverEvent @4
+PcaPersistSettingsAndLaunchApplication @5

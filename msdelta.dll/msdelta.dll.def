@@ -1,0 +1,18 @@
+﻿LIBRARY
+EXPORTS
+
+ApplyDeltaA @1
+ApplyDeltaB @2
+ApplyDeltaProvidedB @3
+ApplyDeltaW @4
+CreateDeltaA @5
+CreateDeltaB @6
+CreateDeltaW @7
+DeltaFree @8
+DeltaNormalizeProvidedB @9
+GetDeltaInfoA @10
+GetDeltaInfoB @11
+GetDeltaInfoW @12
+GetDeltaSignatureA @13
+GetDeltaSignatureB @14
+GetDeltaSignatureW @15

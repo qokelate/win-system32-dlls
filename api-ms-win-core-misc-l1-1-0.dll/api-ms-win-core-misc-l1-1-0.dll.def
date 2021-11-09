@@ -1,0 +1,37 @@
+﻿LIBRARY
+EXPORTS
+
+EnumSystemLocalesA @1
+FatalAppExitA @2
+FatalAppExitW @3
+FormatMessageA @4
+FormatMessageW @5
+GlobalAlloc @6
+GlobalFree @7
+IsProcessInJob @8
+IsWow64Process @9
+LCMapStringA @10
+LocalAlloc @11
+LocalFree @12
+LocalLock @13
+LocalReAlloc @14
+LocalUnlock @15
+NeedCurrentDirectoryForExePathA @16
+NeedCurrentDirectoryForExePathW @17
+PulseEvent @18
+SetHandleCount @19
+Sleep @20
+Wow64DisableWow64FsRedirection @21
+Wow64RevertWow64FsRedirection @22
+lstrcmp @23
+lstrcmpA @24
+lstrcmpW @25
+lstrcmpi @26
+lstrcmpiA @27
+lstrcmpiW @28
+lstrcpyn @29
+lstrcpynA @30
+lstrcpynW @31
+lstrlen @32
+lstrlenA @33
+lstrlenW @34

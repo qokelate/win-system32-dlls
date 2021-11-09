@@ -1,0 +1,33 @@
+﻿LIBRARY
+EXPORTS
+
+SPAttest @1
+SPBindLicense @2
+SPCheckEnvironmentSecurity @3
+SPCloseHandle @30
+SPCommit @4
+SPCreateDecryptor @5
+SPCreateEnablingPrincipal @6
+SPCreateEncryptor @7
+SPCreatePCE @8
+SPCreateSecurityProcessor @9
+SPDecrypt @10
+SPDecryptFinal @11
+SPDecryptUpdate @12
+SPEnableAndEncrypt @13
+SPEnablePublishingLicense @14
+SPEncrypt @15
+SPEncryptFinal @16
+SPEncryptUpdate @17
+SPGetBoundRightKey @18
+SPGetCurrentTime @19
+SPGetInfo @20
+SPGetLicenseAttribute @21
+SPGetLicenseAttributeCount @22
+SPGetLicenseObject @23
+SPGetLicenseObjectCount @24
+SPGetProcAddress @25
+SPIsActivated @26
+SPLoadLibrary @27
+SPRegisterRevocationList @28
+SPSign @29

@@ -1,0 +1,21 @@
+﻿LIBRARY
+EXPORTS
+
+CompareHttpTransportCredentials @1
+ConvertToUnicodeHttpTransportCredentials @2
+DuplicateHttpTransportCredentials @3
+FreeHttpTransportCredentials @4
+HTTP2GetRpcConnectionTransport @5
+HTTP2ProcessComplexTReceive @6
+HTTP2ProcessComplexTSend @7
+HTTP2ProcessRuntimePostedEvent @8
+HTTP2TestHook @9
+HttpParseNetworkOptions @10
+HttpSendIdentifyResponse @11
+I_RpcGetRpcProxy @12
+I_RpcProxyNewConnection @17
+I_RpcReplyToClientWithStatus @18
+I_RpcTransFreeHttpCredentials @13
+I_RpcTransGetHttpCredentials @14
+WS_HTTP2_CONNECTION__Initialize @15
+WS_HTTP2_INITIAL_CONNECTION__new @16

@@ -1,0 +1,20 @@
+﻿LIBRARY
+EXPORTS
+
+EfsUtilApplyGroupPolicy @1
+EfsUtilCheckCurrentKeyCapabilities @2
+EfsUtilCreateSelfSignedCertificate @3
+EfsUtilGetCertContextFromCertHash @4
+EfsUtilGetCurrentKey @5
+EfsUtilGetCurrentKey_Deprecated @6
+EfsUtilGetCurrentUserInformation @7
+EfsUtilGetProvider @8
+EfsUtilGetSmartcardProviderName @9
+EfsUtilGetUserKey @10
+EfsUtilIsSmartcardKey @11
+EfsUtilIsSmartcardProvider @12
+EfsUtilReleaseProvider @13
+EfsUtilReleaseUserKey @14
+EfsUtilSetCurrentKey @15
+EfsUtilSetSmartcardPin @16
+EfsUtilSmartcardCredsNeededError @17

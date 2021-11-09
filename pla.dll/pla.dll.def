@@ -1,0 +1,16 @@
+﻿LIBRARY
+EXPORTS
+
+DllCanUnloadNow @3
+DllGetClassObject @4
+PlaDeleteReport @5
+PlaExpandTaskArguments @6
+PlaExtractCabinet @7
+PlaGetLegacyAlertActionsFlagsFromString @8
+PlaGetLegacyAlertActionsStringFromFlags @9
+PlaGetServerCapabilities @10
+PlaHost @11
+PlaServer @12
+PlaUpgrade @13
+ServiceMain @1
+SvchostPushServiceGlobals @2

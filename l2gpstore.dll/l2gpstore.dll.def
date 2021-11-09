@@ -1,0 +1,10 @@
+﻿LIBRARY
+EXPORTS
+
+L2GPPolicyDataDelete @1
+L2GPPolicyDataDeleteAll @2
+L2GPPolicyDataRead @3
+L2GPPolicyDataWrite @4
+L2GPPolicyFreeMem @5
+L2GPPolicyStoreClose @6
+L2GPPolicyStoreOpen @7

@@ -1,0 +1,7 @@
+﻿LIBRARY
+EXPORTS
+
+GenerateScriptsGroupPolicy @1
+ProcessScriptsGroupPolicy @2
+ProcessScriptsGroupPolicyEx @3
+ScrRegGPOListToWbem @4

@@ -1,0 +1,9 @@
+﻿LIBRARY
+EXPORTS
+
+DllCanUnloadNow @5
+DllMain @6
+GetDefaultProfileScan @1
+GetImageDialog @2
+ProfilesDialog @3
+ProgDlgTakeFgIfShowing @4

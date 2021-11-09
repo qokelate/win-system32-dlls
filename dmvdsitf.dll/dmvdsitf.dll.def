@@ -1,0 +1,6 @@
+﻿LIBRARY
+EXPORTS
+
+CreateDataCacheZ @2
+CreateServerRequestsZ @3
+LoadPropertyPageData @11

@@ -1,0 +1,10 @@
+﻿LIBRARY
+EXPORTS
+
+CancelIoEx @1
+CreateIoCompletionPort @2
+DeviceIoControl @3
+GetOverlappedResult @4
+GetQueuedCompletionStatus @5
+GetQueuedCompletionStatusEx @6
+PostQueuedCompletionStatus @7

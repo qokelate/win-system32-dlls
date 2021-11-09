@@ -1,0 +1,26 @@
+﻿LIBRARY
+EXPORTS
+
+NetAddAlternateComputerName @1
+NetEnumerateComputerNames @2
+NetGetJoinInformation @3
+NetGetJoinableOUs @4
+NetJoinDomain @5
+NetRemoveAlternateComputerName @6
+NetRenameMachineInDomain @7
+NetSetPrimaryComputerName @8
+NetUnjoinDomain @9
+NetUseAdd @10
+NetUseDel @11
+NetUseEnum @12
+NetUseGetInfo @13
+NetValidateName @14
+NetWkstaGetInfo @15
+NetWkstaSetInfo @16
+NetWkstaStatisticsGet @17
+NetWkstaTransportAdd @18
+NetWkstaTransportDel @19
+NetWkstaTransportEnum @20
+NetWkstaUserEnum @21
+NetWkstaUserGetInfo @22
+NetWkstaUserSetInfo @23

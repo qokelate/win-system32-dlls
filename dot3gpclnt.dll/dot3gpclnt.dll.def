@@ -1,0 +1,8 @@
+﻿LIBRARY
+EXPORTS
+
+DeserializeLANPolicy @1
+GenerateLANPolicy @2
+LANGPADeInit @4
+LANGPAInit @5
+ProcessLANPolicyEx @3

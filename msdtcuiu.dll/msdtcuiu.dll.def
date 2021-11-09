@@ -1,0 +1,10 @@
+﻿LIBRARY
+EXPORTS
+
+DllGetClassObject @1
+DllRegisterServer @2
+DllUnregisterServer @3
+DtcPerfClose @4
+DtcPerfCollect @5
+DtcPerfOpen @6
+PerfDllRegisterServer @7

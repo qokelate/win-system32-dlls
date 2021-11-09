@@ -1,0 +1,5 @@
+﻿LIBRARY
+EXPORTS
+
+InitializeNapIpsecRp @1
+UninitializeNapIpsecRp @2

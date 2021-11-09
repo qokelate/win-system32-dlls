@@ -1,0 +1,32 @@
+﻿LIBRARY
+EXPORTS
+
+FilterAttach @1
+FilterAttachAtAltitude @2
+FilterClose @3
+FilterConnectCommunicationPort @4
+FilterCreate @5
+FilterDetach @6
+FilterFindClose @7
+FilterFindFirst @8
+FilterFindNext @9
+FilterGetDosName @10
+FilterGetInformation @11
+FilterGetMessage @12
+FilterInstanceClose @13
+FilterInstanceCreate @14
+FilterInstanceFindClose @15
+FilterInstanceFindFirst @16
+FilterInstanceFindNext @17
+FilterInstanceGetInformation @18
+FilterLoad @19
+FilterReplyMessage @20
+FilterSendMessage @21
+FilterUnload @22
+FilterVolumeClose @23
+FilterVolumeFindClose @24
+FilterVolumeFindFirst @25
+FilterVolumeFindNext @26
+FilterVolumeInstanceFindClose @27
+FilterVolumeInstanceFindFirst @28
+FilterVolumeInstanceFindNext @29

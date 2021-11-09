@@ -1,0 +1,13 @@
+﻿LIBRARY
+EXPORTS
+
+DllMain @5
+KerbCreateTokenFromTicket @6
+KerbDomainChangeCallback @2
+KerbIsInitialized @7
+KerbKdcCallBack @8
+KerbMakeKdcCall @9
+SpInitialize @1
+SpInstanceInit @32
+SpLsaModeInitialize @3
+SpUserModeInitialize @4

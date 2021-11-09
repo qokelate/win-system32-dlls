@@ -1,0 +1,11 @@
+﻿LIBRARY
+EXPORTS
+
+NcsiAllocateAndGetConnectivityStatusSet @1
+NcsiDeregisterConnectivityStatusChange @2
+NcsiFreeConnectivityStatusSet @3
+NcsiIdentifyUserSpecificProxies @4
+NcsiNotifySessionChange @5
+NcsiPerformRefresh @6
+NcsiRegisterConnectivityStatusChange @7
+NcsiUpdateClientPresence @8

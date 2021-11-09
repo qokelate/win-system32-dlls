@@ -1,0 +1,5 @@
+﻿LIBRARY
+EXPORTS
+
+GetResourceString @1
+InitHelperDll @2

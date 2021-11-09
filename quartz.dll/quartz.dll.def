@@ -1,0 +1,11 @@
+﻿LIBRARY
+EXPORTS
+
+AMGetErrorTextA @1
+AMGetErrorTextW @2
+AmpFactorToDB @3
+DBToAmpFactor @4
+DllCanUnloadNow @5
+DllGetClassObject @6
+DllRegisterServer @7
+DllUnregisterServer @8

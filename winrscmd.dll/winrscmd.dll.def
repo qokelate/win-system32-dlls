@@ -1,0 +1,12 @@
+﻿LIBRARY
+EXPORTS
+
+WSManPluginCommand @1
+WSManPluginReceive @2
+WSManPluginReleaseCommandContext @3
+WSManPluginReleaseShellContext @4
+WSManPluginSend @5
+WSManPluginShell @6
+WSManPluginShutdown @7
+WSManPluginSignal @8
+WSManPluginStartup @9

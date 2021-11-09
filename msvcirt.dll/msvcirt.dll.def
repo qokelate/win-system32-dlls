@@ -1,0 +1,6 @@
+﻿LIBRARY
+EXPORTS
+
+__dummy_export @405
+_mtlock @406
+_mtunlock @407

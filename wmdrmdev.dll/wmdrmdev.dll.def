@@ -1,0 +1,5 @@
+﻿LIBRARY
+EXPORTS
+
+DllRegisterServer @2
+WMCreateDeviceRegistrationPriv @1

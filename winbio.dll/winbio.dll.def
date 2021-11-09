@@ -1,0 +1,47 @@
+﻿LIBRARY
+EXPORTS
+
+WinBioAcquireFocus @2
+WinBioCancel @3
+WinBioCaptureSample @4
+WinBioCaptureSampleWithCallback @5
+WinBioCloseSession @6
+WinBioControlUnit @7
+WinBioControlUnitPrivileged @8
+WinBioDeleteTemplate @9
+WinBioEnrollBegin @10
+WinBioEnrollCapture @11
+WinBioEnrollCaptureWithCallback @12
+WinBioEnrollCommit @13
+WinBioEnrollDiscard @14
+WinBioEnumBiometricUnits @15
+WinBioEnumDatabases @16
+WinBioEnumEnrollments @17
+WinBioEnumServiceProviders @18
+WinBioFree @19
+WinBioGetCredentialState @20
+WinBioGetDomainLogonSetting @21
+WinBioGetEnabledSetting @22
+WinBioGetLogonSetting @23
+WinBioGetProperty @24
+WinBioIdentify @25
+WinBioIdentifyWithCallback @26
+WinBioLocateSensor @27
+WinBioLocateSensorWithCallback @28
+WinBioLockUnit @29
+WinBioLogonIdentifiedUser @30
+WinBioOpenSession @31
+WinBioRegisterEventMonitor @32
+WinBioRegisterServiceMonitor @33
+WinBioReleaseFocus @34
+WinBioRemoveAllCredentials @35
+WinBioRemoveAllDomainCredentials @36
+WinBioRemoveCredential @37
+WinBioSetCredential @38
+WinBioUnlockUnit @39
+WinBioUnregisterEventMonitor @40
+WinBioUnregisterServiceMonitor @41
+WinBioVerify @42
+WinBioVerifyWithCallback @43
+WinBioWait @44
+_BioLogonIdentifiedUser @1

@@ -1,0 +1,180 @@
+ifndef X64
+.686p
+.XMM
+.safeseh SEH_handler
+.model flat, C
+option dotname
+option casemap : none
+endif
+
+extern ptr_DriverPackageClose : PTR;
+extern ptr_DriverPackageEnumDriversW : PTR;
+extern ptr_DriverPackageEnumFilesW : PTR;
+extern ptr_DriverPackageEnumRegKeysW : PTR;
+extern ptr_DriverPackageEnumServicesW : PTR;
+extern ptr_DriverPackageGetVersionInfoW : PTR;
+extern ptr_DriverPackageOpenW : PTR;
+extern ptr_DriverStoreClose : PTR;
+extern ptr_DriverStoreDeleteW : PTR;
+extern ptr_DriverStoreEnumW : PTR;
+extern ptr_DriverStoreFindW : PTR;
+extern ptr_DriverStoreImportW : PTR;
+extern ptr_DriverStoreOfflineAddDriverPackageA : PTR;
+extern ptr_DriverStoreOfflineAddDriverPackageW : PTR;
+extern ptr_DriverStoreOfflineDeleteDriverPackageA : PTR;
+extern ptr_DriverStoreOfflineDeleteDriverPackageW : PTR;
+extern ptr_DriverStoreOfflineEnumDriverPackageA : PTR;
+extern ptr_DriverStoreOfflineEnumDriverPackageW : PTR;
+extern ptr_DriverStoreOfflineEnumPublishedInfA : PTR;
+extern ptr_DriverStoreOfflineEnumPublishedInfW : PTR;
+extern ptr_DriverStoreOfflineFindDriverPackageA : PTR;
+extern ptr_DriverStoreOfflineFindDriverPackageW : PTR;
+extern ptr_DriverStoreOpenW : PTR;
+extern ptr_DriverStorePublishW : PTR;
+extern ptr_DriverStoreReflectCriticalW : PTR;
+extern ptr_DriverStoreReflectW : PTR;
+extern ptr_DriverStoreSetLogContext : PTR;
+extern ptr_DriverStoreUnpublishW : PTR;
+extern ptr_DriverStoreUnreflectCriticalW : PTR;
+extern ptr_DriverStoreUnreflectW : PTR;
+extern ptr_pServerDeleteDriverPackage : PTR;
+extern ptr_pServerImportDriverPackage : PTR;
+
+
+.code
+
+align 16
+SEH_handler   proc
+; handler
+ret
+SEH_handler   endp
+
+DriverPackageClose PROC
+jmp ptr_DriverPackageClose
+DriverPackageClose ENDP
+
+DriverPackageEnumDriversW PROC
+jmp ptr_DriverPackageEnumDriversW
+DriverPackageEnumDriversW ENDP
+
+DriverPackageEnumFilesW PROC
+jmp ptr_DriverPackageEnumFilesW
+DriverPackageEnumFilesW ENDP
+
+DriverPackageEnumRegKeysW PROC
+jmp ptr_DriverPackageEnumRegKeysW
+DriverPackageEnumRegKeysW ENDP
+
+DriverPackageEnumServicesW PROC
+jmp ptr_DriverPackageEnumServicesW
+DriverPackageEnumServicesW ENDP
+
+DriverPackageGetVersionInfoW PROC
+jmp ptr_DriverPackageGetVersionInfoW
+DriverPackageGetVersionInfoW ENDP
+
+DriverPackageOpenW PROC
+jmp ptr_DriverPackageOpenW
+DriverPackageOpenW ENDP
+
+DriverStoreClose PROC
+jmp ptr_DriverStoreClose
+DriverStoreClose ENDP
+
+DriverStoreDeleteW PROC
+jmp ptr_DriverStoreDeleteW
+DriverStoreDeleteW ENDP
+
+DriverStoreEnumW PROC
+jmp ptr_DriverStoreEnumW
+DriverStoreEnumW ENDP
+
+DriverStoreFindW PROC
+jmp ptr_DriverStoreFindW
+DriverStoreFindW ENDP
+
+DriverStoreImportW PROC
+jmp ptr_DriverStoreImportW
+DriverStoreImportW ENDP
+
+DriverStoreOfflineAddDriverPackageA PROC
+jmp ptr_DriverStoreOfflineAddDriverPackageA
+DriverStoreOfflineAddDriverPackageA ENDP
+
+DriverStoreOfflineAddDriverPackageW PROC
+jmp ptr_DriverStoreOfflineAddDriverPackageW
+DriverStoreOfflineAddDriverPackageW ENDP
+
+DriverStoreOfflineDeleteDriverPackageA PROC
+jmp ptr_DriverStoreOfflineDeleteDriverPackageA
+DriverStoreOfflineDeleteDriverPackageA ENDP
+
+DriverStoreOfflineDeleteDriverPackageW PROC
+jmp ptr_DriverStoreOfflineDeleteDriverPackageW
+DriverStoreOfflineDeleteDriverPackageW ENDP
+
+DriverStoreOfflineEnumDriverPackageA PROC
+jmp ptr_DriverStoreOfflineEnumDriverPackageA
+DriverStoreOfflineEnumDriverPackageA ENDP
+
+DriverStoreOfflineEnumDriverPackageW PROC
+jmp ptr_DriverStoreOfflineEnumDriverPackageW
+DriverStoreOfflineEnumDriverPackageW ENDP
+
+DriverStoreOfflineEnumPublishedInfA PROC
+jmp ptr_DriverStoreOfflineEnumPublishedInfA
+DriverStoreOfflineEnumPublishedInfA ENDP
+
+DriverStoreOfflineEnumPublishedInfW PROC
+jmp ptr_DriverStoreOfflineEnumPublishedInfW
+DriverStoreOfflineEnumPublishedInfW ENDP
+
+DriverStoreOfflineFindDriverPackageA PROC
+jmp ptr_DriverStoreOfflineFindDriverPackageA
+DriverStoreOfflineFindDriverPackageA ENDP
+
+DriverStoreOfflineFindDriverPackageW PROC
+jmp ptr_DriverStoreOfflineFindDriverPackageW
+DriverStoreOfflineFindDriverPackageW ENDP
+
+DriverStoreOpenW PROC
+jmp ptr_DriverStoreOpenW
+DriverStoreOpenW ENDP
+
+DriverStorePublishW PROC
+jmp ptr_DriverStorePublishW
+DriverStorePublishW ENDP
+
+DriverStoreReflectCriticalW PROC
+jmp ptr_DriverStoreReflectCriticalW
+DriverStoreReflectCriticalW ENDP
+
+DriverStoreReflectW PROC
+jmp ptr_DriverStoreReflectW
+DriverStoreReflectW ENDP
+
+DriverStoreSetLogContext PROC
+jmp ptr_DriverStoreSetLogContext
+DriverStoreSetLogContext ENDP
+
+DriverStoreUnpublishW PROC
+jmp ptr_DriverStoreUnpublishW
+DriverStoreUnpublishW ENDP
+
+DriverStoreUnreflectCriticalW PROC
+jmp ptr_DriverStoreUnreflectCriticalW
+DriverStoreUnreflectCriticalW ENDP
+
+DriverStoreUnreflectW PROC
+jmp ptr_DriverStoreUnreflectW
+DriverStoreUnreflectW ENDP
+
+pServerDeleteDriverPackage PROC
+jmp ptr_pServerDeleteDriverPackage
+pServerDeleteDriverPackage ENDP
+
+pServerImportDriverPackage PROC
+jmp ptr_pServerImportDriverPackage
+pServerImportDriverPackage ENDP
+
+end

@@ -1,0 +1,15 @@
+﻿LIBRARY
+EXPORTS
+
+DllCanUnloadNow @1
+DllGetClassObject @2
+DllRegisterServer @3
+DllUnregisterServer @4
+SppFreeClientPropArray @5
+SppFreeExternalGroupPropArray @6
+SppFreeGroupPropArray @7
+SppFreeMetadataProp @8
+SxTracerDebuggerBreak @9
+SxTracerGetThreadContextDebug @10
+SxTracerGetThreadContextRetail @11
+SxTracerShouldTrackFailure @12

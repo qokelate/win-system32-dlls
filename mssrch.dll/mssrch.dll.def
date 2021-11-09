@@ -1,0 +1,14 @@
+﻿LIBRARY
+EXPORTS
+
+ConcatVectValues @14
+DecodeText @15
+DllCanUnloadNow @16
+DllGetClassObject @17
+DllRegisterServer @18
+DllUnregisterServer @19
+GetCatalogManager @20
+GetPropStoreManager @21
+MSSCompressText @22
+MSSUncompressText @23
+MSSrch_SysPrep_Cleanup @24

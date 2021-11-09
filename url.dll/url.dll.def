@@ -1,0 +1,20 @@
+﻿LIBRARY
+EXPORTS
+
+AddMIMEFileTypesPS @102
+AutodialHookCallback @103
+FileProtocolHandler @104
+FileProtocolHandlerA @105
+InetIsOffline @106
+MIMEAssociationDialogA @107
+MIMEAssociationDialogW @108
+MailToProtocolHandler @109
+MailToProtocolHandlerA @110
+OpenURL @111
+OpenURLA @112
+TelnetProtocolHandler @113
+TelnetProtocolHandlerA @114
+TranslateURLA @115
+TranslateURLW @116
+URLAssociationDialogA @117
+URLAssociationDialogW @118

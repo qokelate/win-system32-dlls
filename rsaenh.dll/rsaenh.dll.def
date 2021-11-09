@@ -1,0 +1,30 @@
+﻿LIBRARY
+EXPORTS
+
+CPAcquireContext @1
+CPCreateHash @2
+CPDecrypt @3
+CPDeriveKey @4
+CPDestroyHash @5
+CPDestroyKey @6
+CPDuplicateHash @7
+CPDuplicateKey @8
+CPEncrypt @9
+CPExportKey @10
+CPGenKey @11
+CPGenRandom @12
+CPGetHashParam @13
+CPGetKeyParam @14
+CPGetProvParam @15
+CPGetUserKey @16
+CPHashData @17
+CPHashSessionKey @18
+CPImportKey @19
+CPReleaseContext @20
+CPSetHashParam @21
+CPSetKeyParam @22
+CPSetProvParam @23
+CPSignHash @24
+CPVerifySignature @25
+DllRegisterServer @26
+DllUnregisterServer @27

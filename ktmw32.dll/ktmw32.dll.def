@@ -1,0 +1,47 @@
+﻿LIBRARY
+EXPORTS
+
+CommitComplete @1
+CommitEnlistment @2
+CommitTransaction @3
+CommitTransactionAsync @4
+CreateEnlistment @5
+CreateResourceManager @6
+CreateTransaction @7
+CreateTransactionManager @8
+GetCurrentClockTransactionManager @9
+GetEnlistmentId @10
+GetEnlistmentRecoveryInformation @11
+GetNotificationResourceManager @12
+GetNotificationResourceManagerAsync @13
+GetTransactionId @14
+GetTransactionInformation @15
+GetTransactionManagerId @16
+OpenEnlistment @17
+OpenResourceManager @18
+OpenTransaction @19
+OpenTransactionManager @20
+OpenTransactionManagerById @21
+PrePrepareComplete @22
+PrePrepareEnlistment @23
+PrepareComplete @24
+PrepareEnlistment @25
+PrivCreateTransaction @26
+PrivIsLogWritableTransactionManager @27
+PrivPropagationComplete @28
+PrivPropagationFailed @29
+PrivRegisterProtocolAddressInformation @30
+ReadOnlyEnlistment @31
+RecoverEnlistment @32
+RecoverResourceManager @33
+RecoverTransactionManager @34
+RenameTransactionManager @35
+RollbackComplete @36
+RollbackEnlistment @37
+RollbackTransaction @38
+RollbackTransactionAsync @39
+RollforwardTransactionManager @40
+SetEnlistmentRecoveryInformation @41
+SetResourceManagerCompletionPort @42
+SetTransactionInformation @43
+SinglePhaseReject @44

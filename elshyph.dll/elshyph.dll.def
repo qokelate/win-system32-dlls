@@ -1,0 +1,8 @@
+﻿LIBRARY
+EXPORTS
+
+DoAction @1
+FreePropertyBag @2
+FreeService @3
+InitService @4
+RecognizeText @5

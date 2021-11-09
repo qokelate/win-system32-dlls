@@ -1,0 +1,22 @@
+﻿LIBRARY
+EXPORTS
+
+PortChangeCallback @1
+PortClearStatistics @2
+PortClose @3
+PortCompressionSetInfo @4
+PortConnect @5
+PortDisconnect @6
+PortEnum @7
+PortGetInfo @8
+PortGetPortState @9
+PortGetStatistics @10
+PortInit @11
+PortOpen @12
+PortReceive @13
+PortReceiveComplete @14
+PortSend @15
+PortSetFraming @16
+PortSetINetCfg @17
+PortSetInfo @18
+PortTestSignalState @19

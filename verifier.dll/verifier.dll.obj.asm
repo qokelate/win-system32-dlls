@@ -1,0 +1,130 @@
+ifndef X64
+.686p
+.XMM
+.safeseh SEH_handler
+.model flat, C
+option dotname
+option casemap : none
+endif
+
+extern ptr_VerifierAddFreeMemoryCallback : PTR;
+extern ptr_VerifierCheckPageHeapAllocation : PTR;
+extern ptr_VerifierCreateRpcPageHeap : PTR;
+extern ptr_VerifierDeleteFreeMemoryCallback : PTR;
+extern ptr_VerifierDestroyRpcPageHeap : PTR;
+extern ptr_VerifierDisableFaultInjectionExclusionRange : PTR;
+extern ptr_VerifierDisableFaultInjectionTargetRange : PTR;
+extern ptr_VerifierEnableFaultInjectionExclusionRange : PTR;
+extern ptr_VerifierEnableFaultInjectionTargetRange : PTR;
+extern ptr_VerifierEnumerateResource : PTR;
+extern ptr_VerifierForceNormalHeap : PTR;
+extern ptr_VerifierGetInfoForException : PTR;
+extern ptr_VerifierGetMemoryForDump : PTR;
+extern ptr_VerifierGetProviderHelper : PTR;
+extern ptr_VerifierIsCurrentThreadHoldingLocks : PTR;
+extern ptr_VerifierIsDllEntryActive : PTR;
+extern ptr_VerifierIsPerUserSettingsEnabled : PTR;
+extern ptr_VerifierQueryRuntimeFlags : PTR;
+extern ptr_VerifierSetFaultInjectionProbability : PTR;
+extern ptr_VerifierSetFlags : PTR;
+extern ptr_VerifierSetRuntimeFlags : PTR;
+extern ptr_VerifierStopMessage : PTR;
+
+
+.code
+
+align 16
+SEH_handler   proc
+; handler
+ret
+SEH_handler   endp
+
+VerifierAddFreeMemoryCallback PROC
+jmp ptr_VerifierAddFreeMemoryCallback
+VerifierAddFreeMemoryCallback ENDP
+
+VerifierCheckPageHeapAllocation PROC
+jmp ptr_VerifierCheckPageHeapAllocation
+VerifierCheckPageHeapAllocation ENDP
+
+VerifierCreateRpcPageHeap PROC
+jmp ptr_VerifierCreateRpcPageHeap
+VerifierCreateRpcPageHeap ENDP
+
+VerifierDeleteFreeMemoryCallback PROC
+jmp ptr_VerifierDeleteFreeMemoryCallback
+VerifierDeleteFreeMemoryCallback ENDP
+
+VerifierDestroyRpcPageHeap PROC
+jmp ptr_VerifierDestroyRpcPageHeap
+VerifierDestroyRpcPageHeap ENDP
+
+VerifierDisableFaultInjectionExclusionRange PROC
+jmp ptr_VerifierDisableFaultInjectionExclusionRange
+VerifierDisableFaultInjectionExclusionRange ENDP
+
+VerifierDisableFaultInjectionTargetRange PROC
+jmp ptr_VerifierDisableFaultInjectionTargetRange
+VerifierDisableFaultInjectionTargetRange ENDP
+
+VerifierEnableFaultInjectionExclusionRange PROC
+jmp ptr_VerifierEnableFaultInjectionExclusionRange
+VerifierEnableFaultInjectionExclusionRange ENDP
+
+VerifierEnableFaultInjectionTargetRange PROC
+jmp ptr_VerifierEnableFaultInjectionTargetRange
+VerifierEnableFaultInjectionTargetRange ENDP
+
+VerifierEnumerateResource PROC
+jmp ptr_VerifierEnumerateResource
+VerifierEnumerateResource ENDP
+
+VerifierForceNormalHeap PROC
+jmp ptr_VerifierForceNormalHeap
+VerifierForceNormalHeap ENDP
+
+VerifierGetInfoForException PROC
+jmp ptr_VerifierGetInfoForException
+VerifierGetInfoForException ENDP
+
+VerifierGetMemoryForDump PROC
+jmp ptr_VerifierGetMemoryForDump
+VerifierGetMemoryForDump ENDP
+
+VerifierGetProviderHelper PROC
+jmp ptr_VerifierGetProviderHelper
+VerifierGetProviderHelper ENDP
+
+VerifierIsCurrentThreadHoldingLocks PROC
+jmp ptr_VerifierIsCurrentThreadHoldingLocks
+VerifierIsCurrentThreadHoldingLocks ENDP
+
+VerifierIsDllEntryActive PROC
+jmp ptr_VerifierIsDllEntryActive
+VerifierIsDllEntryActive ENDP
+
+VerifierIsPerUserSettingsEnabled PROC
+jmp ptr_VerifierIsPerUserSettingsEnabled
+VerifierIsPerUserSettingsEnabled ENDP
+
+VerifierQueryRuntimeFlags PROC
+jmp ptr_VerifierQueryRuntimeFlags
+VerifierQueryRuntimeFlags ENDP
+
+VerifierSetFaultInjectionProbability PROC
+jmp ptr_VerifierSetFaultInjectionProbability
+VerifierSetFaultInjectionProbability ENDP
+
+VerifierSetFlags PROC
+jmp ptr_VerifierSetFlags
+VerifierSetFlags ENDP
+
+VerifierSetRuntimeFlags PROC
+jmp ptr_VerifierSetRuntimeFlags
+VerifierSetRuntimeFlags ENDP
+
+VerifierStopMessage PROC
+jmp ptr_VerifierStopMessage
+VerifierStopMessage ENDP
+
+end

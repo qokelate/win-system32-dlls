@@ -1,0 +1,27 @@
+﻿LIBRARY
+EXPORTS
+
+BatMeterOnDeviceChange @1000
+CleanupBatteryData @1001
+CreateBatteryData @1002
+GetBatMeterIconAnimationState @1003
+GetBatMeterIconAnimationTimeDelay @1004
+GetBatMeterIconAnimationUpdate @1005
+GetBatteryDetails @1006
+GetBatteryInfo @1007
+GetBatteryStatusText @1008
+GetBatteryWorkingState @1009
+IsBatteryBad @1010
+IsBatteryHealthWarningEnabled @1011
+IsBatteryLevelCritical @1012
+IsBatteryLevelLow @1013
+IsBatteryLevelReserve @1014
+PowerCapabilities @1015
+QueryBatteryData @1016
+SetBatteryHealthWarningState @1017
+SetBatteryLevel @1018
+SetBatteryWorkingState @1019
+SubscribeBatteryUpdateNotification @1020
+UnsubscribeBatteryUpdateNotification @1021
+UpdateBatteryData @1022
+UpdateBatteryDataAsync @1023

@@ -1,0 +1,14 @@
+﻿LIBRARY
+EXPORTS
+
+LookupAccountNameLocalA @1
+LookupAccountNameLocalW @2
+LookupAccountSidLocalA @3
+LookupAccountSidLocalW @4
+LsaLookupClose @5
+LsaLookupFreeMemory @6
+LsaLookupGetDomainInfo @7
+LsaLookupManageSidNameMapping @8
+LsaLookupOpenLocalPolicy @9
+LsaLookupTranslateNames @10
+LsaLookupTranslateSids @11

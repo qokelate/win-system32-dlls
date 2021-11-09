@@ -1,0 +1,6 @@
+﻿LIBRARY
+EXPORTS
+
+Briefcase_IntroW @5
+DllCanUnloadNow @8
+DllGetClassObject @9

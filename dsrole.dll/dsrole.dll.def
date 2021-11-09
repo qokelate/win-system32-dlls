@@ -1,0 +1,17 @@
+﻿LIBRARY
+EXPORTS
+
+DsRoleAbortDownlevelServerUpgrade @1
+DsRoleCancel @2
+DsRoleDcAsDc @3
+DsRoleDcAsReplica @4
+DsRoleDemoteDc @5
+DsRoleDnsNameToFlatName @6
+DsRoleFreeMemory @7
+DsRoleGetDatabaseFacts @8
+DsRoleGetDcOperationProgress @9
+DsRoleGetDcOperationResults @10
+DsRoleGetPrimaryDomainInformation @11
+DsRoleIfmHandleFree @12
+DsRoleServerSaveStateForUpgrade @13
+DsRoleUpgradeDownlevelServer @14

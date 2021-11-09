@@ -1,0 +1,43 @@
+﻿LIBRARY
+EXPORTS
+
+D3D10CoreCreateDevice1 @13
+D3D10CoreGetSupportedVersions @14
+D3D10CoreGetVersion @15
+D3D10CoreRegisterLayers @16
+D3DKMTCloseAdapter @1
+D3DKMTCreateAllocation @17
+D3DKMTCreateContext @18
+D3DKMTCreateDevice @19
+D3DKMTCreateSynchronizationObject @20
+D3DKMTDestroyAllocation @2
+D3DKMTDestroyContext @3
+D3DKMTDestroyDevice @4
+D3DKMTDestroySynchronizationObject @5
+D3DKMTEscape @21
+D3DKMTGetContextSchedulingPriority @22
+D3DKMTGetDeviceState @23
+D3DKMTGetDisplayModeList @24
+D3DKMTGetMultisampleMethodList @25
+D3DKMTGetRuntimeData @26
+D3DKMTGetSharedPrimaryHandle @27
+D3DKMTLock @28
+D3DKMTOpenAdapterFromHdc @29
+D3DKMTOpenResource @30
+D3DKMTPresent @31
+D3DKMTQueryAdapterInfo @6
+D3DKMTQueryAllocationResidency @32
+D3DKMTQueryResourceInfo @33
+D3DKMTRender @34
+D3DKMTSetAllocationPriority @35
+D3DKMTSetContextSchedulingPriority @36
+D3DKMTSetDisplayMode @37
+D3DKMTSetDisplayPrivateDriverFormat @7
+D3DKMTSetGammaRamp @38
+D3DKMTSetVidPnSourceOwner @39
+D3DKMTSignalSynchronizationObject @8
+D3DKMTUnlock @9
+D3DKMTWaitForSynchronizationObject @10
+D3DKMTWaitForVerticalBlankEvent @40
+OpenAdapter10 @11
+OpenAdapter10_2 @12

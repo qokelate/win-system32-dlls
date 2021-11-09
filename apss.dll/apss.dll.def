@@ -1,0 +1,10 @@
+﻿LIBRARY
+EXPORTS
+
+DllCanUnloadNow @3
+DllGetClassObject @4
+DllMain @5
+DllRegisterServer @6
+DllUnregisterServer @7
+ITUseDefaultObjectLookupOrder @1
+WMCreateStreamForURL @2

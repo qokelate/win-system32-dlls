@@ -1,0 +1,8 @@
+﻿LIBRARY
+EXPORTS
+
+DllCanUnloadNow @2
+DllGetClassObject @3
+DllRegisterServer @4
+DllUnregisterServer @5
+InstallDsExtension @1

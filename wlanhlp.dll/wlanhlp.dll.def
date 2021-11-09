@@ -1,0 +1,32 @@
+﻿LIBRARY
+EXPORTS
+
+QueryNetconStatus @1
+QueryNetconVirtualCharacteristic @2
+WlanCancelPlap @3
+WlanConnectWithInput @4
+WlanDeinitPlapParams @5
+WlanDoPlap @6
+WlanEnumAllInterfaces @7
+WlanGenerateProfileXmlBasicSettings @8
+WlanGetProfileEapUserDataInfo @9
+WlanGetProfileKeyInfo @10
+WlanHostedNetworkFreeWCNSettings @11
+WlanHostedNetworkHlpQueryEverUsed @12
+WlanHostedNetworkQueryWCNSettings @13
+WlanHostedNetworkSetWCNSettings @14
+WlanInitPlapParams @15
+WlanInternalScan @16
+WlanIsNetworkSuppressed @17
+WlanIsUIRequestPending @18
+WlanParseProfileXmlBasicSettings @19
+WlanPrivateGetAvailableNetworkList @20
+WlanQueryCreateAllUserProfileRestricted @21
+WlanQueryPlapCredentials @22
+WlanQueryPreConnectInput @23
+WlanQueryVirtualInterfaceType @24
+WlanRefreshConnections @25
+WlanRemoveUIForwardingNetworkList @26
+WlanSendUIResponse @27
+WlanSetAllUserProfileRestricted @28
+WlanSetUIForwardingNetworkList @29

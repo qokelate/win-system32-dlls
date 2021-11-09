@@ -1,0 +1,5 @@
+﻿LIBRARY
+EXPORTS
+
+GetReadingString @1
+ShowReadingWindow @2

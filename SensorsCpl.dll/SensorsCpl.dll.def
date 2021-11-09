@@ -1,0 +1,10 @@
+﻿LIBRARY
+EXPORTS
+
+DllCanUnloadNow @1
+DllGetClassObject @2
+DllMain @3
+DllRegisterServer @4
+DllUnregisterServer @5
+RequestPermissionsInternalA @6
+RequestPermissionsInternalW @7

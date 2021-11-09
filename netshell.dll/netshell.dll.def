@@ -1,0 +1,16 @@
+﻿LIBRARY
+EXPORTS
+
+DllCanUnloadNow @1
+DllGetClassObject @2
+DllRegisterServer @3
+DllUnregisterServer @4
+HrCreateDesktopIcon @5
+HrGetIconFromMediaType @6
+HrGetIconFromMediaTypeEx @7
+HrLaunchConnection @8
+HrLaunchConnectionEx @9
+HrRenameConnection @10
+NcFreeNetconProperties @11
+NcIsValidConnectionName @12
+StartNCW @13

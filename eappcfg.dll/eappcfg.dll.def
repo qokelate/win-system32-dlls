@@ -1,0 +1,17 @@
+﻿LIBRARY
+EXPORTS
+
+EapHostPeerConfigBlob2Xml @1
+EapHostPeerConfigXml2Blob @2
+EapHostPeerCredentialsXml2Blob @3
+EapHostPeerFreeErrorMemory @4
+EapHostPeerFreeMemory @5
+EapHostPeerGetMethodProperties @6
+EapHostPeerGetMethods @7
+EapHostPeerInvokeConfigUI @8
+EapHostPeerInvokeIdentityUI @9
+EapHostPeerInvokeInteractiveUI @10
+EapHostPeerQueryCredentialInputFields @11
+EapHostPeerQueryInteractiveUIInputFields @12
+EapHostPeerQueryUIBlobFromInteractiveUIInputFields @13
+EapHostPeerQueryUserBlobFromCredentialInputFields @14

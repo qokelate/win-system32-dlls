@@ -1,0 +1,8 @@
+﻿LIBRARY
+EXPORTS
+
+AdvancedSettingSheetHelper @1
+DisplaySaveSettingsEx @2
+DllCanUnloadNow @3
+DllGetClassObject @4
+DllInstall @5

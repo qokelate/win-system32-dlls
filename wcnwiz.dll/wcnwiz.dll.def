@@ -1,0 +1,7 @@
+﻿LIBRARY
+EXPORTS
+
+DllCanUnloadNow @1
+DllGetClassObject @2
+LaunchWriteToUSBWizard @3
+RunWcnWizardForDeviceW @4

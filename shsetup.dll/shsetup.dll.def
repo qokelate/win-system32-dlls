@@ -1,0 +1,9 @@
+﻿LIBRARY
+EXPORTS
+
+SHUnattendedSetup @1
+SHUnattendedSetupA @2
+SHUnattendedSetupW @3
+Sysprep_Cleanup_Shell @4
+Sysprep_Generalize_Shell @5
+Sysprep_Specialize_Shell @6

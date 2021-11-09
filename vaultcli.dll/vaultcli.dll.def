@@ -1,0 +1,30 @@
+﻿LIBRARY
+EXPORTS
+
+VaultAddItem @1
+VaultCloseVault @2
+VaultConfirmVaultAccess @3
+VaultCopyItem @4
+VaultCopyVault @5
+VaultCreateItemType @6
+VaultCreateVault @7
+VaultDeleteItemType @8
+VaultDeleteVault @9
+VaultEnumerateItemTypes @10
+VaultEnumerateItems @11
+VaultEnumerateVaults @12
+VaultFindItems @13
+VaultFree @14
+VaultGetInformation @15
+VaultGetItem @16
+VaultGetItemType @17
+VaultLoadVaults @18
+VaultLockVault @19
+VaultMoveItem @20
+VaultOpenVault @21
+VaultRegisterNotification @22
+VaultRemoveItem @23
+VaultSetInformation @24
+VaultUnRegisterNotification @25
+VaultUnloadVaults @26
+VaultUnlockVault @27

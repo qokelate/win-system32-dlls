@@ -1,0 +1,6 @@
+﻿LIBRARY
+EXPORTS
+
+Sysprep_Clean_Opk @1
+Sysprep_Generalize_Opk @2
+Sysprep_Specialize_Opk @3

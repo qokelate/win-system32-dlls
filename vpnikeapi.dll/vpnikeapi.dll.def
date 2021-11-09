@@ -1,0 +1,26 @@
+﻿LIBRARY
+EXPORTS
+
+CancelProcessEapAuthPacket @1
+CloseTunnel @2
+CreateTunnel @3
+FreeConfigurationPayloadBuffer @4
+FreeEapAuthAttributes @5
+FreeEapAuthPacket @6
+FreeIDPayloadBuffer @7
+FreeTrafficSelectors @8
+GetConfigurationPayloadRequest @9
+GetIDPayload @10
+GetNewTunnelID @11
+GetServerEapAuthRequestPacket @12
+GetTrafficSelectorsRequest @13
+NewRasIncomingCall @14
+ProcessAdditionalAddressNotification @15
+ProcessConfigurationPayloadReply @16
+ProcessConfigurationPayloadRequest @17
+ProcessEapAuthPacket @18
+ProcessTrafficSelectorsReply @19
+ProcessTrafficSelectorsRequest @20
+QueryEapAuthAttributes @21
+RemoveTrafficSelectors @22
+UpdateTunnel @23

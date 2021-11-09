@@ -1,0 +1,9 @@
+﻿LIBRARY
+EXPORTS
+
+DllCanUnloadNow @7
+DllGetClassObject @8
+DllRegisterServer @9
+DllUnregisterServer @10
+HrRehydratorCreateServiceObject @5
+HrRehydratorInvokeServiceAction @6

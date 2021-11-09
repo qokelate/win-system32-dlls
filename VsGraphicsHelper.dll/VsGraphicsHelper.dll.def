@@ -1,0 +1,13 @@
+﻿LIBRARY
+EXPORTS
+
+DisableD3DSpy @1
+VsgDbgAddHUDMessage @2
+VsgDbgBeginCapture @3
+VsgDbgCaptureCurrentFrame @4
+VsgDbgCopy @5
+VsgDbgEndCapture @6
+VsgDbgInit @7
+VsgDbgInitDelayed @8
+VsgDbgToggleHUD @9
+VsgDbgUnInit @10

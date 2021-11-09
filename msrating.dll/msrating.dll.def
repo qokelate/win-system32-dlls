@@ -1,0 +1,35 @@
+﻿LIBRARY
+EXPORTS
+
+ChangeSupervisorPassword @1
+ClickedOnPRF @2
+ClickedOnRAT @3
+RatingAccessDeniedDialog @4
+RatingAccessDeniedDialog2 @5
+RatingAccessDeniedDialog2W @6
+RatingAccessDeniedDialogW @7
+RatingAddPropertyPages @8
+RatingAddToApprovedSites @9
+RatingCheckUserAccess @10
+RatingCheckUserAccessW @11
+RatingClickedOnPRFInternal @12
+RatingClickedOnRATInternal @13
+RatingCustomAddRatingHelper @14
+RatingCustomAddRatingSystem @15
+RatingCustomCrackData @16
+RatingCustomDeleteCrackedData @17
+RatingCustomInit @18
+RatingCustomRemoveRatingHelper @19
+RatingCustomSetDefaultBureau @20
+RatingCustomSetUserOptions @21
+RatingEnable @22
+RatingEnableW @23
+RatingEnabledQuery @24
+RatingFreeDetails @25
+RatingInit @26
+RatingObtainCancel @27
+RatingObtainQuery @28
+RatingObtainQueryW @29
+RatingSetupUI @30
+RatingSetupUIW @31
+VerifySupervisorPassword @32

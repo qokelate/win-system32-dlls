@@ -1,0 +1,7 @@
+﻿LIBRARY
+EXPORTS
+
+GetDateFormatA @1
+GetDateFormatW @2
+GetTimeFormatA @3
+GetTimeFormatW @4

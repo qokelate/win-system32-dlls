@@ -1,0 +1,355 @@
+ifndef X64
+.686p
+.XMM
+.safeseh SEH_handler
+.model flat, C
+option dotname
+option casemap : none
+endif
+
+extern ptr_DllCanUnloadNow : PTR;
+extern ptr_DllGetClassObject : PTR;
+extern ptr_DllRegisterServer : PTR;
+extern ptr_DllUnregisterServer : PTR;
+extern ptr_GenerateGroupPolicyApplications : PTR;
+extern ptr_GenerateGroupPolicyDataSources : PTR;
+extern ptr_GenerateGroupPolicyDevices : PTR;
+extern ptr_GenerateGroupPolicyDrives : PTR;
+extern ptr_GenerateGroupPolicyEnviron : PTR;
+extern ptr_GenerateGroupPolicyFiles : PTR;
+extern ptr_GenerateGroupPolicyFolderOptions : PTR;
+extern ptr_GenerateGroupPolicyFolders : PTR;
+extern ptr_GenerateGroupPolicyIniFile : PTR;
+extern ptr_GenerateGroupPolicyInternet : PTR;
+extern ptr_GenerateGroupPolicyLocUsAndGroups : PTR;
+extern ptr_GenerateGroupPolicyNetShares : PTR;
+extern ptr_GenerateGroupPolicyNetworkOptions : PTR;
+extern ptr_GenerateGroupPolicyPowerOptions : PTR;
+extern ptr_GenerateGroupPolicyPrinters : PTR;
+extern ptr_GenerateGroupPolicyRegionOptions : PTR;
+extern ptr_GenerateGroupPolicyRegistry : PTR;
+extern ptr_GenerateGroupPolicySchedTasks : PTR;
+extern ptr_GenerateGroupPolicyServices : PTR;
+extern ptr_GenerateGroupPolicyShortcuts : PTR;
+extern ptr_GenerateGroupPolicyStartMenu : PTR;
+extern ptr_ProcessGroupPolicyApplications : PTR;
+extern ptr_ProcessGroupPolicyDataSources : PTR;
+extern ptr_ProcessGroupPolicyDevices : PTR;
+extern ptr_ProcessGroupPolicyDrives : PTR;
+extern ptr_ProcessGroupPolicyEnviron : PTR;
+extern ptr_ProcessGroupPolicyExApplications : PTR;
+extern ptr_ProcessGroupPolicyExDataSources : PTR;
+extern ptr_ProcessGroupPolicyExDevices : PTR;
+extern ptr_ProcessGroupPolicyExDrives : PTR;
+extern ptr_ProcessGroupPolicyExEnviron : PTR;
+extern ptr_ProcessGroupPolicyExFiles : PTR;
+extern ptr_ProcessGroupPolicyExFolderOptions : PTR;
+extern ptr_ProcessGroupPolicyExFolders : PTR;
+extern ptr_ProcessGroupPolicyExIniFile : PTR;
+extern ptr_ProcessGroupPolicyExInternet : PTR;
+extern ptr_ProcessGroupPolicyExLocUsAndGroups : PTR;
+extern ptr_ProcessGroupPolicyExNetShares : PTR;
+extern ptr_ProcessGroupPolicyExNetworkOptions : PTR;
+extern ptr_ProcessGroupPolicyExPowerOptions : PTR;
+extern ptr_ProcessGroupPolicyExPrinters : PTR;
+extern ptr_ProcessGroupPolicyExRegionOptions : PTR;
+extern ptr_ProcessGroupPolicyExRegistry : PTR;
+extern ptr_ProcessGroupPolicyExSchedTasks : PTR;
+extern ptr_ProcessGroupPolicyExServices : PTR;
+extern ptr_ProcessGroupPolicyExShortcuts : PTR;
+extern ptr_ProcessGroupPolicyExStartMenu : PTR;
+extern ptr_ProcessGroupPolicyFiles : PTR;
+extern ptr_ProcessGroupPolicyFolderOptions : PTR;
+extern ptr_ProcessGroupPolicyFolders : PTR;
+extern ptr_ProcessGroupPolicyIniFile : PTR;
+extern ptr_ProcessGroupPolicyInternet : PTR;
+extern ptr_ProcessGroupPolicyLocUsAndGroups : PTR;
+extern ptr_ProcessGroupPolicyNetShares : PTR;
+extern ptr_ProcessGroupPolicyNetworkOptions : PTR;
+extern ptr_ProcessGroupPolicyPowerOptions : PTR;
+extern ptr_ProcessGroupPolicyPrinters : PTR;
+extern ptr_ProcessGroupPolicyRegionOptions : PTR;
+extern ptr_ProcessGroupPolicyRegistry : PTR;
+extern ptr_ProcessGroupPolicySchedTasks : PTR;
+extern ptr_ProcessGroupPolicyServices : PTR;
+extern ptr_ProcessGroupPolicyShortcuts : PTR;
+extern ptr_ProcessGroupPolicyStartMenu : PTR;
+
+
+.code
+
+align 16
+SEH_handler   proc
+; handler
+ret
+SEH_handler   endp
+
+DllCanUnloadNow PROC
+jmp ptr_DllCanUnloadNow
+DllCanUnloadNow ENDP
+
+DllGetClassObject PROC
+jmp ptr_DllGetClassObject
+DllGetClassObject ENDP
+
+DllRegisterServer PROC
+jmp ptr_DllRegisterServer
+DllRegisterServer ENDP
+
+DllUnregisterServer PROC
+jmp ptr_DllUnregisterServer
+DllUnregisterServer ENDP
+
+GenerateGroupPolicyApplications PROC
+jmp ptr_GenerateGroupPolicyApplications
+GenerateGroupPolicyApplications ENDP
+
+GenerateGroupPolicyDataSources PROC
+jmp ptr_GenerateGroupPolicyDataSources
+GenerateGroupPolicyDataSources ENDP
+
+GenerateGroupPolicyDevices PROC
+jmp ptr_GenerateGroupPolicyDevices
+GenerateGroupPolicyDevices ENDP
+
+GenerateGroupPolicyDrives PROC
+jmp ptr_GenerateGroupPolicyDrives
+GenerateGroupPolicyDrives ENDP
+
+GenerateGroupPolicyEnviron PROC
+jmp ptr_GenerateGroupPolicyEnviron
+GenerateGroupPolicyEnviron ENDP
+
+GenerateGroupPolicyFiles PROC
+jmp ptr_GenerateGroupPolicyFiles
+GenerateGroupPolicyFiles ENDP
+
+GenerateGroupPolicyFolderOptions PROC
+jmp ptr_GenerateGroupPolicyFolderOptions
+GenerateGroupPolicyFolderOptions ENDP
+
+GenerateGroupPolicyFolders PROC
+jmp ptr_GenerateGroupPolicyFolders
+GenerateGroupPolicyFolders ENDP
+
+GenerateGroupPolicyIniFile PROC
+jmp ptr_GenerateGroupPolicyIniFile
+GenerateGroupPolicyIniFile ENDP
+
+GenerateGroupPolicyInternet PROC
+jmp ptr_GenerateGroupPolicyInternet
+GenerateGroupPolicyInternet ENDP
+
+GenerateGroupPolicyLocUsAndGroups PROC
+jmp ptr_GenerateGroupPolicyLocUsAndGroups
+GenerateGroupPolicyLocUsAndGroups ENDP
+
+GenerateGroupPolicyNetShares PROC
+jmp ptr_GenerateGroupPolicyNetShares
+GenerateGroupPolicyNetShares ENDP
+
+GenerateGroupPolicyNetworkOptions PROC
+jmp ptr_GenerateGroupPolicyNetworkOptions
+GenerateGroupPolicyNetworkOptions ENDP
+
+GenerateGroupPolicyPowerOptions PROC
+jmp ptr_GenerateGroupPolicyPowerOptions
+GenerateGroupPolicyPowerOptions ENDP
+
+GenerateGroupPolicyPrinters PROC
+jmp ptr_GenerateGroupPolicyPrinters
+GenerateGroupPolicyPrinters ENDP
+
+GenerateGroupPolicyRegionOptions PROC
+jmp ptr_GenerateGroupPolicyRegionOptions
+GenerateGroupPolicyRegionOptions ENDP
+
+GenerateGroupPolicyRegistry PROC
+jmp ptr_GenerateGroupPolicyRegistry
+GenerateGroupPolicyRegistry ENDP
+
+GenerateGroupPolicySchedTasks PROC
+jmp ptr_GenerateGroupPolicySchedTasks
+GenerateGroupPolicySchedTasks ENDP
+
+GenerateGroupPolicyServices PROC
+jmp ptr_GenerateGroupPolicyServices
+GenerateGroupPolicyServices ENDP
+
+GenerateGroupPolicyShortcuts PROC
+jmp ptr_GenerateGroupPolicyShortcuts
+GenerateGroupPolicyShortcuts ENDP
+
+GenerateGroupPolicyStartMenu PROC
+jmp ptr_GenerateGroupPolicyStartMenu
+GenerateGroupPolicyStartMenu ENDP
+
+ProcessGroupPolicyApplications PROC
+jmp ptr_ProcessGroupPolicyApplications
+ProcessGroupPolicyApplications ENDP
+
+ProcessGroupPolicyDataSources PROC
+jmp ptr_ProcessGroupPolicyDataSources
+ProcessGroupPolicyDataSources ENDP
+
+ProcessGroupPolicyDevices PROC
+jmp ptr_ProcessGroupPolicyDevices
+ProcessGroupPolicyDevices ENDP
+
+ProcessGroupPolicyDrives PROC
+jmp ptr_ProcessGroupPolicyDrives
+ProcessGroupPolicyDrives ENDP
+
+ProcessGroupPolicyEnviron PROC
+jmp ptr_ProcessGroupPolicyEnviron
+ProcessGroupPolicyEnviron ENDP
+
+ProcessGroupPolicyExApplications PROC
+jmp ptr_ProcessGroupPolicyExApplications
+ProcessGroupPolicyExApplications ENDP
+
+ProcessGroupPolicyExDataSources PROC
+jmp ptr_ProcessGroupPolicyExDataSources
+ProcessGroupPolicyExDataSources ENDP
+
+ProcessGroupPolicyExDevices PROC
+jmp ptr_ProcessGroupPolicyExDevices
+ProcessGroupPolicyExDevices ENDP
+
+ProcessGroupPolicyExDrives PROC
+jmp ptr_ProcessGroupPolicyExDrives
+ProcessGroupPolicyExDrives ENDP
+
+ProcessGroupPolicyExEnviron PROC
+jmp ptr_ProcessGroupPolicyExEnviron
+ProcessGroupPolicyExEnviron ENDP
+
+ProcessGroupPolicyExFiles PROC
+jmp ptr_ProcessGroupPolicyExFiles
+ProcessGroupPolicyExFiles ENDP
+
+ProcessGroupPolicyExFolderOptions PROC
+jmp ptr_ProcessGroupPolicyExFolderOptions
+ProcessGroupPolicyExFolderOptions ENDP
+
+ProcessGroupPolicyExFolders PROC
+jmp ptr_ProcessGroupPolicyExFolders
+ProcessGroupPolicyExFolders ENDP
+
+ProcessGroupPolicyExIniFile PROC
+jmp ptr_ProcessGroupPolicyExIniFile
+ProcessGroupPolicyExIniFile ENDP
+
+ProcessGroupPolicyExInternet PROC
+jmp ptr_ProcessGroupPolicyExInternet
+ProcessGroupPolicyExInternet ENDP
+
+ProcessGroupPolicyExLocUsAndGroups PROC
+jmp ptr_ProcessGroupPolicyExLocUsAndGroups
+ProcessGroupPolicyExLocUsAndGroups ENDP
+
+ProcessGroupPolicyExNetShares PROC
+jmp ptr_ProcessGroupPolicyExNetShares
+ProcessGroupPolicyExNetShares ENDP
+
+ProcessGroupPolicyExNetworkOptions PROC
+jmp ptr_ProcessGroupPolicyExNetworkOptions
+ProcessGroupPolicyExNetworkOptions ENDP
+
+ProcessGroupPolicyExPowerOptions PROC
+jmp ptr_ProcessGroupPolicyExPowerOptions
+ProcessGroupPolicyExPowerOptions ENDP
+
+ProcessGroupPolicyExPrinters PROC
+jmp ptr_ProcessGroupPolicyExPrinters
+ProcessGroupPolicyExPrinters ENDP
+
+ProcessGroupPolicyExRegionOptions PROC
+jmp ptr_ProcessGroupPolicyExRegionOptions
+ProcessGroupPolicyExRegionOptions ENDP
+
+ProcessGroupPolicyExRegistry PROC
+jmp ptr_ProcessGroupPolicyExRegistry
+ProcessGroupPolicyExRegistry ENDP
+
+ProcessGroupPolicyExSchedTasks PROC
+jmp ptr_ProcessGroupPolicyExSchedTasks
+ProcessGroupPolicyExSchedTasks ENDP
+
+ProcessGroupPolicyExServices PROC
+jmp ptr_ProcessGroupPolicyExServices
+ProcessGroupPolicyExServices ENDP
+
+ProcessGroupPolicyExShortcuts PROC
+jmp ptr_ProcessGroupPolicyExShortcuts
+ProcessGroupPolicyExShortcuts ENDP
+
+ProcessGroupPolicyExStartMenu PROC
+jmp ptr_ProcessGroupPolicyExStartMenu
+ProcessGroupPolicyExStartMenu ENDP
+
+ProcessGroupPolicyFiles PROC
+jmp ptr_ProcessGroupPolicyFiles
+ProcessGroupPolicyFiles ENDP
+
+ProcessGroupPolicyFolderOptions PROC
+jmp ptr_ProcessGroupPolicyFolderOptions
+ProcessGroupPolicyFolderOptions ENDP
+
+ProcessGroupPolicyFolders PROC
+jmp ptr_ProcessGroupPolicyFolders
+ProcessGroupPolicyFolders ENDP
+
+ProcessGroupPolicyIniFile PROC
+jmp ptr_ProcessGroupPolicyIniFile
+ProcessGroupPolicyIniFile ENDP
+
+ProcessGroupPolicyInternet PROC
+jmp ptr_ProcessGroupPolicyInternet
+ProcessGroupPolicyInternet ENDP
+
+ProcessGroupPolicyLocUsAndGroups PROC
+jmp ptr_ProcessGroupPolicyLocUsAndGroups
+ProcessGroupPolicyLocUsAndGroups ENDP
+
+ProcessGroupPolicyNetShares PROC
+jmp ptr_ProcessGroupPolicyNetShares
+ProcessGroupPolicyNetShares ENDP
+
+ProcessGroupPolicyNetworkOptions PROC
+jmp ptr_ProcessGroupPolicyNetworkOptions
+ProcessGroupPolicyNetworkOptions ENDP
+
+ProcessGroupPolicyPowerOptions PROC
+jmp ptr_ProcessGroupPolicyPowerOptions
+ProcessGroupPolicyPowerOptions ENDP
+
+ProcessGroupPolicyPrinters PROC
+jmp ptr_ProcessGroupPolicyPrinters
+ProcessGroupPolicyPrinters ENDP
+
+ProcessGroupPolicyRegionOptions PROC
+jmp ptr_ProcessGroupPolicyRegionOptions
+ProcessGroupPolicyRegionOptions ENDP
+
+ProcessGroupPolicyRegistry PROC
+jmp ptr_ProcessGroupPolicyRegistry
+ProcessGroupPolicyRegistry ENDP
+
+ProcessGroupPolicySchedTasks PROC
+jmp ptr_ProcessGroupPolicySchedTasks
+ProcessGroupPolicySchedTasks ENDP
+
+ProcessGroupPolicyServices PROC
+jmp ptr_ProcessGroupPolicyServices
+ProcessGroupPolicyServices ENDP
+
+ProcessGroupPolicyShortcuts PROC
+jmp ptr_ProcessGroupPolicyShortcuts
+ProcessGroupPolicyShortcuts ENDP
+
+ProcessGroupPolicyStartMenu PROC
+jmp ptr_ProcessGroupPolicyStartMenu
+ProcessGroupPolicyStartMenu ENDP
+
+end

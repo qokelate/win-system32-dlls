@@ -1,0 +1,1270 @@
+ifndef X64
+.686p
+.XMM
+.safeseh SEH_handler
+.model flat, C
+option dotname
+option casemap : none
+endif
+
+extern ptr_CMP_GetBlockedDriverInfo : PTR;
+extern ptr_CMP_GetServerSideDeviceInstallFlags : PTR;
+extern ptr_CMP_Init_Detection : PTR;
+extern ptr_CMP_RegisterNotification : PTR;
+extern ptr_CMP_Report_LogOn : PTR;
+extern ptr_CMP_UnregisterNotification : PTR;
+extern ptr_CMP_WaitNoPendingInstallEvents : PTR;
+extern ptr_CMP_WaitServicesAvailable : PTR;
+extern ptr_CM_Add_Driver_PackageW : PTR;
+extern ptr_CM_Add_Driver_Package_ExW : PTR;
+extern ptr_CM_Add_Empty_Log_Conf : PTR;
+extern ptr_CM_Add_Empty_Log_Conf_Ex : PTR;
+extern ptr_CM_Add_IDA : PTR;
+extern ptr_CM_Add_IDW : PTR;
+extern ptr_CM_Add_ID_ExA : PTR;
+extern ptr_CM_Add_ID_ExW : PTR;
+extern ptr_CM_Add_Range : PTR;
+extern ptr_CM_Add_Res_Des : PTR;
+extern ptr_CM_Add_Res_Des_Ex : PTR;
+extern ptr_CM_Apply_PowerScheme : PTR;
+extern ptr_CM_Connect_MachineA : PTR;
+extern ptr_CM_Connect_MachineW : PTR;
+extern ptr_CM_Create_DevNodeA : PTR;
+extern ptr_CM_Create_DevNodeW : PTR;
+extern ptr_CM_Create_DevNode_ExA : PTR;
+extern ptr_CM_Create_DevNode_ExW : PTR;
+extern ptr_CM_Create_Range_List : PTR;
+extern ptr_CM_Delete_Class_Key : PTR;
+extern ptr_CM_Delete_Class_Key_Ex : PTR;
+extern ptr_CM_Delete_DevNode_Key : PTR;
+extern ptr_CM_Delete_DevNode_Key_Ex : PTR;
+extern ptr_CM_Delete_Device_Interface_KeyA : PTR;
+extern ptr_CM_Delete_Device_Interface_KeyW : PTR;
+extern ptr_CM_Delete_Device_Interface_Key_ExA : PTR;
+extern ptr_CM_Delete_Device_Interface_Key_ExW : PTR;
+extern ptr_CM_Delete_Driver_PackageW : PTR;
+extern ptr_CM_Delete_Driver_Package_ExW : PTR;
+extern ptr_CM_Delete_PowerScheme : PTR;
+extern ptr_CM_Delete_Range : PTR;
+extern ptr_CM_Detect_Resource_Conflict : PTR;
+extern ptr_CM_Detect_Resource_Conflict_Ex : PTR;
+extern ptr_CM_Disable_DevNode : PTR;
+extern ptr_CM_Disable_DevNode_Ex : PTR;
+extern ptr_CM_Disconnect_Machine : PTR;
+extern ptr_CM_Dup_Range_List : PTR;
+extern ptr_CM_Duplicate_PowerScheme : PTR;
+extern ptr_CM_Enable_DevNode : PTR;
+extern ptr_CM_Enable_DevNode_Ex : PTR;
+extern ptr_CM_Enumerate_Classes : PTR;
+extern ptr_CM_Enumerate_Classes_Ex : PTR;
+extern ptr_CM_Enumerate_EnumeratorsA : PTR;
+extern ptr_CM_Enumerate_EnumeratorsW : PTR;
+extern ptr_CM_Enumerate_Enumerators_ExA : PTR;
+extern ptr_CM_Enumerate_Enumerators_ExW : PTR;
+extern ptr_CM_Find_Range : PTR;
+extern ptr_CM_First_Range : PTR;
+extern ptr_CM_Free_Log_Conf : PTR;
+extern ptr_CM_Free_Log_Conf_Ex : PTR;
+extern ptr_CM_Free_Log_Conf_Handle : PTR;
+extern ptr_CM_Free_Range_List : PTR;
+extern ptr_CM_Free_Res_Des : PTR;
+extern ptr_CM_Free_Res_Des_Ex : PTR;
+extern ptr_CM_Free_Res_Des_Handle : PTR;
+extern ptr_CM_Free_Resource_Conflict_Handle : PTR;
+extern ptr_CM_Get_Child : PTR;
+extern ptr_CM_Get_Child_Ex : PTR;
+extern ptr_CM_Get_Class_Key_NameA : PTR;
+extern ptr_CM_Get_Class_Key_NameW : PTR;
+extern ptr_CM_Get_Class_Key_Name_ExA : PTR;
+extern ptr_CM_Get_Class_Key_Name_ExW : PTR;
+extern ptr_CM_Get_Class_NameA : PTR;
+extern ptr_CM_Get_Class_NameW : PTR;
+extern ptr_CM_Get_Class_Name_ExA : PTR;
+extern ptr_CM_Get_Class_Name_ExW : PTR;
+extern ptr_CM_Get_Class_PropertyW : PTR;
+extern ptr_CM_Get_Class_Property_ExW : PTR;
+extern ptr_CM_Get_Class_Property_Keys : PTR;
+extern ptr_CM_Get_Class_Property_Keys_Ex : PTR;
+extern ptr_CM_Get_Class_Registry_PropertyA : PTR;
+extern ptr_CM_Get_Class_Registry_PropertyW : PTR;
+extern ptr_CM_Get_Depth : PTR;
+extern ptr_CM_Get_Depth_Ex : PTR;
+extern ptr_CM_Get_DevNode_Custom_PropertyA : PTR;
+extern ptr_CM_Get_DevNode_Custom_PropertyW : PTR;
+extern ptr_CM_Get_DevNode_Custom_Property_ExA : PTR;
+extern ptr_CM_Get_DevNode_Custom_Property_ExW : PTR;
+extern ptr_CM_Get_DevNode_PropertyW : PTR;
+extern ptr_CM_Get_DevNode_Property_ExW : PTR;
+extern ptr_CM_Get_DevNode_Property_Keys : PTR;
+extern ptr_CM_Get_DevNode_Property_Keys_Ex : PTR;
+extern ptr_CM_Get_DevNode_Registry_PropertyA : PTR;
+extern ptr_CM_Get_DevNode_Registry_PropertyW : PTR;
+extern ptr_CM_Get_DevNode_Registry_Property_ExA : PTR;
+extern ptr_CM_Get_DevNode_Registry_Property_ExW : PTR;
+extern ptr_CM_Get_DevNode_Status : PTR;
+extern ptr_CM_Get_DevNode_Status_Ex : PTR;
+extern ptr_CM_Get_Device_IDA : PTR;
+extern ptr_CM_Get_Device_IDW : PTR;
+extern ptr_CM_Get_Device_ID_ExA : PTR;
+extern ptr_CM_Get_Device_ID_ExW : PTR;
+extern ptr_CM_Get_Device_ID_ListA : PTR;
+extern ptr_CM_Get_Device_ID_ListW : PTR;
+extern ptr_CM_Get_Device_ID_List_ExA : PTR;
+extern ptr_CM_Get_Device_ID_List_ExW : PTR;
+extern ptr_CM_Get_Device_ID_List_SizeA : PTR;
+extern ptr_CM_Get_Device_ID_List_SizeW : PTR;
+extern ptr_CM_Get_Device_ID_List_Size_ExA : PTR;
+extern ptr_CM_Get_Device_ID_List_Size_ExW : PTR;
+extern ptr_CM_Get_Device_ID_Size : PTR;
+extern ptr_CM_Get_Device_ID_Size_Ex : PTR;
+extern ptr_CM_Get_Device_Interface_AliasA : PTR;
+extern ptr_CM_Get_Device_Interface_AliasW : PTR;
+extern ptr_CM_Get_Device_Interface_Alias_ExA : PTR;
+extern ptr_CM_Get_Device_Interface_Alias_ExW : PTR;
+extern ptr_CM_Get_Device_Interface_ListA : PTR;
+extern ptr_CM_Get_Device_Interface_ListW : PTR;
+extern ptr_CM_Get_Device_Interface_List_ExA : PTR;
+extern ptr_CM_Get_Device_Interface_List_ExW : PTR;
+extern ptr_CM_Get_Device_Interface_List_SizeA : PTR;
+extern ptr_CM_Get_Device_Interface_List_SizeW : PTR;
+extern ptr_CM_Get_Device_Interface_List_Size_ExA : PTR;
+extern ptr_CM_Get_Device_Interface_List_Size_ExW : PTR;
+extern ptr_CM_Get_Device_Interface_PropertyW : PTR;
+extern ptr_CM_Get_Device_Interface_Property_ExW : PTR;
+extern ptr_CM_Get_Device_Interface_Property_KeysW : PTR;
+extern ptr_CM_Get_Device_Interface_Property_Keys_ExW : PTR;
+extern ptr_CM_Get_First_Log_Conf : PTR;
+extern ptr_CM_Get_First_Log_Conf_Ex : PTR;
+extern ptr_CM_Get_Global_State : PTR;
+extern ptr_CM_Get_Global_State_Ex : PTR;
+extern ptr_CM_Get_HW_Prof_FlagsA : PTR;
+extern ptr_CM_Get_HW_Prof_FlagsW : PTR;
+extern ptr_CM_Get_HW_Prof_Flags_ExA : PTR;
+extern ptr_CM_Get_HW_Prof_Flags_ExW : PTR;
+extern ptr_CM_Get_Hardware_Profile_InfoA : PTR;
+extern ptr_CM_Get_Hardware_Profile_InfoW : PTR;
+extern ptr_CM_Get_Hardware_Profile_Info_ExA : PTR;
+extern ptr_CM_Get_Hardware_Profile_Info_ExW : PTR;
+extern ptr_CM_Get_Log_Conf_Priority : PTR;
+extern ptr_CM_Get_Log_Conf_Priority_Ex : PTR;
+extern ptr_CM_Get_Next_Log_Conf : PTR;
+extern ptr_CM_Get_Next_Log_Conf_Ex : PTR;
+extern ptr_CM_Get_Next_Res_Des : PTR;
+extern ptr_CM_Get_Next_Res_Des_Ex : PTR;
+extern ptr_CM_Get_Parent : PTR;
+extern ptr_CM_Get_Parent_Ex : PTR;
+extern ptr_CM_Get_Res_Des_Data : PTR;
+extern ptr_CM_Get_Res_Des_Data_Ex : PTR;
+extern ptr_CM_Get_Res_Des_Data_Size : PTR;
+extern ptr_CM_Get_Res_Des_Data_Size_Ex : PTR;
+extern ptr_CM_Get_Resource_Conflict_Count : PTR;
+extern ptr_CM_Get_Resource_Conflict_DetailsA : PTR;
+extern ptr_CM_Get_Resource_Conflict_DetailsW : PTR;
+extern ptr_CM_Get_Sibling : PTR;
+extern ptr_CM_Get_Sibling_Ex : PTR;
+extern ptr_CM_Get_Version : PTR;
+extern ptr_CM_Get_Version_Ex : PTR;
+extern ptr_CM_Import_PowerScheme : PTR;
+extern ptr_CM_Install_DevNodeW : PTR;
+extern ptr_CM_Install_DevNode_ExW : PTR;
+extern ptr_CM_Intersect_Range_List : PTR;
+extern ptr_CM_Invert_Range_List : PTR;
+extern ptr_CM_Is_Dock_Station_Present : PTR;
+extern ptr_CM_Is_Dock_Station_Present_Ex : PTR;
+extern ptr_CM_Is_Version_Available : PTR;
+extern ptr_CM_Is_Version_Available_Ex : PTR;
+extern ptr_CM_Locate_DevNodeA : PTR;
+extern ptr_CM_Locate_DevNodeW : PTR;
+extern ptr_CM_Locate_DevNode_ExA : PTR;
+extern ptr_CM_Locate_DevNode_ExW : PTR;
+extern ptr_CM_MapCrToSpErr : PTR;
+extern ptr_CM_MapCrToWin32Err : PTR;
+extern ptr_CM_Merge_Range_List : PTR;
+extern ptr_CM_Modify_Res_Des : PTR;
+extern ptr_CM_Modify_Res_Des_Ex : PTR;
+extern ptr_CM_Move_DevNode : PTR;
+extern ptr_CM_Move_DevNode_Ex : PTR;
+extern ptr_CM_Next_Range : PTR;
+extern ptr_CM_Open_Class_KeyA : PTR;
+extern ptr_CM_Open_Class_KeyW : PTR;
+extern ptr_CM_Open_Class_Key_ExA : PTR;
+extern ptr_CM_Open_Class_Key_ExW : PTR;
+extern ptr_CM_Open_DevNode_Key : PTR;
+extern ptr_CM_Open_DevNode_Key_Ex : PTR;
+extern ptr_CM_Open_Device_Interface_KeyA : PTR;
+extern ptr_CM_Open_Device_Interface_KeyW : PTR;
+extern ptr_CM_Open_Device_Interface_Key_ExA : PTR;
+extern ptr_CM_Open_Device_Interface_Key_ExW : PTR;
+extern ptr_CM_Query_And_Remove_SubTreeA : PTR;
+extern ptr_CM_Query_And_Remove_SubTreeW : PTR;
+extern ptr_CM_Query_And_Remove_SubTree_ExA : PTR;
+extern ptr_CM_Query_And_Remove_SubTree_ExW : PTR;
+extern ptr_CM_Query_Arbitrator_Free_Data : PTR;
+extern ptr_CM_Query_Arbitrator_Free_Data_Ex : PTR;
+extern ptr_CM_Query_Arbitrator_Free_Size : PTR;
+extern ptr_CM_Query_Arbitrator_Free_Size_Ex : PTR;
+extern ptr_CM_Query_Remove_SubTree : PTR;
+extern ptr_CM_Query_Remove_SubTree_Ex : PTR;
+extern ptr_CM_Query_Resource_Conflict_List : PTR;
+extern ptr_CM_Reenumerate_DevNode : PTR;
+extern ptr_CM_Reenumerate_DevNode_Ex : PTR;
+extern ptr_CM_Register_Device_Driver : PTR;
+extern ptr_CM_Register_Device_Driver_Ex : PTR;
+extern ptr_CM_Register_Device_InterfaceA : PTR;
+extern ptr_CM_Register_Device_InterfaceW : PTR;
+extern ptr_CM_Register_Device_Interface_ExA : PTR;
+extern ptr_CM_Register_Device_Interface_ExW : PTR;
+extern ptr_CM_Remove_SubTree : PTR;
+extern ptr_CM_Remove_SubTree_Ex : PTR;
+extern ptr_CM_Request_Device_EjectA : PTR;
+extern ptr_CM_Request_Device_EjectW : PTR;
+extern ptr_CM_Request_Device_Eject_ExA : PTR;
+extern ptr_CM_Request_Device_Eject_ExW : PTR;
+extern ptr_CM_Request_Eject_PC : PTR;
+extern ptr_CM_Request_Eject_PC_Ex : PTR;
+extern ptr_CM_RestoreAll_DefaultPowerSchemes : PTR;
+extern ptr_CM_Restore_DefaultPowerScheme : PTR;
+extern ptr_CM_Run_Detection : PTR;
+extern ptr_CM_Run_Detection_Ex : PTR;
+extern ptr_CM_Set_ActiveScheme : PTR;
+extern ptr_CM_Set_Class_PropertyW : PTR;
+extern ptr_CM_Set_Class_Property_ExW : PTR;
+extern ptr_CM_Set_Class_Registry_PropertyA : PTR;
+extern ptr_CM_Set_Class_Registry_PropertyW : PTR;
+extern ptr_CM_Set_DevNode_Problem : PTR;
+extern ptr_CM_Set_DevNode_Problem_Ex : PTR;
+extern ptr_CM_Set_DevNode_PropertyW : PTR;
+extern ptr_CM_Set_DevNode_Property_ExW : PTR;
+extern ptr_CM_Set_DevNode_Registry_PropertyA : PTR;
+extern ptr_CM_Set_DevNode_Registry_PropertyW : PTR;
+extern ptr_CM_Set_DevNode_Registry_Property_ExA : PTR;
+extern ptr_CM_Set_DevNode_Registry_Property_ExW : PTR;
+extern ptr_CM_Set_Device_Interface_PropertyW : PTR;
+extern ptr_CM_Set_Device_Interface_Property_ExW : PTR;
+extern ptr_CM_Set_HW_Prof : PTR;
+extern ptr_CM_Set_HW_Prof_Ex : PTR;
+extern ptr_CM_Set_HW_Prof_FlagsA : PTR;
+extern ptr_CM_Set_HW_Prof_FlagsW : PTR;
+extern ptr_CM_Set_HW_Prof_Flags_ExA : PTR;
+extern ptr_CM_Set_HW_Prof_Flags_ExW : PTR;
+extern ptr_CM_Setup_DevNode : PTR;
+extern ptr_CM_Setup_DevNode_Ex : PTR;
+extern ptr_CM_Test_Range_Available : PTR;
+extern ptr_CM_Uninstall_DevNode : PTR;
+extern ptr_CM_Uninstall_DevNode_Ex : PTR;
+extern ptr_CM_Unregister_Device_InterfaceA : PTR;
+extern ptr_CM_Unregister_Device_InterfaceW : PTR;
+extern ptr_CM_Unregister_Device_Interface_ExA : PTR;
+extern ptr_CM_Unregister_Device_Interface_ExW : PTR;
+extern ptr_CM_Write_UserPowerKey : PTR;
+
+
+.code
+
+align 16
+SEH_handler   proc
+; handler
+ret
+SEH_handler   endp
+
+CMP_GetBlockedDriverInfo PROC
+jmp ptr_CMP_GetBlockedDriverInfo
+CMP_GetBlockedDriverInfo ENDP
+
+CMP_GetServerSideDeviceInstallFlags PROC
+jmp ptr_CMP_GetServerSideDeviceInstallFlags
+CMP_GetServerSideDeviceInstallFlags ENDP
+
+CMP_Init_Detection PROC
+jmp ptr_CMP_Init_Detection
+CMP_Init_Detection ENDP
+
+CMP_RegisterNotification PROC
+jmp ptr_CMP_RegisterNotification
+CMP_RegisterNotification ENDP
+
+CMP_Report_LogOn PROC
+jmp ptr_CMP_Report_LogOn
+CMP_Report_LogOn ENDP
+
+CMP_UnregisterNotification PROC
+jmp ptr_CMP_UnregisterNotification
+CMP_UnregisterNotification ENDP
+
+CMP_WaitNoPendingInstallEvents PROC
+jmp ptr_CMP_WaitNoPendingInstallEvents
+CMP_WaitNoPendingInstallEvents ENDP
+
+CMP_WaitServicesAvailable PROC
+jmp ptr_CMP_WaitServicesAvailable
+CMP_WaitServicesAvailable ENDP
+
+CM_Add_Driver_PackageW PROC
+jmp ptr_CM_Add_Driver_PackageW
+CM_Add_Driver_PackageW ENDP
+
+CM_Add_Driver_Package_ExW PROC
+jmp ptr_CM_Add_Driver_Package_ExW
+CM_Add_Driver_Package_ExW ENDP
+
+CM_Add_Empty_Log_Conf PROC
+jmp ptr_CM_Add_Empty_Log_Conf
+CM_Add_Empty_Log_Conf ENDP
+
+CM_Add_Empty_Log_Conf_Ex PROC
+jmp ptr_CM_Add_Empty_Log_Conf_Ex
+CM_Add_Empty_Log_Conf_Ex ENDP
+
+CM_Add_IDA PROC
+jmp ptr_CM_Add_IDA
+CM_Add_IDA ENDP
+
+CM_Add_IDW PROC
+jmp ptr_CM_Add_IDW
+CM_Add_IDW ENDP
+
+CM_Add_ID_ExA PROC
+jmp ptr_CM_Add_ID_ExA
+CM_Add_ID_ExA ENDP
+
+CM_Add_ID_ExW PROC
+jmp ptr_CM_Add_ID_ExW
+CM_Add_ID_ExW ENDP
+
+CM_Add_Range PROC
+jmp ptr_CM_Add_Range
+CM_Add_Range ENDP
+
+CM_Add_Res_Des PROC
+jmp ptr_CM_Add_Res_Des
+CM_Add_Res_Des ENDP
+
+CM_Add_Res_Des_Ex PROC
+jmp ptr_CM_Add_Res_Des_Ex
+CM_Add_Res_Des_Ex ENDP
+
+CM_Apply_PowerScheme PROC
+jmp ptr_CM_Apply_PowerScheme
+CM_Apply_PowerScheme ENDP
+
+CM_Connect_MachineA PROC
+jmp ptr_CM_Connect_MachineA
+CM_Connect_MachineA ENDP
+
+CM_Connect_MachineW PROC
+jmp ptr_CM_Connect_MachineW
+CM_Connect_MachineW ENDP
+
+CM_Create_DevNodeA PROC
+jmp ptr_CM_Create_DevNodeA
+CM_Create_DevNodeA ENDP
+
+CM_Create_DevNodeW PROC
+jmp ptr_CM_Create_DevNodeW
+CM_Create_DevNodeW ENDP
+
+CM_Create_DevNode_ExA PROC
+jmp ptr_CM_Create_DevNode_ExA
+CM_Create_DevNode_ExA ENDP
+
+CM_Create_DevNode_ExW PROC
+jmp ptr_CM_Create_DevNode_ExW
+CM_Create_DevNode_ExW ENDP
+
+CM_Create_Range_List PROC
+jmp ptr_CM_Create_Range_List
+CM_Create_Range_List ENDP
+
+CM_Delete_Class_Key PROC
+jmp ptr_CM_Delete_Class_Key
+CM_Delete_Class_Key ENDP
+
+CM_Delete_Class_Key_Ex PROC
+jmp ptr_CM_Delete_Class_Key_Ex
+CM_Delete_Class_Key_Ex ENDP
+
+CM_Delete_DevNode_Key PROC
+jmp ptr_CM_Delete_DevNode_Key
+CM_Delete_DevNode_Key ENDP
+
+CM_Delete_DevNode_Key_Ex PROC
+jmp ptr_CM_Delete_DevNode_Key_Ex
+CM_Delete_DevNode_Key_Ex ENDP
+
+CM_Delete_Device_Interface_KeyA PROC
+jmp ptr_CM_Delete_Device_Interface_KeyA
+CM_Delete_Device_Interface_KeyA ENDP
+
+CM_Delete_Device_Interface_KeyW PROC
+jmp ptr_CM_Delete_Device_Interface_KeyW
+CM_Delete_Device_Interface_KeyW ENDP
+
+CM_Delete_Device_Interface_Key_ExA PROC
+jmp ptr_CM_Delete_Device_Interface_Key_ExA
+CM_Delete_Device_Interface_Key_ExA ENDP
+
+CM_Delete_Device_Interface_Key_ExW PROC
+jmp ptr_CM_Delete_Device_Interface_Key_ExW
+CM_Delete_Device_Interface_Key_ExW ENDP
+
+CM_Delete_Driver_PackageW PROC
+jmp ptr_CM_Delete_Driver_PackageW
+CM_Delete_Driver_PackageW ENDP
+
+CM_Delete_Driver_Package_ExW PROC
+jmp ptr_CM_Delete_Driver_Package_ExW
+CM_Delete_Driver_Package_ExW ENDP
+
+CM_Delete_PowerScheme PROC
+jmp ptr_CM_Delete_PowerScheme
+CM_Delete_PowerScheme ENDP
+
+CM_Delete_Range PROC
+jmp ptr_CM_Delete_Range
+CM_Delete_Range ENDP
+
+CM_Detect_Resource_Conflict PROC
+jmp ptr_CM_Detect_Resource_Conflict
+CM_Detect_Resource_Conflict ENDP
+
+CM_Detect_Resource_Conflict_Ex PROC
+jmp ptr_CM_Detect_Resource_Conflict_Ex
+CM_Detect_Resource_Conflict_Ex ENDP
+
+CM_Disable_DevNode PROC
+jmp ptr_CM_Disable_DevNode
+CM_Disable_DevNode ENDP
+
+CM_Disable_DevNode_Ex PROC
+jmp ptr_CM_Disable_DevNode_Ex
+CM_Disable_DevNode_Ex ENDP
+
+CM_Disconnect_Machine PROC
+jmp ptr_CM_Disconnect_Machine
+CM_Disconnect_Machine ENDP
+
+CM_Dup_Range_List PROC
+jmp ptr_CM_Dup_Range_List
+CM_Dup_Range_List ENDP
+
+CM_Duplicate_PowerScheme PROC
+jmp ptr_CM_Duplicate_PowerScheme
+CM_Duplicate_PowerScheme ENDP
+
+CM_Enable_DevNode PROC
+jmp ptr_CM_Enable_DevNode
+CM_Enable_DevNode ENDP
+
+CM_Enable_DevNode_Ex PROC
+jmp ptr_CM_Enable_DevNode_Ex
+CM_Enable_DevNode_Ex ENDP
+
+CM_Enumerate_Classes PROC
+jmp ptr_CM_Enumerate_Classes
+CM_Enumerate_Classes ENDP
+
+CM_Enumerate_Classes_Ex PROC
+jmp ptr_CM_Enumerate_Classes_Ex
+CM_Enumerate_Classes_Ex ENDP
+
+CM_Enumerate_EnumeratorsA PROC
+jmp ptr_CM_Enumerate_EnumeratorsA
+CM_Enumerate_EnumeratorsA ENDP
+
+CM_Enumerate_EnumeratorsW PROC
+jmp ptr_CM_Enumerate_EnumeratorsW
+CM_Enumerate_EnumeratorsW ENDP
+
+CM_Enumerate_Enumerators_ExA PROC
+jmp ptr_CM_Enumerate_Enumerators_ExA
+CM_Enumerate_Enumerators_ExA ENDP
+
+CM_Enumerate_Enumerators_ExW PROC
+jmp ptr_CM_Enumerate_Enumerators_ExW
+CM_Enumerate_Enumerators_ExW ENDP
+
+CM_Find_Range PROC
+jmp ptr_CM_Find_Range
+CM_Find_Range ENDP
+
+CM_First_Range PROC
+jmp ptr_CM_First_Range
+CM_First_Range ENDP
+
+CM_Free_Log_Conf PROC
+jmp ptr_CM_Free_Log_Conf
+CM_Free_Log_Conf ENDP
+
+CM_Free_Log_Conf_Ex PROC
+jmp ptr_CM_Free_Log_Conf_Ex
+CM_Free_Log_Conf_Ex ENDP
+
+CM_Free_Log_Conf_Handle PROC
+jmp ptr_CM_Free_Log_Conf_Handle
+CM_Free_Log_Conf_Handle ENDP
+
+CM_Free_Range_List PROC
+jmp ptr_CM_Free_Range_List
+CM_Free_Range_List ENDP
+
+CM_Free_Res_Des PROC
+jmp ptr_CM_Free_Res_Des
+CM_Free_Res_Des ENDP
+
+CM_Free_Res_Des_Ex PROC
+jmp ptr_CM_Free_Res_Des_Ex
+CM_Free_Res_Des_Ex ENDP
+
+CM_Free_Res_Des_Handle PROC
+jmp ptr_CM_Free_Res_Des_Handle
+CM_Free_Res_Des_Handle ENDP
+
+CM_Free_Resource_Conflict_Handle PROC
+jmp ptr_CM_Free_Resource_Conflict_Handle
+CM_Free_Resource_Conflict_Handle ENDP
+
+CM_Get_Child PROC
+jmp ptr_CM_Get_Child
+CM_Get_Child ENDP
+
+CM_Get_Child_Ex PROC
+jmp ptr_CM_Get_Child_Ex
+CM_Get_Child_Ex ENDP
+
+CM_Get_Class_Key_NameA PROC
+jmp ptr_CM_Get_Class_Key_NameA
+CM_Get_Class_Key_NameA ENDP
+
+CM_Get_Class_Key_NameW PROC
+jmp ptr_CM_Get_Class_Key_NameW
+CM_Get_Class_Key_NameW ENDP
+
+CM_Get_Class_Key_Name_ExA PROC
+jmp ptr_CM_Get_Class_Key_Name_ExA
+CM_Get_Class_Key_Name_ExA ENDP
+
+CM_Get_Class_Key_Name_ExW PROC
+jmp ptr_CM_Get_Class_Key_Name_ExW
+CM_Get_Class_Key_Name_ExW ENDP
+
+CM_Get_Class_NameA PROC
+jmp ptr_CM_Get_Class_NameA
+CM_Get_Class_NameA ENDP
+
+CM_Get_Class_NameW PROC
+jmp ptr_CM_Get_Class_NameW
+CM_Get_Class_NameW ENDP
+
+CM_Get_Class_Name_ExA PROC
+jmp ptr_CM_Get_Class_Name_ExA
+CM_Get_Class_Name_ExA ENDP
+
+CM_Get_Class_Name_ExW PROC
+jmp ptr_CM_Get_Class_Name_ExW
+CM_Get_Class_Name_ExW ENDP
+
+CM_Get_Class_PropertyW PROC
+jmp ptr_CM_Get_Class_PropertyW
+CM_Get_Class_PropertyW ENDP
+
+CM_Get_Class_Property_ExW PROC
+jmp ptr_CM_Get_Class_Property_ExW
+CM_Get_Class_Property_ExW ENDP
+
+CM_Get_Class_Property_Keys PROC
+jmp ptr_CM_Get_Class_Property_Keys
+CM_Get_Class_Property_Keys ENDP
+
+CM_Get_Class_Property_Keys_Ex PROC
+jmp ptr_CM_Get_Class_Property_Keys_Ex
+CM_Get_Class_Property_Keys_Ex ENDP
+
+CM_Get_Class_Registry_PropertyA PROC
+jmp ptr_CM_Get_Class_Registry_PropertyA
+CM_Get_Class_Registry_PropertyA ENDP
+
+CM_Get_Class_Registry_PropertyW PROC
+jmp ptr_CM_Get_Class_Registry_PropertyW
+CM_Get_Class_Registry_PropertyW ENDP
+
+CM_Get_Depth PROC
+jmp ptr_CM_Get_Depth
+CM_Get_Depth ENDP
+
+CM_Get_Depth_Ex PROC
+jmp ptr_CM_Get_Depth_Ex
+CM_Get_Depth_Ex ENDP
+
+CM_Get_DevNode_Custom_PropertyA PROC
+jmp ptr_CM_Get_DevNode_Custom_PropertyA
+CM_Get_DevNode_Custom_PropertyA ENDP
+
+CM_Get_DevNode_Custom_PropertyW PROC
+jmp ptr_CM_Get_DevNode_Custom_PropertyW
+CM_Get_DevNode_Custom_PropertyW ENDP
+
+CM_Get_DevNode_Custom_Property_ExA PROC
+jmp ptr_CM_Get_DevNode_Custom_Property_ExA
+CM_Get_DevNode_Custom_Property_ExA ENDP
+
+CM_Get_DevNode_Custom_Property_ExW PROC
+jmp ptr_CM_Get_DevNode_Custom_Property_ExW
+CM_Get_DevNode_Custom_Property_ExW ENDP
+
+CM_Get_DevNode_PropertyW PROC
+jmp ptr_CM_Get_DevNode_PropertyW
+CM_Get_DevNode_PropertyW ENDP
+
+CM_Get_DevNode_Property_ExW PROC
+jmp ptr_CM_Get_DevNode_Property_ExW
+CM_Get_DevNode_Property_ExW ENDP
+
+CM_Get_DevNode_Property_Keys PROC
+jmp ptr_CM_Get_DevNode_Property_Keys
+CM_Get_DevNode_Property_Keys ENDP
+
+CM_Get_DevNode_Property_Keys_Ex PROC
+jmp ptr_CM_Get_DevNode_Property_Keys_Ex
+CM_Get_DevNode_Property_Keys_Ex ENDP
+
+CM_Get_DevNode_Registry_PropertyA PROC
+jmp ptr_CM_Get_DevNode_Registry_PropertyA
+CM_Get_DevNode_Registry_PropertyA ENDP
+
+CM_Get_DevNode_Registry_PropertyW PROC
+jmp ptr_CM_Get_DevNode_Registry_PropertyW
+CM_Get_DevNode_Registry_PropertyW ENDP
+
+CM_Get_DevNode_Registry_Property_ExA PROC
+jmp ptr_CM_Get_DevNode_Registry_Property_ExA
+CM_Get_DevNode_Registry_Property_ExA ENDP
+
+CM_Get_DevNode_Registry_Property_ExW PROC
+jmp ptr_CM_Get_DevNode_Registry_Property_ExW
+CM_Get_DevNode_Registry_Property_ExW ENDP
+
+CM_Get_DevNode_Status PROC
+jmp ptr_CM_Get_DevNode_Status
+CM_Get_DevNode_Status ENDP
+
+CM_Get_DevNode_Status_Ex PROC
+jmp ptr_CM_Get_DevNode_Status_Ex
+CM_Get_DevNode_Status_Ex ENDP
+
+CM_Get_Device_IDA PROC
+jmp ptr_CM_Get_Device_IDA
+CM_Get_Device_IDA ENDP
+
+CM_Get_Device_IDW PROC
+jmp ptr_CM_Get_Device_IDW
+CM_Get_Device_IDW ENDP
+
+CM_Get_Device_ID_ExA PROC
+jmp ptr_CM_Get_Device_ID_ExA
+CM_Get_Device_ID_ExA ENDP
+
+CM_Get_Device_ID_ExW PROC
+jmp ptr_CM_Get_Device_ID_ExW
+CM_Get_Device_ID_ExW ENDP
+
+CM_Get_Device_ID_ListA PROC
+jmp ptr_CM_Get_Device_ID_ListA
+CM_Get_Device_ID_ListA ENDP
+
+CM_Get_Device_ID_ListW PROC
+jmp ptr_CM_Get_Device_ID_ListW
+CM_Get_Device_ID_ListW ENDP
+
+CM_Get_Device_ID_List_ExA PROC
+jmp ptr_CM_Get_Device_ID_List_ExA
+CM_Get_Device_ID_List_ExA ENDP
+
+CM_Get_Device_ID_List_ExW PROC
+jmp ptr_CM_Get_Device_ID_List_ExW
+CM_Get_Device_ID_List_ExW ENDP
+
+CM_Get_Device_ID_List_SizeA PROC
+jmp ptr_CM_Get_Device_ID_List_SizeA
+CM_Get_Device_ID_List_SizeA ENDP
+
+CM_Get_Device_ID_List_SizeW PROC
+jmp ptr_CM_Get_Device_ID_List_SizeW
+CM_Get_Device_ID_List_SizeW ENDP
+
+CM_Get_Device_ID_List_Size_ExA PROC
+jmp ptr_CM_Get_Device_ID_List_Size_ExA
+CM_Get_Device_ID_List_Size_ExA ENDP
+
+CM_Get_Device_ID_List_Size_ExW PROC
+jmp ptr_CM_Get_Device_ID_List_Size_ExW
+CM_Get_Device_ID_List_Size_ExW ENDP
+
+CM_Get_Device_ID_Size PROC
+jmp ptr_CM_Get_Device_ID_Size
+CM_Get_Device_ID_Size ENDP
+
+CM_Get_Device_ID_Size_Ex PROC
+jmp ptr_CM_Get_Device_ID_Size_Ex
+CM_Get_Device_ID_Size_Ex ENDP
+
+CM_Get_Device_Interface_AliasA PROC
+jmp ptr_CM_Get_Device_Interface_AliasA
+CM_Get_Device_Interface_AliasA ENDP
+
+CM_Get_Device_Interface_AliasW PROC
+jmp ptr_CM_Get_Device_Interface_AliasW
+CM_Get_Device_Interface_AliasW ENDP
+
+CM_Get_Device_Interface_Alias_ExA PROC
+jmp ptr_CM_Get_Device_Interface_Alias_ExA
+CM_Get_Device_Interface_Alias_ExA ENDP
+
+CM_Get_Device_Interface_Alias_ExW PROC
+jmp ptr_CM_Get_Device_Interface_Alias_ExW
+CM_Get_Device_Interface_Alias_ExW ENDP
+
+CM_Get_Device_Interface_ListA PROC
+jmp ptr_CM_Get_Device_Interface_ListA
+CM_Get_Device_Interface_ListA ENDP
+
+CM_Get_Device_Interface_ListW PROC
+jmp ptr_CM_Get_Device_Interface_ListW
+CM_Get_Device_Interface_ListW ENDP
+
+CM_Get_Device_Interface_List_ExA PROC
+jmp ptr_CM_Get_Device_Interface_List_ExA
+CM_Get_Device_Interface_List_ExA ENDP
+
+CM_Get_Device_Interface_List_ExW PROC
+jmp ptr_CM_Get_Device_Interface_List_ExW
+CM_Get_Device_Interface_List_ExW ENDP
+
+CM_Get_Device_Interface_List_SizeA PROC
+jmp ptr_CM_Get_Device_Interface_List_SizeA
+CM_Get_Device_Interface_List_SizeA ENDP
+
+CM_Get_Device_Interface_List_SizeW PROC
+jmp ptr_CM_Get_Device_Interface_List_SizeW
+CM_Get_Device_Interface_List_SizeW ENDP
+
+CM_Get_Device_Interface_List_Size_ExA PROC
+jmp ptr_CM_Get_Device_Interface_List_Size_ExA
+CM_Get_Device_Interface_List_Size_ExA ENDP
+
+CM_Get_Device_Interface_List_Size_ExW PROC
+jmp ptr_CM_Get_Device_Interface_List_Size_ExW
+CM_Get_Device_Interface_List_Size_ExW ENDP
+
+CM_Get_Device_Interface_PropertyW PROC
+jmp ptr_CM_Get_Device_Interface_PropertyW
+CM_Get_Device_Interface_PropertyW ENDP
+
+CM_Get_Device_Interface_Property_ExW PROC
+jmp ptr_CM_Get_Device_Interface_Property_ExW
+CM_Get_Device_Interface_Property_ExW ENDP
+
+CM_Get_Device_Interface_Property_KeysW PROC
+jmp ptr_CM_Get_Device_Interface_Property_KeysW
+CM_Get_Device_Interface_Property_KeysW ENDP
+
+CM_Get_Device_Interface_Property_Keys_ExW PROC
+jmp ptr_CM_Get_Device_Interface_Property_Keys_ExW
+CM_Get_Device_Interface_Property_Keys_ExW ENDP
+
+CM_Get_First_Log_Conf PROC
+jmp ptr_CM_Get_First_Log_Conf
+CM_Get_First_Log_Conf ENDP
+
+CM_Get_First_Log_Conf_Ex PROC
+jmp ptr_CM_Get_First_Log_Conf_Ex
+CM_Get_First_Log_Conf_Ex ENDP
+
+CM_Get_Global_State PROC
+jmp ptr_CM_Get_Global_State
+CM_Get_Global_State ENDP
+
+CM_Get_Global_State_Ex PROC
+jmp ptr_CM_Get_Global_State_Ex
+CM_Get_Global_State_Ex ENDP
+
+CM_Get_HW_Prof_FlagsA PROC
+jmp ptr_CM_Get_HW_Prof_FlagsA
+CM_Get_HW_Prof_FlagsA ENDP
+
+CM_Get_HW_Prof_FlagsW PROC
+jmp ptr_CM_Get_HW_Prof_FlagsW
+CM_Get_HW_Prof_FlagsW ENDP
+
+CM_Get_HW_Prof_Flags_ExA PROC
+jmp ptr_CM_Get_HW_Prof_Flags_ExA
+CM_Get_HW_Prof_Flags_ExA ENDP
+
+CM_Get_HW_Prof_Flags_ExW PROC
+jmp ptr_CM_Get_HW_Prof_Flags_ExW
+CM_Get_HW_Prof_Flags_ExW ENDP
+
+CM_Get_Hardware_Profile_InfoA PROC
+jmp ptr_CM_Get_Hardware_Profile_InfoA
+CM_Get_Hardware_Profile_InfoA ENDP
+
+CM_Get_Hardware_Profile_InfoW PROC
+jmp ptr_CM_Get_Hardware_Profile_InfoW
+CM_Get_Hardware_Profile_InfoW ENDP
+
+CM_Get_Hardware_Profile_Info_ExA PROC
+jmp ptr_CM_Get_Hardware_Profile_Info_ExA
+CM_Get_Hardware_Profile_Info_ExA ENDP
+
+CM_Get_Hardware_Profile_Info_ExW PROC
+jmp ptr_CM_Get_Hardware_Profile_Info_ExW
+CM_Get_Hardware_Profile_Info_ExW ENDP
+
+CM_Get_Log_Conf_Priority PROC
+jmp ptr_CM_Get_Log_Conf_Priority
+CM_Get_Log_Conf_Priority ENDP
+
+CM_Get_Log_Conf_Priority_Ex PROC
+jmp ptr_CM_Get_Log_Conf_Priority_Ex
+CM_Get_Log_Conf_Priority_Ex ENDP
+
+CM_Get_Next_Log_Conf PROC
+jmp ptr_CM_Get_Next_Log_Conf
+CM_Get_Next_Log_Conf ENDP
+
+CM_Get_Next_Log_Conf_Ex PROC
+jmp ptr_CM_Get_Next_Log_Conf_Ex
+CM_Get_Next_Log_Conf_Ex ENDP
+
+CM_Get_Next_Res_Des PROC
+jmp ptr_CM_Get_Next_Res_Des
+CM_Get_Next_Res_Des ENDP
+
+CM_Get_Next_Res_Des_Ex PROC
+jmp ptr_CM_Get_Next_Res_Des_Ex
+CM_Get_Next_Res_Des_Ex ENDP
+
+CM_Get_Parent PROC
+jmp ptr_CM_Get_Parent
+CM_Get_Parent ENDP
+
+CM_Get_Parent_Ex PROC
+jmp ptr_CM_Get_Parent_Ex
+CM_Get_Parent_Ex ENDP
+
+CM_Get_Res_Des_Data PROC
+jmp ptr_CM_Get_Res_Des_Data
+CM_Get_Res_Des_Data ENDP
+
+CM_Get_Res_Des_Data_Ex PROC
+jmp ptr_CM_Get_Res_Des_Data_Ex
+CM_Get_Res_Des_Data_Ex ENDP
+
+CM_Get_Res_Des_Data_Size PROC
+jmp ptr_CM_Get_Res_Des_Data_Size
+CM_Get_Res_Des_Data_Size ENDP
+
+CM_Get_Res_Des_Data_Size_Ex PROC
+jmp ptr_CM_Get_Res_Des_Data_Size_Ex
+CM_Get_Res_Des_Data_Size_Ex ENDP
+
+CM_Get_Resource_Conflict_Count PROC
+jmp ptr_CM_Get_Resource_Conflict_Count
+CM_Get_Resource_Conflict_Count ENDP
+
+CM_Get_Resource_Conflict_DetailsA PROC
+jmp ptr_CM_Get_Resource_Conflict_DetailsA
+CM_Get_Resource_Conflict_DetailsA ENDP
+
+CM_Get_Resource_Conflict_DetailsW PROC
+jmp ptr_CM_Get_Resource_Conflict_DetailsW
+CM_Get_Resource_Conflict_DetailsW ENDP
+
+CM_Get_Sibling PROC
+jmp ptr_CM_Get_Sibling
+CM_Get_Sibling ENDP
+
+CM_Get_Sibling_Ex PROC
+jmp ptr_CM_Get_Sibling_Ex
+CM_Get_Sibling_Ex ENDP
+
+CM_Get_Version PROC
+jmp ptr_CM_Get_Version
+CM_Get_Version ENDP
+
+CM_Get_Version_Ex PROC
+jmp ptr_CM_Get_Version_Ex
+CM_Get_Version_Ex ENDP
+
+CM_Import_PowerScheme PROC
+jmp ptr_CM_Import_PowerScheme
+CM_Import_PowerScheme ENDP
+
+CM_Install_DevNodeW PROC
+jmp ptr_CM_Install_DevNodeW
+CM_Install_DevNodeW ENDP
+
+CM_Install_DevNode_ExW PROC
+jmp ptr_CM_Install_DevNode_ExW
+CM_Install_DevNode_ExW ENDP
+
+CM_Intersect_Range_List PROC
+jmp ptr_CM_Intersect_Range_List
+CM_Intersect_Range_List ENDP
+
+CM_Invert_Range_List PROC
+jmp ptr_CM_Invert_Range_List
+CM_Invert_Range_List ENDP
+
+CM_Is_Dock_Station_Present PROC
+jmp ptr_CM_Is_Dock_Station_Present
+CM_Is_Dock_Station_Present ENDP
+
+CM_Is_Dock_Station_Present_Ex PROC
+jmp ptr_CM_Is_Dock_Station_Present_Ex
+CM_Is_Dock_Station_Present_Ex ENDP
+
+CM_Is_Version_Available PROC
+jmp ptr_CM_Is_Version_Available
+CM_Is_Version_Available ENDP
+
+CM_Is_Version_Available_Ex PROC
+jmp ptr_CM_Is_Version_Available_Ex
+CM_Is_Version_Available_Ex ENDP
+
+CM_Locate_DevNodeA PROC
+jmp ptr_CM_Locate_DevNodeA
+CM_Locate_DevNodeA ENDP
+
+CM_Locate_DevNodeW PROC
+jmp ptr_CM_Locate_DevNodeW
+CM_Locate_DevNodeW ENDP
+
+CM_Locate_DevNode_ExA PROC
+jmp ptr_CM_Locate_DevNode_ExA
+CM_Locate_DevNode_ExA ENDP
+
+CM_Locate_DevNode_ExW PROC
+jmp ptr_CM_Locate_DevNode_ExW
+CM_Locate_DevNode_ExW ENDP
+
+CM_MapCrToSpErr PROC
+jmp ptr_CM_MapCrToSpErr
+CM_MapCrToSpErr ENDP
+
+CM_MapCrToWin32Err PROC
+jmp ptr_CM_MapCrToWin32Err
+CM_MapCrToWin32Err ENDP
+
+CM_Merge_Range_List PROC
+jmp ptr_CM_Merge_Range_List
+CM_Merge_Range_List ENDP
+
+CM_Modify_Res_Des PROC
+jmp ptr_CM_Modify_Res_Des
+CM_Modify_Res_Des ENDP
+
+CM_Modify_Res_Des_Ex PROC
+jmp ptr_CM_Modify_Res_Des_Ex
+CM_Modify_Res_Des_Ex ENDP
+
+CM_Move_DevNode PROC
+jmp ptr_CM_Move_DevNode
+CM_Move_DevNode ENDP
+
+CM_Move_DevNode_Ex PROC
+jmp ptr_CM_Move_DevNode_Ex
+CM_Move_DevNode_Ex ENDP
+
+CM_Next_Range PROC
+jmp ptr_CM_Next_Range
+CM_Next_Range ENDP
+
+CM_Open_Class_KeyA PROC
+jmp ptr_CM_Open_Class_KeyA
+CM_Open_Class_KeyA ENDP
+
+CM_Open_Class_KeyW PROC
+jmp ptr_CM_Open_Class_KeyW
+CM_Open_Class_KeyW ENDP
+
+CM_Open_Class_Key_ExA PROC
+jmp ptr_CM_Open_Class_Key_ExA
+CM_Open_Class_Key_ExA ENDP
+
+CM_Open_Class_Key_ExW PROC
+jmp ptr_CM_Open_Class_Key_ExW
+CM_Open_Class_Key_ExW ENDP
+
+CM_Open_DevNode_Key PROC
+jmp ptr_CM_Open_DevNode_Key
+CM_Open_DevNode_Key ENDP
+
+CM_Open_DevNode_Key_Ex PROC
+jmp ptr_CM_Open_DevNode_Key_Ex
+CM_Open_DevNode_Key_Ex ENDP
+
+CM_Open_Device_Interface_KeyA PROC
+jmp ptr_CM_Open_Device_Interface_KeyA
+CM_Open_Device_Interface_KeyA ENDP
+
+CM_Open_Device_Interface_KeyW PROC
+jmp ptr_CM_Open_Device_Interface_KeyW
+CM_Open_Device_Interface_KeyW ENDP
+
+CM_Open_Device_Interface_Key_ExA PROC
+jmp ptr_CM_Open_Device_Interface_Key_ExA
+CM_Open_Device_Interface_Key_ExA ENDP
+
+CM_Open_Device_Interface_Key_ExW PROC
+jmp ptr_CM_Open_Device_Interface_Key_ExW
+CM_Open_Device_Interface_Key_ExW ENDP
+
+CM_Query_And_Remove_SubTreeA PROC
+jmp ptr_CM_Query_And_Remove_SubTreeA
+CM_Query_And_Remove_SubTreeA ENDP
+
+CM_Query_And_Remove_SubTreeW PROC
+jmp ptr_CM_Query_And_Remove_SubTreeW
+CM_Query_And_Remove_SubTreeW ENDP
+
+CM_Query_And_Remove_SubTree_ExA PROC
+jmp ptr_CM_Query_And_Remove_SubTree_ExA
+CM_Query_And_Remove_SubTree_ExA ENDP
+
+CM_Query_And_Remove_SubTree_ExW PROC
+jmp ptr_CM_Query_And_Remove_SubTree_ExW
+CM_Query_And_Remove_SubTree_ExW ENDP
+
+CM_Query_Arbitrator_Free_Data PROC
+jmp ptr_CM_Query_Arbitrator_Free_Data
+CM_Query_Arbitrator_Free_Data ENDP
+
+CM_Query_Arbitrator_Free_Data_Ex PROC
+jmp ptr_CM_Query_Arbitrator_Free_Data_Ex
+CM_Query_Arbitrator_Free_Data_Ex ENDP
+
+CM_Query_Arbitrator_Free_Size PROC
+jmp ptr_CM_Query_Arbitrator_Free_Size
+CM_Query_Arbitrator_Free_Size ENDP
+
+CM_Query_Arbitrator_Free_Size_Ex PROC
+jmp ptr_CM_Query_Arbitrator_Free_Size_Ex
+CM_Query_Arbitrator_Free_Size_Ex ENDP
+
+CM_Query_Remove_SubTree PROC
+jmp ptr_CM_Query_Remove_SubTree
+CM_Query_Remove_SubTree ENDP
+
+CM_Query_Remove_SubTree_Ex PROC
+jmp ptr_CM_Query_Remove_SubTree_Ex
+CM_Query_Remove_SubTree_Ex ENDP
+
+CM_Query_Resource_Conflict_List PROC
+jmp ptr_CM_Query_Resource_Conflict_List
+CM_Query_Resource_Conflict_List ENDP
+
+CM_Reenumerate_DevNode PROC
+jmp ptr_CM_Reenumerate_DevNode
+CM_Reenumerate_DevNode ENDP
+
+CM_Reenumerate_DevNode_Ex PROC
+jmp ptr_CM_Reenumerate_DevNode_Ex
+CM_Reenumerate_DevNode_Ex ENDP
+
+CM_Register_Device_Driver PROC
+jmp ptr_CM_Register_Device_Driver
+CM_Register_Device_Driver ENDP
+
+CM_Register_Device_Driver_Ex PROC
+jmp ptr_CM_Register_Device_Driver_Ex
+CM_Register_Device_Driver_Ex ENDP
+
+CM_Register_Device_InterfaceA PROC
+jmp ptr_CM_Register_Device_InterfaceA
+CM_Register_Device_InterfaceA ENDP
+
+CM_Register_Device_InterfaceW PROC
+jmp ptr_CM_Register_Device_InterfaceW
+CM_Register_Device_InterfaceW ENDP
+
+CM_Register_Device_Interface_ExA PROC
+jmp ptr_CM_Register_Device_Interface_ExA
+CM_Register_Device_Interface_ExA ENDP
+
+CM_Register_Device_Interface_ExW PROC
+jmp ptr_CM_Register_Device_Interface_ExW
+CM_Register_Device_Interface_ExW ENDP
+
+CM_Remove_SubTree PROC
+jmp ptr_CM_Remove_SubTree
+CM_Remove_SubTree ENDP
+
+CM_Remove_SubTree_Ex PROC
+jmp ptr_CM_Remove_SubTree_Ex
+CM_Remove_SubTree_Ex ENDP
+
+CM_Request_Device_EjectA PROC
+jmp ptr_CM_Request_Device_EjectA
+CM_Request_Device_EjectA ENDP
+
+CM_Request_Device_EjectW PROC
+jmp ptr_CM_Request_Device_EjectW
+CM_Request_Device_EjectW ENDP
+
+CM_Request_Device_Eject_ExA PROC
+jmp ptr_CM_Request_Device_Eject_ExA
+CM_Request_Device_Eject_ExA ENDP
+
+CM_Request_Device_Eject_ExW PROC
+jmp ptr_CM_Request_Device_Eject_ExW
+CM_Request_Device_Eject_ExW ENDP
+
+CM_Request_Eject_PC PROC
+jmp ptr_CM_Request_Eject_PC
+CM_Request_Eject_PC ENDP
+
+CM_Request_Eject_PC_Ex PROC
+jmp ptr_CM_Request_Eject_PC_Ex
+CM_Request_Eject_PC_Ex ENDP
+
+CM_RestoreAll_DefaultPowerSchemes PROC
+jmp ptr_CM_RestoreAll_DefaultPowerSchemes
+CM_RestoreAll_DefaultPowerSchemes ENDP
+
+CM_Restore_DefaultPowerScheme PROC
+jmp ptr_CM_Restore_DefaultPowerScheme
+CM_Restore_DefaultPowerScheme ENDP
+
+CM_Run_Detection PROC
+jmp ptr_CM_Run_Detection
+CM_Run_Detection ENDP
+
+CM_Run_Detection_Ex PROC
+jmp ptr_CM_Run_Detection_Ex
+CM_Run_Detection_Ex ENDP
+
+CM_Set_ActiveScheme PROC
+jmp ptr_CM_Set_ActiveScheme
+CM_Set_ActiveScheme ENDP
+
+CM_Set_Class_PropertyW PROC
+jmp ptr_CM_Set_Class_PropertyW
+CM_Set_Class_PropertyW ENDP
+
+CM_Set_Class_Property_ExW PROC
+jmp ptr_CM_Set_Class_Property_ExW
+CM_Set_Class_Property_ExW ENDP
+
+CM_Set_Class_Registry_PropertyA PROC
+jmp ptr_CM_Set_Class_Registry_PropertyA
+CM_Set_Class_Registry_PropertyA ENDP
+
+CM_Set_Class_Registry_PropertyW PROC
+jmp ptr_CM_Set_Class_Registry_PropertyW
+CM_Set_Class_Registry_PropertyW ENDP
+
+CM_Set_DevNode_Problem PROC
+jmp ptr_CM_Set_DevNode_Problem
+CM_Set_DevNode_Problem ENDP
+
+CM_Set_DevNode_Problem_Ex PROC
+jmp ptr_CM_Set_DevNode_Problem_Ex
+CM_Set_DevNode_Problem_Ex ENDP
+
+CM_Set_DevNode_PropertyW PROC
+jmp ptr_CM_Set_DevNode_PropertyW
+CM_Set_DevNode_PropertyW ENDP
+
+CM_Set_DevNode_Property_ExW PROC
+jmp ptr_CM_Set_DevNode_Property_ExW
+CM_Set_DevNode_Property_ExW ENDP
+
+CM_Set_DevNode_Registry_PropertyA PROC
+jmp ptr_CM_Set_DevNode_Registry_PropertyA
+CM_Set_DevNode_Registry_PropertyA ENDP
+
+CM_Set_DevNode_Registry_PropertyW PROC
+jmp ptr_CM_Set_DevNode_Registry_PropertyW
+CM_Set_DevNode_Registry_PropertyW ENDP
+
+CM_Set_DevNode_Registry_Property_ExA PROC
+jmp ptr_CM_Set_DevNode_Registry_Property_ExA
+CM_Set_DevNode_Registry_Property_ExA ENDP
+
+CM_Set_DevNode_Registry_Property_ExW PROC
+jmp ptr_CM_Set_DevNode_Registry_Property_ExW
+CM_Set_DevNode_Registry_Property_ExW ENDP
+
+CM_Set_Device_Interface_PropertyW PROC
+jmp ptr_CM_Set_Device_Interface_PropertyW
+CM_Set_Device_Interface_PropertyW ENDP
+
+CM_Set_Device_Interface_Property_ExW PROC
+jmp ptr_CM_Set_Device_Interface_Property_ExW
+CM_Set_Device_Interface_Property_ExW ENDP
+
+CM_Set_HW_Prof PROC
+jmp ptr_CM_Set_HW_Prof
+CM_Set_HW_Prof ENDP
+
+CM_Set_HW_Prof_Ex PROC
+jmp ptr_CM_Set_HW_Prof_Ex
+CM_Set_HW_Prof_Ex ENDP
+
+CM_Set_HW_Prof_FlagsA PROC
+jmp ptr_CM_Set_HW_Prof_FlagsA
+CM_Set_HW_Prof_FlagsA ENDP
+
+CM_Set_HW_Prof_FlagsW PROC
+jmp ptr_CM_Set_HW_Prof_FlagsW
+CM_Set_HW_Prof_FlagsW ENDP
+
+CM_Set_HW_Prof_Flags_ExA PROC
+jmp ptr_CM_Set_HW_Prof_Flags_ExA
+CM_Set_HW_Prof_Flags_ExA ENDP
+
+CM_Set_HW_Prof_Flags_ExW PROC
+jmp ptr_CM_Set_HW_Prof_Flags_ExW
+CM_Set_HW_Prof_Flags_ExW ENDP
+
+CM_Setup_DevNode PROC
+jmp ptr_CM_Setup_DevNode
+CM_Setup_DevNode ENDP
+
+CM_Setup_DevNode_Ex PROC
+jmp ptr_CM_Setup_DevNode_Ex
+CM_Setup_DevNode_Ex ENDP
+
+CM_Test_Range_Available PROC
+jmp ptr_CM_Test_Range_Available
+CM_Test_Range_Available ENDP
+
+CM_Uninstall_DevNode PROC
+jmp ptr_CM_Uninstall_DevNode
+CM_Uninstall_DevNode ENDP
+
+CM_Uninstall_DevNode_Ex PROC
+jmp ptr_CM_Uninstall_DevNode_Ex
+CM_Uninstall_DevNode_Ex ENDP
+
+CM_Unregister_Device_InterfaceA PROC
+jmp ptr_CM_Unregister_Device_InterfaceA
+CM_Unregister_Device_InterfaceA ENDP
+
+CM_Unregister_Device_InterfaceW PROC
+jmp ptr_CM_Unregister_Device_InterfaceW
+CM_Unregister_Device_InterfaceW ENDP
+
+CM_Unregister_Device_Interface_ExA PROC
+jmp ptr_CM_Unregister_Device_Interface_ExA
+CM_Unregister_Device_Interface_ExA ENDP
+
+CM_Unregister_Device_Interface_ExW PROC
+jmp ptr_CM_Unregister_Device_Interface_ExW
+CM_Unregister_Device_Interface_ExW ENDP
+
+CM_Write_UserPowerKey PROC
+jmp ptr_CM_Write_UserPowerKey
+CM_Write_UserPowerKey ENDP
+
+end

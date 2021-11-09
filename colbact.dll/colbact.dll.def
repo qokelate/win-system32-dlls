@@ -1,0 +1,10 @@
+﻿LIBRARY
+EXPORTS
+
+DllGetClassObject @1
+DllRegisterServer @2
+DllUnregisterServer @3
+GetClassInfoForCurrentUser @4
+GetDefaultPartitionForCurrentUser @5
+GetDefaultPartitionForSid @6
+PartitionAccessCheck @7

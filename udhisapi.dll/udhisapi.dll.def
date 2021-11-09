@@ -1,0 +1,6 @@
+﻿LIBRARY
+EXPORTS
+
+GetExtensionVersion @1
+HttpExtensionProc @2
+TerminateExtension @3

@@ -1,0 +1,6 @@
+﻿LIBRARY
+EXPORTS
+
+PSTOREServiceMain @1
+ServiceEntry @2
+Start @3

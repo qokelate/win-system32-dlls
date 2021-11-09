@@ -1,0 +1,7 @@
+﻿LIBRARY
+EXPORTS
+
+WSDCHNGRChallengeDeviceClass @1
+WSDCHNGRInitialize @2
+WSDCHNGRRegisterDeviceToChallenge @3
+WSDCHNGRShutdown @4

@@ -1,0 +1,40 @@
+﻿LIBRARY
+EXPORTS
+
+CapabilitiesRequestAndCapabilitiesReply @1
+DXVA2CreateDirect3DDeviceManager9 @2
+DXVA2CreateVideoService @3
+DXVAHD_CreateDevice @4
+DegaussMonitor @5
+DestroyPhysicalMonitor @6
+DestroyPhysicalMonitors @7
+GetCapabilitiesStringLength @8
+GetMonitorBrightness @9
+GetMonitorCapabilities @10
+GetMonitorColorTemperature @11
+GetMonitorContrast @12
+GetMonitorDisplayAreaPosition @13
+GetMonitorDisplayAreaSize @14
+GetMonitorRedGreenOrBlueDrive @15
+GetMonitorRedGreenOrBlueGain @16
+GetMonitorTechnologyType @17
+GetNumberOfPhysicalMonitorsFromHMONITOR @18
+GetNumberOfPhysicalMonitorsFromIDirect3DDevice9 @19
+GetPhysicalMonitorsFromHMONITOR @20
+GetPhysicalMonitorsFromIDirect3DDevice9 @21
+GetTimingReport @22
+GetVCPFeatureAndVCPFeatureReply @23
+OPMGetVideoOutputsFromHMONITOR @24
+OPMGetVideoOutputsFromIDirect3DDevice9Object @25
+RestoreMonitorFactoryColorDefaults @26
+RestoreMonitorFactoryDefaults @27
+SaveCurrentMonitorSettings @28
+SaveCurrentSettings @29
+SetMonitorBrightness @30
+SetMonitorColorTemperature @31
+SetMonitorContrast @32
+SetMonitorDisplayAreaPosition @33
+SetMonitorDisplayAreaSize @34
+SetMonitorRedGreenOrBlueDrive @35
+SetMonitorRedGreenOrBlueGain @36
+SetVCPFeature @37

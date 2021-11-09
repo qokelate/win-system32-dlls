@@ -1,0 +1,23 @@
+﻿LIBRARY
+EXPORTS
+
+__std_atomic_compare_exchange_128 @1
+__std_atomic_get_mutex @2
+__std_atomic_has_cmpxchg16b @3
+__std_atomic_notify_all_direct @4
+__std_atomic_notify_all_indirect @5
+__std_atomic_notify_one_direct @6
+__std_atomic_notify_one_indirect @7
+__std_atomic_set_api_level @8
+__std_atomic_wait_direct @9
+__std_atomic_wait_get_deadline @10
+__std_atomic_wait_get_remaining_timeout @11
+__std_atomic_wait_indirect @12
+__std_bulk_submit_threadpool_work @13
+__std_close_threadpool_work @14
+__std_create_threadpool_work @15
+__std_execution_wait_on_uchar @16
+__std_execution_wake_by_address_all @17
+__std_parallel_algorithms_hw_threads @18
+__std_submit_threadpool_work @19
+__std_wait_for_threadpool_work_callbacks @20

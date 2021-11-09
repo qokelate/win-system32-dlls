@@ -1,0 +1,25 @@
+﻿LIBRARY
+EXPORTS
+
+NetApiBufferAllocate @1
+NetApiBufferFree @2
+NetApiBufferReallocate @3
+NetApiBufferSize @4
+NetRemoteComputerSupports @5
+NetapipBufferAllocate @6
+NetpIsComputerNameValid @7
+NetpIsDomainNameValid @8
+NetpIsGroupNameValid @9
+NetpIsRemote @10
+NetpIsRemoteNameValid @11
+NetpIsShareNameValid @12
+NetpIsUncComputerNameValid @13
+NetpIsUserNameValid @14
+NetpwListCanonicalize @15
+NetpwListTraverse @16
+NetpwNameCanonicalize @17
+NetpwNameCompare @18
+NetpwNameValidate @19
+NetpwPathCanonicalize @20
+NetpwPathCompare @21
+NetpwPathType @22

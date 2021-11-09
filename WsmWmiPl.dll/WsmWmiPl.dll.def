@@ -1,0 +1,11 @@
+﻿LIBRARY
+EXPORTS
+
+WSManPluginShutdown @1
+WSManPluginStartup @2
+WSManProvEndEnumerate @3
+WSManProvEnumerate @4
+WSManProvGet @5
+WSManProvInvoke @6
+WSManProvPullEnumerate @7
+WSManProvPut @8

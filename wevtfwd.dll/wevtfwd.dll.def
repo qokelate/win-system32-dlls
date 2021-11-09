@@ -1,0 +1,8 @@
+﻿LIBRARY
+EXPORTS
+
+WSManPluginShutdown @1
+WSManPluginStartup @2
+WSManProvPullEvents @3
+WSManProvSubscribe @4
+WSManProvUnsubscribe @5

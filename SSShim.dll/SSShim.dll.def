@@ -1,0 +1,7 @@
+﻿LIBRARY
+EXPORTS
+
+SssBindServicingStack @1
+SssGetServicingStackFilePath @2
+SssGetServicingStackFilePathLength @3
+SssReleaseServicingStack @4

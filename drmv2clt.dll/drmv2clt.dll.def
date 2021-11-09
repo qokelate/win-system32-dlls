@@ -1,0 +1,9 @@
+﻿LIBRARY
+EXPORTS
+
+CreateDRMRightsManager @3
+DllRegisterServer @4
+DllUnregisterServer @5
+LaunchURL @1
+MakeEscapedURL @2
+Sysprep @6

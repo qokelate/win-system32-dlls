@@ -1,0 +1,125 @@
+ifndef X64
+.686p
+.XMM
+.safeseh SEH_handler
+.model flat, C
+option dotname
+option casemap : none
+endif
+
+extern ptr_CreateAssemblyCache : PTR;
+extern ptr_CreateAssemblyNameObject : PTR;
+extern ptr_SxsBeginAssemblyInstall : PTR;
+extern ptr_SxsEndAssemblyInstall : PTR;
+extern ptr_SxsFindClrClassInformation : PTR;
+extern ptr_SxsFindClrSurrogateInformation : PTR;
+extern ptr_SxsGenerateActivationContext : PTR;
+extern ptr_SxsInstallW : PTR;
+extern ptr_SxsLookupClrGuid : PTR;
+extern ptr_SxsOleAut32MapConfiguredClsidToReferenceClsid : PTR;
+extern ptr_SxsOleAut32MapIIDOrCLSIDToTypeLibrary : PTR;
+extern ptr_SxsOleAut32MapIIDToProxyStubCLSID : PTR;
+extern ptr_SxsOleAut32MapIIDToTLBPath : PTR;
+extern ptr_SxsOleAut32MapReferenceClsidToConfiguredClsid : PTR;
+extern ptr_SxsOleAut32RedirectTypeLibrary : PTR;
+extern ptr_SxsProbeAssemblyInstallation : PTR;
+extern ptr_SxsQueryManifestInformation : PTR;
+extern ptr_SxsRunDllInstallAssembly : PTR;
+extern ptr_SxsRunDllInstallAssemblyW : PTR;
+extern ptr_SxsUninstallW : PTR;
+extern ptr_SxspGenerateManifestPathOnAssemblyIdentity : PTR;
+
+
+.code
+
+align 16
+SEH_handler   proc
+; handler
+ret
+SEH_handler   endp
+
+CreateAssemblyCache PROC
+jmp ptr_CreateAssemblyCache
+CreateAssemblyCache ENDP
+
+CreateAssemblyNameObject PROC
+jmp ptr_CreateAssemblyNameObject
+CreateAssemblyNameObject ENDP
+
+SxsBeginAssemblyInstall PROC
+jmp ptr_SxsBeginAssemblyInstall
+SxsBeginAssemblyInstall ENDP
+
+SxsEndAssemblyInstall PROC
+jmp ptr_SxsEndAssemblyInstall
+SxsEndAssemblyInstall ENDP
+
+SxsFindClrClassInformation PROC
+jmp ptr_SxsFindClrClassInformation
+SxsFindClrClassInformation ENDP
+
+SxsFindClrSurrogateInformation PROC
+jmp ptr_SxsFindClrSurrogateInformation
+SxsFindClrSurrogateInformation ENDP
+
+SxsGenerateActivationContext PROC
+jmp ptr_SxsGenerateActivationContext
+SxsGenerateActivationContext ENDP
+
+SxsInstallW PROC
+jmp ptr_SxsInstallW
+SxsInstallW ENDP
+
+SxsLookupClrGuid PROC
+jmp ptr_SxsLookupClrGuid
+SxsLookupClrGuid ENDP
+
+SxsOleAut32MapConfiguredClsidToReferenceClsid PROC
+jmp ptr_SxsOleAut32MapConfiguredClsidToReferenceClsid
+SxsOleAut32MapConfiguredClsidToReferenceClsid ENDP
+
+SxsOleAut32MapIIDOrCLSIDToTypeLibrary PROC
+jmp ptr_SxsOleAut32MapIIDOrCLSIDToTypeLibrary
+SxsOleAut32MapIIDOrCLSIDToTypeLibrary ENDP
+
+SxsOleAut32MapIIDToProxyStubCLSID PROC
+jmp ptr_SxsOleAut32MapIIDToProxyStubCLSID
+SxsOleAut32MapIIDToProxyStubCLSID ENDP
+
+SxsOleAut32MapIIDToTLBPath PROC
+jmp ptr_SxsOleAut32MapIIDToTLBPath
+SxsOleAut32MapIIDToTLBPath ENDP
+
+SxsOleAut32MapReferenceClsidToConfiguredClsid PROC
+jmp ptr_SxsOleAut32MapReferenceClsidToConfiguredClsid
+SxsOleAut32MapReferenceClsidToConfiguredClsid ENDP
+
+SxsOleAut32RedirectTypeLibrary PROC
+jmp ptr_SxsOleAut32RedirectTypeLibrary
+SxsOleAut32RedirectTypeLibrary ENDP
+
+SxsProbeAssemblyInstallation PROC
+jmp ptr_SxsProbeAssemblyInstallation
+SxsProbeAssemblyInstallation ENDP
+
+SxsQueryManifestInformation PROC
+jmp ptr_SxsQueryManifestInformation
+SxsQueryManifestInformation ENDP
+
+SxsRunDllInstallAssembly PROC
+jmp ptr_SxsRunDllInstallAssembly
+SxsRunDllInstallAssembly ENDP
+
+SxsRunDllInstallAssemblyW PROC
+jmp ptr_SxsRunDllInstallAssemblyW
+SxsRunDllInstallAssemblyW ENDP
+
+SxsUninstallW PROC
+jmp ptr_SxsUninstallW
+SxsUninstallW ENDP
+
+SxspGenerateManifestPathOnAssemblyIdentity PROC
+jmp ptr_SxspGenerateManifestPathOnAssemblyIdentity
+SxspGenerateManifestPathOnAssemblyIdentity ENDP
+
+end

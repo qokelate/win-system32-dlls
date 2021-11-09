@@ -1,0 +1,6 @@
+﻿LIBRARY
+EXPORTS
+
+CloseTSObject @1
+CollectTSObjectData @2
+OpenTSObject @3

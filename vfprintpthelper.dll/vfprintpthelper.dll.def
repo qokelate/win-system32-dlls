@@ -1,0 +1,9 @@
+﻿LIBRARY
+EXPORTS
+
+ConvertDOMDocumentToIStream @1
+CopyStream @2
+GetXml @3
+IsPrintCapabilitiesConformant @4
+IsPrintTicketConformant @5
+RewindStream @6

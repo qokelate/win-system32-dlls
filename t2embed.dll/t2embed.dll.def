@@ -1,0 +1,17 @@
+﻿LIBRARY
+EXPORTS
+
+TTCharToUnicode @1
+TTDeleteEmbeddedFont @2
+TTEmbedFont @3
+TTEmbedFontEx @4
+TTEmbedFontFromFileA @5
+TTEnableEmbeddingForFacename @6
+TTGetEmbeddedFontInfo @7
+TTGetEmbeddingType @8
+TTGetNewFontName @9
+TTIsEmbeddingEnabled @10
+TTIsEmbeddingEnabledForFacename @11
+TTLoadEmbeddedFont @12
+TTRunValidationTests @13
+TTRunValidationTestsEx @14

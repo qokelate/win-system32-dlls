@@ -1,0 +1,33 @@
+﻿LIBRARY
+EXPORTS
+
+AcceptEx @1
+EnumProtocolsA @2
+EnumProtocolsW @3
+GetAcceptExSockaddrs @4
+GetAddressByNameA @5
+GetAddressByNameW @6
+GetNameByTypeA @7
+GetNameByTypeW @8
+GetServiceA @9
+GetServiceW @10
+GetTypeByNameA @11
+GetTypeByNameW @12
+MigrateWinsockConfiguration @13
+NPLoadNameSpaces @14
+NSPStartup @15
+SetServiceA @16
+SetServiceW @17
+StartWsdpService @18
+StopWsdpService @19
+TransmitFile @20
+WSARecvEx @21
+WSPStartup @22
+dn_expand @23
+getnetbyname @24
+inet_network @25
+rcmd @26
+rexec @27
+rresvport @28
+s_perror @29
+sethostname @30

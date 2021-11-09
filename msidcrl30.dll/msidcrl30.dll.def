@@ -1,0 +1,41 @@
+﻿LIBRARY
+EXPORTS
+
+AuthIdentityToService @13
+AuthIdentityToServiceEx @33
+BuildAuthTokenRequest @26
+BuildAuthTokenRequestEx @37
+BuildServiceTokenRequest @27
+BuildServiceTokenRequestEx @36
+CancelPendingRequest @38
+CloseEnumIdentitiesHandle @19
+CloseIdentityHandle @8
+CreateIdentityHandle @4
+CreatePassportAuthUIContext @9
+DestroyPassportAuthUIContext @12
+EnumIdentitiesWithCachedCredentials @17
+GetAuthState @20
+GetAuthStateEx @34
+GetCertificate @35
+GetIdentityProperty @6
+GetIdentityPropertyByName @41
+GetPreferredAuthUIContextSize @10
+GetWebAuthUrl @30
+HasPersistedCredential @23
+Initialize @1
+InitializeEx @29
+LogonIdentity @21
+LogonIdentityEx @31
+LogonIdentityWithUI @22
+MoveAuthUIContext @11
+NextIdentity @18
+PassportFreeMemory @3
+PersistCredential @15
+PutTokenResponse @28
+PutTokenResponseEx @39
+RemovePersistedCredential @16
+SetCredential @5
+SetIdentityCallback @24
+SetIdentityProperty @7
+Uninitialize @2
+VerifyCertificate @40

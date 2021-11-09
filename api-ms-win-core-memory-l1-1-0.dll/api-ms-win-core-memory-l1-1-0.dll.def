@@ -1,0 +1,19 @@
+﻿LIBRARY
+EXPORTS
+
+CreateFileMappingW @1
+FlushViewOfFile @2
+MapViewOfFile @3
+MapViewOfFileEx @4
+OpenFileMappingW @5
+ReadProcessMemory @6
+UnmapViewOfFile @7
+VirtualAlloc @8
+VirtualAllocEx @9
+VirtualFree @10
+VirtualFreeEx @11
+VirtualProtect @12
+VirtualProtectEx @13
+VirtualQuery @14
+VirtualQueryEx @15
+WriteProcessMemory @16

@@ -1,0 +1,31 @@
+﻿LIBRARY
+EXPORTS
+
+ContactToNameObject @27
+CreateLegacyTmInstance @31
+CreateLocalTmInstance @32
+CreateRemoteProxyTmInstance @33
+CreateTmInstanceForRemoteAdmin @34
+DTC_XaClose @19
+DTC_XaCommit @14
+DTC_XaComplete @18
+DTC_XaEnd @12
+DTC_XaForget @17
+DTC_XaOpen @10
+DTC_XaPrepare @13
+DTC_XaRecover @16
+DTC_XaRollback @15
+DTC_XaStart @11
+DllGetClassObject @35
+DllGetDTCConnectionManager @25
+DllGetDTCProxy @4
+DllGetDTCUtilObject @26
+DllGetTransactionManagerCore @36
+DllRegisterServer @37
+DllUnregisterServer @38
+GetTmInstance @39
+ShutDownCM @24
+SysPrepDtcCleanup @28
+SysPrepDtcGeneralize @29
+SysPrepDtcSpecialize @30
+UpgradeApplySuccess @23

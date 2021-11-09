@@ -1,0 +1,17 @@
+﻿LIBRARY
+EXPORTS
+
+QDLHPathDiagnostics @1
+QDLHStartDiagnosingPath @2
+QOSAddSocketToFlow @3
+QOSCancel @4
+QOSCloseHandle @5
+QOSCreateHandle @6
+QOSEnumerateFlows @7
+QOSNotifyFlow @8
+QOSQueryFlow @9
+QOSRemoveSocketFromFlow @10
+QOSSetFlow @11
+QOSStartTrackingClient @12
+QOSStopTrackingClient @13
+ServiceMain @14

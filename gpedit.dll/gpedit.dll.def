@@ -1,0 +1,11 @@
+﻿LIBRARY
+EXPORTS
+
+BrowseForGPO @105
+CreateGPOLink @106
+DeleteAllGPOLinks @107
+DeleteGPOLink @108
+DllCanUnloadNow @109
+DllGetClassObject @110
+ExportRSoPData @111
+ImportRSoPData @112

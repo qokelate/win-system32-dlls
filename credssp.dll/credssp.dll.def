@@ -1,0 +1,29 @@
+﻿LIBRARY
+EXPORTS
+
+InitSecurityInterfaceW @1
+SpAcceptSecurityContext @2
+SpAcquireCredentialsHandleW @3
+SpAddCredentialsW @4
+SpApplyControlToken @5
+SpChangeAccountPasswordW @6
+SpCompleteAuthToken @7
+SpDecryptMessage @8
+SpDeleteSecurityContext @9
+SpEncryptMessage @10
+SpEnumerateSecurityPackagesW @11
+SpExportSecurityContext @12
+SpFreeContextBuffer @13
+SpFreeCredentialsHandle @14
+SpImpersonateSecurityContext @15
+SpImportSecurityContextW @16
+SpInitializeSecurityContextW @17
+SpMakeSignature @18
+SpQueryContextAttributesW @19
+SpQueryCredentialsAttributesW @20
+SpQuerySecurityContextToken @21
+SpQuerySecurityPackageInfoW @22
+SpRevertSecurityContext @23
+SpSetContextAttributesW @24
+SpSetCredentialsAttributesW @25
+SpVerifySignature @26

@@ -1,0 +1,13 @@
+﻿LIBRARY
+EXPORTS
+
+DllCanUnloadNow @7
+DllGetClassObject @8
+DllRegisterServer @9
+DllUnregisterServer @10
+TaskUpdateWorkspaces @2
+TaskUpdateWorkspaces2 @1
+TaskUpdateWorkspacesIfNeeded @3
+WorkspaceSilentSetupW @4
+WorkspaceStatusNotify @6
+WorkspaceStatusNotify2 @5

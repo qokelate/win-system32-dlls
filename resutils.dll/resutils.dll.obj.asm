@@ -1,0 +1,435 @@
+ifndef X64
+.686p
+.XMM
+.safeseh SEH_handler
+.model flat, C
+option dotname
+option casemap : none
+endif
+
+extern ptr_ClusWorkerCheckTerminate : PTR;
+extern ptr_ClusWorkerCreate : PTR;
+extern ptr_ClusWorkerStart : PTR;
+extern ptr_ClusWorkerTerminate : PTR;
+extern ptr_ClusterClearBackupStateForSharedVolume : PTR;
+extern ptr_ClusterGetVolumeNameForVolumeMountPoint : PTR;
+extern ptr_ClusterGetVolumePathName : PTR;
+extern ptr_ClusterIsPathOnSharedVolume : PTR;
+extern ptr_ClusterPrepareSharedVolumeForBackup : PTR;
+extern ptr_ResUtilAddUnknownProperties : PTR;
+extern ptr_ResUtilCreateDirectoryTree : PTR;
+extern ptr_ResUtilDupParameterBlock : PTR;
+extern ptr_ResUtilDupString : PTR;
+extern ptr_ResUtilEnumPrivateProperties : PTR;
+extern ptr_ResUtilEnumProperties : PTR;
+extern ptr_ResUtilEnumResources : PTR;
+extern ptr_ResUtilEnumResourcesEx : PTR;
+extern ptr_ResUtilExpandEnvironmentStrings : PTR;
+extern ptr_ResUtilFindBinaryProperty : PTR;
+extern ptr_ResUtilFindDependentDiskResourceDriveLetter : PTR;
+extern ptr_ResUtilFindDwordProperty : PTR;
+extern ptr_ResUtilFindExpandSzProperty : PTR;
+extern ptr_ResUtilFindExpandedSzProperty : PTR;
+extern ptr_ResUtilFindFileTimeProperty : PTR;
+extern ptr_ResUtilFindLongProperty : PTR;
+extern ptr_ResUtilFindMultiSzProperty : PTR;
+extern ptr_ResUtilFindSzProperty : PTR;
+extern ptr_ResUtilFreeEnvironment : PTR;
+extern ptr_ResUtilFreeParameterBlock : PTR;
+extern ptr_ResUtilGetAllProperties : PTR;
+extern ptr_ResUtilGetBinaryProperty : PTR;
+extern ptr_ResUtilGetBinaryValue : PTR;
+extern ptr_ResUtilGetClusterRoleState : PTR;
+extern ptr_ResUtilGetCoreClusterResources : PTR;
+extern ptr_ResUtilGetDwordProperty : PTR;
+extern ptr_ResUtilGetDwordValue : PTR;
+extern ptr_ResUtilGetEnvironmentWithNetName : PTR;
+extern ptr_ResUtilGetFileTimeProperty : PTR;
+extern ptr_ResUtilGetLongProperty : PTR;
+extern ptr_ResUtilGetMultiSzProperty : PTR;
+extern ptr_ResUtilGetPrivateProperties : PTR;
+extern ptr_ResUtilGetProperties : PTR;
+extern ptr_ResUtilGetPropertiesToParameterBlock : PTR;
+extern ptr_ResUtilGetProperty : PTR;
+extern ptr_ResUtilGetPropertyFormats : PTR;
+extern ptr_ResUtilGetPropertySize : PTR;
+extern ptr_ResUtilGetQwordValue : PTR;
+extern ptr_ResUtilGetResourceDependency : PTR;
+extern ptr_ResUtilGetResourceDependencyByClass : PTR;
+extern ptr_ResUtilGetResourceDependencyByName : PTR;
+extern ptr_ResUtilGetResourceDependentIPAddressProps : PTR;
+extern ptr_ResUtilGetResourceName : PTR;
+extern ptr_ResUtilGetResourceNameDependency : PTR;
+extern ptr_ResUtilGetSzProperty : PTR;
+extern ptr_ResUtilGetSzValue : PTR;
+extern ptr_ResUtilIsPathValid : PTR;
+extern ptr_ResUtilIsResourceClassEqual : PTR;
+extern ptr_ResUtilPropertyListFromParameterBlock : PTR;
+extern ptr_ResUtilRemoveResourceServiceEnvironment : PTR;
+extern ptr_ResUtilResourceTypesEqual : PTR;
+extern ptr_ResUtilResourcesEqual : PTR;
+extern ptr_ResUtilSetBinaryValue : PTR;
+extern ptr_ResUtilSetDwordValue : PTR;
+extern ptr_ResUtilSetExpandSzValue : PTR;
+extern ptr_ResUtilSetMultiSzValue : PTR;
+extern ptr_ResUtilSetPrivatePropertyList : PTR;
+extern ptr_ResUtilSetPropertyParameterBlock : PTR;
+extern ptr_ResUtilSetPropertyParameterBlockEx : PTR;
+extern ptr_ResUtilSetPropertyTable : PTR;
+extern ptr_ResUtilSetPropertyTableEx : PTR;
+extern ptr_ResUtilSetQwordValue : PTR;
+extern ptr_ResUtilSetResourceServiceEnvironment : PTR;
+extern ptr_ResUtilSetResourceServiceStartParameters : PTR;
+extern ptr_ResUtilSetSzValue : PTR;
+extern ptr_ResUtilSetUnknownProperties : PTR;
+extern ptr_ResUtilStartResourceService : PTR;
+extern ptr_ResUtilStopResourceService : PTR;
+extern ptr_ResUtilStopService : PTR;
+extern ptr_ResUtilTerminateServiceProcessFromResDll : PTR;
+extern ptr_ResUtilVerifyPrivatePropertyList : PTR;
+extern ptr_ResUtilVerifyPropertyTable : PTR;
+extern ptr_ResUtilVerifyResourceService : PTR;
+extern ptr_ResUtilVerifyService : PTR;
+
+
+.code
+
+align 16
+SEH_handler   proc
+; handler
+ret
+SEH_handler   endp
+
+ClusWorkerCheckTerminate PROC
+jmp ptr_ClusWorkerCheckTerminate
+ClusWorkerCheckTerminate ENDP
+
+ClusWorkerCreate PROC
+jmp ptr_ClusWorkerCreate
+ClusWorkerCreate ENDP
+
+ClusWorkerStart PROC
+jmp ptr_ClusWorkerStart
+ClusWorkerStart ENDP
+
+ClusWorkerTerminate PROC
+jmp ptr_ClusWorkerTerminate
+ClusWorkerTerminate ENDP
+
+ClusterClearBackupStateForSharedVolume PROC
+jmp ptr_ClusterClearBackupStateForSharedVolume
+ClusterClearBackupStateForSharedVolume ENDP
+
+ClusterGetVolumeNameForVolumeMountPoint PROC
+jmp ptr_ClusterGetVolumeNameForVolumeMountPoint
+ClusterGetVolumeNameForVolumeMountPoint ENDP
+
+ClusterGetVolumePathName PROC
+jmp ptr_ClusterGetVolumePathName
+ClusterGetVolumePathName ENDP
+
+ClusterIsPathOnSharedVolume PROC
+jmp ptr_ClusterIsPathOnSharedVolume
+ClusterIsPathOnSharedVolume ENDP
+
+ClusterPrepareSharedVolumeForBackup PROC
+jmp ptr_ClusterPrepareSharedVolumeForBackup
+ClusterPrepareSharedVolumeForBackup ENDP
+
+ResUtilAddUnknownProperties PROC
+jmp ptr_ResUtilAddUnknownProperties
+ResUtilAddUnknownProperties ENDP
+
+ResUtilCreateDirectoryTree PROC
+jmp ptr_ResUtilCreateDirectoryTree
+ResUtilCreateDirectoryTree ENDP
+
+ResUtilDupParameterBlock PROC
+jmp ptr_ResUtilDupParameterBlock
+ResUtilDupParameterBlock ENDP
+
+ResUtilDupString PROC
+jmp ptr_ResUtilDupString
+ResUtilDupString ENDP
+
+ResUtilEnumPrivateProperties PROC
+jmp ptr_ResUtilEnumPrivateProperties
+ResUtilEnumPrivateProperties ENDP
+
+ResUtilEnumProperties PROC
+jmp ptr_ResUtilEnumProperties
+ResUtilEnumProperties ENDP
+
+ResUtilEnumResources PROC
+jmp ptr_ResUtilEnumResources
+ResUtilEnumResources ENDP
+
+ResUtilEnumResourcesEx PROC
+jmp ptr_ResUtilEnumResourcesEx
+ResUtilEnumResourcesEx ENDP
+
+ResUtilExpandEnvironmentStrings PROC
+jmp ptr_ResUtilExpandEnvironmentStrings
+ResUtilExpandEnvironmentStrings ENDP
+
+ResUtilFindBinaryProperty PROC
+jmp ptr_ResUtilFindBinaryProperty
+ResUtilFindBinaryProperty ENDP
+
+ResUtilFindDependentDiskResourceDriveLetter PROC
+jmp ptr_ResUtilFindDependentDiskResourceDriveLetter
+ResUtilFindDependentDiskResourceDriveLetter ENDP
+
+ResUtilFindDwordProperty PROC
+jmp ptr_ResUtilFindDwordProperty
+ResUtilFindDwordProperty ENDP
+
+ResUtilFindExpandSzProperty PROC
+jmp ptr_ResUtilFindExpandSzProperty
+ResUtilFindExpandSzProperty ENDP
+
+ResUtilFindExpandedSzProperty PROC
+jmp ptr_ResUtilFindExpandedSzProperty
+ResUtilFindExpandedSzProperty ENDP
+
+ResUtilFindFileTimeProperty PROC
+jmp ptr_ResUtilFindFileTimeProperty
+ResUtilFindFileTimeProperty ENDP
+
+ResUtilFindLongProperty PROC
+jmp ptr_ResUtilFindLongProperty
+ResUtilFindLongProperty ENDP
+
+ResUtilFindMultiSzProperty PROC
+jmp ptr_ResUtilFindMultiSzProperty
+ResUtilFindMultiSzProperty ENDP
+
+ResUtilFindSzProperty PROC
+jmp ptr_ResUtilFindSzProperty
+ResUtilFindSzProperty ENDP
+
+ResUtilFreeEnvironment PROC
+jmp ptr_ResUtilFreeEnvironment
+ResUtilFreeEnvironment ENDP
+
+ResUtilFreeParameterBlock PROC
+jmp ptr_ResUtilFreeParameterBlock
+ResUtilFreeParameterBlock ENDP
+
+ResUtilGetAllProperties PROC
+jmp ptr_ResUtilGetAllProperties
+ResUtilGetAllProperties ENDP
+
+ResUtilGetBinaryProperty PROC
+jmp ptr_ResUtilGetBinaryProperty
+ResUtilGetBinaryProperty ENDP
+
+ResUtilGetBinaryValue PROC
+jmp ptr_ResUtilGetBinaryValue
+ResUtilGetBinaryValue ENDP
+
+ResUtilGetClusterRoleState PROC
+jmp ptr_ResUtilGetClusterRoleState
+ResUtilGetClusterRoleState ENDP
+
+ResUtilGetCoreClusterResources PROC
+jmp ptr_ResUtilGetCoreClusterResources
+ResUtilGetCoreClusterResources ENDP
+
+ResUtilGetDwordProperty PROC
+jmp ptr_ResUtilGetDwordProperty
+ResUtilGetDwordProperty ENDP
+
+ResUtilGetDwordValue PROC
+jmp ptr_ResUtilGetDwordValue
+ResUtilGetDwordValue ENDP
+
+ResUtilGetEnvironmentWithNetName PROC
+jmp ptr_ResUtilGetEnvironmentWithNetName
+ResUtilGetEnvironmentWithNetName ENDP
+
+ResUtilGetFileTimeProperty PROC
+jmp ptr_ResUtilGetFileTimeProperty
+ResUtilGetFileTimeProperty ENDP
+
+ResUtilGetLongProperty PROC
+jmp ptr_ResUtilGetLongProperty
+ResUtilGetLongProperty ENDP
+
+ResUtilGetMultiSzProperty PROC
+jmp ptr_ResUtilGetMultiSzProperty
+ResUtilGetMultiSzProperty ENDP
+
+ResUtilGetPrivateProperties PROC
+jmp ptr_ResUtilGetPrivateProperties
+ResUtilGetPrivateProperties ENDP
+
+ResUtilGetProperties PROC
+jmp ptr_ResUtilGetProperties
+ResUtilGetProperties ENDP
+
+ResUtilGetPropertiesToParameterBlock PROC
+jmp ptr_ResUtilGetPropertiesToParameterBlock
+ResUtilGetPropertiesToParameterBlock ENDP
+
+ResUtilGetProperty PROC
+jmp ptr_ResUtilGetProperty
+ResUtilGetProperty ENDP
+
+ResUtilGetPropertyFormats PROC
+jmp ptr_ResUtilGetPropertyFormats
+ResUtilGetPropertyFormats ENDP
+
+ResUtilGetPropertySize PROC
+jmp ptr_ResUtilGetPropertySize
+ResUtilGetPropertySize ENDP
+
+ResUtilGetQwordValue PROC
+jmp ptr_ResUtilGetQwordValue
+ResUtilGetQwordValue ENDP
+
+ResUtilGetResourceDependency PROC
+jmp ptr_ResUtilGetResourceDependency
+ResUtilGetResourceDependency ENDP
+
+ResUtilGetResourceDependencyByClass PROC
+jmp ptr_ResUtilGetResourceDependencyByClass
+ResUtilGetResourceDependencyByClass ENDP
+
+ResUtilGetResourceDependencyByName PROC
+jmp ptr_ResUtilGetResourceDependencyByName
+ResUtilGetResourceDependencyByName ENDP
+
+ResUtilGetResourceDependentIPAddressProps PROC
+jmp ptr_ResUtilGetResourceDependentIPAddressProps
+ResUtilGetResourceDependentIPAddressProps ENDP
+
+ResUtilGetResourceName PROC
+jmp ptr_ResUtilGetResourceName
+ResUtilGetResourceName ENDP
+
+ResUtilGetResourceNameDependency PROC
+jmp ptr_ResUtilGetResourceNameDependency
+ResUtilGetResourceNameDependency ENDP
+
+ResUtilGetSzProperty PROC
+jmp ptr_ResUtilGetSzProperty
+ResUtilGetSzProperty ENDP
+
+ResUtilGetSzValue PROC
+jmp ptr_ResUtilGetSzValue
+ResUtilGetSzValue ENDP
+
+ResUtilIsPathValid PROC
+jmp ptr_ResUtilIsPathValid
+ResUtilIsPathValid ENDP
+
+ResUtilIsResourceClassEqual PROC
+jmp ptr_ResUtilIsResourceClassEqual
+ResUtilIsResourceClassEqual ENDP
+
+ResUtilPropertyListFromParameterBlock PROC
+jmp ptr_ResUtilPropertyListFromParameterBlock
+ResUtilPropertyListFromParameterBlock ENDP
+
+ResUtilRemoveResourceServiceEnvironment PROC
+jmp ptr_ResUtilRemoveResourceServiceEnvironment
+ResUtilRemoveResourceServiceEnvironment ENDP
+
+ResUtilResourceTypesEqual PROC
+jmp ptr_ResUtilResourceTypesEqual
+ResUtilResourceTypesEqual ENDP
+
+ResUtilResourcesEqual PROC
+jmp ptr_ResUtilResourcesEqual
+ResUtilResourcesEqual ENDP
+
+ResUtilSetBinaryValue PROC
+jmp ptr_ResUtilSetBinaryValue
+ResUtilSetBinaryValue ENDP
+
+ResUtilSetDwordValue PROC
+jmp ptr_ResUtilSetDwordValue
+ResUtilSetDwordValue ENDP
+
+ResUtilSetExpandSzValue PROC
+jmp ptr_ResUtilSetExpandSzValue
+ResUtilSetExpandSzValue ENDP
+
+ResUtilSetMultiSzValue PROC
+jmp ptr_ResUtilSetMultiSzValue
+ResUtilSetMultiSzValue ENDP
+
+ResUtilSetPrivatePropertyList PROC
+jmp ptr_ResUtilSetPrivatePropertyList
+ResUtilSetPrivatePropertyList ENDP
+
+ResUtilSetPropertyParameterBlock PROC
+jmp ptr_ResUtilSetPropertyParameterBlock
+ResUtilSetPropertyParameterBlock ENDP
+
+ResUtilSetPropertyParameterBlockEx PROC
+jmp ptr_ResUtilSetPropertyParameterBlockEx
+ResUtilSetPropertyParameterBlockEx ENDP
+
+ResUtilSetPropertyTable PROC
+jmp ptr_ResUtilSetPropertyTable
+ResUtilSetPropertyTable ENDP
+
+ResUtilSetPropertyTableEx PROC
+jmp ptr_ResUtilSetPropertyTableEx
+ResUtilSetPropertyTableEx ENDP
+
+ResUtilSetQwordValue PROC
+jmp ptr_ResUtilSetQwordValue
+ResUtilSetQwordValue ENDP
+
+ResUtilSetResourceServiceEnvironment PROC
+jmp ptr_ResUtilSetResourceServiceEnvironment
+ResUtilSetResourceServiceEnvironment ENDP
+
+ResUtilSetResourceServiceStartParameters PROC
+jmp ptr_ResUtilSetResourceServiceStartParameters
+ResUtilSetResourceServiceStartParameters ENDP
+
+ResUtilSetSzValue PROC
+jmp ptr_ResUtilSetSzValue
+ResUtilSetSzValue ENDP
+
+ResUtilSetUnknownProperties PROC
+jmp ptr_ResUtilSetUnknownProperties
+ResUtilSetUnknownProperties ENDP
+
+ResUtilStartResourceService PROC
+jmp ptr_ResUtilStartResourceService
+ResUtilStartResourceService ENDP
+
+ResUtilStopResourceService PROC
+jmp ptr_ResUtilStopResourceService
+ResUtilStopResourceService ENDP
+
+ResUtilStopService PROC
+jmp ptr_ResUtilStopService
+ResUtilStopService ENDP
+
+ResUtilTerminateServiceProcessFromResDll PROC
+jmp ptr_ResUtilTerminateServiceProcessFromResDll
+ResUtilTerminateServiceProcessFromResDll ENDP
+
+ResUtilVerifyPrivatePropertyList PROC
+jmp ptr_ResUtilVerifyPrivatePropertyList
+ResUtilVerifyPrivatePropertyList ENDP
+
+ResUtilVerifyPropertyTable PROC
+jmp ptr_ResUtilVerifyPropertyTable
+ResUtilVerifyPropertyTable ENDP
+
+ResUtilVerifyResourceService PROC
+jmp ptr_ResUtilVerifyResourceService
+ResUtilVerifyResourceService ENDP
+
+ResUtilVerifyService PROC
+jmp ptr_ResUtilVerifyService
+ResUtilVerifyService ENDP
+
+end

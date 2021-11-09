@@ -1,0 +1,11 @@
+﻿LIBRARY
+EXPORTS
+
+CompareStringEx @1
+CompareStringOrdinal @2
+CompareStringW @3
+FoldStringW @4
+GetStringTypeExW @5
+GetStringTypeW @6
+MultiByteToWideChar @7
+WideCharToMultiByte @8

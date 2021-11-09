@@ -1,0 +1,13 @@
+﻿LIBRARY
+EXPORTS
+
+CreateLexInstance @1
+CreateMyProperNounInstance @2
+CreateMyRuleLexInstance @3
+CreateSmartLexInstance @4
+CreateTermLearnInstance @5
+CreateWBInstance @6
+DllCanUnloadNow @7
+DllGetClassObject @8
+DllRegisterServer @9
+DllUnregisterServer @10

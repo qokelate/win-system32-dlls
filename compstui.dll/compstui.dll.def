@@ -1,0 +1,7 @@
+﻿LIBRARY
+EXPORTS
+
+CommonPropertySheetUIA @1
+CommonPropertySheetUIW @2
+GetCPSUIUserData @3
+SetCPSUIUserData @4

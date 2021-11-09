@@ -1,0 +1,9 @@
+﻿LIBRARY
+EXPORTS
+
+NciDeviceInstall @1
+NciGetConnectionName @2
+NciSetConnectionName @3
+OnMachineUILanguageInit @4
+OnMachineUILanguageSwitch @5
+UpdateAdvancedParameter @6

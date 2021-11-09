@@ -1,0 +1,5 @@
+﻿LIBRARY
+EXPORTS
+
+OnMachineUILanguageInit @1
+OnMachineUILanguageSwitch @2

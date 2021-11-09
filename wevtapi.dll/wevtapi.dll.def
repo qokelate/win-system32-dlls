@@ -1,0 +1,47 @@
+﻿LIBRARY
+EXPORTS
+
+EvtArchiveExportedLog @3
+EvtCancel @4
+EvtClearLog @5
+EvtClose @6
+EvtCreateBookmark @7
+EvtCreateRenderContext @8
+EvtExportLog @9
+EvtFormatMessage @10
+EvtGetChannelConfigProperty @11
+EvtGetEventInfo @12
+EvtGetEventMetadataProperty @13
+EvtGetExtendedStatus @14
+EvtGetLogInfo @15
+EvtGetObjectArrayProperty @16
+EvtGetObjectArraySize @17
+EvtGetPublisherMetadataProperty @18
+EvtGetQueryInfo @19
+EvtIntAssertConfig @20
+EvtIntCreateBinXMLFromCustomXML @21
+EvtIntCreateLocalLogfile @22
+EvtIntGetClassicLogDisplayName @23
+EvtIntRenderResourceEventTemplate @24
+EvtIntRetractConfig @27
+EvtIntSysprepCleanup @1
+EvtIntWriteXmlEventToLocalLogfile @28
+EvtNext @29
+EvtNextChannelPath @30
+EvtNextEventMetadata @31
+EvtNextPublisherId @32
+EvtOpenChannelConfig @33
+EvtOpenChannelEnum @34
+EvtOpenEventMetadataEnum @35
+EvtOpenLog @36
+EvtOpenPublisherEnum @37
+EvtOpenPublisherMetadata @38
+EvtOpenSession @39
+EvtQuery @40
+EvtRender @41
+EvtSaveChannelConfig @42
+EvtSeek @43
+EvtSetChannelConfigProperty @44
+EvtSetObjectArrayProperty @2
+EvtSubscribe @45
+EvtUpdateBookmark @46

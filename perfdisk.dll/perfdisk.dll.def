@@ -1,0 +1,6 @@
+﻿LIBRARY
+EXPORTS
+
+CloseDiskObject @1
+CollectDiskObjectData @2
+OpenDiskObject @3

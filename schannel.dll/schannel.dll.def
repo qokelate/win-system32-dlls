@@ -1,0 +1,13 @@
+﻿LIBRARY
+EXPORTS
+
+SpLsaModeInitialize @1
+SpUserModeInitialize @24
+SslCrackCertificate @25
+SslEmptyCacheA @26
+SslEmptyCacheW @27
+SslFreeCertificate @28
+SslFreeCustomBuffer @29
+SslGenerateRandomBits @30
+SslGetMaximumKeySize @31
+SslLoadCertificate @32

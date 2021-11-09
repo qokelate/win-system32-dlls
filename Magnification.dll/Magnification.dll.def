@@ -1,0 +1,15 @@
+﻿LIBRARY
+EXPORTS
+
+MagGetColorEffect @1
+MagGetImageScalingCallback @2
+MagGetWindowFilterList @3
+MagGetWindowSource @4
+MagGetWindowTransform @5
+MagInitialize @6
+MagSetColorEffect @7
+MagSetImageScalingCallback @8
+MagSetWindowFilterList @9
+MagSetWindowSource @10
+MagSetWindowTransform @11
+MagUninitialize @12

@@ -1,0 +1,14 @@
+﻿LIBRARY
+EXPORTS
+
+AutoDialFunc @1
+CmCustomDialDlg @2
+CmCustomHangUp @3
+CmReConnect @4
+GetCustomProperty @5
+InetDialHandler @6
+RasCustomDeleteEntryNotify @7
+RasCustomDial @8
+RasCustomDialDlg @9
+RasCustomEntryDlg @10
+RasCustomHangUp @11

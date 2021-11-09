@@ -1,0 +1,5 @@
+﻿LIBRARY
+EXPORTS
+
+I_RpcSetupDiagCallback @1
+RpcDiagnoseError @2

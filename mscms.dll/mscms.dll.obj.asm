@@ -1,0 +1,545 @@
+ifndef X64
+.686p
+.XMM
+.safeseh SEH_handler
+.model flat, C
+option dotname
+option casemap : none
+endif
+
+extern ptr_AssociateColorProfileWithDeviceA : PTR;
+extern ptr_AssociateColorProfileWithDeviceW : PTR;
+extern ptr_CheckBitmapBits : PTR;
+extern ptr_CheckColors : PTR;
+extern ptr_CloseColorProfile : PTR;
+extern ptr_CloseDisplay : PTR;
+extern ptr_ColorCplGetDefaultProfileScope : PTR;
+extern ptr_ColorCplGetDefaultRenderingIntentScope : PTR;
+extern ptr_ColorCplGetProfileProperties : PTR;
+extern ptr_ColorCplHasSystemWideAssociationListChanged : PTR;
+extern ptr_ColorCplInitialize : PTR;
+extern ptr_ColorCplLoadAssociationList : PTR;
+extern ptr_ColorCplMergeAssociationLists : PTR;
+extern ptr_ColorCplOverwritePerUserAssociationList : PTR;
+extern ptr_ColorCplReleaseProfileProperties : PTR;
+extern ptr_ColorCplResetSystemWideAssociationListChangedWarning : PTR;
+extern ptr_ColorCplSaveAssociationList : PTR;
+extern ptr_ColorCplSetUsePerUserProfiles : PTR;
+extern ptr_ColorCplUninitialize : PTR;
+extern ptr_ConvertColorNameToIndex : PTR;
+extern ptr_ConvertIndexToColorName : PTR;
+extern ptr_CreateColorTransformA : PTR;
+extern ptr_CreateColorTransformW : PTR;
+extern ptr_CreateDeviceLinkProfile : PTR;
+extern ptr_CreateMultiProfileTransform : PTR;
+extern ptr_CreateProfileFromLogColorSpaceA : PTR;
+extern ptr_CreateProfileFromLogColorSpaceW : PTR;
+extern ptr_DccwCreateDisplayProfileAssociationList : PTR;
+extern ptr_DccwGetDisplayProfileAssociationList : PTR;
+extern ptr_DccwGetGamutSize : PTR;
+extern ptr_DccwReleaseDisplayProfileAssociationList : PTR;
+extern ptr_DccwSetDisplayProfileAssociationList : PTR;
+extern ptr_DeleteColorTransform : PTR;
+extern ptr_DeviceRenameEvent : PTR;
+extern ptr_DisassociateColorProfileFromDeviceA : PTR;
+extern ptr_DisassociateColorProfileFromDeviceW : PTR;
+extern ptr_DllCanUnloadNow : PTR;
+extern ptr_DllGetClassObject : PTR;
+extern ptr_EnumColorProfilesA : PTR;
+extern ptr_EnumColorProfilesW : PTR;
+extern ptr_GenerateCopyFilePaths : PTR;
+extern ptr_GetCMMInfo : PTR;
+extern ptr_GetColorDirectoryA : PTR;
+extern ptr_GetColorDirectoryW : PTR;
+extern ptr_GetColorProfileElement : PTR;
+extern ptr_GetColorProfileElementTag : PTR;
+extern ptr_GetColorProfileFromHandle : PTR;
+extern ptr_GetColorProfileHeader : PTR;
+extern ptr_GetCountColorProfileElements : PTR;
+extern ptr_GetNamedProfileInfo : PTR;
+extern ptr_GetPS2ColorRenderingDictionary : PTR;
+extern ptr_GetPS2ColorRenderingIntent : PTR;
+extern ptr_GetPS2ColorSpaceArray : PTR;
+extern ptr_GetStandardColorSpaceProfileA : PTR;
+extern ptr_GetStandardColorSpaceProfileW : PTR;
+extern ptr_InstallColorProfileA : PTR;
+extern ptr_InstallColorProfileW : PTR;
+extern ptr_InternalGetDeviceConfig : PTR;
+extern ptr_InternalGetPS2CSAFromLCS : PTR;
+extern ptr_InternalGetPS2ColorRenderingDictionary : PTR;
+extern ptr_InternalGetPS2ColorSpaceArray : PTR;
+extern ptr_InternalGetPS2PreviewCRD : PTR;
+extern ptr_InternalRefreshCalibration : PTR;
+extern ptr_InternalSetDeviceConfig : PTR;
+extern ptr_InternalWcsAssociateColorProfileWithDevice : PTR;
+extern ptr_IsColorProfileTagPresent : PTR;
+extern ptr_IsColorProfileValid : PTR;
+extern ptr_OpenColorProfileA : PTR;
+extern ptr_OpenColorProfileW : PTR;
+extern ptr_OpenDisplay : PTR;
+extern ptr_RegisterCMMA : PTR;
+extern ptr_RegisterCMMW : PTR;
+extern ptr_SelectCMM : PTR;
+extern ptr_SetColorProfileElement : PTR;
+extern ptr_SetColorProfileElementReference : PTR;
+extern ptr_SetColorProfileElementSize : PTR;
+extern ptr_SetColorProfileHeader : PTR;
+extern ptr_SetStandardColorSpaceProfileA : PTR;
+extern ptr_SetStandardColorSpaceProfileW : PTR;
+extern ptr_SpoolerCopyFileEvent : PTR;
+extern ptr_TranslateBitmapBits : PTR;
+extern ptr_TranslateColors : PTR;
+extern ptr_UninstallColorProfileA : PTR;
+extern ptr_UninstallColorProfileW : PTR;
+extern ptr_UnregisterCMMA : PTR;
+extern ptr_UnregisterCMMW : PTR;
+extern ptr_WcsAssociateColorProfileWithDevice : PTR;
+extern ptr_WcsCheckColors : PTR;
+extern ptr_WcsCreateIccProfile : PTR;
+extern ptr_WcsDisassociateColorProfileFromDevice : PTR;
+extern ptr_WcsEnumColorProfiles : PTR;
+extern ptr_WcsEnumColorProfilesSize : PTR;
+extern ptr_WcsGetCalibrationManagementState : PTR;
+extern ptr_WcsGetDefaultColorProfile : PTR;
+extern ptr_WcsGetDefaultColorProfileSize : PTR;
+extern ptr_WcsGetDefaultRenderingIntent : PTR;
+extern ptr_WcsGetUsePerUserProfiles : PTR;
+extern ptr_WcsGpCanInstallOrUninstallProfiles : PTR;
+extern ptr_WcsOpenColorProfileA : PTR;
+extern ptr_WcsOpenColorProfileW : PTR;
+extern ptr_WcsSetCalibrationManagementState : PTR;
+extern ptr_WcsSetDefaultColorProfile : PTR;
+extern ptr_WcsSetDefaultRenderingIntent : PTR;
+extern ptr_WcsSetUsePerUserProfiles : PTR;
+extern ptr_WcsTranslateColors : PTR;
+
+
+.code
+
+align 16
+SEH_handler   proc
+; handler
+ret
+SEH_handler   endp
+
+AssociateColorProfileWithDeviceA PROC
+jmp ptr_AssociateColorProfileWithDeviceA
+AssociateColorProfileWithDeviceA ENDP
+
+AssociateColorProfileWithDeviceW PROC
+jmp ptr_AssociateColorProfileWithDeviceW
+AssociateColorProfileWithDeviceW ENDP
+
+CheckBitmapBits PROC
+jmp ptr_CheckBitmapBits
+CheckBitmapBits ENDP
+
+CheckColors PROC
+jmp ptr_CheckColors
+CheckColors ENDP
+
+CloseColorProfile PROC
+jmp ptr_CloseColorProfile
+CloseColorProfile ENDP
+
+CloseDisplay PROC
+jmp ptr_CloseDisplay
+CloseDisplay ENDP
+
+ColorCplGetDefaultProfileScope PROC
+jmp ptr_ColorCplGetDefaultProfileScope
+ColorCplGetDefaultProfileScope ENDP
+
+ColorCplGetDefaultRenderingIntentScope PROC
+jmp ptr_ColorCplGetDefaultRenderingIntentScope
+ColorCplGetDefaultRenderingIntentScope ENDP
+
+ColorCplGetProfileProperties PROC
+jmp ptr_ColorCplGetProfileProperties
+ColorCplGetProfileProperties ENDP
+
+ColorCplHasSystemWideAssociationListChanged PROC
+jmp ptr_ColorCplHasSystemWideAssociationListChanged
+ColorCplHasSystemWideAssociationListChanged ENDP
+
+ColorCplInitialize PROC
+jmp ptr_ColorCplInitialize
+ColorCplInitialize ENDP
+
+ColorCplLoadAssociationList PROC
+jmp ptr_ColorCplLoadAssociationList
+ColorCplLoadAssociationList ENDP
+
+ColorCplMergeAssociationLists PROC
+jmp ptr_ColorCplMergeAssociationLists
+ColorCplMergeAssociationLists ENDP
+
+ColorCplOverwritePerUserAssociationList PROC
+jmp ptr_ColorCplOverwritePerUserAssociationList
+ColorCplOverwritePerUserAssociationList ENDP
+
+ColorCplReleaseProfileProperties PROC
+jmp ptr_ColorCplReleaseProfileProperties
+ColorCplReleaseProfileProperties ENDP
+
+ColorCplResetSystemWideAssociationListChangedWarning PROC
+jmp ptr_ColorCplResetSystemWideAssociationListChangedWarning
+ColorCplResetSystemWideAssociationListChangedWarning ENDP
+
+ColorCplSaveAssociationList PROC
+jmp ptr_ColorCplSaveAssociationList
+ColorCplSaveAssociationList ENDP
+
+ColorCplSetUsePerUserProfiles PROC
+jmp ptr_ColorCplSetUsePerUserProfiles
+ColorCplSetUsePerUserProfiles ENDP
+
+ColorCplUninitialize PROC
+jmp ptr_ColorCplUninitialize
+ColorCplUninitialize ENDP
+
+ConvertColorNameToIndex PROC
+jmp ptr_ConvertColorNameToIndex
+ConvertColorNameToIndex ENDP
+
+ConvertIndexToColorName PROC
+jmp ptr_ConvertIndexToColorName
+ConvertIndexToColorName ENDP
+
+CreateColorTransformA PROC
+jmp ptr_CreateColorTransformA
+CreateColorTransformA ENDP
+
+CreateColorTransformW PROC
+jmp ptr_CreateColorTransformW
+CreateColorTransformW ENDP
+
+CreateDeviceLinkProfile PROC
+jmp ptr_CreateDeviceLinkProfile
+CreateDeviceLinkProfile ENDP
+
+CreateMultiProfileTransform PROC
+jmp ptr_CreateMultiProfileTransform
+CreateMultiProfileTransform ENDP
+
+CreateProfileFromLogColorSpaceA PROC
+jmp ptr_CreateProfileFromLogColorSpaceA
+CreateProfileFromLogColorSpaceA ENDP
+
+CreateProfileFromLogColorSpaceW PROC
+jmp ptr_CreateProfileFromLogColorSpaceW
+CreateProfileFromLogColorSpaceW ENDP
+
+DccwCreateDisplayProfileAssociationList PROC
+jmp ptr_DccwCreateDisplayProfileAssociationList
+DccwCreateDisplayProfileAssociationList ENDP
+
+DccwGetDisplayProfileAssociationList PROC
+jmp ptr_DccwGetDisplayProfileAssociationList
+DccwGetDisplayProfileAssociationList ENDP
+
+DccwGetGamutSize PROC
+jmp ptr_DccwGetGamutSize
+DccwGetGamutSize ENDP
+
+DccwReleaseDisplayProfileAssociationList PROC
+jmp ptr_DccwReleaseDisplayProfileAssociationList
+DccwReleaseDisplayProfileAssociationList ENDP
+
+DccwSetDisplayProfileAssociationList PROC
+jmp ptr_DccwSetDisplayProfileAssociationList
+DccwSetDisplayProfileAssociationList ENDP
+
+DeleteColorTransform PROC
+jmp ptr_DeleteColorTransform
+DeleteColorTransform ENDP
+
+DeviceRenameEvent PROC
+jmp ptr_DeviceRenameEvent
+DeviceRenameEvent ENDP
+
+DisassociateColorProfileFromDeviceA PROC
+jmp ptr_DisassociateColorProfileFromDeviceA
+DisassociateColorProfileFromDeviceA ENDP
+
+DisassociateColorProfileFromDeviceW PROC
+jmp ptr_DisassociateColorProfileFromDeviceW
+DisassociateColorProfileFromDeviceW ENDP
+
+DllCanUnloadNow PROC
+jmp ptr_DllCanUnloadNow
+DllCanUnloadNow ENDP
+
+DllGetClassObject PROC
+jmp ptr_DllGetClassObject
+DllGetClassObject ENDP
+
+EnumColorProfilesA PROC
+jmp ptr_EnumColorProfilesA
+EnumColorProfilesA ENDP
+
+EnumColorProfilesW PROC
+jmp ptr_EnumColorProfilesW
+EnumColorProfilesW ENDP
+
+GenerateCopyFilePaths PROC
+jmp ptr_GenerateCopyFilePaths
+GenerateCopyFilePaths ENDP
+
+GetCMMInfo PROC
+jmp ptr_GetCMMInfo
+GetCMMInfo ENDP
+
+GetColorDirectoryA PROC
+jmp ptr_GetColorDirectoryA
+GetColorDirectoryA ENDP
+
+GetColorDirectoryW PROC
+jmp ptr_GetColorDirectoryW
+GetColorDirectoryW ENDP
+
+GetColorProfileElement PROC
+jmp ptr_GetColorProfileElement
+GetColorProfileElement ENDP
+
+GetColorProfileElementTag PROC
+jmp ptr_GetColorProfileElementTag
+GetColorProfileElementTag ENDP
+
+GetColorProfileFromHandle PROC
+jmp ptr_GetColorProfileFromHandle
+GetColorProfileFromHandle ENDP
+
+GetColorProfileHeader PROC
+jmp ptr_GetColorProfileHeader
+GetColorProfileHeader ENDP
+
+GetCountColorProfileElements PROC
+jmp ptr_GetCountColorProfileElements
+GetCountColorProfileElements ENDP
+
+GetNamedProfileInfo PROC
+jmp ptr_GetNamedProfileInfo
+GetNamedProfileInfo ENDP
+
+GetPS2ColorRenderingDictionary PROC
+jmp ptr_GetPS2ColorRenderingDictionary
+GetPS2ColorRenderingDictionary ENDP
+
+GetPS2ColorRenderingIntent PROC
+jmp ptr_GetPS2ColorRenderingIntent
+GetPS2ColorRenderingIntent ENDP
+
+GetPS2ColorSpaceArray PROC
+jmp ptr_GetPS2ColorSpaceArray
+GetPS2ColorSpaceArray ENDP
+
+GetStandardColorSpaceProfileA PROC
+jmp ptr_GetStandardColorSpaceProfileA
+GetStandardColorSpaceProfileA ENDP
+
+GetStandardColorSpaceProfileW PROC
+jmp ptr_GetStandardColorSpaceProfileW
+GetStandardColorSpaceProfileW ENDP
+
+InstallColorProfileA PROC
+jmp ptr_InstallColorProfileA
+InstallColorProfileA ENDP
+
+InstallColorProfileW PROC
+jmp ptr_InstallColorProfileW
+InstallColorProfileW ENDP
+
+InternalGetDeviceConfig PROC
+jmp ptr_InternalGetDeviceConfig
+InternalGetDeviceConfig ENDP
+
+InternalGetPS2CSAFromLCS PROC
+jmp ptr_InternalGetPS2CSAFromLCS
+InternalGetPS2CSAFromLCS ENDP
+
+InternalGetPS2ColorRenderingDictionary PROC
+jmp ptr_InternalGetPS2ColorRenderingDictionary
+InternalGetPS2ColorRenderingDictionary ENDP
+
+InternalGetPS2ColorSpaceArray PROC
+jmp ptr_InternalGetPS2ColorSpaceArray
+InternalGetPS2ColorSpaceArray ENDP
+
+InternalGetPS2PreviewCRD PROC
+jmp ptr_InternalGetPS2PreviewCRD
+InternalGetPS2PreviewCRD ENDP
+
+InternalRefreshCalibration PROC
+jmp ptr_InternalRefreshCalibration
+InternalRefreshCalibration ENDP
+
+InternalSetDeviceConfig PROC
+jmp ptr_InternalSetDeviceConfig
+InternalSetDeviceConfig ENDP
+
+InternalWcsAssociateColorProfileWithDevice PROC
+jmp ptr_InternalWcsAssociateColorProfileWithDevice
+InternalWcsAssociateColorProfileWithDevice ENDP
+
+IsColorProfileTagPresent PROC
+jmp ptr_IsColorProfileTagPresent
+IsColorProfileTagPresent ENDP
+
+IsColorProfileValid PROC
+jmp ptr_IsColorProfileValid
+IsColorProfileValid ENDP
+
+OpenColorProfileA PROC
+jmp ptr_OpenColorProfileA
+OpenColorProfileA ENDP
+
+OpenColorProfileW PROC
+jmp ptr_OpenColorProfileW
+OpenColorProfileW ENDP
+
+OpenDisplay PROC
+jmp ptr_OpenDisplay
+OpenDisplay ENDP
+
+RegisterCMMA PROC
+jmp ptr_RegisterCMMA
+RegisterCMMA ENDP
+
+RegisterCMMW PROC
+jmp ptr_RegisterCMMW
+RegisterCMMW ENDP
+
+SelectCMM PROC
+jmp ptr_SelectCMM
+SelectCMM ENDP
+
+SetColorProfileElement PROC
+jmp ptr_SetColorProfileElement
+SetColorProfileElement ENDP
+
+SetColorProfileElementReference PROC
+jmp ptr_SetColorProfileElementReference
+SetColorProfileElementReference ENDP
+
+SetColorProfileElementSize PROC
+jmp ptr_SetColorProfileElementSize
+SetColorProfileElementSize ENDP
+
+SetColorProfileHeader PROC
+jmp ptr_SetColorProfileHeader
+SetColorProfileHeader ENDP
+
+SetStandardColorSpaceProfileA PROC
+jmp ptr_SetStandardColorSpaceProfileA
+SetStandardColorSpaceProfileA ENDP
+
+SetStandardColorSpaceProfileW PROC
+jmp ptr_SetStandardColorSpaceProfileW
+SetStandardColorSpaceProfileW ENDP
+
+SpoolerCopyFileEvent PROC
+jmp ptr_SpoolerCopyFileEvent
+SpoolerCopyFileEvent ENDP
+
+TranslateBitmapBits PROC
+jmp ptr_TranslateBitmapBits
+TranslateBitmapBits ENDP
+
+TranslateColors PROC
+jmp ptr_TranslateColors
+TranslateColors ENDP
+
+UninstallColorProfileA PROC
+jmp ptr_UninstallColorProfileA
+UninstallColorProfileA ENDP
+
+UninstallColorProfileW PROC
+jmp ptr_UninstallColorProfileW
+UninstallColorProfileW ENDP
+
+UnregisterCMMA PROC
+jmp ptr_UnregisterCMMA
+UnregisterCMMA ENDP
+
+UnregisterCMMW PROC
+jmp ptr_UnregisterCMMW
+UnregisterCMMW ENDP
+
+WcsAssociateColorProfileWithDevice PROC
+jmp ptr_WcsAssociateColorProfileWithDevice
+WcsAssociateColorProfileWithDevice ENDP
+
+WcsCheckColors PROC
+jmp ptr_WcsCheckColors
+WcsCheckColors ENDP
+
+WcsCreateIccProfile PROC
+jmp ptr_WcsCreateIccProfile
+WcsCreateIccProfile ENDP
+
+WcsDisassociateColorProfileFromDevice PROC
+jmp ptr_WcsDisassociateColorProfileFromDevice
+WcsDisassociateColorProfileFromDevice ENDP
+
+WcsEnumColorProfiles PROC
+jmp ptr_WcsEnumColorProfiles
+WcsEnumColorProfiles ENDP
+
+WcsEnumColorProfilesSize PROC
+jmp ptr_WcsEnumColorProfilesSize
+WcsEnumColorProfilesSize ENDP
+
+WcsGetCalibrationManagementState PROC
+jmp ptr_WcsGetCalibrationManagementState
+WcsGetCalibrationManagementState ENDP
+
+WcsGetDefaultColorProfile PROC
+jmp ptr_WcsGetDefaultColorProfile
+WcsGetDefaultColorProfile ENDP
+
+WcsGetDefaultColorProfileSize PROC
+jmp ptr_WcsGetDefaultColorProfileSize
+WcsGetDefaultColorProfileSize ENDP
+
+WcsGetDefaultRenderingIntent PROC
+jmp ptr_WcsGetDefaultRenderingIntent
+WcsGetDefaultRenderingIntent ENDP
+
+WcsGetUsePerUserProfiles PROC
+jmp ptr_WcsGetUsePerUserProfiles
+WcsGetUsePerUserProfiles ENDP
+
+WcsGpCanInstallOrUninstallProfiles PROC
+jmp ptr_WcsGpCanInstallOrUninstallProfiles
+WcsGpCanInstallOrUninstallProfiles ENDP
+
+WcsOpenColorProfileA PROC
+jmp ptr_WcsOpenColorProfileA
+WcsOpenColorProfileA ENDP
+
+WcsOpenColorProfileW PROC
+jmp ptr_WcsOpenColorProfileW
+WcsOpenColorProfileW ENDP
+
+WcsSetCalibrationManagementState PROC
+jmp ptr_WcsSetCalibrationManagementState
+WcsSetCalibrationManagementState ENDP
+
+WcsSetDefaultColorProfile PROC
+jmp ptr_WcsSetDefaultColorProfile
+WcsSetDefaultColorProfile ENDP
+
+WcsSetDefaultRenderingIntent PROC
+jmp ptr_WcsSetDefaultRenderingIntent
+WcsSetDefaultRenderingIntent ENDP
+
+WcsSetUsePerUserProfiles PROC
+jmp ptr_WcsSetUsePerUserProfiles
+WcsSetUsePerUserProfiles ENDP
+
+WcsTranslateColors PROC
+jmp ptr_WcsTranslateColors
+WcsTranslateColors ENDP
+
+end

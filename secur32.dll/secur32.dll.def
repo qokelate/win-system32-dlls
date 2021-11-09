@@ -1,0 +1,14 @@
+﻿LIBRARY
+EXPORTS
+
+CloseLsaPerformanceData @1
+CollectLsaPerformanceData @2
+CredParseUserNameWithType @16
+GetComputerObjectNameA @28
+GetComputerObjectNameW @29
+OpenLsaPerformanceData @3
+SecpFreeMemory @75
+SecpTranslateName @76
+SecpTranslateNameEx @77
+TranslateNameA @99
+TranslateNameW @100

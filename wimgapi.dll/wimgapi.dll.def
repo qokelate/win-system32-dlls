@@ -1,0 +1,40 @@
+﻿LIBRARY
+EXPORTS
+
+DllCanUnloadNow @1
+DllMain @2
+WIMApplyImage @3
+WIMCaptureImage @4
+WIMCloseHandle @5
+WIMCommitImageHandle @6
+WIMCopyFile @7
+WIMCreateFile @8
+WIMDeleteImage @9
+WIMDeleteImageMounts @10
+WIMExportImage @11
+WIMExtractImagePath @12
+WIMGetAttributes @13
+WIMGetImageCount @14
+WIMGetImageInformation @15
+WIMGetMessageCallbackCount @16
+WIMGetMountedImageHandle @17
+WIMGetMountedImageInfo @18
+WIMGetMountedImageInfoFromHandle @19
+WIMGetMountedImages @20
+WIMInitFileIOCallbacks @21
+WIMLoadImage @22
+WIMMountImage @23
+WIMMountImageHandle @24
+WIMRegisterLogFile @25
+WIMRegisterMessageCallback @26
+WIMRemountImage @27
+WIMSetBootImage @28
+WIMSetFileIOCallbackTemporaryPath @29
+WIMSetImageInformation @30
+WIMSetReferenceFile @31
+WIMSetTemporaryPath @32
+WIMSplitFile @33
+WIMUnmountImage @34
+WIMUnmountImageHandle @35
+WIMUnregisterLogFile @36
+WIMUnregisterMessageCallback @37

@@ -1,0 +1,20 @@
+﻿LIBRARY
+EXPORTS
+
+EcClose @3
+EcDeleteSubscription @4
+EcEnumNextSubscription @5
+EcGetObjectArrayProperty @6
+EcGetObjectArraySize @7
+EcGetSubscriptionProperty @8
+EcGetSubscriptionRunTimeStatus @9
+EcInsertObjectArrayElement @10
+EcIsConfigRequired @1
+EcOpenSubscription @11
+EcOpenSubscriptionEnum @12
+EcQuickConfig @2
+EcRemoveObjectArrayElement @13
+EcRetrySubscription @14
+EcSaveSubscription @15
+EcSetObjectArrayProperty @16
+EcSetSubscriptionProperty @17

@@ -1,0 +1,10 @@
+﻿LIBRARY
+EXPORTS
+
+DllAllThreadsDetach @1
+DllCanUnloadNow @2
+DllGetClassObject @3
+MFCreateDXGIDeviceManager @4
+MFCreateMFByteStreamOnStreamEx @5
+MFLockDXGIDeviceManager @6
+MFUnlockDXGIDeviceManager @7

@@ -1,0 +1,9 @@
+﻿LIBRARY
+EXPORTS
+
+WmsgBroadcastMessage @1
+WmsgBroadcastNotifyMessage @2
+WmsgPostMessage @3
+WmsgPostNotifyMessage @4
+WmsgSendMessage @5
+WmsgSendPSPMessage @6

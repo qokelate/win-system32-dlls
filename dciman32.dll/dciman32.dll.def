@@ -1,0 +1,23 @@
+﻿LIBRARY
+EXPORTS
+
+DCIBeginAccess @1
+DCICloseProvider @2
+DCICreateOffscreen @3
+DCICreateOverlay @4
+DCICreatePrimary @5
+DCIDestroy @6
+DCIDraw @7
+DCIEndAccess @8
+DCIEnum @9
+DCIOpenProvider @10
+DCISetClipList @11
+DCISetDestination @12
+DCISetSrcDestClip @13
+GetDCRegionData @14
+GetWindowRegionData @15
+WinWatchClose @16
+WinWatchDidStatusChange @17
+WinWatchGetClipList @18
+WinWatchNotify @19
+WinWatchOpen @20

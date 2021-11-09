@@ -1,0 +1,46 @@
+﻿LIBRARY
+EXPORTS
+
+D3D10RefGetLastCreation @1
+D3D10RefPrepareNextCreation @2
+D3DKMTCloseAdapter @3
+D3DKMTCreateAllocation @18
+D3DKMTCreateContext @19
+D3DKMTCreateDevice @20
+D3DKMTCreateSynchronizationObject @21
+D3DKMTDestroyAllocation @4
+D3DKMTDestroyContext @5
+D3DKMTDestroyDevice @6
+D3DKMTDestroySynchronizationObject @7
+D3DKMTEscape @22
+D3DKMTGetContextSchedulingPriority @23
+D3DKMTGetDeviceSchedulingPriority @24
+D3DKMTGetDeviceState @25
+D3DKMTGetDisplayModeList @26
+D3DKMTGetMultisampleMethodList @27
+D3DKMTGetRuntimeData @28
+D3DKMTGetSharedPrimaryHandle @29
+D3DKMTLock @30
+D3DKMTOpenAdapterFromDeviceName @31
+D3DKMTOpenAdapterFromGdiDisplayName @32
+D3DKMTOpenResource @33
+D3DKMTPresent @8
+D3DKMTQueryAdapterInfo @9
+D3DKMTQueryAllocationResidency @34
+D3DKMTQueryResourceInfo @35
+D3DKMTRender @36
+D3DKMTSetAllocationPriority @37
+D3DKMTSetContextSchedulingPriority @38
+D3DKMTSetDeviceSchedulingPriority @39
+D3DKMTSetDisplayMode @40
+D3DKMTSetDisplayPrivateDriverFormat @10
+D3DKMTSetGammaRamp @41
+D3DKMTSetVidPnSourceOwner @42
+D3DKMTSignalSynchronizationObject @11
+D3DKMTUnlock @12
+D3DKMTWaitForSynchronizationObject @13
+D3DKMTWaitForVerticalBlankEvent @43
+OpenAdapter10 @14
+OpenAdapter10_2 @15
+SetInfoQueue @16
+SetUseMidLevelShader @17

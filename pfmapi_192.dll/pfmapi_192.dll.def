@@ -1,0 +1,29 @@
+﻿LIBRARY
+EXPORTS
+
+DllCanUnloadNow @1
+DllGetClassObject @2
+DllRegisterServer @3
+DllUnregisterServer @4
+FactoryMainGetInterface2 @5
+FactoryMainUnload2 @6
+FactoryRegister1 @7
+NPCloseEnum @8
+NPDirectoryNotify @9
+NPEnumResource @10
+NPFormatNetworkName @11
+NPGetCaps @12
+NPGetConnection @13
+NPGetConnection3 @14
+NPGetDirectoryType @15
+NPGetResourceInformation @16
+NPGetResourceParent @17
+NPGetUniversalName @18
+NPGetUser @19
+NPOpenEnum @20
+cmd_wmain @21
+factoryVersionString1 @22
+factory_main @23
+factory_wmain @24
+host_wmain @25
+inst_wmain @26

@@ -1,0 +1,260 @@
+ifndef X64
+.686p
+.XMM
+.safeseh SEH_handler
+.model flat, C
+option dotname
+option casemap : none
+endif
+
+extern ptr_DevObjBuildClassInfoList : PTR;
+extern ptr_DevObjClassGuidsFromName : PTR;
+extern ptr_DevObjClassNameFromGuid : PTR;
+extern ptr_DevObjCreateDevRegKey : PTR;
+extern ptr_DevObjCreateDeviceInfo : PTR;
+extern ptr_DevObjCreateDeviceInfoList : PTR;
+extern ptr_DevObjCreateDeviceInterface : PTR;
+extern ptr_DevObjCreateDeviceInterfaceRegKey : PTR;
+extern ptr_DevObjDeleteAllInterfacesForDevice : PTR;
+extern ptr_DevObjDeleteDevRegKey : PTR;
+extern ptr_DevObjDeleteDevice : PTR;
+extern ptr_DevObjDeleteDeviceInfo : PTR;
+extern ptr_DevObjDeleteDeviceInterfaceData : PTR;
+extern ptr_DevObjDeleteDeviceInterfaceRegKey : PTR;
+extern ptr_DevObjDestroyDeviceInfoList : PTR;
+extern ptr_DevObjEnumDeviceInfo : PTR;
+extern ptr_DevObjEnumDeviceInterfaces : PTR;
+extern ptr_DevObjGetClassDescription : PTR;
+extern ptr_DevObjGetClassDevs : PTR;
+extern ptr_DevObjGetClassProperty : PTR;
+extern ptr_DevObjGetClassPropertyKeys : PTR;
+extern ptr_DevObjGetClassRegistryProperty : PTR;
+extern ptr_DevObjGetDeviceInfoDetail : PTR;
+extern ptr_DevObjGetDeviceInfoListClass : PTR;
+extern ptr_DevObjGetDeviceInfoListDetail : PTR;
+extern ptr_DevObjGetDeviceInstanceId : PTR;
+extern ptr_DevObjGetDeviceInterfaceAlias : PTR;
+extern ptr_DevObjGetDeviceInterfaceDetail : PTR;
+extern ptr_DevObjGetDeviceInterfaceProperty : PTR;
+extern ptr_DevObjGetDeviceInterfacePropertyKeys : PTR;
+extern ptr_DevObjGetDeviceProperty : PTR;
+extern ptr_DevObjGetDevicePropertyKeys : PTR;
+extern ptr_DevObjGetDeviceRegistryProperty : PTR;
+extern ptr_DevObjLocateDevice : PTR;
+extern ptr_DevObjOpenClassRegKey : PTR;
+extern ptr_DevObjOpenDevRegKey : PTR;
+extern ptr_DevObjOpenDeviceInfo : PTR;
+extern ptr_DevObjOpenDeviceInterface : PTR;
+extern ptr_DevObjOpenDeviceInterfaceRegKey : PTR;
+extern ptr_DevObjRegisterDeviceInfo : PTR;
+extern ptr_DevObjRemoveDeviceInterface : PTR;
+extern ptr_DevObjSetClassProperty : PTR;
+extern ptr_DevObjSetClassRegistryProperty : PTR;
+extern ptr_DevObjSetDeviceInfoDetail : PTR;
+extern ptr_DevObjSetDeviceInterfaceDefault : PTR;
+extern ptr_DevObjSetDeviceInterfaceProperty : PTR;
+extern ptr_DevObjSetDeviceProperty : PTR;
+extern ptr_DevObjSetDeviceRegistryProperty : PTR;
+
+
+.code
+
+align 16
+SEH_handler   proc
+; handler
+ret
+SEH_handler   endp
+
+DevObjBuildClassInfoList PROC
+jmp ptr_DevObjBuildClassInfoList
+DevObjBuildClassInfoList ENDP
+
+DevObjClassGuidsFromName PROC
+jmp ptr_DevObjClassGuidsFromName
+DevObjClassGuidsFromName ENDP
+
+DevObjClassNameFromGuid PROC
+jmp ptr_DevObjClassNameFromGuid
+DevObjClassNameFromGuid ENDP
+
+DevObjCreateDevRegKey PROC
+jmp ptr_DevObjCreateDevRegKey
+DevObjCreateDevRegKey ENDP
+
+DevObjCreateDeviceInfo PROC
+jmp ptr_DevObjCreateDeviceInfo
+DevObjCreateDeviceInfo ENDP
+
+DevObjCreateDeviceInfoList PROC
+jmp ptr_DevObjCreateDeviceInfoList
+DevObjCreateDeviceInfoList ENDP
+
+DevObjCreateDeviceInterface PROC
+jmp ptr_DevObjCreateDeviceInterface
+DevObjCreateDeviceInterface ENDP
+
+DevObjCreateDeviceInterfaceRegKey PROC
+jmp ptr_DevObjCreateDeviceInterfaceRegKey
+DevObjCreateDeviceInterfaceRegKey ENDP
+
+DevObjDeleteAllInterfacesForDevice PROC
+jmp ptr_DevObjDeleteAllInterfacesForDevice
+DevObjDeleteAllInterfacesForDevice ENDP
+
+DevObjDeleteDevRegKey PROC
+jmp ptr_DevObjDeleteDevRegKey
+DevObjDeleteDevRegKey ENDP
+
+DevObjDeleteDevice PROC
+jmp ptr_DevObjDeleteDevice
+DevObjDeleteDevice ENDP
+
+DevObjDeleteDeviceInfo PROC
+jmp ptr_DevObjDeleteDeviceInfo
+DevObjDeleteDeviceInfo ENDP
+
+DevObjDeleteDeviceInterfaceData PROC
+jmp ptr_DevObjDeleteDeviceInterfaceData
+DevObjDeleteDeviceInterfaceData ENDP
+
+DevObjDeleteDeviceInterfaceRegKey PROC
+jmp ptr_DevObjDeleteDeviceInterfaceRegKey
+DevObjDeleteDeviceInterfaceRegKey ENDP
+
+DevObjDestroyDeviceInfoList PROC
+jmp ptr_DevObjDestroyDeviceInfoList
+DevObjDestroyDeviceInfoList ENDP
+
+DevObjEnumDeviceInfo PROC
+jmp ptr_DevObjEnumDeviceInfo
+DevObjEnumDeviceInfo ENDP
+
+DevObjEnumDeviceInterfaces PROC
+jmp ptr_DevObjEnumDeviceInterfaces
+DevObjEnumDeviceInterfaces ENDP
+
+DevObjGetClassDescription PROC
+jmp ptr_DevObjGetClassDescription
+DevObjGetClassDescription ENDP
+
+DevObjGetClassDevs PROC
+jmp ptr_DevObjGetClassDevs
+DevObjGetClassDevs ENDP
+
+DevObjGetClassProperty PROC
+jmp ptr_DevObjGetClassProperty
+DevObjGetClassProperty ENDP
+
+DevObjGetClassPropertyKeys PROC
+jmp ptr_DevObjGetClassPropertyKeys
+DevObjGetClassPropertyKeys ENDP
+
+DevObjGetClassRegistryProperty PROC
+jmp ptr_DevObjGetClassRegistryProperty
+DevObjGetClassRegistryProperty ENDP
+
+DevObjGetDeviceInfoDetail PROC
+jmp ptr_DevObjGetDeviceInfoDetail
+DevObjGetDeviceInfoDetail ENDP
+
+DevObjGetDeviceInfoListClass PROC
+jmp ptr_DevObjGetDeviceInfoListClass
+DevObjGetDeviceInfoListClass ENDP
+
+DevObjGetDeviceInfoListDetail PROC
+jmp ptr_DevObjGetDeviceInfoListDetail
+DevObjGetDeviceInfoListDetail ENDP
+
+DevObjGetDeviceInstanceId PROC
+jmp ptr_DevObjGetDeviceInstanceId
+DevObjGetDeviceInstanceId ENDP
+
+DevObjGetDeviceInterfaceAlias PROC
+jmp ptr_DevObjGetDeviceInterfaceAlias
+DevObjGetDeviceInterfaceAlias ENDP
+
+DevObjGetDeviceInterfaceDetail PROC
+jmp ptr_DevObjGetDeviceInterfaceDetail
+DevObjGetDeviceInterfaceDetail ENDP
+
+DevObjGetDeviceInterfaceProperty PROC
+jmp ptr_DevObjGetDeviceInterfaceProperty
+DevObjGetDeviceInterfaceProperty ENDP
+
+DevObjGetDeviceInterfacePropertyKeys PROC
+jmp ptr_DevObjGetDeviceInterfacePropertyKeys
+DevObjGetDeviceInterfacePropertyKeys ENDP
+
+DevObjGetDeviceProperty PROC
+jmp ptr_DevObjGetDeviceProperty
+DevObjGetDeviceProperty ENDP
+
+DevObjGetDevicePropertyKeys PROC
+jmp ptr_DevObjGetDevicePropertyKeys
+DevObjGetDevicePropertyKeys ENDP
+
+DevObjGetDeviceRegistryProperty PROC
+jmp ptr_DevObjGetDeviceRegistryProperty
+DevObjGetDeviceRegistryProperty ENDP
+
+DevObjLocateDevice PROC
+jmp ptr_DevObjLocateDevice
+DevObjLocateDevice ENDP
+
+DevObjOpenClassRegKey PROC
+jmp ptr_DevObjOpenClassRegKey
+DevObjOpenClassRegKey ENDP
+
+DevObjOpenDevRegKey PROC
+jmp ptr_DevObjOpenDevRegKey
+DevObjOpenDevRegKey ENDP
+
+DevObjOpenDeviceInfo PROC
+jmp ptr_DevObjOpenDeviceInfo
+DevObjOpenDeviceInfo ENDP
+
+DevObjOpenDeviceInterface PROC
+jmp ptr_DevObjOpenDeviceInterface
+DevObjOpenDeviceInterface ENDP
+
+DevObjOpenDeviceInterfaceRegKey PROC
+jmp ptr_DevObjOpenDeviceInterfaceRegKey
+DevObjOpenDeviceInterfaceRegKey ENDP
+
+DevObjRegisterDeviceInfo PROC
+jmp ptr_DevObjRegisterDeviceInfo
+DevObjRegisterDeviceInfo ENDP
+
+DevObjRemoveDeviceInterface PROC
+jmp ptr_DevObjRemoveDeviceInterface
+DevObjRemoveDeviceInterface ENDP
+
+DevObjSetClassProperty PROC
+jmp ptr_DevObjSetClassProperty
+DevObjSetClassProperty ENDP
+
+DevObjSetClassRegistryProperty PROC
+jmp ptr_DevObjSetClassRegistryProperty
+DevObjSetClassRegistryProperty ENDP
+
+DevObjSetDeviceInfoDetail PROC
+jmp ptr_DevObjSetDeviceInfoDetail
+DevObjSetDeviceInfoDetail ENDP
+
+DevObjSetDeviceInterfaceDefault PROC
+jmp ptr_DevObjSetDeviceInterfaceDefault
+DevObjSetDeviceInterfaceDefault ENDP
+
+DevObjSetDeviceInterfaceProperty PROC
+jmp ptr_DevObjSetDeviceInterfaceProperty
+DevObjSetDeviceInterfaceProperty ENDP
+
+DevObjSetDeviceProperty PROC
+jmp ptr_DevObjSetDeviceProperty
+DevObjSetDeviceProperty ENDP
+
+DevObjSetDeviceRegistryProperty PROC
+jmp ptr_DevObjSetDeviceRegistryProperty
+DevObjSetDeviceRegistryProperty ENDP
+
+end

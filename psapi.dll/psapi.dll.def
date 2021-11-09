@@ -1,0 +1,30 @@
+﻿LIBRARY
+EXPORTS
+
+EmptyWorkingSet @1
+EnumDeviceDrivers @2
+EnumPageFilesA @3
+EnumPageFilesW @4
+EnumProcessModules @5
+EnumProcessModulesEx @6
+EnumProcesses @7
+GetDeviceDriverBaseNameA @8
+GetDeviceDriverBaseNameW @9
+GetDeviceDriverFileNameA @10
+GetDeviceDriverFileNameW @11
+GetMappedFileNameA @12
+GetMappedFileNameW @13
+GetModuleBaseNameA @14
+GetModuleBaseNameW @15
+GetModuleFileNameExA @16
+GetModuleFileNameExW @17
+GetModuleInformation @18
+GetPerformanceInfo @19
+GetProcessImageFileNameA @20
+GetProcessImageFileNameW @21
+GetProcessMemoryInfo @22
+GetWsChanges @23
+GetWsChangesEx @24
+InitializeProcessForWsWatch @25
+QueryWorkingSet @26
+QueryWorkingSetEx @27

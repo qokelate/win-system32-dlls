@@ -1,0 +1,43 @@
+﻿LIBRARY
+EXPORTS
+
+RegCloseKey @1
+RegCreateKeyExA @2
+RegCreateKeyExW @3
+RegDeleteKeyExA @4
+RegDeleteKeyExW @5
+RegDeleteTreeA @6
+RegDeleteTreeW @7
+RegDeleteValueA @8
+RegDeleteValueW @9
+RegDisablePredefinedCacheEx @10
+RegEnumKeyExA @11
+RegEnumKeyExW @12
+RegEnumValueA @13
+RegEnumValueW @14
+RegFlushKey @15
+RegGetKeySecurity @16
+RegGetValueA @17
+RegGetValueW @18
+RegLoadKeyA @19
+RegLoadKeyW @20
+RegLoadMUIStringA @21
+RegLoadMUIStringW @22
+RegNotifyChangeKeyValue @23
+RegOpenCurrentUser @24
+RegOpenKeyExA @25
+RegOpenKeyExW @26
+RegOpenUserClassesRoot @27
+RegQueryInfoKeyA @28
+RegQueryInfoKeyW @29
+RegQueryValueExA @30
+RegQueryValueExW @31
+RegRestoreKeyA @32
+RegRestoreKeyW @33
+RegSaveKeyExA @34
+RegSaveKeyExW @35
+RegSetKeySecurity @36
+RegSetValueExA @37
+RegSetValueExW @38
+RegUnLoadKeyA @39
+RegUnLoadKeyW @40

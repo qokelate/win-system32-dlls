@@ -1,0 +1,29 @@
+﻿LIBRARY
+EXPORTS
+
+DllCanUnloadNow @7
+DllGetClassObject @8
+DllRegisterServer @9
+DllUnregisterServer @10
+NdfCancelIncident @11
+NdfCloseIncident @12
+NdfCreateConnectivityIncident @13
+NdfCreateDNSIncident @14
+NdfCreateGroupingIncident @15
+NdfCreateInboundIncident @16
+NdfCreateIncident @17
+NdfCreatePnrpIncident @18
+NdfCreateSharingIncident @19
+NdfCreateWebIncident @20
+NdfCreateWebIncidentEx @21
+NdfCreateWinSockIncident @22
+NdfDiagnoseIncident @23
+NdfExecuteDiagnosis @24
+NdfGetTraceFile @25
+NdfRepairIncident @26
+NdfRunDllDiagnoseIncident @1
+NdfRunDllDiagnoseNetConnectionIncident @2
+NdfRunDllDiagnoseWithAnswerFile @3
+NdfRunDllDuplicateIPDefendingSystem @4
+NdfRunDllDuplicateIPOffendingSystem @5
+NdfRunDllHelpTopic @6

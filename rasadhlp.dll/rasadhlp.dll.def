@@ -1,0 +1,7 @@
+﻿LIBRARY
+EXPORTS
+
+AcsHlpNbConnection @1
+WSAttemptAutodialAddr @2
+WSAttemptAutodialName @3
+WSNoteSuccessfulHostentLookup @4

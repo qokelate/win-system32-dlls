@@ -1,0 +1,5 @@
+﻿LIBRARY
+EXPORTS
+
+MediaClassInstaller @1
+mmWOW64MediaClassInstallerA @2

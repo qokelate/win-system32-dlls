@@ -1,0 +1,18 @@
+﻿LIBRARY
+EXPORTS
+
+RtlAddFunctionTable @1
+RtlCaptureContext @2
+RtlCaptureStackBackTrace @3
+RtlCompareMemory @4
+RtlCopyMemory @5
+RtlDeleteFunctionTable @6
+RtlFillMemory @7
+RtlInstallFunctionTableCallback @8
+RtlLookupFunctionEntry @9
+RtlPcToFileHeader @10
+RtlRaiseException @11
+RtlRestoreContext @12
+RtlUnwind @13
+RtlUnwindEx @14
+RtlVirtualUnwind @15

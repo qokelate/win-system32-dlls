@@ -1,0 +1,5 @@
+﻿LIBRARY
+EXPORTS
+
+InitializeQec @1
+UninitializeQec @2

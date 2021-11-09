@@ -1,0 +1,19 @@
+﻿LIBRARY
+EXPORTS
+
+AllocateAttributes @1
+ConfigureIas @2
+DllCanUnloadNow @3
+DllGetClassObject @4
+DllRegisterServer @5
+DllUnregisterServer @6
+DoRequest @7
+DoRequestAsync @8
+FreeAttributes @9
+GetOptionIas @10
+InitializeIas @11
+MemAllocIas @12
+MemFreeIas @13
+MemReallocIas @14
+SetOptionIas @15
+ShutdownIas @16

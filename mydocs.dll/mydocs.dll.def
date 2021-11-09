@@ -1,0 +1,6 @@
+﻿LIBRARY
+EXPORTS
+
+DllCanUnloadNow @8
+DllGetClassObject @9
+PerUserInit @7

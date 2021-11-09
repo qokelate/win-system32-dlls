@@ -1,0 +1,33 @@
+﻿LIBRARY
+EXPORTS
+
+AddEntryBootFileGpt @3
+AddEntryBootFileMbr @4
+CoDisableDynamicVolumes @1
+DisplayError @5
+DisplayErrorRgszw @6
+DllMain @7
+DmCommonNtOpenFile @8
+DynamicSupport @9
+FTrace @10
+FTraceValist @11
+FreeRgszw @12
+GetErrorData @13
+GetInstallDirectoryPath @14
+GetSystemVolume @2
+IsPersonalSKU @15
+LowAcquirePrivilege @16
+LowGetPartitionInfo @17
+LowNtAddBootEntry @18
+LowNtReadFile @19
+LowNtReadOnlyAttributeOff @20
+LowNtWriteFile @21
+RgszwDupRgszw @22
+RgszwFromArgs @23
+RgszwFromValist @24
+SafeLoadVdsService @25
+ShowMessage @26
+ShowMessageValist @27
+SzwDupSzw @28
+SzwFromSza @29
+TranslateError @30

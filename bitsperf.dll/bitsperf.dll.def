@@ -1,0 +1,6 @@
+﻿LIBRARY
+EXPORTS
+
+PerfMon_Close @30
+PerfMon_Collect @31
+PerfMon_Open @32

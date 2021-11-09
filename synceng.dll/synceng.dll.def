@@ -1,0 +1,39 @@
+﻿LIBRARY
+EXPORTS
+
+AddAllTwinsToTwinList @1
+AddFolderTwin @2
+AddObjectTwin @3
+AddTwinToTwinList @4
+AnyTwins @5
+BeginReconciliation @6
+ClearBriefcaseCache @7
+CloseBriefcase @8
+CompareFileStamps @9
+CountSourceFolderTwins @10
+CreateFolderTwinList @11
+CreateRecList @12
+CreateTwinList @13
+DeleteBriefcase @14
+DeleteTwin @15
+DestroyFolderTwinList @16
+DestroyRecList @17
+DestroyTwinList @18
+EndReconciliation @19
+FindBriefcaseClose @20
+FindFirstBriefcase @21
+FindNextBriefcase @22
+GetFileStamp @23
+GetFolderTwinStatus @24
+GetObjectTwinHandle @25
+GetOpenBriefcaseInfo @26
+GetVolumeDescription @27
+IsFolderTwin @28
+IsOrphanObjectTwin @29
+IsPathOnVolume @30
+OpenBriefcase @31
+ReconcileItem @32
+ReleaseTwinHandle @33
+RemoveAllTwinsFromTwinList @34
+RemoveTwinFromTwinList @35
+SaveBriefcase @36

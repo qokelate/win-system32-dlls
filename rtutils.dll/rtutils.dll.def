@@ -1,0 +1,44 @@
+﻿LIBRARY
+EXPORTS
+
+LogErrorA @1
+LogErrorW @2
+LogEventA @3
+LogEventW @4
+MprSetupProtocolEnum @5
+MprSetupProtocolFree @6
+RouterAssert @7
+RouterGetErrorStringA @8
+RouterGetErrorStringW @9
+RouterLogDeregisterA @10
+RouterLogDeregisterW @11
+RouterLogEventA @12
+RouterLogEventDataA @13
+RouterLogEventDataW @14
+RouterLogEventExA @15
+RouterLogEventExW @16
+RouterLogEventStringA @17
+RouterLogEventStringW @18
+RouterLogEventValistExA @19
+RouterLogEventValistExW @20
+RouterLogEventW @21
+RouterLogRegisterA @22
+RouterLogRegisterW @23
+TraceDeregisterA @24
+TraceDeregisterExA @25
+TraceDeregisterExW @26
+TraceDeregisterW @27
+TraceDumpExA @28
+TraceDumpExW @29
+TraceGetConsoleA @30
+TraceGetConsoleW @31
+TracePrintfA @32
+TracePrintfExA @33
+TracePrintfExW @34
+TracePrintfW @35
+TracePutsExA @36
+TracePutsExW @37
+TraceRegisterExA @38
+TraceRegisterExW @39
+TraceVprintfExA @40
+TraceVprintfExW @41

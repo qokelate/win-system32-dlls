@@ -1,0 +1,33 @@
+﻿LIBRARY
+EXPORTS
+
+CryptExtAddCER @1
+CryptExtAddCERW @2
+CryptExtAddCRL @3
+CryptExtAddCRLW @4
+CryptExtAddCTL @5
+CryptExtAddCTLW @6
+CryptExtAddP7R @7
+CryptExtAddP7RW @8
+CryptExtAddPFX @9
+CryptExtAddPFXW @10
+CryptExtAddSPC @11
+CryptExtAddSPCW @12
+CryptExtOpenCAT @13
+CryptExtOpenCATW @14
+CryptExtOpenCER @15
+CryptExtOpenCERW @16
+CryptExtOpenCRL @17
+CryptExtOpenCRLW @18
+CryptExtOpenCTL @19
+CryptExtOpenCTLW @20
+CryptExtOpenP7R @21
+CryptExtOpenP7RW @22
+CryptExtOpenPKCS7 @23
+CryptExtOpenPKCS7W @24
+CryptExtOpenSTR @25
+CryptExtOpenSTRW @26
+DllCanUnloadNow @27
+DllGetClassObject @28
+DllRegisterServer @29
+DllUnregisterServer @30

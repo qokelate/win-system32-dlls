@@ -1,0 +1,26 @@
+﻿LIBRARY
+EXPORTS
+
+ADsPropCheckIfWritable @10
+ADsPropCreateNotifyObj @11
+ADsPropGetInitInfo @12
+ADsPropSendErrorMessage @13
+ADsPropSetHwnd @14
+ADsPropSetHwndWithTitle @15
+ADsPropShowErrorDialog @16
+BringSheetToForeground @17
+CheckADsError @1
+CrackName @2
+DSPROP_GetGCSearchOnDomain @3
+DllCanUnloadNow @18
+DllGetClassObject @19
+DllRegisterServer @20
+DllUnregisterServer @21
+ErrMsg @4
+ErrMsgParam @5
+FindSheet @6
+IsSheetAlreadyUp @22
+MsgBox @7
+PostADsPropSheet @23
+ReportError @8
+Smart_PADS_ATTR_INFO__Empty @9

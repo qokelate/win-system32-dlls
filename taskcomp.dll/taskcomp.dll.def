@@ -1,0 +1,10 @@
+﻿LIBRARY
+EXPORTS
+
+DeleteTaskNotification @1
+InitializeAdapter @2
+IsRegistering @3
+RegisterTaskNotification @4
+SetSdNotification @5
+ShutdownAdapter @6
+UpdateJobStatus @7

@@ -1,0 +1,16 @@
+﻿LIBRARY
+EXPORTS
+
+ConvertAtJobsToTasks @1
+DllCanUnloadNow @2
+DllGetClassObject @3
+GetNetScheduleAccountInformation @4
+NetrJobAdd @5
+NetrJobDel @6
+NetrJobEnum @7
+NetrJobGetInfo @8
+SAGetAccountInformation @9
+SAGetNSAccountInformation @10
+SASetAccountInformation @11
+SASetNSAccountInformation @12
+SetNetScheduleAccountInformation @13

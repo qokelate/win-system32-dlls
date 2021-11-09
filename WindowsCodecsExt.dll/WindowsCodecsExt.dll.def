@@ -1,0 +1,6 @@
+﻿LIBRARY
+EXPORTS
+
+DllGetClassObject @1
+IWICColorTransform_Initialize_Proxy @2
+WICCreateColorTransform_Proxy @3

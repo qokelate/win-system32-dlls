@@ -1,0 +1,21 @@
+﻿LIBRARY
+EXPORTS
+
+BeginFileMapEnumeration @1
+CloseFileMapEnumeration @2
+GetNextFileMapContent @3
+SRSetRestorePointA @4
+SRSetRestorePointW @5
+SfcClose @6
+SfcConnectToServer @7
+SfcFileException @8
+SfcGetNextProtectedFile @9
+SfcInitProt @10
+SfcInitiateScan @11
+SfcInstallProtectedFiles @12
+SfcIsFileProtected @13
+SfcIsKeyProtected @14
+SfcTerminateWatcherThread @15
+SfpDeleteCatalog @16
+SfpInstallCatalog @17
+SfpVerifyFile @18

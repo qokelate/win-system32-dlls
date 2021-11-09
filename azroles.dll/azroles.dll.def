@@ -1,0 +1,47 @@
+﻿LIBRARY
+EXPORTS
+
+AzAddPropertyItem @1
+AzApplicationClose @2
+AzApplicationCreate @3
+AzApplicationDelete @4
+AzApplicationEnum @5
+AzApplicationOpen @6
+AzAuthorizationStoreDelete @7
+AzCloseHandle @8
+AzContextAccessCheck @9
+AzContextGetAssignedScopesPage @10
+AzContextGetRoles @11
+AzFreeMemory @12
+AzGetProperty @13
+AzGroupCreate @14
+AzGroupDelete @15
+AzGroupEnum @16
+AzGroupOpen @17
+AzInitialize @18
+AzInitializeContextFromName @19
+AzInitializeContextFromToken @20
+AzOperationCreate @21
+AzOperationDelete @22
+AzOperationEnum @23
+AzOperationOpen @24
+AzRemovePropertyItem @25
+AzRoleCreate @26
+AzRoleDelete @27
+AzRoleEnum @28
+AzRoleOpen @29
+AzScopeCreate @30
+AzScopeDelete @31
+AzScopeEnum @32
+AzScopeOpen @33
+AzSetProperty @34
+AzSubmit @35
+AzTaskCreate @36
+AzTaskDelete @37
+AzTaskEnum @38
+AzTaskOpen @39
+AzUpdateCache @40
+DllCanUnloadNow @41
+DllGetClassObject @42
+DllRegisterServer @43
+DllUnregisterServer @44

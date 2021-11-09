@@ -1,0 +1,12 @@
+﻿LIBRARY
+EXPORTS
+
+CheckForVersionConflict @1
+CheckTrust @2
+CheckTrustEx @3
+DllCanUnloadNow @4
+DllGetClassObject @5
+DownloadFile @6
+GetICifFileFromFile @7
+GetICifRWFileFromFile @8
+PurgeDownloadDirectory @9

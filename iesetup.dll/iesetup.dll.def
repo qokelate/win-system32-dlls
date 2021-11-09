@@ -1,0 +1,10 @@
+﻿LIBRARY
+EXPORTS
+
+IEApplyCurrentHardening @1
+IEHardenAdmin @2
+IEHardenAdminNow @3
+IEHardenLMSettings @4
+IEHardenMachineNow @5
+IEHardenUser @6
+IEShowHardeningDialog @7

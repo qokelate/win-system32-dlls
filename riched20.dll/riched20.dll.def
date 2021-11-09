@@ -1,0 +1,12 @@
+﻿LIBRARY
+EXPORTS
+
+CreateTextServices @4
+IID_IRichEditOle @2
+IID_IRichEditOleCallback @3
+IID_ITextHost @6
+IID_ITextHost2 @7
+IID_ITextServices @5
+REExtendedRegisterClass @8
+RichEdit10ANSIWndProc @9
+RichEditANSIWndProc @10

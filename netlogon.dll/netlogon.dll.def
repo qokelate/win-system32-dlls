@@ -1,0 +1,26 @@
+﻿LIBRARY
+EXPORTS
+
+DsrGetDcNameEx2 @1
+I_NetLogonAddressToSiteName @2
+I_NetLogonAppendChangeLog @3
+I_NetLogonCloseChangeLog @4
+I_NetLogonFree @5
+I_NetLogonGetAuthDataEx @6
+I_NetLogonGetSerialNumber @7
+I_NetLogonLdapLookupEx @8
+I_NetLogonMixedDomain @9
+I_NetLogonNewChangeLog @10
+I_NetLogonReadChangeLog @11
+I_NetLogonSendToSamOnDc @12
+I_NetLogonSetServiceBits @13
+I_NetNotifyDelta @14
+I_NetNotifyDsChange @15
+I_NetNotifyMachineAccount @16
+I_NetNotifyNetlogonDllHandle @17
+I_NetNotifyNtdsDsaDeletion @18
+I_NetNotifyRole @19
+I_NetNotifyTrustedDomain @20
+InitSecurityInterfaceW @21
+NetILogonSamLogon @22
+NlNetlogonMain @23

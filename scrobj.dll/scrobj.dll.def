@@ -1,0 +1,14 @@
+﻿LIBRARY
+EXPORTS
+
+DllCanUnloadNow @3
+DllGetClassObject @4
+DllInstall @5
+DllRegisterServer @6
+DllRegisterServerEx @7
+DllRegisterServerExA @8
+DllRegisterServerExW @9
+DllUnregisterServer @10
+DllUnregisterServerEx @11
+GenerateTypeLib @1
+GenerateTypeLibW @2
